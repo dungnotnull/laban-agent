@@ -122,6 +122,17 @@ export async function runCareerPipeline(
       suggestions = await runAnalyst(intake, profile, pack, analystDeps, repairFeedback);
       rec.log({ type: 'agent_end', agent: 'analyst', data: { suggestions: suggestions.length } });
     } catch (err: any) {
+      // A malformed analyst response (e.g. invalid JSON on long outputs, observed
+      // in evaluation) is repairable: retry with explicit parse feedback instead
+      // of failing the whole run. Single-shot baselines cannot do this.
+      if (attempt < MAX_REPAIR_ATTEMPTS) {
+        repairFeedback = [
+          `Your previous response could not be parsed (${String(err?.message || err).slice(0, 120)}). Return strictly valid JSON: double-quoted keys, no trailing commas, no markdown fences, complete array. Shorten long text fields (reasoning, whyItFitsYou, notes) so the full array fits.`
+        ];
+        rec.log({ type: 'error', agent: 'analyst', message: String(err?.message || err) });
+        rec.log({ type: 'repair_retry', agent: 'analyst', data: { feedback: repairFeedback } });
+        continue;
+      }
       rec.log({ type: 'error', agent: 'analyst', message: String(err?.message || err) });
       rec.log({ type: 'run_end', message: 'failed at analyst' });
       throw err;

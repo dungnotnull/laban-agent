@@ -113,4 +113,16 @@ describe('runCareerPipeline', () => {
     const retries = result.trajectory.events.filter(e => e.type === 'repair_retry').length;
     expect(retries).toBe(2);
   });
+
+  it('recovers when the analyst returns unparseable JSON on the first attempt', async () => {
+    // First analyst response is malformed JSON (long-output failure mode seen in eval);
+    // the pipeline must retry with parse feedback instead of failing the whole run.
+    const { deps } = makeDeps(['{invalid json from a truncated response', JSON.stringify([suggestion(true)])]);
+    const result = await runCareerPipeline(INTAKE, DEFAULT_CONFIG, undefined, deps);
+    expect(result.suggestions[0].roleTitle).toBe('AI Art Director');
+    expect(result.verification?.verdict).toBe('pass');
+    const types = result.trajectory.events.map(e => e.type);
+    expect(types).toContain('error');
+    expect(types).toContain('repair_retry');
+  });
 });
