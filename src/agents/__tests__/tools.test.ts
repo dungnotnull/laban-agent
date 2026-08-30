@@ -10,6 +10,12 @@ describe('lookupOccupation', () => {
     expect(matches[0].key).toBeDefined();
   });
 
+  it('matches a Vietnamese-language query with diacritics', () => {
+    const result = lookupOccupation('kế toán');
+    const matches = result.data as any[];
+    expect(matches.length).toBeGreaterThan(0);
+  });
+
   it('returns empty matches for unknown occupation', () => {
     const result = lookupOccupation('astronaut zookeeper mars');
     expect((result.data as any[]).length).toBe(0);

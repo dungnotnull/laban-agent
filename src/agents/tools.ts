@@ -67,7 +67,7 @@ export const AGENT_FUNCTION_DECLARATIONS = [
 function normalize(s: string): string {
   return (s || '')
     .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/[^a-z0-9\sáàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵđ]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
 }
