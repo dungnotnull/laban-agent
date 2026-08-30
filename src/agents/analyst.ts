@@ -54,7 +54,7 @@ Risk flags to respect: ${profile.riskFlags.join('; ') || 'none'}
 VERIFIED EVIDENCE PACK (the ONLY citable material):
 ${serializeEvidencePack(pack)}
 
-CITATION RULE (STRICT): Every evidenceCitations entry MUST copy the paperTitle EXACTLY from the evidence pack above (occupations.sources citationText owner institutions or research titles). Citing anything not present in the pack is a verification FAILURE.
+CITATION RULE (STRICT): Every evidenceCitations entry MUST copy the title EXACTLY from the evidence pack above (research[].title or occupations[].sources[].citationText). Citing anything not present in the pack is a verification FAILURE.
 
 OUTPUT REQUIREMENTS (same product schema):
 Return a strictly valid JSON Array containing 1 to 2 CareerSuggestion objects with full schema:

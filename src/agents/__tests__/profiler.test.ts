@@ -35,4 +35,14 @@ describe('runProfiler', () => {
     expect(profile.degraded).toBe(true);
     expect(profile.occupationKeywords.length).toBeGreaterThan(0);
   });
+
+  it('degraded fallback keeps Vietnamese role tokens intact', async () => {
+    const deps = fakeDeps('garbage');
+    const profile = await runProfiler(
+      { ...GOLDEN_PROFILES[0].intakeProfile, currentRole: 'Nhân viên hành chính' },
+      deps
+    );
+    expect(profile.degraded).toBe(true);
+    expect(profile.occupationKeywords[0]).toBe('nhân viên hành chính');
+  });
 });

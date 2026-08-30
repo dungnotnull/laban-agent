@@ -44,7 +44,7 @@ CRITICAL: Return pure JSON only, no markdown fences.`;
     throw new Error('profiler schema invalid');
   } catch {
     // Deterministic degradation: derive keywords from the role text itself.
-    const tokens = (intake.currentRole || 'worker').toLowerCase().split(/[^a-z0-9]+/).filter(t => t.length > 2);
+    const tokens = (intake.currentRole || 'worker').toLowerCase().split(/[^a-zà-ỹ0-9]+/u).filter(t => t.length > 2);
     return {
       normalizedSummary: `${intake.currentRole} with ${intake.experienceYears || 0} years of experience in ${intake.location}.`,
       occupationKeywords: [tokens.join(' ') || 'worker', ...tokens.slice(0, 2)],
