@@ -10,6 +10,8 @@ import {
   callGeminiDirect,
   parseGeminiJson
 } from './src/agents/geminiClient';
+import { runCareerPipeline, DEFAULT_CONFIG, CONFIG_PRESETS } from './src/agents/orchestrator';
+import { runBaseline } from './src/agents/baseline';
 import { RESEARCH_LIBRARY } from './src/data/researchLibrary';
 import { GOLDEN_PROFILES } from './src/data/goldenProfiles';
 import { VIETNAM_OCCUPATIONS_DATABASE } from './src/data/vietnamOccupations';
@@ -773,6 +775,55 @@ app.post('/api/email/subscribe', async (req: Request, res: Response) => {
   // await transporter.sendMail({ to: email, subject: "Đăng ký nhắc nhở thành công", text: "..." })
   
   return res.json({ success: true, message: 'Subscribed to email reminders' });
+});
+
+// -------------------------------------------------------------
+// 9.9 AGENTIC PIPELINE + FROZEN BASELINE ENDPOINTS (hackathon)
+// -------------------------------------------------------------
+app.post('/api/agent/career-analyze', async (req: Request, res: Response) => {
+  const intake: UserIntakeProfile = req.body.intakeProfile;
+  if (!intake || !intake.currentRole) {
+    return res.status(400).json({ error: 'Missing intake profile data' });
+  }
+  const configName = typeof req.body.config === 'string' ? req.body.config : undefined;
+  const config = configName && CONFIG_PRESETS[configName]
+    ? CONFIG_PRESETS[configName]
+    : {
+        useTools: req.body.useTools !== false,
+        useVerifier: req.body.useVerifier !== false
+      };
+  try {
+    const result = await runCareerPipeline(intake, config, req.body.personaId);
+    res.json(result);
+  } catch (err: any) {
+    // Honest failure: no mock fallback on the agent path.
+    console.error('Agent pipeline failed:', err?.message || err);
+    res.status(500).json({ error: 'agent_pipeline_failed', message: String(err?.message || err) });
+  }
+});
+
+app.post('/api/eval/baseline', async (req: Request, res: Response) => {
+  const intake: UserIntakeProfile = req.body.intakeProfile;
+  if (!intake || !intake.currentRole) {
+    return res.status(400).json({ error: 'Missing intake profile data' });
+  }
+  try {
+    const result = await runBaseline(intake);
+    res.json({ source: 'eval_baseline', ...result });
+  } catch (err: any) {
+    console.error('Baseline failed:', err?.message || err);
+    res.status(500).json({ error: 'baseline_failed', message: String(err?.message || err) });
+  }
+});
+
+app.get('/api/agent/health', (_req: Request, res: Response) => {
+  res.json({
+    status: 'ok',
+    geminiKeyConfigured: CANDIDATE_KEYS.length > 0,
+    primaryModel: PRIMARY_GEMINI_MODEL,
+    defaultConfig: DEFAULT_CONFIG,
+    configPresets: Object.keys(CONFIG_PRESETS)
+  });
 });
 
 // -------------------------------------------------------------
