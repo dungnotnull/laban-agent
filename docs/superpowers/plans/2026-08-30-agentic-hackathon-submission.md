@@ -2307,7 +2307,7 @@ Expected: 0 errors. (If `UserIntakeProfile` is not in scope under that name, it 
 
 Run in one shell: `cd "D:/laban-submit1" && npm run dev` (wait for `La Bàn Server running on http://0.0.0.0:3000`).
 Then: `curl -s http://localhost:3000/api/agent/health`
-Expected JSON: `"status":"ok","geminiKeyConfigured":true,...` (if `geminiKeyConfigured:false`, create `.env` from `.env.example` with a real key first — needed from Task 15 onward anyway).
+Expected JSON: `"status":"ok","geminiKeyConfigured":true,...` (if `geminiKeyConfigured:false`, create `.env` from `.env.example` with a real key first — needed from Task 16 onward anyway).
 Then stop the server (Ctrl+C).
 
 - [ ] **Step 5: Commit**
@@ -2922,7 +2922,258 @@ cd "D:/laban-submit1" && git add eval/run-eval.ts package.json package-lock.json
 
 ---
 
-### Task 14: UI transparency panel + wiring
+### Task 14: Remove Firebase and switch to local persistence
+
+Rationale: the Firebase project (`gen-lang-client-0410190415`) belongs to the
+author's PREVIOUS project. Its Firestore rules allow public writes
+(`firestore.rules`: `allow read, write: if true`), so demo traffic from judges
+would pollute the previous project's data. The hackathon submission does not
+need any of it: auth becomes guest mode, persistence moves to localStorage.
+
+**Files:**
+- Create: `src/lib/localData.ts`
+- Modify: `src/App.tsx`, `src/components/Navbar.tsx`, `src/components/GlobalPersonaDrawer.tsx`, `src/components/RoadmapModule.tsx`, `package.json`
+- Delete: `src/lib/firebase.ts`, `src/lib/firestoreService.ts`, `src/components/AuthModal.tsx`, `firebase-applet-config.json`, `firestore.rules`
+
+- [ ] **Step 1: Create src/lib/localData.ts**
+
+```typescript
+import type { CareerSuggestion, CommunityPost, EmployerJobListing, UserIntakeProfile } from '../types';
+import type { ComprehensiveCareerAnalysisResult } from '../types/careerAnalysis';
+
+// Local persistence layer (hackathon submission): replaces the removed
+// Firebase/Firestore integration so the app is fully self-contained and
+// never calls external services from the browser.
+
+const ASSESSMENT_PREFIX = 'laban_assessment_';
+const ROADMAP_PREFIX = 'laban_roadmap_';
+
+export function saveAssessmentLocally(
+  userId: string,
+  intakeProfile: UserIntakeProfile,
+  suggestions: CareerSuggestion[],
+  comprehensiveAnalysis?: ComprehensiveCareerAnalysisResult | null
+): boolean {
+  try {
+    localStorage.setItem(
+      ASSESSMENT_PREFIX + userId,
+      JSON.stringify({
+        intakeProfile,
+        suggestions,
+        comprehensiveAnalysis: comprehensiveAnalysis || null,
+        updatedAt: new Date().toISOString()
+      })
+    );
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function getAssessmentLocally(userId: string): {
+  intakeProfile?: UserIntakeProfile;
+  suggestions?: CareerSuggestion[];
+  comprehensiveAnalysis?: ComprehensiveCareerAnalysisResult | null;
+} | null {
+  try {
+    const raw = localStorage.getItem(ASSESSMENT_PREFIX + userId);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+export interface RoadmapState {
+  completedMilestones: Record<string, boolean>;
+  quizSubmitted: Record<string, boolean>;
+  selectedAnswers: Record<string, number>;
+  emailReminderEnabled: boolean;
+}
+
+export function saveRoadmapLocally(userId: string, state: RoadmapState): boolean {
+  try {
+    localStorage.setItem(ROADMAP_PREFIX + userId, JSON.stringify(state));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function getRoadmapLocally(userId: string): RoadmapState | null {
+  try {
+    const raw = localStorage.getItem(ROADMAP_PREFIX + userId);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+export function buildCommunityPost(input: {
+  authorAlias: string;
+  isAnonymous: boolean;
+  userCurrentRole: string;
+  tag: unknown;
+  title: string;
+  content: string;
+}): CommunityPost {
+  return {
+    id: `post-${Date.now()}`,
+    title: input.title,
+    content: input.content,
+    authorAlias: input.authorAlias,
+    isAnonymous: input.isAnonymous,
+    userCurrentRole: input.userCurrentRole,
+    tag: input.tag,
+    likesCount: 0,
+    replies: [],
+    createdAt: new Date().toISOString()
+  } as CommunityPost;
+}
+
+export function buildEmployerListing(data: Record<string, unknown>): EmployerJobListing {
+  return {
+    ...data,
+    id: `listing-${Date.now()}`,
+    postedAt: new Date().toISOString()
+  } as EmployerJobListing;
+}
+```
+
+Note: verify the `CommunityPost` / `EmployerJobListing` required fields against
+`src/types.ts` (CommunityPost interface at types.ts:209) and add any missing
+required fields to the two builders — keep them minimal but type-safe.
+
+- [ ] **Step 2: Rewire src/App.tsx**
+
+1. Imports: delete the `AuthModal` import (line 20), the whole `./lib/firestoreService` import block (lines 46-60), and `import { auth, googleProvider } from './lib/firebase';` + `import { signInWithPopup, signOut, onAuthStateChanged, User } from 'firebase/auth';` (lines 61-62). Add:
+```typescript
+import { saveAssessmentLocally, buildCommunityPost, buildEmployerListing } from './lib/localData';
+```
+2. Delete states: `user`, `isAuthModalOpen`, `isAuthLoading`, `authErrorInfo` (keep `language`, `isDrawerOpen`, etc.). If `AuthErrorInfo` type import disappears with step 1, also remove its type usage.
+3. Delete the entire first `useEffect` block ("1. Initial load from Firestore" — `loadFirestoreData` + `onAuthStateChanged`, lines 141-206). Initial state already comes from the `INITIAL_*` constants, so the app renders identically.
+4. Delete `handleLogin` (lines 208-279) and `handleLogout` (lines 281-288).
+5. In `handleRunComprehensiveAnalysis`, replace (line ~340-341):
+```typescript
+const userId = user?.uid || `user_${(profileToAnalyze.currentRole || 'guest').replace(/\s+/g, '_').toLowerCase()}_${Date.now()}`;
+await saveAssessmentToFirestore(userId, profileToAnalyze, updatedSuggestions, data.analysis || careerAnalysis);
+```
+with:
+```typescript
+const userId = `user_${(profileToAnalyze.currentRole || 'guest').replace(/\s+/g, '_').toLowerCase()}_${Date.now()}`;
+saveAssessmentLocally(userId, profileToAnalyze, updatedSuggestions, data.analysis || careerAnalysis);
+```
+6. Rewrite the four data handlers:
+```typescript
+const handleAddCommunityPost = async (newPostData: {
+  title: string;
+  content: string;
+  isAnonymous: boolean;
+  tag: any;
+}) => {
+  const post = buildCommunityPost({
+    authorAlias: newPostData.isAnonymous
+      ? 'Ẩn danh (Thành viên La Bàn)'
+      : intake.fullName || 'Thành viên',
+    isAnonymous: newPostData.isAnonymous,
+    userCurrentRole: intake.currentRole || 'Đang tìm kiếm hướng đi',
+    tag: newPostData.tag,
+    title: newPostData.title,
+    content: newPostData.content
+  });
+  setCommunityPosts([post, ...communityPosts]);
+};
+
+const handleAddReply = async (postId: string, content: string) => {
+  const author = intake.fullName || 'Thành viên La Bàn';
+  setCommunityPosts(
+    communityPosts.map((p) => {
+      if (p.id === postId) {
+        return {
+          ...p,
+          replies: [
+            ...(p.replies || []),
+            { id: `rep-${Date.now()}`, authorAlias: author, createdAt: new Date().toISOString(), content }
+          ]
+        };
+      }
+      return p;
+    })
+  );
+};
+
+const handleLikeCommunityPost = async (postId: string, delta: number = 1) => {
+  setCommunityPosts(prevPosts =>
+    prevPosts.map(p => (p.id === postId ? { ...p, likesCount: (p.likesCount || 0) + delta } : p))
+  );
+};
+
+const handleAddEmployerListing = async (listingData: any) => {
+  const newListing = buildEmployerListing(listingData);
+  setEmployerListings([newListing, ...employerListings]);
+};
+```
+7. JSX: remove `user`, `isAuthLoading`, `onLogin`, `onLogout`, `onOpenAuthModal` props from `<Navbar ...>` (lines 497-501) and `user`/`onOpenAuthModal` from `<GlobalPersonaDrawer ...>` (lines 529-530). Grep `<AuthModal` and delete that entire JSX block plus any `isAuthModalOpen`-related state usage. Grep `user=` and `user?.` across the file to catch remaining prop passes (e.g. RoadmapModule) and remove them.
+
+- [ ] **Step 3: Simplify Navbar.tsx**
+
+In `src/components/Navbar.tsx`: remove the `User` import from 'firebase/auth', remove the props `user`, `isAuthLoading`, `onLogin`, `onLogout`, `onOpenAuthModal` from the props interface and their JSX (login button / user avatar menu block). Keep brand, tab navigation, language toggle, and golden persona select untouched.
+
+- [ ] **Step 4: Simplify GlobalPersonaDrawer.tsx**
+
+Remove the `User` import, the `user` and `onOpenAuthModal` props, and any "sign in to sync" hint JSX that referenced them. Keep the persona editing drawer fully functional.
+
+- [ ] **Step 5: Rewire RoadmapModule.tsx**
+
+Replace both Firestore effects (lines 47-90) with localStorage using the fixed key `'guest'` (the app no longer has user accounts):
+```typescript
+// Load roadmap progress from local storage
+React.useEffect(() => {
+  const data = getRoadmapLocally('guest');
+  if (data) {
+    if (data.completedMilestones) setCompletedMilestones(data.completedMilestones);
+    if (data.quizSubmitted) setQuizSubmitted(data.quizSubmitted);
+    if (data.selectedAnswers) setSelectedAnswers(data.selectedAnswers);
+    if (data.emailReminderEnabled !== undefined) setEmailReminderEnabled(data.emailReminderEnabled);
+  }
+}, []);
+
+// Persist roadmap progress locally (debounced)
+React.useEffect(() => {
+  const timeoutId = setTimeout(() => {
+    saveRoadmapLocally('guest', {
+      completedMilestones,
+      quizSubmitted,
+      selectedAnswers,
+      emailReminderEnabled
+    });
+  }, 1000);
+  return () => clearTimeout(timeoutId);
+}, [completedMilestones, quizSubmitted, selectedAnswers, emailReminderEnabled]);
+```
+Add `import { getRoadmapLocally, saveRoadmapLocally } from '../lib/localData';`, remove the `user` prop from the component interface (and from its usage in App.tsx), and remove the `isSaving` cloud-sync spinner state if it only existed for Firestore saves.
+
+- [ ] **Step 6: Delete files and dependency**
+
+```bash
+cd "D:/laban-submit1" && git rm src/lib/firebase.ts src/lib/firestoreService.ts src/components/AuthModal.tsx firebase-applet-config.json firestore.rules
+npm uninstall firebase
+```
+
+- [ ] **Step 7: Verify**
+
+Run: `cd "D:/laban-submit1" && npm run lint && npx vitest run`
+Expected: tsc 0 errors, all tests pass. Grep to confirm zero Firebase references remain:
+`grep -ri "firebase\|firestore" src/ server.ts package.json` → only allowed hit: none. (`metadata.json` untouched — it does not reference Firebase.)
+
+- [ ] **Step 8: Commit**
+
+```bash
+cd "D:/laban-submit1" && git add -A && git commit -m "Remove Firebase integration; local persistence keeps app self-contained"
+```
+
+---
+
+### Task 15: UI transparency panel + wiring
 
 **Files:**
 - Create: `src/components/AgentTransparencyPanel.tsx`
@@ -3031,7 +3282,7 @@ cd "D:/laban-submit1" && git add src/components/AgentTransparencyPanel.tsx src/A
 
 ---
 
-### Task 15: Run the real evaluation
+### Task 16: Run the real evaluation
 
 Prerequisite: `.env` at repo root with a working `GEMINI_API_KEY` (user confirmed available).
 
@@ -3060,7 +3311,7 @@ cd "D:/laban-submit1" && git add eval/results eval/trajectories && git commit -m
 
 ---
 
-### Task 16: Deliverable documents (English)
+### Task 17: Deliverable documents (English)
 
 All docs cite ONLY numbers that exist in `eval/results/runs/<stamp>/summary.json` and `EVALUATION.md`. Replace every `[[...]]` token with the real value; at the end, `grep -r '\[\[' docs README.md` must return nothing.
 
@@ -3111,6 +3362,9 @@ modules, and the frozen baseline prompt.
 - `eval/` — 12 personas (incl. 1 challenging case), automatic scoring,
   HTTP-driven runner, published results
 - Agent transparency panel in the UI
+- Removed Firebase (Google auth + Firestore persistence, which pointed at the
+  author's earlier project) and replaced persistence with localStorage so the
+  submission is fully self-contained
 - This README, the changelog, reproduction guide, evaluation report,
   trajectories, and video script
 
@@ -3333,7 +3587,7 @@ cd "D:/laban-submit1" && git add README.md docs/ && git commit -m "Add competiti
 
 ---
 
-### Task 17: Final verification
+### Task 18: Final verification
 
 - [ ] **Step 1: Full test suite**
 
@@ -3371,7 +3625,8 @@ cd "D:/laban-submit1" && git add -A && git commit -m "Final verification pass fo
 
 ## Self-Review Notes (completed during planning)
 
-- Spec coverage: pipeline agents (Tasks 7-10), tools (Task 4), verifier checks (Tasks 3, 5, 9), frozen baseline (Task 6), endpoints (Task 11), 12 personas + challenging case + 5 metrics + 3 configs (Tasks 12-13), transparency panel (Task 14), real eval (Task 15), all six deliverable docs (Task 16), rule-02 disclosure in README, tests + lint + server checks (Task 17).
+- Spec coverage: pipeline agents (Tasks 7-10), tools (Task 4), verifier checks (Tasks 3, 5, 9), frozen baseline (Task 6), endpoints (Task 11), 12 personas + challenging case + 5 metrics + 3 configs (Tasks 12-13), Firebase removal + local persistence (Task 14), transparency panel (Task 15), real eval (Task 16), all six deliverable docs (Task 17), rule-02 disclosure in README, tests + lint + server checks (Task 18).
 - Type consistency: `runVerifier(intake, suggestions, deps)` (no recorder — orchestrator wraps deps for logging); `runEvidenceGatherer(profile, rec, deps)` logs its own events; `runCareerPipeline(intake, config, personaId?, deps?)`.
 - Known simplifications (documented, not placeholders): grounding aggregation is the mean of per-persona rates; trajectories stored as one JSON file per run.
+- Firebase removal is a user-requested change (isolate from their previous project): deletion task precedes UI wiring because both touch App.tsx.
 
