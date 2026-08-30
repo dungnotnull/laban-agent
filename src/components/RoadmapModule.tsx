@@ -19,17 +19,16 @@ import {
 import { CareerSuggestion, Language, RoadmapMilestone } from '../types';
 import { downloadMilestoneCalendarICS } from '../utils/exportUtils';
 import { t } from '../utils/i18n';
+import { getRoadmapLocally, saveRoadmapLocally } from '../lib/localData';
 
 interface RoadmapModuleProps {
   currentSuggestion?: CareerSuggestion;
   language: Language;
-  user?: any;
 }
 
 export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
   currentSuggestion,
-  language,
-  user
+  language
 }) => {
   const [completedMilestones, setCompletedMilestones] = useState<Record<string, boolean>>({});
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
@@ -41,77 +40,37 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
   });
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [emailReminderEnabled, setEmailReminderEnabled] = useState(false);
-  const [isSaving, setIsSaving] = useState(false);
 
-  // Sync Roadmap State to Firestore when user changes
+  // Load roadmap progress from local storage
   React.useEffect(() => {
-    async function loadUserRoadmap() {
-      if (!user) return;
-      try {
-        const { getUserRoadmap } = await import('../lib/firestoreService');
-        const data = await getUserRoadmap(user.uid);
-        if (data) {
-          if (data.completedMilestones) setCompletedMilestones(data.completedMilestones);
-          if (data.quizSubmitted) setQuizSubmitted(data.quizSubmitted);
-          if (data.selectedAnswers) setSelectedAnswers(data.selectedAnswers);
-          if (data.emailReminderEnabled !== undefined) setEmailReminderEnabled(data.emailReminderEnabled);
-        }
-      } catch (err) {
-        console.warn('Failed to load roadmap', err);
-      }
+    const data = getRoadmapLocally('guest');
+    if (data) {
+      if (data.completedMilestones) setCompletedMilestones(data.completedMilestones);
+      if (data.quizSubmitted) setQuizSubmitted(data.quizSubmitted);
+      if (data.selectedAnswers) setSelectedAnswers(data.selectedAnswers);
+      if (data.emailReminderEnabled !== undefined) setEmailReminderEnabled(data.emailReminderEnabled);
     }
-    loadUserRoadmap();
-  }, [user]);
+  }, []);
 
-  // Save Roadmap State to Firestore automatically
+  // Persist roadmap progress locally (debounced)
   React.useEffect(() => {
-    if (!user) return;
-    const saveState = async () => {
-      setIsSaving(true);
-      try {
-        const { saveUserRoadmap } = await import('../lib/firestoreService');
-        await saveUserRoadmap(user.uid, {
-          completedMilestones,
-          quizSubmitted,
-          selectedAnswers,
-          emailReminderEnabled
-        });
-      } catch (err) {
-        console.warn('Failed to save roadmap', err);
-      } finally {
-        setIsSaving(false);
-      }
-    };
-    
-    // Simple debounce
     const timeoutId = setTimeout(() => {
-      saveState();
+      saveRoadmapLocally('guest', {
+        completedMilestones,
+        quizSubmitted,
+        selectedAnswers,
+        emailReminderEnabled
+      });
     }, 1000);
     return () => clearTimeout(timeoutId);
-  }, [user, completedMilestones, quizSubmitted, selectedAnswers, emailReminderEnabled]);
+  }, [completedMilestones, quizSubmitted, selectedAnswers, emailReminderEnabled]);
 
   const handleToggleEmailReminder = async () => {
-    if (!user) {
-      triggerToast(language === 'vi' ? 'Vui lòng đăng nhập Google ở góc trên cùng để sử dụng tính năng này.' : 'Please login with Google to use this feature.');
-      return;
-    }
-    
     const nextState = !emailReminderEnabled;
     setEmailReminderEnabled(nextState);
-    
+
     if (nextState) {
-      try {
-        triggerToast(language === 'vi' ? 'Đang đăng ký nhận nhắc nhở...' : 'Subscribing to reminders...');
-        await fetch('/api/email/subscribe', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: user.email, name: user.displayName })
-        });
-        triggerToast(language === 'vi' ? 'Đã bật nhắc nhở qua Email thành công!' : 'Successfully subscribed to email reminders!');
-      } catch (error) {
-        triggerToast('Failed to subscribe.');
-        setEmailReminderEnabled(false);
-      }
+      triggerToast(language === 'vi' ? 'Đã bật nhắc nhở qua Email (giả lập)' : 'Email reminders enabled (simulated)');
     } else {
       triggerToast(language === 'vi' ? 'Đã tắt nhắc nhở Email.' : 'Email reminders disabled.');
     }
@@ -291,12 +250,7 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
 
         {/* Progress Tracker Bar */}
         {roadmap.length > 0 && (
-          <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-wrap items-center justify-between gap-4 relative">
-            {isSaving && (
-              <span className="absolute top-2 right-4 text-[10px] text-slate-400 italic flex items-center gap-1">
-                <Sparkles className="w-3 h-3 animate-spin" /> Saving...
-              </span>
-            )}
+          <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
               <Award className="w-5 h-5 text-amber-600" />
               <div>

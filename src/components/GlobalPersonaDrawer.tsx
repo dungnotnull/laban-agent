@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { UserIntakeProfile, Language } from '../types';
-import { User as UserIcon, X, Save, Database, ShieldCheck } from 'lucide-react';
+import { User as UserIcon, X, Save, Database } from 'lucide-react';
 import { IntakeForm } from './IntakeForm';
 import { t } from '../utils/i18n';
-import { User } from 'firebase/auth';
 
 interface GlobalPersonaDrawerProps {
   intake: UserIntakeProfile;
@@ -11,8 +10,6 @@ interface GlobalPersonaDrawerProps {
   language: Language;
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
-  user?: User | null;
-  onOpenAuthModal?: () => void;
 }
 
 export function GlobalPersonaDrawer({
@@ -20,9 +17,7 @@ export function GlobalPersonaDrawer({
   setIntake,
   language,
   isOpen,
-  setIsOpen,
-  user,
-  onOpenAuthModal
+  setIsOpen
 }: GlobalPersonaDrawerProps) {
 
   return (
@@ -59,20 +54,10 @@ export function GlobalPersonaDrawer({
                 {t(language, 'Hồ sơ Persona Xuyên Suốt', 'Global Persona Profile')}
               </h2>
               <div className="flex items-center gap-1.5 text-xs text-amber-100 mt-0.5">
-                {user ? (
-                  <span className="flex items-center gap-1 font-medium">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-300" />
-                    {user.displayName || user.email} (Đã đồng bộ Cloud)
-                  </span>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={onOpenAuthModal}
-                    className="underline text-white hover:text-amber-100 cursor-pointer"
-                  >
-                    ⚡ Đăng nhập Google để đồng bộ tự động
-                  </button>
-                )}
+                <span className="flex items-center gap-1 font-medium">
+                  <Database className="w-3.5 h-3.5 text-emerald-300" />
+                  {t(language, 'Lưu trữ nội bộ (Local Storage)', 'Local Storage')}
+                </span>
               </div>
             </div>
           </div>

@@ -444,7 +444,7 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({
         {/* Submit Button */}
         <div className="pt-3 flex items-center justify-between border-t border-slate-100">
           <span className="text-[11px] text-slate-400">
-            {t(language, '* 100% dữ liệu được lưu trên Firebase Firestore & đối soát chuẩn O*NET 28.1.', '* 100% data saved on Firebase Firestore & cross-checked with O*NET 28.1 standards.')}
+            {t(language, '* 100% dữ liệu được lưu nội bộ (Local Storage) & đối soát chuẩn O*NET 28.1.', '* 100% data saved locally (Local Storage) & cross-checked with O*NET 28.1 standards.')}
           </span>
 
           <button
