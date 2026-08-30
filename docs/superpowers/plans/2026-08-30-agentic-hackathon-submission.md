@@ -991,7 +991,7 @@ cd "D:/laban-submit1" && git add src/agents/checks.ts src/agents/__tests__/check
 
 ### Task 6: Frozen baseline module
 
-Verbatim copy of the legacy single-shot prompt logic from `server.ts` `/api/gemini/career-suggest` (lines 258-315 as of the pre-existing snapshot, commit `80a3add`). The legacy endpoint itself stays untouched. The copy is INTENTIONAL: the baseline must be frozen exactly as the platform worked before the agent work.
+Verbatim copy of the legacy single-shot prompt logic from `server.ts` `/api/gemini/career-suggest` (lines 258-315 as of the pre-existing snapshot, commit `4c5ac25`). The legacy endpoint itself stays untouched. The copy is INTENTIONAL: the baseline must be frozen exactly as the platform worked before the agent work.
 
 **Files:**
 - Create: `src/agents/baseline.ts`
@@ -1041,7 +1041,7 @@ import type { CareerSuggestion, UserIntakeProfile } from '../types';
 import { callGeminiRich, parseGeminiJson, type LlmResult } from './geminiClient';
 
 // FROZEN BASELINE: verbatim copy of the legacy single-shot prompt from
-// POST /api/gemini/career-suggest (pre-existing snapshot, commit 80a3add).
+// POST /api/gemini/career-suggest (pre-existing snapshot, commit 4c5ac25).
 // Do not "improve" this prompt: it must stay exactly as the platform worked
 // before the agentic pipeline existed, so the comparison stays fair.
 
@@ -3350,12 +3350,12 @@ disqualifying.
 
 ## What existed before vs. what this competition added
 
-**Pre-existing (commit 80a3add, built earlier for #BuildwithGoogleAI):** the
+**Pre-existing (commit 4c5ac25, built earlier for #BuildwithGoogleAI):** the
 React platform, curated data (research library, Vietnam occupation database,
 golden personas), the single-shot Gemini endpoints, community/employer/news
 modules, and the frozen baseline prompt.
 
-**Added during this hackathon (all commits after 80a3add):**
+**Added during this hackathon (all commits after 4c5ac25):**
 - `src/agents/` — the 4-agent pipeline: Profiler → Evidence Gatherer
   (Gemini function-calling over 3 deterministic tools) → Analyst → Verifier
   with a repair loop (max 2 retries)

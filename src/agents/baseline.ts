@@ -3,7 +3,7 @@ import type { CareerSuggestion, UserIntakeProfile } from '../types';
 import { callGeminiRich, parseGeminiJson, type LlmResult } from './geminiClient';
 
 // FROZEN BASELINE: verbatim copy of the legacy single-shot prompt from
-// POST /api/gemini/career-suggest (pre-existing snapshot, commit 80a3add).
+// POST /api/gemini/career-suggest (pre-existing snapshot, commit 4c5ac25).
 // Do not "improve" this prompt: it must stay exactly as the platform worked
 // before the agentic pipeline existed, so the comparison stays fair.
 

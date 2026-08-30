@@ -22,12 +22,12 @@ life-altering career decisions, unverifiable evidence is disqualifying.
 
 ## What existed before vs. what this competition added
 
-**Pre-existing (commit 80a3add, built earlier for #BuildwithGoogleAI):** the
+**Pre-existing (commit 4c5ac25, built earlier for #BuildwithGoogleAI):** the
 React platform, curated data (research library, Vietnam occupation database,
 golden personas), the single-shot Gemini endpoints, community/employer/news
 modules, and the frozen baseline prompt.
 
-**Added during this hackathon (all commits after 80a3add):**
+**Added during this hackathon (all commits after 4c5ac25):**
 - `src/agents/` — the 4-agent pipeline: Profiler → Evidence Gatherer
   (Gemini function-calling over 3 deterministic tools) → Analyst → Verifier
   with a repair loop (max 2 retries, plus parse-error recovery)
