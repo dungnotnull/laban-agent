@@ -6,3 +6,6 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Competition rules document (do not publish)
+micro1 - First Hackathon97ce7c5.pdf
