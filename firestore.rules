@@ -1,0 +1,9 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Public read and write for app prototype collections with timestamps
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}
