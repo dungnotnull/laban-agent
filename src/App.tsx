@@ -10,6 +10,7 @@ import { AIResilienceMatrix } from './components/AIResilienceMatrix';
 import { TrajectorySimulator } from './components/TrajectorySimulator';
 import { RoadmapModule } from './components/RoadmapModule';
 import { ResearchLibraryView } from './components/ResearchLibraryView';
+import AgentTransparencyPanel from './components/AgentTransparencyPanel';
 import { JobSecurityNewsView } from './components/JobSecurityNewsView';
 import { JobRadarView } from './components/JobRadarView';
 import { CommunityModule } from './components/CommunityModule';
@@ -43,6 +44,7 @@ import {
 import { ComprehensiveCareerAnalysisResult } from './types/careerAnalysis';
 import { saveAssessmentLocally, buildCommunityPost, buildEmployerListing } from './lib/localData';
 import { Compass, Sparkles, Shield, Heart, ArrowUp, Database, ArrowRight } from 'lucide-react';
+import type { Trajectory } from './agents/trajectory';
 
 export default function App() {
   // Navigation & Localization
@@ -86,6 +88,7 @@ export default function App() {
   // Suggestions state
   const [suggestions, setSuggestions] = useState<CareerSuggestion[]>(GOLDEN_PROFILES[0].suggestions);
   const [selectedSuggestion, setSelectedSuggestion] = useState<CareerSuggestion>(GOLDEN_PROFILES[0].suggestions[0]);
+  const [agentTrajectory, setAgentTrajectory] = useState<Trajectory | null>(null);
 
   // Feeds & Community Data (local state + mock data)
   const [newsList, setNewsList] = useState<JobSecurityNewsItem[]>(INITIAL_NEWS_ITEMS);
@@ -150,7 +153,7 @@ export default function App() {
       }
 
       // Also trigger traditional suggestions for trajectory tabs
-      const suggestRes = await fetch('/api/gemini/career-suggest', {
+      const suggestRes = await fetch('/api/agent/career-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ intakeProfile: profileToAnalyze })
@@ -162,6 +165,7 @@ export default function App() {
         setSelectedSuggestion(suggestData.suggestions[0]);
         updatedSuggestions = suggestData.suggestions;
       }
+      if (suggestData.trajectory) setAgentTrajectory(suggestData.trajectory);
 
       // Save user assessment & analysis to local storage
       const userId = `user_${(profileToAnalyze.currentRole || 'guest').replace(/\s+/g, '_').toLowerCase()}_${Date.now()}`;
@@ -188,11 +192,11 @@ export default function App() {
     // 1. Update intake role
     const updatedIntake = { ...intake, currentRole: careerTitleVi };
     setIntake(updatedIntake);
-    
+
     // 2. Fetch new deep dive data for this specific career
     setIsAiLoading(true);
     try {
-      const suggestRes = await fetch('/api/gemini/career-suggest', {
+      const suggestRes = await fetch('/api/agent/career-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ intakeProfile: updatedIntake })
@@ -202,6 +206,7 @@ export default function App() {
         setSuggestions(suggestData.suggestions);
         setSelectedSuggestion(suggestData.suggestions[0]);
       }
+      if (suggestData.trajectory) setAgentTrajectory(suggestData.trajectory);
     } catch (err) {
       console.warn('Failed to fetch deep dive data for', careerTitleVi, err);
     } finally {
@@ -348,6 +353,9 @@ export default function App() {
                 onSelectCareerForDeepDive={handleSelectCareerForDeepDive}
               />
             </div>
+
+            {/* Agent Pipeline Transparency Panel */}
+            <AgentTransparencyPanel trajectory={agentTrajectory} />
 
             {/* Google Integrations: Sheets Export, Google Calendar Sync, Google Maps Hubs */}
             <GoogleIntegrationsSection
