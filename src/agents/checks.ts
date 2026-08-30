@@ -12,8 +12,22 @@ const FORBIDDEN_PHRASES = [
   'quit your job now',
   'resign now',
   'must quit your job',
-  'should quit your job'
+  'should quit your job',
+  'hãy nghỉ việc',
+  'hãy từ chức',
+  'cần phải nghỉ việc',
+  'you should quit',
+  'you need to quit',
+  'must resign'
 ];
+
+const NEGATION_TOKENS = ['không', 'chưa', 'đừng', 'not', 'never'];
+
+function isNegated(text: string, index: number): boolean {
+  // Look at up to 14 characters before the match for a negation token.
+  const window = text.slice(Math.max(0, index - 14), index);
+  return NEGATION_TOKENS.some(token => window.includes(token));
+}
 
 function inRange(value: unknown): boolean {
   return typeof value === 'number' && value >= 0 && value <= 100;
@@ -64,8 +78,15 @@ export function scanGuardrails(suggestions: any[]): string[] {
   suggestions.forEach((sug, i) => {
     const text = collectText(sug);
     for (const phrase of FORBIDDEN_PHRASES) {
-      if (text.includes(phrase)) {
-        violations.push(`suggestion[${i}]: guardrail violation - contains "${phrase}" (guidance must stay probabilistic, never direct the user to quit)`);
+      let from = 0;
+      for (;;) {
+        const idx = text.indexOf(phrase, from);
+        if (idx === -1) break;
+        if (!isNegated(text, idx)) {
+          violations.push(`suggestion[${i}]: guardrail violation - contains "${phrase}" (guidance must stay probabilistic, never direct the user to quit)`);
+          break;
+        }
+        from = idx + phrase.length;
       }
     }
   });

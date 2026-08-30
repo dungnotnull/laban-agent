@@ -70,4 +70,14 @@ describe('scanGuardrails', () => {
     }];
     expect(scanGuardrails(bad).length).toBeGreaterThan(0);
   });
+
+  it('accepts negated advisory (không nên nghỉ việc ngay)', () => {
+    const good = [{ ...VALID_SUGGESTION, reasoning: 'Trong giai đoạn này, bạn không nên nghỉ việc ngay mà hãy tích lũy kỹ năng thêm 6 tháng.' }];
+    expect(scanGuardrails(good)).toEqual([]);
+  });
+
+  it('flags a new variant phrase (you should quit)', () => {
+    const bad = [{ ...VALID_SUGGESTION, whyItFitsYou: 'Honestly, you should quit and start fresh.' }];
+    expect(scanGuardrails(bad).length).toBeGreaterThan(0);
+  });
 });
