@@ -4,7 +4,12 @@ import path from 'path';
 
 dotenv.config();
 import { createServer as createViteServer } from 'vite';
-import { GoogleGenAI, Type } from '@google/genai';
+import {
+  CANDIDATE_KEYS,
+  PRIMARY_GEMINI_MODEL,
+  callGeminiDirect,
+  parseGeminiJson
+} from './src/agents/geminiClient';
 import { RESEARCH_LIBRARY } from './src/data/researchLibrary';
 import { GOLDEN_PROFILES } from './src/data/goldenProfiles';
 import { VIETNAM_OCCUPATIONS_DATABASE } from './src/data/vietnamOccupations';
@@ -36,15 +41,6 @@ const newsItemsCache: JobSecurityNewsItem[] = [...INITIAL_NEWS_ITEMS];
 // Two-tier LRU Response Cache for deterministic demo resilience
 const aiResponseCache = new Map<string, any>();
 let macroResponseCache: { timestamp: number, data: any } | null = null;
-
-const CANDIDATE_KEYS = [
-  process.env.GEMINI_API_KEY,
-  process.env.API_KEY,
-  process.env.GEMINI_API_KEY_FALLBACK
-].filter(Boolean) as string[];
-
-const PRIMARY_GEMINI_MODEL = 'gemini-3.7-flash';
-const FALLBACK_MODELS = ['gemini-3.5-flash-lite', 'gemini-3.1-flash-lite', 'gemini-flash-latest'];
 
 const DEFAULT_MACRO_DATA = {
   swot: {
@@ -104,82 +100,6 @@ function generateFallbackChatReply(message: string, context?: any): string {
     return 'Để xây dựng lộ trình nâng cấp kỹ năng bền vững: Bước 1: Đánh giá kỹ năng lõi hiện có (nghiệp vụ ngành, giao tiếp, khả năng giải quyết vấn đề). Bước 2: Ứng dụng AI tăng năng suất cá nhân (luyện Prompt Engineering chuyên sâu, tạo bot hỗ trợ công việc hằng ngày). Bước 3: Đảm nhận vai trò thẩm định chất lượng và tối ưu hóa quy trình làm việc của phòng ban.';
   }
   return `Chào bạn! Tôi là La Bàn AI Assistant. Trong bối cảnh trí tuệ nhân tạo tái định hình thị trường việc làm, nguyên tắc quan trọng nhất là "AI không thay thế con người, nhưng người làm chủ AI sẽ vượt trội so với người làm việc theo lối mòn truyền thống". Bạn có thể chia sẻ vị trí hiện tại hoặc mục tiêu nghề nghiệp để tôi hỗ trợ tư vấn chi tiết và khoa học nhất nhé!`;
-}
-
-/**
- * Directly calls Gemini model using prioritized working key and model suite
- */
-async function callGeminiDirect(prompt: string, systemInstruction?: string, tools?: any[]): Promise<string> {
-  let lastError: any = null;
-
-  if (CANDIDATE_KEYS.length === 0) {
-    throw new Error('No Gemini API key configured in environment');
-  }
-
-  for (const apiKey of CANDIDATE_KEYS) {
-    try {
-      const ai = new GoogleGenAI({
-        apiKey,
-        httpOptions: {
-          headers: {
-            'User-Agent': 'aistudio-build'
-          }
-        }
-      });
-      const modelsToTry = [PRIMARY_GEMINI_MODEL, ...FALLBACK_MODELS];
-
-      for (const model of modelsToTry) {
-        try {
-          const response = await ai.models.generateContent({
-            model,
-            contents: prompt,
-            config: {
-              responseMimeType: tools ? undefined : 'application/json',
-              temperature: 0.2,
-              systemInstruction,
-              tools
-            }
-          });
-
-          if (response && response.text) {
-            return response.text;
-          }
-        } catch (err: any) {
-          lastError = err;
-          const errMsg = (err?.message || '').toLowerCase();
-          // If error is 403 / denied for this key, break inner loop to try next key immediately
-          if (errMsg.includes('denied') || errMsg.includes('403') || errMsg.includes('permission_denied')) {
-            break;
-          }
-        }
-      }
-    } catch (outerErr: any) {
-      lastError = outerErr;
-    }
-  }
-
-  throw lastError || new Error('All Gemini model invocations failed');
-}
-
-function parseGeminiJson<T = any>(rawText: string): T {
-  let cleaned = rawText.trim();
-  cleaned = cleaned.replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
-
-  try {
-    return JSON.parse(cleaned);
-  } catch (e) {
-    const firstBracket = cleaned.indexOf('[');
-    const lastBracket = cleaned.lastIndexOf(']');
-    if (firstBracket !== -1 && lastBracket !== -1 && lastBracket > firstBracket) {
-      return JSON.parse(cleaned.slice(firstBracket, lastBracket + 1));
-    }
-    const firstBrace = cleaned.indexOf('{');
-    const lastBrace = cleaned.lastIndexOf('}');
-    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
-      return JSON.parse(cleaned.slice(firstBrace, lastBrace + 1));
-    }
-    throw e;
-  }
 }
 
 // -------------------------------------------------------------
