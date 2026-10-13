@@ -143,7 +143,7 @@ export const JobRadarView: React.FC<JobRadarViewProps> = ({ jobs = [], language 
               </div>
 
               <p className="text-xs text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-200 leading-relaxed">
-                {job.summary}
+                {language === 'en' && job.summaryEn ? job.summaryEn : job.summary}
               </p>
 
               <div>

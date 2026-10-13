@@ -57,7 +57,8 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
     return null;
   }
 
-  const roleName = overview.currentRole || intake.currentRole || (language === 'vi' ? 'Nghề nghiệp của bạn' : 'Your Career');
+  const roleName = (language === 'en' && overview.currentRoleEn) ? overview.currentRoleEn
+    : overview.currentRole || intake.currentRole || (language === 'vi' ? 'Nghề nghiệp của bạn' : 'Your Career');
   const deltaResilience = overview.future5YResilienceScore - overview.currentResilienceScore;
   const deltaDemand = overview.future5YLaborDemandIndex - overview.currentLaborDemandIndex;
   const deltaRisk = overview.future5YRiskScore - overview.currentRiskScore;

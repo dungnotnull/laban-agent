@@ -48,6 +48,7 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
     title: 'Bộ Thông tin & Truyền thông cùng Bộ LĐ-TB&XH: Đẩy mạnh chương trình Phổ cập kỹ năng AI Quốc gia',
     titleEn: 'Ministry of Information & Communications and MOLISA: Accelerating the National AI Literacy Program',
     source: 'Cổng thông tin Chính phủ / Bộ LĐ-TB&XH',
+    sourceEn: 'Vietnam Government Portal / MOLISA',
     publishDate: '2026-02-25',
     url: 'https://molisa.gov.vn/',
     summaryVi: 'Việt Nam thúc đẩy các khung đào tạo kỹ năng số và AI ứng dụng cho người lao động trẻ và sinh viên đại học, hướng tới mục tiêu xây dựng 100.000 chuyên gia kỹ thuật số chất lượng cao trong kỷ nguyên công nghiệp thông minh.',
@@ -69,6 +70,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Midjourney / ComfyUI pipeline', 'Figma Design System', 'Art Direction', 'Game UI/UX'],
     summary: 'Dẫn dắt đội ngũ thiết kế thị giác, ứng dụng Generative AI để tăng tốc quy trình sản xuất asset game và xây dựng brand narrative đẳng cấp quốc tế.',
+    summaryEn: 'Lead the visual design team, apply Generative AI to accelerate game asset production, and build world-class brand narratives.',
     applyUrl: 'https://career.vng.com.vn',
     postedDate: '2026-02-18',
     sourceTag: 'TopCV / Verified'
@@ -82,6 +84,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Playwright', 'TypeScript / Python', 'Ragas LLM Benchmark', 'CI/CD GitHub Actions'],
     summary: 'Thiết lập quy trình kiểm thử tự động cho hệ thống RAG enterprise của khách hàng Nhật Bản và Bắc Mỹ; đo lường độ chính xác và an toàn mô hình AI.',
+    summaryEn: 'Set up automated testing pipelines for enterprise RAG systems serving Japanese and North American clients; measure AI model accuracy and safety.',
     applyUrl: 'https://fptsoftware.com/careers',
     postedDate: '2026-02-22',
     sourceTag: 'VietnamWorks / Direct'
@@ -95,6 +98,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Make / n8n Automation', 'Gemini API', 'Google Sheets / SQL', 'English Fluent'],
     summary: 'Tối ưu hóa luồng vận hành bán hàng, tự động hóa phân tích sentiment đánh giá của khách hàng và trích xuất dữ liệu đối thủ cạnh tranh.',
+    summaryEn: 'Optimize sales operations workflows, automate customer-review sentiment analysis, and extract competitor intelligence data.',
     applyUrl: 'https://tiki.vn/careers',
     postedDate: '2026-02-24',
     sourceTag: 'TopCV / Hot'
@@ -108,6 +112,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Content Architecture', 'Gemini/Claude Prompts', 'Video Scripting', 'SEO Semantics'],
     summary: 'Định hướng chiến lược nội dung giáo dục số, điều phối các công cụ AI để sản xuất chuỗi bài giảng và tài liệu học tập cá nhân hóa.',
+    summaryEn: 'Set digital education content strategy and orchestrate AI tools to produce lesson series and personalized learning materials.',
     applyUrl: 'https://mindx.edu.vn/careers',
     postedDate: '2026-02-20',
     sourceTag: 'VietnamWorks'
@@ -121,6 +126,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['SQL & BigQuery', 'Python Analytics', 'AI Copilot Integration', 'Financial Modeling'],
     summary: 'Xây dựng các mô hình dự báo hành vi thanh toán người dùng, tích hợp các thuật toán học máy phân tích rủi ro gian lận giao dịch.',
+    summaryEn: 'Build user payment-behavior forecasting models and integrate machine-learning algorithms for transaction fraud risk analysis.',
     applyUrl: 'https://momo.vn/tuyen-dung',
     postedDate: '2026-02-25',
     sourceTag: 'Direct Employer'
@@ -134,6 +140,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Figma AI Plugins', 'Prompt Architecture', 'Design System Automation', 'User Research'],
     summary: 'Thiết kế giao diện và trải nghiệm đàm thoại thế hệ mới cho các sản phẩm tích hợp Trợ lý ảo AI phục vụ hàng chục triệu người dùng Việt Nam.',
+    summaryEn: 'Design next-generation conversational interfaces and experiences for AI assistant products serving tens of millions of Vietnamese users.',
     applyUrl: 'https://careers.vng.com.vn',
     postedDate: '2026-02-26',
     sourceTag: 'VietnamWorks / Hot'
@@ -147,6 +154,7 @@ export const INITIAL_JOB_POSTINGS: JobPostingItem[] = [
     isAiAugmented: true,
     requiredSkills: ['Playwright', 'AI Test Script Generation', 'CI/CD Pipeline', 'API Testing'],
     summary: 'Áp dụng các công cụ LLM tự động hóa sinh test case và kịch bản regression test cho các dự án phần mềm xuất khẩu thị trường Nhật Bản & Mỹ.',
+    summaryEn: 'Apply LLM tooling to auto-generate test cases and regression scenarios for software projects exported to the Japanese and US markets.',
     applyUrl: 'https://enclave.vn/careers',
     postedDate: '2026-02-26',
     sourceTag: 'TopDev'
@@ -157,6 +165,7 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
   {
     id: 'post-1',
     authorAlias: 'Ẩn danh (Designer 3 năm kinh nghiệm)',
+    authorAliasEn: 'Anonymous (Designer with 3 years of experience)',
     isAnonymous: true,
     userCurrentRole: '2D Graphic Designer',
     locationName: 'Quận 1, TP. Hồ Chí Minh',
@@ -171,21 +180,27 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-23T14:30:00Z',
     tag: 'fear_of_displacement',
     title: 'Có ai ở đây từng cảm thấy bất an khi khách hàng dùng Canva/Midjourney tự làm ảnh không?',
+    titleEn: 'Has anyone here felt anxious seeing clients make their own images with Canva/Midjourney?',
     content: 'Dạo này mình thấy nhiều khách hàng quen không còn order banner hay vẽ illustration như trước nữa. Họ bảo chỉ cần nhập text là AI vẽ xong trong 30 giây. Nhiều đêm mình mất ngủ vì không biết nếu tiếp tục thế này thì 1-2 năm nữa thu nhập sẽ ra sao. Mình muốn học chuyển hướng nhưng chưa biết bắt đầu từ đâu để không bị bỏ lại phía sau...',
+    contentEn: 'Lately I have noticed many regular clients no longer order banners or illustrations like before. They say they just type a prompt and the AI finishes the image in 30 seconds. I have lost many sleepless nights wondering what my income will look like in 1-2 years if this continues. I want to learn a new direction but do not know where to start so I am not left behind...',
     likesCount: 38,
     replies: [
       {
         id: 'rep-1-1',
         authorAlias: 'Lê Minh Thảo (Đã chuyển đổi thành công)',
+        authorAliasEn: 'Le Minh Thao (Successfully transitioned)',
         createdAt: '2026-02-23T16:15:00Z',
         content: 'Chào bạn, mình từng ở đúng tâm trạng này cách đây 8 tháng! Bí quyết của mình là đừng xem AI là đối thủ mà biến nó thành trợ lý cấp tốc. Hãy học thêm về Brand Narrative và tư duy Design System trong Figma. Khách hàng có thể tự tạo ảnh nhưng họ KHÔNG BIẾT phối hợp hình ảnh đó vào chiến lược kinh doanh tổng thể thế nào. Đó chính là giá trị con người độc bản của bạn!',
+        contentEn: 'Hi there, I was in exactly this state of mind 8 months ago! My secret is to stop seeing AI as an opponent and turn it into a fast assistant. Learn more about Brand Narrative and Design System thinking in Figma. Clients can generate images themselves, but they DO NOT KNOW how to weave those visuals into an overall business strategy. That is your unique human value!',
         isVerifiedTransition: true
       },
       {
         id: 'rep-1-2',
         authorAlias: 'Trợ lý Định hướng La Bàn (Hệ thống)',
+        authorAliasEn: 'La Ban Compass Assistant (System)',
         createdAt: '2026-02-23T16:16:00Z',
         content: '🌟 Lời nhắn từ La Bàn: Nỗi sợ là phản xạ rất tự nhiên trước sự dịch chuyển công nghệ. Nghiên cứu của OpenAI và Stanford chỉ ra rằng 71% tác vụ thủ công bị ảnh hưởng, nhưng nhu cầu Giám đốc Mỹ thuật định hướng AI lại tăng trưởng 68%. Bạn hoàn toàn có thể chạy giả lập 3 lộ trình chuyển đổi miễn phí trên La Bàn để có bản đồ kỹ năng cụ thể cho riêng mình nhé!',
+        contentEn: '🌟 A message from La Ban: Fear is a very natural reflex to technological shifts. OpenAI and Stanford research shows 71% of manual tasks are affected, yet demand for AI-directed Art Directors is growing 68%. You can run the free 3-path transition simulation on La Ban to get a concrete skill map of your own!',
         isAiSupportive: true
       }
     ]
@@ -193,6 +208,7 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
   {
     id: 'post-2',
     authorAlias: 'Tuấn Kiệt',
+    authorAliasEn: 'Tuan Kiet',
     isAnonymous: false,
     userCurrentRole: 'Ex-Manual QA -> Automation & LLM Eval',
     locationName: 'Hải Châu, Đà Nẵng',
@@ -207,20 +223,26 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-20T09:20:00Z',
     tag: 'success_story',
     title: 'Chia sẻ hành trình 4 tháng từ Manual Tester lương 11 triệu lên Automation QA lương 32 triệu',
+    titleEn: 'Sharing my 4-month journey from an 11M Manual Tester to a 32M Automation QA role',
     content: 'Mình từng rất chật vật khi dự án cũ cắt giảm 50% tester. Nhờ bám sát lộ trình từng tuần của La Bàn, mình kiên trì học Playwright + TypeScript mỗi tối 2 tiếng và làm quen với framework đánh giá AI Ragas. Tuần trước mình vừa ký hợp đồng chính thức với mức lương gấp gần 3 lần. Các bạn đừng bỏ cuộc nhé, cơ hội mới cho người chủ động học là rất lớn!',
+    contentEn: 'I really struggled when my old project cut 50% of its testers. By sticking to the La Ban weekly roadmap, I persistently studied Playwright + TypeScript 2 hours every evening and got familiar with the Ragas AI evaluation framework. Last week I signed a full contract at nearly 3x my old salary. Do not give up — there are huge opportunities for people who proactively learn!',
     likesCount: 92,
     replies: [
       {
         id: 'rep-2-1',
         authorAlias: 'Hải Đăng (Hà Nội)',
+        authorAliasEn: 'Hai Dang (Hanoi)',
         createdAt: '2026-02-20T11:45:00Z',
-        content: 'Chúc mừng anh Kiệt! Anh cho em hỏi giai đoạn đầu học Playwright có cần học sâu JavaScript trước không hay nhảy vào viết test luôn ạ?'
+        content: 'Chúc mừng anh Kiệt! Anh cho em hỏi giai đoạn đầu học Playwright có cần học sâu JavaScript trước không hay nhảy vào viết test luôn ạ?',
+        contentEn: 'Congratulations Kiet! May I ask, when starting with Playwright, should I learn JavaScript deeply first or jump straight into writing tests?'
       },
       {
         id: 'rep-2-2',
         authorAlias: 'Tuấn Kiệt (Đà Nẵng)',
+        authorAliasEn: 'Tuan Kiet (Da Nang)',
         createdAt: '2026-02-20T13:10:00Z',
         content: 'Nên nắm vững Promise, async/await và Type cơ bản trong TypeScript khoảng 1 tuần rồi thực hành viết test thực tế luôn em nhé, vừa làm vừa sửa sẽ nhớ rất lâu!',
+        contentEn: 'Get solid on Promises, async/await, and basic TypeScript types for about a week, then jump straight into writing real tests — fixing things as you go makes the knowledge stick!',
         isVerifiedTransition: true
       }
     ]
@@ -228,6 +250,7 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
   {
     id: 'post-3',
     authorAlias: 'Hương Giang',
+    authorAliasEn: 'Huong Giang',
     isAnonymous: false,
     userCurrentRole: 'Fresher Business Operations',
     locationName: 'Cầu Giấy, Hà Nội',
@@ -242,14 +265,18 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-24T18:00:00Z',
     tag: 'career_pivot',
     title: 'Sinh viên ngành Kinh tế / Ngoại thương nên học công cụ AI nào đầu tiên để có lợi thế phỏng vấn?',
+    titleEn: 'Which AI tool should Economics / Foreign Trade graduates learn first to gain an interview edge?',
     content: 'Chào mọi người, em vừa tốt nghiệp ngành Kinh tế đối ngoại. Em thấy các công ty hiện nay hỏi rất nhiều về việc ứng viên biết dùng AI vào công việc thực tế ra sao. Em nên học Make/n8n hay tập trung vào phân tích dữ liệu với Python ạ?',
+    contentEn: 'Hi everyone, I just graduated with a degree in External Economics. I notice companies now ask a lot about how candidates actually apply AI in real work. Should I learn Make/n8n or focus on data analysis with Python?',
     likesCount: 24,
     replies: [
       {
         id: 'rep-3-1',
         authorAlias: 'Mai Chi (AI Ops Tiki)',
+        authorAliasEn: 'Mai Chi (AI Ops Tiki)',
         createdAt: '2026-02-24T19:30:00Z',
         content: 'Khuyên bạn nên bắt đầu bằng Make.com hoặc n8n trước nhé! Chỉ cần 2 tuần là bạn có thể tự dựng luồng trích xuất email gửi vào Google Sheets và báo cáo Slack. Đem sản phẩm này vào phỏng vấn là gây ấn tượng cực mạnh với sếp tuyển dụng!',
+        contentEn: 'I recommend starting with Make.com or n8n first! In just 2 weeks you can build your own workflow that extracts emails into Google Sheets and reports to Slack. Bringing this project into an interview makes a huge impression on hiring managers!',
         isVerifiedTransition: true
       }
     ]
@@ -257,8 +284,10 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
   {
     id: 'post-4',
     authorAlias: 'Trần Văn Hưng (Cần Thơ)',
+    authorAliasEn: 'Tran Van Hung (Can Tho)',
     isAnonymous: false,
     userCurrentRole: 'Kế toán viên -> Tư vấn giải pháp ERP & FinTech',
+    userCurrentRoleEn: 'Accountant -> ERP & FinTech Solutions Consultant',
     locationName: 'Ninh Kiều, Cần Thơ',
     coordinates: {
       lat: 10.0333,
@@ -271,15 +300,19 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-21T10:15:00Z',
     tag: 'success_story',
     title: 'Kế toán truyền thống vùng Đồng bằng Sông Cửu Long đổi mới với AI & PowerBI',
+    titleEn: 'A traditional Mekong Delta accountant reinvents himself with AI & PowerBI',
     content: 'Nhiều anh em kế toán ở miền Tây than vãn hóa đơn điện tử và OCR quét sạch việc nhập liệu thủ công. Thay vì chờ đợi, mình chuyển sang học thiết lập dashboard tài chính tự động hóa và tích hợp trợ lý thuế AI. Giờ mình làm tư vấn độc lập cho 4 doanh nghiệp thủy sản trong vùng!',
+    contentEn: 'Many fellow accountants in the western region complain that e-invoices and OCR have wiped out manual data entry. Instead of waiting, I switched to learning how to build automated financial dashboards and integrate AI tax assistants. Now I consult independently for 4 seafood companies in the region!',
     likesCount: 56,
     replies: []
   },
   {
     id: 'post-5',
     authorAlias: 'Nguyễn Bích Ngọc (Hải Phòng)',
+    authorAliasEn: 'Nguyen Bich Ngoc (Hai Phong)',
     isAnonymous: false,
     userCurrentRole: 'Telesales -> Chuyên viên Trải nghiệm Khách hàng (CX AI Lead)',
+    userCurrentRoleEn: 'Telesales -> Customer Experience Specialist (CX AI Lead)',
     locationName: 'Ngô Quyền, Hải Phòng',
     coordinates: {
       lat: 20.8651,
@@ -292,15 +325,19 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-22T08:45:00Z',
     tag: 'success_story',
     title: 'Từng khóc vì bị Voicebot AI thay thế cuộc gọi, giờ làm người huấn luyện Chatbot & CX Lead',
+    titleEn: 'I once cried when an AI Voicebot replaced my calls; now I train chatbots as a CX Lead',
     content: 'Khi công ty triển khai AI Voicebot tự động gọi cho khách hàng, nhóm 10 bạn telesales của mình chỉ còn giữ lại 2 người. Mình xung phong nhận nhiệm vụ kiểm tra kịch bản và huấn luyện câu trả lời cho bot. Nhờ thấu hiểu tâm lý giận dữ của khách hàng, mình đã giúp công ty tăng tỷ lệ hài lòng lên 92%. Đừng sợ bot, hãy làm người làm chủ và huấn luyện nó!',
+    contentEn: 'When my company deployed an AI Voicebot to call customers automatically, only 2 of the 10 telesales staff in my team were kept. I volunteered to review scripts and train the bot responses. Thanks to my deep understanding of angry customer psychology, I helped the company raise its satisfaction rate to 92%. Do not fear the bots — master and train them!',
     likesCount: 110,
     replies: []
   },
   {
     id: 'post-6',
     authorAlias: 'Thanh Phong (Nha Trang)',
+    authorAliasEn: 'Thanh Phong (Nha Trang)',
     isAnonymous: true,
     userCurrentRole: 'Phiên dịch viên Du lịch -> Chuyên viên Content Đa Ngữ AI',
+    userCurrentRoleEn: 'Travel Interpreter -> AI Multilingual Content Specialist',
     locationName: 'Nha Trang, Khánh Hòa',
     coordinates: {
       lat: 12.2388,
@@ -313,15 +350,19 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-23T19:20:00Z',
     tag: 'career_pivot',
     title: 'Biên dịch viên có thật sự hết thời khi DeepL & Gemini dịch siêu mượt?',
+    titleEn: 'Are translators truly obsolete now that DeepL & Gemini translate so fluently?',
     content: 'Thực tế nếu chỉ dịch word-by-word thì đúng là hết cửa. Nhưng nếu bạn biết văn hóa địa phương, biết cách prompt AI tạo ra 10 biến thể ngôn ngữ marketing phù hợp từng nền văn hóa (Hàn, Trung, Nga, Âu) thì bạn trở thành tài sản vô giá của các tập đoàn khách sạn resort.',
+    contentEn: 'Honestly, if you only translate word-by-word, the door really is closed. But if you understand local culture and know how to prompt AI to produce 10 marketing-language variants tailored to each culture (Korean, Chinese, Russian, European), you become an invaluable asset to resort hotel groups.',
     likesCount: 47,
     replies: []
   },
   {
     id: 'post-7',
     authorAlias: 'Hải Anh (Hà Nội)',
+    authorAliasEn: 'Hai Anh (Hanoi)',
     isAnonymous: false,
     userCurrentRole: 'Nhân sự Đào tạo (L&D)',
+    userCurrentRoleEn: 'Training & Development Specialist (L&D)',
     locationName: 'Đống Đa, Hà Nội',
     coordinates: {
       lat: 21.0125,
@@ -334,14 +375,18 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-25T08:15:00Z',
     tag: 'transition_fatigue',
     title: 'Có ai bị ngợp trước hàng chục khóa học Prompt Engineering không?',
+    titleEn: 'Is anyone else overwhelmed by the dozens of Prompt Engineering courses out there?',
     content: 'Mình làm đào tạo nhân sự và đang bị giao nhiệm vụ xây dựng giáo trình AI cho công ty. Vấn đề là trên mạng có quá nhiều tài liệu, cái nào cũng "nhất", "tuyệt chiêu". Đôi lúc mình bị stress đến mức không muốn mở máy lên. La Bàn có gợi ý nào để lọc tài liệu học chuẩn chỉnh không ạ?',
+    contentEn: 'I work in corporate training and have been tasked with building an AI curriculum for my company. The problem is there are far too many materials online, each claiming to be "the best" or a "secret weapon". Sometimes the stress gets so bad I do not even want to open my laptop. Does La Ban have any suggestion for filtering properly curated learning materials?',
     likesCount: 35,
     replies: [
       {
         id: 'rep-7-1',
         authorAlias: 'Trợ lý Định hướng La Bàn (Hệ thống)',
+        authorAliasEn: 'La Ban Compass Assistant (System)',
         createdAt: '2026-02-25T08:20:00Z',
         content: '🌟 Lời nhắn từ La Bàn: Bạn hãy dùng tính năng "Lộ trình học theo Milestone" của La Bàn. Hệ thống đã lọc sẵn các tài nguyên chuẩn quốc tế (như từ Google, Microsoft, Stanford) thay vì các khóa học trôi nổi. Học chậm nhưng chắc bạn nhé!',
+        contentEn: '🌟 A message from La Ban: Try the "Milestone Learning Roadmap" feature. The system pre-filters internationally standard resources (from Google, Microsoft, Stanford) instead of fly-by-night courses. Learn slow and steady!',
         isAiSupportive: true
       }
     ]
@@ -349,6 +394,7 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
   {
     id: 'post-8',
     authorAlias: 'Ẩn danh (Dev 5 năm)',
+    authorAliasEn: 'Anonymous (Dev with 5 years of experience)',
     isAnonymous: true,
     userCurrentRole: 'Backend Developer (Java)',
     locationName: 'Dĩ An, Bình Dương',
@@ -363,15 +409,19 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-26T09:10:00Z',
     tag: 'salary_negotiation',
     title: 'Review lương khi đã áp dụng thành thạo Copilot và Codeium vào dự án',
+    titleEn: 'Salary review after mastering Copilot and Codeium on my projects',
     content: 'Vừa review lương đầu năm. Mình dùng AI để auto generate unit tests, setup pipeline CI/CD nhanh hơn gấp 2 lần. Sếp thấy năng suất cao nên đã offer tăng 10 củ, đồng thời giao mình hướng dẫn team áp dụng công cụ AI. Kỹ năng giao tiếp và hướng dẫn (mentoring) bây giờ quan trọng không kém gì code đâu anh em!',
+    contentEn: 'Just had my start-of-year salary review. I use AI to auto-generate unit tests and set up CI/CD pipelines twice as fast. My boss saw the high productivity and offered a 10M raise, plus asked me to coach the team on adopting AI tools. Communication and mentoring skills now matter just as much as code, everyone!',
     likesCount: 88,
     replies: []
   },
   {
     id: 'post-9',
     authorAlias: 'Ngọc Lan',
+    authorAliasEn: 'Ngoc Lan',
     isAnonymous: false,
     userCurrentRole: 'Nhân viên Pháp lý (Legal Assistant)',
+    userCurrentRoleEn: 'Legal Assistant',
     locationName: 'Biên Hòa, Đồng Nai',
     coordinates: {
       lat: 10.9576,
@@ -384,13 +434,16 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-26T11:45:00Z',
     tag: 'seeking_mentor',
     title: 'Cần tìm mentor hướng dẫn dùng AI tóm tắt hợp đồng và tra cứu luật',
+    titleEn: 'Looking for a mentor to guide me in using AI for contract summarization and legal research',
     content: 'Mình đang chìm trong đống hồ sơ hợp đồng cần duyệt mỗi ngày. Mình nghe nói có thể dùng LLM để phát hiện rủi ro hợp đồng, nhưng do là dữ liệu bảo mật nên không dám quăng thẳng lên ChatGPT. Có ai có kinh nghiệm chạy mô hình Local (như Ollama) hoặc giải pháp RAG bảo mật hướng dẫn mình với!',
+    contentEn: 'I am drowning in a pile of contracts that need review every day. I hear LLMs can detect contract risks, but since this is confidential data I dare not upload it straight to ChatGPT. If anyone has experience running local models (like Ollama) or secure RAG solutions, please guide me!',
     likesCount: 42,
     replies: []
   },
   {
     id: 'post-10',
     authorAlias: 'Quốc Bảo (Huế)',
+    authorAliasEn: 'Quoc Bao (Hue)',
     isAnonymous: false,
     userCurrentRole: 'Video Editor -> AI Storyteller',
     locationName: 'TP. Huế',
@@ -405,7 +458,9 @@ export const INITIAL_COMMUNITY_POSTS: CommunityPost[] = [
     createdAt: '2026-02-25T20:30:00Z',
     tag: 'success_milestone',
     title: 'Hoàn thành dự án phim ngắn 100% bằng AI (Sora/Runway)',
+    titleEn: 'Completed a short film project made 100% with AI (Sora/Runway)',
     content: 'Chào mọi người, mình vừa thắng giải thưởng sáng tạo nhờ một TVC dùng AI generate toàn bộ video footages. Nghề dựng phim đang dịch chuyển mạnh sang khả năng chỉ đạo nghệ thuật (AI Directing). Mình sẽ làm 1 bài tutorial chia sẻ prompt cho ai quan tâm nhé!',
+    contentEn: 'Hi everyone, I just won a creative award for a TVC where AI generated all the video footage. The film editing profession is shifting heavily toward art direction capability (AI Directing). I will write a tutorial sharing the prompts for anyone interested!',
     likesCount: 156,
     replies: []
   }

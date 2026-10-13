@@ -62,17 +62,20 @@ export interface TaskDecompositionItem {
 
 export interface TaskAutomationBreakdown {
   taskName: string;
+  taskNameEn?: string;
   taskNameVi: string;
   exposureType: 'direct_automation' | 'ai_augmentation' | 'human_core';
   exposurePercentage: number;
   onetCode?: string;
   notes: string;
+  notesEn?: string;
 }
 
 export interface ResilienceScoreDetail {
   occupationTitle: string;
   occupationTitleVi: string;
   molisaCode?: string;
+  molisaCodeEn?: string;
   onetCode?: string;
   overallResilienceScore: number; // 0 - 100
   compositeResilienceScore?: number;
@@ -82,14 +85,17 @@ export interface ResilienceScoreDetail {
   augmentationPotential?: number;
   defensibleHumanScore?: number;
   humanAdvantageCore?: string[];
+  humanAdvantageCoreEn?: string[];
   taskDecomposition?: TaskDecompositionItem[];
   tasksBreakdown?: TaskAutomationBreakdown[];
   sources?: {
     sourceId: string;
     citationText: string;
+    citationTextEn?: string;
     url: string;
   }[];
   methodologySummary?: string;
+  methodologySummaryEn?: string;
   uncertaintyRange?: string;
   vietnamDemandSignal?: 'high_growth' | 'stable' | 'declining' | 'transforming';
 }
@@ -202,6 +208,7 @@ export interface JobSecurityNewsItem {
   title: string;
   titleEn?: string;
   source: string;
+  sourceEn?: string;
   publishDate: string;
   url: string;
   summaryVi: string;
@@ -221,6 +228,7 @@ export interface JobPostingItem {
   isAiAugmented: boolean;
   requiredSkills: string[];
   summary: string;
+  summaryEn?: string;
   applyUrl: string;
   postedDate: string;
   sourceTag: string;
@@ -229,8 +237,10 @@ export interface JobPostingItem {
 export interface CommunityPost {
   id: string;
   authorAlias: string;
+  authorAliasEn?: string;
   isAnonymous: boolean;
   userCurrentRole: string;
+  userCurrentRoleEn?: string;
   locationName?: string;
   coordinates?: {
     lat: number;
@@ -243,13 +253,17 @@ export interface CommunityPost {
   createdAt: string;
   tag: 'fear_of_displacement' | 'career_pivot' | 'learning_burnout' | 'success_story' | 'general_advice' | 'transition_fatigue' | 'seeking_mentor' | 'success_milestone' | 'salary_negotiation' | string;
   title: string;
+  titleEn?: string;
   content: string;
+  contentEn?: string;
   likesCount: number;
   replies: {
     id: string;
     authorAlias: string;
+    authorAliasEn?: string;
     createdAt: string;
     content: string;
+    contentEn?: string;
     isVerifiedTransition?: boolean;
     isAiSupportive?: boolean;
   }[];

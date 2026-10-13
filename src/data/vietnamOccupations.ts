@@ -5,6 +5,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Graphic & Visual Designer',
     occupationTitleVi: 'Chuyên viên Thiết kế Đồ họa & Hình ảnh',
     molisaCode: '2166 (Nhà thiết kế đồ họa và truyền thông đa phương tiện)',
+    molisaCodeEn: '2166 (Graphic and multimedia designer)',
     onetCode: '27-1024.00 (Graphic Designers)',
     overallResilienceScore: 58,
     automationRiskScore: 72,
@@ -14,6 +15,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Client empathy, negotiation & stakeholder psychology (Thấu cảm khách hàng và đàm phán ý tưởng)',
       'Cross-cultural Vietnamese aesthetic sensitivity (Cảm quan thẩm mỹ văn hóa bản địa)',
       'Design systems architecture & multi-channel consistency (Kiến trúc hệ thống thiết kế nhất quán)'
+    ],
+    humanAdvantageCoreEn: [
+      'Original conceptual direction & brand storytelling',
+      'Client empathy, negotiation & stakeholder psychology',
+      'Cross-cultural Vietnamese aesthetic sensitivity',
+      'Design systems architecture & multi-channel consistency'
     ],
     tasksBreakdown: [
       {
@@ -74,6 +81,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Manual Software QA & Tester',
     occupationTitleVi: 'Chuyên viên Kiểm thử Phần mềm Thủ công (Manual QA)',
     molisaCode: '2512 (Kỹ thuật viên kiểm thử phần mềm)',
+    molisaCodeEn: '2512 (Software testing technician)',
     onetCode: '15-1253.00 (Software Quality Assurance Analysts and Testers)',
     overallResilienceScore: 42,
     automationRiskScore: 84,
@@ -83,6 +91,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Security boundary testing & ethical adversarial mindset (Tư duy phòng thủ an ninh và đạo đức)',
       'Cross-functional engineering & product translation (Cầu nối giữa kỹ sư, khách hàng và BA)',
       'Quality strategy & compliance governance (Chiến lược chất lượng tổng thể)'
+    ],
+    humanAdvantageCoreEn: [
+      'Complex exploratory edge-case testing & human UX intuition',
+      'Security boundary testing & ethical adversarial mindset',
+      'Cross-functional engineering & product translation',
+      'Quality strategy & compliance governance'
     ],
     tasksBreakdown: [
       {
@@ -138,6 +152,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Business Analyst / Data Specialist',
     occupationTitleVi: 'Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)',
     molisaCode: '2511 (Chuyên viên phân tích hệ thống và kinh doanh)',
+    molisaCodeEn: '2511 (Systems and business analyst)',
     onetCode: '15-1211.00 (Computer Systems Analysts / Business Intelligence)',
     overallResilienceScore: 82,
     automationRiskScore: 35,
@@ -147,6 +162,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)',
       'Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)',
       'Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)'
+    ],
+    humanAdvantageCoreEn: [
+      'Deep domain contextualization & Vietnamese business culture insights',
+      'Executive stakeholder alignment & persuasion',
+      'Problem framing & translating ambiguous business pains into metrics',
+      'Ethical governance of data pipelines'
     ],
     tasksBreakdown: [
       {
@@ -194,6 +215,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Content Writer & SEO Specialist',
     occupationTitleVi: 'Chuyên viên Viết Nội dung & Tối ưu hóa SEO',
     molisaCode: '2641 (Tác giả, nhà báo và nhà văn kỹ thuật số)',
+    molisaCodeEn: '2641 (Authors, journalists and digital writers)',
     onetCode: '27-3042.00 (Technical Writers / Content Creators)',
     overallResilienceScore: 48,
     automationRiskScore: 78,
@@ -203,6 +225,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Subtle cultural humor, local slang, and emotional resonance (Sự hài hước, ngôn ngữ đời sống và cảm xúc thật)',
       'Thought leadership & contrarian opinions (Góc nhìn chuyên gia độc bản, không sao chép)',
       'High-stakes brand storytelling & PR crisis handling (Xử lý khủng hoảng truyền thông)'
+    ],
+    humanAdvantageCoreEn: [
+      'Original investigative reporting & primary source interviews',
+      'Subtle cultural humor, local slang, and emotional resonance',
+      'Thought leadership & contrarian opinions',
+      'High-stakes brand storytelling & PR crisis handling'
     ],
     tasksBreakdown: [
       {
@@ -250,6 +278,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Customer Support / Helpdesk Specialist',
     occupationTitleVi: 'Chuyên viên Hỗ trợ Khách hàng & Helpdesk',
     molisaCode: '4222 (Nhân viên trung tâm liên lạc và hỗ trợ khách hàng)',
+    molisaCodeEn: '4222 (Contact center and customer support staff)',
     onetCode: '43-4051.00 (Customer Service Representatives)',
     overallResilienceScore: 36,
     automationRiskScore: 88,
@@ -259,6 +288,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Complex dispute negotiation & VIP relationship management (Đàm phán tranh chấp và chăm sóc khách hàng VIP)',
       'Omnichannel support strategy and customer journey insights (Thiết kế hành trình trải nghiệm)',
       'Supervising, evaluating, and fine-tuning AI support bots (Huấn luyện và giám sát trợ lý ảo)'
+    ],
+    humanAdvantageCoreEn: [
+      'High-empathy de-escalation of furious or vulnerable customers',
+      'Complex dispute negotiation & VIP relationship management',
+      'Omnichannel support strategy and customer journey insights',
+      'Supervising, evaluating, and fine-tuning AI support bots'
     ],
     tasksBreakdown: [
       {
@@ -306,6 +341,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'AI Solutions Specialist & Workflow Architect',
     occupationTitleVi: 'Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa',
     molisaCode: '2519 (Các chuyên gia phát triển ứng dụng và công nghệ mới chưa được phân loại)',
+    molisaCodeEn: '2519 (Emerging application and technology specialists)',
     onetCode: '15-1299.08 (Computer Systems Analysts - Emerging Tech)',
     overallResilienceScore: 94,
     automationRiskScore: 18,
@@ -315,6 +351,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Model evaluation, safety guardrails, and compliance benchmarking (Đánh giá chất lượng và an toàn mô hình)',
       'Cross-departmental change management & employee upskilling (Đào tạo và dẫn dắt chuyển đổi số nội bộ)',
       'Strategic ROI optimization of AI tool stacks (Tối ưu hóa chi phí và hiệu quả đầu tư công nghệ)'
+    ],
+    humanAdvantageCoreEn: [
+      'End-to-end enterprise workflow automation & systems design',
+      'Model evaluation, safety guardrails, and compliance benchmarking',
+      'Cross-departmental change management & employee upskilling',
+      'Strategic ROI optimization of AI tool stacks'
     ],
     tasksBreakdown: [
       {
@@ -362,6 +404,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Accountant & Tax Auditor',
     occupationTitleVi: 'Chuyên viên Kế toán & Kiểm toán Thuế',
     molisaCode: '2411 (Chuyên viên kế toán và kiểm toán)',
+    molisaCodeEn: '2411 (Accountants and auditors)',
     onetCode: '13-2011.00 (Accountants and Auditors)',
     overallResilienceScore: 52,
     automationRiskScore: 76,
@@ -371,6 +414,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Forensic audit & risk management (Thẩm định rủi ro và phát hiện gian lận phức tạp)',
       'Legal & financial regulatory compliance (Đàm phán giải trình với cơ quan thuế & kiểm toán)',
       'Executive financial storytelling (Tư vấn tài chính chiến lược cho ban giám đốc)'
+    ],
+    humanAdvantageCoreEn: [
+      'Strategic tax advisory & cash flow structuring',
+      'Forensic audit & risk management',
+      'Legal & financial regulatory compliance',
+      'Executive financial storytelling'
     ],
     tasksBreakdown: [
       {
@@ -418,6 +467,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'HR Specialist & Talent Acquisition Lead',
     occupationTitleVi: 'Chuyên viên Nhân sự & Tuyển dụng (HR/TA)',
     molisaCode: '2423 (Chuyên viên quản lý nhân sự)',
+    molisaCodeEn: '2423 (Human resource management specialists)',
     onetCode: '13-1071.00 (Human Resources Specialists)',
     overallResilienceScore: 68,
     automationRiskScore: 48,
@@ -427,6 +477,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Executive retention & organizational conflict mediation (Hòa giải xung đột và giữ chân nhân tài)',
       'Leadership succession planning & team chemistry (Quy hoạch nhân sự cấp cao)',
       'Employer brand authenticity (Xây dựng văn hóa doanh nghiệp thực chất)'
+    ],
+    humanAdvantageCoreEn: [
+      'Culture fit assessment & deep candidate behavioral interviewing',
+      'Executive retention & organizational conflict mediation',
+      'Leadership succession planning & team chemistry',
+      'Employer brand authenticity'
     ],
     tasksBreakdown: [
       {
@@ -469,6 +525,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'Educator & Instructional Designer',
     occupationTitleVi: 'Giáo viên & Chuyên gia Thiết kế Đào tạo',
     molisaCode: '2310 (Giảng viên đại học và giáo viên chuyên nghiệp)',
+    molisaCodeEn: '2310 (University lecturers and professional teachers)',
     onetCode: '25-2022.00 (Middle & Secondary School Teachers)',
     overallResilienceScore: 78,
     automationRiskScore: 32,
@@ -478,6 +535,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Dynamic classroom behavioral management (Quản lý tương tác và năng lượng lớp học)',
       'Adaptive teaching based on real-time student body language (Điều chỉnh sư phạm theo phản ứng tức thì)',
       'Instilling critical thinking, ethics and character (Rèn luyện tư duy phản biện và nhân cách)'
+    ],
+    humanAdvantageCoreEn: [
+      'Empathetic mentorship, student motivation & emotional safety',
+      'Dynamic classroom behavioral management',
+      'Adaptive teaching based on real-time student body language',
+      'Instilling critical thinking, ethics and character'
     ],
     tasksBreakdown: [
       {
@@ -520,6 +583,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     occupationTitle: 'B2B Sales Specialist & Account Executive',
     occupationTitleVi: 'Chuyên viên Kinh doanh B2B & Phát triển Thị trường',
     molisaCode: '3322 (Đại diện kinh doanh và thương mại)',
+    molisaCodeEn: '3322 (Sales and commerce representatives)',
     onetCode: '41-4012.00 (Sales Representatives, Wholesale and Manufacturing)',
     overallResilienceScore: 74,
     automationRiskScore: 38,
@@ -529,6 +593,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
       'Uncovering unspoken client budget and organizational politics (Khám phá nhu cầu ngầm và nội bộ khách hàng)',
       'Long-term client relationship governance (Quản trị quan hệ đối tác chiến lược bền vững)',
       'Custom complex solution packaging (Thiết kế gói giải pháp linh hoạt theo đặc thù)'
+    ],
+    humanAdvantageCoreEn: [
+      'High-stakes consultative negotiation & trust building',
+      'Uncovering unspoken client budget and organizational politics',
+      'Long-term client relationship governance',
+      'Custom complex solution packaging'
     ],
     tasksBreakdown: [
       {
@@ -613,6 +683,7 @@ export function getResilienceDetailForRole(roleTitle: string, userIntake?: any):
     occupationTitle: currentRoleName,
     occupationTitleVi: currentRoleName,
     molisaCode: 'Mã nghề nghiệp chuẩn hóa theo Tổng cục Thống kê',
+    molisaCodeEn: 'Vietnam standardized occupation codes (GSO)',
     onetCode: 'O*NET Task Decomposition Standard',
     overallResilienceScore: 68,
     automationRiskScore: 45,
@@ -623,45 +694,60 @@ export function getResilienceDetailForRole(roleTitle: string, userIntake?: any):
       'Sự am hiểu sâu sắc văn hóa và bối cảnh thị trường thực tế tại Việt Nam',
       'Trách nhiệm pháp lý và đạo đức ra quyết định'
     ],
+    humanAdvantageCoreEn: [
+      'Emotional intelligence, communication skills, and deep human empathy',
+      'Critical thinking and handling non-standard situations',
+      'Deep understanding of Vietnamese culture and real-world market context',
+      'Legal accountability and ethical decision-making'
+    ],
     tasksBreakdown: [
       {
         taskName: `Xử lý tài liệu và các thủ tục chuẩn hóa lặp lại trong vai trò ${currentRoleName}`,
+        taskNameEn: `Document processing and repetitive standardized procedures in the ${currentRoleName} role`,
         taskNameVi: `Xử lý tài liệu, nhập liệu và tác vụ quy chuẩn lặp lại của ${currentRoleName}`,
         exposureType: 'direct_automation',
         exposurePercentage: 82,
         onetCode: 'TASK-STD-01',
-        notes: 'Các công cụ AI tạo sinh và tự động hóa xử lý nhanh hơn 10 lần.'
+        notes: 'Các công cụ AI tạo sinh và tự động hóa xử lý nhanh hơn 10 lần.',
+        notesEn: 'Generative AI and automation tools handle this 10x faster.'
       },
       {
         taskName: `Tổng hợp thông tin, soạn thảo phương án và lập kế hoạch công việc`,
+        taskNameEn: 'Information synthesis, proposal drafting, and work planning',
         taskNameVi: `Tổng hợp dữ liệu, tạo dự thảo và phân tích phương án cùng AI Copilot`,
         exposureType: 'ai_augmentation',
         exposurePercentage: 65,
         onetCode: 'TASK-STD-02',
-        notes: 'Ứng dụng AI giúp nâng cao năng suất 3-5 lần và giảm 50% thời gian thực hiện.'
+        notes: 'Ứng dụng AI giúp nâng cao năng suất 3-5 lần và giảm 50% thời gian thực hiện.',
+        notesEn: 'Applied AI boosts productivity 3-5x and cuts execution time by 50%.'
       },
       {
         taskName: `Đàm phán trực tiếp, xử lý vấn đề phức tạp và ra quyết định chiến lược`,
+        taskNameEn: 'Direct negotiation, complex problem handling, and strategic decision-making',
         taskNameVi: `Đàm phán, tư vấn trực tiếp, giải quyết xung đột và chịu trách nhiệm đạo đức`,
         exposureType: 'human_core',
         exposurePercentage: 18,
         onetCode: 'TASK-STD-03',
-        notes: '100% phụ thuộc vào năng lực con người, lòng tin và mối quan hệ bền vững.'
+        notes: '100% phụ thuộc vào năng lực con người, lòng tin và mối quan hệ bền vững.',
+        notesEn: '100% dependent on human capability, trust, and sustainable relationships.'
       }
     ],
     sources: [
       {
         sourceId: 'openai-upenn-2023',
         citationText: 'OpenAI / UPenn (2023): Tác vụ thủ công lặp lại có mức phơi nhiễm tự động hóa cao, nhưng tư duy chiến lược và giám sát con người giữ vai trò trung tâm.',
+        citationTextEn: 'OpenAI / UPenn (2023): Repetitive manual tasks show high automation exposure, but strategic thinking and human oversight remain central.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
         sourceId: 'wef-future-of-jobs-2023-2025',
         citationText: 'World Economic Forum (WEF): Các kỹ năng con người cốt lõi (tư duy phản biện, thấu cảm, giải quyết vấn đề) có nhu cầu tăng trưởng vượt trội.',
+        citationTextEn: 'World Economic Forum (WEF): Core human skills (critical thinking, empathy, problem solving) show outstanding demand growth.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       }
     ],
     methodologySummary: 'Phương pháp phân rã tác vụ theo O*NET và báo cáo phơi nhiễm tác vụ lao động của OpenAI & WEF.',
+    methodologySummaryEn: 'Task decomposition methodology per O*NET and the OpenAI & WEF labor task exposure reports.',
     uncertaintyRange: '±5.5%',
     vietnamDemandSignal: 'transforming'
   };

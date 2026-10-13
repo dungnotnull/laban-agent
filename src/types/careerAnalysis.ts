@@ -20,6 +20,7 @@ export interface CurrentRoleTaskImpact {
 
 export interface CurrentRoleOverviewAssessment {
   currentRole: string;
+  currentRoleEn?: string;
   experienceYears?: number;
   evaluatedAt?: string;
   
@@ -95,6 +96,7 @@ export interface ComprehensiveCareerAnalysisResult {
     currentSkills: string[];
     currentSkillsEn?: string[];
     currentRole: string;
+    currentRoleEn?: string;
   };
   currentRoleOverview?: CurrentRoleOverviewAssessment;
   trendingCareers: CareerAnalysisItem[]; // 10 careers

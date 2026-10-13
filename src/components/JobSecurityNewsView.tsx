@@ -105,7 +105,7 @@ export const JobSecurityNewsView: React.FC<JobSecurityNewsViewProps> = ({
                 <div className="space-y-3">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <span className="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-[10px] font-bold border border-indigo-200 shadow-sm">
-                      {item.source}
+                      {language === 'en' && item.sourceEn ? item.sourceEn : item.source}
                     </span>
                     <span className="text-xs font-mono text-slate-400">{item.publishDate}</span>
                   </div>

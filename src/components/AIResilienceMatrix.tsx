@@ -59,6 +59,13 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
     ? currentRoleResilience
     : targetRoleResilience;
 
+  // Language-aware display helpers (En mirrors with VI fallback)
+  const activeOccupationTitle = language === 'en'
+    ? (activeDetail.occupationTitle || activeDetail.occupationTitleVi || currentRoleName)
+    : (activeDetail.occupationTitleVi || currentRoleName);
+  const molisaDisplay = language === 'en' && activeDetail.molisaCodeEn ? activeDetail.molisaCodeEn : activeDetail.molisaCode;
+  const humanAdvantageDisplay = (language === 'en' && activeDetail.humanAdvantageCoreEn) ? activeDetail.humanAdvantageCoreEn : activeDetail.humanAdvantageCore;
+
   // Composite Scores
   const compositeScore = selectedRoleView === 'current'
     ? (currentRoleOverview?.currentResilienceScore ?? activeDetail.overallResilienceScore ?? 58)
@@ -95,12 +102,12 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
       return {
         taskId: `tb-${i}-${tb.onetCode || i}`,
         taskNameVi: tb.taskNameVi || tb.taskName,
-        taskNameEn: tb.taskName || undefined,
+        taskNameEn: tb.taskNameEn || tb.taskName || undefined,
         category,
         exposureRate: tb.exposurePercentage,
         aiToolSubstitutes: aiTools,
         humanMoatExplanationVi: tb.notes || (language === 'vi' ? 'Đòi hỏi sự thấu hiểu sâu sắc bối cảnh thực tế tại Việt Nam.' : 'Requires local domain intuition and strategic empathy.'),
-        humanMoatExplanationEn: !tb.notes ? 'Requires local domain intuition and strategic empathy.' : undefined
+        humanMoatExplanationEn: tb.notesEn || (!tb.notes ? 'Requires local domain intuition and strategic empathy.' : undefined)
       };
     });
   } else if (Array.isArray(activeDetail.taskDecomposition) && activeDetail.taskDecomposition.length > 0) {
@@ -210,7 +217,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
             <p className="text-xs text-slate-600">
               {language === 'vi'
                 ? `Đang hiển thị phân rã tác vụ thực tế cho [${activeDetail.occupationTitleVi || currentRoleName}]. Bóc tách từng nhiệm vụ cụ thể để phân định phần nào AI tự động hóa và phần nào con người nắm giữ lợi thế cạnh tranh.`
-                : `Task-level decomposition for [${activeDetail.occupationTitleVi || currentRoleName}]. Standardized under O*NET 28.1 & ILO methodology.`}
+                : `Task-level decomposition for [${activeOccupationTitle}]. Standardized under O*NET 28.1 & ILO methodology.`}
             </p>
             {/* Standards & Classification codes */}
             <div className="flex flex-wrap items-center gap-2 pt-1">
@@ -219,9 +226,9 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
                   O*NET: {activeDetail.onetCode}
                 </span>
               )}
-              {activeDetail.molisaCode && (
+              {molisaDisplay && (
                 <span className="text-[11px] font-mono font-semibold px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">
-                  MOLISA: {activeDetail.molisaCode}
+                  MOLISA: {molisaDisplay}
                 </span>
               )}
               {activeDetail.vietnamDemandSignal && (
@@ -313,13 +320,13 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
         </div>
 
         {/* Human Advantage Core Capabilities */}
-        {activeDetail.humanAdvantageCore && activeDetail.humanAdvantageCore.length > 0 && (
+        {humanAdvantageDisplay && humanAdvantageDisplay.length > 0 && (
           <div className="pt-3 border-t border-slate-100">
             <span className="text-xs font-bold text-slate-800 block mb-2">
               🛡️ {t(language, 'Năng lực cốt lõi con người (Human Moat Factor) của vai trò này:', 'Defensible Human Moat Capabilities:')}
             </span>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              {activeDetail.humanAdvantageCore.map((item, idx) => (
+              {humanAdvantageDisplay.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2 text-xs text-slate-700 bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-100">
                   <span className="text-emerald-600 font-bold">✓</span>
                   <span>{item}</span>
@@ -429,7 +436,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
             <div className="space-y-1.5">
               {activeDetail.sources.map((s, i) => (
                 <div key={i} className="text-[11px] text-slate-600 flex items-start justify-between gap-2">
-                  <span>• {s.citationText}</span>
+                  <span>• {language === 'en' && s.citationTextEn ? s.citationTextEn : s.citationText}</span>
                   {s.url && (
                     <a
                       href={s.url}

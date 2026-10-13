@@ -230,10 +230,10 @@ export const CommunityModule: React.FC<CommunityModuleProps> = ({
                     {activeMarker?.id === post.id && (
                       <Popup eventHandlers={{ remove: () => setActiveMarker(null) }}>
                         <div className="max-w-[250px]">
-                          <h4 className="font-bold text-sm text-slate-900 mb-1">{post.title}</h4>
-                          <p className="text-xs text-slate-600 mb-2 line-clamp-3">{post.content}</p>
+                          <h4 className="font-bold text-sm text-slate-900 mb-1">{language === 'en' && post.titleEn ? post.titleEn : post.title}</h4>
+                          <p className="text-xs text-slate-600 mb-2 line-clamp-3">{language === 'en' && post.contentEn ? post.contentEn : post.content}</p>
                           <div className="flex justify-between items-center text-[10px]">
-                            <span className="font-semibold text-amber-700">{post.authorAlias}</span>
+                            <span className="font-semibold text-amber-700">{language === 'en' && post.authorAliasEn ? post.authorAliasEn : post.authorAlias}</span>
                             <span className="text-slate-400">{post.locationName || (language === 'vi' ? 'Việt Nam' : 'Vietnam')}</span>
                           </div>
                         </div>
@@ -363,8 +363,8 @@ export const CommunityModule: React.FC<CommunityModuleProps> = ({
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
-                          <span className="text-sm font-bold text-slate-900">{post.authorAlias}</span>
-                          <span className="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{post.userCurrentRole}</span>
+                          <span className="text-sm font-bold text-slate-900">{language === 'en' && post.authorAliasEn ? post.authorAliasEn : post.authorAlias}</span>
+                          <span className="text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">{language === 'en' && post.userCurrentRoleEn ? post.userCurrentRoleEn : post.userCurrentRole}</span>
                         </div>
                         <span className="text-[10px] text-slate-400 font-mono flex items-center gap-1 mt-0.5">
                           {post.createdAt.split('T')[0]} {post.locationName && `• ${post.locationName}`}
@@ -378,11 +378,11 @@ export const CommunityModule: React.FC<CommunityModuleProps> = ({
                   </div>
 
                   <h4 className="text-base font-bold text-slate-900 leading-snug">
-                    {post.title}
+                    {language === 'en' && post.titleEn ? post.titleEn : post.title}
                   </h4>
 
                   <p className="text-sm text-slate-700 leading-relaxed bg-slate-50/50 p-4 rounded-xl border border-slate-100">
-                    {post.content}
+                    {language === 'en' && post.contentEn ? post.contentEn : post.content}
                   </p>
 
                   {/* Post Interactions */}
@@ -421,7 +421,7 @@ export const CommunityModule: React.FC<CommunityModuleProps> = ({
                         >
                           <div className="flex items-center justify-between text-xs border-b border-slate-200/50 pb-2">
                             <span className="font-bold flex items-center gap-1">
-                              {reply.authorAlias}
+                              {language === 'en' && reply.authorAliasEn ? reply.authorAliasEn : reply.authorAlias}
                               {reply.isVerifiedTransition && (
                                 <span className="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold text-[10px]">
                                   {t(language, '✓ Đã chuyển đổi thành công', '✓ Verified Transformation')}
@@ -430,7 +430,7 @@ export const CommunityModule: React.FC<CommunityModuleProps> = ({
                             </span>
                             <span className="text-slate-400 font-mono">{(reply.createdAt || '').split('T')[0]}</span>
                           </div>
-                          <p className="leading-relaxed">{reply.content}</p>
+                          <p className="leading-relaxed">{language === 'en' && reply.contentEn ? reply.contentEn : reply.content}</p>
                         </div>
                       ))}
                     </div>

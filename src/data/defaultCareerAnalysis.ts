@@ -10,10 +10,12 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
     interestsEn: ['New technology', 'Digital content creation', 'Business strategy', 'People management'],
     currentSkills: ['Giao tiếp kinh doanh', 'Phân tích dữ liệu cơ bản', 'Sử dụng công cụ văn phòng', 'Quản lý thời gian'],
     currentSkillsEn: ['Business communication', 'Basic data analysis', 'Office productivity tools', 'Time management'],
-    currentRole: 'Chuyên viên nghiệp vụ / Kinh doanh / Thiết kế'
+    currentRole: 'Chuyên viên nghiệp vụ / Kinh doanh / Thiết kế',
+    currentRoleEn: 'Business Operations / Sales / Design Specialist'
   },
   currentRoleOverview: {
     currentRole: 'Chuyên viên nghiệp vụ / Kinh doanh / Thiết kế',
+    currentRoleEn: 'Business Operations / Sales / Design Specialist',
     experienceYears: 3,
     evaluatedAt: '2026',
     currentResilienceScore: 58,
