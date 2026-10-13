@@ -11,6 +11,7 @@ import { TrajectorySimulator } from './components/TrajectorySimulator';
 import { RoadmapModule } from './components/RoadmapModule';
 import { ResearchLibraryView } from './components/ResearchLibraryView';
 import AgentTransparencyPanel from './components/AgentTransparencyPanel';
+import CounselorReviewGate from './components/CounselorReviewGate';
 import { JobSecurityNewsView } from './components/JobSecurityNewsView';
 import { JobRadarView } from './components/JobRadarView';
 import { CommunityModule } from './components/CommunityModule';
@@ -353,6 +354,9 @@ export default function App() {
                 onSelectCareerForDeepDive={handleSelectCareerForDeepDive}
               />
             </div>
+
+            {/* Human-in-the-loop counselor review (ground rule 05) */}
+            <CounselorReviewGate trajectory={agentTrajectory} language={language} onReviewed={() => {}} />
 
             {/* Agent Pipeline Transparency Panel */}
             <AgentTransparencyPanel trajectory={agentTrajectory} language={language} />
