@@ -69,7 +69,8 @@ describe('verifyResourceUrls', () => {
     const sugs: any[] = [{ roadmap: [{ freeResources: [{ url: 'https://example.com/fake-course' }] }] }];
     const r = verifyResourceUrls(sugs);
     expect(r.grounded).toBe(0);
-    expect(r.ungrounded[0]).toContain('example.com/fake-course');
+    expect(r.ungrounded[0].url).toContain('example.com/fake-course');
+    expect(r.ungrounded[0].suggestionIndex).toBe(0);
   });
 
   it('handles missing roadmap gracefully', () => {

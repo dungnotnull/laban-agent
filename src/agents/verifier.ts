@@ -1,7 +1,7 @@
 import type { CareerSuggestion, UserIntakeProfile } from '../types';
 import { parseGeminiJson } from './geminiClient';
 import { validateSuggestionSchema, scanGuardrails } from './checks';
-import { verifySuggestions, verifyResourceUrls, type CitationReport } from './citations';
+import { verifySuggestions, verifyResourceUrls, type CitationReport, type UngroundedResource } from './citations';
 import { checkCoherence, currentOccupationResilience } from './coherence';
 import { EMPTY_PACK, type EvidencePack } from './tools';
 import type { AgentDeps } from './deps';
@@ -17,7 +17,7 @@ export interface VerifierResult {
   failures: string[];
   judge: VerifierJudge;
   citationReport: CitationReport;
-  resourceReport: { total: number; grounded: number; ungrounded: string[] };
+  resourceReport: { total: number; grounded: number; ungrounded: UngroundedResource[] };
 }
 
 const VERIFIER_SYSTEM = 'You are a strict quality judge for career-guidance outputs. Return pure JSON only.';
@@ -87,8 +87,8 @@ export async function runVerifier(
   failures.push(...checkCoherence(suggestions, currentOccupationResilience(pack)));
 
   const resourceReport = verifyResourceUrls(suggestions);
-  for (const url of resourceReport.ungrounded) {
-    failures.push(`suggestion[*]: resource url not in registry: "${url}"`);
+  for (const u of resourceReport.ungrounded) {
+    failures.push(`suggestion[${u.suggestionIndex}] roadmap milestone ${u.milestoneNumber}: resource url not in registry: "${u.url}"`);
   }
 
   const judge = await judgeQuality(intake, suggestions, deps);

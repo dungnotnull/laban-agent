@@ -21,7 +21,8 @@ export function checkCoherence(suggestions: any[], currentResilience: number | n
   const floor = currentResilience ?? UNKNOWN_OCCUPATION_FLOOR;
   const topScore = top.resilienceDetail?.overallResilienceScore;
   if (typeof topScore !== 'number' || Number.isNaN(topScore) || topScore < floor) {
-    failures.push(`coherence: top suggestion resilience ${topScore ?? 'missing'} below floor ${floor}`);
+    const scoreLabel = typeof topScore !== 'number' ? 'missing' : Number.isNaN(topScore) ? 'invalid (NaN)' : String(topScore);
+    failures.push(`coherence: top suggestion resilience ${scoreLabel} below floor ${floor}`);
   }
   if (top.resilienceDetail?.vietnamDemandSignal === 'declining') {
     failures.push(`coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence`);

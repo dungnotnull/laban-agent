@@ -96,27 +96,35 @@ export function verifySuggestions(suggestions: CareerSuggestion[]): CitationRepo
   return report;
 }
 
+export interface UngroundedResource {
+  suggestionIndex: number;
+  /** milestoneNumber field when present, else the array index (+1). */
+  milestoneNumber: number | string;
+  url: string;
+}
+
 export interface ResourceUrlReport {
   total: number;
   grounded: number;
-  ungrounded: string[];
+  ungrounded: UngroundedResource[];
 }
 
 /** freeResources URLs must exact-match the curated registry — same philosophy as citation grounding. */
 export function verifyResourceUrls(suggestions: any[]): ResourceUrlReport {
   const report: ResourceUrlReport = { total: 0, grounded: 0, ungrounded: [] };
-  for (const sug of suggestions || []) {
-    for (const m of sug?.roadmap || []) {
+  (suggestions || []).forEach((sug: any, suggestionIndex: number) => {
+    (sug?.roadmap || []).forEach((m: any, mi: number) => {
+      const milestoneNumber = typeof m?.milestoneNumber === 'number' ? m.milestoneNumber : mi + 1;
       for (const res of m?.freeResources || []) {
         if (!res?.url) continue;
         report.total++;
         if (LEARNING_RESOURCE_URLS.has(res.url)) {
           report.grounded++;
         } else {
-          report.ungrounded.push(res.url);
+          report.ungrounded.push({ suggestionIndex, milestoneNumber, url: res.url });
         }
       }
-    }
-  }
+    });
+  });
   return report;
 }

@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { runVerifier } from '../verifier';
+import { EMPTY_PACK } from '../tools';
 import { RESEARCH_LIBRARY } from '../../data/researchLibrary';
 import type { AgentDeps } from '../deps';
 
@@ -68,8 +69,6 @@ describe('runVerifier', () => {
     expect(result.verdict).toBe('fail');
   });
 });
-
-import { EMPTY_PACK } from '../tools';
 
 const vdeps = { callRich: async () => ({ text: '{"personalization":80,"groundedness":80,"rationale":"ok"}', usageTokens: 1 }) } as any;
 

@@ -41,7 +41,7 @@ function suggestion(repair: boolean): any {
 const JUDGE_GOOD = JSON.stringify({ personalization: 90, groundedness: 90, rationale: 'ok' });
 
 /** Deps with a callRich that routes by prompt content; analyst responses come from a queue. */
-function makeDeps(analystQueue: string[]) {
+function makeDeps(analystQueue: string[], occupationMatches: any[] = []) {
   const state = { toolCalls: 0, gathererTurns: 0 };
   const deps: AgentDeps = {
     callRich: async (prompt: string) => {
@@ -63,8 +63,11 @@ function makeDeps(analystQueue: string[]) {
       }
       return { text: 'DONE', model: 'fake', usageTokens: 5, latencyMs: 1 };
     },
-    executeTool: async () => {
+    executeTool: async (name: string) => {
       state.toolCalls++;
+      if (name === 'lookupOccupation' && occupationMatches.length > 0) {
+        return { ok: true, data: occupationMatches };
+      }
       return { ok: true, data: [] };
     }
   };
@@ -124,5 +127,30 @@ describe('runCareerPipeline', () => {
     const types = result.trajectory.events.map(e => e.type);
     expect(types).toContain('error');
     expect(types).toContain('repair_retry');
+  });
+
+  it('forwards the evidence pack to the verifier so the pack floor forces coherence repair', async () => {
+    // Suggestion is otherwise fully coherent (grounded citation, registry-backed
+    // resource, valid trajectories) but its resilience score (60) sits BELOW the
+    // pack floor (70) while ABOVE the empty-pack floor (55). Only a forwarded
+    // pack makes the verifier demand repair — this pins orchestrator -> verifier
+    // pack forwarding.
+    const sug = suggestion(true);
+    sug.resilienceDetail.overallResilienceScore = 60;
+    sug.roadmap = [
+      { milestoneNumber: 1, freeResources: [{ name: 'freeCodeCamp', url: 'https://www.freecodecamp.org/learn' }] },
+      { milestoneNumber: 2, freeResources: [] }
+    ];
+    const { deps } = makeDeps(
+      Array.from({ length: 3 }, () => JSON.stringify([sug])),
+      [{ key: 'graphic-designer', detail: { overallResilienceScore: 70 }, matchedQuery: 'graphic designer' }]
+    );
+    const result = await runCareerPipeline(INTAKE, DEFAULT_CONFIG, undefined, deps);
+    const types = result.trajectory.events.map(e => e.type);
+    expect(types).toContain('repair_retry');
+    expect(result.verification?.verdict).toBe('repair');
+    expect(
+      result.verification?.failures.some(f => f.includes('coherence: top suggestion resilience 60 below floor 70'))
+    ).toBe(true);
   });
 });
