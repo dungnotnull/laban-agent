@@ -18,6 +18,9 @@
 - **Actionable-path rate:** the top suggestion must include a
   registry-grounded learning resource, a non-empty `actionStepNow`, and at
   least one free/low-cost milestone.
+- **Denominator note:** coherence and actionable rates are computed over ok
+  (parseable) runs only — a parse-failed run cannot be judged for coherence,
+  and the exclusion flatters the baseline, not the agent.
 - **Cases:** 16 personas — 3 golden (platform demo set) + 13 synthetic
   covering accountants, garment workers, teachers, developers, students,
   nurses, logistics staff, farmers, receptionists, electricians, retail
@@ -106,8 +109,8 @@ Run stamps: `2026-10-13T05-05-07-r{1,2,3}` + `2026-10-13T05-05-07-stability`.
 - persona-garment was not-actionable in r2+r3 and persona-farmer in r1 (top
   suggestion lacked a registry-grounded free resource after repairs) →
   actionable-path 93.8%.
-- Baseline robustness: r1 had 2 parse-failed runs; r2 had 1 schema-invalid
-  run (93.3%).
+- Baseline robustness: r1 had 1 parse-failed run (persona-nurse); r2 had 1
+  schema-invalid run (93.3%).
 - Rural/agricultural actionability is the open equity gap (50% in the
   segment table above).
 
