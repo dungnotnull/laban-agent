@@ -21,7 +21,9 @@ RISK FLAGS: ${profile.riskFlags.join('; ') || 'none'}
 TOOL POLICY:
 1. Call lookupOccupation for each occupation keyword first.
 2. Call searchResearch for AI/automation labor-market evidence relevant to the profile.
-3. Call getOccupationNews AT MOST ONCE, and only if lookupOccupation found no match.
+3. Call searchLearningResources ONCE when the occupation and research lookups are done,
+   grounded in the profile's learning needs (respect English level and digital literacy).
+4. Call getOccupationNews AT MOST ONCE, and only if lookupOccupation found no match.
 You have at most ${MAX_TOOL_CALLS} tool calls. When you have enough evidence, reply with exactly: DONE`;
 }
 
@@ -103,6 +105,12 @@ function mergeIntoPack(pack: EvidencePack, toolName: string, data: unknown): voi
       const entry = source as unknown as ResearchSource;
       if (!pack.research.some(r => (r.id || r.title) === (entry.id || entry.title))) {
         pack.research.push(entry);
+      }
+    }
+  } else if (toolName === 'searchLearningResources' && Array.isArray(data)) {
+    for (const res of data as any[]) {
+      if (!pack.learningResources.some(r => r.id === res.id)) {
+        pack.learningResources.push(res);
       }
     }
   } else if (toolName === 'getOccupationNews' && Array.isArray(data)) {
