@@ -1,10 +1,10 @@
 {
- "runId": "run_1788087498931_tswu2g",
+ "runId": "run_1791868245274_gkcjmf",
  "config": "stage1_tools",
- "startedAt": "2026-08-30T10:58:18.931Z",
+ "startedAt": "2026-10-13T05:10:45.274Z",
  "events": [
   {
-   "ts": "2026-08-30T10:58:18.931Z",
+   "ts": "2026-10-13T05:10:45.274Z",
    "type": "run_start",
    "message": "pipeline for \"Điều dưỡng viên\"",
    "data": {
@@ -15,52 +15,52 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:18.931Z",
+   "ts": "2026-10-13T05:10:45.274Z",
    "type": "agent_start",
    "agent": "profiler"
   },
   {
-   "ts": "2026-08-30T10:58:20.584Z",
+   "ts": "2026-10-13T05:10:46.321Z",
    "type": "llm_call",
    "agent": "profiler",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 490,
-   "latencyMs": 1458
+   "usageTokens": 484,
+   "latencyMs": 1047
   },
   {
-   "ts": "2026-08-30T10:58:20.584Z",
+   "ts": "2026-10-13T05:10:46.322Z",
    "type": "agent_end",
    "agent": "profiler",
    "message": "ok",
    "data": {
     "keywords": [
      "Registered Nurse",
-     "Digital Health Specialist",
-     "Public Health Coordinator"
+     "Healthcare Informaticist",
+     "Public Health Specialist"
     ],
     "riskFlags": [
-     "limited budget for retraining",
-     "high shift-work pressure",
-     "low weekly time availability"
+     "Limited budget for retraining",
+     "Low weekly study availability",
+     "High shift-work burnout risk"
     ]
    }
   },
   {
-   "ts": "2026-08-30T10:58:20.584Z",
+   "ts": "2026-10-13T05:10:46.322Z",
    "type": "agent_start",
    "agent": "evidence_gatherer"
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "llm_call",
    "agent": "evidence_gatherer",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 559,
-   "latencyMs": 890,
-   "message": "4 tool call(s)"
+   "usageTokens": 722,
+   "latencyMs": 955,
+   "message": "5 tool call(s)"
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
@@ -71,7 +71,7 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
@@ -81,18 +81,39 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "args": {
-     "query": "Digital Health Specialist"
+     "query": "Healthcare Informaticist"
     }
    }
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
+   "type": "tool_response",
+   "agent": "evidence_gatherer",
+   "data": {
+    "name": "lookupOccupation",
+    "ok": true,
+    "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+   }
+  },
+  {
+   "ts": "2026-10-13T05:10:47.277Z",
+   "type": "tool_call",
+   "agent": "evidence_gatherer",
+   "data": {
+    "name": "lookupOccupation",
+    "args": {
+     "query": "Public Health Specialist"
+    }
+   }
+  },
+  {
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
@@ -102,39 +123,18 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:21.605Z",
-   "type": "tool_call",
-   "agent": "evidence_gatherer",
-   "data": {
-    "name": "lookupOccupation",
-    "args": {
-     "query": "Public Health Coordinator"
-    }
-   }
-  },
-  {
-   "ts": "2026-08-30T10:58:21.605Z",
-   "type": "tool_response",
-   "agent": "evidence_gatherer",
-   "data": {
-    "name": "lookupOccupation",
-    "ok": true,
-    "summary": "0 item(s) - No direct match in the Vietnam occupation database."
-   }
-  },
-  {
-   "ts": "2026-08-30T10:58:21.605Z",
+   "ts": "2026-10-13T05:10:47.277Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "searchResearch",
     "args": {
-     "query": "digital health Vietnam workforce automation healthcare public health"
+     "query": "Vietnam healthcare digital transformation AI automation nursing workforce McKinsey ILO"
     }
    }
   },
   {
-   "ts": "2026-08-30T10:58:21.606Z",
+   "ts": "2026-10-13T05:10:47.278Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
@@ -144,16 +144,37 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:23.019Z",
+   "ts": "2026-10-13T05:10:47.278Z",
+   "type": "tool_call",
+   "agent": "evidence_gatherer",
+   "data": {
+    "name": "searchLearningResources",
+    "args": {
+     "query": "public health healthcare informatics digital health course Vietnam free low cost"
+    }
+   }
+  },
+  {
+   "ts": "2026-10-13T05:10:47.278Z",
+   "type": "tool_response",
+   "agent": "evidence_gatherer",
+   "data": {
+    "name": "searchLearningResources",
+    "ok": true,
+    "summary": "6 item(s)"
+   }
+  },
+  {
+   "ts": "2026-10-13T05:10:52.499Z",
    "type": "llm_call",
    "agent": "evidence_gatherer",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 2558,
-   "latencyMs": 1102,
+   "usageTokens": 3113,
+   "latencyMs": 5221,
    "message": "final turn"
   },
   {
-   "ts": "2026-08-30T10:58:23.019Z",
+   "ts": "2026-10-13T05:10:52.499Z",
    "type": "agent_end",
    "agent": "evidence_gatherer",
    "data": {
@@ -163,21 +184,21 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:23.019Z",
+   "ts": "2026-10-13T05:10:52.499Z",
    "type": "agent_start",
    "agent": "analyst",
    "message": "initial synthesis"
   },
   {
-   "ts": "2026-08-30T10:58:33.819Z",
+   "ts": "2026-10-13T05:11:00.431Z",
    "type": "llm_call",
    "agent": "analyst",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 6290,
-   "latencyMs": 10598
+   "usageTokens": 6783,
+   "latencyMs": 7932
   },
   {
-   "ts": "2026-08-30T10:58:33.819Z",
+   "ts": "2026-10-13T05:11:00.431Z",
    "type": "agent_end",
    "agent": "analyst",
    "data": {
@@ -185,7 +206,7 @@
    }
   },
   {
-   "ts": "2026-08-30T10:58:33.819Z",
+   "ts": "2026-10-13T05:11:00.431Z",
    "type": "run_end",
    "message": "no verifier (config)"
   }

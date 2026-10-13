@@ -1,10 +1,10 @@
 {
- "runId": "run_1788087617333_unh6vw",
+ "runId": "run_1791868434218_ed1r0r",
  "config": "final_tools_verifier",
- "startedAt": "2026-08-30T11:00:17.333Z",
+ "startedAt": "2026-10-13T05:13:54.218Z",
  "events": [
   {
-   "ts": "2026-08-30T11:00:17.333Z",
+   "ts": "2026-10-13T05:13:54.218Z",
    "type": "run_start",
    "message": "pipeline for \"Fresh Business Graduate\"",
    "data": {
@@ -15,59 +15,62 @@
    }
   },
   {
-   "ts": "2026-08-30T11:00:17.333Z",
+   "ts": "2026-10-13T05:13:54.218Z",
    "type": "agent_start",
    "agent": "profiler"
   },
   {
-   "ts": "2026-08-30T11:00:18.920Z",
+   "ts": "2026-10-13T05:13:55.350Z",
    "type": "llm_call",
    "agent": "profiler",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 676,
-   "latencyMs": 1264
+   "usageTokens": 691,
+   "latencyMs": 1132
   },
   {
-   "ts": "2026-08-30T11:00:18.920Z",
+   "ts": "2026-10-13T05:13:55.350Z",
    "type": "agent_end",
    "agent": "profiler",
-   "message": "degraded to deterministic fallback",
+   "message": "ok",
    "data": {
     "keywords": [
-     "fresh business graduate",
-     "fresh",
-     "business"
+     "Business Analyst",
+     "Digital Marketing Specialist",
+     "Project Coordinator"
     ],
-    "riskFlags": []
+    "riskFlags": [
+     "Lacks deep technical experience",
+     "Missing a concrete project portfolio"
+    ]
    }
   },
   {
-   "ts": "2026-08-30T11:00:18.920Z",
+   "ts": "2026-10-13T05:13:55.350Z",
    "type": "agent_start",
    "agent": "evidence_gatherer"
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "llm_call",
    "agent": "evidence_gatherer",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 529,
-   "latencyMs": 1171,
+   "usageTokens": 729,
+   "latencyMs": 1056,
    "message": "5 tool call(s)"
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "args": {
-     "query": "fresh business graduate"
+     "query": "Business Analyst"
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
@@ -77,60 +80,60 @@
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "args": {
-     "query": "business analyst"
+     "query": "Digital Marketing Specialist"
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "ok": true,
-    "summary": "1 item(s)"
+    "summary": "2 item(s)"
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "args": {
-     "query": "business development"
+     "query": "Project Coordinator"
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
     "name": "lookupOccupation",
     "ok": true,
-    "summary": "1 item(s)"
+    "summary": "0 item(s) - No direct match in the Vietnam occupation database."
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.224Z",
+   "ts": "2026-10-13T05:13:56.406Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
     "name": "searchResearch",
     "args": {
-     "query": "Vietnam generative AI fresh graduates employment business sector"
+     "query": "Vietnam AI automation business analyst digital marketing marketing automation generative AI skills"
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.225Z",
+   "ts": "2026-10-13T05:13:56.407Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
@@ -140,61 +143,61 @@
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.225Z",
+   "ts": "2026-10-13T05:13:56.407Z",
    "type": "tool_call",
    "agent": "evidence_gatherer",
    "data": {
-    "name": "searchResearch",
+    "name": "searchLearningResources",
     "args": {
-     "query": "McKinsey automation AI impact Vietnam white collar professional jobs"
+     "query": "business analytics digital marketing project management free online courses certificate vietnam"
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:20.225Z",
+   "ts": "2026-10-13T05:13:56.407Z",
    "type": "tool_response",
    "agent": "evidence_gatherer",
    "data": {
-    "name": "searchResearch",
+    "name": "searchLearningResources",
     "ok": true,
-    "summary": "3 item(s)"
+    "summary": "6 item(s)"
    }
   },
   {
-   "ts": "2026-08-30T11:00:21.556Z",
+   "ts": "2026-10-13T05:13:57.725Z",
    "type": "llm_call",
    "agent": "evidence_gatherer",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 3701,
-   "latencyMs": 1038,
+   "usageTokens": 3804,
+   "latencyMs": 1318,
    "message": "final turn"
   },
   {
-   "ts": "2026-08-30T11:00:21.556Z",
+   "ts": "2026-10-13T05:13:57.725Z",
    "type": "agent_end",
    "agent": "evidence_gatherer",
    "data": {
-    "occupations": 1,
-    "research": 6,
+    "occupations": 2,
+    "research": 3,
     "news": 0
    }
   },
   {
-   "ts": "2026-08-30T11:00:21.556Z",
+   "ts": "2026-10-13T05:13:57.725Z",
    "type": "agent_start",
    "agent": "analyst",
    "message": "initial synthesis"
   },
   {
-   "ts": "2026-08-30T11:00:30.623Z",
+   "ts": "2026-10-13T05:14:06.389Z",
    "type": "llm_call",
    "agent": "analyst",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 5990,
-   "latencyMs": 8884
+   "usageTokens": 7172,
+   "latencyMs": 8664
   },
   {
-   "ts": "2026-08-30T11:00:30.624Z",
+   "ts": "2026-10-13T05:14:06.389Z",
    "type": "agent_end",
    "agent": "analyst",
    "data": {
@@ -202,29 +205,29 @@
    }
   },
   {
-   "ts": "2026-08-30T11:00:31.922Z",
+   "ts": "2026-10-13T05:14:07.976Z",
    "type": "llm_call",
    "agent": "verifier",
    "model": "gemini-3.5-flash-lite",
-   "usageTokens": 471,
-   "latencyMs": 1109
+   "usageTokens": 476,
+   "latencyMs": 1587
   },
   {
-   "ts": "2026-08-30T11:00:31.922Z",
+   "ts": "2026-10-13T05:14:07.976Z",
    "type": "verification_result",
    "agent": "verifier",
    "data": {
     "verdict": "pass",
     "failures": [],
     "judge": {
-     "personalization": 85,
-     "groundedness": 80,
-     "rationale": "The guidance successfully references specific user strengths like IELTS 7.0 and business overview thinking, though it introduces some unstated background details like the specific university."
+     "personalization": 90,
+     "groundedness": 85,
+     "rationale": "The guidance strongly incorporates the user's specific background, including NEU education, IELTS 7.0, and business acumen strengths, tailoring the rationale directly to these inputs."
     }
    }
   },
   {
-   "ts": "2026-08-30T11:00:31.922Z",
+   "ts": "2026-10-13T05:14:07.976Z",
    "type": "run_end",
    "message": "final verdict: pass"
   }
