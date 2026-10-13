@@ -355,8 +355,16 @@ export default function App() {
               />
             </div>
 
-            {/* Human-in-the-loop counselor review (ground rule 05) */}
-            <CounselorReviewGate trajectory={agentTrajectory} language={language} onReviewed={() => {}} />
+            {/* Human-in-the-loop counselor review (ground rule 05).
+                Keyed by runId so a new pipeline run resets the approval state;
+                onReviewed re-sets the trajectory so the checkpoint event
+                appears live in the transparency panel below. */}
+            <CounselorReviewGate
+              key={agentTrajectory?.runId ?? 'none'}
+              trajectory={agentTrajectory}
+              language={language}
+              onReviewed={() => setAgentTrajectory(agentTrajectory ? { ...agentTrajectory } : null)}
+            />
 
             {/* Agent Pipeline Transparency Panel */}
             <AgentTransparencyPanel trajectory={agentTrajectory} language={language} />
