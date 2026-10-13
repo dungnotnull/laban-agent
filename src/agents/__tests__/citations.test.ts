@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { verifyCitation, verifySuggestions, jaccard } from '../citations';
+import { verifyCitation, verifySuggestions, jaccard, verifyResourceUrls } from '../citations';
 import { RESEARCH_LIBRARY } from '../../data/researchLibrary';
 
 describe('jaccard', () => {
@@ -53,5 +53,26 @@ describe('verifySuggestions', () => {
     expect(report.hallucinated).toEqual([
       { suggestionIndex: 0, paperTitle: 'Totally Made Up Journal of Nothing 1234' }
     ]);
+  });
+});
+
+describe('verifyResourceUrls', () => {
+  it('grounds urls present in the registry', () => {
+    const sugs: any[] = [{ roadmap: [{ freeResources: [{ url: 'https://www.freecodecamp.org/learn' }] }] }];
+    const r = verifyResourceUrls(sugs);
+    expect(r.total).toBe(1);
+    expect(r.grounded).toBe(1);
+    expect(r.ungrounded).toEqual([]);
+  });
+
+  it('flags invented urls', () => {
+    const sugs: any[] = [{ roadmap: [{ freeResources: [{ url: 'https://example.com/fake-course' }] }] }];
+    const r = verifyResourceUrls(sugs);
+    expect(r.grounded).toBe(0);
+    expect(r.ungrounded[0]).toContain('example.com/fake-course');
+  });
+
+  it('handles missing roadmap gracefully', () => {
+    expect(verifyResourceUrls([{}]).total).toBe(0);
   });
 });

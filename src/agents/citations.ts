@@ -1,5 +1,6 @@
 import { RESEARCH_LIBRARY } from '../data/researchLibrary';
 import { VIETNAM_OCCUPATIONS_DATABASE } from '../data/vietnamOccupations';
+import { LEARNING_RESOURCE_URLS } from '../data/learningResources';
 import type { CareerSuggestion } from '../types';
 
 export const CITATION_SIMILARITY_THRESHOLD = 0.75;
@@ -92,5 +93,30 @@ export function verifySuggestions(suggestions: CareerSuggestion[]): CitationRepo
       }
     }
   });
+  return report;
+}
+
+export interface ResourceUrlReport {
+  total: number;
+  grounded: number;
+  ungrounded: string[];
+}
+
+/** freeResources URLs must exact-match the curated registry — same philosophy as citation grounding. */
+export function verifyResourceUrls(suggestions: any[]): ResourceUrlReport {
+  const report: ResourceUrlReport = { total: 0, grounded: 0, ungrounded: [] };
+  for (const sug of suggestions || []) {
+    for (const m of sug?.roadmap || []) {
+      for (const res of m?.freeResources || []) {
+        if (!res?.url) continue;
+        report.total++;
+        if (LEARNING_RESOURCE_URLS.has(res.url)) {
+          report.grounded++;
+        } else {
+          report.ungrounded.push(res.url);
+        }
+      }
+    }
+  }
   return report;
 }
