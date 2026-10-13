@@ -59,16 +59,22 @@ export interface CareerAnalysisItem {
   laborDemandIndex?: number; // 0-100% (Chỉ số cung cầu lao động)
   demandGrowthRate: string; // e.g. "+38% (2024-2028)" or "-24% (2024-2028)"
   averageSalaryVND: string; // e.g. "30,000,000 - 55,000,000 VND"
+  averageSalaryVNDEn?: string;
   whyTrendingOrVulnerable: string;
+  whyTrendingOrVulnerableEn?: string;
   keySkillsRequiredOrAtRisk: string[];
+  keySkillsRequiredOrAtRiskEn?: string[];
   humanMoatFactor: string;
+  humanMoatFactorEn?: string;
   citedResearchPaper: {
     title: string;
     institution: string;
     year: number;
     quoteOrKeyFinding: string;
+    quoteOrKeyFindingEn?: string;
   };
   transitionAdvice: string;
+  transitionAdviceEn?: string;
 }
 
 export interface ComprehensiveCareerAnalysisResult {

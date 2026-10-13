@@ -25,6 +25,13 @@ import { CareerAnalysisItem, ComprehensiveCareerAnalysisResult } from '../types/
 import { Language } from '../types';
 import { t } from '../utils/i18n';
 
+// Pick the English mirror when rendering in EN mode, falling back to the Vietnamese source.
+const pickListFor = (language: Language, viList: string[] | undefined, enList: string[] | undefined): string[] =>
+  language === 'en' && enList && enList.length > 0 ? enList : (viList || []);
+
+const pickStrFor = (language: Language, viStr: string | undefined, enStr: string | undefined): string =>
+  language === 'en' && enStr ? enStr : (viStr || '');
+
 interface ComprehensiveCareerRadarViewProps {
   analysis: ComprehensiveCareerAnalysisResult;
   isLoading: boolean;
@@ -185,7 +192,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
   };
 
   const pickList = (viList: string[] | undefined, enList: string[] | undefined): string[] =>
-    language === 'en' && enList && enList.length > 0 ? enList : (viList || []);
+    pickListFor(language, viList, enList);
 
   const getUpdatedDate = () => {
     if (macroData?.timestamp) {
@@ -775,10 +782,10 @@ const CareerCardItem: React.FC<{
         {/* Title */}
         <div>
           <h3 className="font-extrabold text-base text-slate-900 font-sans leading-snug">
-            {career.titleVi}
+            {language === 'en' ? career.title : career.titleVi}
           </h3>
           <p className="text-xs text-slate-500 font-mono mt-0.5">
-            {career.title}
+            {language === 'en' ? career.titleVi : career.title}
           </p>
         </div>
 
@@ -786,7 +793,7 @@ const CareerCardItem: React.FC<{
         <div className="grid grid-cols-2 gap-2 bg-slate-50 p-2.5 rounded-xl border border-slate-200 text-xs">
           <div>
             <span className="text-[10px] text-slate-400 block font-semibold">{t(language, 'Thu nhập ước tính:', 'Est. Salary:')}</span>
-            <span className="font-bold text-slate-800">{career.averageSalaryVND}</span>
+            <span className="font-bold text-slate-800">{pickStrFor(language, career.averageSalaryVND, career.averageSalaryVNDEn)}</span>
           </div>
           <div>
             <span className="text-[10px] text-slate-400 block font-semibold">{t(language, 'Tăng trưởng 2024-2028:', 'Growth 2024-2028:')}</span>
@@ -798,7 +805,7 @@ const CareerCardItem: React.FC<{
 
         {/* Short Why Narrative */}
         <p className="text-xs text-slate-600 leading-relaxed">
-          {career.whyTrendingOrVulnerable}
+          {pickStrFor(language, career.whyTrendingOrVulnerable, career.whyTrendingOrVulnerableEn)}
         </p>
 
         {/* Key Skills Tags */}
@@ -807,7 +814,7 @@ const CareerCardItem: React.FC<{
             {isTrending ? t(language, 'Kỹ năng cốt lõi cần có:', 'Core skills needed:') : t(language, 'Kỹ năng dễ bị tự động hóa:', 'Easily automated skills:')}
           </span>
           <div className="flex flex-wrap gap-1.5">
-            {(career.keySkillsRequiredOrAtRisk || []).map((skill, idx) => (
+            {pickListFor(language, career.keySkillsRequiredOrAtRisk, career.keySkillsRequiredOrAtRiskEn).map((skill, idx) => (
               <span
                 key={idx}
                 className="text-[11px] px-2.5 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200 font-medium"
@@ -823,7 +830,7 @@ const CareerCardItem: React.FC<{
           <div className="space-y-3 pt-3 border-t border-slate-100 text-xs bg-slate-50/60 p-3 rounded-xl">
             <div>
               <span className="font-bold text-slate-800 block mb-0.5">🛡️ {t(language, 'Yếu tố thành lũy con người (Human Moat):', 'Human Moat Factor:')}</span>
-              <p className="text-slate-600 leading-relaxed">{career.humanMoatFactor}</p>
+              <p className="text-slate-600 leading-relaxed">{pickStrFor(language, career.humanMoatFactor, career.humanMoatFactorEn)}</p>
             </div>
 
             <div>
@@ -833,14 +840,14 @@ const CareerCardItem: React.FC<{
                   "{career.citedResearchPaper.title}" ({career.citedResearchPaper.institution}, {career.citedResearchPaper.year})
                 </span>
                 <p className="text-slate-600 italic">
-                  "{career.citedResearchPaper.quoteOrKeyFinding}"
+                  "{pickStrFor(language, career.citedResearchPaper.quoteOrKeyFinding, career.citedResearchPaper.quoteOrKeyFindingEn)}"
                 </p>
               </div>
             </div>
 
             <div>
               <span className="font-bold text-amber-900 block mb-0.5">🧭 {t(language, 'Lời khuyên hành động tức thì:', 'Immediate Action Advice:')}</span>
-              <p className="text-slate-700 font-medium">{career.transitionAdvice}</p>
+              <p className="text-slate-700 font-medium">{pickStrFor(language, career.transitionAdvice, career.transitionAdviceEn)}</p>
             </div>
 
             {/* Skill Gap Radar Chart (Wow Factor) */}

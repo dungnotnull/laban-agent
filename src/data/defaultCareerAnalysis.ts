@@ -120,16 +120,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 18,
       demandGrowthRate: '+65% (2024-2028)',
       averageSalaryVND: '45,000,000 - 90,000,000 VND / tháng',
+      averageSalaryVNDEn: '45,000,000 - 90,000,000 VND / month',
       whyTrendingOrVulnerable: 'Doanh nghiệp Việt Nam đang chuyển từ thử nghiệm AI sang tích hợp toàn diện vào quy trình kinh doanh. Vai trò này đòi hỏi kết nối công nghệ với bài toán kinh tế thực tế.',
+      whyTrendingOrVulnerableEn: 'Vietnamese businesses are moving from AI experimentation to full-scale integration into business operations. This role connects technology with real economic problems.',
       keySkillsRequiredOrAtRisk: ['Thiết kế kiến trúc hệ thống RAG', 'Agentic Workflow Automation (n8n, LangChain)', 'Tư duy nghiệp vụ doanh nghiệp', 'Bảo mật & Quản trị AI'],
+      keySkillsRequiredOrAtRiskEn: ['RAG system architecture design', 'Agentic workflow automation (n8n, LangChain)', 'Business domain thinking', 'AI security & governance'],
       humanMoatFactor: 'Khả năng hiểu bối cảnh vận hành đặc thù của từng tổ chức và ra quyết định chiến lược đa biến.',
+      humanMoatFactorEn: 'Understanding the specific operating context of each organization and making multi-variable strategic decisions.',
       citedResearchPaper: {
         title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
         institution: 'OpenAI, OpenResearch & University of Pennsylvania',
         year: 2023,
-        quoteOrKeyFinding: 'Khoảng 19% người lao động có ít nhất 50% nhiệm vụ chịu ảnh hưởng của LLM; các vai trò thiết kế tích hợp hệ thống có độ mở rộng giá trị thăng tiến cao nhất.'
+        quoteOrKeyFinding: 'Khoảng 19% người lao động có ít nhất 50% nhiệm vụ chịu ảnh hưởng của LLM; các vai trò thiết kế tích hợp hệ thống có độ mở rộng giá trị thăng tiến cao nhất.',
+        quoteOrKeyFindingEn: 'About 19% of workers have at least 50% of their tasks exposed to LLMs; roles that design and integrate systems show the highest value-upside expansion.'
       },
-      transitionAdvice: 'Tập trung học cách kết nối API mô hình lớn, xây dựng luồng tự động hóa n8n/Make và học thêm kỹ năng tư vấn giải pháp.'
+      transitionAdvice: 'Tập trung học cách kết nối API mô hình lớn, xây dựng luồng tự động hóa n8n/Make và học thêm kỹ năng tư vấn giải pháp.',
+      transitionAdviceEn: 'Focus on learning how to connect large-model APIs, build n8n/Make automation flows, and add solution consulting skills.'
     },
     {
       id: 'trend-2',
@@ -142,16 +148,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 22,
       demandGrowthRate: '+52% (2024-2028)',
       averageSalaryVND: '30,000,000 - 60,000,000 VND / tháng',
+      averageSalaryVNDEn: '30,000,000 - 60,000,000 VND / month',
       whyTrendingOrVulnerable: 'Chất lượng đầu ra của AI phụ thuộc trực tiếp vào cấu trúc câu lệnh và dữ liệu ngữ cảnh (Few-shot, Chain-of-Thought, System Instructions).',
+      whyTrendingOrVulnerableEn: 'AI output quality depends directly on prompt structure and contextual data (few-shot, chain-of-thought, system instructions).',
       keySkillsRequiredOrAtRisk: ['Kỹ thuật Prompting đa tầng', 'Đánh giá độ chính xác (Benchmarking)', 'Tối ưu Token & Chi phí API', 'Xử lý tiếng Việt chuyên ngành'],
+      keySkillsRequiredOrAtRiskEn: ['Multi-layer prompt engineering', 'Accuracy benchmarking', 'Token & API cost optimization', 'Domain-specific Vietnamese language handling'],
       humanMoatFactor: 'Năng lực tư duy ngôn ngữ học, trực giác tâm lý và khả năng diễn đạt logic sắc bén.',
+      humanMoatFactorEn: 'Linguistic thinking, psychological intuition, and sharp logical expression.',
       citedResearchPaper: {
         title: 'Navigating the Jagged Technological Frontier: Field Experimental Evidence on AI Productivity',
         institution: 'Harvard Business School & Boston Consulting Group',
         year: 2023,
-        quoteOrKeyFinding: 'Chuyên gia sử dụng AI có kỹ năng chỉ dẫn ngữ cảnh tốt hoàn thành công việc nhanh hơn 25.1% và đạt chất lượng cao hơn 40% so với nhóm không sử dụng đúng cách.'
+        quoteOrKeyFinding: 'Chuyên gia sử dụng AI có kỹ năng chỉ dẫn ngữ cảnh tốt hoàn thành công việc nhanh hơn 25.1% và đạt chất lượng cao hơn 40% so với nhóm không sử dụng đúng cách.',
+        quoteOrKeyFindingEn: 'Experts using AI with good context-instruction skills completed tasks 25.1% faster and produced 40% higher quality than those who did not use it properly.'
       },
-      transitionAdvice: 'Thực hành tương tác sâu với Gemini Pro/Flash API, nắm vững System Instructions và các phương pháp kiểm thử Hallucination.'
+      transitionAdvice: 'Thực hành tương tác sâu với Gemini Pro/Flash API, nắm vững System Instructions và các phương pháp kiểm thử Hallucination.',
+      transitionAdviceEn: 'Practice deep interaction with the Gemini Pro/Flash API, master system instructions, and learn hallucination testing methods.'
     },
     {
       id: 'trend-3',
@@ -164,16 +176,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 20,
       demandGrowthRate: '+48% (2024-2028)',
       averageSalaryVND: '40,000,000 - 85,000,000 VND / tháng',
+      averageSalaryVNDEn: '40,000,000 - 85,000,000 VND / month',
       whyTrendingOrVulnerable: 'Cần người định hình bài toán người dùng, xác định giá trị sản phẩm AI khả thi về mặt kỹ thuật và thương mại.',
+      whyTrendingOrVulnerableEn: 'Someone must frame the user problem and define AI product value that is both technically and commercially feasible.',
       keySkillsRequiredOrAtRisk: ['Định vị sản phẩm (Product Strategy)', 'Đánh giá ROI & UX AI', 'Quản trị rủi ro & Đạo đức AI', 'Hiểu biết LLM/Multimodal'],
+      keySkillsRequiredOrAtRiskEn: ['Product strategy & positioning', 'AI ROI & UX evaluation', 'AI risk & ethics governance', 'LLM/multimodal literacy'],
       humanMoatFactor: 'Sự thấu cảm sâu sắc nhu cầu người dùng, đàm phán lợi ích các bên và tầm nhìn kinh doanh.',
+      humanMoatFactorEn: 'Deep empathy for user needs, stakeholder negotiation, and business vision.',
       citedResearchPaper: {
         title: 'The Future of Jobs Report 2023-2027',
         institution: 'World Economic Forum (WEF)',
         year: 2023,
-        quoteOrKeyFinding: 'Kỹ năng quản trị sản phẩm công nghệ và định hướng chiến lược nằm trong top 5 năng lực tăng trưởng nhu cầu tuyển dụng toàn cầu.'
+        quoteOrKeyFinding: 'Kỹ năng quản trị sản phẩm công nghệ và định hướng chiến lược nằm trong top 5 năng lực tăng trưởng nhu cầu tuyển dụng toàn cầu.',
+        quoteOrKeyFindingEn: 'Technology product management and strategic direction skills rank in the top 5 fastest-growing capabilities in global recruitment demand.'
       },
-      transitionAdvice: 'Kết hợp kinh nghiệm quản lý dự án hiện tại với các chứng chỉ Product Management và hiểu biết kiến trúc GenAI.'
+      transitionAdvice: 'Kết hợp kinh nghiệm quản lý dự án hiện tại với các chứng chỉ Product Management và hiểu biết kiến trúc GenAI.',
+      transitionAdviceEn: 'Combine current project management experience with product management certifications and GenAI architecture literacy.'
     },
     {
       id: 'trend-4',
@@ -186,16 +204,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 12,
       demandGrowthRate: '+60% (2024-2028)',
       averageSalaryVND: '35,000,000 - 70,000,000 VND / tháng',
+      averageSalaryVNDEn: '35,000,000 - 70,000,000 VND / month',
       whyTrendingOrVulnerable: 'Luật AI và các quy định về bảo vệ dữ liệu cá nhân tại Việt Nam & quốc tế yêu cầu kiểm soát thiên kiến (bias), ảo giác và rò rỉ thông tin.',
+      whyTrendingOrVulnerableEn: 'AI laws and personal data protection regulations in Vietnam and internationally require control of bias, hallucination, and information leakage.',
       keySkillsRequiredOrAtRisk: ['Kiểm thử độ an toàn (Red Teaming)', 'Tuân thủ khung pháp lý bảo mật dữ liệu', 'Đánh giá tính minh bạch thuật toán', 'Quản trị rủi ro AI'],
+      keySkillsRequiredOrAtRiskEn: ['Safety testing (red teaming)', 'Compliance with data protection legal frameworks', 'Algorithmic transparency assessment', 'AI risk governance'],
       humanMoatFactor: 'Phán đoán đạo đức xã hội, nhận thức văn hóa địa phương và trách nhiệm pháp lý con người.',
+      humanMoatFactorEn: 'Social-ethical judgment, local cultural awareness, and human legal accountability.',
       citedResearchPaper: {
         title: 'Holistic Evaluation of Language Models (HELM)',
         institution: 'Stanford Center for Research on Foundation Models (CRFM)',
         year: 2023,
-        quoteOrKeyFinding: 'Việc đánh giá độc lập về độ an toàn, tính thiên kiến và bản quyền đòi hỏi sự can thiệp và giám sát trực tiếp của chuyên gia nhân văn.'
+        quoteOrKeyFinding: 'Việc đánh giá độc lập về độ an toàn, tính thiên kiến và bản quyền đòi hỏi sự can thiệp và giám sát trực tiếp của chuyên gia nhân văn.',
+        quoteOrKeyFindingEn: 'Independent evaluation of safety, bias, and copyright requires direct intervention and oversight by domain experts.'
       },
-      transitionAdvice: 'Nghiên cứu khung pháp lý Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân và các tiêu chuẩn quốc tế ISO 42001.'
+      transitionAdvice: 'Nghiên cứu khung pháp lý Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân và các tiêu chuẩn quốc tế ISO 42001.',
+      transitionAdviceEn: 'Study Decree 13/2023/ND-CP on personal data protection and international standards such as ISO 42001.'
     },
     {
       id: 'trend-5',
@@ -208,16 +232,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 26,
       demandGrowthRate: '+45% (2024-2028)',
       averageSalaryVND: '35,000,000 - 65,000,000 VND / tháng',
+      averageSalaryVNDEn: '35,000,000 - 65,000,000 VND / month',
       whyTrendingOrVulnerable: 'AI chỉ thông minh khi có dữ liệu sạch và chuẩn xác. Doanh nghiệp cần xây dựng kho tri thức số hóa và cơ sở dữ liệu vector.',
+      whyTrendingOrVulnerableEn: 'AI is only as smart as its data is clean and accurate. Businesses need digitized knowledge bases and vector databases.',
       keySkillsRequiredOrAtRisk: ['Vector Database (Pinecone, Chroma, pgvector)', 'Xử lý cấu trúc dữ liệu không đồng nhất', 'Thiết kế cây tri thức (Ontology/Knowledge Graph)', 'SQL & Python'],
+      keySkillsRequiredOrAtRiskEn: ['Vector databases (Pinecone, Chroma, pgvector)', 'Handling heterogeneous data structures', 'Knowledge structure design (ontology/knowledge graph)', 'SQL & Python'],
       humanMoatFactor: 'Khả năng thẩm định chất lượng dữ liệu nghiệp vụ và thiết kế cấu trúc quan hệ logic phức tạp.',
+      humanMoatFactorEn: 'Assessing the quality of business data and designing complex logical relationship structures.',
       citedResearchPaper: {
         title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks',
         institution: 'Meta AI & University College London',
         year: 2021,
-        quoteOrKeyFinding: 'Hệ thống RAG giảm ảo giác tới 80% nhưng phụ thuộc hoàn toàn vào kiến trúc dữ liệu đầu vào được thiết kế có chủ đích.'
+        quoteOrKeyFinding: 'Hệ thống RAG giảm ảo giác tới 80% nhưng phụ thuộc hoàn toàn vào kiến trúc dữ liệu đầu vào được thiết kế có chủ đích.',
+        quoteOrKeyFindingEn: 'RAG systems reduce hallucination by up to 80% but depend entirely on deliberately designed input data architecture.'
       },
-      transitionAdvice: 'Nâng cao kỹ năng quản trị cơ sở dữ liệu, học thêm về embedding models và kỹ thuật chunking văn bản.'
+      transitionAdvice: 'Nâng cao kỹ năng quản trị cơ sở dữ liệu, học thêm về embedding models và kỹ thuật chunking văn bản.',
+      transitionAdviceEn: 'Strengthen database management skills and learn about embedding models and text chunking techniques.'
     },
     {
       id: 'trend-6',
@@ -230,16 +260,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 8,
       demandGrowthRate: '+40% (2024-2028)',
       averageSalaryVND: '25,000,000 - 55,000,000 VND / tháng',
+      averageSalaryVNDEn: '25,000,000 - 55,000,000 VND / month',
       whyTrendingOrVulnerable: 'Áp lực chuyển đổi số và cuộc sống hiện đại khiến nhu cầu chăm sóc sức khỏe tinh thần bùng nổ; AI chỉ đóng vai trò trợ lý sàng lọc ban đầu.',
+      whyTrendingOrVulnerableEn: 'Digital transformation pressure and modern lifestyles are driving explosive demand for mental health care; AI only serves as an initial screening assistant.',
       keySkillsRequiredOrAtRisk: ['Lắng nghe thấu cảm sâu', 'Chẩn đoán lâm sàng & Trị liệu tâm lý', 'Xây dựng mối quan hệ tin cậy', 'Sử dụng AI ghi chép bệnh án'],
+      keySkillsRequiredOrAtRiskEn: ['Deep empathetic listening', 'Clinical diagnosis & psychotherapy', 'Building trusting relationships', 'Using AI for clinical note-taking'],
       humanMoatFactor: 'Trí tuệ cảm xúc thực sự, sự hiện diện của con người và tính bảo mật đạo đức y khoa.',
+      humanMoatFactorEn: 'Genuine emotional intelligence, human presence, and medical-ethical confidentiality.',
       citedResearchPaper: {
         title: 'Artificial Intelligence in Mental Healthcare: Opportunities, Risks, and Future Directions',
         institution: 'The Lancet Psychiatry',
         year: 2023,
-        quoteOrKeyFinding: 'Bệnh nhân đòi hỏi sự thấu cảm con người thực tế trong các quyết định trị liệu phức tạp; AI chỉ hỗ trợ phân loại sơ bộ.'
+        quoteOrKeyFinding: 'Bệnh nhân đòi hỏi sự thấu cảm con người thực tế trong các quyết định trị liệu phức tạp; AI chỉ hỗ trợ phân loại sơ bộ.',
+        quoteOrKeyFindingEn: 'Patients demand genuine human empathy in complex treatment decisions; AI only supports preliminary triage.'
       },
-      transitionAdvice: 'Theo học các chứng chỉ tâm lý học trị liệu được công nhận, ứng dụng AI vào việc soạn kế hoạch chăm sóc và báo cáo.'
+      transitionAdvice: 'Theo học các chứng chỉ tâm lý học trị liệu được công nhận, ứng dụng AI vào việc soạn kế hoạch chăm sóc và báo cáo.',
+      transitionAdviceEn: 'Pursue recognized psychotherapy certifications and apply AI to drafting care plans and reports.'
     },
     {
       id: 'trend-7',
@@ -252,16 +288,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 15,
       demandGrowthRate: '+38% (2024-2028)',
       averageSalaryVND: '35,000,000 - 75,000,000 VND / tháng',
+      averageSalaryVNDEn: '35,000,000 - 75,000,000 VND / month',
       whyTrendingOrVulnerable: 'Rào cản lớn nhất khi ứng dụng AI là sự phản kháng của con người và văn hóa doanh nghiệp, cần chuyên gia dẫn dắt chuyển đổi.',
+      whyTrendingOrVulnerableEn: 'The biggest barrier to AI adoption is human resistance and corporate culture, requiring experts who can lead the change.',
       keySkillsRequiredOrAtRisk: ['Quản trị sự thay đổi (Change Management Frameworks)', 'Đào tạo và nâng cao năng lực nhân sự', 'Tái thiết kế quy trình nghiệp vụ (BPR)', 'Kỹ năng thuyết phục lãnh đạo'],
+      keySkillsRequiredOrAtRiskEn: ['Change management frameworks', 'Workforce training and capability building', 'Business process redesign (BPR)', 'Executive persuasion skills'],
       humanMoatFactor: 'Khả năng điều hướng cảm xúc tổ chức, giải quyết xung đột nội bộ và tạo động lực cho nhân viên.',
+      humanMoatFactorEn: 'Navigating organizational emotions, resolving internal conflicts, and motivating employees.',
       citedResearchPaper: {
         title: 'Leading Change in the Age of AI',
         institution: 'MIT Sloan Management Review & McKinsey & Company',
         year: 2024,
-        quoteOrKeyFinding: 'Hơn 70% dự án chuyển đổi số thất bại do yếu tố con người và văn hóa, làm tăng nhu cầu cấp thiết về chuyên gia quản trị thay đổi.'
+        quoteOrKeyFinding: 'Hơn 70% dự án chuyển đổi số thất bại do yếu tố con người và văn hóa, làm tăng nhu cầu cấp thiết về chuyên gia quản trị thay đổi.',
+        quoteOrKeyFindingEn: 'Over 70% of digital transformation projects fail due to human and cultural factors, driving urgent demand for change management experts.'
       },
-      transitionAdvice: 'Học các mô hình chuyển đổi như ADKAR/Kotter, kết hợp với hiểu biết thực tế về ứng dụng công nghệ trong doanh nghiệp.'
+      transitionAdvice: 'Học các mô hình chuyển đổi như ADKAR/Kotter, kết hợp với hiểu biết thực tế về ứng dụng công nghệ trong doanh nghiệp.',
+      transitionAdviceEn: 'Learn transformation models such as ADKAR/Kotter, combined with hands-on understanding of technology adoption in enterprises.'
     },
     {
       id: 'trend-8',
@@ -274,16 +316,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 28,
       demandGrowthRate: '+35% (2024-2028)',
       averageSalaryVND: '30,000,000 - 65,000,000 VND / tháng',
+      averageSalaryVNDEn: '30,000,000 - 65,000,000 VND / month',
       whyTrendingOrVulnerable: 'Khi AI có thể tạo hình ảnh hàng loạt trong vài giây, giá trị nằm ở gu thẩm mỹ độc bản, chiều sâu cảm xúc và bản sắc văn hóa thương hiệu.',
+      whyTrendingOrVulnerableEn: 'When AI can generate images in bulk within seconds, value lies in original aesthetic taste, emotional depth, and brand cultural identity.',
       keySkillsRequiredOrAtRisk: ['Tư duy thẩm mỹ & Art Direction', 'Kể chuyện thương hiệu (Storytelling)', 'Chỉ đạo phối hợp AI tạo sinh (Midjourney, Stable Diffusion)', 'Hiểu biết sâu văn hóa bản địa'],
+      keySkillsRequiredOrAtRiskEn: ['Aesthetic thinking & art direction', 'Brand storytelling', 'Directing generative AI (Midjourney, Stable Diffusion)', 'Deep local cultural knowledge'],
       humanMoatFactor: 'Khả năng kết nối cảm xúc độc đáo với tâm lý con người và tạo ra những ý niệm đột phá phi logic.',
+      humanMoatFactorEn: 'Connecting emotions uniquely with human psychology and producing breakthrough, non-linear ideas.',
       citedResearchPaper: {
         title: 'Generative AI and the Future of Creative Work',
         institution: 'Stanford Institute for Human-Centered AI (HAI)',
         year: 2024,
-        quoteOrKeyFinding: 'AI tạo ra sự bão hòa nội dung tầm trung, nâng cao giá trị thặng dư của các giám đốc nghệ thuật có khả năng tuyển chọn và định hình gu thẩm mỹ cao cấp.'
+        quoteOrKeyFinding: 'AI tạo ra sự bão hòa nội dung tầm trung, nâng cao giá trị thặng dư của các giám đốc nghệ thuật có khả năng tuyển chọn và định hình gu thẩm mỹ cao cấp.',
+        quoteOrKeyFindingEn: 'AI creates saturation of mid-tier content, raising the premium value of art directors able to curate and shape high-end aesthetics.'
       },
-      transitionAdvice: 'Chuyển từ người vẽ thao tác thủ công sang vai trò giám đốc nghệ thuật, làm chủ các công cụ ComfyUI/Midjourney để chỉ đạo dự án.'
+      transitionAdvice: 'Chuyển từ người vẽ thao tác thủ công sang vai trò giám đốc nghệ thuật, làm chủ các công cụ ComfyUI/Midjourney để chỉ đạo dự án.',
+      transitionAdviceEn: 'Move from hands-on manual illustration to an art director role, mastering ComfyUI/Midjourney tools to direct projects.'
     },
     {
       id: 'trend-9',
@@ -296,16 +344,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 14,
       demandGrowthRate: '+55% (2024-2028)',
       averageSalaryVND: '30,000,000 - 60,000,000 VND / tháng',
+      averageSalaryVNDEn: '30,000,000 - 60,000,000 VND / month',
       whyTrendingOrVulnerable: 'Việt Nam đang trở thành trung tâm sản xuất công nghệ cao của thế giới; sự kết hợp AI với robot vật lý (Physical AI) tăng trưởng vượt bậc.',
+      whyTrendingOrVulnerableEn: 'Vietnam is becoming a global high-tech manufacturing hub; combining AI with physical robots (physical AI) is growing rapidly.',
       keySkillsRequiredOrAtRisk: ['Lập trình PLC & Robot công nghiệp', 'Thị giác máy tính (Computer Vision)', 'Tích hợp cảm biến IoT', 'Bảo trì dự đoán (Predictive Maintenance)'],
+      keySkillsRequiredOrAtRiskEn: ['PLC & industrial robot programming', 'Computer vision', 'IoT sensor integration', 'Predictive maintenance'],
       humanMoatFactor: 'Kỹ năng tương tác và xử lý sự cố trong môi trường vật lý thế giới thực mà mô hình phần mềm không thể chạm tới.',
+      humanMoatFactorEn: 'Interaction and troubleshooting skills in real-world physical environments that software models cannot reach.',
       citedResearchPaper: {
         title: 'Robotics and the Future of Manufacturing in ASEAN',
         institution: 'International Labour Organization (ILO)',
         year: 2023,
-        quoteOrKeyFinding: 'Làn sóng đầu tư FDI công nghệ cao tại Việt Nam thúc đẩy nhu cầu kỹ sư vận hành hệ thống tự động hóa thông minh tăng hơn 45%.'
+        quoteOrKeyFinding: 'Làn sóng đầu tư FDI công nghệ cao tại Việt Nam thúc đẩy nhu cầu kỹ sư vận hành hệ thống tự động hóa thông minh tăng hơn 45%.',
+        quoteOrKeyFindingEn: 'High-tech FDI investment in Vietnam is driving demand for intelligent automation systems engineers up more than 45%.'
       },
-      transitionAdvice: 'Học bổ sung về ROS (Robot Operating System), thị giác máy tính và các giao thức công nghiệp 4.0.'
+      transitionAdvice: 'Học bổ sung về ROS (Robot Operating System), thị giác máy tính và các giao thức công nghiệp 4.0.',
+      transitionAdviceEn: 'Learn ROS (Robot Operating System), computer vision, and Industry 4.0 protocols.'
     },
     {
       id: 'trend-10',
@@ -318,16 +372,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 16,
       demandGrowthRate: '+42% (2024-2028)',
       averageSalaryVND: '28,000,000 - 58,000,000 VND / tháng',
+      averageSalaryVNDEn: '28,000,000 - 58,000,000 VND / month',
       whyTrendingOrVulnerable: 'Cam kết Net Zero 2050 của Việt Nam và các tiêu chuẩn xuất khẩu sang EU (CBAM) bắt buộc các nhà máy phải có chuyên gia ESG.',
+      whyTrendingOrVulnerableEn: 'The Net Zero 2050 commitment and EU export standards (CBAM) require factories to have ESG specialists.',
       keySkillsRequiredOrAtRisk: ['Báo cáo kiểm kê khí nhà kính (GHG Protocol)', 'Đánh giá vòng đời sản phẩm (LCA)', 'Phân tích dữ liệu năng lượng với AI', 'Tuân thủ tiêu chuẩn ESG quốc tế'],
+      keySkillsRequiredOrAtRiskEn: ['Greenhouse gas inventory reporting (GHG Protocol)', 'Product lifecycle assessment (LCA)', 'AI-driven energy data analysis', 'Compliance with international ESG standards'],
       humanMoatFactor: 'Khả năng thương thảo chính sách, đánh giá tác động môi trường thực địa và thẩm định xã hội.',
+      humanMoatFactorEn: 'Policy negotiation, field environmental impact assessment, and social auditing.',
       citedResearchPaper: {
         title: 'Green Skills for the Future of Work in Asia-Pacific',
         institution: 'Asian Development Bank (ADB)',
         year: 2024,
-        quoteOrKeyFinding: 'Chuyển đổi xanh kết hợp công nghệ số mở ra hơn 1.2 triệu vị trí việc làm mới tại Đông Nam Á trong thập kỷ tới.'
+        quoteOrKeyFinding: 'Chuyển đổi xanh kết hợp công nghệ số mở ra hơn 1.2 triệu vị trí việc làm mới tại Đông Nam Á trong thập kỷ tới.',
+        quoteOrKeyFindingEn: 'Green transformation combined with digital technology will open more than 1.2 million new jobs in Southeast Asia over the coming decade.'
       },
-      transitionAdvice: 'Tham gia các khóa đào tạo chứng chỉ ESG/Kiểm kê khí nhà kính, ứng dụng AI để tự động hóa xử lý bảng tính dữ liệu năng lượng.'
+      transitionAdvice: 'Tham gia các khóa đào tạo chứng chỉ ESG/Kiểm kê khí nhà kính, ứng dụng AI để tự động hóa xử lý bảng tính dữ liệu năng lượng.',
+      transitionAdviceEn: 'Join ESG and greenhouse gas inventory certification courses, and use AI to automate energy spreadsheet processing.'
     }
   ],
   vulnerableCareers: [
@@ -342,16 +402,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 94,
       demandGrowthRate: '-68% (2024-2028)',
       averageSalaryVND: '7,000,000 - 12,000,000 VND / tháng',
+      averageSalaryVNDEn: '7,000,000 - 12,000,000 VND / month',
       whyTrendingOrVulnerable: 'Mô hình OCR đa phương thức và Whisper/Gemini có thể trích xuất văn bản từ hình ảnh, hóa đơn và âm thanh với độ chính xác >98% trong vài mili-giây.',
+      whyTrendingOrVulnerableEn: 'Multimodal OCR and Whisper/Gemini can extract text from images, invoices, and audio with >98% accuracy within milliseconds.',
       keySkillsRequiredOrAtRisk: ['Gõ phím nhanh', 'Sao chép biểu mẫu', 'Chép biên bản thính giác', 'Nhập liệu Excel cơ bản'],
+      keySkillsRequiredOrAtRiskEn: ['Fast typing', 'Form copying', 'Audio transcription', 'Basic Excel data entry'],
       humanMoatFactor: 'Gần như bằng 0 đối với các văn bản tiêu chuẩn.',
+      humanMoatFactorEn: 'Nearly zero for standardized documents.',
       citedResearchPaper: {
         title: 'Occupational Exposure to Generative AI',
         institution: 'OpenAI, OpenResearch & UPenn',
         year: 2023,
-        quoteOrKeyFinding: 'Các tác vụ sao chép, trích xuất và số hóa dữ liệu chuẩn hóa có mức độ tự động hóa trực tiếp lên tới 96%.'
+        quoteOrKeyFinding: 'Các tác vụ sao chép, trích xuất và số hóa dữ liệu chuẩn hóa có mức độ tự động hóa trực tiếp lên tới 96%.',
+        quoteOrKeyFindingEn: 'Standardized copying, extraction, and data digitization tasks face up to 96% direct automation.'
       },
-      transitionAdvice: 'Chuyển dịch ngay sang Kỹ sư xử lý dữ liệu (Data Annotation Specialist) hoặc Quản lý dữ liệu số doanh nghiệp.'
+      transitionAdvice: 'Chuyển dịch ngay sang Kỹ sư xử lý dữ liệu (Data Annotation Specialist) hoặc Quản lý dữ liệu số doanh nghiệp.',
+      transitionAdviceEn: 'Pivot immediately to data processing roles (data annotation specialist) or enterprise digital data management.'
     },
     {
       id: 'vuln-2',
@@ -364,16 +430,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 88,
       demandGrowthRate: '-55% (2024-2028)',
       averageSalaryVND: '8,000,000 - 15,000,000 VND / tháng',
+      averageSalaryVNDEn: '8,000,000 - 15,000,000 VND / month',
       whyTrendingOrVulnerable: 'AI Voice Agents thế hệ mới có khả năng đàm thoại tự nhiên theo thời gian thực bằng giọng tiếng Việt, xử lý hàng nghìn cuộc gọi đồng thời với chi phí cực thấp.',
+      whyTrendingOrVulnerableEn: 'New-generation AI voice agents can hold natural real-time conversations in Vietnamese, handling thousands of simultaneous calls at extremely low cost.',
       keySkillsRequiredOrAtRisk: ['Đọc kịch bản chào hàng', 'Quay số thủ công', 'Ghi chú phản hồi đơn giản', 'Giới thiệu sản phẩm lặp lại'],
+      keySkillsRequiredOrAtRiskEn: ['Reading cold-call scripts', 'Manual dialing', 'Taking simple response notes', 'Repetitive product pitching'],
       humanMoatFactor: 'Khách hàng phân biệt được kịch bản rập khuôn và có xu hướng chặn cuộc gọi làm phiền.',
+      humanMoatFactorEn: 'Customers can tell scripted calls apart and tend to block nuisance calls.',
       citedResearchPaper: {
         title: 'Generative AI at Work',
         institution: 'National Bureau of Economic Research (NBER)',
         year: 2023,
-        quoteOrKeyFinding: 'Trợ lý AI giọng nói đàm thoại tăng năng suất hỗ trợ khách hàng lên 14% và thay thế tới 60% các cuộc gọi sàng lọc ban đầu.'
+        quoteOrKeyFinding: 'Trợ lý AI giọng nói đàm thoại tăng năng suất hỗ trợ khách hàng lên 14% và thay thế tới 60% các cuộc gọi sàng lọc ban đầu.',
+        quoteOrKeyFindingEn: 'Conversational voice AI assistants raised customer support productivity by 14% and replaced up to 60% of initial screening calls.'
       },
-      transitionAdvice: 'Nâng cấp kỹ năng thành Chuyên viên tư vấn giải pháp B2B cao cấp hoặc Quản lý quan hệ khách hàng chiến lược (Key Account Manager).'
+      transitionAdvice: 'Nâng cấp kỹ năng thành Chuyên viên tư vấn giải pháp B2B cao cấp hoặc Quản lý quan hệ khách hàng chiến lược (Key Account Manager).',
+      transitionAdviceEn: 'Upgrade to senior B2B solution consulting or strategic key account management.'
     },
     {
       id: 'vuln-3',
@@ -386,16 +458,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 86,
       demandGrowthRate: '-48% (2024-2028)',
       averageSalaryVND: '10,000,000 - 18,000,000 VND / tháng',
+      averageSalaryVNDEn: '10,000,000 - 18,000,000 VND / month',
       whyTrendingOrVulnerable: 'Các mô hình ngôn ngữ lớn (LLMs) dịch trôi chảy đa ngôn ngữ, giữ đúng định dạng và nắm bắt tốt ngữ cảnh chung với tốc độ hàng triệu từ/phút.',
+      whyTrendingOrVulnerableEn: 'Large language models translate fluently across languages, preserve formatting, and capture general context at millions of words per minute.',
       keySkillsRequiredOrAtRisk: ['Tra từ điển thủ công', 'Dịch từng câu văn bản phổ thông', 'Chuyển ngữ tài liệu hướng dẫn cơ bản'],
+      keySkillsRequiredOrAtRiskEn: ['Manual dictionary lookup', 'Sentence-by-sentence translation of general texts', 'Translating basic instruction documents'],
       humanMoatFactor: 'Chỉ còn giá trị ở tác phẩm văn học nghệ thuật đỉnh cao, văn bản ngoại giao tối mật hoặc bản địa hóa văn hóa đặc thù.',
+      humanMoatFactorEn: 'Value remains only in high literary work, top-secret diplomatic texts, or deep cultural localization.',
       citedResearchPaper: {
         title: 'AI Translation Quality Evaluation Benchmarks',
         institution: 'Google Research & DeepL Institute',
         year: 2024,
-        quoteOrKeyFinding: 'Chất lượng dịch máy thần kinh kết hợp LLM đạt chỉ số BLEU ngang ngửa dịch giả trung cấp ở hơn 85% tài liệu kỹ thuật.'
+        quoteOrKeyFinding: 'Chất lượng dịch máy thần kinh kết hợp LLM đạt chỉ số BLEU ngang ngửa dịch giả trung cấp ở hơn 85% tài liệu kỹ thuật.',
+        quoteOrKeyFindingEn: 'LLM-powered neural machine translation matches intermediate human translators on BLEU scores for over 85% of technical documents.'
       },
-      transitionAdvice: 'Chuyển đổi thành Chuyên viên hiệu đính AI & Bản địa hóa nội dung số (AI Post-Editing & Cultural Localization Lead).'
+      transitionAdvice: 'Chuyển đổi thành Chuyên viên hiệu đính AI & Bản địa hóa nội dung số (AI Post-Editing & Cultural Localization Lead).',
+      transitionAdviceEn: 'Transition to AI post-editing and digital content localization lead roles.'
     },
     {
       id: 'vuln-4',
@@ -408,16 +486,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 82,
       demandGrowthRate: '-45% (2024-2028)',
       averageSalaryVND: '8,000,000 - 15,000,000 VND / tháng',
+      averageSalaryVNDEn: '8,000,000 - 15,000,000 VND / month',
       whyTrendingOrVulnerable: 'Các công cụ như Canva Magic Studio, Photoshop Generative Fill và Midjourney tự động tạo hàng trăm biến thể banner quảng cáo theo kích thước chuẩn trong vài giây.',
+      whyTrendingOrVulnerableEn: 'Tools like Canva Magic Studio, Photoshop Generative Fill, and Midjourney automatically generate hundreds of ad banner variants in standard sizes within seconds.',
       keySkillsRequiredOrAtRisk: ['Tách nền vật thể', 'Đổi kích thước banner', 'Cắt ghép hình ảnh đơn giản', 'Chèn text vào ảnh mẫu có sẵn'],
+      keySkillsRequiredOrAtRiskEn: ['Background and object removal', 'Banner resizing', 'Simple image editing', 'Adding text to pre-made templates'],
       humanMoatFactor: 'Khách hàng có thể tự tạo sản phẩm hình ảnh cơ bản với câu lệnh đơn giản.',
+      humanMoatFactorEn: 'Clients can create basic visual products themselves with simple prompts.',
       citedResearchPaper: {
         title: 'Diffusion Models in Digital Asset Creation',
         institution: 'Stanford HAI & Adobe Research',
         year: 2023,
-        quoteOrKeyFinding: 'Thời gian sản xuất tài nguyên đồ họa quảng cáo thương mại điện tử giảm hơn 70% nhờ các công cụ tạo sinh tự động.'
+        quoteOrKeyFinding: 'Thời gian sản xuất tài nguyên đồ họa quảng cáo thương mại điện tử giảm hơn 70% nhờ các công cụ tạo sinh tự động.',
+        quoteOrKeyFindingEn: 'Production time for e-commerce advertising creative assets has dropped more than 70% thanks to generative tools.'
       },
-      transitionAdvice: 'Nâng tầm lên Thiết kế trải nghiệm người dùng (UI/UX), Giám đốc mỹ thuật hoặc Chuyên gia xây dựng hệ sinh thái nhận diện thương hiệu.'
+      transitionAdvice: 'Nâng tầm lên Thiết kế trải nghiệm người dùng (UI/UX), Giám đốc mỹ thuật hoặc Chuyên gia xây dựng hệ sinh thái nhận diện thương hiệu.',
+      transitionAdviceEn: 'Level up to UI/UX design, art director, or brand identity ecosystem specialist.'
     },
     {
       id: 'vuln-5',
@@ -430,16 +514,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 79,
       demandGrowthRate: '-42% (2024-2028)',
       averageSalaryVND: '9,000,000 - 16,000,000 VND / tháng',
+      averageSalaryVNDEn: '9,000,000 - 16,000,000 VND / month',
       whyTrendingOrVulnerable: 'AI có thể tự động đọc tài liệu đặc tả phần mềm (BRD), viết kịch bản test case và sinh mã kiểm thử tự động (Playwright, Cypress) hoàn chỉnh.',
+      whyTrendingOrVulnerableEn: 'AI can automatically read software specification documents (BRDs), write test cases, and generate complete automated test code (Playwright, Cypress).',
       keySkillsRequiredOrAtRisk: ['Nhấp chuột kiểm thử giao diện thủ công', 'Ghi chép log lỗi rập khuôn', 'Thực hiện test case theo checklist có sẵn'],
+      keySkillsRequiredOrAtRiskEn: ['Manual UI click-testing', 'Repetitive bug log documentation', 'Running test cases from existing checklists'],
       humanMoatFactor: 'Kiểm thử phi chức năng, đánh giá cảm xúc trải nghiệm người dùng và tư duy bảo mật nâng cao.',
+      humanMoatFactorEn: 'Non-functional testing, user-experience empathy assessment, and advanced security thinking.',
       citedResearchPaper: {
         title: 'Automated Test Generation using LLMs in Software Engineering',
         institution: 'Microsoft Research & ACM SIGSOFT',
         year: 2024,
-        quoteOrKeyFinding: 'Hơn 65% test case thông thường và báo cáo lỗi có thể được tạo tự động bởi AI Copilot với tỷ lệ phủ mã cao.'
+        quoteOrKeyFinding: 'Hơn 65% test case thông thường và báo cáo lỗi có thể được tạo tự động bởi AI Copilot với tỷ lệ phủ mã cao.',
+        quoteOrKeyFindingEn: 'Over 65% of routine test cases and bug reports can be auto-generated by AI copilots with high code coverage.'
       },
-      transitionAdvice: 'Học lập trình kiểm thử tự động (Automation QA), kiểm thử hiệu năng và đánh giá chất lượng mô hình AI (RAG Benchmark).'
+      transitionAdvice: 'Học lập trình kiểm thử tự động (Automation QA), kiểm thử hiệu năng và đánh giá chất lượng mô hình AI (RAG Benchmark).',
+      transitionAdviceEn: 'Learn test automation (automation QA), performance testing, and AI model quality evaluation (RAG benchmarking).'
     },
     {
       id: 'vuln-6',
@@ -452,16 +542,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 84,
       demandGrowthRate: '-46% (2024-2028)',
       averageSalaryVND: '8,000,000 - 14,000,000 VND / tháng',
+      averageSalaryVNDEn: '8,000,000 - 14,000,000 VND / month',
       whyTrendingOrVulnerable: 'Hóa đơn điện tử kết hợp AI phần mềm kế toán (như MISA, Fast, SAP) tự động đối soát, định khoản và lập báo cáo thuế không cần can thiệp tay.',
+      whyTrendingOrVulnerableEn: 'E-invoices combined with accounting AI software (such as MISA, Fast, SAP) automatically reconcile, book entries, and file tax reports without manual intervention.',
       keySkillsRequiredOrAtRisk: ['Gõ hóa đơn vào phần mềm', 'Đối chiếu sao kê ngân hàng', 'Lập phiếu thu chi định kỳ', 'Sắp xếp chứng từ giấy'],
+      keySkillsRequiredOrAtRiskEn: ['Typing invoices into software', 'Reconciling bank statements', 'Preparing periodic receipt and payment vouchers', 'Filing paper documents'],
       humanMoatFactor: 'Khả năng tư vấn tối ưu thuế chiến lược, phân tích dòng tiền và lập kế hoạch tài chính kinh doanh.',
+      humanMoatFactorEn: 'Strategic tax optimization consulting, cash flow analysis, and business financial planning.',
       citedResearchPaper: {
         title: 'Automation of Financial Reporting and Audit Procedures',
         institution: 'Journal of Accounting and Economics & PwC',
         year: 2023,
-        quoteOrKeyFinding: 'Tự động hóa thông minh giảm 80% thời gian hạch toán chứng từ sơ cấp, thúc đẩy nhu cầu chuyển đổi sang chuyên viên phân tích tài chính.'
+        quoteOrKeyFinding: 'Tự động hóa thông minh giảm 80% thời gian hạch toán chứng từ sơ cấp, thúc đẩy nhu cầu chuyển đổi sang chuyên viên phân tích tài chính.',
+        quoteOrKeyFindingEn: 'Intelligent automation cuts 80% of the time spent booking primary documents, driving demand to shift toward financial analyst roles.'
       },
-      transitionAdvice: 'Nâng cao kỹ năng phân tích dữ liệu tài chính (Financial Analyst), tư vấn kiểm soát chi phí và ứng dụng PowerBI/AI vào dự báo.'
+      transitionAdvice: 'Nâng cao kỹ năng phân tích dữ liệu tài chính (Financial Analyst), tư vấn kiểm soát chi phí và ứng dụng PowerBI/AI vào dự báo.',
+      transitionAdviceEn: 'Build financial data analysis skills (financial analyst), cost-control consulting, and PowerBI/AI-driven forecasting.'
     },
     {
       id: 'vuln-7',
@@ -474,16 +570,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 90,
       demandGrowthRate: '-62% (2024-2028)',
       averageSalaryVND: '7,000,000 - 13,000,000 VND / tháng',
+      averageSalaryVNDEn: '7,000,000 - 13,000,000 VND / month',
       whyTrendingOrVulnerable: 'AI sản xuất hàng trăm bài viết chuẩn SEO trong vài phút. Thuật toán Google cũng phạt nặng nội dung xào nấu vô hồn không có trải nghiệm thực tế (E-E-A-T).',
+      whyTrendingOrVulnerableEn: 'AI produces hundreds of SEO-standard articles within minutes. Google algorithms also heavily penalize soulless, unoriginal content lacking real experience (E-E-A-T).',
       keySkillsRequiredOrAtRisk: ['Viết bài chuẩn từ khóa SEO đơn thuần', 'Tóm tắt lại các bài báo có sẵn', 'Viết mô tả sản phẩm ngắn hàng loạt'],
+      keySkillsRequiredOrAtRiskEn: ['Plain keyword-driven SEO writing', 'Summarizing existing articles', 'Mass-producing short product descriptions'],
       humanMoatFactor: 'Nghiên cứu điều tra thực tế, phỏng vấn chuyên gia, góc nhìn cá nhân sâu sắc và sự độc bản.',
+      humanMoatFactorEn: 'Real investigative research, expert interviews, deep personal perspective, and originality.',
       citedResearchPaper: {
         title: 'The Degradation and Renewal of Web Content under Generative AI',
         institution: 'Oxford Internet Institute',
         year: 2024,
-        quoteOrKeyFinding: 'Thị trường thuê người viết nội dung SEO cơ bản sụt giảm hơn 50% sau khi các mô hình ngôn ngữ lớn phổ cập.'
+        quoteOrKeyFinding: 'Thị trường thuê người viết nội dung SEO cơ bản sụt giảm hơn 50% sau khi các mô hình ngôn ngữ lớn phổ cập.',
+        quoteOrKeyFindingEn: 'The market for hiring basic SEO content writers shrank more than 50% after large language models became widespread.'
       },
-      transitionAdvice: 'Chuyển sang làm Chiến lược nội dung (Content Strategist), xây dựng thương hiệu cá nhân hoặc làm Báo chí điều tra chuyên sâu.'
+      transitionAdvice: 'Chuyển sang làm Chiến lược nội dung (Content Strategist), xây dựng thương hiệu cá nhân hoặc làm Báo chí điều tra chuyên sâu.',
+      transitionAdviceEn: 'Move into content strategy, personal branding, or in-depth investigative journalism.'
     },
     {
       id: 'vuln-8',
@@ -496,16 +598,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 76,
       demandGrowthRate: '-38% (2024-2028)',
       averageSalaryVND: '8,000,000 - 15,000,000 VND / tháng',
+      averageSalaryVNDEn: '8,000,000 - 15,000,000 VND / month',
       whyTrendingOrVulnerable: 'Các ứng dụng tích hợp Agentic AI (Google Flights/Maps AI, OTA thông minh) tự động so sánh giá, tối ưu lịch trình và đặt phòng tức thì cho du khách.',
+      whyTrendingOrVulnerableEn: 'Agentic AI applications (Google Flights/Maps AI, smart OTAs) automatically compare prices, optimize itineraries, and book instantly for travelers.',
       keySkillsRequiredOrAtRisk: ['Tra cứu giá vé thủ công', 'Lên lịch trình theo mẫu chung', 'Đặt phòng khách sạn qua email'],
+      keySkillsRequiredOrAtRiskEn: ['Manual fare lookup', 'Building itineraries from generic templates', 'Booking hotels over email'],
       humanMoatFactor: 'Thiết kế các tour trải nghiệm độc bản cao cấp, xử lý khủng hoảng du lịch thực tế và phục vụ khách VIP (Concierge).',
+      humanMoatFactorEn: 'Designing premium original experience tours, handling real travel crises, and serving VIP clients (concierge).',
       citedResearchPaper: {
         title: 'Disruption of Intermediary Services in Tourism by AI Agents',
         institution: 'World Travel & Tourism Council (WTTC)',
         year: 2024,
-        quoteOrKeyFinding: 'Du khách tự sử dụng trợ lý ảo lên kế hoạch chiếm hơn 65%, buộc các đại lý truyền thống phải chuyển hướng sang dịch vụ cá nhân hóa cao cấp.'
+        quoteOrKeyFinding: 'Du khách tự sử dụng trợ lý ảo lên kế hoạch chiếm hơn 65%, buộc các đại lý truyền thống phải chuyển hướng sang dịch vụ cá nhân hóa cao cấp.',
+        quoteOrKeyFindingEn: 'More than 65% of travelers now use virtual assistants for planning, forcing traditional agencies to pivot toward premium personalized service.'
       },
-      transitionAdvice: 'Tập trung vào phân khúc du lịch trải nghiệm độc lạ, du lịch kết hợp chăm sóc sức khỏe (Wellness Tourism) hoặc tổ chức sự kiện MICE.'
+      transitionAdvice: 'Tập trung vào phân khúc du lịch trải nghiệm độc lạ, du lịch kết hợp chăm sóc sức khỏe (Wellness Tourism) hoặc tổ chức sự kiện MICE.',
+      transitionAdviceEn: 'Focus on unique experience travel segments, wellness tourism, or MICE event organization.'
     },
     {
       id: 'vuln-9',
@@ -518,16 +626,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 74,
       demandGrowthRate: '-35% (2024-2028)',
       averageSalaryVND: '10,000,000 - 18,000,000 VND / tháng',
+      averageSalaryVNDEn: '10,000,000 - 18,000,000 VND / month',
       whyTrendingOrVulnerable: 'AI pháp lý có thể phân tích hàng trăm trang hợp đồng trong vài giây, chỉ ra điều khoản rủi ro và tự động sinh hợp đồng mẫu chính xác theo luật định.',
+      whyTrendingOrVulnerableEn: 'Legal AI can analyze hundreds of contract pages in seconds, flag risky clauses, and automatically generate legally compliant contract templates.',
       keySkillsRequiredOrAtRisk: ['Soạn thảo hợp đồng theo biểu mẫu có sẵn', 'Rà soát lỗi chính tả hợp đồng', 'Tra cứu văn bản luật cơ bản'],
+      keySkillsRequiredOrAtRiskEn: ['Drafting contracts from existing templates', 'Proofreading contract typos', 'Basic legal text lookup'],
       humanMoatFactor: 'Tranh tụng tại tòa, đàm phán thương vụ phức tạp, xây dựng chiến lược pháp lý và thấu hiểu góc khuất thực tế.',
+      humanMoatFactorEn: 'Court litigation, complex deal negotiation, legal strategy building, and understanding of practical gray areas.',
       citedResearchPaper: {
         title: 'Evaluating LLMs on Legal Reasoning and Contract Analysis',
         institution: 'Stanford Law School & Legal Tech Lab',
         year: 2023,
-        quoteOrKeyFinding: 'AI đạt điểm tương đương các kỳ thi luật sư hàng đầu và giảm 60% thời gian rà soát hợp đồng pháp lý sơ bộ.'
+        quoteOrKeyFinding: 'AI đạt điểm tương đương các kỳ thi luật sư hàng đầu và giảm 60% thời gian rà soát hợp đồng pháp lý sơ bộ.',
+        quoteOrKeyFindingEn: 'AI scores on par with top bar exams and cuts preliminary legal contract review time by 60%.'
       },
-      transitionAdvice: 'Phát triển chuyên môn về Luật An toàn thông tin, Luật Sở hữu trí tuệ AI và kỹ năng đàm phán giải quyết tranh chấp kinh tế.'
+      transitionAdvice: 'Phát triển chuyên môn về Luật An toàn thông tin, Luật Sở hữu trí tuệ AI và kỹ năng đàm phán giải quyết tranh chấp kinh tế.',
+      transitionAdviceEn: 'Develop expertise in information security law, AI intellectual property law, and commercial dispute negotiation skills.'
     },
     {
       id: 'vuln-10',
@@ -540,16 +654,22 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       automationExposure: 78,
       demandGrowthRate: '-40% (2024-2028)',
       averageSalaryVND: '9,000,000 - 16,000,000 VND / tháng',
+      averageSalaryVNDEn: '9,000,000 - 16,000,000 VND / month',
       whyTrendingOrVulnerable: 'Ngân hàng số (eKYC, LiveBank, Smart Kiosk) và trợ lý ảo xử lý 95% các giao dịch rút/nạp tiền, chuyển khoản và phát hành thẻ tự động 24/7.',
+      whyTrendingOrVulnerableEn: 'Digital banking (eKYC, LiveBank, smart kiosks) and virtual assistants handle 95% of withdrawals, deposits, transfers, and card issuance automatically 24/7.',
       keySkillsRequiredOrAtRisk: ['Đếm tiền mặt & Kiểm đếm chứng từ', 'Mở tài khoản theo quy trình', 'In sổ tiết kiệm và sao kê'],
+      keySkillsRequiredOrAtRiskEn: ['Cash counting and document verification', 'Account opening by procedure', 'Printing passbooks and statements'],
       humanMoatFactor: 'Tư vấn đầu tư tài chính cá nhân chuyên sâu, thẩm định cho vay tín dụng phức tạp và chăm sóc khách hàng ưu tiên (Private Banking).',
+      humanMoatFactorEn: 'In-depth personal financial investment advisory, complex credit underwriting, and private banking for priority clients.',
       citedResearchPaper: {
         title: 'The AI Revolution in Banking: Workforce Dynamics and Branch Evolution',
         institution: 'McKinsey Global Institute',
         year: 2024,
-        quoteOrKeyFinding: 'Số lượng chi nhánh vật lý và giao dịch viên quầy tiếp tục giảm hơn 30% trên toàn cầu do sự phổ cập của ngân hàng thông minh tích hợp AI.'
+        quoteOrKeyFinding: 'Số lượng chi nhánh vật lý và giao dịch viên quầy tiếp tục giảm hơn 30% trên toàn cầu do sự phổ cập của ngân hàng thông minh tích hợp AI.',
+        quoteOrKeyFindingEn: 'Physical branches and teller transactions will keep declining more than 30% globally due to the spread of AI-integrated smart banking.'
       },
-      transitionAdvice: 'Chuyển sang làm Chuyên viên Quản lý Gia sản (Wealth Management Advisor) hoặc Chuyên viên Thẩm định Tín dụng Doanh nghiệp.'
+      transitionAdvice: 'Chuyển sang làm Chuyên viên Quản lý Gia sản (Wealth Management Advisor) hoặc Chuyên viên Thẩm định Tín dụng Doanh nghiệp.',
+      transitionAdviceEn: 'Transition to wealth management advisor or corporate credit underwriting specialist roles.'
     }
   ]
 };
