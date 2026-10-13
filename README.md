@@ -4,6 +4,8 @@ La Bàn (The Compass) helps Vietnamese workers and students see how AI changes
 their jobs and what to do about it — grounded in verifiable evidence instead
 of generic advice.
 
+![La Bàn UI — English mode, guidance tab](docs/assets/ui-hero-en.png)
+
 ## Who has this problem?
 
 Vietnamese office workers, industrial workers and students facing the AI
@@ -58,10 +60,14 @@ modules, and the frozen baseline prompt.
 User intake
    → Profiler (normalize, extract occupation keywords, risk flags)
    → Evidence Gatherer (max 6 tool calls: lookupOccupation, searchResearch,
-                        getOccupationNews — only real curated sources enter)
-   → Analyst (synthesize suggestions; may cite ONLY the gathered pack)
-   → Verifier (schema + guardrail + citation-grounding checks + LLM judge;
+                        searchLearningResources, getOccupationNews —
+                        only real curated sources and registry URLs enter)
+   → Analyst (synthesize suggestions; may cite ONLY the gathered pack;
+              cost tiers + budget-fit milestones, EN/VI output)
+   → Verifier (schema + guardrail + citation-grounding + resource-URL
+               grounding + decision-coherence checks + LLM judge;
                failures fed back → up to 2 repairs; parse errors retried)
+   → Counselor review checkpoint (human approval, logged in trajectory)
    → Result + full trajectory
 ```
 
@@ -93,16 +99,16 @@ Every design choice targets a measured failure mode — see
 | Metric | Baseline | Final agent |
 |---|---|---|
 | Evidence grounding rate (primary) | 89.5% ±1.5% | **99.0% ±1.5%** |
-| Risk coherence rate | 100.0% ±0.0% | **95.8% ±5.9%** |
-| Actionable-path rate | 0.0% ±0.0% | **93.8% ±0.0%** |
+| Risk coherence rate | 100.0%* | 95.8% ±5.9% (vs **87.5%** tools-only) |
+| Actionable-path rate | 0.0% ±0.0% | **93.8%** ±0.0% |
 | Schema-valid runs | 100% | 100% |
 | Personalization (judge 0-100) | 86 ±2 | 80 ±3 |
 
-Ablation note: with tools but no verifier (`stage1_tools`) coherence dropped
-to 87.5% ±5.1 — tools alone introduced incoherent directions; the verifier
-repaired most. The baseline's coherence 100% reflects a weaker floor
-(no occupation lookup → default 55); the operative comparison is the
-ablation. Full tables, segment breakdown and honest failure notes:
+\* The baseline's coherence floor is weaker (no occupation lookup → default
+55); the operative comparison is the ablation: tools alone dropped coherence
+to 87.5% ±5.1 — the verifier repaired most of those incoherent directions.
+
+Full tables, segment breakdown and honest failure notes:
 [docs/EVALUATION.md](docs/EVALUATION.md). Representative agent
 runs: [docs/TRAJECTORIES.md](docs/TRAJECTORIES.md).
 
@@ -124,13 +130,18 @@ Tests: `npm test` — TypeScript check: `npm run lint`.
 ## Hot take
 
 Retrieval alone did not stop citation fabrication: with tools but no
-verifier, grounding stayed at 91.7% with 2 hallucinated citations. The
-verification loop that could send work back to the analyst eliminated them
-(100%, zero). When reliability matters, build the agent that can reject and
-retry its own output — not just the one that reads more context. And
-verified authenticity is not the same as sound direction: the verifier now
-rejects recommendations whose own evidence signals decline, and grounding
-has extended from citations to every learning-resource URL.
+verifier, hallucinated citations persisted in every configuration without a
+gate (89.5% ±1.5% baseline grounding, 3 fabricated citations in the
+representative run). The verification loop that could send work back to the
+analyst eliminated them (99.0% ±1.5%, and the single residual miss shipped
+honestly with a visible `repair` verdict rather than silently). When
+reliability matters, build the agent that can reject and retry its own
+output — not just the one that reads more context. And verified authenticity
+is not the same as sound direction: tools alone actively INTRODUCED
+incoherent recommendations (87.5% coherence) whose citations were all real —
+the verifier now rejects recommendations whose own evidence signals decline,
+and grounding has extended from citations to every learning-resource URL
+(0% → 93.8% actionable paths).
 
 ## License & attribution
 

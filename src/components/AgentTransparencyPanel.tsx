@@ -34,13 +34,13 @@ export default function AgentTransparencyPanel({ trajectory, language = 'en' }: 
   return (
     <details className="mt-4 rounded-xl border border-indigo-200 bg-indigo-50/60 p-4" open>
       <summary className="cursor-pointer text-sm font-semibold text-indigo-900 flex items-center gap-2">
-        <RefreshCw size={14} /> Quy trình Agent minh bạch (Pipeline Transparency)
+        <RefreshCw size={14} /> {t(language, 'Quy trình Agent minh bạch (Pipeline Transparency)', 'Agent Pipeline Transparency')}
       </summary>
       <div className="mt-3 flex flex-wrap gap-3 text-xs text-indigo-800">
         <span className="rounded-full bg-white px-3 py-1">Run: {trajectory.runId.slice(0, 18)}</span>
-        <span className="rounded-full bg-white px-3 py-1">{toolCalls} lượt tra cứu dữ liệu thật</span>
-        {verified > 0 && <span className="rounded-full bg-white px-3 py-1">Kiểm định chất lượng: {verified} lượt</span>}
-        {repairs > 0 && <span className="rounded-full bg-white px-3 py-1">Tự sửa lỗi: {repairs} lượt</span>}
+        <span className="rounded-full bg-white px-3 py-1">{toolCalls} {t(language, 'lượt tra cứu dữ liệu thật', 'real-data tool lookups')}</span>
+        {verified > 0 && <span className="rounded-full bg-white px-3 py-1">{t(language, `Kiểm định chất lượng: ${verified} lượt`, `Verification passes: ${verified}`)}</span>}
+        {repairs > 0 && <span className="rounded-full bg-white px-3 py-1">{t(language, `Tự sửa lỗi: ${repairs} lượt`, `Self-repairs: ${repairs}`)}</span>}
       </div>
       <ol className="mt-3 max-h-72 space-y-1 overflow-y-auto text-xs text-slate-700">
         {trajectory.events.map((e, i) => (
