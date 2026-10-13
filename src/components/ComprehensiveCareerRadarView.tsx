@@ -108,17 +108,23 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
   const topMatchedCareers = [...allCareers].sort((a, b) => getMatchScore(b) - getMatchScore(a)).slice(0, 3);
 
   const shiftShareData = macroData?.data?.shiftShare || [
-    { name: 'Phát triển Phần mềm & AI', national: 5, industry: 25, competitive: 30 },
-    { name: 'Phân tích Dữ liệu & BI', national: 5, industry: 20, competitive: 25 },
-    { name: 'Y tế & Chăm sóc Sức khỏe', national: 5, industry: 15, competitive: 10 },
-    { name: 'Giáo dục & Đào tạo', national: 5, industry: 10, competitive: 5 },
-    { name: 'Logistics & Chuỗi cung ứng', national: 5, industry: 8, competitive: -5 },
-    { name: 'Tài chính & Kế toán', national: 5, industry: 5, competitive: -10 },
-    { name: 'Sản xuất & Vận hành', national: 5, industry: 2, competitive: -15 },
-    { name: 'Bán lẻ & CSKH', national: 5, industry: 0, competitive: -25 },
-    { name: 'Hành chính & Nhân sự', national: 5, industry: -5, competitive: -30 },
-    { name: 'Thiết kế & Nội dung số', national: 5, industry: -10, competitive: -35 },
+    { name: 'Phát triển Phần mềm & AI', nameEn: 'Software & AI Development', national: 5, industry: 25, competitive: 30 },
+    { name: 'Phân tích Dữ liệu & BI', nameEn: 'Data Analytics & BI', national: 5, industry: 20, competitive: 25 },
+    { name: 'Y tế & Chăm sóc Sức khỏe', nameEn: 'Healthcare & Medical Care', national: 5, industry: 15, competitive: 10 },
+    { name: 'Giáo dục & Đào tạo', nameEn: 'Education & Training', national: 5, industry: 10, competitive: 5 },
+    { name: 'Logistics & Chuỗi cung ứng', nameEn: 'Logistics & Supply Chain', national: 5, industry: 8, competitive: -5 },
+    { name: 'Tài chính & Kế toán', nameEn: 'Finance & Accounting', national: 5, industry: 5, competitive: -10 },
+    { name: 'Sản xuất & Vận hành', nameEn: 'Manufacturing & Operations', national: 5, industry: 2, competitive: -15 },
+    { name: 'Bán lẻ & CSKH', nameEn: 'Retail & Customer Service', national: 5, industry: 0, competitive: -25 },
+    { name: 'Hành chính & Nhân sự', nameEn: 'Administration & HR', national: 5, industry: -5, competitive: -30 },
+    { name: 'Thiết kế & Nội dung số', nameEn: 'Design & Digital Content', national: 5, industry: -10, competitive: -35 },
   ];
+
+  // Localize chart labels without touching the internal "name" dataKey
+  const localizedShiftShareData = shiftShareData.map((d: any) => ({
+    ...d,
+    name: language === 'en' && d.nameEn ? d.nameEn : d.name
+  }));
 
   const swotData = macroData?.data?.swot || {
     strengths: [
@@ -127,11 +133,23 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
       "Chi phí triển khai AI tại VN cạnh tranh so với toàn cầu.",
       "Chính phủ có chiến lược số hóa quốc gia mạnh mẽ."
     ],
+    strengthsEn: [
+      "Digital adoption speed and smartphone penetration rank among the region's highest.",
+      "A young Gen Z workforce that is flexible and quick to learn Generative AI tools.",
+      "AI deployment costs in Vietnam are competitive compared to global benchmarks.",
+      "The government has a strong national digital transformation strategy."
+    ],
     weaknesses: [
       "Kỹ năng chuyên môn sâu & tư duy hệ thống của số đông còn hạn chế.",
       "Thiếu hụt dữ liệu tiếng Việt (corpus) chất lượng để huấn luyện LLM bản địa.",
       "Hạ tầng điện toán đám mây và phần cứng GPU còn phụ thuộc.",
       "Chênh lệch năng lực số giữa thành thị và nông thôn."
+    ],
+    weaknessesEn: [
+      "Deep expertise and systems thinking remain limited across the broader workforce.",
+      "Shortage of high-quality Vietnamese-language data (corpus) to train local LLMs.",
+      "Cloud computing infrastructure and GPU hardware still depend on external supply.",
+      "Digital skills gap between urban and rural areas."
     ],
     opportunities: [
       "Bùng nổ ngành nghề mới: AI Ops, LLM Evaluator, Tự động hóa.",
@@ -139,13 +157,35 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
       "Việt Nam có thể thành trung tâm 'Gia công dữ liệu AI' toàn cầu.",
       "Đại chúng hóa giáo dục và y tế cá nhân hóa."
     ],
+    opportunitiesEn: [
+      "Explosion of new roles: AI Ops, LLM Evaluator, Automation.",
+      "SMEs can boost productivity 3-5x at low cost thanks to AI SaaS.",
+      "Vietnam can become a global 'AI data annotation' hub.",
+      "Mass adoption of personalized education and healthcare."
+    ],
     threats: [
       "Đào thải khốc liệt đối với các công việc văn phòng, thiết kế cơ bản, nhập liệu.",
       "Khung pháp lý về bản quyền và đạo đức AI chưa theo kịp.",
       "Rủi ro an toàn thông tin và phụ thuộc lõi công nghệ ngoại.",
       "Áp lực sức khỏe tinh thần do thay đổi quá nhanh."
+    ],
+    threatsEn: [
+      "Severe displacement of basic office, design, and data-entry jobs.",
+      "Legal frameworks for AI copyright and ethics are lagging behind.",
+      "Cybersecurity risks and dependence on foreign technology cores.",
+      "Mental health pressure from rapid change."
     ]
   };
+
+  const swotList = (key: 'strengths' | 'weaknesses' | 'opportunities' | 'threats'): string[] => {
+    const items = swotData[key] || [];
+    if (language !== 'en') return items;
+    const enItems = swotData[`${key}En` as keyof typeof swotData];
+    return (enItems as string[] | undefined) || items;
+  };
+
+  const pickList = (viList: string[] | undefined, enList: string[] | undefined): string[] =>
+    language === 'en' && enList && enList.length > 0 ? enList : (viList || []);
 
   const getUpdatedDate = () => {
     if (macroData?.timestamp) {
@@ -207,32 +247,32 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="bg-white p-3 rounded-xl border border-slate-200 space-y-1">
                 <span className="font-bold text-emerald-700 block">✓ {t(language, 'Thế Mạnh Đã Khai Báo:', 'Declared Strengths:')}</span>
                 <p className="text-slate-700 line-clamp-2">
-                  {(analysis.candidateProfileSummary.strengths || []).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
+                  {pickList(analysis.candidateProfileSummary.strengths, analysis.candidateProfileSummary.strengthsEn).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
                 </p>
               </div>
               <div className="bg-white p-3 rounded-xl border border-slate-200 space-y-1">
                 <span className="font-bold text-rose-700 block">⚠️ {t(language, 'Điểm Cần Khắc Phục:', 'Points to Improve:')}</span>
                 <p className="text-slate-700 line-clamp-2">
-                  {(analysis.candidateProfileSummary.weaknesses || []).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
+                  {pickList(analysis.candidateProfileSummary.weaknesses, analysis.candidateProfileSummary.weaknessesEn).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
                 </p>
               </div>
               <div className="bg-white p-3 rounded-xl border border-slate-200 space-y-1">
                 <span className="font-bold text-indigo-700 block">💡 {t(language, 'Sở Thích / Hướng Phát Triển:', 'Interests / Directions:')}</span>
                 <p className="text-slate-700 line-clamp-2">
-                  {(analysis.candidateProfileSummary.interests || []).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
+                  {pickList(analysis.candidateProfileSummary.interests, analysis.candidateProfileSummary.interestsEn).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
                 </p>
               </div>
               <div className="bg-white p-3 rounded-xl border border-slate-200 space-y-1">
                 <span className="font-bold text-amber-800 block">⚙️ {t(language, 'Kỹ Năng Chuyên Môn:', 'Professional Skills:')}</span>
                 <p className="text-slate-700 line-clamp-2">
-                  {(analysis.candidateProfileSummary.currentSkills || []).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
+                  {pickList(analysis.candidateProfileSummary.currentSkills, analysis.candidateProfileSummary.currentSkillsEn).join(', ') || t(language, 'Chưa ghi nhận', 'Not recorded')}
                 </p>
               </div>
             </div>
 
             {/* Strategic Insight */}
             <p className="text-xs text-slate-700 bg-amber-50/70 p-3 rounded-xl border border-amber-200/80 leading-relaxed font-medium">
-              💡 <strong className="text-slate-900">{t(language, 'Kết luận chiến lược:', 'Strategic Conclusion:')}</strong> {analysis.strategicTakeawaysVi}
+              💡 <strong className="text-slate-900">{t(language, 'Kết luận chiến lược:', 'Strategic Conclusion:')}</strong> {language === 'en' && analysis.strategicTakeawaysEn ? analysis.strategicTakeawaysEn : analysis.strategicTakeawaysVi}
             </p>
           </div>
         )}
@@ -353,7 +393,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="bg-emerald-50 border border-emerald-200 p-4 rounded-xl shadow-sm">
                 <strong className="text-emerald-700 block mb-2 text-sm border-b border-emerald-200 pb-1">{t(language, 'Điểm Mạnh (S)', 'Strengths (S)')}</strong>
                 <ul className="list-disc pl-4 text-slate-700 space-y-1.5">
-                  {swotData.strengths.map((item: string, i: number) => (
+                  {swotList('strengths').map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
@@ -361,7 +401,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="bg-rose-50 border border-rose-200 p-4 rounded-xl shadow-sm">
                 <strong className="text-rose-700 block mb-2 text-sm border-b border-rose-200 pb-1">{t(language, 'Điểm Yếu (W)', 'Weaknesses (W)')}</strong>
                 <ul className="list-disc pl-4 text-slate-700 space-y-1.5">
-                  {swotData.weaknesses.map((item: string, i: number) => (
+                  {swotList('weaknesses').map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
@@ -369,7 +409,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm">
                 <strong className="text-blue-700 block mb-2 text-sm border-b border-blue-200 pb-1">{t(language, 'Cơ Hội (O)', 'Opportunities (O)')}</strong>
                 <ul className="list-disc pl-4 text-slate-700 space-y-1.5">
-                  {swotData.opportunities.map((item: string, i: number) => (
+                  {swotList('opportunities').map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
@@ -377,7 +417,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="bg-amber-50 border border-amber-200 p-4 rounded-xl shadow-sm">
                 <strong className="text-amber-700 block mb-2 text-sm border-b border-amber-200 pb-1">{t(language, 'Thách Thức (T)', 'Threats (T)')}</strong>
                 <ul className="list-disc pl-4 text-slate-700 space-y-1.5">
-                  {swotData.threats.map((item: string, i: number) => (
+                  {swotList('threats').map((item: string, i: number) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
@@ -410,7 +450,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
             </div>
             <div className="h-[400px] w-full flex-1">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={shiftShareData} margin={{ top: 10, right: 10, left: -20, bottom: 30 }}>
+                <BarChart data={localizedShiftShareData} margin={{ top: 10, right: 10, left: -20, bottom: 30 }}>
                   <CartesianGrid strokeDasharray="3 3" vertical={false} />
                   <XAxis dataKey="name" tick={{ fontSize: 10 }} angle={-45} textAnchor="end" height={120} interval={0} />
                   <YAxis tick={{ fontSize: 10 }} />
@@ -664,7 +704,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
           <span>{t(language, 'Cơ sở phương pháp luận & Chuẩn kiểm định đối soát:', 'Methodology Basis & Benchmarks:')}</span>
         </div>
         <p className="leading-relaxed">
-          {analysis.academicMethodologyBasis}
+          {language === 'en' && analysis.academicMethodologyBasisEn ? analysis.academicMethodologyBasisEn : analysis.academicMethodologyBasis}
         </p>
       </div>
     </div>

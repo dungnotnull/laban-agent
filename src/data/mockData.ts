@@ -4,6 +4,7 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
   {
     id: 'news-1',
     title: 'Báo cáo Diễn đàn Kinh tế Thế giới (WEF) 2026: Làn sóng AI Agents định hình lại cấu trúc việc làm toàn cầu và Đông Nam Á',
+    titleEn: 'WEF 2026 Report: AI Agents wave is reshaping the global and Southeast Asian job structure',
     source: 'World Economic Forum (WEF)',
     publishDate: '2026-02-18',
     url: 'https://www.weforum.org/reports/',
@@ -11,11 +12,13 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
     summaryEn: 'WEF highlights that autonomous AI Agents are streamlining repetitive workflows, driving a 48% surge in demand for AI supervision and quality evaluators in emerging markets.',
     impactLevel: 'high',
     affectedFields: ['Công nghệ thông tin', 'Tài chính - Ngân hàng', 'Dịch vụ doanh nghiệp'],
+    affectedFieldsEn: ['Information Technology', 'Banking & Finance', 'Business Services'],
     isGrounded: true
   },
   {
     id: 'news-2',
     title: 'Khảo sát Thị trường Lao động Việt Nam 2026: Mức lương nhân sự có kỹ năng AI cao hơn 35-50% so với mặt bằng chung',
+    titleEn: 'Vietnam Labor Market Survey 2026: AI-skilled professionals earn 35-50% above the market average',
     source: 'VietnamWorks & TopCV Labor Trends 2026',
     publishDate: '2026-02-22',
     url: 'https://www.vietnamworks.com/',
@@ -23,11 +26,13 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
     summaryEn: '78% of enterprises in Vietnam prioritize internal AI reskilling; professionals proficient in AI workflows enjoy a 35-50% salary premium.',
     impactLevel: 'high',
     affectedFields: ['Marketing & Sáng tạo', 'Hành chính - Nhân sự', 'Kinh doanh & Bán hàng'],
+    affectedFieldsEn: ['Marketing & Creative', 'Administration & HR', 'Sales & Business Development'],
     isGrounded: true
   },
   {
     id: 'news-3',
     title: 'Nghiên cứu Stanford HAI & ILO 2026: Mô hình "Con người kết hợp AI" (Human-in-the-Loop) đạt hiệu quả vượt trội',
+    titleEn: 'Stanford HAI & ILO 2026 Study: Human-in-the-Loop models achieve superior outcomes',
     source: 'Stanford HAI & ILO Policy Brief 2026',
     publishDate: '2026-02-10',
     url: 'https://aiindex.stanford.edu/',
@@ -35,11 +40,13 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
     summaryEn: 'Stanford HAI and ILO demonstrate that human-in-the-loop strategies achieve over 94% accuracy, outpacing fully automated systems in nuanced cultural and business contexts.',
     impactLevel: 'medium',
     affectedFields: ['Giáo dục & Đào tạo', 'Y tế & Chăm sóc sức khỏe', 'Tư vấn Pháp lý'],
+    affectedFieldsEn: ['Education & Training', 'Healthcare', 'Legal Consulting'],
     isGrounded: true
   },
   {
     id: 'news-4',
     title: 'Bộ Thông tin & Truyền thông cùng Bộ LĐ-TB&XH: Đẩy mạnh chương trình Phổ cập kỹ năng AI Quốc gia',
+    titleEn: 'Ministry of Information & Communications and MOLISA: Accelerating the National AI Literacy Program',
     source: 'Cổng thông tin Chính phủ / Bộ LĐ-TB&XH',
     publishDate: '2026-02-25',
     url: 'https://molisa.gov.vn/',
@@ -47,6 +54,7 @@ export const INITIAL_NEWS_ITEMS: JobSecurityNewsItem[] = [
     summaryEn: 'Vietnam accelerates national AI literacy and reskilling initiatives to equip 100,000 high-caliber digital professionals for the smart economy.',
     impactLevel: 'high',
     affectedFields: ['Kỹ thuật & Sản xuất', 'Logistics & Chuỗi cung ứng', 'Thương mại điện tử'],
+    affectedFieldsEn: ['Engineering & Manufacturing', 'Logistics & Supply Chain', 'E-commerce'],
     isGrounded: true
   }
 ];

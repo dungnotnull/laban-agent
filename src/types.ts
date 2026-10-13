@@ -52,10 +52,12 @@ export interface UserIntakeProfile {
 export interface TaskDecompositionItem {
   taskId: string;
   taskNameVi: string;
+  taskNameEn?: string;
   category: 'automated' | 'augmented' | 'human_core' | string;
   exposureRate: number;
   aiToolSubstitutes: string[];
   humanMoatExplanationVi: string;
+  humanMoatExplanationEn?: string;
 }
 
 export interface TaskAutomationBreakdown {
@@ -112,7 +114,10 @@ export interface TrajectoryPath {
   riskLevel: 'low' | 'moderate' | 'high' | string;
   fiveYearSalaryProjection: number[]; // 5 values in Million VND/month
   rationale: string;
+  rationaleEn?: string;
   actionStepNow: string;
+  actionStepNowEn?: string;
+  shortDescriptionEn?: string;
 }
 
 export interface RoadmapMilestone {
@@ -128,17 +133,22 @@ export interface RoadmapMilestone {
   estimatedCostVND?: number;
   estimatedCostUSD?: number; // computed post-hoc, never by the LLM
   skillsCovered: string[];
+  skillsCoveredEn?: string[];
   freeResources: {
     name: string;
+    nameEn?: string;
     provider: string;
     url: string;
     type: 'course' | 'doc' | 'repo' | 'video' | 'book' | 'certification' | 'tutorial' | 'guide';
   }[];
   checkpointQuiz: {
     question: string;
+    questionEn?: string;
     options: string[];
+    optionsEn?: string[];
     correctIndex: number;
     explanation: string;
+    explanationEn?: string;
   };
   isCompleted?: boolean;
 }
@@ -166,9 +176,13 @@ export interface CareerSuggestion {
   aiResilienceScore?: any; // object or number
   matchScore?: number;
   reasoning?: string;
+  reasoningEn?: string;
   whyItFitsYou?: string;
+  whyItFitsYouEn?: string;
   transferableSkillsMatch?: string[];
+  transferableSkillsMatchEn?: string[];
   skillsGap?: string[];
+  skillsGapEn?: string[];
   averageSalaryRangeVND?: string;
   averageSalaryRangeUSD?: string; // computed post-hoc from averageSalaryRangeVND
   evidenceCitations?: {
@@ -186,6 +200,7 @@ export interface CareerSuggestion {
 export interface JobSecurityNewsItem {
   id: string;
   title: string;
+  titleEn?: string;
   source: string;
   publishDate: string;
   url: string;
@@ -193,6 +208,7 @@ export interface JobSecurityNewsItem {
   summaryEn: string;
   impactLevel: 'high' | 'medium' | 'low';
   affectedFields: string[];
+  affectedFieldsEn?: string[];
   isGrounded?: boolean;
 }
 

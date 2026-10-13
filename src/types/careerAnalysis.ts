@@ -74,14 +74,20 @@ export interface CareerAnalysisItem {
 export interface ComprehensiveCareerAnalysisResult {
   candidateProfileSummary: {
     strengths: string[];
+    strengthsEn?: string[];
     weaknesses: string[];
+    weaknessesEn?: string[];
     interests: string[];
+    interestsEn?: string[];
     currentSkills: string[];
+    currentSkillsEn?: string[];
     currentRole: string;
   };
   currentRoleOverview?: CurrentRoleOverviewAssessment;
   trendingCareers: CareerAnalysisItem[]; // 10 careers
   vulnerableCareers: CareerAnalysisItem[]; // 10 careers
   strategicTakeawaysVi: string;
+  strategicTakeawaysEn?: string;
   academicMethodologyBasis: string;
+  academicMethodologyBasisEn?: string;
 }

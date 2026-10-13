@@ -41,8 +41,11 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
       feasibilityScore: 88,
       riskLevel: 'low',
       shortDescription: 'Ứng dụng các công cụ AI vào quy trình làm việc hiện tại để nâng cao hiệu suất gấp 3-5 lần.',
+      shortDescriptionEn: 'Apply AI tools to your current workflow to boost productivity 3-5x.',
       rationale: 'Khai thác tối đa kiến thức chuyên môn sẵn có mà không cần chuyển đổi ngành nghề.',
-      actionStepNow: 'Thực hành kết nối các công cụ AI tự động hóa vào công việc hàng ngày.'
+      rationaleEn: 'Maximize existing domain expertise without switching industries.',
+      actionStepNow: 'Thực hành kết nối các công cụ AI tự động hóa vào công việc hàng ngày.',
+      actionStepNowEn: 'Practice connecting AI automation tools into your daily work.'
     },
     {
       pathId: 'pivot_adjacent',
@@ -56,8 +59,11 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
       feasibilityScore: 78,
       riskLevel: 'moderate',
       shortDescription: 'Tận dụng 70% kỹ năng cốt lõi và bổ sung tư duy quản trị hoặc phân tích chuyên sâu.',
+      shortDescriptionEn: 'Leverage 70% of your core skills and add management or analytical thinking.',
       rationale: 'Chuyển sang vị trí cần nhiều tương tác chiến lược và giải quyết vấn đề phức tạp.',
-      actionStepNow: 'Học bổ sung kỹ năng phân tích dữ liệu và thiết kế quy trình nghiệp vụ.'
+      rationaleEn: 'Move to a role that demands more strategic interaction and complex problem solving.',
+      actionStepNow: 'Học bổ sung kỹ năng phân tích dữ liệu và thiết kế quy trình nghiệp vụ.',
+      actionStepNowEn: 'Learn data analysis skills and business process design.'
     },
     {
       pathId: 'full_switch',
@@ -71,8 +77,11 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
       feasibilityScore: 62,
       riskLevel: 'high',
       shortDescription: 'Đầu tư học tập bài bản để gia nhập hoàn toàn các ngành nghề tiên phong thời đại AI.',
+      shortDescriptionEn: 'Invest in structured learning to fully enter AI-era pioneering careers.',
       rationale: 'Tiềm năng bứt phá thu nhập vượt trội dài hạn nhưng đòi hỏi nỗ lực học hỏi bền bỉ.',
-      actionStepNow: 'Bắt đầu lộ trình học 12 tháng chuyên sâu có người hướng dẫn.'
+      rationaleEn: 'High long-term income breakout potential, but it demands sustained learning effort.',
+      actionStepNow: 'Bắt đầu lộ trình học 12 tháng chuyên sâu có người hướng dẫn.',
+      actionStepNowEn: 'Start a guided 12-month intensive learning roadmap.'
     }
   ];
 
@@ -181,7 +190,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
                   {language === 'vi' ? path.pathTitleVi : path.pathTitle}
                 </h3>
                 <p className="text-[11px] text-slate-500 line-clamp-2 mb-3 leading-relaxed">
-                  {path.shortDescription}
+                  {language === 'en' && path.shortDescriptionEn ? path.shortDescriptionEn : path.shortDescription}
                 </p>
 
                 <div className="grid grid-cols-2 gap-2 text-[11px] pt-2 border-t border-slate-200">
@@ -288,7 +297,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
                   🎯 {t(language, 'Cơ Sở Đánh Giá & Tính Khả Thi:', 'Rationale & Feasibility Basis:')}
                 </h4>
                 <p className="text-xs text-slate-700 leading-relaxed">
-                  {selected.rationale}
+                  {language === 'en' && selected.rationaleEn ? selected.rationaleEn : selected.rationale}
                 </p>
                 <div className="pt-2">
                   <p className="text-[11px] font-semibold text-slate-500 mb-1">{t(language, 'Vị trí mục tiêu tiềm năng:', 'Potential target roles:')}</p>
@@ -309,7 +318,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
                     ⚡ {t(language, 'Hành Động Cần Làm Ngay (Immediate Action):', 'Immediate Action needed:')}
                   </h4>
                   <p className="text-xs text-slate-800 font-medium bg-white p-3 rounded-lg border border-indigo-100 mt-2 leading-relaxed">
-                    {selected.actionStepNow}
+                    {language === 'en' && selected.actionStepNowEn ? selected.actionStepNowEn : selected.actionStepNow}
                   </p>
                 </div>
 

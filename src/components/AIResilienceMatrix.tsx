@@ -83,7 +83,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
       const isAugment = tb.exposureType === 'ai_augmentation' || (tb.exposurePercentage >= 35 && tb.exposurePercentage < 70);
       const category: 'automated' | 'augmented' | 'human_core' = isAuto ? 'automated' : isAugment ? 'augmented' : 'human_core';
 
-      let aiTools = ['Công cụ AI chuyên ngành'];
+      let aiTools = [language === 'en' ? 'Specialized AI tools' : 'Công cụ AI chuyên ngành'];
       if (isAuto) {
         aiTools = ['Agentic Workflow', 'OCR & Document AI', 'LLM Code/Text Generator'];
       } else if (isAugment) {
@@ -95,10 +95,12 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
       return {
         taskId: `tb-${i}-${tb.onetCode || i}`,
         taskNameVi: tb.taskNameVi || tb.taskName,
+        taskNameEn: tb.taskName || undefined,
         category,
         exposureRate: tb.exposurePercentage,
         aiToolSubstitutes: aiTools,
-        humanMoatExplanationVi: tb.notes || (language === 'vi' ? 'Đòi hỏi sự thấu hiểu sâu sắc bối cảnh thực tế tại Việt Nam.' : 'Requires local domain intuition and strategic empathy.')
+        humanMoatExplanationVi: tb.notes || (language === 'vi' ? 'Đòi hỏi sự thấu hiểu sâu sắc bối cảnh thực tế tại Việt Nam.' : 'Requires local domain intuition and strategic empathy.'),
+        humanMoatExplanationEn: !tb.notes ? 'Requires local domain intuition and strategic empathy.' : undefined
       };
     });
   } else if (Array.isArray(activeDetail.taskDecomposition) && activeDetail.taskDecomposition.length > 0) {
@@ -109,26 +111,32 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
       {
         taskId: 't-1',
         taskNameVi: `Xử lý tài liệu & tác vụ hành chính chuẩn hóa của ${activeDetail.occupationTitleVi}`,
+        taskNameEn: `Standardized document processing & administrative tasks of ${activeDetail.occupationTitle || activeDetail.occupationTitleVi}`,
         category: 'automated',
         exposureRate: exposureRate,
         aiToolSubstitutes: ['AI Automation Tools', 'Gemini Workspace Assistant'],
-        humanMoatExplanationVi: 'Các tác vụ lặp lại được AI xử lý với tốc độ và chi phí tối ưu hơn nhiều lần.'
+        humanMoatExplanationVi: 'Các tác vụ lặp lại được AI xử lý với tốc độ và chi phí tối ưu hơn nhiều lần.',
+        humanMoatExplanationEn: 'AI handles repetitive tasks at far better speed and cost efficiency.'
       },
       {
         taskNameVi: `Phân tích dữ liệu, tạo đề xuất & tối ưu luồng phối hợp`,
+        taskNameEn: 'Data analysis, proposal drafting & workflow coordination optimization',
         taskId: 't-2',
         category: 'augmented',
         exposureRate: Math.round((exposureRate + defensibleHumanScore) / 2),
         aiToolSubstitutes: ['AI Copilot', 'Data Intelligence Tools'],
-        humanMoatExplanationVi: 'AI là đòn bẩy gia tăng năng suất từ 3-5 lần khi nhân sự có tư duy điều phối tốt.'
+        humanMoatExplanationVi: 'AI là đòn bẩy gia tăng năng suất từ 3-5 lần khi nhân sự có tư duy điều phối tốt.',
+        humanMoatExplanationEn: 'AI is a 3-5x productivity lever when staff have strong coordination thinking.'
       },
       {
         taskId: 't-3',
         taskNameVi: `Đàm phán chiến lược, giải quyết mâu thuẫn & chịu trách nhiệm ra quyết định`,
+        taskNameEn: 'Strategic negotiation, conflict resolution & decision accountability',
         category: 'human_core',
         exposureRate: Math.round(100 - defensibleHumanScore),
-        aiToolSubstitutes: ['Trợ lý ghi chép cuộc họp AI'],
-        humanMoatExplanationVi: '100% thuộc về năng lực thấu cảm, đạo đức nghề nghiệp và xây dựng lòng tin.'
+        aiToolSubstitutes: [language === 'en' ? 'AI meeting notes assistant' : 'Trợ lý ghi chép cuộc họp AI'],
+        humanMoatExplanationVi: '100% thuộc về năng lực thấu cảm, đạo đức nghề nghiệp và xây dựng lòng tin.',
+        humanMoatExplanationEn: '100% belongs to empathy, professional ethics, and trust building.'
       }
     ];
   }
@@ -392,7 +400,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
                   </div>
 
                   <h4 className="text-xs font-bold text-slate-900 leading-snug">
-                    {task.taskNameVi}
+                    {language === 'en' && task.taskNameEn ? task.taskNameEn : task.taskNameVi}
                   </h4>
                 </div>
 
@@ -403,7 +411,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
                   </div>
                   <div className="text-slate-600">
                     <span className="font-semibold text-emerald-800">{t(language, 'Giá trị con người: ', 'Human Moat: ')}</span>
-                    {task.humanMoatExplanationVi || t(language, 'Đòi hỏi sự đồng cảm và ra quyết định chiến lược.', 'Requires empathy and decision making.')}
+                    {(language === 'en' && task.humanMoatExplanationEn) || task.humanMoatExplanationVi || t(language, 'Đòi hỏi sự đồng cảm và ra quyết định chiến lược.', 'Requires empathy and decision making.')}
                   </div>
                 </div>
               </div>

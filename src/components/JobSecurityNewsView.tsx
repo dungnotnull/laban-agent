@@ -111,7 +111,7 @@ export const JobSecurityNewsView: React.FC<JobSecurityNewsViewProps> = ({
                   </div>
 
                   <h3 className="text-base font-bold text-slate-900 leading-snug">
-                    {item.title}
+                    {language === 'en' && item.titleEn ? item.titleEn : item.title}
                   </h3>
 
                   <div className="bg-slate-50/50 p-4 rounded-xl border border-slate-100 space-y-2 text-sm">
@@ -128,7 +128,7 @@ export const JobSecurityNewsView: React.FC<JobSecurityNewsViewProps> = ({
 
                   <div className="flex flex-wrap items-center gap-1.5 pt-1">
                     <span className="text-[10px] text-slate-500 font-semibold uppercase">{t(language, 'Lĩnh vực:', 'Fields:')}</span>
-                    {(item.affectedFields || []).map((field, idx) => (
+                    {(language === 'en' && item.affectedFieldsEn ? item.affectedFieldsEn : (item.affectedFields || [])).map((field, idx) => (
                       <span key={idx} className="text-[10px] px-2 py-0.5 rounded bg-slate-100 text-slate-700 border border-slate-200">{field}</span>
                     ))}
                   </div>

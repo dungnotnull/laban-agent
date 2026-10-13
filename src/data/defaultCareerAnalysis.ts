@@ -3,9 +3,13 @@ import { ComprehensiveCareerAnalysisResult } from '../types/careerAnalysis';
 export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
   candidateProfileSummary: {
     strengths: ['Tư duy phân tích logic', 'Giao tiếp & Thuyết phục', 'Khả năng tự học nhanh', 'Thấu hiểu tâm lý khách hàng'],
+    strengthsEn: ['Logical analytical thinking', 'Communication & Persuasion', 'Fast self-learning ability', 'Customer psychology empathy'],
     weaknesses: ['Chưa thành thạo lập trình sâu', 'Dễ bị quá tải khi xử lý nhiều tác vụ lặp lại'],
+    weaknessesEn: ['Not yet proficient in deep programming', 'Easily overloaded by repetitive tasks'],
     interests: ['Công nghệ mới', 'Sáng tạo nội dung số', 'Chiến lược kinh doanh', 'Quản trị nhân sự'],
+    interestsEn: ['New technology', 'Digital content creation', 'Business strategy', 'People management'],
     currentSkills: ['Giao tiếp kinh doanh', 'Phân tích dữ liệu cơ bản', 'Sử dụng công cụ văn phòng', 'Quản lý thời gian'],
+    currentSkillsEn: ['Business communication', 'Basic data analysis', 'Office productivity tools', 'Time management'],
     currentRole: 'Chuyên viên nghiệp vụ / Kinh doanh / Thiết kế'
   },
   currentRoleOverview: {
@@ -101,7 +105,9 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
     ]
   },
   academicMethodologyBasis: 'Phương pháp phân tích dựa trên mô hình Task-Based Approach của Acemoglu & Restrepo (2018), kết hợp khung đo lường mức độ phơi nhiễm AI của Eloundou et al. (OpenAI/UPenn, 2023), Báo cáo Tương lai Việc làm của WEF (2025) và nghiên cứu của ILO về thị trường lao động Đông Nam Á.',
+  academicMethodologyBasisEn: 'The analysis follows the Task-Based Approach model of Acemoglu & Restrepo (2018), combined with the AI exposure measurement framework of Eloundou et al. (OpenAI/UPenn, 2023), the WEF Future of Jobs Report (2025), and ILO research on Southeast Asian labor markets.',
   strategicTakeawaysVi: 'Trong 3-5 năm tới, các ngành nghề có giá trị gia tăng cao tại Việt Nam sẽ là sự kết hợp giữa kiến thức chuyên môn sâu và khả năng điều phối hệ thống Agentic AI. Các công việc mang tính chất nhập liệu, biên dịch thuần túy hoặc quy trình cố định có nguy cơ bị thay thế cao nhất.',
+  strategicTakeawaysEn: 'Over the next 3-5 years, high-value careers in Vietnam will combine deep domain expertise with the ability to orchestrate Agentic AI systems. Data entry, pure translation, and fixed-routine jobs face the highest replacement risk.',
   trendingCareers: [
     {
       id: 'trend-1',

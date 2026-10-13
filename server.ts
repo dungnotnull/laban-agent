@@ -90,18 +90,18 @@ function generateFallbackChatReply(message: string, context?: any): string {
   const currentRole = context?.currentRole || '';
   
   if (msg.includes('kế toán') || msg.includes('accountant') || msg.includes('tài chính') || currentRole.toLowerCase().includes('kế toán')) {
-    return 'Đối với ngành Kế toán - Tài chính trong kỷ nguyên AI, các tác vụ nhập liệu chứng từ thủ công và hạch toán cơ bản đang được tự động hóa nhanh chóng. Để giữ vững lợi thế cạnh tranh, bạn nên chuyển dịch theo 3 hướng: (1) Nâng cao năng lực phân tích dự báo tài chính và trực quan hóa dữ liệu với PowerBI/Python, (2) Thiết lập quy trình kiểm soát nội bộ và đối soát tự động, (3) Tư vấn chiến lược thuế và quản trị rủi ro dòng tiền cho ban lãnh đạo.';
+    return 'In the AI era of Accounting - Finance, manual voucher entry and basic bookkeeping are being automated rapidly. To stay competitive, pivot in 3 directions: (1) Strengthen financial forecasting analysis and data visualization with PowerBI/Python, (2) Set up internal control and automated reconciliation processes, (3) Advise leadership on tax strategy and cash-flow risk management.';
   }
   if (msg.includes('thiết kế') || msg.includes('designer') || msg.includes('graphic') || currentRole.toLowerCase().includes('thiết kế')) {
-    return 'Đối với ngành Thiết kế đồ họa, AI tạo sinh (Midjourney, Flux, Stable Diffusion) đang thay đổi căn bản quy trình sản xuất hình ảnh. Lời khuyên thiết thực nhất là định vị bản thân lên vai trò Giám đốc Mỹ thuật AI (AI Art Director): tập trung vào tư duy thẩm mỹ độc bản, kiến trúc Design System doanh nghiệp, thấu cảm văn hóa bản địa và điều phối các công cụ AI để tăng tốc độ sáng tạo gấp 5-10 lần.';
+    return 'In graphic design, Generative AI (Midjourney, Flux, Stable Diffusion) is fundamentally changing the image production workflow. The most practical advice is to position yourself as an AI Art Director: focus on original aesthetic thinking, enterprise Design Systems, local cultural empathy, and orchestrating AI tools to speed up creative output 5-10x.';
   }
   if (msg.includes('lập trình') || msg.includes('coder') || msg.includes('developer') || msg.includes('tester') || msg.includes('qa')) {
-    return 'Trong lĩnh vực CNTT, việc viết code cú pháp cơ bản đã có các công cụ AI hỗ trợ mạnh mẽ. Các kỹ sư công nghệ tại Việt Nam đang bứt phá mạnh nhất ở 3 hướng: (1) Kiến trúc sư Tác tử AI (Agentic AI & Enterprise RAG), (2) Kỹ sư Đánh giá chất lượng & Độ tin cậy LLM (LLM Evaluation & Red Teaming), (3) Tối ưu hóa hiệu năng, bảo mật và tích hợp giải pháp AI vào hệ thống doanh nghiệp.';
+    return 'In IT, AI tools now strongly assist basic syntax-level coding. Vietnamese tech engineers are breaking through fastest in 3 directions: (1) Agentic AI Architect (Agentic AI & Enterprise RAG), (2) LLM Evaluation & Reliability Engineer (LLM Evaluation & Red Teaming), (3) Optimizing performance, security, and integrating AI solutions into enterprise systems.';
   }
   if (msg.includes('học') || msg.includes('bắt đầu') || msg.includes('lộ trình') || msg.includes('roadmap') || msg.includes('khóa học')) {
-    return 'Để xây dựng lộ trình nâng cấp kỹ năng bền vững: Bước 1: Đánh giá kỹ năng lõi hiện có (nghiệp vụ ngành, giao tiếp, khả năng giải quyết vấn đề). Bước 2: Ứng dụng AI tăng năng suất cá nhân (luyện Prompt Engineering chuyên sâu, tạo bot hỗ trợ công việc hằng ngày). Bước 3: Đảm nhận vai trò thẩm định chất lượng và tối ưu hóa quy trình làm việc của phòng ban.';
+    return 'To build a sustainable skill upgrade roadmap: Step 1: Assess your existing core skills (domain expertise, communication, problem solving). Step 2: Apply AI to boost personal productivity (practice advanced Prompt Engineering, build daily work assistant bots). Step 3: Take on the role of quality reviewer and workflow optimizer for your department.';
   }
-  return `Chào bạn! Tôi là La Bàn AI Assistant. Trong bối cảnh trí tuệ nhân tạo tái định hình thị trường việc làm, nguyên tắc quan trọng nhất là "AI không thay thế con người, nhưng người làm chủ AI sẽ vượt trội so với người làm việc theo lối mòn truyền thống". Bạn có thể chia sẻ vị trí hiện tại hoặc mục tiêu nghề nghiệp để tôi hỗ trợ tư vấn chi tiết và khoa học nhất nhé!`;
+  return `Hello! I am the La Ban AI Assistant. As AI reshapes the labor market, the key principle is: "AI does not replace humans, but people who master AI will outperform those working in traditional ways." Feel free to share your current role or career goal so I can give you detailed, science-based guidance!`;
 }
 
 // -------------------------------------------------------------

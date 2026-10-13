@@ -87,15 +87,18 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
       weeksDuration: 2,
       estimatedHours: 20,
       skillsCovered: ['Kỹ thuật Prompting đa tầng', 'Sử dụng AI Studio & LLMs', 'Tự động hóa tác vụ cơ bản'],
+      skillsCoveredEn: ['Multi-level prompting techniques', 'Using AI Studio & LLMs', 'Basic task automation'],
       freeResources: [
         {
           name: 'Khóa học Google AI Essentials',
+          nameEn: 'Google AI Essentials Course',
           url: 'https://grow.google/ai-essentials/',
           type: 'course',
           provider: 'Google'
         },
         {
           name: 'Hướng dẫn Kỹ thuật Prompting Tiếng Việt',
+          nameEn: 'Prompt Engineering Guide',
           url: 'https://learnprompting.org/',
           type: 'doc',
           provider: 'LearnPrompting'
@@ -103,14 +106,22 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
       ],
       checkpointQuiz: {
         question: 'Nguyên tắc nào giúp tạo ra câu lệnh (prompt) đạt kết quả chính xác và ít ảo giác nhất?',
+        questionEn: 'Which principle helps create a prompt that produces accurate results with minimal hallucination?',
         options: [
           'Chỉ cung cấp một từ khóa duy nhất ngắn gọn',
           'Đưa vai trò (persona), ngữ cảnh cụ thể, dữ liệu đầu vào và định dạng đầu ra mong muốn',
           'Yêu cầu AI tự suy đoán tất cả thông tin còn thiếu',
           'Lặp lại câu hỏi 10 lần trong cùng một prompt'
         ],
+        optionsEn: [
+          'Providing only a single short keyword',
+          'Specifying role (persona), concrete context, input data, and the desired output format',
+          'Asking the AI to guess all missing information',
+          'Repeating the question 10 times in one prompt'
+        ],
         correctIndex: 1,
-        explanation: 'Kỹ thuật Prompt chuẩn yêu cầu định rõ Role + Context + Instruction + Constraints + Output Format.'
+        explanation: 'Kỹ thuật Prompt chuẩn yêu cầu định rõ Role + Context + Instruction + Constraints + Output Format.',
+        explanationEn: 'The standard prompting technique requires a clear Role + Context + Instruction + Constraints + Output Format.'
       }
     },
     {
@@ -123,9 +134,11 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
       weeksDuration: 4,
       estimatedHours: 35,
       skillsCovered: ['Làm chủ công cụ AI ngành nghề', 'Xử lý dữ liệu và đánh giá chất lượng đầu ra', 'Tối ưu hóa thời gian bàn giao'],
+      skillsCoveredEn: ['Mastering domain-specific AI tools', 'Data handling and output quality review', 'Optimizing delivery turnaround time'],
       freeResources: [
         {
           name: 'Học viện AI cho Chuyên viên - Microsoft Learn',
+          nameEn: 'AI Skills Training for Professionals - Microsoft Learn',
           url: 'https://learn.microsoft.com/vi-vn/training/',
           type: 'course',
           provider: 'Microsoft'
@@ -133,14 +146,22 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
       ],
       checkpointQuiz: {
         question: 'Khi nhận được kết quả phân tích hoặc văn bản từ AI, bước quan trọng nhất của con người là gì?',
+        questionEn: 'When receiving analytical results or text from AI, what is the most important human step?',
         options: [
           'Sao chép và gửi trực tiếp cho khách hàng ngay lập tức',
           'Kiểm tra tính xác thực (Fact-check), thẩm định đạo đức và hiệu chỉnh phù hợp văn hóa',
           'Xóa toàn bộ vì AI không đáng tin',
           'Chờ một tuần sau mới kiểm tra'
         ],
+        optionsEn: [
+          'Copying and sending it straight to the client immediately',
+          'Fact-checking, ethical review, and cultural adjustment',
+          'Deleting everything because AI cannot be trusted',
+          'Waiting a week before reviewing it'
+        ],
         correctIndex: 1,
-        explanation: 'Con người giữ vai trò kiểm duyệt, thẩm định tính chính xác và đưa ra quyết định có trách nhiệm.'
+        explanation: 'Con người giữ vai trò kiểm duyệt, thẩm định tính chính xác và đưa ra quyết định có trách nhiệm.',
+        explanationEn: 'Humans stay in the reviewer role, verify accuracy, and make responsible decisions.'
       }
     }
   ];
@@ -356,7 +377,10 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                       🎯 {t(language, 'Kỹ Năng Đạt Được:', 'Skills Acquired:')}
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {(Array.isArray(milestone.skillsCovered) ? milestone.skillsCovered : []).map((sk, si) => (
+                      {(Array.isArray(language === 'en' && milestone.skillsCoveredEn ? milestone.skillsCoveredEn : milestone.skillsCovered)
+                        ? (language === 'en' && milestone.skillsCoveredEn ? milestone.skillsCoveredEn : milestone.skillsCovered)
+                        : []
+                      ).map((sk, si) => (
                         <span
                           key={si}
                           className="text-xs px-2.5 py-1 rounded-md bg-white text-slate-700 border border-slate-200 font-medium shadow-xs"
@@ -380,7 +404,7 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                           className="bg-white border border-slate-200 rounded-xl p-3.5 flex items-center justify-between gap-3 hover:border-slate-300 transition shadow-xs"
                         >
                           <div>
-                            <p className="text-xs font-bold text-slate-900 line-clamp-1">{res.name}</p>
+                            <p className="text-xs font-bold text-slate-900 line-clamp-1">{language === 'en' && res.nameEn ? res.nameEn : res.name}</p>
                             <p className="text-[11px] text-slate-500 mt-0.5">
                               {res.provider} • <span className="capitalize text-amber-700 font-semibold">{res.type}</span>
                             </p>
@@ -409,11 +433,14 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                     </div>
 
                     <p className="text-xs text-slate-800 font-medium bg-slate-50 p-3 rounded-lg border border-slate-200">
-                      {milestone.checkpointQuiz?.question || t(language, 'Câu hỏi đánh giá năng lực thực hành cho giai đoạn này.', 'Practical capability assessment question for this phase.')}
+                      {(language === 'en' && milestone.checkpointQuiz?.questionEn) || milestone.checkpointQuiz?.question || t(language, 'Câu hỏi đánh giá năng lực thực hành cho giai đoạn này.', 'Practical capability assessment question for this phase.')}
                     </p>
 
                     <div className="space-y-2">
-                      {(Array.isArray(milestone.checkpointQuiz?.options) ? milestone.checkpointQuiz.options : []).map((opt, oi) => {
+                      {(Array.isArray(language === 'en' && milestone.checkpointQuiz?.optionsEn ? milestone.checkpointQuiz.optionsEn : milestone.checkpointQuiz?.options)
+                        ? (language === 'en' && milestone.checkpointQuiz?.optionsEn ? milestone.checkpointQuiz.optionsEn : milestone.checkpointQuiz?.options)
+                        : []
+                      ).map((opt, oi) => {
                         const isSelected = selectedAns === oi;
                         let optionStyle = 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100';
 
@@ -460,7 +487,7 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                           </p>
                           <p className="text-slate-700 leading-relaxed">
                             <span className="font-semibold text-slate-900">{t(language, 'Giải thích: ', 'Explanation: ')}</span>
-                            {milestone.checkpointQuiz?.explanation || t(language, 'Đáp án chính xác dựa trên tiêu chuẩn kiến thức của giai đoạn.', 'Correct answer based on the knowledge standard of the phase.')}
+                            {(language === 'en' && milestone.checkpointQuiz?.explanationEn) || milestone.checkpointQuiz?.explanation || t(language, 'Đáp án chính xác dựa trên tiêu chuẩn kiến thức của giai đoạn.', 'Correct answer based on the knowledge standard of the phase.')}
                           </p>
                         </div>
                       )}
