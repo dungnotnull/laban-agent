@@ -1,7 +1,7 @@
-# La Bàn — Agentic Career Compass for Vietnam's AI Transition
+# La Bàn - Agentic Career Compass for Vietnam's AI Transition
 
 La Bàn (The Compass) helps Vietnamese workers and students see how AI changes
-their jobs and what to do about it — grounded in verifiable evidence instead
+their jobs and what to do about it - grounded in verifiable evidence instead
 of generic advice.
 
 ![La Bàn UI — English mode, guidance tab](docs/assets/ui-hero-en.png)
@@ -18,7 +18,7 @@ and what should I learn?" gets opinions, not evidence.
 
 Trust. A single LLM prompt produces fluent career advice that cites research
 papers which may not exist. In our measured baseline over 16 personas, 3
-hallucinated citations appeared in the representative run alone — and in an
+hallucinated citations appeared in the representative run alone - and in an
 exploratory run the baseline failed on personas with malformed JSON. For
 life-altering career decisions, unverifiable evidence is disqualifying.
 
@@ -30,14 +30,14 @@ golden personas), the single-shot Gemini endpoints, community/employer/news
 modules, and the frozen baseline prompt.
 
 **Added during this hackathon (all commits after 4c5ac25):**
-- `src/agents/` — the 4-agent pipeline: Profiler → Evidence Gatherer
+- `src/agents/` - the 4-agent pipeline: Profiler → Evidence Gatherer
   (Gemini function-calling over 3 deterministic tools) → Analyst → Verifier
   with a repair loop (max 2 retries, plus parse-error recovery)
-- Decision-coherence checks — the verifier rejects top recommendations below
+- Decision-coherence checks - the verifier rejects top recommendations below
   the user's current-occupation resilience floor and any 'declining' demand
   signal, so advice never points down a ladder its own evidence says is
   collapsing
-- Registry-grounded, budget-aware learning resources — suggestion milestones
+- Registry-grounded, budget-aware learning resources - suggestion milestones
   must include a free resource from a curated, HTTP-verified registry and fit
   the user's monthly budget (costTier + estimatedCostVND on every milestone)
 - Worker segmentation and equity breakdown of every eval metric
