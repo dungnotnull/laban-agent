@@ -192,11 +192,32 @@ omitted, never estimated).
 
 ---
 
+## E. Human-review checkpoint (ground rule 05)
+
+Career guidance can significantly affect a person; ground rule 05 requires a
+qualified human reviewer in the loop. Honest, lightweight implementation:
+
+- **UI gate:** the suggestion result renders with a visible
+  "Pending counselor review" state and an approval control; after approval
+  the result shows a "Reviewed" badge. In the submission this demonstrates
+  the deployment pattern inside the sandbox — it is labeled as a
+  demonstrated checkpoint, never as a claim that real counselors reviewed
+  the eval outputs.
+- **Trajectory event:** `human_checkpoint` is logged (same schema as other
+  events) when approval happens, so trajectories show the human in the loop.
+- **README:** one paragraph on the deployment model — agent output is
+  advisory; a production deployment delivers guidance through a qualified
+  counselor who approves before it reaches the user.
+
 ## Evaluation rerun protocol
 
-- Full rerun: 16 personas × 3 configs = 48 runs (~$0.20, ~35-50 min).
-- New timestamped run directory becomes `latest.json`; the 2026-08-30 run
-  stays as historical evidence for Iterations 1-3.
+- Stability protocol: **3 full repetitions** (3 timestamped run stamps).
+  Headline tables report **mean ± sd** across the 3 runs for grounding,
+  coherence, actionability and personalization; per-run tables are all
+  published; `latest.json` points to the primary (first) run of the trio.
+- Each run: 16 personas × 3 configs = 48 runs; total 144 runs
+  (~$0.60, ~2-3 h sequential).
+- The 2026-08-30 run stays as historical evidence for Iterations 1-3.
 - Changelog gains **Iteration 4 (decision coherence)** — motivated by the
   published garment case — and **Iteration 5 (grounded, budget-aware
   resources)** — motivated by the unverified-URL gap.
@@ -212,9 +233,12 @@ omitted, never estimated).
 ## Affected files
 
 - New: `src/agents/coherence.ts`, `src/data/learningResources.ts`, tests.
-- Modified: `src/agents/{verifier,tools,analyst,citations}.ts`,
-  `src/agents/__tests__/*`, `src/types.ts` (costTier, estimatedCostVND),
-  `eval/{personas,score}.ts`, `eval/__tests__/score.test.ts`, roadmap UI,
+- Modified: `src/agents/{verifier,tools,analyst,citations,trajectory}.ts`,
+  `src/agents/__tests__/*`, `src/types.ts` (costTier, estimatedCostVND,
+  USD fields, language option), `eval/{personas,score,run-eval}.ts`,
+  `eval/__tests__/score.test.ts`, roadmap UI + counselor-review gate
+  (`CareerSuggestionView.tsx`), `AgentTransparencyPanel.tsx` (EN labels +
+  `human_checkpoint`), `src/utils/i18n.ts` consumers (EN default),
   `docs/{README,EVALUATION,IMPROVEMENT_CHANGELOG,REPRODUCTION_GUIDE,
   VIDEO_SCRIPT}.md`, `DEVELOPMENT-TRACKING.md`.
 
