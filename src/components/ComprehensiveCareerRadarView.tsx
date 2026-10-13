@@ -150,9 +150,9 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
   const getUpdatedDate = () => {
     if (macroData?.timestamp) {
       const d = new Date(macroData.timestamp);
-      return `Tháng ${d.getMonth() + 1}/${d.getFullYear()}`;
+      return t(language, `Tháng ${d.getMonth() + 1}/${d.getFullYear()}`, `Aug ${d.getFullYear()} (Vol. ${d.getMonth() + 1})`);
     }
-    return 'Tháng 8/2026';
+    return t(language, 'Tháng 8/2026', 'Aug 2026');
   };
 
   return (
@@ -339,7 +339,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-8 h-8 border-4 border-amber-200 border-t-amber-600 rounded-full animate-spin"></div>
-                  <span className="text-xs font-bold text-slate-600">Đang phân tích vĩ mô...</span>
+                  <span className="text-xs font-bold text-slate-600">{t(language, 'Đang phân tích vĩ mô...', 'Analyzing macro data...')}</span>
                 </div>
               </div>
             )}
@@ -386,8 +386,8 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
             <div className="text-[11px] text-slate-500 mt-4 flex items-start gap-2 bg-white p-3 rounded-lg border border-slate-100 shadow-xs">
               <ShieldCheck className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
               <div>
-                <strong className="block text-slate-700 mb-0.5">Cơ sở dữ liệu phân tích:</strong>
-                <span className="italic">Nội dung được tổng hợp và phân tích định tính (động) từ các báo cáo xu hướng lao động của Diễn đàn Kinh tế Thế giới (WEF 2023), Tổ chức Lao động Quốc tế (ILO) và dữ liệu vĩ mô từ Ngân hàng Thế giới (World Bank) định chuẩn cho thị trường Việt Nam.</span>
+                <strong className="block text-slate-700 mb-0.5">{t(language, 'Cơ sở dữ liệu phân tích:', 'Analysis data basis:')}</strong>
+                <span className="italic">{t(language, 'Nội dung được tổng hợp và phân tích định tính (động) từ các báo cáo xu hướng lao động của Diễn đàn Kinh tế Thế giới (WEF 2023), Tổ chức Lao động Quốc tế (ILO) và dữ liệu vĩ mô từ Ngân hàng Thế giới (World Bank) định chuẩn cho thị trường Việt Nam.', 'Content is synthesized and qualitatively (dynamically) analyzed from labor trend reports by the World Economic Forum (WEF 2023), the International Labour Organization (ILO), and World Bank macro data calibrated for the Vietnamese market.')}</span>
               </div>
             </div>
           </div>
@@ -398,7 +398,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               <div className="absolute inset-0 bg-white/80 backdrop-blur-sm z-10 flex items-center justify-center rounded-2xl">
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-8 h-8 border-4 border-indigo-200 border-t-indigo-600 rounded-full animate-spin"></div>
-                  <span className="text-xs font-bold text-slate-600">Đang tổng hợp dữ liệu ngành...</span>
+                  <span className="text-xs font-bold text-slate-600">{t(language, 'Đang tổng hợp dữ liệu ngành...', 'Aggregating industry data...')}</span>
                 </div>
               </div>
             )}
@@ -416,17 +416,17 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
                   <YAxis tick={{ fontSize: 10 }} />
                   <RechartsTooltip contentStyle={{ fontSize: '11px', borderRadius: '8px' }} />
                   <Legend wrapperStyle={{ fontSize: '11px', paddingTop: '30px' }} verticalAlign="bottom" />
-                  <Bar dataKey="national" name="Tăng Trưởng Chung" stackId="a" fill="#94a3b8" />
-                  <Bar dataKey="industry" name="Tác Động Ngành" stackId="a" fill="#3b82f6" />
-                  <Bar dataKey="competitive" name="Tác Động Cạnh Tranh (AI)" stackId="a" fill="#10b981" />
+                  <Bar dataKey="national" name={t(language, 'Tăng Trưởng Chung', 'Overall Growth')} stackId="a" fill="#94a3b8" />
+                  <Bar dataKey="industry" name={t(language, 'Tác Động Ngành', 'Industry Impact')} stackId="a" fill="#3b82f6" />
+                  <Bar dataKey="competitive" name={t(language, 'Tác Động Cạnh Tranh (AI)', 'Competitive Impact (AI)')} stackId="a" fill="#10b981" />
                 </BarChart>
               </ResponsiveContainer>
             </div>
             <div className="text-[11px] text-slate-500 mt-4 flex items-start gap-2 bg-white p-3 rounded-lg border border-slate-100 shadow-xs">
               <ShieldCheck className="w-4 h-4 text-indigo-600 shrink-0 mt-0.5" />
               <div>
-                <strong className="block text-slate-700 mb-0.5">Nguồn dữ liệu & Phương pháp luận:</strong>
-                <span className="italic">Biểu đồ áp dụng mô hình Shift-Share Analysis sử dụng hệ số tăng trưởng ngành chuẩn hóa từ Tổng cục Thống kê (GSO) & Bộ LĐ-TB&XH (MOLISA), kết hợp trọng số cạnh tranh AI dựa trên khung đo lường tự động hóa từ O*NET 28.1.</span>
+                <strong className="block text-slate-700 mb-0.5">{t(language, 'Nguồn dữ liệu & Phương pháp luận:', 'Data Source & Methodology:')}</strong>
+                <span className="italic">{t(language, 'Biểu đồ áp dụng mô hình Shift-Share Analysis sử dụng hệ số tăng trưởng ngành chuẩn hóa từ Tổng cục Thống kê (GSO) & Bộ LĐ-TB&XH (MOLISA), kết hợp trọng số cạnh tranh AI dựa trên khung đo lường tự động hóa từ O*NET 28.1.', 'The chart applies a Shift-Share Analysis model using normalized industry growth coefficients from the General Statistics Office (GSO) & MOLISA, combined with AI competitive weights based on the O*NET 28.1 automation measurement framework.')}</span>
               </div>
             </div>
           </div>
@@ -455,7 +455,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
                     <div className="space-y-2 mb-3">
                       <div className="flex flex-col gap-1">
                         <div className="flex justify-between text-[10px] text-slate-500 font-bold">
-                          <span>Kháng AI (40%)</span>
+                          <span>{t(language, 'Kháng AI (40%)', 'AI Resilience (40%)')}</span>
                           <span className="text-emerald-600">{career.resilienceScore || 50}%</span>
                         </div>
                         <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
@@ -464,7 +464,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
                       </div>
                       <div className="flex flex-col gap-1">
                         <div className="flex justify-between text-[10px] text-slate-500 font-bold">
-                          <span>Cầu LĐ (30%)</span>
+                          <span>{t(language, 'Cầu LĐ (30%)', 'Demand (30%)')}</span>
                           <span className="text-indigo-600">{career.laborDemandIndex || 50}%</span>
                         </div>
                         <div className="w-full bg-slate-100 rounded-full h-1.5 overflow-hidden">
@@ -473,7 +473,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
                       </div>
                       <div className="flex flex-col gap-1">
                         <div className="flex justify-between text-[10px] text-slate-500 font-bold">
-                          <span>Khớp Kỹ Năng (30%)</span>
+                          <span>{t(language, 'Khớp Kỹ Năng (30%)', 'Skill Match (30%)')}</span>
                           <span className="text-amber-600">{(() => {
                             let skillMatchScore = 60;
                             const careerSkills = career.keySkillsRequiredOrAtRisk || [];
@@ -532,7 +532,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
               ))}
             </div>
             <p className="text-[10px] text-slate-500 text-center">
-              Cơ sở khoa học: Thuật toán MCDA (Multi-criteria decision analysis) định lượng tích hợp Điểm Kháng AI (40%), Nhu Cầu LĐ (30%) và Độ phủ Kỹ năng Persona (30%).
+              {t(language, 'Cơ sở khoa học: Thuật toán MCDA (Multi-criteria decision analysis) định lượng tích hợp Điểm Kháng AI (40%), Nhu Cầu LĐ (30%) và Độ phủ Kỹ năng Persona (30%).', 'Scientific basis: MCDA (Multi-criteria decision analysis) algorithm quantitatively integrates AI Resilience Score (40%), Labor Demand (30%) and Persona Skill Coverage (30%).')}
             </p>
           </div>
         )}
@@ -631,14 +631,14 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-rose-500"></div>
               <h2 className="text-lg font-bold text-slate-900 font-sans flex items-center gap-2">
-                <span>Top 10 Ngành Nghề Có Tỷ Lệ Thay Thế Bởi AI & Rủi Ro Phơi Nhiễm Cao</span>
+                <span>{t(language, 'Top 10 Ngành Nghề Có Tỷ Lệ Thay Thế Bởi AI & Rủi Ro Phơi Nhiễm Cao', 'Top 10 Careers with Highest AI Replacement Rate & Exposure Risk')}</span>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200 font-bold">
-                  Cần Chuyển Đổi ({filteredVulnerable.length})
+                  {t(language, 'Cần Chuyển Đổi', 'Needs Transition')} ({filteredVulnerable.length})
                 </span>
               </h2>
             </div>
             <span className="text-xs text-slate-500 hidden sm:inline">
-              Khuyến nghị nâng cấp kỹ năng ngay trong 3-6 tháng tới
+              {t(language, 'Khuyến nghị nâng cấp kỹ năng ngay trong 3-6 tháng tới', 'Skill upgrade recommended within the next 3-6 months')}
             </span>
           </div>
 

@@ -80,7 +80,13 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
     ? currentSuggestion.trajectories
     : fallbackPaths;
 
-  const years = ['2026 (Hiện tại)', '2027 (+1 Năm)', '2028 (+2 Năm)', '2029 (+3 Năm)', '2030 (+4 Năm)'];
+  const years = [
+    t(language, '2026 (Hiện tại)', '2026 (Current)'),
+    t(language, '2027 (+1 Năm)', '2027 (+1 Year)'),
+    t(language, '2028 (+2 Năm)', '2028 (+2 Years)'),
+    t(language, '2029 (+3 Năm)', '2029 (+3 Years)'),
+    t(language, '2030 (+4 Năm)', '2030 (+4 Years)')
+  ];
 
   const stayPath = paths.find(p => p.pathId === 'stay_augment');
   const pivotPath = paths.find(p => p.pathId === 'pivot_adjacent');
@@ -220,6 +226,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
               <Line
                 type="monotone"
                 dataKey="Ở lại & Tăng cường AI"
+                name={t(language, 'Ở lại & Tăng cường AI', 'Stay & Augment with AI')}
                 stroke="#10b981"
                 strokeWidth={3}
                 activeDot={{ r: 6 }}
@@ -227,6 +234,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
               <Line
                 type="monotone"
                 dataKey="Chuyển nhánh Liền kề"
+                name={t(language, 'Chuyển nhánh Liền kề', 'Adjacent Pivot')}
                 stroke="#6366f1"
                 strokeWidth={3}
                 activeDot={{ r: 6 }}
@@ -234,6 +242,7 @@ export const TrajectorySimulator: React.FC<TrajectorySimulatorProps> = ({
               <Line
                 type="monotone"
                 dataKey="Chuyển đổi Toàn diện"
+                name={t(language, 'Chuyển đổi Toàn diện', 'Full Switch')}
                 stroke="#f59e0b"
                 strokeWidth={3}
                 activeDot={{ r: 6 }}

@@ -326,7 +326,7 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                               ? t(language, 'Chi phí thấp', 'Low cost')
                               : t(language, 'Trả phí', 'Paid')}
                           {typeof milestone.estimatedCostVND === 'number' && milestone.estimatedCostVND > 0
-                            ? ` (~${milestone.estimatedCostVND.toLocaleString('en-US')}đ${milestone.estimatedCostUSD ? ` / $${milestone.estimatedCostUSD}` : ''})`
+                            ? ` (~${milestone.estimatedCostVND.toLocaleString('en-US')}${t(language, 'đ', ' VND')}${milestone.estimatedCostUSD ? ` / $${milestone.estimatedCostUSD}` : ''})`
                             : ''}
                         </span>
                       )}

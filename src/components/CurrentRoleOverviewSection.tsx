@@ -243,8 +243,8 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
           </div>
 
           <div className="flex items-center justify-between text-[11px] text-slate-500 pt-0.5">
-            <span>Phơi nhiễm: <strong>{overview.automationExposureRate}%</strong></span>
-            <span>Khuếch đại: <strong>{overview.augmentationPotentialRate}%</strong></span>
+            <span>{t(language, 'Phơi nhiễm:', 'Exposure:')} <strong>{overview.automationExposureRate}%</strong></span>
+            <span>{t(language, 'Khuếch đại:', 'Augmentation:')} <strong>{overview.augmentationPotentialRate}%</strong></span>
           </div>
         </div>
       </div>
@@ -298,7 +298,7 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
                   </span>
                 </div>
                 <div className="flex flex-wrap items-center justify-between text-[11px] text-slate-500 gap-1 pt-0.5">
-                  <span className="text-slate-600"><strong>Loại:</strong> {task.taskType} ({task.impactTimeline})</span>
+                  <span className="text-slate-600"><strong>{t(language, 'Loại:', 'Type:')}</strong> {task.taskType} ({task.impactTimeline})</span>
                   <span className="text-rose-700 italic">🤖 {task.aiTechnology}</span>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
                 <span>{t(language, 'Năng Lực Cốt Lõi Con Người (Human Moat)', 'Core Human Moat Capabilities')}</span>
               </div>
               <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                Khó Thay Thế
+                {t(language, 'Khó Thay Thế', 'Hard to Replace')}
               </span>
             </div>
 

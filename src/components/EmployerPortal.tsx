@@ -250,7 +250,7 @@ export const EmployerPortal: React.FC<EmployerPortalProps> = ({
               <div className="pt-3 border-t border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs">
                 <span className="text-slate-400">{t(language, 'Đăng ngày: ', 'Posted: ')}{job.postedDate}</span>
                 <a
-                  href={`mailto:${job.contactEmail}?subject=Ứng tuyển vị trí ${job.roleTitle} từ La Bàn`}
+                  href={`mailto:${job.contactEmail}?subject=${encodeURIComponent(t(language, `Ứng tuyển vị trí ${job.roleTitle} từ La Bàn`, `Application for ${job.roleTitle} via La Ban`))}`}
                   className="px-3.5 py-1.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold border border-indigo-200 transition inline-flex items-center gap-1"
                 >
                   {t(language, 'Kết nối ứng tuyển →', 'Apply via Email →')}

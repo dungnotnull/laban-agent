@@ -42,8 +42,8 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
   const [filterType, setFilterType] = useState<'all' | 'automated' | 'augmented' | 'human_core'>('all');
 
   // Determine current role vs target suggestion details
-  const currentRoleName = intakeProfile?.currentRole || 'Nghề hiện tại của bạn';
-  const targetRoleName = (language === 'vi' ? suggestion?.roleTitleVi : suggestion?.roleTitle) || 'Lộ trình chuyển đổi AI';
+  const currentRoleName = intakeProfile?.currentRole || t(language, 'Nghề hiện tại của bạn', 'Your current role');
+  const targetRoleName = (language === 'vi' ? suggestion?.roleTitleVi : suggestion?.roleTitle) || t(language, 'Lộ trình chuyển đổi AI', 'AI Transition Path');
 
   // 1. Current Role Resilience Detail
   const currentRoleResilience: ResilienceScoreDetail = getResilienceDetailForRole(currentRoleName, intakeProfile);
@@ -225,10 +225,10 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
                     : 'bg-amber-50 text-amber-800 border-amber-200'
                 }`}>
                   {activeDetail.vietnamDemandSignal === 'high_growth'
-                    ? 'Tín hiệu tuyển dụng: Tăng trưởng mạnh'
+                    ? t(language, 'Tín hiệu tuyển dụng: Tăng trưởng mạnh', 'Hiring signal: Strong growth')
                     : activeDetail.vietnamDemandSignal === 'declining'
-                    ? 'Tín hiệu tuyển dụng: Thu hẹp cơ học'
-                    : 'Tín hiệu tuyển dụng: Chuyển dịch kỹ năng'}
+                    ? t(language, 'Tín hiệu tuyển dụng: Thu hẹp cơ học', 'Hiring signal: Mechanical contraction')
+                    : t(language, 'Tín hiệu tuyển dụng: Chuyển dịch kỹ năng', 'Hiring signal: Skill shift')}
                 </span>
               )}
             </div>
@@ -429,7 +429,7 @@ export const AIResilienceMatrix: React.FC<AIResilienceMatrixProps> = ({
                       rel="noreferrer"
                       className="text-amber-700 hover:text-amber-800 font-semibold inline-flex items-center gap-1 flex-shrink-0"
                     >
-                      <span>Xem nguồn</span>
+                      <span>{t(language, 'Xem nguồn', 'View source')}</span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   )}

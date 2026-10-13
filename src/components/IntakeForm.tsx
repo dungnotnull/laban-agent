@@ -75,7 +75,7 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({
   // Voice dictation handler
   const handleToggleVoiceDictation = () => {
     if (!speechSupported) {
-      alert('Trình duyệt hiện tại chưa hỗ trợ Web Speech API. Bạn có thể sử dụng Chrome/Edge hoặc nhập liệu trực tiếp.');
+      alert(t(language, 'Trình duyệt hiện tại chưa hỗ trợ Web Speech API. Bạn có thể sử dụng Chrome/Edge hoặc nhập liệu trực tiếp.', 'Your current browser does not support the Web Speech API. Please use Chrome/Edge or enter text directly.'));
       return;
     }
 
@@ -151,7 +151,7 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({
 
     const updatedProfile: UserIntakeProfile = {
       ...intake,
-      currentRole: detectedRole || intake.currentRole || 'Chuyên viên kỹ thuật',
+      currentRole: detectedRole || intake.currentRole || t(language, 'Chuyên viên kỹ thuật', 'Technical Specialist'),
       currentSkills: detectedSkills,
       strengths: detectedSkills
     };
@@ -303,7 +303,7 @@ export const IntakeForm: React.FC<IntakeFormProps> = ({
                 type="button"
                 id="btn-voice-dictate"
                 onClick={handleToggleVoiceDictation}
-                title={speechSupported ? 'Nói bằng giọng nói tiếng Việt' : 'Trình duyệt chưa hỗ trợ Web Speech'}
+                title={speechSupported ? t(language, 'Nói bằng giọng nói tiếng Việt', 'Speak in Vietnamese') : t(language, 'Trình duyệt chưa hỗ trợ Web Speech', 'Browser does not support Web Speech')}
                 className={`absolute right-2 p-1.5 rounded-lg transition cursor-pointer ${
                   isListening
                     ? 'bg-rose-500 text-white animate-pulse'

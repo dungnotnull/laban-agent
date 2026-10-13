@@ -63,12 +63,12 @@ export const CareerSuggestionView: React.FC<CareerSuggestionViewProps> = ({
     ? (current.aiResilienceScore?.exposureRate ?? current.resilienceDetail?.automationRiskScore ?? 42)
     : (current.resilienceDetail?.automationRiskScore ?? 42);
 
-  const roleTitleDisplay = (language === 'vi' ? current.roleTitleVi : current.roleTitle) || current.currentRole || current.roleTitle || 'Nghề nghiệp đã chọn';
-  const summaryNarrative = (language === 'vi' ? current.summaryNarrativeVi : current.reasoning) || current.whyItFitsYou || current.reasoning || 'Hệ thống đã phân tích hồ sơ và liên kết dữ liệu nghiên cứu lao động.';
+  const roleTitleDisplay = (language === 'vi' ? current.roleTitleVi : current.roleTitle) || current.currentRole || current.roleTitle || t(language, 'Nghề nghiệp đã chọn', 'Selected Career');
+  const summaryNarrative = (language === 'vi' ? current.summaryNarrativeVi : current.reasoning) || current.whyItFitsYou || current.reasoning || t(language, 'Hệ thống đã phân tích hồ sơ và liên kết dữ liệu nghiên cứu lao động.', 'The system analyzed your profile and linked labor research data.');
   const recommendedPathDisplay = (language === 'vi' ? current.recommendedPathVi : current.recommendedPath) || (language === 'vi' ? 'Lộ trình tối ưu hóa kỹ năng AI' : 'AI Skills Optimization Path');
-  const salaryRangeDisplay = current.vietnamMarketSalaryRange || current.averageSalaryRangeVND || '18,000,000 - 35,000,000 VND / tháng';
+  const salaryRangeDisplay = current.vietnamMarketSalaryRange || current.averageSalaryRangeVND || t(language, '18,000,000 - 35,000,000 VND / tháng', '18,000,000 - 35,000,000 VND / month');
   const onetDisplay = current.onetCode || current.resilienceDetail?.onetCode || 'Standard-O*NET';
-  const molisaDisplay = (language === 'vi' ? current.molisaTitleVi : current.resilienceDetail?.occupationTitle) || current.resilienceDetail?.occupationTitleVi || 'Danh mục nghề Việt Nam';
+  const molisaDisplay = (language === 'vi' ? current.molisaTitleVi : current.resilienceDetail?.occupationTitle) || current.resilienceDetail?.occupationTitleVi || t(language, 'Danh mục nghề Việt Nam', 'Vietnam Career Catalog');
 
   const transferableSkillsList: string[] = current.transferableSkills || current.transferableSkillsMatch || [];
   const augmentedWithAiList: string[] = current.augmentedWithAi || current.skillsGap || [];
@@ -149,7 +149,7 @@ export const CareerSuggestionView: React.FC<CareerSuggestionViewProps> = ({
             </h2>
             <p className="text-xs text-slate-500 mt-0.5">
               {t(language, 'Phân tích đối soát chuẩn: ', 'Benchmark: ')}
-              <span className="font-semibold text-slate-700">{molisaDisplay}</span> (MOLISA/Tổng cục Thống kê)
+              <span className="font-semibold text-slate-700">{molisaDisplay}</span> {t(language, '(MOLISA/Tổng cục Thống kê)', '(MOLISA/GSO)')}
             </p>
           </div>
 

@@ -46,6 +46,7 @@ import { ComprehensiveCareerAnalysisResult } from './types/careerAnalysis';
 import { saveAssessmentLocally, buildCommunityPost, buildEmployerListing } from './lib/localData';
 import { Compass, Sparkles, Shield, Heart, ArrowUp, Database, ArrowRight } from 'lucide-react';
 import type { Trajectory } from './agents/trajectory';
+import { t } from './utils/i18n';
 
 export default function App() {
   // Navigation & Localization
@@ -241,10 +242,10 @@ export default function App() {
   }) => {
     const post = buildCommunityPost({
       authorAlias: newPostData.isAnonymous
-        ? 'Ẩn danh (Thành viên La Bàn)'
-        : intake.fullName || 'Thành viên',
+        ? t(language, 'Ẩn danh (Thành viên La Bàn)', 'Anonymous (La Bàn Member)')
+        : intake.fullName || t(language, 'Thành viên', 'Member'),
       isAnonymous: newPostData.isAnonymous,
-      userCurrentRole: intake.currentRole || 'Đang tìm kiếm hướng đi',
+      userCurrentRole: intake.currentRole || t(language, 'Đang tìm kiếm hướng đi', 'Exploring career directions'),
       tag: newPostData.tag,
       title: newPostData.title,
       content: newPostData.content
@@ -253,7 +254,7 @@ export default function App() {
   };
 
   const handleAddReply = async (postId: string, content: string) => {
-    const author = intake.fullName || 'Thành viên La Bàn';
+    const author = intake.fullName || t(language, 'Thành viên La Bàn', 'La Bàn Member');
     setCommunityPosts(
       communityPosts.map((p) => {
         if (p.id === postId) {
