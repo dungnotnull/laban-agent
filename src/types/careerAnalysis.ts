@@ -3,15 +3,19 @@ export interface CitedResearchEvidence {
   institution: string;
   year: number;
   keyMetricOrFormula: string;
+  keyMetricOrFormulaEn?: string;
   url: string;
 }
 
 export interface CurrentRoleTaskImpact {
   taskNameVi: string;
+  taskNameEn?: string;
   taskType: 'Routine Cognitive' | 'Routine Manual' | 'Non-routine Analytical' | 'Interpersonal / Strategic';
   impactTimeline: string;
+  impactTimelineEn?: string;
   replacementProbability: number; // 0-100%
   aiTechnology: string;
+  aiTechnologyEn?: string;
 }
 
 export interface CurrentRoleOverviewAssessment {
@@ -32,6 +36,7 @@ export interface CurrentRoleOverviewAssessment {
   automationExposureRate: number; // Tỷ lệ phơi nhiễm tự động hóa % (O*NET / OpenAI)
   augmentationPotentialRate: number; // Tiềm năng khuếch đại AI % (ILO / Harvard BCG)
   fiveYearDemandGrowthPct: string; // e.g. "+35% (AI-Augmented) / -28% (Traditional)"
+  fiveYearDemandGrowthPctEn?: string;
   
   // Qualitative Scientific Synthesis
   overviewCurrentStateVi: string; // Nhận xét tổng quan ngành nghề hiện tại
@@ -42,7 +47,9 @@ export interface CurrentRoleOverviewAssessment {
   // Task level breakdown
   tasksAtRisk: CurrentRoleTaskImpact[];
   humanMoatCapabilities: string[]; // Năng lực con người khó bị thay thế
+  humanMoatCapabilitiesEn?: string[];
   strategicUpskillingDirectionVi: string; // Hướng phát triển nâng cấp năng lực
+  strategicUpskillingDirectionEn?: string;
   
   // Anti-Hallucination Citations Note
   citedEvidenceSources: CitedResearchEvidence[];

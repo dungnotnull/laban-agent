@@ -27,6 +27,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       institution: 'OpenAI, OpenResearch & University of Pennsylvania (Eloundou et al.)',
       year: 2023,
       keyMetricOrFormula: 'Đo lường mức độ phơi nhiễm tác vụ: β-exposure dao động từ 45% - 86% đối với các công việc xử lý dữ liệu và văn bản.',
+      keyMetricOrFormulaEn: 'Task exposure measurement: β-exposure ranges from 45% - 86% for data- and text-processing occupations.',
       url: 'https://arxiv.org/abs/2303.10130'
     },
     {
@@ -34,6 +35,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       institution: 'World Economic Forum (WEF)',
       year: 2023,
       keyMetricOrFormula: '44% bộ kỹ năng người lao động sẽ bị gián đoạn trước 2027; nhóm công việc lặp lại giảm mạnh 14 triệu vị trí toàn cầu.',
+      keyMetricOrFormulaEn: '44% of workers\u2019 core skill sets will be disrupted before 2027; repetitive job families shrink by 14 million roles globally.',
       url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
     },
     {
@@ -41,6 +43,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       institution: 'International Labour Organization (ILO Working Paper 96)',
       year: 2023,
       keyMetricOrFormula: 'Hiệu ứng cộng hưởng nâng cao (Augmentation) chiếm ưu thế ở 75% lao động nếu được trang bị kỹ năng số kết hợp nghiệp vụ.',
+      keyMetricOrFormulaEn: 'Augmentation effects dominate for 75% of workers when digital skills are combined with domain expertise.',
       url: 'https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality'
     },
     {
@@ -48,6 +51,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       institution: 'Stanford Institute for Human-Centered Artificial Intelligence (HAI)',
       year: 2024,
       keyMetricOrFormula: 'Nghiên cứu Harvard/BCG: Nhân sự sử dụng AI giải quyết bài toán nghiệp vụ nhanh hơn 25.1% và tăng 40% chất lượng kết quả.',
+      keyMetricOrFormulaEn: 'Harvard/BCG field study: staff using AI complete business tasks 25.1% faster with 40% higher output quality.',
       url: 'https://aiindex.stanford.edu/report/'
     },
     {
@@ -55,6 +59,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       institution: 'Tổng cục Thống kê (GSO), Bộ LĐ-TB&XH (MOLISA) & TopCV Analytics',
       year: 2024,
       keyMetricOrFormula: '72% doanh nghiệp tại Việt Nam ưu tiên tuyển dụng ứng viên biết ứng dụng AI; mức lương nhân sự lai (Hybrid Skills) cao hơn 28-35%.',
+      keyMetricOrFormulaEn: '72% of Vietnamese employers prioritize candidates with applied AI skills; hybrid-skill professionals earn 28-35% more.',
       url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
     }
   ];
@@ -73,6 +78,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       automationExposureRate: 78,
       augmentationPotentialRate: 85,
       fiveYearDemandGrowthPct: '+38% (Chuyên viên Phân tích Dữ liệu Tài chính AI) / -45% (Kế toán Nhập liệu Sổ sách)',
+      fiveYearDemandGrowthPctEn: '+38% (AI Financial Data Analysts) / -45% (Bookkeeping Data-Entry Accountants)',
       overviewCurrentStateVi: `Ở thời điểm hiện tại (2026), ngành Kế toán tại Việt Nam đang chịu áp lực lớn từ các hệ thống OCR đọc hóa đơn tự động và phần mềm hạch toán thông minh. Khoảng 70% các tác vụ ghi nhận chứng từ, đối chiếu công nợ và tổng hợp báo cáo thuế định kỳ đã bị tự động hóa.`,
       overviewCurrentStateEn: `Currently in 2026, Accounting in Vietnam faces high automation from intelligent OCR and automated bookkeeping systems. Over 70% of routine journal entries and basic tax reporting are automated.`,
       fiveYearForecastVi: `Trong 5 năm tới (2026 - 2031), các doanh nghiệp sẽ cắt giảm mạnh vị trí kế toán viên phần hành truyền thống (-45%). Thay vào đó, nhu cầu sẽ chuyển dịch sang các chuyên gia Quản trị Tài chính Dự báo (Predictive Financial Controller) và Kiểm soát Rủi ro Dữ liệu AI.`,
@@ -80,22 +86,28 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       tasksAtRisk: [
         {
           taskNameVi: 'Nhập liệu hóa đơn đầu vào / đầu ra và định khoản sổ cái',
+          taskNameEn: 'Keying input/output invoices and posting general-ledger entries',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 92,
           aiTechnology: 'Intelligent Document Processing (IDP) & Auto-Reconciliation ERP'
         },
         {
           taskNameVi: 'Lập bảng đối chiếu công nợ và cân đối kế toán mẫu',
+          taskNameEn: 'Preparing receivables/payables reconciliations and standard balance sheets',
           taskType: 'Routine Cognitive',
           impactTimeline: '1 - 2 năm tới',
+          impactTimelineEn: 'Next 1 - 2 years',
           replacementProbability: 84,
           aiTechnology: 'Automated Financial Reporting Bots'
         },
         {
           taskNameVi: 'Kê khai thuế cơ bản theo biểu mẫu định sẵn',
+          taskNameEn: 'Filing basic tax returns from pre-defined forms',
           taskType: 'Routine Cognitive',
           impactTimeline: '1 - 2 năm tới',
+          impactTimelineEn: 'Next 1 - 2 years',
           replacementProbability: 80,
           aiTechnology: 'Tax Filing APIs & Automated Validation Rules'
         }
@@ -105,7 +117,13 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
         'Đàm phán và giải trình nghiệp vụ trực tiếp với cơ quan thuế và kiểm toán độc lập',
         'Phán đoán đạo đức tài chính và xử lý tình huống bất thường trong quản trị nội bộ'
       ],
+      humanMoatCapabilitiesEn: [
+        'Strategic advisory on cash-flow restructuring and corporate cost optimization',
+        'Negotiating and presenting directly to tax authorities and independent auditors',
+        'Financial ethics judgment and handling irregular scenarios in internal governance'
+      ],
       strategicUpskillingDirectionVi: 'Chuyển hóa nhanh sang vị trí "Chuyên viên Phân tích Tài chính Dự báo & Tự động hóa ERP". Học thêm PowerBI, Python phân tích tài chính và làm chủ công cụ AI để dự báo dòng tiền.',
+      strategicUpskillingDirectionEn: 'Pivot quickly into the "Predictive Financial Analyst & ERP Automation" role. Learn PowerBI, financial-analysis Python, and master AI tools for cash-flow forecasting.',
       citedEvidenceSources
     };
   }
@@ -124,6 +142,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       automationExposureRate: 84,
       augmentationPotentialRate: 90,
       fiveYearDemandGrowthPct: '+52% (Chiến lược gia Nội dung AI & Viral Producer) / -48% (Copywriter SEO cơ bản)',
+      fiveYearDemandGrowthPctEn: '+52% (AI Content Strategists & Viral Producers) / -48% (Basic SEO Copywriters)',
       overviewCurrentStateVi: `Ở thời điểm hiện tại (2026), lĩnh vực sáng tạo nội dung văn bản chứng kiến sự bùng nổ của các mô hình ngôn ngữ lớn (Gemini, Claude, GPT). Các bài viết chuẩn SEO, mô tả sản phẩm e-commerce và bài đăng mạng xã hội cơ bản có thể tạo ra chỉ trong vài giây với chi phí gần như bằng 0.`,
       overviewCurrentStateEn: `Currently in 2026, content writing is deeply disrupted by LLMs. Standard SEO articles, product copy, and generic social posts are generated instantly at negligible cost.`,
       fiveYearForecastVi: `Trong 5 năm tới (2026 - 2031), nhu cầu tuyển dụng người viết thuần túy (content writer truyền thống) sẽ thu hẹp sâu (-48%). Ngược lại, những chuyên gia có năng lực định hướng chiến lược nội dung đa kênh, khai thác câu chuyện thương hiệu độc bản (Personal Brand Storytelling) và chỉ đạo sản xuất đa phương tiện (Video/Audio/AI) sẽ giữ vị thế dẫn đầu.`,
@@ -131,22 +150,28 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       tasksAtRisk: [
         {
           taskNameVi: 'Viết bài chuẩn SEO theo từ khóa cho website',
+          taskNameEn: 'Writing keyword-driven SEO articles for websites',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 94,
           aiTechnology: 'LLM Long-form Generation & Automated SEO Optimization Tools'
         },
         {
           taskNameVi: 'Soạn thảo caption bài đăng Facebook / TikTok / Instagram ngắn',
+          taskNameEn: 'Drafting short Facebook / TikTok / Instagram captions',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 88,
           aiTechnology: 'Social Media Copy Bots & Multi-variant Creative Generators'
         },
         {
           taskNameVi: 'Dịch thuật và tóm tắt tin tức từ báo quốc tế',
+          taskNameEn: 'Translating and summarizing international news articles',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 90,
           aiTechnology: 'Neural Machine Translation & Contextual LLM Summarizers'
         }
@@ -156,7 +181,13 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
         'Thấu hiểu sâu sắc văn hóa địa phương và tâm lý tiêu dùng tinh tế của người Việt',
         'Xây dựng chiến lược phân phối nội dung đa kênh và quản trị khủng hoảng truyền thông'
       ],
+      humanMoatCapabilitiesEn: [
+        'Authentic emotional storytelling rooted in lived experience and a humanistic lens',
+        'Deep understanding of local culture and the nuanced consumer psychology of Vietnamese audiences',
+        'Building multi-channel content distribution strategy and managing communications crises'
+      ],
       strategicUpskillingDirectionVi: 'Nâng cấp từ "Người viết lách đơn thuần" thành "Chiến lược gia Tăng trưởng Nội dung (Content Growth Strategist)". Làm chủ nghệ thuật Prompt Engineering, sản xuất video ngắn kết hợp AI và phân tích dữ liệu tương tác độc giả.',
+      strategicUpskillingDirectionEn: 'Upgrade from "pure writer" to "Content Growth Strategist". Master the art of Prompt Engineering, AI-assisted short-video production, and audience-engagement analytics.',
       citedEvidenceSources
     };
   }
@@ -175,6 +206,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       automationExposureRate: 68,
       augmentationPotentialRate: 94,
       fiveYearDemandGrowthPct: '+68% (Kỹ sư Tác tử AI & Kiến trúc Hệ thống) / -36% (Lập trình viên Junior cắt HTML/CSS/CRUD)',
+      fiveYearDemandGrowthPctEn: '+68% (AI Agent Engineers & Systems Architects) / -36% (Junior Developers cutting HTML/CSS/CRUD)',
       overviewCurrentStateVi: `Ở thời điểm hiện tại (2026), lập trình viên đang được tăng tốc gấp 2-3 lần nhờ các AI Code Assistant (Copilot, Gemini Code Assist, Cursor). Các công việc viết mã lặp lại (CRUD, viết giao diện mẫu, unit test cơ bản) đang được tạo tự động với độ chính xác cao.`,
       overviewCurrentStateEn: `Currently in 2026, software development is accelerated 2x-3x by AI code assistants. Repetitive boilerplate, standard CRUD, and basic unit tests are generated with high fidelity.`,
       fiveYearForecastVi: `Trong 5 năm tới (2026 - 2031), rào cản tạo mã nguồn sẽ gần như biến mất với sự xuất hiện của các Agent tự viết và sửa lỗi toàn diện. Kỹ sư phần mềm không còn được trả lương vì tốc độ gõ code mà bởi năng lực: Thiết kế kiến trúc chịu tải, bảo mật hệ thống, tích hợp mô hình AI và hiểu bài toán kinh doanh.`,
@@ -182,22 +214,28 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       tasksAtRisk: [
         {
           taskNameVi: 'Viết mã boilerplate và các hàm API CRUD cơ bản',
+          taskNameEn: 'Writing boilerplate code and basic CRUD API handlers',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 88,
           aiTechnology: 'LLM Code Completion & Autonomous Coding Agents'
         },
         {
           taskNameVi: 'Cắt giao diện tĩnh HTML/CSS từ bản thiết kế Figma',
+          taskNameEn: 'Slicing static HTML/CSS interfaces from Figma designs',
           taskType: 'Routine Cognitive',
           impactTimeline: 'Đang diễn ra ngay hiện tại',
+          impactTimelineEn: 'Happening now',
           replacementProbability: 85,
           aiTechnology: 'Multimodal Vision-to-Code Frameworks'
         },
         {
           taskNameVi: 'Viết các bài kiểm thử đơn vị (Unit Tests) theo kịch bản chuẩn',
+          taskNameEn: 'Writing unit tests from standard scenarios',
           taskType: 'Routine Cognitive',
           impactTimeline: '1 - 2 năm tới',
+          impactTimelineEn: 'Next 1 - 2 years',
           replacementProbability: 82,
           aiTechnology: 'Automated Test Generation & Regression Bots'
         }
@@ -207,7 +245,13 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
         'Bảo mật chuyên sâu, phòng chống tấn công mạng và tuân thủ quy chuẩn pháp lý',
         'Điều phối các tác tử AI giải quyết các bài toán kỹ thuật phi cấu trúc và chưa từng có tiền lệ'
       ],
+      humanMoatCapabilitiesEn: [
+        'Designing high-scale distributed system architectures and guaranteeing data integrity',
+        'Deep security engineering, cyber-attack defense, and regulatory compliance',
+        'Orchestrating AI agents to solve unstructured, precedent-less technical problems'
+      ],
       strategicUpskillingDirectionVi: 'Tiến nhanh lên vai trò "AI Solutions Architect & Agentic Workflow Engineer". Làm chủ hệ sinh thái RAG, Vector Database, và kỹ năng thiết kế phần mềm hướng sự kiện.',
+      strategicUpskillingDirectionEn: 'Move fast into the "AI Solutions Architect & Agentic Workflow Engineer" role. Master the RAG ecosystem, Vector Databases, and event-driven software design.',
       citedEvidenceSources
     };
   }
@@ -234,6 +278,7 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
     automationExposureRate: isHighRisk ? 86 : 64,
     augmentationPotentialRate: 80,
     fiveYearDemandGrowthPct: '+45% (Nhân sự nâng cấp kỹ năng AI) / -30% (Nhân sự làm việc thủ công)',
+    fiveYearDemandGrowthPctEn: '+45% (AI-upskilled professionals) / -30% (Manual-work professionals)',
     overviewCurrentStateVi: `Ở thời điểm hiện tại (2026), vai trò "${role}" của bạn đang bước vào giai đoạn chuyển giao mạnh mẽ giữa phương thức làm việc truyền thống và công cụ AI. Khoảng 40% - 65% các tác vụ vi mô hàng ngày (thu thập dữ liệu, báo cáo tiến độ, xử lý thông tin hành chính) đã có thể được tự động hóa từng phần.`,
     overviewCurrentStateEn: `Currently in 2026, your role "${role}" is in an active transition phase where 40% - 65% of daily administrative and routine data handling can be augmented by AI tools.`,
     fiveYearForecastVi: `Trong 5 năm tới (2026 - 2031), sự hội tụ của Agentic AI và các nền tảng tự động hóa sẽ tái cấu trúc toàn diện chuỗi giá trị ngành. Những cá nhân chỉ tập trung vào khâu thực thi lặp lại sẽ đối mặt áp lực cạnh tranh gay gắt, trong khi người sở hữu thế mạnh [${strengths.slice(0, 2).join(', ')}] kết hợp kỹ năng điều phối công nghệ sẽ gia tăng đáng kể giá trị thị trường.`,
@@ -241,22 +286,28 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
     tasksAtRisk: [
       {
         taskNameVi: 'Thu thập, tổng hợp số liệu và lập báo cáo định kỳ',
+        taskNameEn: 'Collecting and consolidating figures and producing recurring reports',
         taskType: 'Routine Cognitive',
         impactTimeline: 'Đang diễn ra ngay hiện tại',
+        impactTimelineEn: 'Happening now',
         replacementProbability: 84,
         aiTechnology: 'LLM Document Extractors & Auto-Dashboard Connectors'
       },
       {
         taskNameVi: 'Xử lý các thủ tục hành chính và phản hồi thông tin lặp lại',
+        taskNameEn: 'Processing administrative procedures and repetitive information requests',
         taskType: 'Routine Cognitive',
         impactTimeline: '1 - 2 năm tới',
+        impactTimelineEn: 'Next 1 - 2 years',
         replacementProbability: 78,
         aiTechnology: 'Workflow Automation (n8n/Zapier) & Conversational Bots'
       },
       {
         taskNameVi: 'Phân loại tài liệu và lưu trữ dữ liệu tiêu chuẩn',
+        taskNameEn: 'Classifying documents and archiving data to standard structures',
         taskType: 'Routine Cognitive',
         impactTimeline: '1 - 2 năm tới',
+        impactTimelineEn: 'Next 1 - 2 years',
         replacementProbability: 80,
         aiTechnology: 'Intelligent File Indexing & Vector Search'
       }
@@ -266,7 +317,13 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       'Khả năng tư duy phản biện, giải quyết vấn đề trong điều kiện thông tin thiếu thốn',
       'Đạo đức trách nhiệm, hiểu sâu bối cảnh văn hóa - xã hội địa phương tại Việt Nam'
     ],
+    humanMoatCapabilitiesEn: [
+      'Emotional intelligence (EQ), communication skills, and building trust with people',
+      'Critical thinking and problem-solving under information-scarce conditions',
+      'Responsible ethics and deep understanding of local cultural-social context in Vietnam'
+    ],
     strategicUpskillingDirectionVi: 'Chủ động tích hợp các công cụ AI vào quy trình làm việc mỗi ngày, phát triển tư duy điều phối hệ thống và đẩy mạnh các kỹ năng tương tác con người - những giá trị mà thuật toán không thể thay thế.',
+    strategicUpskillingDirectionEn: 'Proactively integrate AI tools into your daily workflow, develop systems-orchestration thinking, and sharpen human-interaction skills — the values algorithms cannot replace.',
     citedEvidenceSources
   };
 }

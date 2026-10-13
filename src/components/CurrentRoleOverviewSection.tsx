@@ -203,8 +203,8 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
             </div>
           </div>
 
-          <p className="text-[11px] text-slate-600 font-medium leading-snug truncate" title={overview.fiveYearDemandGrowthPct}>
-            📈 {overview.fiveYearDemandGrowthPct}
+          <p className="text-[11px] text-slate-600 font-medium leading-snug truncate" title={language === 'en' && overview.fiveYearDemandGrowthPctEn ? overview.fiveYearDemandGrowthPctEn : overview.fiveYearDemandGrowthPct}>
+            📈 {language === 'en' && overview.fiveYearDemandGrowthPctEn ? overview.fiveYearDemandGrowthPctEn : overview.fiveYearDemandGrowthPct}
           </p>
         </div>
 
@@ -292,14 +292,14 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
             {overview.tasksAtRisk?.map((task, idx) => (
               <div key={idx} className="bg-rose-50/40 border border-rose-100 rounded-xl p-3 text-xs space-y-1.5">
                 <div className="flex items-start justify-between gap-2">
-                  <span className="font-semibold text-slate-900">{task.taskNameVi}</span>
+                  <span className="font-semibold text-slate-900">{language === 'en' && task.taskNameEn ? task.taskNameEn : task.taskNameVi}</span>
                   <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-rose-100 text-rose-800 flex-shrink-0">
                     {task.replacementProbability}%
                   </span>
                 </div>
                 <div className="flex flex-wrap items-center justify-between text-[11px] text-slate-500 gap-1 pt-0.5">
-                  <span className="text-slate-600"><strong>{t(language, 'Loại:', 'Type:')}</strong> {task.taskType} ({task.impactTimeline})</span>
-                  <span className="text-rose-700 italic">🤖 {task.aiTechnology}</span>
+                  <span className="text-slate-600"><strong>{t(language, 'Loại:', 'Type:')}</strong> {task.taskType} ({language === 'en' && task.impactTimelineEn ? task.impactTimelineEn : task.impactTimeline})</span>
+                  <span className="text-rose-700 italic">🤖 {language === 'en' && task.aiTechnologyEn ? task.aiTechnologyEn : task.aiTechnology}</span>
                 </div>
               </div>
             ))}
@@ -320,7 +320,7 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
             </div>
 
             <ul className="space-y-2">
-              {overview.humanMoatCapabilities?.map((moat, idx) => (
+              {(language === 'en' && overview.humanMoatCapabilitiesEn ? overview.humanMoatCapabilitiesEn : overview.humanMoatCapabilities)?.map((moat, idx) => (
                 <li key={idx} className="flex items-start gap-2 text-xs text-slate-700">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0 mt-0.5" />
                   <span>{moat}</span>
@@ -335,7 +335,7 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
               <span>{t(language, 'Định hướng chuyển dịch chiến lược:', 'Strategic Upskilling Direction:')}</span>
             </p>
             <p className="text-xs text-slate-700 leading-relaxed">
-              {overview.strategicUpskillingDirectionVi}
+              {language === 'en' && overview.strategicUpskillingDirectionEn ? overview.strategicUpskillingDirectionEn : overview.strategicUpskillingDirectionVi}
             </p>
           </div>
         </div>
@@ -384,7 +384,7 @@ export const CurrentRoleOverviewSection: React.FC<CurrentRoleOverviewSectionProp
                 🏛️ {src.institution} ({src.year})
               </p>
               <p className="text-[11px] text-slate-700 italic bg-slate-50 p-2 rounded-lg border border-slate-100">
-                📊 {src.keyMetricOrFormula}
+                📊 {language === 'en' && src.keyMetricOrFormulaEn ? src.keyMetricOrFormulaEn : src.keyMetricOrFormula}
               </p>
             </div>
           ))}

@@ -25,6 +25,7 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
     automationExposureRate: 64,
     augmentationPotentialRate: 82,
     fiveYearDemandGrowthPct: '+46% (Nhân sự tích hợp AI) / -32% (Nhân sự thủ công truyền thống)',
+    fiveYearDemandGrowthPctEn: '+46% (AI-integrated professionals) / -32% (Traditional manual-work professionals)',
     overviewCurrentStateVi: 'Ở thời điểm hiện tại (2026), ngành nghề của bạn đang bước vào giai đoạn chuyển giao mạnh mẽ từ mô hình thực thi thủ công sang mô hình tự động hóa có trợ lực AI (AI-Augmented). Khoảng 45% - 65% thời lượng công việc hàng ngày (xử lý văn bản, tổng hợp báo cáo định kỳ, phác thảo ý tưởng cơ bản, phân loại dữ liệu) đã có thể được thực hiện hoặc rút ngắn từ 2x đến 4x bằng các hệ thống Generative AI và LLM.',
     overviewCurrentStateEn: 'Currently in 2026, your industry is transitioning rapidly from manual execution to AI-augmented workflows. Roughly 45% - 65% of daily tasks (routine documentation, basic drafting, data classification) can be accelerated 2x-4x using GenAI.',
     fiveYearForecastVi: 'Trong 5 năm tới (2026 - 2031), sự phổ cập của các Agentic AI đa tác tử (Autonomous AI Agents) sẽ chuyển đổi căn bản cơ cấu việc làm: Các vị trí chuyên viên thuần túy chỉ thực hiện tác vụ lặp lại sẽ đối mặt với sự sụt giảm nhu cầu tuyển dụng (-32%), trong khi các vị trí biết làm chủ công nghệ, đóng vai trò "Nhạc trưởng điều phối AI & Kiểm định chất lượng" sẽ chứng kiến mức tăng trưởng nhu cầu (+46%) và thu nhập vượt bậc.',
@@ -32,29 +33,38 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
     tasksAtRisk: [
       {
         taskNameVi: 'Thu thập, làm sạch và nhập liệu số liệu thủ công',
+        taskNameEn: 'Manually collecting, cleaning, and keying in data',
         taskType: 'Routine Cognitive',
         impactTimeline: 'Đang diễn ra ngay hiện tại',
+        impactTimelineEn: 'Happening now',
         replacementProbability: 88,
-        aiTechnology: 'LLM Document Parsing, OCR đa thể thức & Automated Data Pipelines'
+        aiTechnology: 'LLM Document Parsing, OCR đa thể thức & Automated Data Pipelines',
+        aiTechnologyEn: 'LLM Document Parsing, Multi-format OCR & Automated Data Pipelines'
       },
       {
         taskNameVi: 'Soạn thảo văn bản hành chính, báo cáo mẫu & email tiêu chuẩn',
+        taskNameEn: 'Drafting administrative documents, template reports & standard emails',
         taskType: 'Routine Cognitive',
         impactTimeline: 'Đang diễn ra ngay hiện tại',
+        impactTimelineEn: 'Happening now',
         replacementProbability: 82,
         aiTechnology: 'Generative AI Assistants, Auto-Email Copilots'
       },
       {
         taskNameVi: 'Thiết kế đồ họa cơ bản & xử lý hình ảnh 2D lặp lại',
+        taskNameEn: 'Basic graphic design & repetitive 2D image processing',
         taskType: 'Routine Cognitive',
         impactTimeline: '1 - 2 năm tới',
+        impactTimelineEn: 'Next 1 - 2 years',
         replacementProbability: 75,
         aiTechnology: 'Diffusion Multimodal Models & Generative Canvas'
       },
       {
         taskNameVi: 'Tư vấn giải đáp thông tin cơ bản & phân loại ticket',
+        taskNameEn: 'Answering basic information requests & triaging tickets',
         taskType: 'Routine Cognitive',
         impactTimeline: '1 - 2 năm tới',
+        impactTimelineEn: 'Next 1 - 2 years',
         replacementProbability: 79,
         aiTechnology: 'Voice/Text Conversational AI Agents & RAG Bots'
       }
@@ -65,13 +75,21 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       'Đạo đức nghề nghiệp, kiểm soát thiên kiến và chịu trách nhiệm pháp lý cao nhất',
       'Năng lực điều phối liên phòng ban và giải quyết khủng hoảng bất định'
     ],
+    humanMoatCapabilitiesEn: [
+      'Psychological empathy, direct negotiation, and trust-building with clients / partners (EQ)',
+      'Judging specific business contexts and making multi-variable strategic decisions',
+      'Professional ethics, bias control, and ultimate legal accountability',
+      'Cross-department coordination and resolving ambiguous crises'
+    ],
     strategicUpskillingDirectionVi: 'Chuyển hóa từ "Người thực thi tác vụ vi mô" sang "Kiến trúc sư giải pháp & Điều phối viên AI". Tận dụng kinh nghiệm nghiệp vụ sẵn có, bổ sung kỹ năng Prompt Engineering nâng cao, quản trị luồng tự động hóa (n8n/Make) và tư duy phân tích dữ liệu ứng dụng.',
+    strategicUpskillingDirectionEn: 'Transform from "micro-task executor" to "Solution Architect & AI Orchestrator". Leverage your existing domain experience while adding advanced Prompt Engineering, automation workflow management (n8n/Make), and applied data-analysis thinking.',
     citedEvidenceSources: [
       {
         paperTitle: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
         institution: 'OpenAI, OpenResearch & University of Pennsylvania (Eloundou et al.)',
         year: 2023,
         keyMetricOrFormula: 'Mô hình đánh giá độ phơi nhiễm tác vụ: β-exposure = 64% đối với nhóm lao động tri thức và dịch vụ văn phòng.',
+        keyMetricOrFormulaEn: 'Task exposure measurement model: β-exposure = 64% for knowledge workers and office services.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
@@ -79,6 +97,7 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         institution: 'World Economic Forum (WEF)',
         year: 2023,
         keyMetricOrFormula: '44% kỹ năng cốt lõi của người lao động sẽ bị tái cấu trúc trước năm 2027; nhóm công việc hành chính & văn phòng giảm 14 triệu vị trí toàn cầu.',
+        keyMetricOrFormulaEn: '44% of workers\u2019 core skills will be restructured before 2027; administrative & office job families lose 14 million roles globally.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       },
       {
@@ -86,6 +105,7 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         institution: 'International Labour Organization (ILO Working Paper 96)',
         year: 2023,
         keyMetricOrFormula: 'Tác động chủ đạo của GenAI là "Khuếch đại năng suất" (Augmentation) với 75% lao động, thay vì thay thế hoàn toàn nếu được đào tạo chuyển đổi.',
+        keyMetricOrFormulaEn: 'GenAI\u2019s dominant impact is "Augmentation" for 75% of workers, rather than full replacement, when transition training is provided.',
         url: 'https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality'
       },
       {
@@ -93,6 +113,7 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         institution: 'Stanford Institute for Human-Centered Artificial Intelligence (HAI)',
         year: 2024,
         keyMetricOrFormula: 'Nghiên cứu thực địa (BCG / Harvard): Nhân sự kết hợp công cụ AI tăng 40% chất lượng đầu ra và giảm 25% thời gian hoàn thành.',
+        keyMetricOrFormulaEn: 'Field study (BCG / Harvard): staff using AI tools raise output quality by 40% and cut completion time by 25%.',
         url: 'https://aiindex.stanford.edu/report/'
       },
       {
@@ -100,6 +121,7 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         institution: 'Tổng cục Thống kê (GSO), Bộ LĐ-TB&XH (MOLISA) & TopCV Analytics',
         year: 2024,
         keyMetricOrFormula: '72% doanh nghiệp tại TP.HCM & Hà Nội ưu tiên tuyển dụng ứng viên thành thạo công cụ AI; nhu cầu kỹ năng lai (Hybrid Skills) tăng 35%.',
+        keyMetricOrFormulaEn: '72% of employers in Ho Chi Minh City & Hanoi prioritize candidates proficient in AI tools; demand for hybrid skills grows 35%.',
         url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
       }
     ]
