@@ -52,4 +52,34 @@ describe('runAnalyst', () => {
       runAnalyst(GOLDEN_PROFILES[0].intakeProfile, { normalizedSummary: 's', occupationKeywords: ['d'], riskFlags: [], degraded: false }, EMPTY_PACK, badDeps)
     ).rejects.toThrow();
   });
+
+  it('prompt includes strict resource, budget and language rules (EN default)', async () => {
+    let captured = '';
+    const captureDeps: AgentDeps = {
+      ...fakeDeps,
+      callRich: async (prompt: string) => {
+        captured = prompt;
+        return { text: JSON.stringify([]), model: 'fake', usageTokens: 1, latencyMs: 1 };
+      }
+    };
+    await runAnalyst(GOLDEN_PROFILES[0].intakeProfile, { normalizedSummary: 's', occupationKeywords: ['d'], riskFlags: [], degraded: false }, EMPTY_PACK, captureDeps);
+    expect(captured).toContain('RESOURCE RULE (STRICT)');
+    expect(captured).toContain('BUDGET REALISM (STRICT)');
+    expect(captured).toContain('OUTPUT LANGUAGE: ENGLISH');
+    expect(captured).toContain('costTier');
+    expect(captured).toContain('12 h/week');
+  });
+
+  it('prompt uses Vietnamese output language when language is vi', async () => {
+    let captured = '';
+    const captureDeps: AgentDeps = {
+      ...fakeDeps,
+      callRich: async (prompt: string) => {
+        captured = prompt;
+        return { text: JSON.stringify([]), model: 'fake', usageTokens: 1, latencyMs: 1 };
+      }
+    };
+    await runAnalyst(GOLDEN_PROFILES[0].intakeProfile, { normalizedSummary: 's', occupationKeywords: ['d'], riskFlags: [], degraded: false }, EMPTY_PACK, captureDeps, undefined, 'vi');
+    expect(captured).toContain('OUTPUT LANGUAGE: Vietnamese');
+  });
 });

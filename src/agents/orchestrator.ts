@@ -1,4 +1,4 @@
-import type { CareerSuggestion, UserIntakeProfile } from '../types';
+import type { CareerSuggestion, UserIntakeProfile, Language } from '../types';
 import { createRecorder, type Trajectory, type TrajectoryRecorder } from './trajectory';
 import { REAL_DEPS, type AgentDeps } from './deps';
 import { runProfiler, type NormalizedProfile } from './profiler';
@@ -6,6 +6,7 @@ import { runEvidenceGatherer } from './evidenceGatherer';
 import { runAnalyst } from './analyst';
 import { runVerifier, type VerifierResult } from './verifier';
 import { EMPTY_PACK, type EvidencePack } from './tools';
+import { formatUsdRange, vndToUsd } from './usd';
 
 export interface PipelineConfig {
   useTools: boolean;
@@ -34,6 +35,7 @@ export interface PipelineResult {
   verification: VerifierResult | null;
   trajectory: Trajectory;
   meta: PipelineMeta;
+  evidence: { currentOccupationResilience: number | null };
 }
 
 const MAX_REPAIR_ATTEMPTS = 2;
@@ -65,7 +67,8 @@ export async function runCareerPipeline(
   intake: UserIntakeProfile,
   config: PipelineConfig = DEFAULT_CONFIG,
   personaId?: string,
-  deps: AgentDeps = REAL_DEPS
+  deps: AgentDeps = REAL_DEPS,
+  language: Language = 'en'
 ): Promise<PipelineResult> {
   const runId = `run_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
   const rec = createRecorder(runId, personaId, configLabel(config));
@@ -119,7 +122,7 @@ export async function runCareerPipeline(
   for (let attempt = 0; ; attempt++) {
     try {
       rec.log({ type: 'agent_start', agent: 'analyst', message: attempt === 0 ? 'initial synthesis' : `repair attempt ${attempt}` });
-      suggestions = await runAnalyst(intake, profile, pack, analystDeps, repairFeedback);
+      suggestions = await runAnalyst(intake, profile, pack, analystDeps, repairFeedback, language);
       rec.log({ type: 'agent_end', agent: 'analyst', data: { suggestions: suggestions.length } });
     } catch (err: any) {
       // A malformed analyst response (e.g. invalid JSON on long outputs, observed
@@ -160,12 +163,29 @@ export async function runCareerPipeline(
   const models = [...new Set(rec.trajectory.events.filter(e => e.model).map(e => e.model as string))];
   rec.log({ type: 'run_end', message: verification ? `final verdict: ${verification.verdict}` : 'no verifier (config)' });
 
+  // Deterministic USD display fields — computed in code, never by the LLM.
+  for (const sug of suggestions) {
+    if (sug.averageSalaryRangeVND && !sug.averageSalaryRangeUSD) {
+      sug.averageSalaryRangeUSD = formatUsdRange(sug.averageSalaryRangeVND) ?? undefined;
+    }
+    for (const m of sug.roadmap || []) {
+      if (typeof m.estimatedCostVND === 'number') {
+        m.estimatedCostUSD = vndToUsd(m.estimatedCostVND);
+      }
+    }
+  }
+
+  const currentResilience = pack.occupations.length
+    ? Math.max(...pack.occupations.map(m => m.detail.overallResilienceScore ?? 0))
+    : null;
+
   return {
     source: 'agentic_pipeline',
     config,
     suggestions,
     verification,
     trajectory: rec.trajectory,
+    evidence: { currentOccupationResilience: currentResilience },
     meta: {
       models,
       usageTokens: rec.totalTokens(),

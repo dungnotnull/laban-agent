@@ -1,4 +1,4 @@
-import type { CareerSuggestion, UserIntakeProfile } from '../types';
+import type { CareerSuggestion, UserIntakeProfile, Language } from '../types';
 import { parseGeminiJson } from './geminiClient';
 import type { AgentDeps } from './deps';
 import type { NormalizedProfile } from './profiler';
@@ -38,7 +38,8 @@ export async function runAnalyst(
   profile: NormalizedProfile,
   pack: EvidencePack,
   deps: AgentDeps,
-  repairFeedback?: string[]
+  repairFeedback?: string[],
+  language: Language = 'en'
 ): Promise<CareerSuggestion[]> {
   const prompt = `
 You are the Chief Career Analyst of "La Bàn" (AI Career Compass Vietnam).
@@ -50,11 +51,16 @@ ${JSON.stringify(intake, null, 1)}
 NORMALIZED PROFILE SUMMARY:
 ${profile.normalizedSummary}
 Risk flags to respect: ${profile.riskFlags.join('; ') || 'none'}
+OUTPUT LANGUAGE: ${language === 'en' ? 'ENGLISH for all narrative fields (reasoning, whyItFitsYou, transferableSkillsMatch, skillsGap). Keep roleTitleVi, phaseNameVi, titleVi and molisaTitleVi in Vietnamese.' : 'Vietnamese for all narrative fields.'}
 
 VERIFIED EVIDENCE PACK (the ONLY citable material):
 ${serializeEvidencePack(pack)}
 
 CITATION RULE (STRICT): Every evidenceCitations entry MUST copy the title EXACTLY from the evidence pack above (research[].title or occupations[].sources[].citationText). Citing anything not present in the pack is a verification FAILURE.
+
+RESOURCE RULE (STRICT): every freeResources url MUST be copied EXACTLY from the pack's learningResources section (the searchLearningResources tool output). Inventing, shortening or modifying a URL is a verification FAILURE. If the pack's learningResources is empty, leave freeResources empty rather than inventing URLs.
+
+BUDGET REALISM (STRICT): weeksDuration must be plausible given constraints.hoursPerWeekAvailable (${intake.constraints?.hoursPerWeekAvailable ?? 'unspecified'} h/week) and estimatedHours. At least one milestone per suggestion MUST be costTier 'free' or 'low_cost' so the plan fits constraints.budgetVND (${intake.constraints?.budgetVND ?? 'unspecified'} VND/month).
 
 OUTPUT REQUIREMENTS (same product schema):
 Return a strictly valid JSON Array containing 1 to 2 CareerSuggestion objects with full schema:
@@ -68,12 +74,13 @@ Return a strictly valid JSON Array containing 1 to 2 CareerSuggestion objects wi
 - evidenceCitations: array of objects { paperTitle, source, year, url, quoteOrDataPoint }
 - resilienceDetail: object with occupationTitle, occupationTitleVi, molisaCode, onetCode, overallResilienceScore, automationRiskScore, augmentationPotentialScore, humanAdvantageCore (array), tasksBreakdown (array of 3 highly personalized tasks tailored EXACTLY to the user's currentRole, strengths, and currentSkills { taskName, taskNameVi, exposureType, exposurePercentage, onetCode, notes }), sources, methodologySummary, uncertaintyRange, vietnamDemandSignal ('high_growth'|'stable'|'declining'|'transforming')
 - trajectories: array of 3 paths ('stay_augment', 'pivot_adjacent', 'full_switch') each with pathId, pathTitle, pathTitleVi, feasibilityScore, estimatedTimelineMonths, shortDescription, targetRoles, skillsToAcquire, transferableSkills, riskLevel ('low'|'moderate'|'high'), fiveYearSalaryProjection (5 numbers in Million VND/month), rationale, actionStepNow.
-- roadmap: array of 2-3 milestones with id, milestoneNumber, phaseName, phaseNameVi, title, titleVi, estimatedHours, weeksDuration, skillsCovered, freeResources ({ name, provider, url, type }), checkpointQuiz ({ question, options, correctIndex, explanation }).
+- roadmap: array of 2-3 milestones with id, milestoneNumber, phaseName, phaseNameVi, title, titleVi, estimatedHours, weeksDuration, costTier ('free'|'low_cost'|'paid'), estimatedCostVND (number, 0 when free), skillsCovered, freeResources ({ name, provider, url, type }), checkpointQuiz ({ question, options, correctIndex, explanation }).
 
 CRITICAL GUARDRAIL: Never command the user to quit or abandon their job as a directive. Always frame as probabilistic guidance.
 ${repairFeedback && repairFeedback.length > 0 ? `
 REPAIR FEEDBACK (fix these exact failures from the verifier):
 ${repairFeedback.map((f, i) => `${i + 1}. ${f}`).join('\n')}
+When repairing, PRESERVE user-specific details (role, skills, strengths, location) already present in the previous answer.
 ` : ''}
 CRITICAL: Return pure, strictly valid JSON array. ALL keys MUST be enclosed in double quotes. Do NOT include markdown code blocks or trailing commas.
 `;

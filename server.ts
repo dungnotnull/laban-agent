@@ -792,8 +792,9 @@ app.post('/api/agent/career-analyze', async (req: Request, res: Response) => {
         useTools: req.body.useTools !== false,
         useVerifier: req.body.useVerifier !== false
       };
+  const language: 'vi' | 'en' = req.body.language === 'vi' ? 'vi' : 'en';
   try {
-    const result = await runCareerPipeline(intake, config, req.body.personaId);
+    const result = await runCareerPipeline(intake, config, req.body.personaId, undefined, language);
     res.json(result);
   } catch (err: any) {
     // Honest failure: no mock fallback on the agent path.

@@ -33,7 +33,8 @@ function suggestion(repair: boolean): any {
       { pathId: 'pivot_adjacent', feasibilityScore: 70, riskLevel: 'moderate', actionStepNow: 'do' },
       { pathId: 'full_switch', feasibilityScore: 60, riskLevel: 'high', actionStepNow: 'do' }
     ],
-    roadmap: [{ milestoneNumber: 1 }, { milestoneNumber: 2 }],
+    roadmap: [{ milestoneNumber: 1, estimatedCostVND: 260000 }, { milestoneNumber: 2 }],
+    averageSalaryRangeVND: '8,000,000 - 15,000,000 VND / tháng',
     resilienceDetail: { overallResilienceScore: 70, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' }
   };
 }
@@ -89,6 +90,17 @@ describe('runCareerPipeline', () => {
     expect(types).toContain('tool_call');
     expect(result.meta.usageTokens).toBeGreaterThan(0);
     expect(result.trajectory.personaId).toBe('persona-test');
+  });
+
+  it('computes evidence resilience and deterministic USD fields after the repair loop', async () => {
+    const { deps } = makeDeps(
+      [JSON.stringify([suggestion(true)])],
+      [{ key: 'graphic-designer', detail: { overallResilienceScore: 70 }, matchedQuery: 'graphic designer' }]
+    );
+    const result = await runCareerPipeline(INTAKE, DEFAULT_CONFIG, undefined, deps);
+    expect(result.evidence.currentOccupationResilience).toBe(70);
+    expect(result.suggestions[0].averageSalaryRangeUSD).toBe('$308 - $577 / month');
+    expect(result.suggestions[0].roadmap[0].estimatedCostUSD).toBe(10);
   });
 
   it('skips tools and verifier when config flags are off', async () => {
