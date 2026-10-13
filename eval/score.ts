@@ -2,6 +2,8 @@ import { verifySuggestions } from '../src/agents/citations';
 import { validateSuggestionSchema, scanGuardrails } from '../src/agents/checks';
 import { REAL_DEPS, type AgentDeps } from '../src/agents/deps';
 import { parseGeminiJson } from '../src/agents/geminiClient';
+import { checkCoherence } from '../src/agents/coherence';
+import { LEARNING_RESOURCE_URLS } from '../src/data/learningResources';
 import type { UserIntakeProfile } from '../src/types';
 
 // Public Gemini Flash pricing assumption documented in EVALUATION.md.
@@ -17,11 +19,25 @@ export interface RunScore {
   schemaFailures: number;
   guardrailViolations: number;
   personalization: number | null;
+  coherent: boolean | null;
+  actionable: boolean | null;
   usageTokens: number;
   latencyMs: number;
   model: string;
   costPerTaskUsd: number;
   error?: string;
+}
+
+/** Actionability of the top suggestion: registry-grounded resource + concrete first step + an affordable milestone. */
+export function isActionable(suggestions: any[]): boolean {
+  const top = suggestions?.[0];
+  if (!top) return false;
+  const hasGroundedResource = (top.roadmap || []).some((m: any) =>
+    (m.freeResources || []).some((r: any) => LEARNING_RESOURCE_URLS.has(r?.url))
+  );
+  const hasFirstStep = (top.trajectories || []).some((t: any) => t?.actionStepNow);
+  const hasAffordableMilestone = (top.roadmap || []).some((m: any) => m?.costTier === 'free' || m?.costTier === 'low_cost');
+  return hasGroundedResource && hasFirstStep && hasAffordableMilestone;
 }
 
 export async function scoreOutput(
@@ -40,7 +56,7 @@ export async function scoreOutput(
     return {
       personaId, config, ok: false,
       groundingRate: null, hallucinatedCount: 0, schemaFailures: 0,
-      guardrailViolations: 0, personalization: null,
+      guardrailViolations: 0, personalization: null, coherent: null, actionable: null,
       usageTokens, latencyMs, model,
       costPerTaskUsd: (usageTokens * USD_PER_1M_TOKENS) / 1_000_000,
       error: payload?.error || payload?.message || 'no suggestions'
@@ -60,7 +76,7 @@ export async function scoreOutput(
       reasoning: (s.reasoning || '').slice(0, 300),
       tasks: (s.resilienceDetail?.tasksBreakdown || []).map((t: any) => t.taskName)
     }));
-    const prompt = `Judge personalization of this career guidance for the given user. USER ROLE: ${intake.currentRole}; SKILLS: ${(intake.currentSkills || []).join(', ')}. GUIDANCE: ${JSON.stringify(compact)}. Return JSON {"personalization": 0-100, "rationale": "max 30 words"}. Nothing else.`;
+    const prompt = `Judge personalization of this career guidance for the given user. USER ROLE: ${intake.currentRole}; SKILLS: ${(intake.currentSkills || []).join(', ')}. GUIDANCE: ${JSON.stringify(compact)}. Judge the content irrespective of language. Return JSON {"personalization": 0-100, "rationale": "max 30 words"}. Nothing else.`;
     const judge = await deps.callRich(prompt, { temperature: 0 });
     judgeTokens = judge.usageTokens;
     const parsed = parseGeminiJson<{ personalization: number }>(judge.text);
@@ -70,6 +86,12 @@ export async function scoreOutput(
   }
 
   const totalTokens = usageTokens + judgeTokens;
+  const currentResilience: number | null =
+    typeof payload?.evidence?.currentOccupationResilience === 'number'
+      ? payload.evidence.currentOccupationResilience
+      : null;
+  const coherent = checkCoherence(suggestions, currentResilience).length === 0;
+  const actionable = isActionable(suggestions);
   return {
     personaId,
     config,
@@ -79,6 +101,8 @@ export async function scoreOutput(
     schemaFailures: schemaFailures.length,
     guardrailViolations: guardrailViolations.length,
     personalization,
+    coherent,
+    actionable,
     usageTokens: totalTokens,
     latencyMs,
     model,
@@ -95,20 +119,62 @@ export interface AggregatedSummary {
   schemaValidRate: number;
   guardrailComplianceRate: number;
   personalizationAvg: number | null;
+  coherenceRate: number;
+  actionableRate: number;
   avgTokens: number;
   avgLatencySec: number;
   costPerTaskAvgUsd: number;
+  bySegment: Record<string, {
+    runs: number;
+    groundingRate: number | null;
+    personalizationAvg: number | null;
+    coherenceRate: number;
+    actionableRate: number;
+  }>;
 }
 
-export function aggregate(scores: RunScore[]): AggregatedSummary {
-  const ok = scores.filter(s => s.ok);
-  const withCitations = ok.filter(s => s.groundingRate !== null);
-  // Grounding aggregated as the mean of per-persona rates that produced citations;
-  // hallucinatedCount as the exact sum. Documented in EVALUATION.md.
+function summarizeRuns(runs: RunScore[]): {
+  groundingRate: number | null;
+  personalizationAvg: number | null;
+  coherenceRate: number;
+  actionableRate: number;
+} {
+  const withCitations = runs.filter(s => s.groundingRate !== null);
   const groundingRate = withCitations.length > 0
     ? withCitations.reduce((sum, s) => sum + (s.groundingRate as number), 0) / withCitations.length
     : null;
-  const personalizationScores = ok.map(s => s.personalization).filter((v): v is number => v !== null);
+  const personalizationScores = runs.map(s => s.personalization).filter((v): v is number => v !== null);
+  return {
+    groundingRate,
+    personalizationAvg: personalizationScores.length > 0
+      ? personalizationScores.reduce((a, b) => a + b, 0) / personalizationScores.length
+      : null,
+    coherenceRate: runs.length > 0 ? runs.filter(s => s.coherent === true).length / runs.length : 0,
+    actionableRate: runs.length > 0 ? runs.filter(s => s.actionable === true).length / runs.length : 0
+  };
+}
+
+export function aggregate(scores: RunScore[], segmentsById: Record<string, string> = {}): AggregatedSummary {
+  const ok = scores.filter(s => s.ok);
+  // Grounding aggregated as the mean of per-persona rates that produced citations;
+  // hallucinatedCount as the exact sum. Documented in EVALUATION.md.
+  const { groundingRate, personalizationAvg, coherenceRate, actionableRate } = summarizeRuns(ok);
+
+  // Per-segment rollup over ok runs; persona ids not present in segmentsById are skipped.
+  const bySegment: AggregatedSummary['bySegment'] = {};
+  for (const s of ok) {
+    const segment = segmentsById[s.personaId];
+    if (!segment) continue;
+    if (!bySegment[segment]) {
+      bySegment[segment] = { runs: 0, groundingRate: null, personalizationAvg: null, coherenceRate: 0, actionableRate: 0 };
+    }
+    bySegment[segment].runs++;
+  }
+  for (const [segment, agg] of Object.entries(bySegment)) {
+    const runs = ok.filter(s => segmentsById[s.personaId] === segment);
+    bySegment[segment] = { ...agg, ...summarizeRuns(runs) };
+  }
+
   return {
     config: scores[0]?.config || 'unknown',
     runs: scores.length,
@@ -117,13 +183,14 @@ export function aggregate(scores: RunScore[]): AggregatedSummary {
     hallucinatedCount: ok.reduce((sum, s) => sum + s.hallucinatedCount, 0),
     schemaValidRate: ok.length > 0 ? ok.filter(s => s.schemaFailures === 0).length / ok.length : 0,
     guardrailComplianceRate: ok.length > 0 ? ok.filter(s => s.guardrailViolations === 0).length / ok.length : 0,
-    personalizationAvg: personalizationScores.length > 0
-      ? personalizationScores.reduce((a, b) => a + b, 0) / personalizationScores.length
-      : null,
+    personalizationAvg,
+    coherenceRate,
+    actionableRate,
     avgTokens: ok.length > 0 ? Math.round(ok.reduce((sum, s) => sum + s.usageTokens, 0) / ok.length) : 0,
     avgLatencySec: ok.length > 0 ? Number((ok.reduce((sum, s) => sum + s.latencyMs, 0) / ok.length / 1000).toFixed(1)) : 0,
     costPerTaskAvgUsd: ok.length > 0
       ? Number((ok.reduce((sum, s) => sum + s.costPerTaskUsd, 0) / ok.length).toFixed(5))
-      : 0
+      : 0,
+    bySegment
   };
 }

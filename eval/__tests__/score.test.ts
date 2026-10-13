@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest';
-import { scoreOutput, aggregate } from '../score';
+import { scoreOutput, aggregate, isActionable } from '../score';
 import { RESEARCH_LIBRARY } from '../../src/data/researchLibrary';
+import { checkCoherence } from '../../src/agents/coherence';
+import { LEARNING_RESOURCE_URLS } from '../../src/data/learningResources';
+import { EVAL_PERSONAS } from '../personas';
 import type { AgentDeps } from '../../src/agents/deps';
 
 const judgeDeps: AgentDeps = {
@@ -79,5 +82,47 @@ describe('aggregate', () => {
     expect(summary.okRuns).toBe(2);
     expect(summary.groundingRate).toBe(1);
     expect(summary.schemaValidRate).toBe(1);
+  });
+});
+
+describe('checkCoherence integration', () => {
+  const coherentSug = (over: any = {}) => ({
+    roleTitle: 'X', matchScore: 80,
+    evidenceCitations: [{ paperTitle: 'Real', url: 'https://x.org' }],
+    resilienceDetail: { overallResilienceScore: 70, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' },
+    trajectories: [{ pathId: 'a', feasibilityScore: 70, riskLevel: 'low', actionStepNow: 'start a free course' }],
+    roadmap: [{ costTier: 'free', freeResources: [{ url: [...LEARNING_RESOURCE_URLS][0] }] }],
+    ...over
+  });
+
+  it('marks a coherent run coherent', () => {
+    expect(checkCoherence([coherentSug()], 60)).toEqual([]);
+  });
+
+  it('flags low-resilience top suggestion as incoherent', () => {
+    expect(checkCoherence([coherentSug({ resilienceDetail: { overallResilienceScore: 40, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' } })], 60).length).toBeGreaterThan(0);
+  });
+});
+
+describe('isActionable', () => {
+  const regUrl = [...LEARNING_RESOURCE_URLS][0];
+  it('requires registry url, actionStepNow and a free/low-cost milestone', () => {
+    const good = [{ trajectories: [{ actionStepNow: 'x' }], roadmap: [{ costTier: 'free', freeResources: [{ url: regUrl }] }] }];
+    const noFree = [{ trajectories: [{ actionStepNow: 'x' }], roadmap: [{ costTier: 'paid', freeResources: [{ url: regUrl }] }] }];
+    const fakeUrl = [{ trajectories: [{ actionStepNow: 'x' }], roadmap: [{ costTier: 'free', freeResources: [{ url: 'https://example.com/x' }] }] }];
+    const noStep = [{ trajectories: [{ actionStepNow: '' }], roadmap: [{ costTier: 'free', freeResources: [{ url: regUrl }] }] }];
+    expect(isActionable(good)).toBe(true);
+    expect(isActionable(noFree)).toBe(false);
+    expect(isActionable(fakeUrl)).toBe(false);
+    expect(isActionable(noStep)).toBe(false);
+    expect(isActionable([])).toBe(false);
+  });
+});
+
+describe('persona set', () => {
+  it('has 16 personas with segments and one challenging case', () => {
+    expect(EVAL_PERSONAS.length).toBe(16);
+    expect(EVAL_PERSONAS.every(p => !!p.segment)).toBe(true);
+    expect(EVAL_PERSONAS.filter(p => p.challenging).length).toBe(1);
   });
 });

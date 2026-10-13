@@ -52,10 +52,10 @@ function pct(v: number | null): string {
   return v === null ? 'n/a' : `${(v * 100).toFixed(1)}%`;
 }
 
-function renderEvaluationMd(byConfig: Record<string, RunScore[]>, stamp: string): string {
-  const b = byConfig['baseline'] ? aggregate(byConfig['baseline']) : null;
-  const s1 = byConfig['stage1_tools'] ? aggregate(byConfig['stage1_tools']) : null;
-  const f = byConfig['final_tools_verifier'] ? aggregate(byConfig['final_tools_verifier']) : null;
+function renderEvaluationMd(byConfig: Record<string, RunScore[]>, stamp: string, segmentsById: Record<string, string>): string {
+  const b = byConfig['baseline'] ? aggregate(byConfig['baseline'], segmentsById) : null;
+  const s1 = byConfig['stage1_tools'] ? aggregate(byConfig['stage1_tools'], segmentsById) : null;
+  const f = byConfig['final_tools_verifier'] ? aggregate(byConfig['final_tools_verifier'], segmentsById) : null;
 
   const perPersona = Object.entries(byConfig).map(([config, scores]) => {
     const lines = scores.map(s =>
@@ -77,16 +77,18 @@ Generated: ${new Date().toISOString()} (run stamp: ${stamp})
 | Schema-valid runs | ${b ? pct(b.schemaValidRate) : 'n/a'} | ${f ? pct(f.schemaValidRate) : 'n/a'} |
 | Guardrail compliance | ${b ? pct(b.guardrailComplianceRate) : 'n/a'} | ${f ? pct(f.guardrailComplianceRate) : 'n/a'} |
 | Personalization (judge 0-100) | ${b?.personalizationAvg?.toFixed(0) ?? 'n/a'} | ${f?.personalizationAvg?.toFixed(0) ?? 'n/a'} |
+| Risk coherence rate | ${b ? pct(b.coherenceRate) : 'n/a'} | ${f ? pct(f.coherenceRate) : 'n/a'} |
+| Actionable-path rate | ${b ? pct(b.actionableRate) : 'n/a'} | ${f ? pct(f.actionableRate) : 'n/a'} |
 | Human time per task (avg wall-clock, s) | ${b ? b.avgLatencySec : 'n/a'} | ${f ? f.avgLatencySec : 'n/a'} |
 | Cost per task (USD, $0.30/1M tokens) | ${b ? b.costPerTaskAvgUsd : 'n/a'} | ${f ? f.costPerTaskAvgUsd : 'n/a'} |
 
 ## Ablation (stage evidence for the changelog)
 
-| Stage | Grounding | Hallucinated | Schema-valid | Personalization |
-|---|---|---|---|---|
-| Baseline (single prompt) | ${b ? pct(b.groundingRate) : 'n/a'} | ${b ? b.hallucinatedCount : 'n/a'} | ${b ? pct(b.schemaValidRate) : 'n/a'} | ${b?.personalizationAvg?.toFixed(0) ?? 'n/a'} |
-| + Evidence tools | ${s1 ? pct(s1.groundingRate) : 'n/a'} | ${s1 ? s1.hallucinatedCount : 'n/a'} | ${s1 ? pct(s1.schemaValidRate) : 'n/a'} | ${s1?.personalizationAvg?.toFixed(0) ?? 'n/a'} |
-| + Tools + Verifier (final) | ${f ? pct(f.groundingRate) : 'n/a'} | ${f ? f.hallucinatedCount : 'n/a'} | ${f ? pct(f.schemaValidRate) : 'n/a'} | ${f?.personalizationAvg?.toFixed(0) ?? 'n/a'} |
+| Stage | Grounding | Hallucinated | Schema-valid | Personalization | Coherence | Actionable |
+|---|---|---|---|---|---|---|
+| Baseline (single prompt) | ${b ? pct(b.groundingRate) : 'n/a'} | ${b ? b.hallucinatedCount : 'n/a'} | ${b ? pct(b.schemaValidRate) : 'n/a'} | ${b?.personalizationAvg?.toFixed(0) ?? 'n/a'} | ${b ? pct(b.coherenceRate) : 'n/a'} | ${b ? pct(b.actionableRate) : 'n/a'} |
+| + Evidence tools | ${s1 ? pct(s1.groundingRate) : 'n/a'} | ${s1 ? s1.hallucinatedCount : 'n/a'} | ${s1 ? pct(s1.schemaValidRate) : 'n/a'} | ${s1?.personalizationAvg?.toFixed(0) ?? 'n/a'} | ${s1 ? pct(s1.coherenceRate) : 'n/a'} | ${s1 ? pct(s1.actionableRate) : 'n/a'} |
+| + Tools + Verifier (final) | ${f ? pct(f.groundingRate) : 'n/a'} | ${f ? f.hallucinatedCount : 'n/a'} | ${f ? pct(f.schemaValidRate) : 'n/a'} | ${f?.personalizationAvg?.toFixed(0) ?? 'n/a'} | ${f ? pct(f.coherenceRate) : 'n/a'} | ${f ? pct(f.actionableRate) : 'n/a'} |
 
 ## Per-persona results
 
@@ -168,7 +170,8 @@ async function main() {
   }
 
   fs.writeFileSync(path.join(runDir, 'summary.json'), JSON.stringify(byConfig, null, 1));
-  fs.writeFileSync(path.join(runDir, 'EVALUATION.md'), renderEvaluationMd(byConfig, stamp));
+  const segmentsById = Object.fromEntries(EVAL_PERSONAS.map(p => [p.id, p.segment]));
+  fs.writeFileSync(path.join(runDir, 'EVALUATION.md'), renderEvaluationMd(byConfig, stamp, segmentsById));
   fs.writeFileSync(path.join(trajDir, 'TRAJECTORIES.md'), renderTrajectoriesMd(trajDir));
   fs.writeFileSync(path.join('eval', 'results', 'latest.json'), JSON.stringify({ stamp }, null, 1));
 
