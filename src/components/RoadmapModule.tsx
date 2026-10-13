@@ -318,6 +318,18 @@ export const RoadmapModule: React.FC<RoadmapModuleProps> = ({
                         <Clock className="w-3 h-3 text-amber-600" />
                         {milestone.weeksDuration} {t(language, 'tuần', 'weeks')} (~{milestone.estimatedHours} {t(language, 'giờ', 'hours')})
                       </span>
+                      {milestone.costTier && (
+                        <span className={`text-xs px-2 py-0.5 rounded-full ${milestone.costTier === 'paid' ? 'bg-amber-100 text-amber-700' : 'bg-emerald-100 text-emerald-700'}`}>
+                          {milestone.costTier === 'free'
+                            ? t(language, 'Miễn phí', 'Free')
+                            : milestone.costTier === 'low_cost'
+                              ? t(language, 'Chi phí thấp', 'Low cost')
+                              : t(language, 'Trả phí', 'Paid')}
+                          {typeof milestone.estimatedCostVND === 'number' && milestone.estimatedCostVND > 0
+                            ? ` (~${milestone.estimatedCostVND.toLocaleString('en-US')}đ${milestone.estimatedCostUSD ? ` / $${milestone.estimatedCostUSD}` : ''})`
+                            : ''}
+                        </span>
+                      )}
                     </div>
                     <h3 className="text-sm font-bold text-slate-900 mt-1">
                       {language === 'vi' ? milestone.titleVi : milestone.title}

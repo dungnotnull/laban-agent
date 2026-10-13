@@ -17,12 +17,15 @@ import {
 import { CareerSuggestion, Language } from '../types';
 import { SpeechBriefingController } from '../utils/exportUtils';
 import { t } from '../utils/i18n';
+import type { Trajectory } from '../agents/trajectory';
+import CounselorReviewGate from './CounselorReviewGate';
 
 interface CareerSuggestionViewProps {
   suggestions?: CareerSuggestion[];
   suggestion?: CareerSuggestion;
   selectedSuggestion?: CareerSuggestion;
   onSelectSuggestion?: (suggestion: CareerSuggestion) => void;
+  trajectory?: Trajectory | null;
   language: Language;
   onNavigateTab: (tabId: string) => void;
 }
@@ -32,6 +35,7 @@ export const CareerSuggestionView: React.FC<CareerSuggestionViewProps> = ({
   suggestion,
   selectedSuggestion,
   onSelectSuggestion,
+  trajectory,
   language,
   onNavigateTab
 }) => {
@@ -238,6 +242,9 @@ export const CareerSuggestionView: React.FC<CareerSuggestionViewProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Counselor human-review checkpoint (human-in-the-loop) */}
+      <CounselorReviewGate trajectory={trajectory} language={language} onReviewed={() => {}} />
 
       {/* Transferable Skills & Defensible Human Strengths */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

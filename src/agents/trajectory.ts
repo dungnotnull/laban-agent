@@ -7,6 +7,7 @@ export type TrajectoryEventType =
   | 'tool_response'
   | 'verification_result'
   | 'repair_retry'
+  | 'human_checkpoint'
   | 'error'
   | 'run_end';
 

@@ -49,7 +49,7 @@ import type { Trajectory } from './agents/trajectory';
 export default function App() {
   // Navigation & Localization
   const [activeTab, setActiveTab] = useState<string>('suggest');
-  const [language, setLanguage] = useState<Language>('vi');
+  const [language, setLanguage] = useState<Language>('en');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const radarRef = useRef<HTMLDivElement>(null);
 
@@ -355,7 +355,7 @@ export default function App() {
             </div>
 
             {/* Agent Pipeline Transparency Panel */}
-            <AgentTransparencyPanel trajectory={agentTrajectory} />
+            <AgentTransparencyPanel trajectory={agentTrajectory} language={language} />
 
             {/* Google Integrations: Sheets Export, Google Calendar Sync, Google Maps Hubs */}
             <GoogleIntegrationsSection

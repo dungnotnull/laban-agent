@@ -1,17 +1,20 @@
 import { Wrench, CheckCircle2, AlertTriangle, Bot, RefreshCw } from 'lucide-react';
 import type { Trajectory } from '../agents/trajectory';
+import { t } from '../utils/i18n';
+import type { Language } from '../types';
 
-const LABELS: Record<string, string> = {
-  run_start: 'Bắt đầu pipeline',
-  agent_start: 'Agent bắt đầu',
-  agent_end: 'Agent hoàn tất',
-  llm_call: 'Gọi mô hình',
-  tool_call: 'Gọi công cụ tra cứu',
-  tool_response: 'Công cụ trả về',
-  verification_result: 'Kiểm định chất lượng',
-  repair_retry: 'Tự sửa lỗi',
-  error: 'Lỗi',
-  run_end: 'Kết thúc'
+const LABELS: Record<string, { vi: string; en: string }> = {
+  run_start: { vi: 'Bắt đầu pipeline', en: 'Pipeline start' },
+  agent_start: { vi: 'Agent bắt đầu', en: 'Agent start' },
+  agent_end: { vi: 'Agent hoàn tất', en: 'Agent done' },
+  llm_call: { vi: 'Gọi mô hình', en: 'Model call' },
+  tool_call: { vi: 'Gọi công cụ tra cứu', en: 'Tool call' },
+  tool_response: { vi: 'Công cụ trả về', en: 'Tool response' },
+  verification_result: { vi: 'Kiểm định chất lượng', en: 'Verification' },
+  repair_retry: { vi: 'Tự sửa lỗi', en: 'Self-repair' },
+  human_checkpoint: { vi: 'Tư vấn viên xác nhận', en: 'Counselor review' },
+  error: { vi: 'Lỗi', en: 'Error' },
+  run_end: { vi: 'Kết thúc', en: 'End' }
 };
 
 function iconFor(type: string) {
@@ -21,7 +24,7 @@ function iconFor(type: string) {
   return <Bot size={14} className="text-indigo-600" />;
 }
 
-export default function AgentTransparencyPanel({ trajectory }: { trajectory: Trajectory | null }) {
+export default function AgentTransparencyPanel({ trajectory, language = 'en' }: { trajectory: Trajectory | null; language?: Language }) {
   if (!trajectory || trajectory.events.length === 0) return null;
 
   const toolCalls = trajectory.events.filter(e => e.type === 'tool_call').length;
@@ -43,7 +46,7 @@ export default function AgentTransparencyPanel({ trajectory }: { trajectory: Tra
         {trajectory.events.map((e, i) => (
           <li key={i} className="flex items-start gap-2 rounded-md bg-white/70 px-2 py-1">
             <span className="mt-0.5">{iconFor(e.type)}</span>
-            <span className="font-medium">{LABELS[e.type] || e.type}{e.agent ? ` · ${e.agent}` : ''}</span>
+            <span className="font-medium">{LABELS[e.type] ? t(language, LABELS[e.type].vi, LABELS[e.type].en) : e.type}{e.agent ? ` · ${e.agent}` : ''}</span>
             {e.message && <span className="text-slate-500">— {e.message}</span>}
             {typeof e.data === 'object' && e.data !== null && (e.type === 'tool_call' || e.type === 'verification_result') && (
               <code className="ml-auto max-w-[45%] truncate text-[10px] text-slate-400">{JSON.stringify(e.data).slice(0, 120)}</code>
