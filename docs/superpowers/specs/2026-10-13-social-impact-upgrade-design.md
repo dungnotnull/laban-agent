@@ -37,7 +37,8 @@ across worker segments (office vs industrial vs rural vs student).
 
 - No 5th agent. Extensions land in the existing Verifier/Analyst/Gatherer.
 - No new intake fields — `constraints` already flows to baseline and agent.
-- The frozen baseline prompt stays byte-identical.
+- The frozen baseline prompt stays byte-identical (its Vietnamese output is
+  a documented fairness difference, see D.3).
 - No UI intake changes; only a small roadmap cost badge.
 
 ---
@@ -118,7 +119,38 @@ milestone — "Miễn phí" / "Chi phí thấp" / "Trả phí" from `costTier`.
 
 ---
 
-## C. Equity & Impact
+## D. Localization & currency (English-primary presentation)
+
+The competition is judged in English; the product still serves Vietnamese
+users. Design: English becomes the primary output/presentation language,
+with Vietnamese preserved where real users need it. Vietnam market focus
+(personas, occupation DB, news sources, UI toggle) is unchanged.
+
+1. **Language parameterization.** Analyst prompt gains
+   `outputLanguage: 'en' | 'vi'` (default `en` for the submission; the UI
+   toggle keeps serving Vietnamese users via the existing `t()` helper).
+   Narrative fields (reasoning, whyItFitsYou, skillsGap,
+   transferableSkillsMatch, roadmap phaseName/title) render in the active
+   language; Vietnamese occupation titles from the DB remain as
+   `*Vi` mirror fields where the schema already provides them.
+2. **Currency dual-display.** Fixed, documented conversion rate
+   (set at implementation time, stated in README/EVALUATION, e.g.
+   1 USD = 26,000 VND interbank approx) — never dynamic. Schema gains
+   `averageSalaryRangeUSD` (string) and milestone `estimatedCostUSD`
+   (number) alongside the VND fields. UI salary/cost displays show
+   "VND (~USD)".
+3. **Baseline stays frozen** (Vietnamese output). Documented in
+   EVALUATION.md fairness notes as a resource difference; the eval
+   personalization-judge prompt gains one line: judge content
+   irrespective of language. Grounding/coherence/actionability metrics
+   are language-agnostic (token normalization already strips diacritics
+   symmetrically on query and corpus side).
+4. **English defaults.** UI default language `en`; `AgentTransparencyPanel`
+   labels and server canned responses become bilingual via `t()`; docs are
+   already English. Persona `currentRole` stays Vietnamese (real input) with
+   the English label carried in `EvalPersona.label`.
+
+
 
 ### C1. Persona segmentation
 
