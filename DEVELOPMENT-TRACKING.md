@@ -100,3 +100,9 @@ all completed). Spec:
 - Docs-only change; all numbers cross-checked against
   `eval/results/runs/2026-10-13T05-05-07-stability/STABILITY.md` and the
   r1/r2/r3 EVALUATION.md files.
+
+### 2026-10-13 (final) — Demo-safety guard
+
+- Analysis button disabled with a bilingual hint when the intake form has
+  no current role (the agent step rejects empty roles with a 400; verified
+  in-browser: disabled initially, enabled after filling the role).

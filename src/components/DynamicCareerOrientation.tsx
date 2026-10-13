@@ -32,6 +32,10 @@ export const DynamicCareerOrientation: React.FC<DynamicCareerOrientationProps> =
     onAnalyze(intake);
   };
 
+  // The agent pipeline requires a current role; guard the empty-form case so
+  // the analysis button cannot fire without it (the agent step 400s otherwise).
+  const hasRole = Boolean(intake.currentRole?.trim());
+
   return (
     <div className="bg-white/80 backdrop-blur-md border border-white/40 rounded-3xl overflow-hidden shadow-sm space-y-6">
       {/* Hero Banner Image */}
@@ -140,12 +144,16 @@ export const DynamicCareerOrientation: React.FC<DynamicCareerOrientationProps> =
       <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 mt-4">
         <div className="flex items-center gap-2 text-xs text-slate-500">
           <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-          <span>{t(language, 'Dữ liệu Persona đã sẵn sàng để phân tích', 'Persona data is ready for analysis')}</span>
+          <span>
+            {hasRole
+              ? t(language, 'Dữ liệu Persona đã sẵn sàng để phân tích', 'Persona data is ready for analysis')
+              : t(language, 'Nhập vị trí công việc hiện tại để bắt đầu phân tích', 'Enter your current role to start the analysis')}
+          </span>
         </div>
 
         <button
           onClick={handleRunComprehensiveAnalysis}
-          disabled={isLoading}
+          disabled={isLoading || !hasRole}
           className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 disabled:opacity-50 text-slate-900 font-extrabold text-sm flex items-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer transform hover:-translate-y-0.5"
         >
           {isLoading ? (
