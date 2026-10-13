@@ -1,0 +1,552 @@
+{
+ "score": {
+  "personaId": "persona-teacher",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 16713,
+  "latencyMs": 17004,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0050139
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Educator & Instructional Designer",
+    "roleTitleVi": "Giáo viên & Chuyên gia Thiết kế Đào tạo",
+    "aiResilienceScore": 78,
+    "matchScore": 92,
+    "reasoning": "Your background in Literature and pedagogy provides a strong foundation for Instructional Design. The WEF (2023) report highlights that education roles are highly resilient due to the irreplaceable nature of human pedagogical connection. By integrating AI as a co-pilot for lesson planning, you can significantly reduce administrative burden while focusing on student mentorship.",
+    "whyItFitsYou": "Your strengths in critical thinking and communication are the exact 'human-in-the-loop' skills that AI cannot replicate. Transitioning to Instructional Design allows you to leverage your 12 years of classroom experience to create high-quality, tech-enabled learning materials, aligning with your interest in educational technology.",
+    "transferableSkillsMatch": [
+     "Curriculum development",
+     "Classroom management",
+     "Student assessment",
+     "Pedagogical communication"
+    ],
+    "skillsGap": [
+     "AI-assisted lesson planning tools",
+     "Digital learning management systems (LMS)",
+     "Basic graphic design for educational materials"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 30,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "WEF (2023): Education & Training roles show high resilience with +10% net job growth driven by human pedagogical connection.",
+      "source": "WEF",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Education & Training roles show high resilience with +10% net job growth."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Educator & Instructional Designer",
+     "occupationTitleVi": "Giáo viên & Chuyên gia Thiết kế Đào tạo",
+     "molisaCode": "2310",
+     "onetCode": "25-2022.00",
+     "overallResilienceScore": 78,
+     "automationRiskScore": 32,
+     "augmentationPotentialScore": 88,
+     "humanAdvantageCore": [
+      "Empathetic mentorship, student motivation & emotional safety",
+      "Dynamic classroom behavioral management",
+      "Adaptive teaching based on real-time student body language",
+      "Instilling critical thinking, ethics and character"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Automating routine grading of literature quizzes using AI",
+       "taskNameVi": "Tự động hóa chấm điểm bài kiểm tra Ngữ văn bằng AI",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 88,
+       "onetCode": "25-2022.00-T1",
+       "notes": "Reduces manual workload, allowing more time for personalized feedback."
+      },
+      {
+       "taskName": "Using AI to generate creative lesson plan structures and visual aids",
+       "taskNameVi": "Sử dụng AI để tạo cấu trúc giáo án sáng tạo và học liệu trực quan",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 74,
+       "onetCode": "25-2022.00-T2",
+       "notes": "AI acts as a 5x co-pilot for lesson material preparation."
+      },
+      {
+       "taskName": "Facilitating deep-dive literary debates and emotional coaching",
+       "taskNameVi": "Điều phối thảo luận văn học chuyên sâu và tư vấn tâm lý học sinh",
+       "exposureType": "human_core",
+       "exposurePercentage": 12,
+       "onetCode": "25-2022.00-T3",
+       "notes": "Pure human empathy and mentorship value."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): Education & Training roles show high resilience with +10% net job growth driven by human pedagogical connection.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Based on WEF resilience metrics and task-based automation analysis.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced Educator",
+      "pathTitleVi": "Giáo viên ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Integrate AI tools into your current teaching practice to save time and improve student engagement.",
+      "targetRoles": [
+       "Senior Teacher",
+       "Curriculum Developer"
+      ],
+      "skillsToAcquire": [
+       "Prompt engineering for educators",
+       "AI-based assessment tools"
+      ],
+      "transferableSkills": [
+       "Pedagogy",
+       "Classroom management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Leverages existing job security while increasing personal productivity.",
+      "actionStepNow": "Start using ChatGPT to draft lesson plan outlines."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Instructional Designer",
+      "pathTitleVi": "Chuyên gia thiết kế đào tạo",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Move into corporate or EdTech training design using your pedagogical expertise.",
+      "targetRoles": [
+       "Instructional Designer",
+       "Learning Content Specialist"
+      ],
+      "skillsToAcquire": [
+       "LMS platforms",
+       "Instructional design theory",
+       "Basic multimedia design"
+      ],
+      "transferableSkills": [
+       "Content creation",
+       "Critical thinking"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       26,
+       30
+      ],
+      "rationale": "High demand for educators who understand digital learning.",
+      "actionStepNow": "Audit a free Instructional Design course on edX."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "EdTech Content Strategist",
+      "pathTitleVi": "Chiến lược gia nội dung EdTech",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Transition fully into the EdTech industry as a content strategist.",
+      "targetRoles": [
+       "Content Manager",
+       "EdTech Product Specialist"
+      ],
+      "skillsToAcquire": [
+       "SEO",
+       "Content strategy",
+       "Data analytics"
+      ],
+      "transferableSkills": [
+       "Writing",
+       "Communication"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       25,
+       30,
+       40
+      ],
+      "rationale": "Capitalizes on the growth of digital education in Vietnam.",
+      "actionStepNow": "Start a professional blog about EdTech."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Xây dựng nền tảng số",
+      "title": "Mastering Digital Literacy",
+      "titleVi": "Làm chủ kỹ năng số cơ bản",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer literacy",
+       "Online collaboration tools"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of these is the best way to use AI in your current teaching?",
+       "options": [
+        "Let AI teach the whole class",
+        "Use AI to generate lesson plan ideas and quizzes",
+        "Ignore AI and stick to traditional methods",
+        "Use AI to write student essays"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI is best used as a co-pilot for preparation, not a replacement for the teacher."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "AI Integration",
+      "phaseNameVi": "Tích hợp AI vào giảng dạy",
+      "title": "AI-Powered Lesson Design",
+      "titleVi": "Thiết kế bài giảng với AI",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Prompt engineering",
+       "AI-assisted content creation"
+      ],
+      "freeResources": [
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary benefit of AI in lesson design?",
+       "options": [
+        "It eliminates the need for teachers",
+        "It allows for rapid creation of personalized learning materials",
+        "It makes students smarter automatically",
+        "It is only for math teachers"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI excels at personalizing content and saving time on repetitive tasks."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $1,154 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly targets the user's Literature teaching background, specific pedagogical skills, and human strengths like critical thinking and communication."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869455875_r6a2zv",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:30:55.875Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:30:55.875Z",
+     "type": "run_start",
+     "message": "pipeline for \"Giáo viên Ngữ văn cấp 3\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:55.875Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:30:57.647Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 525,
+     "latencyMs": 1772
+    },
+    {
+     "ts": "2026-10-13T05:30:57.647Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "instructional designer",
+       "content writer",
+       "educational consultant"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited weekly availability",
+       "lacks AI and digital skills"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:57.647Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 697,
+     "latencyMs": 980,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "instructional designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "content writer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "educational consultant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.627Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI automation impact teachers content writers instructional designers Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:58.628Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:59.827Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3574,
+     "latencyMs": 1199,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:30:59.827Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free english digital skills instructional design content writing Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:59.827Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:31:00.765Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3983,
+     "latencyMs": 938,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:31:00.765Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 3,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:31:00.765Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:31:12.005Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 7238,
+     "latencyMs": 10496
+    },
+    {
+     "ts": "2026-10-13T05:31:12.005Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:31:12.879Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 454,
+     "latencyMs": 873
+    },
+    {
+     "ts": "2026-10-13T05:31:12.879Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly targets the user's Literature teaching background, specific pedagogical skills, and human strengths like critical thinking and communication."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:31:12.879Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 78
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 16471,
+   "latencyMs": 17004,
+   "degraded": false
+  }
+ }
+}

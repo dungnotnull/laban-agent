@@ -1,0 +1,274 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7864,
+  "latencyMs": 8865,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023591999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Digital Health Program Coordinator",
+    "roleTitleVi": "Điều phối viên Chương trình Y tế số",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Dựa trên các nghiên cứu từ OpenAI và Oxford, các công việc đòi hỏi trí tuệ cảm xúc, giao tiếp người-với-người và chăm sóc sức khỏe thể chất/cảm xúc có rủi ro tự động hóa trực tiếp rất thấp (gần như bằng 0). Tuy nhiên, với sự bùng nổ của Y tế số tại Cần Thơ và Đồng bằng sông Cửu Long, việc kết hợp nền tảng điều dưỡng với kỹ năng phân tích dữ liệu và công cụ AI hỗ trợ quản lý hồ sơ mang lại cơ hội gia tăng năng suất và thu nhập đáng kể.",
+    "whyItFitsYou": "Công việc này tận dụng tối đa thế mạnh 'Giao tiếp với bệnh nhân', 'Xử lý tình huống cấp cứu' và 7 năm kinh nghiệm Điều dưỡng của bạn, đồng thời mở rộng sang lĩnh vực Y tế số và Sức khỏe cộng đồng mà bạn yêu thích mà không đòi hỏi phải bỏ nghề hay đầu tư lớn.",
+    "transferableSkillsMatch": [
+     "Chăm sóc bệnh nhân",
+     "Tiêm truyền",
+     "Hồ sơ bệnh án điện tử",
+     "Giao tiếp và thấu cảm",
+     "Xử lý tình huống khẩn cấp"
+    ],
+    "skillsGap": [
+     "Quản lý dữ liệu y tế số cơ bản",
+     "Sử dụng AI phân tích lịch sử khám chữa bệnh",
+     "Lập kế hoạch chương trình sức khỏe cộng đồng"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "source": "OpenAI, OpenResearch, University of Pennsylvania",
+      "year": "2023",
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Physical and emotional-care tasks exhibit near-zero direct exposure to LLM automation, making them highly resilient."
+     },
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford HAI",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI labor demand has expanded across non-tech industries including healthcare, augmentation outperforms substitution."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Nursing Professional / Digital Health Specialist",
+     "occupationTitleVi": "Điều dưỡng viên và Chuyên gia Y tế số",
+     "molisaCode": "2221",
+     "onetCode": "29-1141.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Sự thấu cảm và giao tiếp trực tiếp với người bệnh",
+      "Quyết định lâm sàng trong tình huống cấp cứu",
+      "Đạo đức nghề nghiệp và sự tin tưởng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Patient triage and emergency response",
+       "taskNameVi": "Phân loại bệnh nhân và xử lý cấp cứu",
+       "exposureType": "complement",
+       "exposurePercentage": 15,
+       "onetCode": "29-1141.00",
+       "notes": "Sử dụng kinh nghiệm 7 năm điều dưỡng để đánh giá tình trạng thực tế mà AI không thể thay thế."
+      },
+      {
+       "taskName": "Electronic health records management",
+       "taskNameVi": "Quản lý và cập nhật hồ sơ bệnh án điện tử",
+       "exposureType": "augment",
+       "exposurePercentage": 60,
+       "onetCode": "29-1141.00",
+       "notes": "Sử dụng công cụ AI (như trợ lý ngôn ngữ y tế) để nhập liệu và tổng hợp lịch sử bệnh án nhanh chóng."
+      },
+      {
+       "taskName": "Community health education & telehealth coordination",
+       "taskNameVi": "Giáo dục sức khỏe cộng đồng & điều phối khám từ xa",
+       "exposureType": "augment",
+       "exposurePercentage": 40,
+       "onetCode": "29-1141.00",
+       "notes": "Ứng dụng nền tảng số để tư vấn sức khỏe từ xa cho người dân tại Cần Thơ."
+      }
+     ],
+     "sources": [
+      "OpenAI (2023)",
+      "Stanford HAI (2024)",
+      "MOLISA VSCO 2020"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro O*NET kết hợp dữ liệu tác vụ y tế thực tế tại Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay and Augment in Clinical Nursing with EMR & AI Tools",
+      "pathTitleVi": "Nâng cao năng lực Điều dưỡng kết hợp Công cụ Y tế số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tiếp tục làm điều dưỡng nhưng tối ưu hóa công việc hàng ngày bằng phần mềm hồ sơ bệnh án điện tử tích hợp AI.",
+      "targetRoles": [
+       "Điều dưỡng trưởng ca",
+       "Chuyên viên Quản lý Chất lượng Bệnh viện"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng thành thạo phần mềm EMR nâng cao",
+       "Kỹ năng tối ưu hóa thời gian trực"
+      ],
+      "transferableSkills": [
+       "Chăm sóc bệnh nhân",
+       "Tiêm truyền",
+       "Xử lý cấp cứu"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       11,
+       12.5,
+       14,
+       16
+      ],
+      "rationale": "Phù hợp với mức độ rủi ro thấp và quỹ thời gian 5 giờ/tuần của bạn, giúp giảm áp lực ca trực thông qua tự động hóa hành chính.",
+      "actionStepNow": "Đăng ký một khóa học ngắn hạn về Quản lý Hồ sơ Bệnh án Điện tử (EMR) tại địa phương."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to Digital Health Program Coordinator",
+      "pathTitleVi": "Chuyển dịch sang Điều phối viên Y tế số & Sức khỏe cộng đồng",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển sang các dự án y tế cộng đồng, telemedicine, hoặc các tổ chức y tế tư nhân tại Cần Thơ ứng dụng công nghệ.",
+      "targetRoles": [
+       "Digital Health Coordinator",
+       "Cán bộ Dự án Y tế Công cộng"
+      ],
+      "skillsToAcquire": [
+       "Quản lý dự án y tế số cơ bản",
+       "Sử dụng công cụ AI tạo nội dung truyền thông sức khỏe"
+      ],
+      "transferableSkills": [
+       "Giao tiếp bệnh nhân",
+       "Thấu cảm cộng đồng",
+       "Xử lý tình huống"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       17,
+       20,
+       25
+      ],
+      "rationale": "Đáp ứng tốt mong muốn về Ý nghĩa (Meaning=4) và tận dụng sự quan tâm đến Sức khỏe cộng đồng.",
+      "actionStepNow": "Tìm hiểu các hội thảo trực tuyến về Chuyển đổi số trong Y tế tại khu vực Đồng bằng sông Cửu Long."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Transition to Health-Tech Startup / Telehealth Operations",
+      "pathTitleVi": "Chuyển hoàn toàn sang Vận hành Tổng đài/Nền tảng Sức khỏe từ xa",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Tham gia vào các startup y tế từ xa với vai trò tư vấn chuyên môn và điều phối vận hành trực tuyến.",
+      "targetRoles": [
+       "Telehealth Operations Lead",
+       "Health-Tech Customer Success Manager"
+      ],
+      "skillsToAcquire": [
+       "Vận hành nền tảng Telehealth",
+       "Kỹ năng chăm sóc khách hàng số",
+       "Prompt engineering cho y tế"
+      ],
+      "transferableSkills": [
+       "Kiến thức y khoa nền tảng",
+       "Kỹ năng giao tiếp"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       14,
+       17,
+       22,
+       28,
+       35
+      ],
+      "rationale": "Mức lương và tính chất công việc linh hoạt hơn nhưng đòi hỏi thích nghi công nghệ cao, phù hợp khi bạn đã tích lũy đủ kinh nghiệm số.",
+      "actionStepNow": "Kết nối với các chuyên gia y tế số trên LinkedIn và tham gia cộng đồng Y tế số Việt Nam."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng số Y tế",
+      "title": "Mastering EMR and Basic AI Health Tools",
+      "titleVi": "Làm chủ EMR và Công cụ AI Y tế cơ bản",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "skillsCovered": [
+       "Sử dụng thành thạo Hồ sơ bệnh án điện tử",
+       "Ứng dụng ChatGPT/Copilot hỗ trợ tra cứu y văn nhanh"
+      ],
+      "freeResources": [
+       {
+        "name": "Coursera: Introduction to Digital Health",
+        "provider": "Imperial College London via Coursera",
+        "url": "https://www.coursera.org",
+        "type": "Online Course (Audit free)"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào sau đây hỗ trợ tốt nhất cho việc quản lý lịch sử khám bệnh tập trung tại bệnh viện hiện đại?",
+       "options": [
+        "Giấy ghi chú tay",
+        "Hồ sơ bệnh án điện tử (EMR/EHR)",
+        "Mạng xã hội",
+        "Phần mềm nghe nhạc"
+       ],
+       "correctIndex": 1,
+       "explanation": "Hồ sơ bệnh án điện tử (EMR/EHR) là tiêu chuẩn cốt lõi trong y tế số giúp lưu trữ, chia sẻ và phân tích dữ liệu bệnh nhân an toàn."
+      }
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Community Health & Telehealth Application",
+      "phaseNameVi": "Ứng dụng Sức khỏe Cộng đồng & Y tế từ xa",
+      "title": "Applying Digital Tools in Public Health Outreach",
+      "titleVi": "Áp dụng Công nghệ số vào Truyền thông Sức khỏe Cộng đồng",
+      "estimatedHours": 30,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Thiết kế chương trình tư vấn sức khỏe từ xa",
+       "Sử dụng AI tạo nội dung giáo dục sức khỏe cho người dân"
+      ],
+      "freeResources": [
+       {
+        "name": "WHO Digital Health Learning",
+        "provider": "World Health Organization",
+        "url": "https://www.who.int",
+        "type": "Self-paced modules"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào là quan trọng nhất khi triển khai tư vấn sức khỏe từ xa cho người dân ở vùng Đồng bằng sông Cửu Long?",
+       "options": [
+        "Tốc độ internet phải đạt 5G siêu tốc",
+        "Sự thấu cảm, dễ hiểu và phù hợp với thực tế người dân",
+        "Bắt buộc người bệnh phải có máy tính bảng đắt tiền",
+        "Chỉ dùng tiếng nước ngoài"
+       ],
+       "correctIndex": 1,
+       "explanation": "Sự thấu cảm và ngôn ngữ gần gũi, dễ hiểu là chìa khóa thành công trong chăm sóc sức khỏe cộng đồng và y tế từ xa."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7619,
+  "latencyMs": 8865
+ }
+}

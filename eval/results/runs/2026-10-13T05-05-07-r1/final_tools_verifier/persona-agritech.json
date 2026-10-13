@@ -1,0 +1,619 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 45,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 19485,
+  "latencyMs": 21767,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0058455
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Agricultural Technology & Data Specialist",
+    "roleTitleVi": "Chuyên viên Công nghệ & Dữ liệu Nông nghiệp",
+    "aiResilienceScore": 82,
+    "matchScore": 90,
+    "reasoning": "Grounded in Stanford HAI (2024) and McKinsey (2023) research regarding AI augmentation in data-driven sectors, this path combines your 15 years of agricultural experience in Can Tho with modern precision farming technologies. While AI automates routine tasks, your deep domain contextualization and local market understanding in the Mekong Delta remain irreplaceable human advantages.",
+    "whyItFitsYou": "Your strengths in being open to new technology and understanding local farming markets align seamlessly with the shift toward precision agriculture. Even without advanced data analysis skills or English proficiency, your hands-on experience with drones and farm management serves as a robust foundation to transition into an advisory or technical support role.",
+    "transferableSkillsMatch": [
+     "Canh tác lúa và cây ăn quả",
+     "Thao tác drone phun thuốc cơ bản",
+     "Bán nông sản qua Zalo và Facebook",
+     "Hiểu thị trường địa phương"
+    ],
+    "skillsGap": [
+     "Phân tích dữ liệu canh tác",
+     "Tiếng Anh chuyên ngành"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "WEF",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Analyzing drone imagery and field sensor data for crop health decisions",
+       "taskNameVi": "Phân tích dữ liệu hình ảnh drone và cảm biến đồng ruộng để ra quyết định chăm sóc cây trồng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 75,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI processes aerial data and yields yield forecasts; you validate the physical ground truth in Can Tho."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and input cost trackers",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ theo dõi chi phí vật tư nông nghiệp",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language tools generate visual summaries of seasonal expenses automatically."
+      },
+      {
+       "taskName": "Framing local farming strategies and advising cooperative members",
+       "taskNameVi": "Định hình chiến lược canh tác địa phương và tư vấn cho xã viên hợp tác xã",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires deep farming intuition, local trust, and practical risk management."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Evaluated through task exposure analysis, balancing automation potential with human-centric agricultural expertise.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Enabled Precision Farmer",
+      "pathTitleVi": "Nông dân Công nghệ Chính xác",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Integrate advanced drone analytics and digital cost tracking into your current farming operations.",
+      "targetRoles": [
+       "Chủ trang trại công nghệ cao",
+       "Đội trưởng dịch vụ drone nông nghiệp"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng phần mềm bản đồ thửa ruộng",
+       "Quản lý tài chính số cơ bản"
+      ],
+      "transferableSkills": [
+       "Canh tác lúa và cây ăn quả",
+       "Thao tác drone phun thuốc"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Builds directly on your 15 years of experience with minimal financial risk and high immediate applicability.",
+      "actionStepNow": "Explore free Vietnamese tutorials on Microsoft Learn to digitize your farm record-keeping."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural E-Commerce & Data Advisor",
+      "pathTitleVi": "Chuyên viên Tư vấn Thương mại Điện tử & Dữ liệu Nông nghiệp",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition toward advising local cooperatives on digital sales, yield optimization, and drone service coordination.",
+      "targetRoles": [
+       "Cán bộ kỹ thuật hợp tác xã nông nghiệp",
+       "Chuyên viên hỗ trợ thương mại điện tử nông sản"
+      ],
+      "skillsToAcquire": [
+       "Phân tích dữ liệu mùa vụ cơ bản",
+       "Tối ưu hóa bán hàng trực tuyến"
+      ],
+      "transferableSkills": [
+       "Bán nông sản qua Zalo và Facebook",
+       "Hiểu thị trường địa phương"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       28
+      ],
+      "rationale": "Capitalizes on the regional boom in Mekong Delta digital agriculture while leveraging your existing sales channels.",
+      "actionStepNow": "Enroll in free digital literacy and foundational business courses available in Vietnamese."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Digital Agricultural Operations Manager",
+      "pathTitleVi": "Quản lý Vận hành Nông nghiệp Số",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Take on a regional management role for agri-tech companies operating smart farming projects in Can Tho.",
+      "targetRoles": [
+       "Quản lý vùng nguyên liệu số",
+       "Giám sát kỹ thuật nông nghiệp thông minh"
+      ],
+      "skillsToAcquire": [
+       "Quản lý hệ thống IoT nông nghiệp",
+       "Giao tiếp tiếng Anh cơ bản cho công việc"
+      ],
+      "transferableSkills": [
+       "Kiên trì theo mùa vụ",
+       "Canh tác lúa và cây ăn quả"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       28,
+       35
+      ],
+      "rationale": "Offers long-term career growth in Vietnam's transforming agricultural sector.",
+      "actionStepNow": "Start daily 15-minute English practice using free language learning resources."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & Farm Record Digitization",
+      "phaseNameVi": "Số hóa Kiến thức & Sổ sách Nông trại",
+      "title": "Build Digital Record-Keeping Habits",
+      "titleVi": "Xây dựng Thói quen Ghi chép Sổ sách Số",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Sử dụng máy tính/điện thoại quản lý chi phí",
+       "Làm sạch dữ liệu bảng biểu đơn giản"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       },
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào sau đây hữu ích nhất để ghi chép và tính toán chi phí phân bón, thuốc trừ sâu hàng vụ?",
+       "options": [
+        "Viết tay vào sổ giấy truyền thống",
+        "Phần mềm bảng tính điện tử (như Excel hoặc Google Sheets)",
+        "Chỉ cần nhớ trong đầu",
+        "Đăng lên Facebook cá nhân"
+       ],
+       "correctIndex": 1,
+       "explanation": "Sử dụng bảng tính điện tử giúp bạn dễ dàng tổng hợp, lọc dữ liệu chi phí và tính toán lợi nhuận chính xác theo mùa vụ."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Agricultural Technology & Data Basics",
+      "phaseNameVi": "Nền tảng Công nghệ & Dữ liệu Nông nghiệp",
+      "title": "Precision Agriculture & AI Tool Introduction",
+      "titleVi": "Giới thiệu Nông nghiệp Chính xác & Công cụ AI",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Phân tích dữ liệu canh tác cơ bản",
+       "Ứng dụng công nghệ số trong quản lý cây trồng"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc ứng dụng drone và dữ liệu hình ảnh trong canh tác lúa là gì?",
+       "options": [
+        "Làm đẹp phong cảnh cánh đồng",
+        "Phát hiện sớm sâu bệnh và tối ưu hóa lượng phân bón phun",
+        "Tăng chi phí nhân công tối đa",
+        "Thay thế hoàn toàn người nông dân"
+       ],
+       "correctIndex": 1,
+       "explanation": "Dữ liệu từ drone giúp khoanh vùng sâu bệnh chính xác, giúp tiết kiệm vật tư nông nghiệp và bảo vệ môi trường."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $962 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 85,
+    "rationale": "The guidance directly incorporates the user's specific skills in drone operation, local market knowledge, and tech openness, tailoring the futuristic role precisely to their agricultural background."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 4,
+    "grounded": 4,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868826912_wbzms0",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:20:26.912Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:20:26.912Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân ứng dụng công nghệ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:26.912Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:20:28.249Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 531,
+     "latencyMs": 1337
+    },
+    {
+     "ts": "2026-10-13T05:20:28.249Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "agritech specialist",
+       "farm manager",
+       "agricultural e-commerce vendor"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "lacks data analysis skills",
+       "limited English proficiency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:28.249Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 730,
+     "latencyMs": 1140,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agritech specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "farm manager"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural e-commerce vendor"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "precision agriculture vietnam digital skills e-commerce mekong delta"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "vietnamese agriculture e commerce training free basic digital skills"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:29.389Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:30.339Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3119,
+     "latencyMs": 950,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:20:30.339Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:30.339Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:20:38.247Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6838,
+     "latencyMs": 7908
+    },
+    {
+     "ts": "2026-10-13T05:20:38.247Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:39.245Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 483,
+     "latencyMs": 997
+    },
+    {
+     "ts": "2026-10-13T05:20:39.245Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: citation not found in evidence base: \"Business Analyst / Data Specialist\""
+      ],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific skills in drone operation, social media sales, and regional farming context, though it hallucinates 15 years of experience not in the prompt."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:39.245Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "suggestion[0]: citation not found in evidence base: \"Business Analyst / Data Specialist\""
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:39.245Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:20:47.718Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 7047,
+     "latencyMs": 8472
+    },
+    {
+     "ts": "2026-10-13T05:20:47.718Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:48.679Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 480,
+     "latencyMs": 961
+    },
+    {
+     "ts": "2026-10-13T05:20:48.679Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly incorporates the user's specific skills in drone operation, local market knowledge, and tech openness, tailoring the futuristic role precisely to their agricultural background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:48.679Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 19228,
+   "latencyMs": 21767,
+   "degraded": false
+  }
+ }
+}

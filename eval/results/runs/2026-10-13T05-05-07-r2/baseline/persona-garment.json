@@ -1,0 +1,276 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8158,
+  "latencyMs": 10803,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024474
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Handmade Craft & Custom Product Business Owner",
+    "roleTitleVi": "Chủ Cơ Sở Kinh Doanh Đồ Thủ Công & May Đo Theo Yêu Cầu",
+    "aiResilienceScore": 92,
+    "matchScore": 88,
+    "reasoning": "Các công việc thủ công, khéo tay kết hợp nghệ thuật cá nhân hóa có mức độ phơi nhiễm tự động hóa bằng AI cực kỳ thấp theo lý thuyết nút thắt kỹ thuật (Oxford Martin School, 2017). Trí tuệ nhân tạo và tự động hóa công nghiệp khó có thể thay thế hoàn toàn sự khéo léo vật lý, sự tinh tế trong việc chỉnh sửa theo yêu cầu cảm xúc của khách hàng và các dịch vụ thủ công địa phương. Đồng thời, xu hướng tiêu dùng bền vững và cá nhân hóa đang tạo cơ hội lớn cho các mô hình kinh doanh nhỏ lẻ.",
+    "whyItFitsYou": "Với 8 năm kinh nghiệm vận hành máy may công nghiệp, khả năng đọc bản vẽ kỹ thuật, kiểm tra chất lượng sản phẩm và sự khéo tay, bạn đã có sẵn nền tảng kỹ thuật vững chắc. Sở thích kinh doanh nhỏ và nghề thủ công kết hợp với thế mạnh chịu áp lực tốt giúp bạn hoàn toàn tự tin tự lập kinh doanh tại Bình Dương với số vốn dưới 2 triệu đồng bằng cách nhận các đơn hàng may đo, sửa chữa cao cấp hoặc làm đồ thủ công độc lạ qua mạng xã hội.",
+    "transferableSkillsMatch": [
+     "Vận hành máy may công nghiệp và thiết bị thủ công",
+     "Đọc hiểu bản vẽ, rập mẫu và thông số kỹ thuật",
+     "Kiểm tra chất lượng thành phẩm tỉ mỉ (QC)",
+     "Chịu được áp lực tiến độ đơn hàng"
+    ],
+    "skillsGap": [
+     "Kỹ năng marketing tối thiểu trên mạng xã hội (Facebook/Zalo)",
+     "Quản lý tài chính hộ kinh doanh nhỏ",
+     "Kỹ năng chăm sóc và chốt đơn khách hàng"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 20,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity, fine arts creation, and localized social interaction remain highly resilient against computerization."
+     },
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.wef.org/publications/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Micro, small and medium enterprises focusing on local customized services and artisanal production demonstrate strong stability against macro technological displacement."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Tailors, Dressmakers, Furriers and Hatters",
+     "occupationTitleVi": "Thợ may, thợ chế tạo trang phục và thợ làm mũ",
+     "molisaCode": "7533",
+     "onetCode": "51-6052.00",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 8,
+     "augmentationPotentialScore": 45,
+     "humanAdvantageCore": [
+      "Sự khéo léo thủ công và thao tác vật lý tinh vi",
+      "Khả năng giao tiếp trực tiếp thấu cảm với khách hàng",
+      "Khả năng ứng biến linh hoạt với từng chất liệu vải và số đo thực tế"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Custom fitting and physical alteration of garments",
+       "taskNameVi": "Đo đạc, căn chỉnh và sửa chữa trang phục trực tiếp theo yêu cầu khách",
+       "exposureType": "low",
+       "exposurePercentage": 5,
+       "onetCode": "51-6052.00",
+       "notes": "Đòi hỏi tiếp xúc vật lý và sự khéo tay trực tiếp mà AI không thể thay thế."
+      },
+      {
+       "taskName": "Quality inspection of handmade or bespoke textile products",
+       "taskNameVi": "Kiểm tra chất lượng đường may, độ bền và độ hoàn thiện sản phẩm thủ công",
+       "exposureType": "augmented",
+       "exposurePercentage": 15,
+       "onetCode": "51-6052.00",
+       "notes": "Có thể ứng dụng smartphone chụp ảnh để tham khảo xu hướng mẫu mã, nhưng cốt lõi vẫn dựa vào tay nghề."
+      },
+      {
+       "taskName": "Small-scale production planning and direct customer consultation",
+       "taskNameVi": "Lên kế hoạch sản xuất nhỏ và tư vấn trực tiếp cho khách hàng địa phương",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "51-6052.00",
+       "notes": "Tận dụng kỹ năng đọc bản vẽ và kinh nghiệm chuyền may để tối ưu hóa tiến độ."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "WEF Future of Jobs (2023)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa O*NET kết hợp các chỉ số nút thắt kỹ thuật về khéo léo thể chất và tương tác cá nhân.",
+     "uncertaintyRange": "+/- 4%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay in Industrial Garment & Use Mobile Tools",
+      "pathTitleVi": "Tiếp tục nghề may công nghiệp kết hợp công cụ số di động",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tiếp tục công việc tại xưởng may tại Bình Dương, đồng thời dùng smartphone học hỏi thêm mẫu mã mới và kỹ năng quản lý chuyền để tăng thu nhập.",
+      "targetRoles": [
+       "Thợ cả chuyền may",
+       "Kiểm định viên chất lượng (KCS)",
+       "Tổ trưởng sản xuất"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng Zalo/Facebook để kết nối nguồn hàng phụ",
+       "Kỹ năng giám sát chất lượng nâng cao"
+      ],
+      "transferableSkills": [
+       "Vận hành máy may công nghiệp",
+       "Đọc bản vẽ kỹ thuật",
+       "Làm việc nhóm"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "rationale": "Giữ vững sự ổn định tài chính hiện tại trong khi tận dụng các công cụ số cơ bản trên điện thoại để mở rộng cơ hội thu nhập phụ.",
+      "actionStepNow": "Tận dụng điện thoại thông minh tìm kiếm các nhóm thợ may Bình Dương để học hỏi kinh nghiệm nhận hàng gia công thêm tại nhà."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to Independent Custom Tailoring & Alteration Service",
+      "pathTitleVi": "Chuyển hướng sang dịch vụ may đo và sửa chữa thời trang cá nhân",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Tận dụng góc làm việc tại nhà, mở dịch vụ chuyên sửa quần áo, may đồ thiết kế theo yêu cầu cho cư dân khu vực xung quanh tại Bình Dương.",
+      "targetRoles": [
+       "Chủ tiệm may đo độc lập",
+       "Thợ thủ công thời trang cá nhân hóa"
+      ],
+      "skillsToAcquire": [
+       "Kỹ thuật sửa chữa các dáng áo quần phức tạp",
+       "Marketing truyền miệng và qua mạng xã hội địa phương",
+       "Quản lý chi phí và vốn nhỏ"
+      ],
+      "transferableSkills": [
+       "Kỹ năng may vá xuất sắc",
+       "Kiểm tra chất lượng thành phẩm",
+       "Đọc rập và bản vẽ kỹ thuật"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       10,
+       14,
+       18,
+       22
+      ],
+      "rationale": "Phù hợp với sở thích kinh doanh nhỏ và nghề thủ công, không tốn nhiều vốn đầu tư ban đầu nhưng mang lại tính tự chủ và ý nghĩa cao.",
+      "actionStepNow": "Sử dụng số vốn dưới 2 triệu VNĐ để mua phụ liệu cơ bản và thông báo dịch vụ sửa quần áo nhanh cho hàng xóm và bạn bè xung quanh."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Shift to Artisanal Craft E-commerce",
+      "pathTitleVi": "Chuyển đổi hoàn toàn sang kinh doanh đồ thủ công mỹ nghệ trực tuyến",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Chuyên tâm thiết kế và sản xuất các sản phẩm thủ công vải độc lạ (túi vải, phụ kiện trang trí) bán trên các sàn thương mại điện tử hoặc mạng xã hội.",
+      "targetRoles": [
+       "Nhà sáng lập thương hiệu thủ công cá nhân",
+       "Nghệ nhân sản xuất hàng độc bản"
+      ],
+      "skillsToAcquire": [
+       "Chụp ảnh sản phẩm và viết bài đăng bán hàng cơ bản",
+       "Quản lý gian hàng Shopee/TikTok Shop",
+       "Tư duy thiết kế sản phẩm ngách"
+      ],
+      "transferableSkills": [
+       "Tay nghề may vá khéo léo",
+       "Chịu áp lực hoàn thành sản phẩm đúng hẹn"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       5,
+       8,
+       15,
+       25,
+       35
+      ],
+      "rationale": "Mang lại ý nghĩa lớn và tiềm năng tài chính cao nếu sản phẩm tạo được xu hướng, nhưng đòi hỏi thời gian tự học về thương mại điện tử.",
+      "actionStepNow": "Tự làm 2-3 sản phẩm thủ công mẫu, chụp ảnh bằng điện thoại và đăng thử lên các nhóm chợ cử/khu dân cư Bình Dương."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Xây Dựng Nền Tảng & Làm Quen Công Cụ Số",
+      "title": "Master Basic Mobile Business Tools",
+      "titleVi": "Làm Chủ Công Cụ Kinh Doanh Cơ Bản Trên Điện Thoại",
+      "estimatedHours": 24,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Sử dụng Facebook/Zalo Business cơ bản",
+       "Chụp và chỉnh sửa ảnh sản phẩm bằng điện thoại",
+       "Quản lý sổ sách thu chi đơn giản"
+      ],
+      "freeResources": [
+       {
+        "name": "Kỹ năng kinh doanh online cơ bản cho người mới bắt đầu",
+        "provider": "Cổng thông tin Hỗ trợ DNNV Việt Nam",
+        "url": "https://smedev.mpi.gov.vn",
+        "type": "online_course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi bắt đầu kinh doanh dịch vụ may đo nhỏ tại nhà với vốn dưới 2 triệu VNĐ, yếu tố nào quan trọng nhất để thu hút khách hàng đầu tiên?",
+       "options": [
+        "Thuê cửa hàng mặt tiền lớn ngay lập tức",
+        "Tận dụng mối quan hệ xung quanh, chất lượng đường may tỉ mỉ và đăng ảnh thực tế lên mạng xã hội",
+        "Mua máy móc tự động đắt tiền",
+        "Thuê nhân viên quảng cáo chuyên nghiệp"
+       ],
+       "correctIndex": 1,
+       "explanation": "Với vốn ít và rủi ro thấp, việc tận dụng uy tín cá nhân, chất lượng tay nghề và mạng xã hội miễn phí là cách tiếp cận an toàn và hiệu quả nhất."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Service Launch & Practice",
+      "phaseNameVi": "Ra Mắt Dịch Vụ & Thực Hành Kinh Doanh",
+      "title": "Launch Home Alteration & Craft Service",
+      "titleVi": "Triển Khai Dịch Vụ Sửa Chữa & May Đo Tại Nhà",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Kỹ thuật đo đạc và tư vấn trực tiếp",
+       "Quản lý thời gian hoàn thành đơn hàng",
+       "Chăm sóc khách hàng địa phương"
+      ],
+      "freeResources": [
+       {
+        "name": "Cẩm nang Khởi sự Doanh nghiệp nhỏ",
+        "provider": "VCCI",
+        "url": "https://vcci.com.vn",
+        "type": "guide"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Làm thế nào để duy trì sự uy tín và giữ chân khách hàng khi mới bắt đầu nhận đơn hàng riêng?",
+       "options": [
+        "Nhận thật nhiều đơn dù không kịp thời gian",
+        "Luôn giao hẹn thời gian hoàn thành chuẩn xác và kiểm tra kỹ chất lượng đường may trước khi giao",
+        "Giảm giá cực sâu dù lỗ vốn",
+        "Từ chối mọi phản hồi góp ý của khách hàng"
+       ],
+       "correctIndex": 1,
+       "explanation": "Chất lượng QC (kiểm tra chất lượng) tỉ mỉ và đúng hẹn là yếu tố sống còn giữ chân khách hàng trong nghề thủ công."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7905,
+  "latencyMs": 10803
+ }
+}

@@ -1,0 +1,546 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 9075,
+  "latencyMs": 16730,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0027225
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Quality Control & Production Documentation Specialist",
+    "roleTitleVi": "Chuyên viên Kiểm soát Chất lượng và Tài liệu Sản xuất",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "As manufacturing in Binh Duong adopts digital documentation and basic AI-assisted inspection tools, workers with deep shop-floor experience are vital. Industrial sewing and technical blueprint reading translate directly into evaluating product standards. Grounded in findings from the Stanford AI Index Report 2024, AI enhances human productivity in operational roles rather than replacing physical craftsmanship and quality oversight entirely.",
+    "whyItFitsYou": "Your 8 years of experience, manual dexterity, and ability to read technical drawings mean you already understand product quality at a granular level. Since you prefer low risk and have limited computer exposure, this role builds gradually on your existing strengths without requiring advanced coding or software engineering skills.",
+    "transferableSkillsMatch": [
+     "Kiểm tra chất lượng sản phẩm",
+     "Đọc bản vẽ kỹ thuật",
+     "Làm việc nhóm theo chuyền",
+     "Chịu được áp lực đơn hàng"
+    ],
+    "skillsGap": [
+     "Kỹ năng sử dụng máy tính cơ bản",
+     "Nhập liệu và quản lý tệp số hóa",
+     "Tiếng Anh chuyên ngành cơ bản"
+    ],
+    "averageSalaryRangeVND": "8,500,000 - 12,500,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI boosts worker productivity and improves work quality, expanding across non-tech industries including manufacturing."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "65% of manual testing and traditional operations roles contract while demand for digitally augmented coordination increases."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Quality Control & Production Documentation Specialist",
+     "occupationTitleVi": "Chuyên viên Kiểm soát Chất lượng và Tài liệu Sản xuất",
+     "molisaCode": "7318",
+     "onetCode": "51-9061.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 18,
+     "augmentationPotentialScore": 82,
+     "humanAdvantageCore": [
+      "Tactile quality inspection",
+      "Physical manipulation of garments",
+      "Team coordination and pressure management"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Inspecting physical garment defects against technical blueprints",
+       "taskNameVi": "Kiểm tra lỗi sản phẩm thực tế so với bản vẽ kỹ thuật",
+       "exposureType": "complementary",
+       "exposurePercentage": 30,
+       "onetCode": "51-9061.00",
+       "notes": "Machine vision can flag anomalies, but human tactile judgment remains essential."
+      },
+      {
+       "taskName": "Logging quality inspection data into digital spreadsheet systems",
+       "taskNameVi": "Nhập dữ liệu kiểm tra chất lượng vào hệ thống bảng tính số",
+       "exposureType": "automated",
+       "exposurePercentage": 60,
+       "onetCode": "43-9061.00",
+       "notes": "Basic data entry is augmented by templates and speech-to-text tools."
+      },
+      {
+       "taskName": "Coordinating with production line teams to resolve defect bottlenecks",
+       "taskNameVi": "Phối hợp với các chuyền sản xuất để giải quyết điểm nghẽn lỗi",
+       "exposureType": "human_centric",
+       "exposurePercentage": 10,
+       "onetCode": "51-9061.00",
+       "notes": "Requires empathy, teamwork, and direct communication."
+      }
+     ],
+     "sources": [
+      "Stanford Institute for Human-Centered Artificial Intelligence (HAI) 2024",
+      "TopCV Vietnam / Navigos Group 2024"
+     ],
+     "methodologySummary": "Evaluated based on task routine level, physical dexterity requirement, and local Binh Duong manufacturing digital transformation velocity.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digitally Augmented Sewing & Quality Lead",
+      "pathTitleVi": "Tổ trưởng May và Kiểm soát Chất lượng Tăng cường Số",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage your 8 years of factory floor experience while learning basic computer logging and digital quality checklists.",
+      "targetRoles": [
+       "Tổ trưởng KCS",
+       "Kiểm định viên chất lượng chuyền may"
+      ],
+      "skillsToAcquire": [
+       "Basic Excel / Google Sheets",
+       "Digital checklist applications",
+       "Basic typing skills"
+      ],
+      "transferableSkills": [
+       "Vận hành máy may công nghiệp",
+       "Đọc bản vẽ kỹ thuật",
+       "Kiểm tra chất lượng sản phẩm"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7500000,
+       8500000,
+       9500000,
+       10500000,
+       11500000
+      ],
+      "rationale": "Keeps you in your core industry while adding digital safety armor against automation.",
+      "actionStepNow": "Practice typing on a smartphone or basic computer for 15 minutes daily."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Custom Tailoring & Small Craft Entrepreneurship",
+      "pathTitleVi": "Khởi nghiệp May đo Thủ công và Kinh doanh Nhỏ",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Utilize your hand-crafting skills and interest in small business to open an independent tailoring or artisanal garment service.",
+      "targetRoles": [
+       "Chủ xưởng may gia đình",
+       "Thợ may thiết kế độc lập"
+      ],
+      "skillsToAcquire": [
+       "Basic social media marketing (Facebook/Zalo)",
+       "Customer service management",
+       "Basic financial tracking"
+      ],
+      "transferableSkills": [
+       "Khéo tay",
+       "Đọc bản vẽ kỹ thuật",
+       "Chịu được áp lực đơn hàng"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       6000000,
+       8000000,
+       11000000,
+       14000000,
+       18000000
+      ],
+      "rationale": "Directly aligns with your interest in small business and crafts while giving you full autonomy.",
+      "actionStepNow": "Map out a list of 5 potential local customers or neighbors who need custom alterations."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "E-Commerce Fulfillment & Packaging Inspector",
+      "pathTitleVi": "Kiểm định viên Đóng gói và Vận hành Thương mại Điện tử",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Transition into modern logistics and e-commerce fulfillment centers in Binh Duong handling quality check of outgoing goods.",
+      "targetRoles": [
+       "Nhân viên kiểm định kho e-commerce",
+       "Quản lý ca đóng gói"
+      ],
+      "skillsToAcquire": [
+       "Barcode scanner operation",
+       "Inventory software navigation",
+       "Basic warehouse safety"
+      ],
+      "transferableSkills": [
+       "Kiểm tra chất lượng sản phẩm",
+       "Làm việc nhóm",
+       "Chịu được áp lực đơn hàng"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8000000,
+       9000000,
+       10000000,
+       11500000,
+       13000000
+      ],
+      "rationale": "E-commerce warehousing is expanding rapidly in Binh Duong, offering stable blue-to-grey collar transitions.",
+      "actionStepNow": "Visit local industrial park job boards to check warehouse assistant requirements."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & Basic Computer Skills",
+      "phaseNameVi": "Nền tảng Tin học Cơ bản và Gõ phím",
+      "title": "Build Fundamental Computer Confidence",
+      "titleVi": "Xây dựng Sự tự tin với Máy tính Cơ bản",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Keyboard navigation",
+       "Mouse control",
+       "Basic file saving"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Khi bạn cần lưu một tệp tài liệu trên máy tính, bạn thường sử dụng phím tắt nào hoặc thao tác nào?",
+       "options": [
+        "Tắt nguồn máy tính ngay lập tức",
+        "Chọn File -> Save hoặc nhấn tổ hợp phím Ctrl + S",
+        "Rút phích cắm điện",
+        "Vứt bỏ bàn phím"
+       ],
+       "correctIndex": 1,
+       "explanation": "Ctrl + S hoặc File -> Save là thao tác chuẩn để lưu tệp an toàn trên máy tính."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Quality Control & Spreadsheet Transition",
+      "phaseNameVi": "Chuyển đổi Kỹ năng Kiểm tra Chất lượng và Bảng tính",
+      "title": "Digital Quality Checklists and Basic Excel",
+      "titleVi": "Danh mục Kiểm tra Số và Excel Cơ bản",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "costTier": "low_cost",
+      "estimatedCostVND": 200000,
+      "skillsCovered": [
+       "Data entry in Excel",
+       "Digital QC reporting",
+       "Basic error tracking"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Ứng dụng bảng tính (như Excel hoặc Google Sheets) giúp ích gì cho công việc kiểm tra chất lượng?",
+       "options": [
+        "Giúp nấu ăn ngon hơn",
+        "Giúp ghi chép, tính toán tỷ lệ lỗi sản phẩm nhanh chóng và chính xác",
+        "Giúp may nhanh gấp 10 lần",
+        "Không có tác dụng gì"
+       ],
+       "correctIndex": 1,
+       "explanation": "Bảng tính giúp lưu trữ số liệu kiểm tra lỗi, tự động tính toán tỷ lệ đạt chuẩn của chuyền sản xuất."
+      },
+      "estimatedCostUSD": 8
+     }
+    ],
+    "averageSalaryRangeUSD": "$327 - $481 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific skills in industrial sewing and technical drawings, tailoring the quality control role to their exact background."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 0,
+    "grounded": 0,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869437901_wduybq",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:30:37.901Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:30:37.901Z",
+     "type": "run_start",
+     "message": "pipeline for \"Công nhân may công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:37.901Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:30:39.079Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 495,
+     "latencyMs": 1178
+    },
+    {
+     "ts": "2026-10-13T05:30:39.079Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "garment worker",
+       "quality control inspector",
+       "sewing machine operator"
+      ],
+      "riskFlags": [
+       "limited computer literacy",
+       "limited budget for retraining",
+       "low risk tolerance"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:39.079Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 703,
+     "latencyMs": 1511,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "sewing machine operator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "quality control inspector"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam garment worker AI automation textile industry labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "quality control garment manufacturing vocational training Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:40.590Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "0 item(s) - No learning resource matched the query."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:41.692Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1277,
+     "latencyMs": 1102,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:30:41.692Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "industrial sewing worker garment quality control inspector Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:43.942Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:45.342Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1417,
+     "latencyMs": 1399,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:30:45.342Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:45.342Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:30:53.326Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4509,
+     "latencyMs": 7984
+    },
+    {
+     "ts": "2026-10-13T05:30:53.327Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:54.631Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 448,
+     "latencyMs": 1304
+    },
+    {
+     "ts": "2026-10-13T05:30:54.631Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific skills in industrial sewing and technical drawings, tailoring the quality control role to their exact background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:30:54.631Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 8849,
+   "latencyMs": 16730,
+   "degraded": false
+  }
+ }
+}

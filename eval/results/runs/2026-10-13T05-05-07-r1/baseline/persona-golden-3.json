@@ -1,0 +1,297 @@
+{
+ "score": {
+  "personaId": "persona-golden-3",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 15,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8289,
+  "latencyMs": 9339,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024866999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Operations & Business Process Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành AI và Quy trình Kinh doanh",
+    "aiResilienceScore": 88,
+    "matchScore": 95,
+    "reasoning": "Dựa trên dữ liệu từ Stanford HAI (2024) và McKinsey (2023), các công việc kết hợp giữa tư duy kinh doanh và tự động hóa quy trình đạt mức 'human-in-the-loop augmentation' cao nhất, giúp tăng 40% năng suất mà không bị thay thế. Khung năng lực VSCO và WEF Future of Jobs (2023) cũng đánh giá cao vai trò kết nối giữa công nghệ AI và vận hành thực tế tại thị trường Việt Nam.",
+    "whyItFitsYou": "Với nền tảng Cử nhân Quản trị Kinh doanh từ NEU, tư duy logic, kỹ năng giao tiếp tốt và tiếng Anh IELTS 7.0, bạn có lợi thế tuyệt vời để nắm bắt các xu hướng tự động hóa quy trình làm việc (AI Workflow Automation). Sự kết hợp giữa khả năng tự học nhanh và tư duy tổng quan giúp bạn dễ dàng làm chủ các công cụ GenAI để tối ưu hóa hiệu suất doanh nghiệp.",
+    "transferableSkillsMatch": [
+     "Tư duy tổng quan về doanh nghiệp",
+     "Kỹ năng giao tiếp và thuyết trình mạch lạc",
+     "Khả năng tự học nhanh và thích nghi",
+     "Sử dụng tiếng Anh thành thạo (IELTS 7.0)"
+    ],
+    "skillsGap": [
+     "Kỹ năng thiết kế luồng công việc tự động (Zapier/Make + LLM APIs)",
+     "Quản trị dự án tích hợp AI thực chiến",
+     "Kỹ thuật Prompt Engineering nâng cao cho doanh nghiệp"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI boosts worker productivity and improves work quality (e.g. BCG consultant study showing 40% higher performance on standard business tasks) and shifts towards human-in-the-loop augmentation."
+     },
+     {
+      "paperTitle": "The economic potential of generative AI: The next productivity frontier",
+      "source": "McKinsey & Company",
+      "year": "2023",
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      "quoteOrDataPoint": "Generative AI could automate tasks that absorb 60-70% of employees' time today, significantly elevating the value of workflow orchestration roles."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": "2024",
+      "url": "https://www.topcv.vn/",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency, while 'AI Operations Coordinator' and related roles saw salary increases of 28-35%."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Services and Administration Managers",
+     "occupationTitleVi": "Quản lý Dịch vụ Kinh doanh và Vận hành",
+     "molisaCode": "1219",
+     "onetCode": "11-1021.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 22,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Ra quyết định chiến lược dựa trên bối cảnh doanh nghiệp tại Việt Nam",
+      "Đàm phán và thuyết phục các bên liên quan (stakeholders)",
+      "Thiết kế và quản trị luồng quy trình linh hoạt (Agile Workflow)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Designing AI-powered business process workflows",
+       "taskNameVi": "Thiết kế luồng quy trình kinh doanh tích hợp AI",
+       "exposureType": "augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "11-1021.00",
+       "notes": "Sử dụng tư duy quản trị kinh doanh của bạn kết hợp công cụ tự động hóa để tối ưu hóa hiệu suất vận hành."
+      },
+      {
+       "taskName": "Stakeholder communication and workflow alignment",
+       "taskNameVi": "Giao tiếp với ban lãnh đạo và đồng bộ hóa quy trình",
+       "exposureType": "complementary",
+       "exposurePercentage": 20,
+       "onetCode": "11-1021.00",
+       "notes": "Tận dụng kỹ năng giao tiếp và tiếng Anh 7.0 để làm việc trực tiếp với cấp quản lý và đối tác quốc tế."
+      },
+      {
+       "taskName": "Analyzing operational performance metrics with GenAI",
+       "taskNameVi": "Phân tích chỉ số hiệu suất vận hành bằng GenAI",
+       "exposureType": "augmentation",
+       "exposurePercentage": 75,
+       "onetCode": "11-1021.00",
+       "notes": "Ứng dụng tư duy logic kinh doanh để phân tích dữ liệu nhanh chóng thông qua các trợ lý AI."
+      }
+     ],
+     "sources": [
+      "Stanford HAI 2024",
+      "McKinsey 2023",
+      "TopCV & GSO 2024"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khả năng kết hợp giữa năng lực cốt lõi con người (xã hội, chiến lược) và mức độ bổ trợ từ AI theo O*NET và phân tích thị trường lao động Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Business Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Kinh doanh Tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng nền tảng NEU để trở thành chuyên viên phân tích sử dụng thành thạo các công cụ AI phân tích dữ liệu và lập báo cáo.",
+      "targetRoles": [
+       "Business Analyst (AI-Augmented)",
+       "Data-driven Operations Executive"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "Business Intelligence dashboards (PowerBI + AI)",
+       "Automated reporting workflows"
+      ],
+      "transferableSkills": [
+       "Tư duy tổng quan doanh nghiệp",
+       "Tư duy logic",
+       "IELTS 7.0"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       28,
+       38,
+       50
+      ],
+      "rationale": "Phát huy tối đa thế mạnh sẵn có từ trường NEU và khả năng tự học nhanh trong thời gian ngắn nhất.",
+      "actionStepNow": "Đăng ký ngay một khóa học thực chiến về Business Analytics kết hợp AI và bắt đầu xây dựng 1 dự án portfolio cá nhân."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Workflow Automation Specialist",
+      "pathTitleVi": "Chuyên gia Tự động hóa Quy trình AI",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển hướng sang tư vấn và triển khai giải pháp tự động hóa công việc cho các doanh nghiệp vừa và nhỏ (SME) tại Hà Nội.",
+      "targetRoles": [
+       "AI Operations Specialist",
+       "Workflow Automation Consultant"
+      ],
+      "skillsToAcquire": [
+       "No-code/Low-code automation (Zapier, Make.com)",
+       "API Integration basics",
+       "Prompt Engineering for workflows"
+      ],
+      "transferableSkills": [
+       "Kỹ năng giao tiếp",
+       "Thuyết trình mạch lạc",
+       "Khả năng tự học"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       18,
+       25,
+       35,
+       48,
+       65
+      ],
+      "rationale": "Thị trường Việt Nam đang thiếu hụt trầm trọng nhân sự có khả năng cầu nối giữa nghiệp vụ kinh doanh và giải pháp tự động hóa kỹ thuật.",
+      "actionStepNow": "Thực hành xây dựng 3 automation workflows giả lập cho các phòng ban marketing và sales."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Product Manager in Tech",
+      "pathTitleVi": "Quản lý Sản phẩm AI trong Ngành Công nghệ",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Định hướng dài hạn gia nhập các công ty công nghệ/startup để quản lý vòng đời phát triển sản phẩm tích hợp AI.",
+      "targetRoles": [
+       "Associate AI Product Manager",
+       "Product Owner"
+      ],
+      "skillsToAcquire": [
+       "Product Lifecycle Management",
+       "Basic LLM capabilities & limitations understanding",
+       "Agile/Scrum methodologies"
+      ],
+      "transferableSkills": [
+       "Tư duy chiến lược",
+       "Giao tiếp đa chiều",
+       "IELTS 7.0 (làm việc với team global)"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       20,
+       30,
+       45,
+       65,
+       90
+      ],
+      "rationale": "Mang lại cơ hội thăng tiến cực nhanh và thu nhập đột phá nhưng đòi hỏi tích lũy kiến thức sản phẩm công nghệ sâu hơn.",
+      "actionStepNow": "Nghiên cứu các case study về AI Product trên thế giới và tham gia các cộng đồng Product Management tại Hà Nội."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tool Mastery",
+      "phaseNameVi": "Nền tảng & Làm chủ Công cụ AI",
+      "title": "Build Core AI-Augmented Business Skills",
+      "titleVi": "Xây dựng Kỹ năng Kinh doanh Tăng cường AI Cốt lõi",
+      "estimatedHours": 72,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Advanced Prompt Engineering",
+       "AI-assisted Data Analysis",
+       "Automated Content & Report Generation"
+      ],
+      "freeResources": [
+       {
+        "name": "Prompt Engineering for Developers",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/",
+        "type": "Online Course"
+       },
+       {
+        "name": "Generative AI Learning Path",
+        "provider": "Google Cloud Skills Boost",
+        "url": "https://www.cloudskillsboost.google/",
+        "type": "Certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng LLM để phân tích báo cáo tài chính doanh nghiệp, phương pháp tiếp cận 'human-in-the-loop' nào là tối ưu nhất?",
+       "options": [
+        "Để AI tự động đưa ra quyết định đầu tư cuối cùng mà không cần kiểm tra lại.",
+        "Sử dụng AI để tổng hợp, sơ bộ số liệu và phân tích xu hướng, sau đó con người thẩm định logic và ra quyết định chiến lược.",
+        "Chỉ dùng AI để dịch thuật ngữ tài chính sang tiếng Anh.",
+        "Tuyệt đối không dùng AI cho dữ liệu tài chính."
+       ],
+       "correctIndex": 1,
+       "explanation": "Phương pháp human-in-the-loop tận dụng tốc độ xử lý của AI nhưng giữ vững quyền kiểm soát và tư duy phản biện của con người đối với các quyết định quan trọng."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Workflow Automation & Portfolio Building",
+      "phaseNameVi": "Tự động hóa Quy trình & Xây dựng Hồ sơ năng lực",
+      "title": "Deploy No-code AI Workflows and Real Projects",
+      "titleVi": "Triển khai Luồng tự động hóa No-code & Dự án thực tế",
+      "estimatedHours": 90,
+      "weeksDuration": 5,
+      "skillsCovered": [
+       "Make.com / Zapier Automation",
+       "API integration with LLMs",
+       "Portfolio Case Study Creation"
+      ],
+      "freeResources": [
+       {
+        "name": "Make Academy",
+        "provider": "Make",
+        "url": "https://www.make.com/en/academy",
+        "type": "Interactive Training"
+       },
+       {
+        "name": "Zapier Automation Basics",
+        "provider": "Zapier",
+        "url": "https://zapier.com/learn",
+        "type": "Tutorials"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc tích hợp No-code Automation (như Make/Zapier) với LLM trong một doanh nghiệp SME tại Việt Nam là gì?",
+       "options": [
+        "Thay thế hoàn toàn 100% nhân sự văn phòng.",
+        "Loại bỏ hoàn toàn chi phí phần mềm.",
+        "Tự động hóa các tác vụ lặp đi lặp lại, giúp tiết kiệm thời gian và tối ưu hóa năng suất vận hành với chi phí thấp.",
+        "Giúp máy tính tự động lập trình mã nguồn phức tạp."
+       ],
+       "correctIndex": 2,
+       "explanation": "Tự động hóa no-code kết hợp LLM giúp giải phóng nhân sự khỏi các công việc thủ công lặp lại, tối ưu thời gian cho các hoạt động sáng tạo và chiến lược."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 8049,
+  "latencyMs": 9339
+ }
+}

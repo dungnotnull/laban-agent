@@ -1,0 +1,543 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 8377,
+  "latencyMs": 11213,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0025131
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Clean Agriculture Operations Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành Nông nghiệp Sạch",
+    "aiResilienceScore": 88,
+    "matchScore": 82,
+    "reasoning": "As highlighted by the World Bank (2024), agricultural transitions and TVET reforms create new opportunities for regional workers who adapt to sustainable methods. While routine roles face automation pressures, physical supervision and localized domain expertise in clean farming remain highly defensible against AI.",
+    "whyItFitsYou": "Your 20 years of hands-on farming experience in An Giang and deep knowledge of water and seasonal management provide an ideal baseline. Transitioning to clean agriculture builds directly on your strengths in enduring harsh conditions and hard work, while addressing your interest in sustainable crops.",
+    "transferableSkillsMatch": [
+     "Seasonal crop cultivation",
+     "Field water management",
+     "Local weather and soil assessment",
+     "Hard work and resilience under tough conditions"
+    ],
+    "skillsGap": [
+     "Digital literacy basics",
+     "Basic English for reading agricultural guides",
+     "Clean farming standards (VietGAP/GlobalGAP basics)"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling. Up to 30% of routine cognitive jobs in the region face automation pressure."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Food Science Technician",
+     "occupationTitleVi": "Kỹ thuật viên Nông nghiệp và Thực phẩm",
+     "molisaCode": "6112",
+     "onetCode": "19-4011.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 65,
+     "humanAdvantageCore": [
+      "Physical field management",
+      "Tactile judgment of crop health",
+      "Local geographic adaptation"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Supervising organic fertilizer application",
+       "taskNameVi": "Giám sát bón phân hữu cơ",
+       "exposureType": "low",
+       "exposurePercentage": 15,
+       "onetCode": "19-4011.01",
+       "notes": "Relies heavily on your 20 years of field observation."
+      },
+      {
+       "taskName": "Monitoring water levels using basic digital tools",
+       "taskNameVi": "Theo dõi mực nước bằng công cụ số cơ bản",
+       "exposureType": "medium",
+       "exposurePercentage": 35,
+       "onetCode": "19-4011.02",
+       "notes": "Blending traditional water management with simple apps."
+      },
+      {
+       "taskName": "Managing crop quality and harvest timing",
+       "taskNameVi": "Quản lý chất lượng cây trồng và thời điểm thu hoạch",
+       "exposureType": "low",
+       "exposurePercentage": 20,
+       "onetCode": "19-4011.03",
+       "notes": "Human expertise required for tactile assessment."
+      }
+     ],
+     "sources": [
+      "World Bank, 2024"
+     ],
+     "methodologySummary": "Evaluated based on physical interaction requirements, spatial variability in Mekong Delta farming, and digital augmentation potential.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Smart Rice Farming Enhancement",
+      "pathTitleVi": "Nâng cấp Canh tác Lúa Thông minh",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Adopt precision techniques and digital record-keeping while maintaining core rice farming practices.",
+      "targetRoles": [
+       "Advanced Rice Farmer",
+       "Cooperative Field Supervisor"
+      ],
+      "skillsToAcquire": [
+       "Basic digital literacy",
+       "Water-saving irrigation techniques"
+      ],
+      "transferableSkills": [
+       "Seasonal crop cultivation",
+       "Field water management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       6000000,
+       7000000,
+       8500000,
+       10000000,
+       12000000
+      ],
+      "rationale": "Leverages your 20 years of experience with minimal financial risk and low time requirements.",
+      "actionStepNow": "Start with free digital literacy training for 4 hours per week."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Clean Agricultural Producer",
+      "pathTitleVi": "Nhà sản xuất Nông nghiệp Sạch",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Shift part of your land or operations toward certified clean rice or alternative organic produce.",
+      "targetRoles": [
+       "Clean Agriculture Producer",
+       "Cooperative Quality Inspector"
+      ],
+      "skillsToAcquire": [
+       "VietGAP standards basics",
+       "Organic pest management"
+      ],
+      "transferableSkills": [
+       "Farming operations",
+       "Local supplier coordination"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7000000,
+       8500000,
+       10500000,
+       13000000,
+       16000000
+      ],
+      "rationale": "Directly matches your interest in clean agriculture and reduces reliance on traditional intermediaries.",
+      "actionStepNow": "Learn about organic input methods through local agricultural extension services."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agricultural Business & Direct Sales Coordinator",
+      "pathTitleVi": "Điều phối Kinh doanh Nông sản và Bán hàng Trực tiếp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Transition toward managing a small agricultural business utilizing digital sales channels.",
+      "targetRoles": [
+       "Agricultural Produce Trader",
+       "Local Cooperative Business Lead"
+      ],
+      "skillsToAcquire": [
+       "E-commerce basics for agriculture",
+       "Basic English for tourism or export coordination",
+       "Financial bookkeeping"
+      ],
+      "transferableSkills": [
+       "Network of local farmers",
+       "Market awareness"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       5000000,
+       7000000,
+       10000000,
+       15000000,
+       20000000
+      ],
+      "rationale": "Higher return potential but requires overcoming digital illiteracy and language constraints.",
+      "actionStepNow": "Build fundamental computer skills before touching digital sales platforms."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng số",
+      "title": "Build Basic Computer and Language Skills",
+      "titleVi": "Xây dựng Kỹ năng Máy tính và Ngoại ngữ Cơ bản",
+      "estimatedHours": 64,
+      "weeksDuration": 16,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer navigation",
+       "Internet usage",
+       "Vocabulary introduction"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary way to access online agricultural learning materials?",
+       "options": [
+        "Using a web browser connected to the internet",
+        "Buying a new tractor",
+        "Turning off the electricity",
+        "Waiting for a paper mail"
+       ],
+       "correctIndex": 0,
+       "explanation": "A web browser connected to the internet allows you to access free educational resources like GCFLearnFree."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Agricultural Skill Extension",
+      "phaseNameVi": "Mở rộng Kỹ năng Nông nghiệp",
+      "title": "Learn Clean Farming Principles",
+      "titleVi": "Học Nguyên tắc Canh tác Sạch",
+      "estimatedHours": 32,
+      "weeksDuration": 8,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Sustainable farming techniques",
+       "Reducing chemical inputs"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following supports sustainable clean farming?",
+       "options": [
+        "Overusing chemical pesticides indiscriminately",
+        "Optimizing water usage and organic matter",
+        "Burning all crop residues immediately",
+        "Ignoring soil health testing"
+       ],
+       "correctIndex": 1,
+       "explanation": "Optimizing water and using organic matter protects soil health and aligns with clean farming standards."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific background in rice farming, local An Giang experience, water management skills, and resilience to harsh conditions."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 3,
+    "grounded": 3,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869565060_ezfavo",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:32:45.060Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:32:45.060Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:45.060Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:32:46.117Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 496,
+     "latencyMs": 1057
+    },
+    {
+     "ts": "2026-10-13T05:32:46.117Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "agricultural worker",
+       "crop grower",
+       "farm manager"
+      ],
+      "riskFlags": [
+       "digital illiteracy",
+       "limited budget for retraining",
+       "high market dependency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:46.117Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:32:47.245Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 710,
+     "latencyMs": 1128,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:32:47.245Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "crop grower"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "farm manager"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam agriculture automation generative AI digital transformation farmers"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "agriculture farming digital skills vietnam free low cost"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:47.246Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:48.443Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1720,
+     "latencyMs": 1197,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:32:48.443Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:48.443Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:32:55.324Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4805,
+     "latencyMs": 6881
+    },
+    {
+     "ts": "2026-10-13T05:32:55.325Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:56.273Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 423,
+     "latencyMs": 948
+    },
+    {
+     "ts": "2026-10-13T05:32:56.273Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific background in rice farming, local An Giang experience, water management skills, and resilience to harsh conditions."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:32:56.273Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 8154,
+   "latencyMs": 11213,
+   "degraded": false
+  }
+ }
+}

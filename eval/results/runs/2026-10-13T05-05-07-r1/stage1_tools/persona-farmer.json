@@ -1,0 +1,490 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 7509,
+  "latencyMs": 9692,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0022527
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Clean Agriculture Producer and Local Market Supplier",
+    "roleTitleVi": "Nhà sản xuất nông nghiệp sạch và cung ứng nông sản địa phương",
+    "aiResilienceScore": 92,
+    "matchScore": 88,
+    "reasoning": "As digital transformation reshapes traditional supply chains, localized expertise in sustainable farming combined with direct market engagement offers high resilience against AI automation. According to World Bank (2024), agricultural adaptation requires leveraging local knowledge and digital extension tools, shielding physical agronomy roles from direct software replacement.",
+    "whyItFitsYou": "With 20 years of hands-on rice farming and deep local knowledge in An Giang, you already master water management and crop cultivation. This path builds directly on your strengths of hard work and resilience, helping you transition into clean agriculture and direct local produce business without needing heavy technology or English skills.",
+    "transferableSkillsMatch": [
+     "Deep local farming experience",
+     "Field water management",
+     "Hard work and harsh condition endurance"
+    ],
+    "skillsGap": [
+     "Clean agriculture standards",
+     "Direct market negotiation",
+     "Basic digital record keeping"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Clean Agriculture Producer",
+     "occupationTitleVi": "Người sản xuất nông nghiệp sạch",
+     "molisaCode": "6112",
+     "onetCode": "11-9013.00",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 8,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Physical farm management",
+      "Direct interpersonal negotiation",
+      "Local environmental adaptation"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Managing seasonal rice and clean crop water flow",
+       "taskNameVi": "Quản lý dòng nước ruộng lúa và hoa màu sạch theo mùa",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "11-9013.01",
+       "notes": "Leverages 20 years of hands-on farming experience in An Giang."
+      },
+      {
+       "taskName": "Negotiating direct sales with local clean produce buyers",
+       "taskNameVi": "Đàm phán bán hàng trực tiếp với người thu mua nông sản sạch địa phương",
+       "exposureType": "low",
+       "exposurePercentage": 15,
+       "onetCode": "11-9013.02",
+       "notes": "Reduces reliance on traditional middlemen through personal trust."
+      },
+      {
+       "taskName": "Applying organic soil and water conservation methods",
+       "taskNameVi": "Áp dụng phương pháp bảo tồn đất và nước hữu cơ",
+       "exposureType": "low",
+       "exposurePercentage": 12,
+       "onetCode": "11-9013.03",
+       "notes": "Aligns with clean agriculture interests and low budget constraints."
+      }
+     ],
+     "sources": [
+      "World Bank (2024)"
+     ],
+     "methodologySummary": "Evaluated based on physical task execution requirements, localized market dynamics, and low exposure to digital automation.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Traditional Farming Augmented with Clean Practices",
+      "pathTitleVi": "Canh tác truyền thống kết hợp phương pháp sạch",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Gradually integrate clean agricultural techniques into your existing rice farming to improve yield quality and reduce chemical costs.",
+      "targetRoles": [
+       "Advanced Rice Farmer"
+      ],
+      "skillsToAcquire": [
+       "Organic fertilizer usage",
+       "Water conservation"
+      ],
+      "transferableSkills": [
+       "Seasonal crop management",
+       "Field endurance"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       6,
+       7,
+       8,
+       9,
+       10
+      ],
+      "rationale": "Keeps risk minimal by utilizing existing land and 20 years of farming experience.",
+      "actionStepNow": "Learn one new organic fertilizer method for the upcoming crop season."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Direct-to-Consumer Clean Produce Supplier",
+      "pathTitleVi": "Cung cấp nông sản sạch trực tiếp cho người tiêu dùng",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition part of your harvest toward clean produce and sell directly to local markets or consumer groups to bypass intermediaries.",
+      "targetRoles": [
+       "Local Clean Produce Vendor"
+      ],
+      "skillsToAcquire": [
+       "Direct sales negotiation",
+       "Produce grading"
+      ],
+      "transferableSkills": [
+       "Crop harvesting",
+       "Local market awareness"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       9,
+       11,
+       13,
+       15
+      ],
+      "rationale": "Reduces dependency on commercial middlemen and increases profit margins.",
+      "actionStepNow": "Identify three potential local buyers interested in clean rice or vegetables."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Cooperative Agricultural Specialist",
+      "pathTitleVi": "Chuyên gia hợp tác xã nông nghiệp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Join and take an active advisory role in a local An Giang agricultural cooperative focusing on sustainable farming.",
+      "targetRoles": [
+       "Cooperative Field Advisor"
+      ],
+      "skillsToAcquire": [
+       "Cooperative management",
+       "Basic group communication"
+      ],
+      "transferableSkills": [
+       "Decades of farming experience"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       10,
+       12,
+       14
+      ],
+      "rationale": "Requires community networking and coordination beyond individual farming.",
+      "actionStepNow": "Visit your local agricultural commune office to learn about cooperative programs."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation Phase",
+      "phaseNameVi": "Giai đoạn nền tảng",
+      "title": "Learn Clean Farming Basics",
+      "titleVi": "Học kiến thức cơ bản về nông nghiệp sạch",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Organic farming fundamentals",
+       "Reduced chemical usage"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a key benefit of reducing chemical fertilizers in clean agriculture?",
+       "options": [
+        "Higher long-term soil health and lower input costs",
+        "Instant crop growth within one day",
+        "Eliminating the need for water",
+        "Needing advanced computer software"
+       ],
+       "correctIndex": 0,
+       "explanation": "Reducing chemical fertilizers improves soil health over time and lowers overall farming expenses."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Application Phase",
+      "phaseNameVi": "Giai đoạn ứng dụng",
+      "title": "Local Market and Direct Sales Practice",
+      "titleVi": "Thực hành thị trường địa phương và bán hàng trực tiếp",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Produce grading",
+       "Direct buyer communication"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is selling directly to local consumers beneficial for a farmer?",
+       "options": [
+        "It reduces dependence on commercial middlemen and increases profit",
+        "It requires expensive AI software",
+        "It eliminates all physical labor",
+        "It requires fluent English"
+       ],
+       "correctIndex": 0,
+       "explanation": "Direct selling helps bypass intermediaries, allowing farmers to retain a larger share of earnings."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$269 - $577 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791868279566_hemuj7",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:11:19.566Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:11:19.566Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:19.566Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:11:20.890Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 493,
+     "latencyMs": 1324
+    },
+    {
+     "ts": "2026-10-13T05:11:20.890Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "rice farmer",
+       "agricultural worker",
+       "produce vendor"
+      ],
+      "riskFlags": [
+       "digital illiteracy",
+       "limited budget for retraining",
+       "low risk tolerance"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:20.890Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:11:21.921Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 704,
+     "latencyMs": 1031,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:11:21.921Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "rice farmer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "produce vendor"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam agriculture digital transformation automation farmer impact"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "clean agriculture farming training Vietnam free"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:21.922Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "5 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:22.830Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1614,
+     "latencyMs": 907,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:11:22.830Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:22.830Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:11:29.258Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4481,
+     "latencyMs": 6428
+    },
+    {
+     "ts": "2026-10-13T05:11:29.258Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:29.258Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 7292,
+   "latencyMs": 9692,
+   "degraded": false
+  }
+ }
+}

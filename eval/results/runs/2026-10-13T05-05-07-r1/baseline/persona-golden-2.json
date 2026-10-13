@@ -1,0 +1,278 @@
+{
+ "score": {
+  "personaId": "persona-golden-2",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8218,
+  "latencyMs": 10695,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024654
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Quality Assurance & LLM Evaluation Engineer",
+    "roleTitleVi": "Kỹ sư Đảm bảo Chất lượng AI & Đánh giá LLM",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Dựa trên dữ liệu từ Stanford HAI (2024) và McKinsey (2023), trong khi kiểm thử thủ công truyền thống (manual regression QA) đang bị thu hẹp do tự động hóa và AI (TopCV & GSO, 2024), các kỹ năng phân tích hệ thống, tìm lỗi edge-case sâu và kiểm tra độ tin cậy của mô hình AI lại có mức độ bổ trợ (augmentation) cực cao. Kinh nghiệm 3 năm QA kết hợp Python và tư duy cẩn trọng giúp chuyển dịch trực tiếp sang việc kiểm định hành vi, phát hiện lỗi ảo giác (hallucination) và đánh giá chuẩn xác các hệ thống LLM.",
+    "whyItFitsYou": "Hồ sơ của bạn sở hữu tư duy tìm edge-case sâu, tính cẩn trọng cao và hiểu quy trình Agile/Scrum - những điểm yếu cốt lõi của các mô hình AI hiện tại vốn thiếu khả năng suy luận logic ngặt nghèo. Dù bạn chưa tự tin viết code automation từ đầu hoặc chưa benchmark LLM, ngân sách học tập thấp (3 triệu VND) và quỹ thời gian 15 giờ/tuần hoàn toàn đủ để học các thư viện kiểm thử AI mã nguồn mở và kỹ thuật prompt testing.",
+    "transferableSkillsMatch": [
+     "Tư duy tìm edge-case sâu",
+     "Hiểu quy trình phần mềm (Agile/Scrum)",
+     "Kỹ năng viết tài liệu lỗi rõ ràng",
+     "Giao tiếp hiệu quả với Developers"
+    ],
+    "skillsGap": [
+     "Kỹ năng lập trình Python nâng cao cho Automation Testing",
+     "Phương pháp benchmark và đánh giá LLM (LLM Evaluation Frameworks)",
+     "Kỹ thuật kiểm thử bảo mật cơ bản cho AI (AI Security & Prompt Injection Testing)"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI labor demand has expanded across technical validation and human-in-the-loop augmentation roles, increasing worker performance and quality by up to 40%."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": "2024",
+      "url": "https://www.topcv.vn/",
+      "quoteOrDataPoint": "65% of manual testers saw hiring volumes contract, while specialized roles in AI operations and validation increased by 28-35% in salary."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Software Quality Assurance and Testing Professionals",
+     "occupationTitleVi": "Chuyên gia Đảm bảo Chất lượng và Kiểm thử Phần mềm",
+     "molisaCode": "2512",
+     "onetCode": "15-1253.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 32,
+     "augmentationPotentialScore": 95,
+     "humanAdvantageCore": [
+      "Xác định các kịch bản edge-case phức tạp ngoài tập dữ liệu huấn luyện",
+      "Đánh giá tính an toàn, đạo đức và độ tin cậy của phản hồi từ AI",
+      "Tương tác và thương lượng chiến lược sửa lỗi cùng đội ngũ phát triển"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Designing complex test scenarios and edge-case validations for software systems",
+       "taskNameVi": "Thiết kế các kịch bản kiểm thử phức tạp và xác thực edge-case cho hệ thống phần mềm",
+       "exposureType": "complement",
+       "exposurePercentage": 40,
+       "onetCode": "15-1253.00",
+       "notes": "Sử dụng tư duy logic bẩm sinh để định hình các trường hợp biên mà AI thường bỏ sót."
+      },
+      {
+       "taskName": "LLM output evaluation and hallucination auditing",
+       "taskNameVi": "Đánh giá đầu ra của LLM và kiểm toán lỗi ảo giác",
+       "exposureType": "augment",
+       "exposurePercentage": 65,
+       "onetCode": "15-1253.00",
+       "notes": "Tận dụng kỹ năng tìm lỗi chi tiết để xây dựng bộ benchmark đánh giá độ chính xác của mô hình ngôn ngữ."
+      },
+      {
+       "taskName": "Automated regression script maintenance and execution",
+       "taskNameVi": "Bảo trì và thực thi các kịch bản kiểm thử hồi quy tự động",
+       "exposureType": "automate",
+       "exposurePercentage": 75,
+       "onetCode": "15-1253.00",
+       "notes": "AI hỗ trợ viết mã kịch bản nhanh chóng, con người chịu trách nhiệm kiểm tra logic và tối ưu hóa."
+      }
+     ],
+     "sources": [
+      "Stanford HAI 2024",
+      "TopCV & GSO 2024",
+      "O*NET 28.3"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa O*NET kết hợp với chỉ số chuyển đổi lao động công nghệ tại Việt Nam.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented QA Specialist",
+      "pathTitleVi": "Chuyên gia QA tích hợp AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 4,
+      "shortDescription": "Nâng cấp kỹ năng kiểm thử thủ công hiện tại bằng cách tích hợp các công cụ AI và viết kịch bản automation cơ bản với Python.",
+      "targetRoles": [
+       "Senior QA Engineer",
+       "Automation QA Engineer"
+      ],
+      "skillsToAcquire": [
+       "Python cho Automation (PyTest, Selenium/Playwright cơ bản)",
+       "Sử dụng GitHub Copilot / ChatGPT trong việc viết test script",
+       "API Testing với Postman & AI Assistant"
+      ],
+      "transferableSkills": [
+       "Tư duy tìm edge-case",
+       "Quy trình Agile/Scrum",
+       "Viết tài liệu lỗi"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       28,
+       35,
+       42
+      ],
+      "rationale": "Giữ vững nền tảng hiện tại, giảm thiểu rủi ro thất nghiệp do tự động hóa bằng cách chuyển từ QA thủ công thuần túy sang QA thông minh có hỗ trợ công cụ.",
+      "actionStepNow": "Dành 5 giờ mỗi tuần học cú pháp Python cơ bản và cách sử dụng GitHub Copilot để tạo kịch bản kiểm thử tự động."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Model Evaluation & Prompt Quality Engineer",
+      "pathTitleVi": "Kỹ sư Đánh giá Mô hình AI & Chất lượng Prompt",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch sang mảng kiểm định chất lượng các hệ thống trí tuệ nhân tạo và LLM cho các công ty công nghệ quốc tế remote tại Đà Nẵng.",
+      "targetRoles": [
+       "AI Model Evaluator",
+       "LLM Tester / Prompt QA Specialist"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering nâng cao",
+       "Khái niệm cơ bản về LLM Evaluation (Ragas, DeepEval)",
+       "Kỹ thuật kiểm thử bảo mật AI (Prompt Injection Testing)"
+      ],
+      "transferableSkills": [
+       "Tư duy phân tích lỗi hệ thống",
+       "Giao tiếp kỹ thuật",
+       "Cẩn trọng và kiên nhẫn"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       26,
+       34,
+       44,
+       55
+      ],
+      "rationale": "Tận dụng sự bùng nổ của các startup AI toàn cầu đang tìm kiếm nhân sự có khả năng đánh giá và tinh chỉnh độ tin cậy của mô hình với mức lương quốc tế remote.",
+      "actionStepNow": "Đăng ký một khóa học trực tuyến miễn phí về LLM Evaluation trên Hugging Face hoặc DeepLearning.AI."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Cybersecurity Vulnerability Analyst",
+      "pathTitleVi": "Chuyên gia Phân tích Lỗ hổng Bảo mật",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển hẳn sang lĩnh vực an toàn thông tin, tận dụng sở thích tìm lỗi hệ thống và tính cẩn trọng để thực hiện kiểm thử bảo mật (Pentesting/Security QA).",
+      "targetRoles": [
+       "Junior Security Analyst",
+       "Application Security Tester"
+      ],
+      "skillsToAcquire": [
+       "Mạng máy tính và giao thức HTTP/HTTPS",
+       "Kiểm thử bảo mật ứng dụng web (OWASP Top 10)",
+       "Công cụ quét lỗ hổng (Burp Suite cơ bản)"
+      ],
+      "transferableSkills": [
+       "Tư duy tìm lỗi (Bug hunting mindset)",
+       "Kiên nhẫn",
+       "Quy trình phát triển phần mềm"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       32,
+       45,
+       60
+      ],
+      "rationale": "Mặc dù mức độ rủi ro chuyển đổi cao hơn và đòi hỏi vượt qua rào cản tiếng Anh kỹ thuật, đây là ngách có độ ổn định cực cao và nhu cầu nhân lực bảo mật không bao giờ giảm.",
+      "actionStepNow": "Tìm hiểu tài liệu cơ bản về OWASP Top 10 và thực hành các bài lab miễn phí trên PortSwigger Web Security Academy."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI-Assisted QA Upgrade",
+      "phaseNameVi": "Nền tảng & Nâng cấp QA hỗ trợ bởi AI",
+      "title": "Master Python Basics & AI Coding Copilots",
+      "titleVi": "Làm chủ Python cơ bản & Trợ lý lập trình AI",
+      "estimatedHours": 60,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Python syntax & basic automation",
+       "GitHub Copilot / ChatGPT prompt workflow for QA",
+       "PyTest framework intro"
+      ],
+      "freeResources": [
+       {
+        "name": "Python for Everybody",
+        "provider": "FreeCodeCamp",
+        "url": "https://www.freecodecamp.org/",
+        "type": "Interactive Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng GitHub Copilot để viết một hàm kiểm thử tự động, bước quan trọng nhất của con người là gì?",
+       "options": [
+        "Để AI tự động chạy và cam kết mã nguồn lên hệ thống mà không cần kiểm tra",
+        "Xác thực logic kiểm thử, kiểm tra edge-case và đảm bảo mã nguồn không có lỗi tiềm ẩn",
+        "Xóa toàn bộ mã nguồn cũ và chỉ dùng mã do AI tạo ra",
+        "Không cần quan tâm đến cú pháp Python"
+       ],
+       "correctIndex": 1,
+       "explanation": "Con người luôn đóng vai trò 'Human-in-the-loop' cốt lõi để thẩm định tính chính xác và an toàn của mã do AI sinh ra."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization in LLM Evaluation & Testing",
+      "phaseNameVi": "Chuyên sâu Đánh giá & Kiểm thử LLM",
+      "title": "LLM Evaluation Frameworks & Edge-Case Prompt Testing",
+      "titleVi": "Khung đánh giá LLM & Kiểm thử Prompt trường hợp biên",
+      "estimatedHours": 90,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "LLM Evaluation concepts",
+       "Testing for hallucinations and bias",
+       "API integration testing"
+      ],
+      "freeResources": [
+       {
+        "name": "LLM Engineering & Evaluation Short Courses",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Thách thức lớn nhất khi kiểm thử (testing) một hệ thống dựa trên Large Language Model (LLM) so với phần mềm truyền thống là gì?",
+       "options": [
+        "LLM luôn trả về kết quả giống hệt nhau cho cùng một đầu vào",
+        "Đầu ra của LLM mang tính xác suất (probabilistic) và có thể xuất hiện hiện tượng ảo giác (hallucination)",
+        "Không thể gọi API để kiểm thử tự động",
+        "Chi phí phần cứng quá cao để chạy kiểm thử"
+       ],
+       "correctIndex": 1,
+       "explanation": "Khác với phần mềm truyền thống có tính tất định (deterministic), LLM phản hồi theo xác suất nên đòi hỏi phương pháp đánh giá định lượng chuyên biệt."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7967,
+  "latencyMs": 10695
+ }
+}

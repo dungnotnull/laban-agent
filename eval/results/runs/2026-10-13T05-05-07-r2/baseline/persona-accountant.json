@@ -1,0 +1,277 @@
+{
+ "score": {
+  "personaId": "persona-accountant",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8012,
+  "latencyMs": 9649,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024036
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Financial Data Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu Tài chính",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "Theo World Economic Forum (2023) và Stanford HAI (2024), các kỹ năng phân tích dữ liệu và tư duy chiến lược được dự báo tăng trưởng mạnh mẽ trong khi các tác vụ kế toán thủ công đối mặt với rủi ro tự động hóa cao. Việc kết hợp nền tảng kế toán với phân tích dữ liệu giúp chuyển đổi từ 'làm báo cáo quá khứ' sang 'dự báo tương lai'.",
+    "whyItFitsYou": "Với 6 năm kinh nghiệm Kế toán tổng hợp từ Đại học Kinh tế Quốc dân, bạn đã có sẵn 'Tư duy tuân thủ quy định' và 'Kiểm soát chứng từ' cực kỳ chắc chắn. Điểm yếu chưa biết dùng công cụ phân tích dữ liệu và trình bày số liệu sẽ được khắc phục bằng lộ trình học tập tập trung vào Power BI và Data Storytelling, tận dụng tối đa thế mạnh cẩn thận, chi tiết của bạn.",
+    "transferableSkillsMatch": [
+     "Kiểm soát chứng từ và số liệu tài chính",
+     "Nắm vững quy trình kế toán và thuế",
+     "Tư duy tuân thủ quy định",
+     "Excel nâng cao"
+    ],
+    "skillsGap": [
+     "Công cụ trực quan hóa dữ liệu (Power BI / Tableau)",
+     "Kỹ năng trình bày số liệu và Data Storytelling",
+     "Kỹ năng viết Prompt cơ bản cho phân tích tài chính AI"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Business Intelligence Analysts and AI/ML Specialists rank among top growth roles globally, while standard bookkeeping and data entry face structural decline."
+     },
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Workers adopting generative AI tools outperform non-users by 35-50% in cycle time and quality for standard analytical tasks."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Financial Analysts",
+     "occupationTitleVi": "Chuyên viên phân tích tài chính",
+     "molisaCode": "2413",
+     "onetCode": "13-2051.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 28,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "Giải thích bối cảnh kinh doanh thực tế",
+      "Đàm phán và tư vấn chiến lược tài chính với ban lãnh đạo",
+      "Đạo đức nghề nghiệp và kiểm định tính hợp pháp của dòng tiền"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Financial Variance Analysis & Reporting",
+       "taskNameVi": "Phân tích biến động chi phí và lập báo cáo quản trị dựa trên MISA data",
+       "exposureType": "Augmented",
+       "exposurePercentage": 65,
+       "onetCode": "13-2051.00",
+       "notes": "Sử dụng AI để tổng hợp dữ liệu thô từ MISA, con người tập trung đánh giá nguyên nhân cốt lõi và đề xuất giải pháp."
+      },
+      {
+       "taskName": "Tax Compliance & Regulatory Review",
+       "taskNameVi": "Kiểm soát rủi ro thuế và tuân thủ quy định pháp luật",
+       "exposureType": "Complementary",
+       "exposurePercentage": 25,
+       "onetCode": "13-2051.00",
+       "notes": "Tư duy tuân thủ quy định là lá chắn vững chắc trước các thay đổi luật pháp mà AI chưa thể tự quyết định hoàn toàn."
+      },
+      {
+       "taskName": "Executive Data Storytelling",
+       "taskNameVi": "Trình bày trực quan số liệu tài chính cho Ban Giám đốc",
+       "exposureType": "Human-Centric",
+       "exposurePercentage": 15,
+       "onetCode": "13-2051.00",
+       "notes": "Chuyển hóa bảng số liệu khô khan thành biểu đồ tương tác kèm lời khuyên chiến lược kinh doanh."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs 2023",
+      "Stanford HAI 2024"
+     ],
+     "methodologySummary": "Đánh giá mức độ phơi nhiễm tác vụ dựa trên khung O*NET kết hợp dữ liệu tuyển dụng thực tế tại Hà Nội từ TopCV/Navigos 2024.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay and Augment Your Accounting Career",
+      "pathTitleVi": "Nâng cấp Kế toán Tổng hợp với Công cụ AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng kinh nghiệm 6 năm sẵn có, tích hợp các công cụ AI vào quy trình hạch toán, báo cáo thuế và đối soát chứng từ để tăng tốc độ gấp đôi.",
+      "targetRoles": [
+       "Kế toán tổng hợp cao cấp ứng dụng AI",
+       "Trưởng nhóm kế toán"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering cho kế toán và kiểm toán",
+       "Tự động hóa Excel nâng cao với Power Query / Macros",
+       "Ứng dụng ChatGPT/Claude để soát lỗi chứng từ"
+      ],
+      "transferableSkills": [
+       "MISA",
+       "Kiểm soát chứng từ",
+       "Thủ thuật thuế",
+       "Excel nâng cao"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       25,
+       28
+      ],
+      "rationale": "Phù hợp với mức độ chịu rủi ro thấp và ưu tiên sự ổn định (4/5), giảm thiểu tối đa thời gian chuyển đổi nghề nghiệp.",
+      "actionStepNow": "Bắt đầu thực hành sử dụng ChatGPT/Claude để tạo công thức Excel phức tạp và tự động hóa việc viết email giải trình thuế."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to Financial & Business Intelligence Analysis",
+      "pathTitleVi": "Chuyển hướng sang Phân tích Tài chính & Dữ liệu Doanh nghiệp",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển từ ghi nhận quá khứ sang phân tích định lượng và trực quan hóa dữ liệu kinh doanh, đáp ứng nhu cầu tăng trưởng mạnh tại các doanh nghiệp tại Hà Nội.",
+      "targetRoles": [
+       "Financial Analyst",
+       "Business Intelligence Analyst"
+      ],
+      "skillsToAcquire": [
+       "Power BI / Tableau",
+       "SQL cơ bản cho tài chính",
+       "Data Storytelling & Kỹ năng thuyết trình số liệu"
+      ],
+      "transferableSkills": [
+       "Tư duy tài chính",
+       "Đọc hiểu báo cáo kết quả kinh doanh",
+       "Sự cẩn thận và chi tiết"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       26,
+       32,
+       40
+      ],
+      "rationale": "Khớp với sở thích Phân tích tài chính và Công nghệ số, đem lại mức lương tiềm năng cao hơn và độ bền vững trước tự động hóa tốt hơn.",
+      "actionStepNow": "Đăng ký khóa học trực tuyến miễn phí về Power BI và thực hành tạo dashboard quản trị tài chính cá nhân."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Transition to Data Engineering / AI Operations",
+      "pathTitleVi": "Chuyển đổi hoàn toàn sang Vận hành Dữ liệu & AI Doanh nghiệp",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Học lập trình Python, quản trị cơ sở dữ liệu lớn và thiết kế luồng dữ liệu tự động cho các tập đoàn công nghệ hoặc tài chính lớn.",
+      "targetRoles": [
+       "Data Engineer",
+       "AI Operations Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Python cho phân tích dữ liệu",
+       "Quản trị CSDL SQL Server / PostgreSQL",
+       "Quy trình MLOps cơ bản"
+      ],
+      "transferableSkills": [
+       "Tư duy logic",
+       "Tuân thủ quy trình"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       14,
+       18,
+       25,
+       35,
+       50
+      ],
+      "rationale": "Vượt quá quỹ thời gian 10 giờ/tuần và mức ngân sách đề ra (4 triệu VND), rủi ro chuyển đổi quá lớn đối với hồ sơ hiện tại.",
+      "actionStepNow": "Không khuyến nghị thực hiện ngay bây giờ do vượt ngưỡng chịu rủi ro."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Augmentation",
+      "phaseNameVi": "Nền tảng & Tăng tốc với AI",
+      "title": "Mastering AI Tools for Accounting Efficiency",
+      "titleVi": "Làm chủ Công cụ AI & Tối ưu hóa Công việc Kế toán Hiện tại",
+      "estimatedHours": 40,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Prompt Engineering cho Kế toán - Thuế",
+       "Power Query trong Excel",
+       "Tự động hóa quy trình nhập liệu cơ bản"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn: Copilot & Excel Automation",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng LLM (như ChatGPT) để hỗ trợ phân tích bảng cân đối phát sinh, việc quan trọng nhất cần lưu ý để đảm bảo tuân thủ bảo mật dữ liệu doanh nghiệp là gì?",
+       "options": [
+        "Tải toàn bộ file Excel chứa tên khách hàng và mã số thuế cá nhân lên khung chat công khai.",
+        "Ẩn danh hóa (anonymize) hoặc làm mờ các thông tin nhạy cảm định danh trước khi đưa vào prompt.",
+        "Chỉ dùng AI vào ban đêm để không bị lộ dữ liệu.",
+        "Không cần lưu ý gì vì AI có tính bảo mật tuyệt đối."
+       ],
+       "correctIndex": 1,
+       "explanation": "Luôn phải ẩn danh hóa dữ liệu nhạy cảm trước khi đưa vào các công cụ AI công cộng để tuân thủ quy định bảo mật thông tin tài chính."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Visualization & Presentation",
+      "phaseNameVi": "Trực quan hóa Dữ liệu & Kỹ năng Trình bày Số liệu",
+      "title": "Building Financial Dashboards & Data Storytelling",
+      "titleVi": "Xây dựng Dashboard Tài chính & Kỹ năng Thuyết trình Số liệu",
+      "estimatedHours": 60,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "Power BI Desktop cơ bản",
+       "Data Storytelling cho nhà quản lý",
+       "Thiết kế biểu đồ tài chính trực quan"
+      ],
+      "freeResources": [
+       {
+        "name": "Power BI Beginner to Pro",
+        "provider": "Maven Analytics / YouTube",
+        "url": "https://www.mavenanalytics.io/",
+        "type": "Free Course & Practice"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Nguyên tắc cốt lõi khi thiết kế một Dashboard tài chính cho Ban Giám đốc là gì?",
+       "options": [
+        "Sử dụng càng nhiều màu sắc sặc sỡ càng tốt.",
+        "Đưa tất cả 100 chỉ số tài chính lên một trang duy nhất.",
+        "Tập trung vào các chỉ số trọng yếu (KPIs), trực quan hóa rõ ràng xu hướng và làm nổi bật điểm bất thường.",
+        "Chỉ dùng bảng số liệu thô không kèm biểu đồ."
+       ],
+       "correctIndex": 2,
+       "explanation": "Ban Giám đốc cần nắm bắt nhanh chóng xu hướng và điểm bất thường qua các KPI cốt lõi, tránh bị ngợp bởi quá nhiều thông tin chi tiết không cần thiết."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7773,
+  "latencyMs": 9649
+ }
+}

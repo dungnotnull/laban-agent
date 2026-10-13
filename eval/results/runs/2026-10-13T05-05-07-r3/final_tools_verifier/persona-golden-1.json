@@ -1,0 +1,595 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 20,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 21537,
+  "latencyMs": 23216,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.006461099999999999
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Visual Designer & Educator",
+    "roleTitleVi": "Chuyên viên Thiết kế Đồ họa & Giảng dạy tích hợp AI",
+    "aiResilienceScore": 82,
+    "matchScore": 92,
+    "reasoning": "By combining your design expertise with instructional design, you move into a high-resilience role. The evidence suggests that while pure production design is highly automatable, the role of an educator who mentors others on how to use AI tools is in high demand and less susceptible to replacement.",
+    "whyItFitsYou": "This path leverages your 'thấu cảm thương hiệu' (brand empathy) and 'sáng tạo' (creativity) while shifting the focus from manual execution to strategic guidance and mentorship, which aligns with your interest in meaningful work.",
+    "transferableSkillsMatch": [
+     "Adobe Creative Suite proficiency",
+     "Visual storytelling",
+     "Client brief interpretation",
+     "Aesthetic judgment"
+    ],
+    "skillsGap": [
+     "Instructional design principles",
+     "Advanced AI prompt engineering for education",
+     "Curriculum development"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 40,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "WEF",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Education & Training roles show high resilience with +10% net job growth driven by human pedagogical connection."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Educator & Instructional Designer",
+     "occupationTitleVi": "Giáo viên & Chuyên gia Thiết kế Đào tạo",
+     "molisaCode": "2310",
+     "onetCode": "25-2022.00",
+     "overallResilienceScore": 78,
+     "automationRiskScore": 32,
+     "augmentationPotentialScore": 88,
+     "humanAdvantageCore": [
+      "Empathetic mentorship, student motivation & emotional safety",
+      "Dynamic classroom behavioral management",
+      "Adaptive teaching based on real-time student body language"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Designing visual curriculum assets for design students",
+       "taskNameVi": "Thiết kế học liệu hình ảnh cho sinh viên thiết kế",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 45,
+       "onetCode": "25-2022.00-T2",
+       "notes": "Using your design skills to create high-quality educational visuals."
+      },
+      {
+       "taskName": "Mentoring junior designers on AI-integrated workflows",
+       "taskNameVi": "Hướng dẫn designer trẻ về quy trình làm việc tích hợp AI",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "25-2022.00-T3",
+       "notes": "Direct human mentorship is highly resilient."
+      },
+      {
+       "taskName": "Managing student feedback and creative progress",
+       "taskNameVi": "Quản lý phản hồi và tiến độ sáng tạo của học viên",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "25-2022.00-T3",
+       "notes": "Requires emotional intelligence and empathy."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): Education & Training roles show high resilience with +10% net job growth driven by human pedagogical connection.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Synthesis of WEF resilience data and human-centric task analysis.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Powered Senior Designer",
+      "pathTitleVi": "Designer cao cấp ứng dụng AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Mastering AI tools to increase output efficiency while focusing on high-level branding.",
+      "targetRoles": [
+       "Senior Visual Designer",
+       "AI Art Director"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "AI Workflow Integration"
+      ],
+      "transferableSkills": [
+       "Adobe Suite",
+       "Branding"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       20,
+       22,
+       25,
+       28,
+       32
+      ],
+      "rationale": "Leverages current strengths with minimal disruption.",
+      "actionStepNow": "Enroll in Google AI Essentials."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Design Educator",
+      "pathTitleVi": "Giảng viên thiết kế",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transitioning into teaching design and AI tools at training centers.",
+      "targetRoles": [
+       "Design Instructor",
+       "Training Content Creator"
+      ],
+      "skillsToAcquire": [
+       "Instructional Design",
+       "Public Speaking"
+      ],
+      "transferableSkills": [
+       "Design expertise",
+       "Empathy"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       18,
+       20,
+       24,
+       28,
+       35
+      ],
+      "rationale": "High resilience and aligns with meaningful work values.",
+      "actionStepNow": "Start a design blog/portfolio sharing AI tips."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "UI/UX Product Designer",
+      "pathTitleVi": "Thiết kế giao diện người dùng",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Moving into product-focused design roles.",
+      "targetRoles": [
+       "UI/UX Designer"
+      ],
+      "skillsToAcquire": [
+       "Figma",
+       "User Research",
+       "Basic Frontend"
+      ],
+      "transferableSkills": [
+       "Visual design",
+       "Layout"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       22,
+       26,
+       30,
+       38,
+       45
+      ],
+      "rationale": "High growth but requires significant technical upskilling.",
+      "actionStepNow": "Audit Google UX Design Certificate."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "AI Literacy",
+      "titleVi": "Làm chủ công cụ AI",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "AI Ethics"
+      ],
+      "freeResources": [
+       {
+        "name": "Learn Prompting (open guide)",
+        "provider": "Learn Prompting",
+        "url": "https://learnprompting.org/",
+        "type": "guide"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of these is the most effective way to improve AI output for a brand identity project?",
+       "options": [
+        "Using generic prompts",
+        "Providing specific brand guidelines and context in the prompt",
+        "Ignoring the output",
+        "Using only one tool"
+       ],
+       "correctIndex": 1,
+       "explanation": "Context and specific brand guidelines are essential for AI to produce relevant, high-quality brand assets."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization",
+      "phaseNameVi": "Chuyên môn hóa",
+      "title": "Instructional Design Basics",
+      "titleVi": "Cơ bản về thiết kế đào tạo",
+      "estimatedHours": 80,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "Curriculum Planning",
+       "Student Engagement"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary goal of an instructional designer?",
+       "options": [
+        "To automate all teaching",
+        "To create effective learning experiences",
+        "To grade papers faster",
+        "To replace teachers"
+       ],
+       "correctIndex": 1,
+       "explanation": "The goal is to facilitate learning through structured, effective, and engaging experiences."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$962 - $1,538 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 75,
+    "groundedness": 80,
+    "rationale": "The guidance effectively integrates the user's specific skills like brand empathy and design expertise. However, it introduces 'instructional design' and 'AI' as new elements not explicitly mentioned in the user's provided skill set."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870530668_bcfpab",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:48:50.668Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:48:50.668Z",
+     "type": "run_start",
+     "message": "pipeline for \"Graphic Designer\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:50.668Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:48:52.635Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 709,
+     "latencyMs": 1446
+    },
+    {
+     "ts": "2026-10-13T05:48:52.635Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Graphic Designer",
+       "UI/UX Designer",
+       "Visual Designer"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited weekly availability",
+       "aversion to quantitative data"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:52.635Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 730,
+     "latencyMs": 1230,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Graphic Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "UI/UX Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Visual Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.453Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on graphic design and UI/UX careers Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.454Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.454Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free UI/UX design courses AI prompting for designers Vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:54.454Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:57.090Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6347,
+     "latencyMs": 1526,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:48:57.090Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:57.090Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:49:04.041Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6291,
+     "latencyMs": 6128
+    },
+    {
+     "ts": "2026-10-13T05:49:04.041Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:05.692Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 454,
+     "latencyMs": 1149
+    },
+    {
+     "ts": "2026-10-13T05:49:05.692Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "coherence: top suggestion resilience 58 below floor 78"
+      ],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly incorporates the user's specific strengths in brand empathy and Adobe tools. It provides a tailored career pivot strategy that leverages their existing skill set while addressing industry trends in Vietnam."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:05.692Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "coherence: top suggestion resilience 58 below floor 78"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:05.692Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:49:12.192Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6366,
+     "latencyMs": 5784
+    },
+    {
+     "ts": "2026-10-13T05:49:12.193Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:13.884Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 429,
+     "latencyMs": 1071
+    },
+    {
+     "ts": "2026-10-13T05:49:13.884Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 75,
+       "groundedness": 80,
+       "rationale": "The guidance effectively integrates the user's specific skills like brand empathy and design expertise. However, it introduces 'instructional design' and 'AI' as new elements not explicitly mentioned in the user's provided skill set."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:13.884Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 78
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 21326,
+   "latencyMs": 23216,
+   "degraded": false
+  }
+ }
+}

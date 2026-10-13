@@ -1,0 +1,682 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 20,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 20939,
+  "latencyMs": 40998,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0062816999999999994
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Data-Driven Production & Quality Specialist",
+    "roleTitleVi": "Chuyên viên Kiểm soát Chất lượng & Vận hành Sản xuất Dựa trên Dữ liệu",
+    "aiResilienceScore": 82,
+    "matchScore": 85,
+    "reasoning": "As shown in Stanford HAI (2024), integrating data analytics into industrial operations boosts forecasting accuracy and speeds up decision-making significantly. For a garment worker with 8 years of factoryfloor experience in Binh Duong, combining physical technical drawing and quality control expertise with basic digital dashboards creates a high-value hybrid role that resists pure automation while leveraging domain context.",
+    "whyItFitsYou": "Your solid background in reading technical drawings and inspecting product quality directly translates to data validation and anomaly detection in manufacturing processes. Your hands-on factory experience gives you the deep contextual understanding that AI tools cannot replicate.",
+    "transferableSkillsMatch": [
+     "Technical drawing interpretation",
+     "Quality inspection and error detection",
+     "Production line teamwork and pressure management"
+    ],
+    "skillsGap": [
+     "Digital spreadsheet literacy (Excel/Google Sheets)",
+     "Basic English terminology for manufacturing dashboards",
+     "Data entry and routine metric reporting"
+    ],
+    "averageSalaryRangeVND": "9,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu bảng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and charts",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ báo cáo định kỳ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing strategic business hypotheses and executive consulting",
+       "taskNameVi": "Định hình giả thuyết chiến lược và tư vấn lãnh đạo",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, political savvy, and nuanced risk appetite."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET task data combined with Stanford AI Index metrics regarding task augmentation potential and human-in-the-loop oversight.",
+     "uncertaintyRange": "+/- 5% based on local manufacturing adoption rates in Binh Duong.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digitalizing Garment Operations",
+      "pathTitleVi": "Số hóa Vận hành May mặc",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage current factory position while learning digital production tracking tools.",
+      "targetRoles": [
+       "Senior Line Inspector",
+       "Digital Production Assistant"
+      ],
+      "skillsToAcquire": [
+       "Basic Excel",
+       "Digital quality logging"
+      ],
+      "transferableSkills": [
+       "Technical drawing",
+       "Quality check"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9.5,
+       11,
+       12.5,
+       14
+      ],
+      "rationale": "Keeps income stable while building foundational computer literacy.",
+      "actionStepNow": "Sign up for a basic computer literacy course suitable for factory workers."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Data-Driven Manufacturing Support",
+      "pathTitleVi": "Hỗ trợ Sản xuất Dựa trên Dữ liệu",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into administrative or data-entry roles within manufacturing plants.",
+      "targetRoles": [
+       "Production Data Entry Specialist",
+       "Inventory Control Clerk"
+      ],
+      "skillsToAcquire": [
+       "Spreadsheet automation",
+       "Basic data cleaning"
+      ],
+      "transferableSkills": [
+       "Factory floor workflow knowledge",
+       "Attention to detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       12,
+       14.5,
+       17
+      ],
+      "rationale": "Combines physical industry experience with digital reporting tasks.",
+      "actionStepNow": "Practice data entry using free mobile or desktop spreadsheet tools for 1 hour weekly."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Independent Craft & E-Commerce Business",
+      "pathTitleVi": "Kinh doanh Thủ công & Thương mại Điện tử Độc lập",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Launch a small-scale handicraft or custom garment micro-business supported by AI marketing tools.",
+      "targetRoles": [
+       "Micro-entrepreneur",
+       "Craft E-commerce Owner"
+      ],
+      "skillsToAcquire": [
+       "Basic digital marketing",
+       "AI-assisted product descriptions",
+       "Small business finance"
+      ],
+      "transferableSkills": [
+       "Manual dexterity",
+       "Craftsmanship"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       6,
+       9,
+       13,
+       18,
+       24
+      ],
+      "rationale": "Fulfills personal interest in small business ownership with low initial capital needs.",
+      "actionStepNow": "Outline a basic business plan for a custom garment or craft side project."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Nền tảng Kỹ năng Số Cơ bản",
+      "title": "Computer & Spreadsheet Basics",
+      "titleVi": "Làm quen với Máy tính và Bảng tính Cơ bản",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Mouse & keyboard navigation",
+       "Basic Excel/Google Sheets data entry"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "What is the primary function of a spreadsheet cell?",
+       "options": [
+        "To store and organize data in rows and columns",
+        "To print physical paper documents",
+        "To sew garment fabrics",
+        "To record audio files"
+       ],
+       "correctIndex": 0,
+       "explanation": "A spreadsheet cell is used to store, organize, and calculate data arranged in rows and columns."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Operational Data Integration",
+      "phaseNameVi": "Tích hợp Dữ liệu Vận hành",
+      "title": "Applying Data to Quality Control",
+      "titleVi": "Áp dụng Dữ liệu vào Kiểm soát Chất lượng",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Quality defect logging",
+       "Simple chart creation"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Why is tracking defect rates in a spreadsheet useful?",
+       "options": [
+        "It helps identify recurring production errors for corrective action",
+        "It replaces the need for sewing machines",
+        "It increases sewing speed automatically",
+        "It eliminates all factory work"
+       ],
+       "correctIndex": 0,
+       "explanation": "Tracking defects helps supervisors and operators spot patterns and reduce future errors."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$346 - $577 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "repair",
+   "failures": [
+    "judge: personalization score 30 below 50 (The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality.)",
+    "judge: groundedness score 20 below 50 (The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality.)"
+   ],
+   "judge": {
+    "personalization": 30,
+    "groundedness": 20,
+    "rationale": "The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 0,
+    "grounded": 0,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870630450_p23dqr",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:50:30.450Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:50:30.450Z",
+     "type": "run_start",
+     "message": "pipeline for \"Công nhân may công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:30.450Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:50:32.417Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 496,
+     "latencyMs": 1460
+    },
+    {
+     "ts": "2026-10-13T05:50:32.417Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "garment technician",
+       "quality control inspector",
+       "small business owner"
+      ],
+      "riskFlags": [
+       "limited digital literacy",
+       "low budget for retraining",
+       "limited English proficiency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:32.417Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:50:34.274Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 722,
+     "latencyMs": 1007,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:50:34.274Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "garment technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "quality control inspector"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "small business owner"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "automation impact garment industry Vietnam low digital literacy workers"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "học nghề may thủ công kinh doanh nhỏ tiếng việt miễn phí"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:34.275Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "0 item(s) - No learning resource matched the query."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:36.354Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1952,
+     "latencyMs": 1561,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:50:36.354Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "garment worker entrepreneurship Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:38.950Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:41.430Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2094,
+     "latencyMs": 1927,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:50:41.430Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:41.430Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:50:48.687Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 4422,
+     "latencyMs": 6494
+    },
+    {
+     "ts": "2026-10-13T05:50:48.687Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:50.665Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 437,
+     "latencyMs": 1355
+    },
+    {
+     "ts": "2026-10-13T05:50:50.665Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "coherence: top suggestion resilience 78 below floor 82"
+      ],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly references the user's specific skills in quality control and team-based production. It effectively bridges their current manual role to a supervisory position by leveraging their stated strengths and experience."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:50.665Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "coherence: top suggestion resilience 78 below floor 82"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:50:50.665Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:50:58.467Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 4604,
+     "latencyMs": 7164
+    },
+    {
+     "ts": "2026-10-13T05:50:58.468Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:51:02.418Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 451,
+     "latencyMs": 3022
+    },
+    {
+     "ts": "2026-10-13T05:51:02.418Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: roadmap must contain 2-3 milestones"
+      ],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly references the user's specific skills in technical drawing and production line pressure. It effectively bridges their manual experience into a higher-level digital role, though it assumes 8 years of experience not explicitly stated."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:51:02.418Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "suggestion[0]: roadmap must contain 2-3 milestones"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:51:02.418Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 2"
+    },
+    {
+     "ts": "2026-10-13T05:51:09.879Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5075,
+     "latencyMs": 6850
+    },
+    {
+     "ts": "2026-10-13T05:51:09.879Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:51:11.448Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 450,
+     "latencyMs": 1094
+    },
+    {
+     "ts": "2026-10-13T05:51:11.448Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "judge: personalization score 30 below 50 (The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality.)",
+       "judge: groundedness score 20 below 50 (The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality.)"
+      ],
+      "judge": {
+       "personalization": 30,
+       "groundedness": 20,
+       "rationale": "The guidance ignores the user's actual skill set, proposing unrealistic tasks like SQL and executive consulting. It hallucinates background details (8 years experience) not provided by the user, making the advice generic and disconnected from reality."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:51:11.448Z",
+     "type": "run_end",
+     "message": "final verdict: repair"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 20703,
+   "latencyMs": 40998,
+   "degraded": false
+  }
+ }
+}

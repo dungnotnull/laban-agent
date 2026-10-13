@@ -1,0 +1,287 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8240,
+  "latencyMs": 10818,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.002472
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "E-Commerce Customer Support & Operations Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành và Chăm sóc Khách hàng Thương mại Điện tử",
+    "aiResilienceScore": 82,
+    "matchScore": 90,
+    "reasoning": "Nghiên cứu từ NBER (2023) cho thấy các trợ lý AI hội thoại giúp tăng 14% năng suất nhân sự hỗ trợ khách hàng, trong đó nhóm lao động phổ thông và mới chuyển đổi đạt mức tăng trưởng năng suất lên đến 34%. Công việc này đòi hỏi sự thấu cảm, xử lý tình huống linh hoạt và giải quyết khiếu nại thực tế - những yếu tố có nguy cơ tự động hóa thấp theo phân tích của Oxford (2017). Tại Đà Nẵng, thương mại điện tử và dịch vụ khách hàng từ xa đang phát triển mạnh mẽ.",
+    "whyItFitsYou": "Bạn có sẵn thế mạnh về thái độ phục vụ tốt, kinh nghiệm xử lý hoàn đổi hàng và đối soát tài chính từ công việc thu ngân. Các kỹ năng này là nền tảng vững chắc để chuyển sang chăm sóc khách hàng và vận hành đơn hàng trực tuyến trên các sàn thương mại điện tử, giúp giảm thiểu áp lực về kỹ năng số ban đầu.",
+    "transferableSkillsMatch": [
+     "Chăm sóc khách hàng trực tiếp",
+     "Xử lý hoàn đổi hàng và khiếu nại",
+     "Vận hành máy POS và đối soát cuối ca",
+     "Làm việc theo ca linh hoạt"
+    ],
+    "skillsGap": [
+     "Kỹ năng sử dụng công cụ AI hỗ trợ soạn thảo tin nhắn chăm sóc khách hàng",
+     "Quản lý đơn hàng trên sàn TMĐT (Shopee, Lazada, TikTok Shop)",
+     "Xử lý bảng tính Excel cơ bản để báo cáo doanh thu"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 12,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "National Bureau of Economic Research (NBER) / MIT",
+      "year": "2023",
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "Access to a generative AI-based conversational assistant increases productivity of customer support agents by 14% on average, with the largest impact on novice and low-skilled workers (34% increase)."
+     },
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring high negotiation, persuasion, social perceptiveness, and unstructured physical dexterity remain resilient against automation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Customer Service and E-Commerce Support Specialist",
+     "occupationTitleVi": "Chuyên viên Chăm sóc Khách hàng và Hỗ trợ TMĐT",
+     "molisaCode": "4222",
+     "onetCode": "43-4051.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 25,
+     "augmentationPotentialScore": 75,
+     "humanAdvantageCore": [
+      "Thấu cảm và xoa dịu cảm xúc khách hàng bất mãn",
+      "Xử lý ngoại lệ trong đổi trả hàng hóa phức tạp",
+      "Đạo đức và sự trung thực trong đối soát tiền mặt/đơn hàng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Handling complex customer complaints and returns",
+       "taskNameVi": "Xử lý khiếu nại phức tạp và hoàn đổi hàng trực tuyến",
+       "exposureType": "augmented",
+       "exposurePercentage": 35,
+       "onetCode": "43-4051.00",
+       "notes": "Sử dụng AI để gợi ý mẫu câu phản hồi nhanh, kết hợp với sự thấu cảm và phán đoán thực tế của con người."
+      },
+      {
+       "taskName": "Reconciling daily e-commerce cash flow and COD orders",
+       "taskNameVi": "Đối soát dòng tiền thu hộ COD và đơn hàng TMĐT cuối ngày",
+       "exposureType": "augmented",
+       "exposurePercentage": 40,
+       "onetCode": "43-3031.00",
+       "notes": "Tận dụng sự cẩn thận sẵn có với tiền và hóa đơn từ nghề thu ngân để kiểm tra chéo dữ liệu hệ thống."
+      },
+      {
+       "taskName": "Live chat customer assistance using AI drafting tools",
+       "taskNameVi": "Hỗ trợ chat trực tuyến với khách hàng sử dụng công cụ AI soạn thảo",
+       "exposureType": "augmented",
+       "exposurePercentage": 50,
+       "onetCode": "43-4051.00",
+       "notes": "AI hỗ trợ viết nhanh nội dung trả lời, nhân sự kiểm duyệt và điều chỉnh phù hợp với ngữ cảnh khách hàng."
+      }
+     ],
+     "sources": [
+      "NBER (2023)",
+      "Oxford (2017)",
+      "VSCO 2020"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa O*NET kết hợp dữ liệu thực nghiệm về tăng năng suất nhờ AI của NBER.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay and Augment in Retail Operations",
+      "pathTitleVi": "Tiếp tục gắn bó và ứng dụng AI tại quầy bán lẻ hiện đại",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Nâng cấp kỹ năng sử dụng máy POS thông minh và ứng dụng công cụ quét hóa đơn AI để tối ưu hóa công việc thu ngân hàng ngày.",
+      "targetRoles": [
+       "Thu ngân cao cấp",
+       "Giám sát ca bán lẻ thông minh"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng POS tích hợp AI",
+       "Quản lý kho mini bằng ứng dụng di động"
+      ],
+      "transferableSkills": [
+       "Vận hành máy POS",
+       "Đối soát cuối ca",
+       "Chăm sóc khách hàng"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7500000,
+       8000000,
+       8500000,
+       9200000,
+       10000000
+      ],
+      "rationale": "Duy trì sự ổn định tối đa với rủi ro thấp nhất, tận dụng kinh nghiệm 3 năm sẵn có.",
+      "actionStepNow": "Tìm hiểu các tính năng báo cáo tự động trên phần mềm quản lý bán hàng hiện tại của siêu thị."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to E-Commerce Support & Basic Accounting",
+      "pathTitleVi": "Chuyển hướng sang Chăm sóc khách hàng TMĐT & Kế toán kho cơ bản",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển sang lĩnh vực thương mại điện tử tại Đà Nẵng, kết hợp kỹ năng chăm sóc khách hàng và kế toán cơ bản để làm việc bán thời gian hoặc từ xa một phần.",
+      "targetRoles": [
+       "Nhân viên CSKH Thương mại điện tử",
+       "Kế toán kho bán hàng online"
+      ],
+      "skillsToAcquire": [
+       "Quản lý đơn hàng Shopee/Lazada",
+       "Excel cơ bản cho kế toán kho",
+       "Prompt cơ bản cho AI hỗ trợ chat"
+      ],
+      "transferableSkills": [
+       "Cẩn thận với tiền và hóa đơn",
+       "Xử lý hoàn đổi hàng",
+       "Thái độ phục vụ tốt"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8000000,
+       9500000,
+       11000000,
+       13000000,
+       15500000
+      ],
+      "rationale": "Phù hợp với sở thích về kế toán cơ bản và bán hàng trực tuyến, đáp ứng tốt ưu tiên thu nhập và tính linh hoạt.",
+      "actionStepNow": "Đăng ký một khóa học miễn phí về quản lý bán hàng trên Shopee/Lazada."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Digital Business Transition",
+      "pathTitleVi": "Chuyển đổi hoàn toàn sang Kinh doanh trực tuyến cá nhân",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Tự mở cửa hàng kinh doanh trực tuyến nhỏ, áp dụng AI để tạo nội dung bán hàng và chăm sóc khách hàng tự động.",
+      "targetRoles": [
+       "Chủ shop online",
+       "Quản lý vận hành shop nhỏ"
+      ],
+      "skillsToAcquire": [
+       "Marketing trực tuyến cơ bản",
+       "Sử dụng AI tạo nội dung (ChatGPT, Canva AI)",
+       "Quản lý tài chính hộ kinh doanh"
+      ],
+      "transferableSkills": [
+       "Tất cả kỹ năng vận hành và bán hàng hiện có"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       6000000,
+       9000000,
+       14000000,
+       18000000,
+       24000000
+      ],
+      "rationale": "Đòi hỏi rủi ro tài chính cao hơn nhưng mang lại sự tự chủ và ý nghĩa công việc lớn.",
+      "actionStepNow": "Thử nghiệm đăng bán một số mặt hàng nhỏ trên mạng xã hội với ngân sách 0 đồng."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & AI Basics",
+      "phaseNameVi": "Nền tảng số và Làm quen với AI",
+      "title": "Build basic digital skills and conversational AI awareness",
+      "titleVi": "Xây dựng kỹ năng số cơ bản và làm quen với trợ lý AI",
+      "estimatedHours": 20,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Sử dụng máy tính/điện thoại thông minh thành thạo",
+       "Kỹ năng đặt câu hỏi (Prompt) cơ bản với ChatGPT/Copilot",
+       "Soạn thảo văn bản và email chăm sóc khách hàng"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Digital Garage - Fundamentals of Digital Marketing",
+        "provider": "Google",
+        "url": "https://learndigital.withgoogle.com/digitalgarage",
+        "type": "online_course"
+       },
+       {
+        "name": "Hướng dẫn sử dụng ChatGPT cơ bản cho người mới bắt đầu",
+        "provider": "OpenAI / Cộng đồng AI Việt Nam",
+        "url": "https://help.openai.com",
+        "type": "documentation"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi khách hàng khiếu nại trực tuyến về sản phẩm bị lỗi, bước đầu tiên nhân viên CSKH nên làm gì với sự hỗ trợ của AI?",
+       "options": [
+        "Bỏ qua tin nhắn của khách hàng",
+        "Dùng AI soạn thảo nhanh câu phản hồi thể hiện sự thấu cảm và xin lỗi",
+        "Yêu cầu khách hàng tự chịu trách nhiệm",
+        "Đóng tài khoản chat ngay lập tức"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI giúp soạn thảo nhanh câu trả lời chuẩn mực, thể hiện sự chuyên nghiệp và thấu cảm để xoa dịu khách hàng trước khi xử lý nghiệp vụ tiếp theo."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "E-Commerce & Basic Accounting Operations",
+      "phaseNameVi": "Vận hành TMĐT và Kế toán kho cơ bản",
+      "title": "Master e-commerce order processing and basic Excel spreadsheets",
+      "titleVi": "Làm chủ quy trình xử lý đơn hàng TMĐT và bảng tính Excel cơ bản",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "skillsCovered": [
+       "Quản lý gian hàng Shopee/Lazada cơ bản",
+       "Sử dụng Excel/Google Sheets để đối soát đơn hàng",
+       "Xử lý quy trình đổi trả hàng trực tuyến"
+      ],
+      "freeResources": [
+       {
+        "name": "Shopee Uni - Học viện bán hàng Shopee",
+        "provider": "Shopee Vietnam",
+        "url": "https://shopee.vn/uni",
+        "type": "training_portal"
+       },
+       {
+        "name": "Excel cho người mới bắt đầu",
+        "provider": "Gcflearnfree.org",
+        "url": "https://edu.gcfglobal.org/en/topics/excel/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi thực hiện đối soát doanh thu bán hàng online cuối ngày trên bảng tính, kỹ năng nào từ nghề thu ngân giúp bạn tránh sai sót nhất?",
+       "options": [
+        "Gõ phím nhanh bằng 10 ngón",
+        "Tính nhẩm siêu tốc",
+        "Sự cẩn thận, kiểm tra chéo từng dòng tiền và hóa đơn",
+        "Không cần kiểm tra lại"
+       ],
+       "correctIndex": 2,
+       "explanation": "Sự cẩn thận và thói quen đối soát tỉ mỉ từ công việc thu ngân truyền thống là tấm lá chắn chống sai sót quan trọng nhất trong quản lý tài chính điện tử."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7977,
+  "latencyMs": 10818
+ }
+}

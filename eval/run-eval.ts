@@ -53,15 +53,25 @@ function pct(v: number | null): string {
 }
 
 function renderEvaluationMd(byConfig: Record<string, RunScore[]>, stamp: string, segmentsById: Record<string, string>): string {
+  // Centralized so the pointer survives re-renders; the runner no longer appends it post-hoc.
+  const baseStamp = stamp.replace(/-r\d+$/, '');
   const b = byConfig['baseline'] ? aggregate(byConfig['baseline'], segmentsById) : null;
   const s1 = byConfig['stage1_tools'] ? aggregate(byConfig['stage1_tools'], segmentsById) : null;
   const f = byConfig['final_tools_verifier'] ? aggregate(byConfig['final_tools_verifier'], segmentsById) : null;
 
   const perPersona = Object.entries(byConfig).map(([config, scores]) => {
     const lines = scores.map(s =>
-      `| ${s.personaId} | ${s.ok ? pct(s.groundingRate) : 'FAILED'} | ${s.hallucinatedCount} | ${s.schemaFailures} | ${s.personalization ?? 'n/a'} |`
+      `| ${s.personaId} | ${s.ok ? pct(s.groundingRate) : 'FAILED'} | ${s.hallucinatedCount} | ${s.schemaFailures} | ${s.personalization ?? 'n/a'} | ${s.ok ? (s.coherent ? 'yes' : 'NO') : 'n/a'} | ${s.ok ? (s.actionable ? 'yes' : 'NO') : 'n/a'} |`
     ).join('\n');
-    return `#### ${config}\n\n| Persona | Grounding | Hallucinated | Schema failures | Personalization |\n|---|---|---|---|---|\n${lines}\n`;
+    return `#### ${config}\n\n| Persona | Grounding | Hallucinated | Schema failures | Personalization | Coherent | Actionable |\n|---|---|---|---|---|---|---|\n${lines}\n`;
+  }).join('\n');
+
+  const segmentSections = Object.entries(byConfig).map(([config, scores]) => {
+    const agg = aggregate(scores, segmentsById);
+    const rows = Object.entries(agg.bySegment).map(([seg, m]) =>
+      `| ${seg} | ${m.runs} | ${pct(m.groundingRate)} | ${m.personalizationAvg?.toFixed(0) ?? 'n/a'} | ${(m.coherenceRate * 100).toFixed(1)}% | ${(m.actionableRate * 100).toFixed(1)}% |`
+    ).join('\n');
+    return `### ${config}\n\n| Segment | Runs | Grounding | Personalization | Coherence | Actionable |\n|---|---|---|---|---|---|\n${rows}\n`;
   }).join('\n');
 
   return `# Evaluation Report
@@ -94,11 +104,17 @@ Generated: ${new Date().toISOString()} (run stamp: ${stamp})
 
 ${perPersona}
 
+## Results by worker segment
+
+${segmentSections}
+
 ## Notes
 
 - Cost model: USD 0.30 per 1M tokens (Gemini Flash public-tier assumption, in+out blended).
 - Grounding per persona = verified citations / total citations (token-set Jaccard >= 0.75 vs curated corpus).
 - Failed runs are reported as failures; no fallback data is substituted.
+
+Stability across repetitions: see ../${baseStamp}-stability/STABILITY.md
 `;
 }
 
@@ -136,6 +152,31 @@ function renderTrajectoriesMd(trajDir: string): string {
 }
 
 async function main() {
+  // Re-render reports from an existing run without hitting the server
+  const roIdx = process.argv.indexOf('--render-only');
+  if (roIdx > 0) {
+    const baseStamp = String(process.argv[roIdx + 1] || '');
+    if (!baseStamp) { console.error('Usage: --render-only <baseStamp>'); process.exit(1); }
+    const latest = JSON.parse(fs.readFileSync(path.join('eval', 'results', 'latest.json'), 'utf-8'));
+    const reps = latest.reps || 3;
+    const segmentsById = Object.fromEntries(EVAL_PERSONAS.map(p => [p.id, p.segment]));
+    const runs: Record<string, RunScore[]>[] = [];
+    for (let rep = 1; rep <= reps; rep++) {
+      const stamp = `${baseStamp}-r${rep}`;
+      const summary = JSON.parse(fs.readFileSync(path.join('eval', 'results', 'runs', stamp, 'summary.json'), 'utf-8'));
+      runs.push(summary);
+      fs.writeFileSync(
+        path.join('eval', 'results', 'runs', stamp, 'EVALUATION.md'),
+        renderEvaluationMd(summary, stamp, segmentsById)
+      );
+    }
+    const stabDir = path.join('eval', 'results', 'runs', `${baseStamp}-stability`);
+    fs.mkdirSync(stabDir, { recursive: true });
+    fs.writeFileSync(path.join(stabDir, 'STABILITY.md'), renderStabilityMd(runs, segmentsById));
+    console.log(`Re-rendered ${reps} EVALUATION.md files + STABILITY.md for ${baseStamp}`);
+    process.exit(0);
+  }
+
   // 1. Server must be running
   try {
     const health = await (await fetch(`${BASE_URL}/api/agent/health`)).json();
@@ -214,12 +255,8 @@ async function main() {
     JSON.stringify({ stamp: `${baseStamp}-r1`, baseStamp, reps: REPS }, null, 1)
   );
 
-  // Append stability pointer to rep-1 report
+  // Pointer to the stability report is rendered inside renderEvaluationMd
   const rep1EvalPath = path.join('eval', 'results', 'runs', `${baseStamp}-r1`, 'EVALUATION.md');
-  fs.writeFileSync(
-    rep1EvalPath,
-    fs.readFileSync(rep1EvalPath, 'utf-8') + `\nStability across repetitions: see ../${baseStamp}-stability/STABILITY.md\n`
-  );
 
   console.log(`\nDone (${REPS} rep(s)). Results: ${rep1EvalPath}`);
   console.log(`Stability: ${path.join(stabilityDir, 'STABILITY.md')}`);

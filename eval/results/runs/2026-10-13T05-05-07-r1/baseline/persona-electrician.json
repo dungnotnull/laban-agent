@@ -1,0 +1,279 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8012,
+  "latencyMs": 9380,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024036
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation & Robotics Technician",
+    "roleTitleVi": "Kỹ thuật viên Tự động hóa & Robot Công nghiệp",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Theo nghiên cứu của Oxford (2017) và World Bank (2024), các công việc đòi hỏi thao tác vật lý phi cấu trúc, xử lý sự cố thiết bị tại hiện trường và tương tác trực tiếp với cơ khí chịu rủi ro tự động hóa cực kỳ thấp. Với 10 năm kinh nghiệm thợ điện công nghiệp tại Hải Phòng - trung tâm công nghiệp lớn, việc chuyển dịch sang bảo trì và vận hành robot công nghiệp giúp anh vừa tận dụng nền tảng cũ vừa đón đầu làn sóng số hóa nhà máy.",
+    "whyItFitsYou": "Anh có sẵn nền tảng bảo trì tủ điện, biến tần, đọc bản vẽ và tư duy xử lý sự cố thực địa rất mạnh tại Hải Phòng. Thế mạnh này kết hợp hoàn hảo với sở thích về tự động hóa và robot công nghiệp, giúp anh không lo ngại việc bị AI thay thế mà ngược lại sẽ trở thành nhân sự vận hành cốt lõi khi các nhà máy chuyển đổi số.",
+    "transferableSkillsMatch": [
+     "Bảo trì tủ điện & biến tần",
+     "Đọc bản vẽ điện công nghiệp",
+     "Xử lý sự cố đấu dây & mạch điện",
+     "Tuân thủ nghiêm ngặt an toàn điện"
+    ],
+    "skillsGap": [
+     "Lập trình cơ bản PLC (Siemens, Mitsubishi)",
+     "Cài đặt và hiệu chỉnh biến tần nâng cao / Servo drives",
+     "Bảo trì cơ khí & cảm biến cánh tay robot công nghiệp"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity, fine arts creation, and direct field perception remain resilient against automation."
+     },
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": "2024",
+      "url": "https://www.worldbank.org/en/region/eap/publication/reshaing-future-of-work-southeast-asia",
+      "quoteOrDataPoint": "Digital transformation and industrial automation in ASEAN create high demand for technicians who can bridge traditional electrical skills with smart manufacturing tools."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Machinery Mechanics and Servicers",
+     "occupationTitleVi": "Thợ lắp đặt và sửa chữa máy móc công nghiệp",
+     "molisaCode": "7412",
+     "onetCode": "49-9041.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Xử lý sự cố phần cứng tại hiện trường sản xuất",
+      "Thao tác khéo léo với linh kiện điện cơ thực tế",
+      "Đánh giá rủi ro an toàn điện trực tiếp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Diagnose and repair industrial control panels and robotic wiring faults",
+       "taskNameVi": "Chẩn đoán và sửa chữa tủ điều khiển công nghiệp và lỗi đi dây robot",
+       "exposureType": "augmentation",
+       "exposurePercentage": 35,
+       "onetCode": "49-9041.00",
+       "notes": "Sử dụng sơ đồ mạch điện kết hợp phần mềm chẩn đoán trên máy tính để khoanh vùng sự cố nhanh hơn."
+      },
+      {
+       "taskName": "Perform preventive maintenance on automated production lines and frequency inverters",
+       "taskNameVi": "Bảo trì định kỳ dây chuyền sản xuất tự động và hệ thống biến tần",
+       "exposureType": "complement",
+       "exposurePercentage": 20,
+       "onetCode": "49-9041.00",
+       "notes": "Kinh nghiệm thực tế 10 năm giúp phán đoán tiếng ồn, nhiệt độ bất thường mà AI chưa thể thay thế."
+      },
+      {
+       "taskName": "Calibrate and integrate industrial robot sensors and PLC logic interfaces",
+       "taskNameVi": "Hiệu chuẩn và tích hợp cảm biến robot công nghiệp với giao diện logic PLC",
+       "exposureType": "augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "49-9041.00",
+       "notes": "Học thêm lập trình cơ bản để đọc hiểu câu lệnh điều khiển cánh tay robot."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "World Bank (2024)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khả năng thao tác vật lý, môi trường làm việc tại hiện trường nhà máy và tốc độ tích hợp công nghệ tự động hóa tại khu vực kinh tế trọng điểm phía Bắc (Hải Phòng - Quảng Ninh).",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Senior Electrical Maintenance Specialist",
+      "pathTitleVi": "Chuyên gia Bảo trì Điện Cao cấp",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tập trung nâng cấp kỹ năng xử lý biến tần cao cấp và hệ thống điện thông minh trong nhà máy hiện tại mà không phải đổi nghề.",
+      "targetRoles": [
+       "Trưởng nhóm bảo trì điện",
+       "Kỹ thuật viên hệ thống điện tự động"
+      ],
+      "skillsToAcquire": [
+       "Cài đặt biến tần nâng cao",
+       "Đọc tài liệu kỹ thuật tiếng Anh chuyên ngành qua AI tools"
+      ],
+      "transferableSkills": [
+       "Bảo trì tủ điện",
+       "Đọc bản vẽ",
+       "An toàn điện"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       14,
+       16,
+       18,
+       20,
+       23
+      ],
+      "rationale": "Phù hợp với ưu tiên sự ổn định (4/5) và kinh nghiệm 10 năm hiện trường sẵn có.",
+      "actionStepNow": "Đăng ký một khóa học ngắn hạn về cài đặt tham số biến tần các dòng phổ biến (Schneider, ABB, Siemens)."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Industrial Automation & PLC Technician",
+      "pathTitleVi": "Kỹ thuật viên Tự động hóa & PLC",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Học thêm lập trình PLC cơ bản và tích hợp robot công nghiệp để chuyển sang các nhà máy FDI lớn tại Hải Phòng với mức lương cao hơn.",
+      "targetRoles": [
+       "Kỹ thuật viên tự động hóa",
+       "Nhân viên kỹ thuật robot nhà máy"
+      ],
+      "skillsToAcquire": [
+       "Lập trình PLC cơ bản (Siemens S7-1200 / Mitsubishi FX)",
+       "Đấu nối và vận hành cảm biến robot"
+      ],
+      "transferableSkills": [
+       "Đọc bản vẽ điện",
+       "Xử lý sự cố mạch điện",
+       "Kinh nghiệm nhà máy"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       21,
+       25,
+       30
+      ],
+      "rationale": "Giải quyết đúng sở thích tự động hóa và robot, tận dụng thời gian rảnh 8 giờ/tuần để học mà không ảnh hưởng công việc hiện tại.",
+      "actionStepNow": "Tìm kiếm các video hướng dẫn tự học lập trình PLC cơ bản trên YouTube và thực hành mô phỏng trên phần mềm miễn phí."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Smart Factory Robotics Integration Specialist",
+      "pathTitleVi": "Chuyên gia Tích hợp Robot Nhà máy Thông minh",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Chuyển hẳn sang nhóm thiết kế giải pháp và lắp đặt dây chuyền tự động hóa cho các công ty tích hợp hệ thống (System Integrator).",
+      "targetRoles": [
+       "Kỹ sư tích hợp hệ thống robot",
+       "Chuyên viên giải pháp tự động hóa"
+      ],
+      "skillsToAcquire": [
+       "Lập trình robot công nghiệp (Fanuc, KUKA, ABB)",
+       "Thiết kế hệ thống điều khiển tự động SCADA/HMI"
+      ],
+      "transferableSkills": [
+       "Tư duy logic",
+       "Kinh nghiệm thực địa công nghiệp"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       25,
+       32,
+       40
+      ],
+      "rationale": "Đòi hỏi đầu tư thời gian và kiên trì, mang lại mức thu nhập và vị thế cao trong kỷ nguyên công nghiệp 4.0 tại Hải Phòng.",
+      "actionStepNow": "Khảo sát các trung tâm đào tạo tự động hóa uy tín tại Hải Phòng hoặc Hà Nội để có lộ trình cấp chứng chỉ."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Tools",
+      "phaseNameVi": "Nền tảng & Công cụ Hỗ trợ",
+      "title": "Mastering Basic PLC Simulation & Technical English via AI",
+      "titleVi": "Làm chủ Mô phỏng PLC Cơ bản & Tiếng Anh Kỹ thuật qua AI",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "Lập trình PLC logic cơ bản (Ladder Diagram)",
+       "Sử dụng ChatGPT/Claude để dịch và tra cứu tài liệu mạch điện tiếng Anh",
+       "Sử dụng phần mềm mô phỏng PLC trên máy tính"
+      ],
+      "freeResources": [
+       {
+        "name": "PLC Programming Tutorials (Free Online)",
+        "provider": "Automation Direct / RealPars (YouTube)",
+        "url": "https://www.youtube.com/@RealPars",
+        "type": "Video Course"
+       },
+       {
+        "name": "ChatGPT for Technical Translation & Troubleshooting",
+        "provider": "OpenAI",
+        "url": "https://chat.openai.com",
+        "type": "AI Tool"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Ngôn ngữ lập trình nào phổ biến nhất và trực quan nhất cho thợ điện khi chuyển sang lập trình PLC cơ bản?",
+       "options": [
+        "A. Python",
+        "B. Ladder Diagram (Sơ đồ hình thang)",
+        "C. C++",
+        "D. HTML"
+       ],
+       "correctIndex": 1,
+       "explanation": "Ladder Diagram mô phỏng lại sơ đồ mạch điện rơ-le truyền thống mà thợ điện đã quen thuộc, giúp dễ dàng chuyển đổi tư duy."
+      }
+     },
+     {
+      "id": "ms-2",
+      "milestoneNumber": 2,
+      "phaseName": "Practical Integration",
+      "phaseNameVi": "Tích hợp Thực tế",
+      "title": "Inverters, Sensors, and Industrial Robot Basics",
+      "titleVi": "Biến tần, Cảm biến & Cơ bản về Robot Công nghiệp",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "Cài đặt tham số biến tần nâng cao",
+       "Đấu nối cảm biến và tín hiệu I/O cho robot",
+       "Xử lý lỗi phần cứng hệ thống tự động"
+      ],
+      "freeResources": [
+       {
+        "name": "Industrial Automation & Robotics Basics",
+        "provider": "NPTEL / Open Education",
+        "url": "https://nptel.ac.in",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi kết nối tín hiệu từ cảm biến quang học đến ngõ vào (Input) của PLC, yếu tố nào cần kiểm tra kỹ nhất?",
+       "options": [
+        "A. Màu sắc của dây cáp mạng",
+        "B. Điện áp nguồn và kiểu cực tính NPN/PNP",
+        "C. Tốc độ kết nối Wi-Fi",
+        "D. Dung lượng bộ nhớ của biến tần"
+       ],
+       "correctIndex": 1,
+       "explanation": "Kiểu cực tính NPN/PNP và điện áp nguồn cấp là cực kỳ quan trọng để đảm bảo tín hiệu truyền về PLC chính xác và không gây cháy ngõ vào."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7747,
+  "latencyMs": 9380
+ }
+}

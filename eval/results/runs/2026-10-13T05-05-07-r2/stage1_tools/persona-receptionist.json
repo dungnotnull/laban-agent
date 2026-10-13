@@ -1,0 +1,554 @@
+{
+ "score": {
+  "personaId": "persona-receptionist",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10392,
+  "latencyMs": 22157,
+  "model": "gemini-3.7-flash",
+  "costPerTaskUsd": 0.0031176
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Internal Communications & HR Administrative Specialist",
+    "roleTitleVi": "Chuyên viên Hành chính Nhân sự & Truyền thông Nội bộ",
+    "aiResilienceScore": 82,
+    "matchScore": 89,
+    "reasoning": "According to the CBRE Vietnam Office Market Report Q2 2024, flexible workspaces and automated efficiencies are transforming administrative and BPO sectors in Ho Chi Minh City. While routine reception duties face consolidation, human-centric administrative roles like internal communications and HR operations that require empathy, organization, and interpersonal coordination show stable growth and high augmentation potential.",
+    "whyItFitsYou": "Your 4 years of experience as an office receptionist combined with your strong friendly communication and organization skills make you an ideal candidate to transition into HR administration and internal communications. Although your English and computer skills currently present gaps, your willingness to learn matches the NBER/MIT findings showing that conversational assistants and targeted digital tools can rapidly upskill workers.",
+    "transferableSkillsMatch": [
+     "Friendly communication and reception management",
+     "Event and meeting scheduling organization",
+     "Basic document drafting and office coordination",
+     "High-pressure environment management"
+    ],
+    "skillsGap": [
+     "Basic office software proficiency",
+     "Virtual meeting tools operation",
+     "Intermediate English communication",
+     "Basic HR and internal newsletter tools"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Office Market Report Q2 2024: Impact of Tech and AI on Workspace",
+      "source": "CBRE Vietnam",
+      "year": 2024,
+      "url": "https://www.cbrenet/research-reports",
+      "quoteOrDataPoint": "Tech companies continue to drive office demand in HCMC and Hanoi, but there is a noticeable shift towards flexible workspaces and AI-optimized facilities. BPO sectors are consolidating space due to automation efficiencies."
+     },
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "National Bureau of Economic Research (NBER) / MIT",
+      "year": 2023,
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "Access to a generative AI-based conversational assistant increases productivity of customer support agents by 14% on average, with the largest impact on novice and low-skilled workers (34% increase)."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Human Resources and Administrative Support Specialist",
+     "occupationTitleVi": "Chuyên viên Hỗ trợ Hành chính và Nhân sự",
+     "molisaCode": "4190",
+     "onetCode": "43-4161.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 28,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "Employee engagement and empathetic listening",
+      "Internal conflict resolution and culture building",
+      "Complex schedule and event coordination"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Coordinating internal staff communications and office announcements",
+       "taskNameVi": "Điều phối thông tin truyền thông nội bộ và thông báo văn phòng",
+       "exposureType": "augmentation",
+       "exposurePercentage": 45,
+       "onetCode": "43-4011.00",
+       "notes": "Generative AI tools assist in drafting drafts, while human oversight ensures company culture alignment."
+      },
+      {
+       "taskName": "Managing visitor reception and onboarding hospitality",
+       "taskNameVi": "Quản lý tiếp đón khách và hậu cần hội nhập nhân sự",
+       "exposureType": "human_centric",
+       "exposurePercentage": 15,
+       "onetCode": "43-4171.00",
+       "notes": "Relies entirely on personal warmth, social intelligence, and physical presence."
+      },
+      {
+       "taskName": "Organizing meetings and maintaining administrative schedules",
+       "taskNameVi": "Tổ chức họp và duy trì lịch trình hành chính",
+       "exposureType": "automation",
+       "exposurePercentage": 60,
+       "onetCode": "43-6011.00",
+       "notes": "Scheduling tools and AI assistants automate basic calendar management."
+      }
+     ],
+     "sources": [
+      "Goldman Sachs Economics Research",
+      "CBRE Vietnam Office Market Report Q2 2024"
+     ],
+     "methodologySummary": "Evaluated through task-exposure mapping combining Goldman Sachs automation exposure data with CBRE regional commercial real estate workspace transformation findings.",
+     "uncertaintyRange": "+/- 7%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Receptionist & Admin Lead",
+      "pathTitleVi": "Lễ tân văn phòng tăng cường AI & Trưởng nhóm hành chính",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage AI writing assistants to optimize daily reception tasks, scheduling, and basic documentation.",
+      "targetRoles": [
+       "Senior Office Receptionist",
+       "Admin Support Team Lead"
+      ],
+      "skillsToAcquire": [
+       "Virtual meeting tools",
+       "Basic AI prompt writing for admin tasks"
+      ],
+      "transferableSkills": [
+       "Customer service",
+       "Phone etiquette",
+       "Office coordination"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "rationale": "Low risk path that immediately secures current employment by mastering productivity-boosting tools.",
+      "actionStepNow": "Start exploring free Microsoft Learn tutorials to improve your digital document handling."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Internal Communications & HR Admin",
+      "pathTitleVi": "Hành chính Nhân sự & Truyền thông Nội bộ",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition from front-desk reception into back-office employee engagement and HR clerical support.",
+      "targetRoles": [
+       "HR Administrative Officer",
+       "Internal Communications Assistant"
+      ],
+      "skillsToAcquire": [
+       "Basic HR documentation",
+       "Internal newsletter creation",
+       "Online meeting software"
+      ],
+      "transferableSkills": [
+       "Friendly communication",
+       "Organization",
+       "Time management"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       9,
+       11,
+       13,
+       15,
+       18
+      ],
+      "rationale": "Directly aligns with your stated interests in HR and internal comms while building upon your clerical background.",
+      "actionStepNow": "Enroll in a free online course covering administrative communication and basic HR principles."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "HR Generalist & Talent Coordinator",
+      "pathTitleVi": "Chuyên viên Nhân sự tổng hợp & Điều phối nhân tài",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Complete transition into full HR operations including recruitment screening, payroll support, and employee relations.",
+      "targetRoles": [
+       "HR Generalist",
+       "Talent Acquisition Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Labor law basics",
+       "HRIS software",
+       "Intermediate English for workplace communication"
+      ],
+      "transferableSkills": [
+       "Interpersonal communication",
+       "Scheduling",
+       "Attention to detail"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       13,
+       16,
+       20
+      ],
+      "rationale": "Higher long-term ceiling but requires overcoming English and digital skill gaps under strict budget and time constraints.",
+      "actionStepNow": "Begin daily 15-minute English practice on Duolingo to build foundational language capability."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng số cơ bản",
+      "title": "Mastering Digital Tools & Virtual Meetings",
+      "titleVi": "Làm chủ công cụ số và họp trực tuyến",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Virtual meeting platforms",
+       "Basic Excel & document management",
+       "AI productivity basics"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is most effective for organizing virtual team meetings and remote communication in modern HCMC offices?",
+       "options": [
+        "Postal mail service",
+        "Virtual meeting and collaboration software",
+        "Paper appointment logbook",
+        "Landline telephone only"
+       ],
+       "correctIndex": 1,
+       "explanation": "Virtual meeting platforms are essential for managing modern office schedules and remote internal communications."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Transition & Upskilling",
+      "phaseNameVi": "Chuyển đổi & Nâng cao kỹ năng",
+      "title": "Internal Communications & Admin Support Fundamentals",
+      "titleVi": "Cơ bản về truyền thông nội bộ & hỗ trợ hành chính",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Internal newsletter writing",
+       "HR clerical support",
+       "Professional office correspondence"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       },
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a key objective of internal communications in an organization?",
+       "options": [
+        "Selling products to external customers",
+        "Keeping employees informed, engaged, and aligned with company culture",
+        "Filing tax documents with the government",
+        "Managing physical facility security"
+       ],
+       "correctIndex": 1,
+       "explanation": "Internal communications focuses on employee engagement, information sharing, and building strong company culture."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$385 - $577 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869231869_2crs2f",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:27:11.869Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:27:11.869Z",
+     "type": "run_start",
+     "message": "pipeline for \"Lễ tân văn phòng\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:11.869Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:27:20.584Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 874,
+     "latencyMs": 8369
+    },
+    {
+     "ts": "2026-10-13T05:27:20.584Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "administrative assistant",
+       "receptionist",
+       "human resources assistant"
+      ],
+      "riskFlags": [
+       "very limited training budget",
+       "basic computer and English proficiency",
+       "low weekly study availability"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:20.584Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 726,
+     "latencyMs": 956,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "receptionist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "administrative assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "human resources assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.541Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI administrative assistant Vietnam HR automation"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.542Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.542Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "human resources beginner free courses Vietnamese language"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:21.542Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:22.669Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1690,
+     "latencyMs": 1127,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:27:22.669Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "receptionist administrative assistant Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:24.997Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:26.343Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1832,
+     "latencyMs": 1346,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:27:26.343Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:26.343Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:27:34.026Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5045,
+     "latencyMs": 7683
+    },
+    {
+     "ts": "2026-10-13T05:27:34.026Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:34.026Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.7-flash",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 10167,
+   "latencyMs": 22157,
+   "degraded": false
+  }
+ }
+}

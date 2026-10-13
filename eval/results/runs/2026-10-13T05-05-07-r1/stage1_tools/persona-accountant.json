@@ -1,0 +1,503 @@
+{
+ "score": {
+  "personaId": "persona-accountant",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": false,
+  "actionable": true,
+  "usageTokens": 11427,
+  "latencyMs": 10912,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0034281
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Accountant & Tax Auditor",
+    "roleTitleVi": "Chuyên viên Kế toán & Kiểm toán Thuế",
+    "aiResilienceScore": 52,
+    "matchScore": 88,
+    "reasoning": "Accounting and bookkeeping tasks exhibit 100% LLM exposure on routine computational and reporting workflows, making standard entry-level compliance vulnerable to automation. However, complex human advantage tasks such as strategic tax advisory, dispute resolution, and legal compliance under Vietnamese law remain deeply resilient.",
+    "whyItFitsYou": "Your 6 years of experience as a General Accountant with National Economics University training and MISA proficiency gives you a rock-solid foundation in compliance and ledger control. By bridging your gaps in data analysis and presentation, you can shift from routine bookkeeping to high-value tax advisory and financial storytelling.",
+    "transferableSkillsMatch": [
+     "Advanced Excel",
+     "MISA Software Operations",
+     "Tax Regulations & Compliance",
+     "Voucher Auditing & Control"
+    ],
+    "skillsGap": [
+     "Data Analytics Tools",
+     "Financial Data Visualization",
+     "Strategic Cash Flow Structuring"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 28,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "OpenAI / UPenn (2023): Accounting and bookkeeping tasks exhibit 100% LLM exposure on routine computational and reporting workflows.",
+      "source": "OpenAI / UPenn",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Accounting and bookkeeping tasks exhibit high exposure on routine computational and reporting workflows."
+     },
+     {
+      "paperTitle": "WEF (2023): Traditional bookkeepers rank among top 5 declining roles, while Financial Analysts and Strategic Controllers grow 15%.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Traditional bookkeepers rank among top declining roles."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Accountant & Tax Auditor",
+     "occupationTitleVi": "Chuyên viên Kế toán & Kiểm toán Thuế",
+     "molisaCode": "2411 (Chuyên viên kế toán và kiểm toán)",
+     "onetCode": "13-2011.00 (Accountants and Auditors)",
+     "overallResilienceScore": 52,
+     "automationRiskScore": 76,
+     "augmentationPotentialScore": 84,
+     "humanAdvantageCore": [
+      "Strategic tax advisory & cash flow structuring (Tư vấn tối ưu thuế chiến lược & dòng tiền)",
+      "Forensic audit & risk management (Thẩm định rủi ro và phát hiện gian lận phức tạp)",
+      "Legal & financial regulatory compliance (Đàm phán giải trình với cơ quan thuế & kiểm toán)",
+      "Executive financial storytelling (Tư vấn tài chính chiến lược cho ban giám đốc)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Data entry, invoice reconciliation, and standard ledger balancing using MISA",
+       "taskNameVi": "Nhập liệu hóa đơn, đối chiếu chứng từ và hạch toán sổ sách định kỳ trên MISA",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 92,
+       "onetCode": "13-2011.00-T1",
+       "notes": "Intelligent Document Processing (OCR + AI) extracts and posts standard invoices in seconds."
+      },
+      {
+       "taskName": "Financial statement preparation and preliminary ratio analysis",
+       "taskNameVi": "Lập báo cáo tài chính và phân tích các chỉ số tài chính sơ bộ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 68,
+       "onetCode": "13-2011.00-T2",
+       "notes": "AI aggregates trial balances and flags anomalies; accountants audit exceptions."
+      },
+      {
+       "taskName": "Strategic tax restructuring, dispute resolution, and executive advisory under Vietnam tax code",
+       "taskNameVi": "Tư vấn cấu trúc thuế, giải trình thanh tra và tư vấn chiến lược dòng tiền theo luật thuế VN",
+       "exposureType": "human_core",
+       "exposurePercentage": 18,
+       "onetCode": "13-2011.00-T3",
+       "notes": "Requires high trust, legal interpretation nuances in Vietnam law, and executive negotiation."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "openai-upenn-2023",
+       "citationText": "OpenAI / UPenn (2023): Accounting and bookkeeping tasks exhibit 100% LLM exposure on routine computational and reporting workflows.",
+       "url": "https://arxiv.org/abs/2303.10130"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): Traditional bookkeepers rank among top 5 declining roles, while Financial Analysts and Strategic Controllers grow 15%.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Evaluated based on O*NET task content models combined with OpenAI/UPenn LLM exposure metrics and WEF employment projections.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Accountant",
+      "pathTitleVi": "Kế toán trưởng / Chuyên viên Kế toán ứng dụng AI",
+      "feasibilityScore": 92,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage AI tools to automate routine data entry and reporting, focusing your time on high-level tax strategy and compliance advisory.",
+      "targetRoles": [
+       "Senior Accountant",
+       "Chief Accountant"
+      ],
+      "skillsToAcquire": [
+       "AI Document Processing",
+       "Automated Excel Reporting",
+       "Advanced Tax Compliance"
+      ],
+      "transferableSkills": [
+       "MISA",
+       "Voucher Auditing",
+       "Compliance Mindset"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       16,
+       19,
+       22,
+       26,
+       30
+      ],
+      "rationale": "Builds directly on your 6 years of experience while removing vulnerable routine tasks through automation.",
+      "actionStepNow": "Integrate AI-assisted summarization tools for monthly tax updates and automate routine ledger reconciliation."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Financial Analyst / BI Specialist",
+      "pathTitleVi": "Chuyên viên Phân tích Tài chính & Dữ liệu",
+      "feasibilityScore": 78,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition your accounting rigor into financial analysis and business intelligence using modern data visualization and analysis tools.",
+      "targetRoles": [
+       "Financial Analyst",
+       "Business Intelligence Specialist"
+      ],
+      "skillsToAcquire": [
+       "SQL Basics",
+       "Power BI / Tableau",
+       "Financial Modeling"
+      ],
+      "transferableSkills": [
+       "Excel",
+       "Detail Orientation",
+       "Financial Statement Understanding"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       27,
+       34,
+       42
+      ],
+      "rationale": "Aligns with your stated interest in financial analysis and capitalizes on high market growth for data professionals.",
+      "actionStepNow": "Enroll in a low-cost data analytics certificate program utilizing your 10 available hours per week."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Financial Data Engineer",
+      "pathTitleVi": "Kỹ sư Dữ liệu Tài chính",
+      "feasibilityScore": 45,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Shift entirely into building financial data pipelines and automated data infrastructure for large enterprises.",
+      "targetRoles": [
+       "Data Engineer",
+       "Financial Systems Architect"
+      ],
+      "skillsToAcquire": [
+       "Python Programming",
+       "Database Architecture",
+       "ETL Pipelines"
+      ],
+      "transferableSkills": [
+       "Domain Knowledge in Finance"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       32,
+       45,
+       60
+      ],
+      "rationale": "High income potential but requires overcoming a significant skill gap in programming and system engineering within a low risk tolerance.",
+      "actionStepNow": "Explore introductory computer science concepts cautiously while maintaining your primary accounting role."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tooling",
+      "phaseNameVi": "Nền tảng & Công cụ AI",
+      "title": "Master AI Essentials and Automated Excel",
+      "titleVi": "Làm chủ AI cơ bản và Excel tự động hóa",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Prompt Engineering for Finance",
+       "Automated Spreadsheet Formulas",
+       "AI Document Summarization"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       },
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which task represents the highest human advantage in accounting according to the evidence pack?",
+       "options": [
+        "Standard invoice data entry",
+        "Routine trial balance balancing",
+        "Strategic tax restructuring and executive advisory",
+        "Basic ledger posting"
+       ],
+       "correctIndex": 2,
+       "explanation": "Strategic tax restructuring requires high trust, legal interpretation, and executive negotiation, which are resilient human core tasks."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Analysis Skill Acquisition",
+      "phaseNameVi": "Phát triển kỹ năng Phân tích Dữ liệu",
+      "title": "Learn Financial Data Visualization and Basic BI",
+      "titleVi": "Học Trực quan hóa Dữ liệu Tài chính và BI cơ bản",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Data Cleaning",
+       "Dashboard Creation",
+       "Executive Data Presentation"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary benefit of natural language BI tools like Power BI Copilot for analysts?",
+       "options": [
+        "They eliminate the need for financial data",
+        "They automatically generate routine visual summaries and charts",
+        "They replace the need for accounting software entirely",
+        "They write tax laws automatically"
+       ],
+       "correctIndex": 1,
+       "explanation": "Natural language BI tools generate standard visual summaries and charts automatically, allowing analysts to focus on interpretation."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $1,077 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791868127931_flf2bq",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:08:47.931Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:08:47.931Z",
+     "type": "run_start",
+     "message": "pipeline for \"Kế toán tổng hợp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:47.931Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:08:49.003Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 520,
+     "latencyMs": 1072
+    },
+    {
+     "ts": "2026-10-13T05:08:49.003Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "General Accountant",
+       "Financial Analyst",
+       "Accounting Specialist"
+      ],
+      "riskFlags": [
+       "Limited budget for retraining",
+       "Limited weekly hours available for study",
+       "Lacks data analysis skills"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:49.003Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 699,
+     "latencyMs": 1499,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "General Accountant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Financial Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI finance accounting automation Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.502Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "excel data analysis finance course free Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:50.503Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:51.561Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3122,
+     "latencyMs": 1058,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:08:51.561Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:51.561Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:08:58.843Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6855,
+     "latencyMs": 7282
+    },
+    {
+     "ts": "2026-10-13T05:08:58.843Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:58.843Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11196,
+   "latencyMs": 10912,
+   "degraded": false
+  }
+ }
+}

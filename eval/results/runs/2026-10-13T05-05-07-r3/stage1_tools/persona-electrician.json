@@ -1,0 +1,551 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 10720,
+  "latencyMs": 38854,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.003216
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation Maintenance Technician",
+    "roleTitleVi": "Kỹ thuật viên bảo trì tự động hóa công nghiệp",
+    "aiResilienceScore": 84,
+    "matchScore": 88,
+    "reasoning": "According to the ILO (2023) research 'Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality', manual and technical operational roles with physical troubleshooting demands are far less susceptible to full substitution by GenAI compared to administrative or clerical roles. Transitioning from traditional industrial electrical maintenance into automation and PLC-guided equipment leverages on-site physical diagnostic expertise while augmenting capacity through modern digital diagnostics.",
+    "whyItFitsYou": "Your 10 years of hands-on industrial electrical experience in Hai Phong's industrial cluster gives you an intuitive grasp of panel maintenance, inverters, and physical wiring. Shifting into automation leverages your strong troubleshooting logic and shift tolerance without forcing an abrupt career reset.",
+    "transferableSkillsMatch": [
+     "Industrial electrical control cabinet troubleshooting and maintenance",
+     "Inverter configuration and motor drive diagnostics",
+     "Schematic blueprint reading and circuit tracing",
+     "Industrial electrical safety compliance and high-stress fault isolation"
+    ],
+    "skillsGap": [
+     "Programmable Logic Controller (PLC) ladder logic programming",
+     "Sensors and industrial fieldbus communication protocols",
+     "Technical English for equipment manuals and error logs",
+     "Human-Machine Interface (HMI) screen diagnostics"
+    ],
+    "averageSalaryRangeVND": "14,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality",
+      "source": "International Labour Organization (ILO)",
+      "year": 2023,
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality",
+      "quoteOrDataPoint": "Most jobs and industries are only partially exposed to automation and are more likely to be complemented than substituted by GenAI."
+     },
+     {
+      "paperTitle": "The Potentially Large Effects of Artificial Intelligence on Economic Growth (Briggs/Kodnani)",
+      "source": "Goldman Sachs Economics Research",
+      "year": 2023,
+      "url": "https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html",
+      "quoteOrDataPoint": "Roughly two-thirds of current jobs are exposed to some degree of AI automation, and generative AI could substitute up to one-fourth of current work."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Automation Technician",
+     "occupationTitleVi": "Kỹ thuật viên tự động hóa công nghiệp",
+     "molisaCode": "3113",
+     "onetCode": "17-3023.01",
+     "overallResilienceScore": 84,
+     "automationRiskScore": 16,
+     "augmentationPotentialScore": 82,
+     "humanAdvantageCore": [
+      "Tactile physical motor control and complex physical equipment intervention",
+      "Contextual sensory troubleshooting in noisy factory plant environments",
+      "Safety-critical decisions during electrical emergencies"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "On-site electrical cabinet and inverter maintenance",
+       "taskNameVi": "Bảo trì tủ điện và biến tần tại hiện trường",
+       "exposureType": "physical_bound",
+       "exposurePercentage": 10,
+       "onetCode": "49-9051.00",
+       "notes": "Physical assembly, wiring, and thermal checks cannot be executed remotely or simulated entirely by software."
+      },
+      {
+       "taskName": "PLC error reading and automated sensor calibration",
+       "taskNameVi": "Đọc lỗi PLC và hiệu chuẩn cảm biến tự động",
+       "exposureType": "augmented",
+       "exposurePercentage": 45,
+       "onetCode": "17-3023.01",
+       "notes": "Diagnostic algorithms and AI tools can assist in decoding fault logs, but hardware recalibration remains human-driven."
+      },
+      {
+       "taskName": "Electrical blueprint interpretation and documentation update",
+       "taskNameVi": "Đọc hiểu bản vẽ điện và cập nhật tài liệu kỹ thuật",
+       "exposureType": "augmented",
+       "exposurePercentage": 35,
+       "onetCode": "17-3023.01",
+       "notes": "Generative computer-aided drafting tools automate schematic layout updates, speeding up revision cycles."
+      }
+     ],
+     "sources": [
+      "ILO (2023) Generative AI and Jobs",
+      "Goldman Sachs (2023) Economic Growth Report"
+     ],
+     "methodologySummary": "Evaluated based on task-level physical presence demands, routine cognitive automation feasibility, and augmentation potential in manufacturing environments.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Augmented Senior Electrical Technician",
+      "pathTitleVi": "Thợ điện công nghiệp bậc cao ứng dụng công nghệ",
+      "feasibilityScore": 92,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Upgrade your current role by learning digital diagnostic tools, basic software interfaces, and predictive maintenance principles on existing plant lines.",
+      "targetRoles": [
+       "Senior Industrial Electrician",
+       "Electrical Maintenance Lead"
+      ],
+      "skillsToAcquire": [
+       "Digital multimeter diagnostic interfaces",
+       "Basic predictive maintenance logging",
+       "Foundational technical English terminology"
+      ],
+      "transferableSkills": [
+       "Inverter fault identification",
+       "Wiring layout and safety compliance",
+       "Field troubleshooting logic"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       13,
+       15,
+       17,
+       19,
+       21
+      ],
+      "rationale": "Keeps you fully employed in your comfort zone while adding technological value to protect against routine task phase-outs.",
+      "actionStepNow": "Integrate free technical documentation tools and daily vocabulary building for inverter fault manuals."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Industrial Automation Maintenance Technician",
+      "pathTitleVi": "Kỹ thuật viên bảo trì tự động hóa",
+      "feasibilityScore": 82,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into maintaining integrated automated lines, PLC input/output modules, and industrial sensors in Hai Phong industrial parks.",
+      "targetRoles": [
+       "Automation Maintenance Technician",
+       "PLC Support Technician"
+      ],
+      "skillsToAcquire": [
+       "Basic PLC ladder logic interpretation",
+       "Sensor communication interfaces (NPN/PNP, 4-20mA)",
+       "HMI troubleshooting"
+      ],
+      "transferableSkills": [
+       "Cabinet wiring",
+       "Schematic reading",
+       "Shift operations and safety procedures"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       17,
+       20,
+       24,
+       28
+      ],
+      "rationale": "High concentration of multinational manufacturing in Hai Phong creates sustained demand for automation technicians with real physical wiring instincts.",
+      "actionStepNow": "Dedicate 8 hours per week to studying basic ladder diagrams and sensor integration via self-paced modules."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Robotics & Systems Integration Specialist",
+      "pathTitleVi": "Chuyên viên tích hợp hệ thống và robot công nghiệp",
+      "feasibilityScore": 55,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "A long-term transformation involving robotic arm teaching, comprehensive PLC programming, and fieldbus networking.",
+      "targetRoles": [
+       "Robotics Systems Programmer",
+       "Factory Automation Integrator"
+      ],
+      "skillsToAcquire": [
+       "Robotic arm kinematics and trajectory teaching",
+       "SCADA and industrial Ethernet protocols",
+       "Advanced PLC programming (Siemens/Mitsubishi)"
+      ],
+      "transferableSkills": [
+       "Electrical circuit comprehension",
+       "Factory floor endurance",
+       "Safety protocols"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       14,
+       18,
+       24,
+       30,
+       38
+      ],
+      "rationale": "Offers peak earning upside but requires significant English fluency and intensive technical training that exceeds initial budget constraints.",
+      "actionStepNow": "Establish digital literacy and core computer science concepts before investing in specialized hardware certifications."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms-1",
+      "milestoneNumber": 1,
+      "phaseName": "Technical English & Digital Foundations",
+      "phaseNameVi": "Nền tảng tiếng Anh kỹ thuật và số hóa",
+      "title": "Industrial English Vocabulary & Digital Literacy",
+      "titleVi": "Tiếng Anh chuyên ngành điện và tin học căn bản",
+      "estimatedHours": 48,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic English electrical nomenclature",
+       "User interface navigation in diagnostic software",
+       "Reading equipment alarms and technical datasheets"
+      ],
+      "freeResources": {
+       "name": "Duolingo (English for Vietnamese speakers)",
+       "provider": "Duolingo",
+       "url": "https://www.duolingo.com",
+       "type": "course"
+      },
+      "checkpointQuiz": {
+       "question": "What does an 'Overcurrent (OC)' fault on an inverter display most commonly indicate?",
+       "options": [
+        "The supply voltage is lower than the operational limit",
+        "The motor current draw has exceeded the rated safety threshold",
+        "The control panel emergency stop button is physically stuck",
+        "The ambient cabinet temperature has reached freezing point"
+       ],
+       "correctIndex": 1,
+       "explanation": "Overcurrent indicates that the current delivered to the motor exceeded safe predefined parameters, a core concept in inverter maintenance."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "ms-2",
+      "milestoneNumber": 2,
+      "phaseName": "Automation & Logic Fundamentals",
+      "phaseNameVi": "Cơ sở logic điều khiển và tự động hóa",
+      "title": "Digital Logic and Automation Principles",
+      "titleVi": "Nguyên lý tự động hóa và logic số căn bản",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Boolean logic (AND, OR, NOT) in relay and ladder diagrams",
+       "Industrial sensor wiring (inductive, capacitive, optical)",
+       "Input/Output (I/O) signal tracing"
+      ],
+      "freeResources": {
+       "name": "Microsoft Learn (Vietnamese)",
+       "provider": "Microsoft",
+       "url": "https://learn.microsoft.com/vi-vn/training/",
+       "type": "course"
+      },
+      "checkpointQuiz": {
+       "question": "In a basic industrial automation control circuit, what is the role of an optical sensor's NO (Normally Open) contact?",
+       "options": [
+        "It conducts electricity continuously until a physical target blocks it",
+        "It remains open and completes the circuit only when an object is detected",
+        "It controls the three-phase high voltage input directly to the motor",
+        "It functions exclusively as an emergency power supply disconnect"
+       ],
+       "correctIndex": 1,
+       "explanation": "Normally Open contacts complete the diagnostic or control loop upon detection, forming the basis of sensor-to-PLC input processing."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "ms-3",
+      "milestoneNumber": 3,
+      "phaseName": "Applied AI & Modern Industrial Tools",
+      "phaseNameVi": "Ứng dụng AI và công cụ công nghiệp hiện đại",
+      "title": "AI Essentials for Industrial Diagnostics",
+      "titleVi": "Nhập môn AI trong chẩn đoán kỹ thuật",
+      "estimatedHours": 40,
+      "weeksDuration": 5,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "Prompting AI assistants to translate technical fault codes",
+       "Interpreting translated European/Japanese machine schematics",
+       "Basic predictive maintenance data understanding"
+      ],
+      "freeResources": {
+       "name": "Google AI Essentials",
+       "provider": "Google",
+       "url": "https://grow.google/ai-essentials/",
+       "type": "course"
+      },
+      "checkpointQuiz": {
+       "question": "How can generative AI tools directly assist an on-site technician troubleshooting an unfamiliar machine?",
+       "options": [
+        "By physically replacing damaged contactor coils inside the cabinet",
+        "By rapidly translating foreign error codes and summarizing potential causes from manual text",
+        "By eliminating the need to follow lock-out tag-out (LOTO) safety protocols",
+        "By generating high-voltage electrical power through cloud algorithms"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI acts as a cognitive assistant by rapidly decoding complex foreign manuals and structuring diagnostic checklists for the field technician."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$538 - $846 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870421196_bbmjcc",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:47:01.196Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:47:01.196Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ điện công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:01.196Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:47:02.933Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 484,
+     "latencyMs": 1141
+    },
+    {
+     "ts": "2026-10-13T05:47:02.933Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Industrial Electrician",
+       "Automation Technician"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "language barrier"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:02.933Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 680,
+     "latencyMs": 1061,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Industrial Electrician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Automation Technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.629Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "impact of automation on industrial electrician jobs Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.630Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.630Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "PLC programming course Vietnamese free basic English"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:04.630Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:06.372Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1656,
+     "latencyMs": 1074,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:47:06.372Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "Industrial Electrician Automation Technician Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:08.787Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:10.502Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1796,
+     "latencyMs": 967,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:47:10.502Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:10.502Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:47:40.050Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-flash-latest",
+     "usageTokens": 5869,
+     "latencyMs": 28582
+    },
+    {
+     "ts": "2026-10-13T05:47:40.050Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:47:40.050Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-flash-latest"
+   ],
+   "usageTokens": 10485,
+   "latencyMs": 38854,
+   "degraded": false
+  }
+ }
+}

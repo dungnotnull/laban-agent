@@ -1,0 +1,561 @@
+{
+ "score": {
+  "personaId": "persona-logistics",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 17706,
+  "latencyMs": 47794,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0053118
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Business Analyst / Data Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+    "aiResilienceScore": 82,
+    "matchScore": 90,
+    "reasoning": "Your background in logistics coordination provides the exact domain expertise required for supply chain analytics. According to Stanford HAI (2024), business analysts using AI agents achieve 43% faster modeling, making your transition highly viable by leveraging your existing operational knowledge.",
+    "whyItFitsYou": "You already possess the 'human advantage' of understanding Vietnamese logistics workflows and supplier relationships. Your strength in organization and Excel provides a solid foundation to transition from manual reporting to automated data-driven decision-making.",
+    "transferableSkillsMatch": [
+     "Operational workflow management",
+     "Supplier relationship coordination",
+     "Data organization and documentation",
+     "Commercial English proficiency"
+    ],
+    "skillsGap": [
+     "SQL for database querying",
+     "Data visualization (Power BI/Tableau)",
+     "Statistical analysis for supply chain forecasting",
+     "Automated reporting scripts (Python/Pandas)"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "NBER / MIT",
+      "year": 2023,
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "Access to a generative AI-based conversational assistant increases productivity of customer support agents by 14% on average."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Automating logistics container tracking reports",
+       "taskNameVi": "Tự động hóa báo cáo điều phối container",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI can generate Python scripts to clean your current manual Excel logs."
+      },
+      {
+       "taskName": "Visualizing supply chain KPIs in Power BI",
+       "taskNameVi": "Trực quan hóa chỉ số KPI chuỗi cung ứng trên Power BI",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Use AI to suggest dashboard layouts based on your current logistics data."
+      },
+      {
+       "taskName": "Strategic supplier performance evaluation",
+       "taskNameVi": "Đánh giá hiệu suất nhà cung cấp chiến lược",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires your human judgment on supplier reliability and local market context."
+      }
+     ],
+     "methodologySummary": "Based on Stanford HAI and NBER research, focusing on augmenting existing logistics roles with data tools.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Logistics Data Optimizer",
+      "pathTitleVi": "Chuyên viên Tối ưu hóa Dữ liệu Logistics",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Stay in your current role but automate manual reporting using AI tools.",
+      "targetRoles": [
+       "Logistics Analyst",
+       "Operations Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Advanced Excel",
+       "Power BI",
+       "Basic SQL"
+      ],
+      "transferableSkills": [
+       "Logistics domain knowledge",
+       "Supplier coordination"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       26,
+       30
+      ],
+      "rationale": "Leverages your current job security while building high-demand data skills.",
+      "actionStepNow": "Start auditing your current manual reports and identify which can be automated."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Supply Chain Business Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Kinh doanh Chuỗi cung ứng",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Transition to a dedicated analyst role within a larger logistics or manufacturing firm.",
+      "targetRoles": [
+       "Supply Chain Analyst",
+       "Operations Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL",
+       "Data Modeling",
+       "Business Intelligence"
+      ],
+      "transferableSkills": [
+       "Import-Export operations",
+       "Problem solving"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       25,
+       32,
+       40
+      ],
+      "rationale": "Higher salary ceiling by moving into pure analytical functions.",
+      "actionStepNow": "Enroll in a Google Data Analytics certificate via Coursera."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Data Consultant",
+      "pathTitleVi": "Tư vấn viên Dữ liệu",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Move into external consulting for logistics digital transformation.",
+      "targetRoles": [
+       "Digital Transformation Consultant"
+      ],
+      "skillsToAcquire": [
+       "Advanced Data Science",
+       "Consulting Frameworks"
+      ],
+      "transferableSkills": [
+       "Communication",
+       "Stakeholder management"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       25,
+       35,
+       50
+      ],
+      "rationale": "High reward but requires significant investment in new technical skills.",
+      "actionStepNow": "Build a portfolio of logistics optimization projects."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Mastering Data Tools",
+      "titleVi": "Làm chủ công cụ dữ liệu",
+      "estimatedHours": 60,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1200000,
+      "skillsCovered": [
+       "Advanced Excel",
+       "Introduction to Data Analysis"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is best for automating repetitive Excel reporting tasks?",
+       "options": [
+        "Power Query",
+        "Manual Copy-Paste",
+        "Email",
+        "Phone Call"
+       ],
+       "correctIndex": 0,
+       "explanation": "Power Query is a built-in Excel tool designed specifically for data cleaning and automation."
+      },
+      "estimatedCostUSD": 46
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Application",
+      "phaseNameVi": "Ứng dụng thực tế",
+      "title": "Logistics Automation Project",
+      "titleVi": "Dự án tự động hóa logistics",
+      "estimatedHours": 40,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Data Visualization",
+       "Operational Analysis"
+      ],
+      "freeResources": [
+       {
+        "name": "AWS Skill Builder (free tier)",
+        "provider": "AWS",
+        "url": "https://skillbuilder.aws",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary goal of a logistics dashboard?",
+       "options": [
+        "To look pretty",
+        "To provide real-time visibility into KPIs",
+        "To store emails",
+        "To replace the manager"
+       ],
+       "correctIndex": 1,
+       "explanation": "Dashboards are designed to provide actionable insights into key performance indicators."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$692 - $1,346 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 85,
+    "rationale": "The guidance directly maps the user's specific logistics skills and strengths to a new role. It uses relevant industry context and specific tasks that leverage the user's existing Excel and supplier management background."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870815235_269o0y",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:53:35.235Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:53:35.235Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều phối logistics xuất nhập khẩu\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:35.235Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:53:39.156Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 484,
+     "latencyMs": 3157
+    },
+    {
+     "ts": "2026-10-13T05:53:39.156Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Logistics Coordinator",
+       "Supply Chain Analyst",
+       "Operations Specialist"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited time availability"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:39.156Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-flash-latest",
+     "usageTokens": 876,
+     "latencyMs": 12029,
+     "message": "3 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Logistics Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Supply Chain Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Operations Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:52.405Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:57.640Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2835,
+     "latencyMs": 4573,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:53:57.640Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on logistics and supply chain management Vietnam 2024"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:57.640Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:03.597Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3307,
+     "latencyMs": 988,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:54:03.597Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "data analysis supply chain excel power bi free vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:03.597Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "5 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:09.407Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3642,
+     "latencyMs": 5059,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:54:09.407Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:09.407Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:54:18.988Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5925,
+     "latencyMs": 8848
+    },
+    {
+     "ts": "2026-10-13T05:54:18.988Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:23.029Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 414,
+     "latencyMs": 3228
+    },
+    {
+     "ts": "2026-10-13T05:54:23.029Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly maps the user's specific logistics skills and strengths to a new role. It uses relevant industry context and specific tasks that leverage the user's existing Excel and supplier management background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:23.029Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-flash-latest",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 17483,
+   "latencyMs": 47794,
+   "degraded": false
+  }
+ }
+}

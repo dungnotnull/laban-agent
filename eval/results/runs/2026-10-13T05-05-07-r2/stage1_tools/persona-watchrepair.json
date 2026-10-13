@@ -1,0 +1,478 @@
+{
+ "score": {
+  "personaId": "persona-watchrepair",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 9436,
+  "latencyMs": 20583,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0028307999999999996
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "High-End Horology Consultant & Digital Marketplace Specialist",
+    "roleTitleVi": "Chuyên gia tư vấn đồng hồ cao cấp & Kinh doanh kỹ thuật số",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "The market for traditional repair is shrinking, but the luxury watch segment in Vietnam is growing. By leveraging your 15 years of technical expertise to verify authenticity and provide high-end maintenance, you can transition from a manual laborer to a trusted consultant. The IMF report highlights that while routine tasks are at risk, specialized, high-touch human services remain resilient.",
+    "whyItFitsYou": "Your 'absolute patience' and 'precision' are rare assets in the luxury market. You already possess the technical knowledge to distinguish between Swiss and Japanese components, which is the foundation for building trust in a digital marketplace where authenticity is the primary concern for buyers.",
+    "transferableSkillsMatch": [
+     "Technical precision",
+     "Authenticity verification",
+     "Customer relationship management",
+     "Deep product knowledge"
+    ],
+    "skillsGap": [
+     "Digital marketing basics",
+     "E-commerce platform management",
+     "Basic business English for luxury terminology",
+     "Online customer communication"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Gen-AI: Artificial Intelligence and the Future of Work",
+      "source": "International Monetary Fund (IMF)",
+      "year": 2024,
+      "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+      "quoteOrDataPoint": "For emerging markets like Vietnam, exposure is around 40%, leaving a window for upskilling in human-centric roles."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Luxury Watch Consultant",
+     "occupationTitleVi": "Chuyên gia tư vấn đồng hồ cao cấp",
+     "molisaCode": "7311",
+     "onetCode": "49-9064.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 20,
+     "augmentationPotentialScore": 80,
+     "humanAdvantageCore": [
+      "Authenticity verification",
+      "High-touch customer service",
+      "Expert technical judgment"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Digital Authentication Service",
+       "taskNameVi": "Dịch vụ thẩm định trực tuyến",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "49-9064.00",
+       "notes": "Use your expertise to verify photos of watches for online buyers."
+      },
+      {
+       "taskName": "Luxury Maintenance Consulting",
+       "taskNameVi": "Tư vấn bảo dưỡng cao cấp",
+       "exposureType": "Human-Centric",
+       "exposurePercentage": 60,
+       "onetCode": "49-9064.00",
+       "notes": "Provide personalized care advice for high-end mechanical movements."
+      },
+      {
+       "taskName": "Online Inventory Management",
+       "taskNameVi": "Quản lý hàng hóa trực tuyến",
+       "exposureType": "Digital",
+       "exposurePercentage": 30,
+       "onetCode": "43-5061.00",
+       "notes": "List and manage watch parts or services on social media platforms."
+      }
+     ],
+     "sources": "IMF 2024, World Bank 2024",
+     "methodologySummary": "Assessment based on the shift from manual repair to high-value service consulting.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital-First Repair Service",
+      "pathTitleVi": "Dịch vụ sửa chữa kỹ thuật số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Keep repairing but use digital tools to find clients and manage appointments.",
+      "targetRoles": "Independent Watch Specialist",
+      "skillsToAcquire": "Social media marketing, basic digital photography",
+      "transferableSkills": "Watch repair, precision",
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       20
+      ],
+      "rationale": "Leverages existing skills with minimal change to daily routine.",
+      "actionStepNow": "Create a Facebook Business page showcasing your repair process."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Luxury Watch Consultant",
+      "pathTitleVi": "Tư vấn đồng hồ cao cấp",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Shift focus from manual labor to consulting and authentication.",
+      "targetRoles": "Watch Authenticator, Luxury Sales Consultant",
+      "skillsToAcquire": "Luxury brand knowledge, digital communication",
+      "transferableSkills": "Technical expertise, trust-building",
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       25
+      ],
+      "rationale": "Higher margins in luxury consulting than in general repair.",
+      "actionStepNow": "Start learning English terminology for luxury watch brands."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Micro-Entrepreneur in Watch Parts",
+      "pathTitleVi": "Khởi nghiệp kinh doanh linh kiện",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Import/distribute specialized parts for high-end watches.",
+      "targetRoles": "Parts Distributor",
+      "skillsToAcquire": "Supply chain basics, e-commerce",
+      "transferableSkills": "Component knowledge",
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       15,
+       20,
+       30
+      ],
+      "rationale": "High risk due to capital requirements but high potential.",
+      "actionStepNow": "Research reliable suppliers for Swiss/Japanese parts."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "digital-literacy-start",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Xây dựng nền tảng số",
+      "title": "Mastering Digital Basics",
+      "titleVi": "Làm chủ kỹ năng số cơ bản",
+      "estimatedHours": 24,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer basics",
+       "Internet navigation",
+       "Social media for business"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is the most effective way to reach local customers for a specialized service?",
+       "options": [
+        "Printing flyers",
+        "Social media business pages",
+        "Radio ads",
+        "Cold calling"
+       ],
+       "correctIndex": 1,
+       "explanation": "Social media allows for visual showcases of your precision work, which builds trust with potential clients."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "language-upskill",
+      "milestoneNumber": 2,
+      "phaseName": "Professional Growth",
+      "phaseNameVi": "Phát triển chuyên môn",
+      "title": "English for Watchmaking",
+      "titleVi": "Tiếng Anh chuyên ngành đồng hồ",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic English",
+       "Luxury terminology"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is learning English terminology important for your career?",
+       "options": [
+        "To watch movies",
+        "To understand technical manuals and communicate with international collectors",
+        "To travel abroad",
+        "It is not important"
+       ],
+       "correctIndex": 1,
+       "explanation": "High-end watch parts and technical documentation are primarily in English; mastering this increases your professional value."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $962 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869209731_5obwhn",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:26:49.731Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:26:49.731Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ sửa chữa đồng hồ cơ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:49.731Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:26:51.144Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 507,
+     "latencyMs": 1413
+    },
+    {
+     "ts": "2026-10-13T05:26:51.144Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "watchmaker",
+       "horologist",
+       "precision technician"
+      ],
+      "riskFlags": [
+       "shrinking market",
+       "limited budget for retraining",
+       "low digital skills"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:51.144Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:26:52.182Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 699,
+     "latencyMs": 1038,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:26:52.182Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "watchmaker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.182Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.182Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "precision technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.183Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.183Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "automation watch repair artisan vietnam craftsmanship luxury market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.183Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.183Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "digital skills business training vietnam free low cost vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.183Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:52.861Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1706,
+     "latencyMs": 678,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:26:52.861Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "watch repairer watchmaker luxury goods Vietnam Hanoi"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:55.105Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:56.103Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1845,
+     "latencyMs": 998,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:26:56.103Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:56.103Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:27:10.314Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 4465,
+     "latencyMs": 13557
+    },
+    {
+     "ts": "2026-10-13T05:27:10.314Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:10.314Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 9222,
+   "latencyMs": 20583,
+   "degraded": false
+  }
+ }
+}

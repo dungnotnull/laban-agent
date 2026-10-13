@@ -1,0 +1,284 @@
+{
+ "score": {
+  "personaId": "persona-student",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8119,
+  "latencyMs": 17035,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024357
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Content & Brand Operations Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành Nội dung & Thương hiệu tích hợp AI",
+    "aiResilienceScore": 82,
+    "matchScore": 95,
+    "reasoning": "Dựa trên báo cáo từ McKinsey & Company (2023) và World Economic Forum (2023), các công việc marketing truyền thống dựa trên việc viết nội dung đơn thuần đang đối mặt với tỷ lệ tự động hóa cao. Tuy nhiên, sự kết hợp giữa tư duy chiến lược thương hiệu, khả năng bắt trend nhanh và công cụ AI (Generative AI) tạo ra cơ hội 'human-in-the-loop augmentation', giúp tăng năng suất lên tới 40% (Boston Consulting Group, 2023). Tại thị trường TP. Hồ Chí Minh, nhu cầu tuyển dụng các vị trí biết vận hành công cụ AI để tối ưu chiến dịch đang tăng trưởng mạnh (TopCV & GSO, 2024).",
+    "whyItFitsYou": "Với nền tảng là sinh viên năm cuối ngành Marketing tại Đại học Kinh tế TP.HCM (UEH), bạn sở hữu tư duy kinh tế và thương hiệu vững chắc. Lợi thế về nhiệt tình, bắt trend nhanh và tiếng Anh giao tiếp tốt giúp bạn làm chủ các công cụ AI quốc tế (ChatGPT, Claude, Midjourney) nhanh hơn 34% so với mức trung bình (NBER, 2023). Dù chưa có nhiều kinh nghiệm thực tế và kỹ năng phân tích sâu, khả năng học hỏi cao cùng quỹ thời gian 20 giờ/tuần hoàn toàn phù hợp để bứt phá vào nhóm nhân sự Marketing thế hệ mới.",
+    "transferableSkillsMatch": [
+     "Sáng tạo nội dung cơ bản (Content writing)",
+     "Thiết kế ấn phẩm truyền thông bằng Canva",
+     "Quản lý mạng xã hội (Social media management)",
+     "Tiếng Anh giao tiếp và đọc hiểu tài liệu quốc tế",
+     "Tư duy bắt trend nhanh"
+    ],
+    "skillsGap": [
+     "Kỹ thuật tạo lệnh nâng cao (Prompt Engineering cho Marketing)",
+     "Phân tích dữ liệu chiến dịch (Google Analytics / Social Listening)",
+     "Xây dựng chiến lược thương hiệu tích hợp AI (AI-driven Brand Strategy)",
+     "Quản lý dự án nội dung quy mô lớn"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "How People Can Create—and Destroy—Value with Generative AI",
+      "source": "Harvard Business School / Boston Consulting Group (BCG)",
+      "year": "2023",
+      "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64861",
+      "quoteOrDataPoint": "Consultants using AI completed 12.2% more tasks, 25.1% faster, with 40% higher quality on complex business and creative tasks."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam & GSO",
+      "year": "2024",
+      "url": "https://www.topcv.vn",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency, while standard copywriters face 65% contract in traditional hiring volumes."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Advertising and Marketing Professionals",
+     "occupationTitleVi": "Chuyên gia Quảng cáo và Marketing",
+     "molisaCode": "2431",
+     "onetCode": "13-1161.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 90,
+     "humanAdvantageCore": [
+      "Thấu hiểu tâm lý khách hàng và văn hóa bản địa Việt Nam",
+      "Định hướng cảm xúc và bản sắc thương hiệu (Brand Essence)",
+      "Đàm phán và thuyết phục đối tác/khách hàng trực tiếp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Trend Analysis and Content Ideation",
+       "taskNameVi": "Phân tích xu hướng và lên ý tưởng nội dung",
+       "exposureType": "augmentation",
+       "exposurePercentage": 75,
+       "onetCode": "13-1161.00",
+       "notes": "Sử dụng thế mạnh bắt trend nhanh kết hợp AI để sản xuất hàng loạt ý tưởng nhưng do con người kiểm duyệt tầng cảm xúc."
+      },
+      {
+       "taskName": "Copywriting and Social Media Asset Generation",
+       "taskNameVi": "Viết bài và sản xuất tài nguyên mạng xã hội",
+       "exposureType": "augmentation",
+       "exposurePercentage": 85,
+       "onetCode": "13-1161.00",
+       "notes": "Dùng Canva và GenAI tools để tăng tốc độ sáng tạo gấp 3 lần, chuyển từ thợ viết đơn thuần thành đạo diễn nội dung."
+      },
+      {
+       "taskName": "Campaign Data Review and Performance Adjustment",
+       "taskNameVi": "Đánh giá dữ liệu chiến dịch và tối ưu hóa",
+       "exposureType": "complementary",
+       "exposurePercentage": 50,
+       "onetCode": "13-1161.00",
+       "notes": "Khắc phục điểm yếu chưa giỏi phân tích bằng cách học các dashboard AI phân tích dữ liệu tự động."
+      }
+     ],
+     "sources": [
+      "OpenAI et al., 2023",
+      "TopCV & GSO, 2024",
+      "McKinsey & Company, 2023"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa O*NET kết hợp khảo sát thực tế thị trường lao động đô thị Việt Nam (HCMC/Hanoi) đối với ngành dịch vụ sáng tạo.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Content Specialist",
+      "pathTitleVi": "Chuyên gia Nội dung tích hợp AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tận dụng kỹ năng content và Canva sẵn có, bổ sung Prompt Engineering để trở thành nhân sự sản xuất nội dung năng suất cao tại các agency hoặc doanh nghiệp F&B/Retail tại TP.HCM.",
+      "targetRoles": [
+       "AI Content Creator",
+       "Digital Marketing Executive",
+       "Social Media Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompting",
+       "AI Image/Video Workflow",
+       "Basic Marketing Analytics"
+      ],
+      "transferableSkills": [
+       "Content writing",
+       "Canva design",
+       "English communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       15,
+       22,
+       30,
+       40
+      ],
+      "rationale": "Lộ trình an toàn nhất giúp bạn nhanh chóng có việc làm ngay khi ra trường từ UEH mà không sợ bị AI thay thế, vì bạn sử dụng AI làm trợ lý đắc lực.",
+      "actionStepNow": "Khóa học thực chiến Prompt Engineering cho Marketer và thực hành tạo portfolio 5 dự án ảo trên LinkedIn trong 4 tuần tới."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Growth & Performance Marketing Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích & Tăng trưởng Marketing",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển dịch từ sáng tạo thuần túy sang kết hợp phân tích dữ liệu và chạy chiến dịch trả phí có hỗ trợ của AI Analytics.",
+      "targetRoles": [
+       "Performance Marketing Executive",
+       "Growth Marketing Specialist",
+       "Data-driven Content Strategist"
+      ],
+      "skillsToAcquire": [
+       "Google Analytics 4",
+       "Data Visualization",
+       "A/B Testing with AI Tools",
+       "Meta/TikTok Ads Manager"
+      ],
+      "transferableSkills": [
+       "Tư duy logic từ UEH",
+       "Khả năng ngoại ngữ đọc tài liệu quốc tế",
+       "Sự nhạy bén với thị trường"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       18,
+       26,
+       36,
+       48
+      ],
+      "rationale": "Khắc phục điểm yếu chưa thành thạo công cụ phân tích để nắm giữ các vị trí có mức lương và độ ổn định cao hơn trong kỷ nguyên số.",
+      "actionStepNow": "Đăng ký một chứng chỉ quốc tế cơ bản về Google Analytics và bắt đầu thực hành phân tích dữ liệu trên các fanpage nhỏ."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Brand Operations & Prompt Consultant",
+      "pathTitleVi": "Chuyên gia Tư vấn Vận hành Thương hiệu & AI Prompt",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Trở thành chuyên gia độc lập hoặc nội bộ chuyên tư vấn cách ứng dụng GenAI vào toàn bộ quy trình marketing cho các doanh nghiệp SMEs.",
+      "targetRoles": [
+       "AI Integration Consultant",
+       "Brand Operations Manager",
+       "Freelance AI Marketer (Upwork/Global)"
+      ],
+      "skillsToAcquire": [
+       "Workflow Automation (Zapier/Make)",
+       "Brand Architecture",
+       "Client Consultation & Pitching"
+      ],
+      "transferableSkills": [
+       "Nhiệt tình",
+       "Bắt trend nhanh",
+       "Tiếng Anh giao tiếp tốt"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       25,
+       38,
+       55,
+       75
+      ],
+      "rationale": "Phát huy tối đa tính cách năng động và rủi ro cao để đón đầu làn sóng dịch chuyển số của doanh nghiệp vừa và nhỏ tại Việt Nam.",
+      "actionStepNow": "Xây dựng thương hiệu cá nhân trên LinkedIn chia sẻ về cách Marketer sử dụng AI hiệu quả bằng tiếng Anh."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tool Mastery",
+      "phaseNameVi": "Nền tảng & Làm chủ Công cụ AI",
+      "title": "Build AI-Powered Content Workflow",
+      "titleVi": "Xây dựng Quy trình Nội dung tích hợp AI",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "ChatGPT & Claude Advanced Prompting",
+       "Midjourney / Canva AI Integration",
+       "Workflow Optimization"
+      ],
+      "freeResources": [
+       {
+        "name": "Prompt Engineering for ChatGPT",
+        "provider": "DeepLearning.AI / OpenAI",
+        "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng LLM để viết bài quảng cáo sản phẩm tại Việt Nam, phương pháp 'Human-in-the-loop' nào là hiệu quả nhất để đảm bảo văn phong tự nhiên?",
+       "options": [
+        "Đăng trực tiếp nội dung AI xuất ra không cần chỉnh sửa",
+        "Dùng AI tạo ý tưởng và khung sườn, sau đó con người tinh chỉnh từ ngữ, văn hóa và cảm xúc địa phương",
+        "Chỉ dùng AI để dịch thuật từ tiếng Anh sang tiếng Việt",
+        "Tuyệt đối không dùng AI trong bất kỳ khâu viết lách nào"
+       ],
+       "correctIndex": 1,
+       "explanation": "Theo các nghiên cứu về GenAI tại nơi làm việc (BCG, 2023), AI xuất sắc trong việc tạo khung và tăng tốc độ, nhưng sự thấu hiểu văn hóa và cảm xúc địa phương của con người quyết định chất lượng cuối cùng."
+      }
+     },
+     {
+      "id": "ms-2",
+      "milestoneNumber": 2,
+      "phaseName": "Data & Analytics Upskilling",
+      "phaseNameVi": "Nâng cấp Kỹ năng Phân tích Dữ liệu",
+      "title": "Master Basic Marketing Analytics & Metrics",
+      "titleVi": "Làm chủ Phân tích Dữ liệu & Chỉ số Marketing cơ bản",
+      "estimatedHours": 50,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Google Analytics 4 (GA4) cơ bản",
+       "Social Listening Tools",
+       "Data-driven Content Measurement"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Analytics Academy",
+        "provider": "Google",
+        "url": "https://analytics.google.com/analytics/academy/",
+        "type": "Certification Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Chỉ số nào sau đây phản ánh rõ nhất hiệu quả chuyển đổi của một chiến dịch nội dung mạng xã hội?",
+       "options": [
+        "Tổng số lượng lượt thích (Likes)",
+        "Tỷ lệ nhấp chuột (CTR) và tỷ lệ chuyển đổi (Conversion Rate)",
+        "Số lượng bài đăng trong một tuần",
+        "Độ dài của bài viết"
+       ],
+       "correctIndex": 1,
+       "explanation": "CTR và Conversion Rate phản ánh hành vi thực tế của người dùng thay vì chỉ là chỉ số ảo (vanity metrics) như lượt thích."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7891,
+  "latencyMs": 17035
+ }
+}

@@ -1,0 +1,259 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7599,
+  "latencyMs": 8632,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0022797
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Clean Agriculture and Local Produce Business Specialist",
+    "roleTitleVi": "Chuyên gia Nông nghiệp sạch và Kinh doanh Nông sản địa phương",
+    "aiResilienceScore": 92,
+    "matchScore": 88,
+    "reasoning": "Theo Oxford Martin School (2017) và World Economic Forum (2023), các công việc đòi hỏi trí tuệ không gian vật lý, kinh nghiệm thực địa, và tương tác con người trực tiếp có mức độ tự động hóa rất thấp. Kỹ năng quản lý nước, thấu hiểu thổ nhưỡng An Giang kết hợp xu hướng tăng trưởng về Nông nghiệp bền vững (Sustainability Specialists) tạo ra lớp bảo vệ vững chắc chống lại sự thay đổi do AI.",
+    "whyItFitsYou": "Với 20 năm kinh nghiệm trồng lúa tại An Giang, bạn sở hữu sự am hiểu sâu sắc về địa phương và khả năng chịu đựng điều kiện khắc nghiệt – những điểm mạnh mà AI và tự động hóa không thể thay thế. Sở thích về nông nghiệp sạch và kinh doanh nông sản giúp bạn chuyển từ phụ thuộc thương lái sang tự chủ chuỗi giá trị nông sản chất lượng cao.",
+    "transferableSkillsMatch": [
+     "Kinh nghiệm địa phương sâu sắc về canh tác",
+     "Quản lý nguồn nước ruộng và thời vụ",
+     "Chịu đựng điều kiện khắc nghiệt, chăm chỉ"
+    ],
+    "skillsGap": [
+     "Kỹ năng thương mại hóa và tiếp thị nông sản sạch",
+     "Ứng dụng nhật ký điện tử và công nghệ cơ bản trong nông nghiệp",
+     "Xây dựng mạng lưới khách hàng không qua trung gian"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Sustainability Specialists are among the top growth roles globally, driven by green economy transitions."
+     },
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity and local environmental adaptation remain highly resilient."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Related Trades Workers",
+     "occupationTitleVi": "Lao động có kỹ năng trong lĩnh vực nông nghiệp",
+     "molisaCode": "611",
+     "onetCode": "61-0000",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 45,
+     "humanAdvantageCore": [
+      "Kinh nghiệm thực tế trên đồng ruộng An Giang",
+      "Khả năng ứng phó linh hoạt với thời tiết và sâu bệnh thực tế",
+      "Sự am hiểu sâu sắc về chuỗi giá trị lúa gạo địa phương"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Water management and seasonal crop planning based on local terrain",
+       "taskNameVi": "Quản lý nước và lập kế hoạch mùa vụ dựa trên thổ nhưỡng thực tế",
+       "exposureType": "complement",
+       "exposurePercentage": 20,
+       "onetCode": "61-1011",
+       "notes": "Sử dụng kinh nghiệm 20 năm kết hợp thông tin thời tiết để tối ưu hóa năng suất lúa."
+      },
+      {
+       "taskName": "Direct negotiation and local produce marketing",
+       "taskNameVi": "Đàm phán trực tiếp và tiếp thị nông sản địa phương",
+       "exposureType": "human_centric",
+       "exposurePercentage": 5,
+       "onetCode": "61-1012",
+       "notes": "Xây dựng mối quan hệ trực tiếp với người mua để giảm sự phụ thuộc vào thương lái."
+      },
+      {
+       "taskName": "Quality control of harvested clean rice products",
+       "taskNameVi": "Kiểm soát chất lượng sản phẩm lúa gạo sạch sau thu hoạch",
+       "exposureType": "complement",
+       "exposurePercentage": 25,
+       "onetCode": "61-1013",
+       "notes": "Đánh giá thủ công độ chín, chất lượng hạt lúa để phân loại bán giá cao hơn."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs 2023",
+      "Oxford Martin School 2017"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khung phân rã nhiệm vụ O*NET kết hợp đặc thù nông nghiệp vùng Đồng bằng sông Cửu Long.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Traditional Farming Optimized with Market Data",
+      "pathTitleVi": "Canh tác truyền thống tối ưu hóa qua thông tin thị trường",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Giữ nguyên nghề trồng lúa nhưng áp dụng các kiến thức về giá thị trường và kỹ thuật giảm chi phí phân bón để tăng thu nhập.",
+      "targetRoles": [
+       "Nông dân canh tác lúa tiên tiến"
+      ],
+      "skillsToAcquire": [
+       "Theo dõi giá lúa trực tuyến qua điện thoại",
+       "Kỹ thuật bón phân tiết kiệm"
+      ],
+      "transferableSkills": [
+       "Quản lý nước",
+       "Kinh nghiệm canh tác"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9,
+       10,
+       11
+      ],
+      "rationale": "Ít rủi ro nhất, tận dụng triệt để 20 năm kinh nghiệm thực tế.",
+      "actionStepNow": "Nhờ người thân hướng dẫn cách xem giá lúa và thời tiết trên điện thoại thông minh."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Clean Rice Producer & Direct Seller",
+      "pathTitleVi": "Sản xuất lúa sạch và Tự doanh nông sản trực tiếp",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển hướng một phần diện tích sang canh tác lúa sạch (ít hóa chất) và trực tiếp bán cho các hợp tác xã hoặc người tiêu dùng.",
+      "targetRoles": [
+       "Chủ trang trại lúa sạch",
+       "Nhà cung cấp nông sản địa phương"
+      ],
+      "skillsToAcquire": [
+       "Quy trình canh tác lúa giảm phát thải/lúa sạch",
+       "Kỹ năng giao tiếp bán hàng trực tiếp"
+      ],
+      "transferableSkills": [
+       "Kinh nghiệm trồng lúa",
+       "Chịu khó"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       10,
+       12,
+       15,
+       18
+      ],
+      "rationale": "Thoát khỏi sự phụ thuộc vào thương lái, đón đầu xu hướng nông nghiệp xanh của WEF (2023).",
+      "actionStepNow": "Tìm hiểu các mô hình hợp tác xã nông nghiệp sạch tại An Giang."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agricultural Cooperative Leader",
+      "pathTitleVi": "Cán bộ phát triển cộng đồng nông nghiệp / Hợp tác xã",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Trở thành người điều phối hoặc đại diện nông dân trong các dự án nông nghiệp quy mô lớn tại địa phương.",
+      "targetRoles": [
+       "Điều phối viên hợp tác xã nông nghiệp"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng điều phối nhóm",
+       "Lập kế hoạch sản xuất chung"
+      ],
+      "transferableSkills": [
+       "Hiểu biết sâu sắc về đời sống nông dân địa phương"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       12,
+       15,
+       20,
+       25
+      ],
+      "rationale": "Nâng tầm giá trị bản thân từ nông dân đơn lẻ thành người dẫn dắt cộng đồng.",
+      "actionStepNow": "Tham gia các buổi sinh hoạt hội nông dân xã để nâng cao kỹ năng giao tiếp tập thể."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Basics",
+      "phaseNameVi": "Nền tảng & Cơ bản số",
+      "title": "Mastering Agricultural Market Information on Smartphone",
+      "titleVi": "Sử dụng điện thoại thông minh nắm bắt thông tin thị trường lúa gạo",
+      "estimatedHours": 15,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Sử dụng Zalo/Facebook tìm giá lúa",
+       "Xem dự báo thời tiết nông vụ"
+      ],
+      "freeResources": {
+       "name": "Tài liệu hướng dẫn phổ cập điện thoại thông minh cho nông dân",
+       "provider": "Bộ Thông tin và Truyền thông",
+       "url": "https://mic.gov.vn",
+       "type": "Tài liệu hướng dẫn địa phương"
+      },
+      "checkpointQuiz": {
+       "question": "Làm thế nào để biết giá lúa tại địa phương hôm nay mà không chỉ dựa vào một thương lái duy nhất?",
+       "options": [
+        "Đợi thương lái đến tận ruộng báo giá",
+        "Hỏi nhiều nguồn qua nhóm Zalo nông dân hoặc đài phát thanh địa phương",
+        "Không cần quan tâm đến giá thị trường"
+       ],
+       "correctIndex": 1,
+       "explanation": "Việc tham khảo nhiều nguồn qua Zalo giúp bạn có cái nhìn khách quan và không bị ép giá."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Value Chain Expansion",
+      "phaseNameVi": "Mở rộng chuỗi giá trị",
+      "title": "Clean Farming Practices and Direct Connection",
+      "titleVi": "Thực hành canh tác lúa sạch và kết nối đầu ra",
+      "estimatedHours": 20,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Kỹ thuật giảm phân thuốc bảo vệ thực vật",
+       "Cách kết nối với hợp tác xã thu mua"
+      ],
+      "freeResources": {
+       "name": "Khuyến nông An Giang",
+       "provider": "Sở Nông nghiệp và Phát triển Nông thôn An Giang",
+       "url": "https://sonongnghiep.angiang.gov.vn",
+       "type": "Tư vấn trực tiếp và tài liệu kỹ thuật"
+      },
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc áp dụng quy trình canh tác lúa sạch (giảm phân thuốc) là gì?",
+       "options": [
+        "Tốn nhiều chi phí phân bón hơn",
+        "Nâng cao chất lượng gạo, dễ bán giá cao và bảo vệ sức khỏe",
+        "Làm lúa lâu lớn hơn"
+       ],
+       "correctIndex": 1,
+       "explanation": "Lúa sạch đáp ứng nhu cầu thị trường hiện nay, giúp bán được giá cao hơn và không bị phụ thuộc vào thương lái ép giá."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7349,
+  "latencyMs": 8632
+ }
+}

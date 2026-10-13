@@ -1,0 +1,278 @@
+{
+ "score": {
+  "personaId": "persona-accountant",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8283,
+  "latencyMs": 16400,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024849
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Financial Data Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu Tài chính",
+    "aiResilienceScore": 82,
+    "matchScore": 91,
+    "reasoning": "Dựa trên các nghiên cứu từ World Economic Forum (WEF, 2023) và McKinsey (2023), các vị trí kết hợp giữa phân tích dữ liệu và nghiệp vụ tài chính chuyên sâu có mức độ chống chịu cao trước tự động hóa nhờ khả năng suy luận chiến lược và diễn giải ngữ cảnh kinh doanh (Human-in-the-loop augmentation). Mặc dù các tác vụ ghi chép sổ sách cơ bản có rủi ro bị thay thế cao, kỹ năng kiểm soát chứng từ và sự am hiểu quy định kế toán của bạn là nền tảng vững chắc để chuyển dịch sang vai trò phân tích hướng dữ liệu.",
+    "whyItFitsYou": "Với 6 năm kinh nghiệm Kế toán tổng hợp, nắm vững quy trình từ ĐH Kinh tế Quốc dân và sự cẩn thận, chi tiết, bạn đã có sẵn nền tảng tuân thủ quy định và kiểm soát chứng từ vững chắc. Khoản đầu tư thời gian nhỏ (10 giờ/tuần) và ngân sách hạn hẹp hoàn toàn phù hợp để học thêm kỹ năng phân tích dữ liệu và trình bày số liệu mà không cần bỏ việc hiện tại.",
+    "transferableSkillsMatch": [
+     "Kiểm soát chứng từ và tuân thủ quy định thuế",
+     "Sử dụng thành thạo Excel nâng cao và phần mềm MISA",
+     "Tư duy chi tiết và cẩn thận trong xử lý số liệu"
+    ],
+    "skillsGap": [
+     "Công cụ phân tích dữ liệu hiện đại (Power BI / Python cơ bản)",
+     "Kỹ năng trực quan hóa và trình bày dữ liệu tài chính (Data Storytelling)",
+     "Ứng dụng AI vào tự động hóa quy trình báo cáo"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 32,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Business Intelligence Analysts and Data Analysts rank among the top growth roles globally as analytical thinking and AI literacy surge in demand."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis",
+      "source": "International Labour Organization (ILO)",
+      "year": "2023",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis",
+      "quoteOrDataPoint": "Clerical and routine bookkeeping face high automation exposure, whereas analytical financial roles experience high complementarity and augmentation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Financial Analysts",
+     "occupationTitleVi": "Chuyên viên Phân tích Tài chính",
+     "molisaCode": "2411",
+     "onetCode": "13-2051.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 28,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "Diễn giải chiến lược tài chính dựa trên ngữ cảnh thực tế của doanh nghiệp",
+      "Đàm phán và tư vấn tuân thủ pháp luật thuế cho ban lãnh đạo",
+      "Đánh giá rủi ro đạo đức kinh doanh và kiểm soát nội bộ"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Financial Variance and Trend Analysis",
+       "taskNameVi": "Phân tích biến động và xu hướng tài chính định kỳ",
+       "exposureType": "augmented",
+       "exposurePercentage": 60,
+       "onetCode": "13-2051.00",
+       "notes": "Sử dụng AI và công cụ BI để xử lý số liệu thô từ MISA/Excel, giúp bạn tiết kiệm thời gian tổng hợp để tập trung vào việc tìm ra nguyên nhân cốt lõi."
+      },
+      {
+       "taskName": "Regulatory Compliance & Tax Risk Assessment",
+       "taskNameVi": "Đánh giá rủi ro tuân thủ thuế và quy định pháp lý",
+       "exposureType": "human_led",
+       "exposurePercentage": 15,
+       "onetCode": "13-2051.00",
+       "notes": "Tận dụng tư duy tuân thủ quy định hiện tại của bạn; đòi hỏi sự phán đoán đạo đức nghề nghiệp và am hiểu luật pháp Việt Nam."
+      },
+      {
+       "taskName": "Executive Financial Dashboard Presentation",
+       "taskNameVi": "Trình bày báo cáo quản trị trực quan cho ban giám đốc",
+       "exposureType": "augmented",
+       "exposurePercentage": 50,
+       "onetCode": "13-2051.00",
+       "notes": "Khắc phục điểm yếu trình bày số liệu bằng cách dùng AI hỗ trợ thiết kế biểu đồ và cấu trúc slide thuyết phục."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs Report 2023",
+      "O*NET 28.3 Database Update"
+     ],
+     "methodologySummary": "Đánh giá dựa trên sự kết hợp giữa phân tích phơi nhiễm tác vụ O*NET và khảo sát năng suất lao động trong lĩnh vực tài chính kế toán tại Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay & Augment (Kế toán tổng hợp nâng cao năng suất AI)",
+      "pathTitleVi": "Giữ vững vai trò, tích hợp AI tối ưu hóa quy trình kế toán",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng tối đa kinh nghiệm 6 năm, ứng dụng các trợ lý AI và hàm nâng cao Excel để tự động hóa 50% thời gian nhập liệu và đối chiếu chứng từ.",
+      "targetRoles": [
+       "Kế toán tổng hợp trưởng nhóm",
+       "Kế toán trưởng ứng dụng công nghệ"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering cho tài chính",
+       "Power Query & Power Pivot trong Excel"
+      ],
+      "transferableSkills": [
+       "Quy trình kế toán MISA",
+       "Kiểm soát chứng từ",
+       "Thủ thuật thuế"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       "15,000,000",
+       "17,000,000",
+       "19,000,000",
+       "21,000,000",
+       "24,000,000"
+      ],
+      "rationale": "Phương án an toàn tuyệt đối với rủi ro thấp, giúp bạn nhanh chóng giải phóng thời gian làm việc thủ công và nâng cao thu nhập ngay tại vị trí hiện tại.",
+      "actionStepNow": "Dành 30 phút mỗi ngày học cách dùng ChatGPT/Claude để tối ưu hóa công thức Excel và soạn thảo giải trình quyết toán thuế."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot Adjacent (Chuyển dịch sang Phân tích dữ liệu tài chính)",
+      "pathTitleVi": "Chuyển dịch ngang sang Chuyên viên Phân tích Dữ liệu Tài chính",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Kết hợp nền tảng kế toán sẵn có với kỹ năng phân tích dữ liệu hiện đại để gia nhập các doanh nghiệp vừa và lớn tại Hà Nội với mức lương cao hơn.",
+      "targetRoles": [
+       "Financial Data Analyst",
+       "Business Intelligence Specialist (Finance)"
+      ],
+      "skillsToAcquire": [
+       "Power BI / Tableau cơ bản",
+       "SQL cho kế toán",
+       "Kỹ năng kể chuyện bằng số liệu (Data Storytelling)"
+      ],
+      "transferableSkills": [
+       "Am hiểu sâu sắc số liệu tài chính doanh nghiệp",
+       "Tư duy logic và cẩn thận"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       "16,000,000",
+       "20,000,000",
+       "24,000,000",
+       "29,000,000",
+       "35,000,000"
+      ],
+      "rationale": "Tận dụng xu hướng số hóa tài chính tại Việt Nam (FPT 2024), giúp bạn thoát khỏi giới hạn của kế toán thủ công truyền thống.",
+      "actionStepNow": "Đăng ký một khóa học trực tuyến miễn phí về Power BI cơ bản và thực hành trực quan hóa bộ dữ liệu doanh thu tháng của công ty."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Switch (Tư vấn chuyển đổi số tài chính độc lập)",
+      "pathTitleVi": "Chuyển hướng hoàn toàn sang Tư vấn tự động hóa kế toán",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Trở thành chuyên gia tư vấn tự động hóa quy trình nghiệp vụ (RPA/AI) cho các doanh nghiệp SME tại Hà Nội.",
+      "targetRoles": [
+       "Digital Finance Consultant",
+       "Independent Accounting Tech Advisor"
+      ],
+      "skillsToAcquire": [
+       "Quy trình tự động hóa RPA cơ bản",
+       "Quản trị dự án chuyển đổi số",
+       "Kỹ năng bán hàng và tư vấn"
+      ],
+      "transferableSkills": [
+       "Hiểu biết toàn diện về vận hành phòng kế toán doanh nghiệp"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       "14,000,000",
+       "18,000,000",
+       "25,000,000",
+       "32,000,000",
+       "42,000,000"
+      ],
+      "rationale": "Tiềm năng thu nhập cao nhưng đòi hỏi rủi ro lớn và sự thay đổi phong cách làm việc từ nhân sự văn phòng sang chuyên gia độc lập.",
+      "actionStepNow": "Khảo sát nhu cầu tự động hóa của 5 doanh nghiệp SME quen biết để hiểu các điểm nghẽn lớn nhất trong quy trình kế toán của họ."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Productivity",
+      "phaseNameVi": "Nền tảng & Tăng tốc năng suất với AI",
+      "title": "Mastering AI & Advanced Excel for Accountants",
+      "titleVi": "Làm chủ AI và Excel nâng cao trong Kế toán",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Prompt Engineering tài chính",
+       "Power Query nâng cao",
+       "Tự động hóa báo cáo bằng AI"
+      ],
+      "freeResources": [
+       {
+        "name": "Excel Campus - YouTube",
+        "provider": "Jon Peltier / Kevin Stratvert",
+        "url": "https://www.youtube.com/@KevinStratvert",
+        "type": "Video Course"
+       },
+       {
+        "name": "ChatGPT for Productivity",
+        "provider": "OpenAI / DeepLearning.AI",
+        "url": "https://www.deeplearning.ai",
+        "type": "Short Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng AI để hỗ trợ kiểm tra sai sót trong bảng cân phát sinh, cách tiếp cận an toàn nhất là gì?",
+       "options": [
+        "Gửi toàn bộ thông tin nhạy cảm và bảo mật khách hàng lên phiên bản công khai của AI",
+        "Ẩn danh hóa dữ liệu nhạy cảm, sử dụng AI để kiểm tra logic công thức và tự đối chiếu kết quả cuối cùng",
+        "Chỉ dựa hoàn toàn vào kết quả của AI mà không cần kiểm tra lại",
+        "Không bao giờ sử dụng công cụ AI dưới mọi hình thức"
+       ],
+       "correctIndex": 1,
+       "explanation": "Luôn cần tuân thủ bảo mật dữ liệu doanh nghiệp (ẩn danh hóa) và áp dụng nguyên tắc Human-in-the-loop (con người kiểm chứng lại kết quả của AI)."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Visualization & Storytelling",
+      "phaseNameVi": "Trực quan hóa Dữ liệu & Trình bày Báo cáo",
+      "title": "Financial Dashboard & Data Storytelling with Power BI",
+      "titleVi": "Xây dựng Bảng điều khiển Tài chính & Kỹ năng Trình bày Số liệu",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Power BI Desktop cơ bản đến nâng cao",
+       "Thiết kế biểu đồ tài chính trực quan",
+       "Kỹ năng thuyết trình số liệu trước ban giám đốc"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Power BI Learning Path",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/en-us/power-bi/",
+        "type": "Official Documentation & Tutorials"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố quan trọng nhất khi trình bày một biểu đồ tài chính cho Ban Giám đốc là gì?",
+       "options": [
+        "Sử dụng càng nhiều màu sắc sặc sỡ càng tốt",
+        "Đưa vào mọi con số chi tiết có trong sổ cái",
+        "Làm nổi bật thông điệp cốt lõi (Insight) và xu hướng biến động ảnh hưởng đến quyết định kinh doanh",
+        "Chỉ hiển thị bảng số liệu thô không qua biểu đồ"
+       ],
+       "correctIndex": 2,
+       "explanation": "Ban Giám đốc quan tâm đến các điểm nhấn chiến lược và thông điệp cốt lõi từ dữ liệu hơn là danh sách số liệu thô dài dòng."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 8042,
+  "latencyMs": 16400
+ }
+}

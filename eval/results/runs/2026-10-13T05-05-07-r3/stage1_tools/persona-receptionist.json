@@ -1,0 +1,513 @@
+{
+ "score": {
+  "personaId": "persona-receptionist",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 9374,
+  "latencyMs": 13873,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0028122
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "HR Specialist & Talent Acquisition Lead",
+    "roleTitleVi": "Chuyên viên Nhân sự & Tuyển dụng (HR/TA)",
+    "aiResilienceScore": 68,
+    "matchScore": 85,
+    "reasoning": "As office automation and AI screening tools streamline routine administrative tasks, transitioning into an HR and talent acquisition role leverages your strong interpersonal and organizational foundation while pivoting away from routine reception work. According to Stanford HAI (2024), while AI screening cuts time-to-hire by 45%, final candidate acceptance relies 88% on human rapport, making human-centric communication your core defensive moat.",
+    "whyItFitsYou": "Your strengths in friendly communication, organization, and working under peak pressure map directly to candidate coordination and internal HR support. Furthermore, your stated interests in administrative human resources and internal communications align seamlessly with managing employee relations and engagement initiatives.",
+    "transferableSkillsMatch": [
+     "Scheduling and calendar management",
+     "Interpersonal communication and greeting",
+     "Basic document drafting and organization",
+     "Handling high-pressure situations gracefully"
+    ],
+    "skillsGap": [
+     "Digital office tools and online meeting platforms",
+     "Conversational English for workplace communication",
+     "Basic HR compliance and interview scheduling software"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): AI screening cuts time-to-hire by 45%, but final candidate acceptance relies 88% on human rapport.",
+      "source": "Stanford HAI AI Index 2024",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI screening cuts time-to-hire by 45%, but final candidate acceptance relies 88% on human rapport."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "HR Specialist & Talent Acquisition Lead",
+     "occupationTitleVi": "Chuyên viên Nhân sự & Tuyển dụng (HR/TA)",
+     "molisaCode": "2423 (Chuyên viên quản lý nhân sự)",
+     "onetCode": "13-1071.00 (Human Resources Specialists)",
+     "overallResilienceScore": 68,
+     "automationRiskScore": 48,
+     "augmentationPotentialScore": 82,
+     "humanAdvantageCore": [
+      "Culture fit assessment & deep candidate behavioral interviewing (Đọc vị tâm lý và phỏng vấn hành vi)",
+      "Executive retention & organizational conflict mediation (Hòa giải xung đột và giữ chân nhân tài)",
+      "Leadership succession planning & team chemistry (Quy hoạch nhân sự cấp cao)",
+      "Employer brand authenticity (Xây dựng văn hóa doanh nghiệp thực chất)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Resume screening, initial CV parsing, and interview scheduling",
+       "taskNameVi": "Lọc hồ sơ CV, chấm điểm sơ bộ và sắp xếp lịch phỏng vấn tự động",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 86,
+       "onetCode": "13-1071.00-T1",
+       "notes": "ATS AI parsers match candidate skills and automate calendar bookings seamlessly."
+      },
+      {
+       "taskName": "Drafting job descriptions, offer letters, and compensation benchmarking",
+       "taskNameVi": "Soạn thảo JD, thư mời nhận việc và tổng hợp khảo sát lương",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 62,
+       "onetCode": "13-1071.00-T2",
+       "notes": "AI drafts competitive packages and customized JDs in minutes."
+      },
+      {
+       "taskName": "In-depth behavioral interviews, talent closing, and employee wellbeing support",
+       "taskNameVi": "Phỏng vấn chuyên sâu, đàm phán thuyết phục nhân tài và chăm sóc sức khỏe tinh thần",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "13-1071.00-T3",
+       "notes": "Irreplaceable emotional resonance, ethical care, and personal connection."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): AI screening cuts time-to-hire by 45%, but final candidate acceptance relies 88% on human rapport.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Evaluated using La Bàn economic synthesis framework combining O*NET task exposure metrics, MOLISA occupational forecasts, and Stanford HAI AI vulnerability indexes for Vietnam's urban service hubs.",
+     "uncertaintyRange": "+/- 5% based on macroeconomic shifts in HCMC office leasing and BPO sector consolidation.",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay as Office Professional & AI-Augment",
+      "pathTitleVi": "Tiếp tục làm Lễ tân/Hành chính & Ứng dụng AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Upgrade current daily administrative tasks using AI productivity tools to secure your current position and increase personal efficiency.",
+      "targetRoles": [
+       "Senior Office Administrator",
+       "Executive Assistant"
+      ],
+      "skillsToAcquire": [
+       "Online meeting facilitation tools",
+       "Basic AI text assistants for drafting emails"
+      ],
+      "transferableSkills": [
+       "Customer greeting",
+       "Schedule management",
+       "Basic Excel"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9,
+       9.5,
+       10,
+       11
+      ],
+      "rationale": "Low risk path leveraging your 4 years of experience while removing weaknesses in digital office tools.",
+      "actionStepNow": "Enroll in free digital literacy tutorials to master online meeting software and basic office suites."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to HR & Internal Communications",
+      "pathTitleVi": "Chuyển hướng sang Nhân sự & Truyền thông nội bộ",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition into human resources and internal communications by building on your organizational and interpersonal strengths.",
+      "targetRoles": [
+       "HR Administrative Assistant",
+       "Internal Communications Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Basic HR operations",
+       "Internal employee engagement techniques",
+       "Conversational English basics"
+      ],
+      "transferableSkills": [
+       "Interpersonal rapport",
+       "Event coordination",
+       "Calendar management"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       12,
+       14,
+       17
+      ],
+      "rationale": "Directly satisfies your career interests in HR and internal comms with strong long-term resilience.",
+      "actionStepNow": "Start daily English practice and explore free foundational HR learning resources."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Corporate Operations Specialist",
+      "pathTitleVi": "Chuyển đổi toàn diện sang Vận hành Doanh nghiệp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "A complete career overhaul into corporate operations management requiring intensive upskilling and certification.",
+      "targetRoles": [
+       "Operations Specialist",
+       "Office Manager"
+      ],
+      "skillsToAcquire": [
+       "Advanced data management",
+       "Business process optimization",
+       "Professional English communication"
+      ],
+      "transferableSkills": [
+       "Workplace organization",
+       "Crisis management"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       13,
+       16,
+       20
+      ],
+      "rationale": "High reward but high risk given current budget and time constraints.",
+      "actionStepNow": "Focus first on adjacent pivot before considering full operational restructuring."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & Basic Tools",
+      "phaseNameVi": "Nâng cao kỹ năng số và công cụ văn phòng",
+      "title": "Master Digital Office & Online Meeting Essentials",
+      "titleVi": "Làm chủ công cụ văn phòng số và họp trực tuyến",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Online meeting software setup",
+       "Advanced email management",
+       "GCFGlobal digital literacy basics"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which practice best ensures a smooth online meeting setup when working with remote stakeholders?",
+       "options": [
+        "Joining 5 minutes early to test audio, video, and screen sharing",
+        "Waiting until participants arrive before installing software",
+        "Disabling all notifications permanently without checking agenda",
+        "Relying entirely on phone calls instead of video tools"
+       ],
+       "correctIndex": 0,
+       "explanation": "Testing equipment and joining early prevents technical friction and demonstrates high organizational professionalism."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "HR & English Upskilling",
+      "phaseNameVi": "Phát triển nghiệp vụ Nhân sự và Tiếng Anh cơ bản",
+      "title": "Build Foundational HR Knowledge & Daily English Habit",
+      "titleVi": "Xây dựng nền tảng Nhân sự và thói quen tiếng Anh hàng ngày",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic HR administration",
+       "Daily English conversational practice",
+       "Internal communication principles"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a primary human-centric advantage in modern HR and talent acquisition according to industry evidence?",
+       "options": [
+        "Automated CV screening speed",
+        "Building genuine human rapport and behavioral evaluation during interviews",
+        "Storing resume data in cloud folders",
+        "Generating automated rejection emails"
+       ],
+       "correctIndex": 1,
+       "explanation": "While AI handles initial parsing, building human rapport and evaluating culture fit remain irreplaceable human core strengths."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$385 - $692 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870405276_cna0fg",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:46:45.276Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:46:45.276Z",
+     "type": "run_start",
+     "message": "pipeline for \"Lễ tân văn phòng\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:45.276Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:46:47.249Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 527,
+     "latencyMs": 1349
+    },
+    {
+     "ts": "2026-10-13T05:46:47.249Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Administrative Assistant",
+       "Office Administrator",
+       "HR Coordinator"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited time for professional development",
+       "technical skill gaps"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:47.249Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:46:49.191Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 708,
+     "latencyMs": 1390,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:46:49.191Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Administrative Assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Office Administrator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "HR Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation impact on administrative roles Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free digital office tools training English for office work Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:49.192Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:50.977Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2206,
+     "latencyMs": 1149,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:46:50.977Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:50.977Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:46:59.149Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5692,
+     "latencyMs": 7800
+    },
+    {
+     "ts": "2026-10-13T05:46:59.149Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:59.149Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 68
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 9133,
+   "latencyMs": 13873,
+   "degraded": false
+  }
+ }
+}

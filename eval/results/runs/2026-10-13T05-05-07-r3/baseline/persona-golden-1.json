@@ -1,0 +1,273 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 40,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7306,
+  "latencyMs": 7015,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0021918
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Product Designer (UI/UX)",
+    "roleTitleVi": "Nhà thiết kế sản phẩm (UI/UX) tích hợp AI",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "Dựa trên báo cáo của McKinsey (2023) và PwC (2024), các vai trò đòi hỏi sự thấu cảm thương hiệu và tư duy giải quyết vấn đề phức tạp có khả năng chống chịu cao với tự động hóa. Việc kết hợp kỹ năng thiết kế truyền thống với AI giúp tối ưu hóa quy trình làm việc, tăng năng suất lên 35-50%.",
+    "whyItFitsYou": "Bạn có nền tảng vững chắc về Adobe Creative Suite và cảm quan thẩm mỹ từ ĐH Kiến Trúc. Sự tỉ mỉ và khả năng lắng nghe brief khách hàng là lợi thế cốt lõi mà AI chưa thể thay thế hoàn toàn trong việc thấu hiểu trải nghiệm người dùng (UX).",
+    "transferableSkillsMatch": [
+     "Tư duy thẩm mỹ và bố cục",
+     "Thấu cảm thương hiệu",
+     "Kỹ năng lắng nghe và phân tích yêu cầu khách hàng",
+     "Sử dụng thành thạo Adobe Creative Suite"
+    ],
+    "skillsGap": [
+     "Quy trình kiểm soát Prompt AI nâng cao (Midjourney/Stable Diffusion)",
+     "Tư duy thiết kế giao diện (UI) dựa trên dữ liệu",
+     "Công cụ tạo mẫu tương tác (Figma/Protopie)",
+     "Kiến thức cơ bản về hệ thống thiết kế (Design Systems)"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 50,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The economic potential of generative AI: The next productivity frontier",
+      "source": "McKinsey & Company",
+      "year": 2023,
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai",
+      "quoteOrDataPoint": "Generative AI could automate tasks that absorb 60-70% of employees' time, shifting focus to high-value creative strategy."
+     },
+     {
+      "paperTitle": "PwC 2024 Global AI Jobs Barometer",
+      "source": "PwC",
+      "year": 2024,
+      "url": "https://www.pwc.com/gx/en/issues/reinventing-the-future-of-work.html",
+      "quoteOrDataPoint": "Jobs requiring AI skills carry up to a 25% wage premium."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Graphic and Multimedia Designer",
+     "occupationTitleVi": "Thiết kế đồ họa và đa phương tiện",
+     "molisaCode": "2166",
+     "onetCode": "27-1024.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 90,
+     "humanAdvantageCore": [
+      "Thấu cảm người dùng",
+      "Định hướng nghệ thuật độc bản",
+      "Đàm phán và thuyết phục khách hàng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "AI-Assisted Brand Identity Development",
+       "taskNameVi": "Phát triển nhận diện thương hiệu với AI",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "27-1024.00",
+       "notes": "Sử dụng AI để tạo concept nhanh, tập trung thời gian vào tinh chỉnh chi tiết và cảm xúc thương hiệu."
+      },
+      {
+       "taskName": "UI/UX Prototyping",
+       "taskNameVi": "Thiết kế mẫu thử UI/UX",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "15-1255.00",
+       "notes": "Tận dụng AI để tạo wireframe và nội dung mẫu, tập trung vào trải nghiệm người dùng."
+      },
+      {
+       "taskName": "Client Brief Interpretation",
+       "taskNameVi": "Phân tích yêu cầu khách hàng",
+       "exposureType": "Human-Centric",
+       "exposurePercentage": 5,
+       "onetCode": "27-1024.00",
+       "notes": "Kỹ năng cốt lõi cần sự thấu cảm và giao tiếp trực tiếp."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School",
+      "TopCV Vietnam"
+     ],
+     "methodologySummary": "Phân tích dựa trên sự kết hợp giữa khả năng sáng tạo độc bản và hiệu suất tăng cường bởi công cụ AI.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Designer",
+      "pathTitleVi": "Nhà thiết kế tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tích hợp AI vào quy trình thiết kế hiện tại để tăng năng suất.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "AI Art Director"
+      ],
+      "skillsToAcquire": [
+       "Midjourney Prompting",
+       "Adobe Firefly integration"
+      ],
+      "transferableSkills": [
+       "Adobe Suite",
+       "Layout design"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       32,
+       40,
+       50
+      ],
+      "rationale": "Tận dụng kỹ năng sẵn có, giảm thiểu rủi ro thay đổi nghề nghiệp.",
+      "actionStepNow": "Đăng ký khóa học Prompt Engineering cho thiết kế đồ họa."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "UI/UX Product Designer",
+      "pathTitleVi": "Nhà thiết kế sản phẩm UI/UX",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch sang thiết kế giao diện người dùng với tư duy sản phẩm.",
+      "targetRoles": [
+       "UI/UX Designer",
+       "Product Designer"
+      ],
+      "skillsToAcquire": [
+       "Figma",
+       "User Research",
+       "Design Systems"
+      ],
+      "transferableSkills": [
+       "Visual design",
+       "Branding"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       22,
+       28,
+       38,
+       48,
+       65
+      ],
+      "rationale": "Nhu cầu thị trường cao, lương cạnh tranh hơn so với thiết kế đồ họa thuần túy.",
+      "actionStepNow": "Bắt đầu học Figma và thực hiện 1 dự án case study UI/UX."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Creative Technologist",
+      "pathTitleVi": "Kỹ sư sáng tạo",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Kết hợp thiết kế và lập trình giao diện (No-code/Low-code).",
+      "targetRoles": [
+       "Creative Developer",
+       "Webflow Designer"
+      ],
+      "skillsToAcquire": [
+       "Webflow",
+       "Basic HTML/CSS",
+       "JavaScript"
+      ],
+      "transferableSkills": [
+       "Visual design"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       25,
+       30,
+       45,
+       60,
+       80
+      ],
+      "rationale": "Tạo ra giá trị độc bản cao, khó bị thay thế bởi AI.",
+      "actionStepNow": "Tìm hiểu về Webflow hoặc Framer để xây dựng website không cần code."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "AI Tool Mastery",
+      "phaseNameVi": "Làm chủ công cụ AI",
+      "title": "Tăng tốc quy trình thiết kế",
+      "titleVi": "Tăng tốc quy trình thiết kế",
+      "estimatedHours": 40,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Midjourney",
+       "Adobe Firefly",
+       "Stable Diffusion basics"
+      ],
+      "freeResources": [
+       {
+        "name": "Midjourney Documentation",
+        "provider": "Midjourney",
+        "url": "https://docs.midjourney.com/",
+        "type": "Documentation"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất khi viết prompt cho AI tạo ảnh?",
+       "options": [
+        "Độ dài của câu",
+        "Sự cụ thể về phong cách, ánh sáng và bố cục",
+        "Số lượng từ khóa ngẫu nhiên",
+        "Không cần quan tâm đến prompt"
+       ],
+       "correctIndex": 1,
+       "explanation": "Sự cụ thể giúp AI hiểu rõ ý đồ nghệ thuật của người thiết kế."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "UI/UX Transition",
+      "phaseNameVi": "Chuyển dịch sang UI/UX",
+      "title": "Xây dựng Portfolio UI/UX",
+      "titleVi": "Xây dựng Portfolio UI/UX",
+      "estimatedHours": 80,
+      "weeksDuration": 12,
+      "skillsCovered": [
+       "Figma",
+       "User Journey Mapping",
+       "Prototyping"
+      ],
+      "freeResources": [
+       {
+        "name": "Figma Learn",
+        "provider": "Figma",
+        "url": "https://www.figma.com/resources/learn-design/",
+        "type": "Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Mục tiêu chính của User Journey Mapping là gì?",
+       "options": [
+        "Vẽ hình đẹp",
+        "Hiểu trải nghiệm và điểm đau của người dùng",
+        "Viết code cho website",
+        "Tăng doanh số bán hàng"
+       ],
+       "correctIndex": 1,
+       "explanation": "User Journey Mapping giúp designer thấu hiểu hành trình và cảm xúc của người dùng."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 7083,
+  "latencyMs": 7015
+ }
+}

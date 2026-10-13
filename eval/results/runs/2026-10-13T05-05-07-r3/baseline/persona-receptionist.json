@@ -1,0 +1,269 @@
+{
+ "score": {
+  "personaId": "persona-receptionist",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7178,
+  "latencyMs": 6468,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0021534
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Administrative Operations & Internal Communications Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành Hành chính & Truyền thông Nội bộ",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "Dựa trên báo cáo của ILO (2023) và WEF (2023), các công việc hành chính thuần túy đang bị tự động hóa, nhưng vai trò kết hợp giữa quản trị vận hành và truyền thông nội bộ đòi hỏi trí tuệ cảm xúc (EQ) và khả năng xử lý tình huống thực tế cao, vốn là điểm mạnh của bạn.",
+    "whyItFitsYou": "Bạn có 4 năm kinh nghiệm lễ tân, kỹ năng giao tiếp thân thiện và khả năng chịu áp lực tốt. Việc chuyển dịch sang Truyền thông nội bộ tận dụng được sự thấu hiểu văn hóa công ty của bạn, trong khi kỹ năng hành chính được nâng cấp bằng AI sẽ giúp bạn làm việc hiệu quả hơn.",
+    "transferableSkillsMatch": [
+     "Giao tiếp thân thiện",
+     "Tổ chức công việc",
+     "Xử lý tình huống giờ cao điểm",
+     "Soạn thảo văn bản"
+    ],
+    "skillsGap": [
+     "Sử dụng công cụ AI tạo nội dung (ChatGPT, Canva Magic)",
+     "Kỹ năng họp trực tuyến nâng cao (Zoom/Teams/Google Meet)",
+     "Tin học văn phòng nâng cao (Google Workspace/Office 365)",
+     "Tiếng Anh giao tiếp công sở"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Analytical thinking and social intelligence are the highest-demanded upskilling priorities."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis",
+      "source": "ILO",
+      "year": "2023",
+      "url": "https://www.ilo.org/global/publications/books/WCMS_890744/lang--en/index.htm",
+      "quoteOrDataPoint": "Clerical work is highly exposed, but roles requiring human-in-the-loop coordination remain resilient."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Administrative Services Manager",
+     "occupationTitleVi": "Quản lý dịch vụ hành chính",
+     "molisaCode": "1219",
+     "onetCode": "11-3012.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 30,
+     "augmentationPotentialScore": 70,
+     "humanAdvantageCore": [
+      "Giao tiếp xã hội",
+      "Giải quyết xung đột",
+      "Quản lý văn hóa doanh nghiệp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Internal Event Coordination",
+       "taskNameVi": "Điều phối sự kiện nội bộ",
+       "exposureType": "Low",
+       "exposurePercentage": 15,
+       "onetCode": "11-3012.00",
+       "notes": "AI hỗ trợ lập kế hoạch, con người thực thi và kết nối."
+      },
+      {
+       "taskName": "Office Workflow Optimization",
+       "taskNameVi": "Tối ưu hóa quy trình văn phòng",
+       "exposureType": "Medium",
+       "exposurePercentage": 40,
+       "onetCode": "11-3012.00",
+       "notes": "Sử dụng AI để tự động hóa báo cáo hành chính."
+      },
+      {
+       "taskName": "Visitor & Stakeholder Relations",
+       "taskNameVi": "Quan hệ khách hàng và đối tác",
+       "exposureType": "Very Low",
+       "exposurePercentage": 5,
+       "onetCode": "11-3012.00",
+       "notes": "Yêu cầu sự hiện diện và thấu cảm trực tiếp."
+      }
+     ],
+     "sources": [
+      "VSCO 2020",
+      "O*NET 28.3"
+     ],
+     "methodologySummary": "Đánh giá dựa trên sự kết hợp giữa khả năng tự động hóa tác vụ hành chính và nhu cầu về kỹ năng mềm.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Admin",
+      "pathTitleVi": "Hành chính nâng cao với AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Giữ vai trò hiện tại nhưng áp dụng công cụ AI để tăng năng suất.",
+      "targetRoles": [
+       "Senior Receptionist",
+       "Admin Coordinator"
+      ],
+      "skillsToAcquire": [
+       "ChatGPT Prompting",
+       "Google Workspace Automation"
+      ],
+      "transferableSkills": [
+       "Giao tiếp",
+       "Tổ chức"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       11,
+       13,
+       15,
+       17
+      ],
+      "rationale": "Tận dụng kinh nghiệm sẵn có, giảm rủi ro thất nghiệp.",
+      "actionStepNow": "Học cách sử dụng ChatGPT để soạn thảo email và lịch họp."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Internal Comms Specialist",
+      "pathTitleVi": "Chuyên viên Truyền thông nội bộ",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch sang mảng truyền thông nội bộ dựa trên kỹ năng giao tiếp.",
+      "targetRoles": [
+       "Internal Comms Executive"
+      ],
+      "skillsToAcquire": [
+       "Content Writing",
+       "Basic Design (Canva)"
+      ],
+      "transferableSkills": [
+       "Giao tiếp",
+       "Hiểu văn hóa"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       11,
+       13,
+       16,
+       19,
+       22
+      ],
+      "rationale": "Nhu cầu nhân sự gắn kết văn hóa doanh nghiệp đang tăng cao.",
+      "actionStepNow": "Tham gia khóa học ngắn hạn về viết nội dung truyền thông."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Customer Success Specialist",
+      "pathTitleVi": "Chuyên viên Chăm sóc khách hàng",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Chuyển sang mảng dịch vụ khách hàng chuyên nghiệp.",
+      "targetRoles": [
+       "Customer Success Associate"
+      ],
+      "skillsToAcquire": [
+       "CRM Software",
+       "Data Analysis"
+      ],
+      "transferableSkills": [
+       "Giao tiếp",
+       "Chịu áp lực"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       17,
+       20,
+       25
+      ],
+      "rationale": "Lương cao hơn nhưng cạnh tranh khốc liệt hơn.",
+      "actionStepNow": "Tìm hiểu về các nền tảng CRM phổ biến."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy",
+      "phaseNameVi": "Nâng cao kỹ năng số",
+      "title": "Làm chủ công cụ văn phòng AI",
+      "titleVi": "Làm chủ công cụ văn phòng AI",
+      "estimatedHours": 20,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Google Workspace",
+       "ChatGPT",
+       "Zoom/Teams"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Digital Garage",
+        "provider": "Google",
+        "url": "https://learndigital.withgoogle.com/digitalgarage",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào giúp bạn tự động hóa việc sắp xếp lịch họp?",
+       "options": [
+        "ChatGPT",
+        "Google Calendar",
+        "Excel",
+        "Tất cả đều đúng"
+       ],
+       "correctIndex": 3,
+       "explanation": "Sự kết hợp giữa các công cụ này giúp tối ưu hóa quy trình hành chính."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Communication & Branding",
+      "phaseNameVi": "Truyền thông và Thương hiệu cá nhân",
+      "title": "Xây dựng kỹ năng viết và thiết kế cơ bản",
+      "titleVi": "Xây dựng kỹ năng viết và thiết kế cơ bản",
+      "estimatedHours": 30,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Content Writing",
+       "Canva Design"
+      ],
+      "freeResources": [
+       {
+        "name": "Canva Design School",
+        "provider": "Canva",
+        "url": "https://www.canva.com/designschool/",
+        "type": "Tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất trong truyền thông nội bộ?",
+       "options": [
+        "Sự minh bạch",
+        "Tốc độ",
+        "Hình ảnh đẹp",
+        "Tất cả đều đúng"
+       ],
+       "correctIndex": 3,
+       "explanation": "Truyền thông nội bộ cần sự kết hợp của nhiều yếu tố để tạo sự gắn kết."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 6927,
+  "latencyMs": 6468
+ }
+}

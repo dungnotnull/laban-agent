@@ -1,0 +1,282 @@
+{
+ "score": {
+  "personaId": "persona-logistics",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7983,
+  "latencyMs": 18118,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023949
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Supply Chain Data Operations Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành Dữ liệu Chuỗi cung ứng",
+    "aiResilienceScore": 82,
+    "matchScore": 91,
+    "reasoning": "Dựa trên Báo cáo Tương lai Việc làm của WEF (2023) và nghiên cứu của McKinsey (2023), các công việc lặp đi lặp lại trong điều phối logistics thủ công đang chịu áp lực tự động hóa cao (khoảng 60-70% thời gian tác vụ). Tuy nhiên, việc chuyển hướng sang phân tích dữ liệu vận hành và chuỗi cung ứng số giúp nâng cao năng lực bổ trợ (augmentation), giảm thiểu rủi ro thay thế và tận dụng mức lương cao hơn nhờ kỹ năng AI (PwC, 2024).",
+    "whyItFitsYou": "Với 5 năm kinh nghiệm điều phối logistics xuất nhập khẩu, cử nhân Ngoại thương và thế mạnh tổ chức, xử lý văn bản nhanh cùng tiếng Anh thương mại tại Hải Phòng, bạn có nền tảng vững chắc để chuyển đổi từ quy trình thủ công sang số hóa báo cáo và phân tích dữ liệu vận hành.",
+    "transferableSkillsMatch": [
+     "Khai báo hải quan và xử lý chứng từ",
+     "Điều phối container và vận tải",
+     "Giao tiếp nhà cung cấp và đối tác",
+     "Tiếng Anh thương mại"
+    ],
+    "skillsGap": [
+     "Xây dựng báo cáo tự động (Power BI / Advanced Excel)",
+     "Ứng dụng AI/GenAI trong tối ưu hóa lộ trình và dự báo tồn kho",
+     "Lập trình cơ bản cho phân tích dữ liệu (SQL/Python cơ bản)"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 32,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Business Intelligence Analysts and Data Analysts are among the top growth roles driven by digital and AI transformation."
+     },
+     {
+      "paperTitle": "PwC 2024 Global AI Jobs Barometer",
+      "source": "PwC",
+      "year": "2024",
+      "url": "https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html",
+      "quoteOrDataPoint": "Jobs requiring AI skills carry up to a 25% wage premium and demonstrate accelerated labor productivity growth."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Supply Chain Operations and Data Analyst",
+     "occupationTitleVi": "Chuyên viên Phân tích Dữ liệu và Vận hành Chuỗi cung ứng",
+     "molisaCode": "3331",
+     "onetCode": "13-1081.02",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 28,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "Đàm phán ngoại lệ với nhà vận chuyển và cảng biển tại Hải Phòng",
+      "Xử lý các sự cố phát sinh chuỗi cung ứng mang tính thời điểm",
+      "Ra quyết định chiến lược dựa trên bối cảnh thị trường thực tế"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Customs clearance documentation coordination",
+       "taskNameVi": "Điều phối chứng từ khai báo hải quan",
+       "exposureType": "complement",
+       "exposurePercentage": 65,
+       "onetCode": "13-1081.02",
+       "notes": "Công cụ AI hỗ trợ soạn thảo và kiểm tra lỗi chứng từ nhưng con người quyết định việc giải quyết tranh chấp pháp lý hải quan."
+      },
+      {
+       "taskName": "Operational reporting and KPI tracking",
+       "taskNameVi": "Báo cáo vận hành và theo dõi KPI",
+       "exposureType": "augment",
+       "exposurePercentage": 80,
+       "onetCode": "13-1081.02",
+       "notes": "Tự động hóa hoàn toàn việc tổng hợp báo cáo bằng AI và Excel nâng cao giúp tiết kiệm 70% thời gian thủ công."
+      },
+      {
+       "taskName": "Supplier and shipping line negotiation",
+       "taskNameVi": "Đàm phán với nhà cung cấp và hãng tàu",
+       "exposureType": "human_centric",
+       "exposurePercentage": 15,
+       "onetCode": "13-1081.02",
+       "notes": "Đòi hỏi trí tuệ cảm xúc, quan hệ đối tác chiến lược và kỹ năng thương lượng trực tiếp."
+      }
+     ],
+     "sources": [
+      "World Economic Forum (2023)",
+      "PwC (2024)"
+     ],
+     "methodologySummary": "Phân tích dựa trên phương pháp định lượng tác vụ O*NET kết hợp khảo sát thị trường lao động Việt Nam (TopCV/GSO 2024).",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay and Augment (AI-Powered Logistics)",
+      "pathTitleVi": "Giữ vững vai trò và tăng cường năng suất bằng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tích hợp công cụ GenAI và Excel nâng cao vào công việc điều phối xuất nhập khẩu hàng ngày tại Hải Phòng để tự động hóa báo cáo và giảm thiểu sai sót.",
+      "targetRoles": [
+       "Senior Logistics Coordinator",
+       "AI-Assisted Operations Specialist"
+      ],
+      "skillsToAcquire": [
+       "Advanced Excel & Power Query",
+       "ChatGPT/Copilot for Supply Chain documentation",
+       "Automated reporting workflows"
+      ],
+      "transferableSkills": [
+       "Khai báo hải quan",
+       "Điều phối container",
+       "Tiếng Anh thương mại"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       26,
+       30
+      ],
+      "rationale": "Phát huy tối đa kinh nghiệm 5 năm sẵn có, đồng thời loại bỏ điểm yếu 'chưa số hóa báo cáo' để bứt phá hiệu suất.",
+      "actionStepNow": "Đăng ký một khóa học ngắn hạn về Excel nâng cao và cách ứng dụng Prompt Engineering cho công việc chứng từ xuất nhập khẩu."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to Digital Supply Chain Analyst",
+      "pathTitleVi": "Chuyển hướng sang Chuyên viên Phân tích Chuỗi cung ứng Số",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch từ việc xử lý tác vụ vận tải đơn thuần sang phân tích dữ liệu vận hành, tối ưu hóa tuyến đường và quản trị tồn kho dựa trên dữ liệu.",
+      "targetRoles": [
+       "Supply Chain Data Analyst",
+       "Operations BI Analyst"
+      ],
+      "skillsToAcquire": [
+       "Power BI / Tableau",
+       "SQL cơ bản",
+       "Supply Chain Analytics frameworks"
+      ],
+      "transferableSkills": [
+       "Am hiểu nghiệp vụ logistics thực tế",
+       "Giao tiếp nhà cung cấp",
+       "Tổ chức công việc tốt"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       25,
+       32,
+       40
+      ],
+      "rationale": "Đáp ứng nhu cầu tuyển dụng mạnh mẽ tại các trung tâm logistics như Hải Phòng khi các doanh nghiệp đẩy mạnh chuyển đổi số.",
+      "actionStepNow": "Bắt đầu học trực quan hóa dữ liệu với Power BI qua các bộ dữ liệu logistics mẫu."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Career Transition to Tech Operations",
+      "pathTitleVi": "Chuyển đổi hoàn toàn sang Vận hành Công nghệ Logistics",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển hẳn sang mảng triển khai hệ thống phần mềm quản lý chuỗi cung ứng (ERP/WMS) cho các tập đoàn công nghệ logistics.",
+      "targetRoles": [
+       "WMS / ERP Implementation Consultant",
+       "Supply Chain Systems Specialist"
+      ],
+      "skillsToAcquire": [
+       "Quản trị hệ thống ERP (SAP/Oracle cơ bản)",
+       "Quy trình WMS (Warehouse Management System)",
+       "Quản lý dự án Agile"
+      ],
+      "transferableSkills": [
+       "Nghiệp vụ xuất nhập khẩu cốt lõi",
+       "Tiếng Anh thương mại"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       30,
+       38,
+       50
+      ],
+      "rationale": "Mở ra mức trần thu nhập rất cao và tính bền vững dài hạn trong kỷ nguyên tự động hóa chuỗi cung ứng toàn cầu.",
+      "actionStepNow": "Nghiên cứu các chứng chỉ cơ bản về hệ thống quản lý kho (WMS) và hoạch định nguồn lực doanh nghiệp (ERP)."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Upgrade",
+      "phaseNameVi": "Nền tảng & Số hóa Quy trình Thủ công",
+      "title": "Automate Daily Reports & Master GenAI Tools",
+      "titleVi": "Tự động hóa Báo cáo Hàng ngày & Làm chủ Công cụ GenAI",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Advanced Excel & Power Query",
+       "Prompt Engineering cho công việc văn phòng",
+       "Tự động hóa báo cáo hải quan"
+      ],
+      "freeResources": [
+       {
+        "name": "Excel Skills for Business Specialization",
+        "provider": "Coursera / Macquarie University",
+        "url": "https://www.coursera.org/specializations/excel",
+        "type": "Online Course"
+       },
+       {
+        "name": "Generative AI for Everyone",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/courses/generative-ai-for-everyone/",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào trong Excel giúp bạn tự động hóa việc làm sạch và hợp nhất dữ liệu từ nhiều file báo cáo logistics khác nhau mà không cần viết code phức tạp?",
+       "options": [
+        "VLOOKUP",
+        "Power Query",
+        "PivotTable cơ bản",
+        "Conditional Formatting"
+       ],
+       "correctIndex": 1,
+       "explanation": "Power Query là công cụ tích hợp sẵn trong Excel giúp trích xuất, biến đổi và tải dữ liệu (ETL) tự động từ nhiều nguồn khác nhau, giải quyết triệt để điểm yếu báo cáo thủ công."
+      }
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Analytics & Supply Chain Systems",
+      "phaseNameVi": "Phân tích Dữ liệu & Hệ thống Chuỗi cung ứng Số",
+      "title": "Data Visualization & Operational Dashboards",
+      "titleVi": "Trực quan hóa Dữ liệu & Xây dựng Bảng điều khiển Vận hành",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Power BI cơ bản",
+       "Phân tích chỉ số KPI vận tải và container",
+       "Tối ưu hóa quy trình tồn kho"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Power BI Learning Path",
+        "provider": "Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/power-bi/",
+        "type": "Documentation & Tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi xây dựng Dashboard theo dõi thời gian lưu kho container (dwell time) cho cảng tại Hải Phòng, yếu tố quan trọng nhất cần hiển thị để hỗ trợ ra quyết định là gì?",
+       "options": [
+        "Màu sắc trang trí bắt mắt của dashboard",
+        "Biểu đồ xu hướng thời gian lưu kho và cảnh báo các container quá hạn",
+        "Danh sách toàn bộ tên nhân viên nhập liệu",
+        "Số lượng email đã gửi cho khách hàng"
+       ],
+       "correctIndex": 1,
+       "explanation": "Dashboard vận hành cần tập trung vào các chỉ số trọng yếu (KPIs) như thời gian lưu kho và hệ thống cảnh báo sớm giúp nhà quản lý xử lý kịp thời các chi phí phát sinh."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7735,
+  "latencyMs": 18118
+ }
+}

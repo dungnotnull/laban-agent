@@ -1,0 +1,485 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 7682,
+  "latencyMs": 10209,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023046
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Digital Health Specialist",
+    "roleTitleVi": "Chuyên viên Y tế số",
+    "aiResilienceScore": 88,
+    "matchScore": 84,
+    "reasoning": "Digital health is transforming Vietnam's healthcare landscape, driven by the push for digital transformation in public health and electronic medical records. According to World Bank findings, digital transformation and AI create new job opportunities that require significant reskilling, while routine tasks face automation pressure.",
+    "whyItFitsYou": "Your 7 years as a registered nurse provide deep clinical insights, and your familiarity with electronic health records gives you a strong foundation to bridge clinical workflows and digital health technologies without leaving the medical field.",
+    "transferableSkillsMatch": [
+     "Patient Care and Communication",
+     "Electronic Medical Records Management",
+     "Emergency Triage and Decision Making"
+    ],
+    "skillsGap": [
+     "Digital Health Data Standards",
+     "Basic IT Troubleshooting",
+     "Healthcare Data Privacy and Security"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 28,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Digital Health Specialist",
+     "occupationTitleVi": "Chuyên viên Y tế số",
+     "molisaCode": "2212",
+     "onetCode": "29-1141.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 22,
+     "augmentationPotentialScore": 78,
+     "humanAdvantageCore": [
+      "Clinical Workflow Integration",
+      "Empathetic Patient Engagement",
+      "Cross-functional Healthcare Communication"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Evaluating digital health tools for clinical workflows",
+       "taskNameVi": "Đánh giá các công cụ y tế số cho quy trình lâm sàng",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "29-1141.00",
+       "notes": "Uses nursing experience to guide software adoption."
+      },
+      {
+       "taskName": "Training clinical staff on electronic health records",
+       "taskNameVi": "Đào tạo nhân viên lâm sàng về hồ sơ bệnh án điện tử",
+       "exposureType": "human_led",
+       "exposurePercentage": 70,
+       "onetCode": "29-1141.00",
+       "notes": "Relies on direct interpersonal communication."
+      },
+      {
+       "taskName": "Analyzing patient feedback for healthcare digital system improvements",
+       "taskNameVi": "Phân tích phản hồi của bệnh nhân để cải thiện hệ thống số y tế",
+       "exposureType": "augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "29-1141.00",
+       "notes": "Combines empathy with data interpretation."
+      }
+     ],
+     "sources": [
+      {
+       "citationText": "Reshaping the Future of Work in Southeast Asia",
+       "sourceType": "research",
+       "year": 2024
+      }
+     ],
+     "methodologySummary": "Evaluated using automation exposure benchmarks from World Bank research regarding Southeast Asian digital transformation trends.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Augmented Clinical Nurse",
+      "pathTitleVi": "Điều dưỡng viên ứng dụng công nghệ",
+      "feasibilityScore": 92,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage current nursing skills while adopting AI-augmented documentation and smart EHR tools.",
+      "targetRoles": [
+       "Senior Registered Nurse",
+       "Clinical Informatics Lead"
+      ],
+      "skillsToAcquire": [
+       "Advanced EHR Navigation",
+       "AI Medical Scribes",
+       "Data Privacy Compliance"
+      ],
+      "transferableSkills": [
+       "Patient Care",
+       "Emergency Response",
+       "Communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       11,
+       13,
+       15,
+       18
+      ],
+      "rationale": "Keeps you in your core nursing domain with minimal financial risk, utilizing existing strengths.",
+      "actionStepNow": "Explore free digital literacy courses to build confidence with new health tech tools."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Digital Health Support Specialist",
+      "pathTitleVi": "Chuyên viên hỗ trợ y tế số",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition toward healthcare IT support and digital health implementation for regional hospitals.",
+      "targetRoles": [
+       "Digital Health Specialist",
+       "Health Informatics Consultant"
+      ],
+      "skillsToAcquire": [
+       "Healthcare IT Standards",
+       "Basic Data Literacy",
+       "System Troubleshooting"
+      ],
+      "transferableSkills": [
+       "Clinical Workflow Knowledge",
+       "Patient Interaction",
+       "Attention to Detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       11,
+       13,
+       16,
+       20,
+       25
+      ],
+      "rationale": "Leverages nursing background while satisfying interest in digital health without requiring heavy upfront investment.",
+      "actionStepNow": "Enroll in a free online course audit covering computer science basics."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Public Health Data Analyst",
+      "pathTitleVi": "Chuyên viên phân tích dữ liệu y tế công cộng",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Move fully into public health data analytics and epidemiological reporting.",
+      "targetRoles": [
+       "Public Health Data Analyst",
+       "Epidemiology Assistant"
+      ],
+      "skillsToAcquire": [
+       "Data Analysis Tools",
+       "Public Health Statistics",
+       "Python or R basics"
+      ],
+      "transferableSkills": [
+       "Medical Terminology",
+       "Observation",
+       "Systematic Record Keeping"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       22,
+       30
+      ],
+      "rationale": "Aligns with public health interests but involves a steeper learning curve and higher transition friction.",
+      "actionStepNow": "Build foundational data skills gradually using free audit tracks."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Nền tảng kỹ năng số",
+      "title": "Build Essential Digital & Computer Literacy",
+      "titleVi": "Xây dựng kỹ năng máy tính và công nghệ cơ bản",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Digital Literacy",
+       "Internet Navigation",
+       "Basic Office Tools"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is a key practice in maintaining electronic health record security?",
+       "options": [
+        "Sharing your login credentials with colleagues during busy shifts",
+        "Logging out of the terminal whenever leaving the workstation unattended",
+        "Writing passwords on sticky notes attached to the monitor",
+        "Using personal unencrypted USB drives for patient data"
+       ],
+       "correctIndex": 1,
+       "explanation": "Logging out ensures unauthorized individuals cannot access sensitive patient records while you are away."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Introductory Computer Science",
+      "phaseNameVi": "Nhập môn Khoa học Máy tính",
+      "title": "Explore Computer Science Fundamentals",
+      "titleVi": "Khám phá các nguyên lý cơ bản của khoa học máy tính",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computational Thinking",
+       "Problem Solving",
+       "Basic Algorithms"
+      ],
+      "freeResources": [
+       {
+        "name": "CS50x Introduction to Computer Science",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary purpose of computational thinking in healthcare settings?",
+       "options": [
+        "To replace human nurses entirely with automated robots",
+        "To break down complex clinical problems into logical, systematic steps",
+        "To eliminate the need for patient communication",
+        "To increase paperwork and administrative burdens"
+       ],
+       "correctIndex": 1,
+       "explanation": "Computational thinking helps structure complex clinical workflows into manageable, logical components."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $1,077 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869172737_yo5iix",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:26:12.737Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:26:12.737Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều dưỡng viên\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:12.737Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:26:14.115Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 482,
+     "latencyMs": 1378
+    },
+    {
+     "ts": "2026-10-13T05:26:14.115Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "nurse",
+       "healthcare specialist",
+       "health informatics coordinator"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "low risk tolerance",
+       "high shift work stress"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:14.115Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 698,
+     "latencyMs": 1023,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "nurse"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "health informatics coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "digital health nurse AI automation Vietnam public health"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "digital health public health free courses Vietnam basic computer skills"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:15.138Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:16.308Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1643,
+     "latencyMs": 1169,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:26:16.308Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:16.308Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:26:22.946Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4654,
+     "latencyMs": 6638
+    },
+    {
+     "ts": "2026-10-13T05:26:22.946Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:22.946Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 7477,
+   "latencyMs": 10209,
+   "degraded": false
+  }
+ }
+}

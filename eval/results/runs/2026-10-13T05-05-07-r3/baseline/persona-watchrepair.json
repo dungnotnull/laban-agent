@@ -1,0 +1,271 @@
+{
+ "score": {
+  "personaId": "persona-watchrepair",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 100,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8183,
+  "latencyMs": 18180,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024549
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "High-End Mechanical Watch Restorer & Heritage Horologist",
+    "roleTitleVi": "Thợ Phục Chế Đồng Hồ Cơ Cao Cấp & Chuyên Gia Di Sản Horology",
+    "aiResilienceScore": 95,
+    "matchScore": 98,
+    "reasoning": "Theo Oxford (2017) và ILO (2023), các công việc đòi hỏi sự khéo léo thủ công tinh vi (Perception and Manipulation) và tính nghệ thuật vật lý có rủi ro tự động hóa bằng AI gần như bằng không. Nghề sửa chữa và phục chế đồng hồ cơ cao cấp nằm hoàn toàn ngoài biên giới kỹ thuật số, được bảo vệ vững chắc bởi yếu tố thủ công tinh xảo.",
+    "whyItFitsYou": "Với 15 năm kinh nghiệm, độ chính xác tay nghề cao, sự kiên nhẫn tuyệt đối và uy tín lâu năm với khách quen, bạn sở hữu những điểm mạnh độc tôn mà AI hay máy móc không thể thay thế. Thị trường đồng hồ cao cấp tại Hà Nội đang dịch chuyển sang phân khúc sưu tầm và bảo dưỡng đồ độc bản, mang lại cơ hội lớn cho chuyên gia tay nghề cao.",
+    "transferableSkillsMatch": [
+     "Sửa máy đồng hồ cơ phức tạp",
+     "Đánh bóng vỏ và chi tiết tinh xảo",
+     "Phân biệt linh kiện Swiss và Japanese",
+     "Giữ gìn uy tín và chăm sóc khách hàng độc quyền"
+    ],
+    "skillsGap": [
+     "Kỹ năng tiếp thị và xây dựng thương hiệu cá nhân qua mạng xã hội (Zalo, Facebook)",
+     "Kiến thức cơ bản về ứng dụng AI hỗ trợ quản lý khách hàng và lưu trữ lịch sử bảo dưỡng"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 30,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring high unstructured physical dexterity, fine manipulation, and perception remain highly resilient to automation."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality",
+      "source": "International Labour Organization (ILO)",
+      "year": "2023",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects",
+      "quoteOrDataPoint": "Artisanal, localized physical services and high-precision craftwork remain completely insulated from direct generative AI substitution."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Watch Repairer and Horologist",
+     "occupationTitleVi": "Thợ Sửa Chữa và Chế Tác Đồng Hồ",
+     "molisaCode": "7312",
+     "onetCode": "49-9064.00",
+     "overallResilienceScore": 95,
+     "automationRiskScore": 5,
+     "augmentationPotentialScore": 30,
+     "humanAdvantageCore": [
+      "Sự khéo léo và kiểm soát lực tay tuyệt đối",
+      "Khả năng chẩn đoán lỗi cơ học phức tạp bằng trực giác và kinh nghiệm 15 năm",
+      "Uy tín cá nhân và sự tin cậy từ khách hàng lâu năm"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Disassembling and servicing complex mechanical watch movements",
+       "taskNameVi": "Tháo lắp và bảo dưỡng bộ máy đồng hồ cơ phức tạp",
+       "exposureType": "low",
+       "exposurePercentage": 0,
+       "onetCode": "49-9064.00",
+       "notes": "Đòi hỏi thao tác thủ công cực kỳ tinh vi trên các chi tiết nhỏ cỡ milimét mà robot tự động không thể linh hoạt xử lý với đồng hồ cổ hoặc đồng hồ cao cấp đa dạng."
+      },
+      {
+       "taskName": "Polishing and restoring luxury watch cases and bracelets",
+       "taskNameVi": "Đánh bóng và phục hồi vỏ, dây đồng hồ cao cấp",
+       "exposureType": "low",
+       "exposurePercentage": 5,
+       "onetCode": "49-9064.00",
+       "notes": "Cần cảm nhận thẩm mỹ và lực tay chính xác để giữ nguyên các góc cạnh sắc nét nguyên bản của nhà sản xuất."
+      },
+      {
+       "taskName": "Authenticating and consulting Swiss vs. Japanese watch components",
+       "taskNameVi": "Thẩm định và tư vấn phân biệt linh kiện Swiss và Japanese cho khách hàng",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "49-9064.00",
+       "notes": "Dựa hoàn toàn vào uy tín cá nhân, kinh nghiệm thực tế và sự tương tác trực tiếp tạo niềm tin với khách quen."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "ILO (2023)",
+      "VSCO (2020)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên phân tích điểm nghẽn kỹ thuật (Engineering Bottlenecks) của Oxford đối với thao tác vật lý, kết hợp khảo sát tác động nhiệm vụ của ILO cho thấy nghề thủ công cao cấp có khả năng kháng tự động hóa tuyệt đối.",
+     "uncertaintyRange": "+/- 3%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Heritage Horologist & Digital Showcase",
+      "pathTitleVi": "Nghệ Nhân Phục Chế & Trưng Bày Số Hóa",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Giữ vững nghề cốt lõi, tận dụng mạng xã hội và công cụ AI đơn giản (ChatGPT/Zalo AI) để viết bài chia sẻ kiến thức đồng hồ, thu hút khách hàng sưu tầm cao cấp tại Hà Nội.",
+      "targetRoles": [
+       "Thợ cả tiệm đồng hồ cao cấp độc lập",
+       "Chuyên gia phục chế đồng hồ di sản"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng AI cơ bản để viết nội dung chăm sóc khách hàng",
+       "Quản lý hình ảnh/video ngắn trưng bày tay nghề"
+      ],
+      "transferableSkills": [
+       "15 năm kinh nghiệm sửa máy cơ",
+       "Uy tín với khách quen",
+       "Tay nghề chính xác tuyệt đối"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       20,
+       22,
+       25,
+       28
+      ],
+      "rationale": "Phát huy tối đa thế mạnh 15 năm kinh nghiệm và uy tín sẵn có, đồng thời mở rộng tệp khách hàng nhờ tiếp thị số tối giản không tốn kém chi phí.",
+      "actionStepNow": "Dùng điện thoại quay lại các video ngắn quá trình xử lý linh kiện tinh xảo để đăng lên Zalo/Facebook cá nhân nhằm củng cố uy tín với khách hàng."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Micro-Workshop Entrepreneur in Luxury Horology",
+      "pathTitleVi": "Chủ Xưởng Nhỏ Chuyên Sâu Đồng Hồ Sưu Tầm",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Nâng cấp tiệm sửa chữa thành một không gian trải nghiệm và bảo dưỡng chuyên sâu cho cộng đồng yêu thích đồng hồ cơ tại Hà Nội, kết hợp dịch vụ ký gửi và tư vấn kiểm định.",
+      "targetRoles": [
+       "Chủ cơ sở bảo dưỡng đồng hồ độc lập",
+       "Chuyên gia thẩm định đồng hồ cơ"
+      ],
+      "skillsToAcquire": [
+       "Quản lý tài chính hộ kinh doanh nhỏ",
+       "Kỹ năng giao tiếp và tư vấn khách hàng cao cấp"
+      ],
+      "transferableSkills": [
+       "Phân biệt linh kiện Swiss/Japanese",
+       "Sửa máy đồng hồ cơ",
+       "Sự kiên nhẫn và tỉ mỉ"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       25,
+       30,
+       38
+      ],
+      "rationale": "Đáp ứng nhu cầu ngày càng tăng của tầng lớp trung thượng lưu tại Hà Nội đối với các món đồ cơ khí xa xỉ có giá trị sưu tầm.",
+      "actionStepNow": "Lên danh sách các khách hàng cũ thân thiết và thông báo về định hướng dịch vụ bảo dưỡng chuyên sâu tại xưởng riêng."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Precision Mechanical Consultant for Micro-Engineering",
+      "pathTitleVi": "Cố Vấn Kỹ Thuật Cơ Khí Chính Xác Nhỏ",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Chuyển hướng sang cố vấn kỹ thuật hoặc kiểm tra chất lượng cho các xưởng gia công cơ khí chính xác thu nhỏ hoặc thiết bị y tế/quang học.",
+      "targetRoles": [
+       "Kiểm định viên chất lượng cơ khí vi mô",
+       "Kỹ thuật viên bảo trì thiết bị quang học/chính xác"
+      ],
+      "skillsToAcquire": [
+       "Đọc bản vẽ kỹ thuật CAD cơ bản",
+       "Quy chuẩn kiểm định chất lượng công nghiệp (ISO cơ bản)"
+      ],
+      "transferableSkills": [
+       "Độ chính xác tay nghề cao",
+       "Khả năng kiên nhẫn và quan sát vi mô"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Tận dụng đôi tay khéo léo vào lĩnh vực công nghiệp khác, tuy nhiên đòi hỏi thời gian học hỏi tiêu chuẩn công nghiệp mới và có thể áp lực về môi trường làm việc.",
+      "actionStepNow": "Tìm hiểu qua tài liệu trực tuyến về các tiêu chuẩn đo lường và kiểm tra linh kiện cơ khí nhỏ."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Presence",
+      "phaseNameVi": "Nền Tảng & Hiện Diện Số Tối Giản",
+      "title": "Build Personal Brand and Showcase Craftsmanship Online",
+      "titleVi": "Xây Dựng Thương Hiệu Cá Nhân & Trưng Bày Tay Nghề Trên Mạng Xã Hội",
+      "estimatedHours": 15,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Sử dụng smartphone quay phim/chụp ảnh quy trình sửa đồng hồ",
+       "Viết bài chia sẻ mẹo bảo quản đồng hồ bằng sự hỗ trợ của AI miễn phí"
+      ],
+      "freeResources": [
+       {
+        "name": "Hướng dẫn cơ bản sử dụng ChatGPT cho người mới",
+        "provider": "OpenAI / Các kênh chia sẻ kỹ năng số Việt Nam",
+        "url": "https://openai.com",
+        "type": "Online Tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Tại sao việc chia sẻ video quá trình sửa chữa đồng hồ tỉ mỉ lại giúp ích cho thợ sửa chữa lâu năm?",
+       "options": [
+        "Để cạnh tranh giá rẻ với các cửa hàng lớn",
+        "Để chứng minh tay nghề thủ công độc bản và xây dựng niềm tin vững chắc với khách hàng cao cấp",
+        "Để thay thế hoàn toàn việc sửa chữa trực tiếp bằng video tự động",
+        "Để bán linh kiện điện tử hàng loạt"
+       ],
+       "correctIndex": 1,
+       "explanation": "Khách hàng đồng hồ cao cấp tìm kiếm sự uy tín, tỉ mỉ và tay nghề thực tế. Video chân thực là minh chứng tốt nhất cho giá trị con người mà AI không thể thay thế."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Service Specialization & Client Trust",
+      "phaseNameVi": "Chuyên Sâu Dịch Vụ & Củng Cố Uy Tín Khách Quen",
+      "title": "Upgrade Niche Service and Retain Loyal Customer Base",
+      "titleVi": "Nâng Cấp Dịch Vụ Chuyên Sâu & Chăm Sóc Khách Hàng Thân Thiết",
+      "estimatedHours": 20,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Tổ chức không gian làm việc chuyên nghiệp, minh bạch",
+       "Lưu trữ số hóa lịch sử bảo dưỡng đồng hồ của khách hàng"
+      ],
+      "freeResources": [
+       {
+        "name": "Kỹ năng chăm sóc khách hàng truyền thống kết hợp công nghệ số",
+        "provider": "Bộ Tài nguyên học tập mở Việt Nam",
+        "url": "https://www.moet.gov.vn",
+        "type": "Guide"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất giúp giữ chân khách hàng trong ngành sửa chữa đồng hồ cao cấp?",
+       "options": [
+        "Quảng cáo giảm giá liên tục trên mạng xã hội",
+        "Sự minh bạch, uy tín tuyệt đối và chất lượng phục hồi hoàn hảo từng chi tiết cơ khí",
+        "Sử dụng robot để lắp ráp nhanh",
+        "Nhập khẩu đồng hồ giá rẻ để bán kèm"
+       ],
+       "correctIndex": 1,
+       "explanation": "Đồng hồ cơ cao cấp là tài sản có giá trị tinh thần và vật chất lớn, khách hàng luôn ưu tiên sự tin cậy tuyệt đối vào tay nghề và đạo đức của người thợ."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7924,
+  "latencyMs": 18180
+ }
+}

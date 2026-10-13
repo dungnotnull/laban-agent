@@ -1,0 +1,288 @@
+{
+ "score": {
+  "personaId": "persona-juniordev",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8269,
+  "latencyMs": 10632,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024806999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Agent Developer & Full-Stack Integrator",
+    "roleTitleVi": "Kỹ sư Phát triển AI Agent & Tích hợp Full-Stack",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Với nền tảng lập trình Front-end và sự bùng nổ của các công cụ AI hỗ trợ code như GitHub Copilot, việc viết mã lập trình thuần túy đối mặt với áp lực tự động hóa cao từ các LLM (OpenAI, 2023; GitHub/Microsoft Research, 2022). Tuy nhiên, các nhà phát triển biết kết hợp kỹ năng giao diện sẵn có để xây dựng các ứng dụng tích hợp AI Agents, RAG (Retrieval-Augmented Generation) và tự động hóa quy trình đang có mức lương tăng 28-35% tại thị trường Việt Nam (TopCV / Navigos Group, 2024). Lợi thế tự học nhanh của bạn giúp bạn nắm bắt các framework Agentic AI (như LangChain, LlamaIndex) cực kỳ nhanh chóng.",
+    "whyItFitsYou": "Bạn đang là Front-end Developer (1.5 năm kinh nghiệm) với thế mạnh học nhanh và yêu thích mảng AI/ML, Agent phát triển và sản phẩm số. Việc chuyển dịch từ một lập trình viên giao diện thuần túy sang người xây dựng các Agent và giao diện tương tác thông minh tận dụng tối đa kỹ năng React, TypeScript và Git hiện tại của bạn, đồng thời giải quyết điểm yếu chưa có kinh nghiệm hệ thống lớn bằng cách sử dụng AI làm trợ lý kiến trúc.",
+    "transferableSkillsMatch": [
+     "Lập trình React & TypeScript",
+     "Quản lý mã nguồn với Git",
+     "Tư duy logic và giải quyết vấn đề kỹ thuật",
+     "Khả năng tự học công nghệ mới nhanh chóng"
+    ],
+    "skillsGap": [
+     "Kiến trúc Agentic AI và LLM Integration (LangChain/LlamaIndex)",
+     "Thiết kế hệ thống后端 cơ bản (Node.js, Vector Databases)",
+     "Kỹ thuật Prompt Engineering nâng cao",
+     "Tiếng Anh kỹ thuật chuyên sâu cho tài liệu API"
+    ],
+    "averageSalaryRangeVND": "22,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+      "source": "GitHub / Microsoft Research",
+      "year": "2022",
+      "url": "https://github.com/microsoft/copilot-study",
+      "quoteOrDataPoint": "Developers using GitHub Copilot completed tasks 55.8% faster, with less experienced developers seeing the most significant productivity gains."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group",
+      "year": "2024",
+      "url": "https://topcv.vn/bao-cao-thi-truong-viec-lam-2024",
+      "quoteOrDataPoint": "Prompt & Product Specialists and AI Integration Engineers saw salaries increase by 28-35% as enterprises rapidly adopt AI workflows."
+     },
+     {
+      "paperTitle": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "source": "OpenAI, OpenResearch, University of Pennsylvania",
+      "year": "2023",
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Programmers and technical software roles experience high task exposure (>60%), shifting the required value from boilerplate code writing to system orchestration and AI augmentation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Software Developers and Applications Programmers",
+     "occupationTitleVi": "Kỹ sư phần mềm và Lập trình ứng dụng",
+     "molisaCode": "2512",
+     "onetCode": "15-1252.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 95,
+     "humanAdvantageCore": [
+      "Thiết kế trải nghiệm người dùng (UX) và thấu hiểu sản phẩm số",
+      "Tích hợp logic nghiệp vụ phức tạp vào hệ thống Agent",
+      "Quản lý và định hướng luồng hoạt động của AI Agent",
+      "Giao tiếp và đàm phán yêu cầu kỹ thuật với stakeholders"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Building standard React components and boilerplate UI layouts",
+       "taskNameVi": "Xây dựng các component React và giao diện mẫu cơ bản",
+       "exposureType": "High Automation / Augmentation",
+       "exposurePercentage": 85,
+       "onetCode": "15-1252.00-01",
+       "notes": "AI tools can generate boilerplate UI instantly. Your value shifts to orchestrating components and connecting AI capabilities."
+      },
+      {
+       "taskName": "Integrating LLM APIs and designing conversational Agent workflows",
+       "taskNameVi": "Tích hợp API LLM và thiết kế luồng hoạt động cho Agent trò chuyện",
+       "exposureType": "High Complementarity",
+       "exposurePercentage": 20,
+       "onetCode": "15-1252.00-02",
+       "notes": "Requires human judgment, system prompt tuning, and aligning AI outputs with business logic."
+      },
+      {
+       "taskName": "Debugging frontend state and connecting backend services",
+       "taskNameVi": "Gỡ lỗi trạng thái frontend và kết nối dịch vụ backend",
+       "exposureType": "Moderate Augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "15-1252.00-03",
+       "notes": "AI dramatically speeds up debugging; developer focuses on architectural decisions and data flow integrity."
+      }
+     ],
+     "sources": [
+      "OpenAI / OpenResearch (2023)",
+      "GitHub / Microsoft Research (2022)",
+      "TopCV / Navigos Group (2024)"
+     ],
+     "methodologySummary": "Task-level augmentation analysis combining O*NET technical skill taxonomies with empirical developer productivity metrics from GitHub Copilot trials and localized Vietnam labor demand surveys.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Front-end Developer",
+      "pathTitleVi": "Lập trình viên Front-end tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tận dụng tối đa GitHub Copilot, Claude Engineer và các LLM để tăng tốc độ code lên gấp 3 lần, nhận các dự án phức tạp hơn tại công ty hiện tại.",
+      "targetRoles": [
+       "Senior Front-end Engineer",
+       "AI-Powered UI Developer"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering for Developers",
+       "State Management Optimization",
+       "Component Architecture with AI Tools"
+      ],
+      "transferableSkills": [
+       "React",
+       "TypeScript",
+       "HTML/CSS",
+       "Git"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       32,
+       42,
+       55
+      ],
+      "rationale": "Phát huy nền tảng sẵn có, giảm thiểu rủi ro thất nghiệp ngắn hạn bằng cách trở thành nhân sự năng suất cao nhất nhờ AI.",
+      "actionStepNow": "Tích hợp GitHub Copilot vào workflow hằng ngày và hoàn thành một khóa học tối ưu code với AI trong tuần này."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Agent & Full-Stack Product Builder",
+      "pathTitleVi": "Nhà phát triển AI Agent & Sản phẩm số Full-Stack",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Mở rộng kỹ năng sang Backend (Node.js/Python) và tích hợp các LLM/Agent APIs để tự tay xây dựng các sản phẩm SaaS tích hợp AI.",
+      "targetRoles": [
+       "AI Product Engineer",
+       "Full-Stack AI Developer"
+      ],
+      "skillsToAcquire": [
+       "LangChain / LlamaIndex",
+       "Node.js & Python basics",
+       "Vector Databases (Pinecone, Chroma)",
+       "API Design & Integration"
+      ],
+      "transferableSkills": [
+       "React",
+       "TypeScript",
+       "Git",
+       "Tự học chủ động"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       25,
+       38,
+       52,
+       70
+      ],
+      "rationale": "Đáp ứng trực tiếp nhu cầu cao của thị trường Việt Nam và quốc tế về các sản phẩm tích hợp AI (TopCV 2024, McKinsey 2023).",
+      "actionStepNow": "Bắt đầu học cú pháp cơ bản của Python và xây dựng một mini-project kết nối OpenAI API với giao diện React."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Product Manager / AI Solution Consultant",
+      "pathTitleVi": "Quản lý sản phẩm AI / Tư vấn giải pháp AI",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Chuyển hẳn sang hướng quản lý sản phẩm công nghệ tập trung vào AI, kết hợp năng lực kỹ thuật nền tảng với tư duy kinh doanh và thiết kế sản phẩm.",
+      "targetRoles": [
+       "AI Product Manager",
+       "Digital Transformation Consultant"
+      ],
+      "skillsToAcquire": [
+       "Product Management Frameworks",
+       "AI ROI Evaluation",
+       "Agile/Scrum Leadership",
+       "Advanced Technical English"
+      ],
+      "transferableSkills": [
+       "Tư duy giải quyết vấn đề",
+       "Hiểu biết về phát triển phần mềm",
+       "Khả năng học nhanh"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       28,
+       45,
+       65,
+       90
+      ],
+      "rationale": "Phù hợp với mong muốn làm sản phẩm số và thăng tiến dài hạn, nhưng đòi hỏi thời gian rèn luyện thêm về kỹ năng mềm và ngoại ngữ.",
+      "actionStepNow": "Tìm hiểu các tài liệu về Product Management và tham gia các buổi chia sẻ về Product AI tại TP.HCM."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "AI-Augmented Development Mastery",
+      "phaseNameVi": "Làm chủ lập trình tăng cường bằng AI",
+      "title": "Mastering AI Coding Assistants & Prompt Engineering",
+      "titleVi": "Làm chủ Trợ lý Code AI & Kỹ thuật Prompt cho Lập trình viên",
+      "estimatedHours": 45,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "GitHub Copilot Advanced Usage",
+       "Claude 3.5 Sonnet for Coding",
+       "Prompt Engineering for Code Generation & Debugging"
+      ],
+      "freeResources": {
+       "name": "GitHub Copilot Documentation & Free Tutorials",
+       "provider": "GitHub & Microsoft",
+       "url": "https://docs.github.com/en/copilot",
+       "type": "official_docs"
+      },
+      "checkpointQuiz": {
+       "question": "Khi sử dụng AI coding assistant để viết một hàm logic phức tạp, cách tiếp cận tối ưu nhất cho lập trình viên là gì?",
+       "options": [
+        "Để AI tự viết toàn bộ mã nguồn và đưa thẳng lên production mà không cần kiểm tra.",
+        "Chia nhỏ bài toán thành các module, cung cấp ngữ cảnh rõ ràng, yêu cầu AI viết code và lập tức viết unit test để kiểm chứng.",
+        "Chỉ dùng AI để dịch ngôn ngữ lập trình chứ không dùng để viết logic.",
+        "Tuyệt đối không sử dụng AI vì sẽ làm giảm tư duy logic."
+       ],
+       "correctIndex": 1,
+       "explanation": "Chia nhỏ bài toán và kiểm chứng bằng unit test giúp tận dụng tốc độ của AI (giúp tăng tốc 55.8% theo nghiên cứu GitHub/Microsoft) đồng thời đảm bảo chất lượng và an toàn hệ thống."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "AI Agent & RAG Integration",
+      "phaseNameVi": "Tích hợp AI Agent và RAG vào Front-end",
+      "title": "Building Full-Stack AI Apps with LangChain & APIs",
+      "titleVi": "Xây dựng ứng dụng AI Full-Stack với LangChain và API",
+      "estimatedHours": 75,
+      "weeksDuration": 5,
+      "skillsCovered": [
+       "OpenAI / Anthropic API Integration",
+       "Basic Node.js & LangChain.js",
+       "Vector Database basics (Chroma/Pinecone)",
+       "Connecting React UI to AI Agents"
+      ],
+      "freeResources": {
+       "name": "LangChain.js Official Documentation & Quickstart",
+       "provider": "LangChain AI",
+       "url": "https://js.langchain.com/",
+       "type": "documentation"
+      },
+      "checkpointQuiz": {
+       "question": "Thành phần nào đóng vai trò cốt lõi trong một ứng dụng RAG (Retrieval-Augmented Generation) để cung cấp tri thức riêng cho LLM?",
+       "options": [
+        "CSS Framework dùng để trang trí giao diện chatbot.",
+        "Vector Database lưu trữ các embeddings của tài liệu nội bộ để tìm kiếm ngữ cảnh liên quan.",
+        "Git repository dùng để quản lý phiên bản code.",
+        "Trình duyệt web của người dùng cuối."
+       ],
+       "correctIndex": 1,
+       "explanation": "Vector Database lưu trữ các văn bản dưới dạng vector embeddings, cho phép hệ thống tìm kiếm ngữ cảnh chính xác để đưa vào LLM, giúp giảm thiểu hiện tượng ảo giác (hallucination)."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 8009,
+  "latencyMs": 10632
+ }
+}

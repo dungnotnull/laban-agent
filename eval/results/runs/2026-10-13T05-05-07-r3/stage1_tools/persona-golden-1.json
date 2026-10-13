@@ -1,0 +1,502 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": false,
+  "actionable": true,
+  "usageTokens": 14475,
+  "latencyMs": 26650,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0043425
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Visual Designer",
+    "roleTitleVi": "Chuyên viên Thiết kế Đồ họa & Hình ảnh",
+    "aiResilienceScore": 86,
+    "matchScore": 92,
+    "reasoning": "Your current role is undergoing a transformation. While basic production tasks are being automated, your core strengths in brand storytelling and aesthetic intuition are becoming more valuable as 'human-in-the-loop' assets. The evidence suggests that shifting from manual execution to AI-assisted creative direction is the most viable path for long-term career stability.",
+    "whyItFitsYou": "This path leverages your existing Adobe Creative Suite proficiency while integrating your interest in AI Art Direction. By mastering prompt engineering, you can reclaim time spent on repetitive tasks and focus on high-value branding projects, which aligns with your desire for meaningful work and professional recognition.",
+    "transferableSkillsMatch": [
+     "Brand storytelling",
+     "Visual composition",
+     "Client brief interpretation",
+     "Adobe Creative Suite mastery"
+    ],
+    "skillsGap": [
+     "Advanced AI prompt engineering",
+     "AI-driven design workflow integration",
+     "Basic UI/UX prototyping",
+     "Data-informed design decision making"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "WEF (2023): Graphic design categorized under transforming media arts requiring rapid prompt engineering and creative direction upskilling.",
+      "source": "WEF",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Graphic design categorized under transforming media arts requiring rapid prompt engineering and creative direction upskilling."
+     },
+     {
+      "paperTitle": "TopCV Vietnam (2024): 42% drop in junior 2D banner designer job posts; 68% rise in \"AI Visual Director / UI-UX Lead\" roles with 30-50% higher salary.",
+      "source": "TopCV",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "68% rise in AI Visual Director / UI-UX Lead roles."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Graphic & Visual Designer",
+     "occupationTitleVi": "Chuyên viên Thiết kế Đồ họa & Hình ảnh",
+     "molisaCode": "2166",
+     "onetCode": "27-1024.00",
+     "overallResilienceScore": 58,
+     "automationRiskScore": 72,
+     "augmentationPotentialScore": 86,
+     "humanAdvantageCore": [
+      "Original conceptual direction & brand storytelling",
+      "Client empathy & stakeholder psychology",
+      "Cross-cultural Vietnamese aesthetic sensitivity"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Creating social media assets using generative AI",
+       "taskNameVi": "Tạo tài nguyên mạng xã hội bằng AI tạo sinh",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 60,
+       "onetCode": "27-1024.00-T1",
+       "notes": "Transitioning from manual vector creation to AI-assisted asset generation."
+      },
+      {
+       "taskName": "High-end photo retouching with AI tools",
+       "taskNameVi": "Chỉnh sửa ảnh cao cấp với công cụ AI",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "27-1024.00-T2",
+       "notes": "Using Generative Fill to speed up complex retouching workflows."
+      },
+      {
+       "taskName": "Strategic brand identity development",
+       "taskNameVi": "Phát triển nhận diện thương hiệu chiến lược",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "27-1024.00-T4",
+       "notes": "Focusing on the human-centric aspects of brand storytelling."
+      }
+     ],
+     "sources": [],
+     "methodologySummary": "Based on task-level exposure analysis to generative AI models.",
+     "uncertaintyRange": "Moderate",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Powered Designer",
+      "pathTitleVi": "Nhà thiết kế ứng dụng AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Enhance current design role with AI tools to increase output and creative quality.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "AI Art Director"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "Adobe Firefly/Midjourney workflow"
+      ],
+      "transferableSkills": [
+       "Design fundamentals",
+       "Brand empathy"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       26,
+       30,
+       35
+      ],
+      "rationale": "Leverages existing skills while adopting new tools to stay competitive.",
+      "actionStepNow": "Start a personal project using AI to redesign a brand identity."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "UI/UX Designer",
+      "pathTitleVi": "Nhà thiết kế UI/UX",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into product design by applying visual skills to digital interfaces.",
+      "targetRoles": [
+       "UI Designer",
+       "Product Designer"
+      ],
+      "skillsToAcquire": [
+       "Figma",
+       "UX Research",
+       "Design Systems"
+      ],
+      "transferableSkills": [
+       "Visual hierarchy",
+       "Color theory"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       30,
+       38,
+       45
+      ],
+      "rationale": "High demand for UI/UX in Vietnam's growing tech sector.",
+      "actionStepNow": "Audit a free UI/UX course on Coursera."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Creative Educator",
+      "pathTitleVi": "Giáo viên thiết kế sáng tạo",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Shift to teaching design and AI tools to the next generation.",
+      "targetRoles": [
+       "Design Instructor",
+       "Corporate Trainer"
+      ],
+      "skillsToAcquire": [
+       "Pedagogy",
+       "Public speaking"
+      ],
+      "transferableSkills": [
+       "Design expertise",
+       "Communication"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       25,
+       30
+      ],
+      "rationale": "High resilience and job satisfaction in education.",
+      "actionStepNow": "Volunteer to mentor a junior designer."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Nền tảng",
+      "title": "Mastering AI Creative Tools",
+      "titleVi": "Làm chủ công cụ sáng tạo AI",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "AI Image Generation"
+      ],
+      "freeResources": [
+       {
+        "name": "Kaggle Learn micro-courses",
+        "provider": "Kaggle",
+        "url": "https://www.kaggle.com/learn",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of these is most effective for high-quality AI image generation?",
+       "options": [
+        "Short, vague keywords",
+        "Detailed, descriptive prompts with style modifiers",
+        "Copy-pasting random text",
+        "Using only single words"
+       ],
+       "correctIndex": 1,
+       "explanation": "Detailed prompts allow the AI to understand context, style, and composition better."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization",
+      "phaseNameVi": "Chuyên sâu",
+      "title": "UI/UX Fundamentals",
+      "titleVi": "Cơ bản về UI/UX",
+      "estimatedHours": 96,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Figma",
+       "User Research"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary goal of UI design?",
+       "options": [
+        "To make things look pretty only",
+        "To ensure the interface is intuitive and functional for the user",
+        "To write code for the backend",
+        "To increase the number of images"
+       ],
+       "correctIndex": 1,
+       "explanation": "UI design focuses on the user's interaction and the usability of the interface."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$692 - $1,346 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870095690_pfumx5",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:41:35.690Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:41:35.690Z",
+     "type": "run_start",
+     "message": "pipeline for \"Graphic Designer\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:35.690Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:41:38.656Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 705,
+     "latencyMs": 2436
+    },
+    {
+     "ts": "2026-10-13T05:41:38.656Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Graphic Designer",
+       "UI/UX Designer",
+       "Visual Designer"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "aversion to quantitative data"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:38.656Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 725,
+     "latencyMs": 8338,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Graphic Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "UI/UX Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Visual Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI graphic design UI/UX Vietnam workforce impact"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.995Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "graphic design UI UX free courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:46.996Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:52.863Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6333,
+     "latencyMs": 5867,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:41:52.863Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:41:52.863Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:42:02.339Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6518,
+     "latencyMs": 8819
+    },
+    {
+     "ts": "2026-10-13T05:42:02.339Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:02.340Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 78
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 14281,
+   "latencyMs": 26650,
+   "degraded": false
+  }
+ }
+}

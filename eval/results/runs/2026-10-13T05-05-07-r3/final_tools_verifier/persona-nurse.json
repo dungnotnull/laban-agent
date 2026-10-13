@@ -1,0 +1,507 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10844,
+  "latencyMs": 25049,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0032532
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Health Data Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu Y tế",
+    "aiResilienceScore": 82,
+    "matchScore": 85,
+    "reasoning": "Your clinical background provides the essential domain expertise required to interpret healthcare data, which AI cannot replicate. By transitioning into a data-focused role within the health sector, you leverage your 7 years of experience while adopting AI tools to handle the technical data processing tasks.",
+    "whyItFitsYou": "You already possess 'patient care' and 'electronic medical record' experience. Your strength in 'handling emergency situations' translates well to the high-pressure environment of data-driven decision-making in hospitals or health-tech firms.",
+    "transferableSkillsMatch": [
+     "Clinical domain knowledge",
+     "Electronic medical record management",
+     "Crisis management and problem-solving",
+     "Patient communication"
+    ],
+    "skillsGap": [
+     "SQL and Database Management",
+     "Data Visualization (Power BI/Tableau)",
+     "Statistical analysis basics"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Analyzing patient flow data to optimize hospital ward efficiency",
+       "taskNameVi": "Phân tích dữ liệu lưu lượng bệnh nhân để tối ưu hóa hiệu suất khoa phòng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI processes raw EMR logs; you provide the clinical context for bottlenecks."
+      },
+      {
+       "taskName": "Creating dashboards for clinical outcome reporting",
+       "taskNameVi": "Tạo bảng điều khiển báo cáo kết quả lâm sàng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Use BI tools to visualize patient recovery trends."
+      },
+      {
+       "taskName": "Consulting hospital management on digital health adoption",
+       "taskNameVi": "Tư vấn quản lý bệnh viện về áp dụng y tế số",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Your clinical experience is the key differentiator here."
+      }
+     ],
+     "methodologySummary": "Based on Stanford HAI 2024 and WEF Future of Jobs reports, focusing on high-augmentation potential roles.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital Health Champion",
+      "pathTitleVi": "Chuyên gia Y tế số tại đơn vị hiện tại",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Use AI tools to automate your current administrative reporting tasks.",
+      "targetRoles": [
+       "Nurse Lead (Digital Transformation)"
+      ],
+      "skillsToAcquire": [
+       "Advanced Excel",
+       "AI-assisted reporting"
+      ],
+      "transferableSkills": [
+       "Clinical expertise"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Leverages current job security while building new tech skills.",
+      "actionStepNow": "Identify one manual reporting task you perform weekly and use ChatGPT to create a template for it."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Health Data Analyst",
+      "pathTitleVi": "Chuyên viên phân tích dữ liệu y tế",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition to a data role within a hospital or health-tech company.",
+      "targetRoles": [
+       "Data Analyst",
+       "Health Informatics Specialist"
+      ],
+      "skillsToAcquire": [
+       "SQL",
+       "Power BI"
+      ],
+      "transferableSkills": [
+       "EMR knowledge",
+       "Clinical workflow understanding"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       28
+      ],
+      "rationale": "High growth sector in Vietnam with strong demand for domain-specific analysts.",
+      "actionStepNow": "Start the Google Data Analytics Certificate on Coursera using financial aid."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Health Tech Consultant",
+      "pathTitleVi": "Tư vấn viên công nghệ y tế",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Move into consulting for health-tech startups.",
+      "targetRoles": [
+       "Product Manager (Health Tech)"
+      ],
+      "skillsToAcquire": [
+       "Product management",
+       "Business strategy"
+      ],
+      "transferableSkills": [
+       "Patient communication"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       20,
+       30,
+       45
+      ],
+      "rationale": "High reward but requires significant business skill acquisition.",
+      "actionStepNow": "Network with professionals in the Vietnam health-tech space."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Data Literacy Basics",
+      "titleVi": "Kiến thức dữ liệu cơ bản",
+      "estimatedHours": 60,
+      "weeksDuration": 12,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Data concepts",
+       "Basic SQL"
+      ],
+      "freeResources": [
+       {
+        "name": "Kaggle Learn micro-courses",
+        "provider": "Kaggle",
+        "url": "https://www.kaggle.com/learn",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary role of a data analyst in a hospital setting?",
+       "options": [
+        "To replace doctors",
+        "To provide insights from data to improve patient care",
+        "To fix hospital computers",
+        "To write medical prescriptions"
+       ],
+       "correctIndex": 1,
+       "explanation": "Data analysts interpret data to support decision-making, not to perform clinical tasks."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Certification",
+      "phaseNameVi": "Chứng chỉ chuyên môn",
+      "title": "Google Data Analytics",
+      "titleVi": "Chứng chỉ phân tích dữ liệu Google",
+      "estimatedHours": 120,
+      "weeksDuration": 24,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "Data cleaning",
+       "Visualization",
+       "R/SQL"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is best for creating interactive dashboards?",
+       "options": [
+        "Notepad",
+        "Power BI or Tableau",
+        "Calculator",
+        "Email"
+       ],
+       "correctIndex": 1,
+       "explanation": "Power BI and Tableau are industry-standard tools for data visualization."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 90,
+    "rationale": "The guidance directly references the user's specific skills like electronic medical records and emergency handling. It effectively bridges the gap between clinical nursing experience and the proposed data analyst role."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870784478_pnaxsv",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:53:04.478Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:53:04.478Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều dưỡng viên\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:04.478Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:53:08.756Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 472,
+     "latencyMs": 3685
+    },
+    {
+     "ts": "2026-10-13T05:53:08.756Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Registered Nurse",
+       "Health Informatics Specialist"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "time-constrained schedule"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:08.756Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:53:13.344Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 687,
+     "latencyMs": 4005,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:53:13.344Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Registered Nurse"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.344Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.344Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Health Informatics Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.345Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.345Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on nursing and health informatics career transition Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.345Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.345Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free online health informatics courses for nurses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:13.345Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:16.859Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3007,
+     "latencyMs": 2806,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:53:16.859Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:16.859Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:53:25.395Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6043,
+     "latencyMs": 7914
+    },
+    {
+     "ts": "2026-10-13T05:53:25.395Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:29.527Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 415,
+     "latencyMs": 3243
+    },
+    {
+     "ts": "2026-10-13T05:53:29.527Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly references the user's specific skills like electronic medical records and emergency handling. It effectively bridges the gap between clinical nursing experience and the proposed data analyst role."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:53:29.527Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 10624,
+   "latencyMs": 25049,
+   "degraded": false
+  }
+ }
+}

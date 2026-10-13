@@ -1,0 +1,532 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 40,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11292,
+  "latencyMs": 14219,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0033875999999999997
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Healthcare Data Specialist & Business Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu & Nghiệp vụ Y tế",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "As noted by Stanford HAI (2024), business analysts utilizing AI agents complete market and operational modeling 43% faster with 25% higher forecast accuracy, and WEF Future of Jobs ranks Business Intelligence and Data Analysts as #3 fastest growing occupation globally. Your 7-year background in nursing combined with electronic health records (Hồ sơ bệnh án điện tử) provides vital domain contextualization, which AI cannot replicate.",
+    "whyItFitsYou": "Your strengths in patient communication, emergency problem-solving, and patience align perfectly with the requirement for deep domain contextualization and translating ambiguous healthcare workflows into structured metrics. Furthermore, your interest in digital health bridges clinical practice with data systems.",
+    "transferableSkillsMatch": [
+     "Hồ sơ bệnh án điện tử",
+     "Xử lý tình huống cấp cứu",
+     "Giao tiếp với bệnh nhân"
+    ],
+    "skillsGap": [
+     "SQL query writing",
+     "Dashboard visualization tools (Power BI / Tableau)",
+     "Data cleaning and transformation"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511 (Chuyên viên phân tích hệ thống và kinh doanh)",
+     "onetCode": "15-1211.00 (Computer Systems Analysts / Business Intelligence)",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese healthcare culture insights (Thấu hiểu sâu bối cảnh y tế nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo bệnh viện)",
+      "Problem framing & translating ambiguous clinical workflows into metrics (Định hình bài toán từ quy trình y tế)",
+      "Ethical governance of patient data pipelines (Quản trị đạo đức và pháp lý dữ liệu y tế)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Extracting patient vital signs and electronic medical record logs using SQL and data cleaning scripts",
+       "taskNameVi": "Trích xuất dữ liệu sinh hiệu và nhật ký hồ sơ bệnh án điện tử bằng SQL và tập lệnh làm sạch",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; nurse analysts review and validate clinical accuracy."
+      },
+      {
+       "taskName": "Creating routine hospital operational dashboards and emergency department capacity charts",
+       "taskNameVi": "Tạo dashboard vận hành bệnh viện định kỳ và biểu đồ công suất khoa cấp cứu",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools automatically generate standard visual summaries of bed occupancy and triage times."
+      },
+      {
+       "taskName": "Framing strategic digital health hypotheses and consulting hospital administration on workflow optimization",
+       "taskNameVi": "Định hình giả thuyết y tế số chiến lược và tư vấn ban giám đốc bệnh viện tối ưu quy trình",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires clinical intuition, patient empathy, and nuanced risk management in healthcare settings."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologyScore": 85,
+     "methodologySummary": "Evaluated using O*NET task decomposition combined with Stanford HAI and WEF labor market indices for Vietnam's digital health sector.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Nurse & Digital Health Champion",
+      "pathTitleVi": "Điều dưỡng trưởng ứng dụng AI & Chuyên gia Y tế số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Stay in nursing while leveraging AI administrative tools and electronic health record automation to reduce shift burnout and lead digital transformation initiatives in your hospital in Cần Thơ.",
+      "targetRoles": [
+       "Điều dưỡng trưởng",
+       "Chuyên trách Y tế số bệnh viện"
+      ],
+      "skillsToAcquire": [
+       "AI prompting for medical notes",
+       "EHR advanced data entry",
+       "Digital triage systems"
+      ],
+      "transferableSkills": [
+       "Chăm sóc bệnh nhân",
+       "Hồ sơ bệnh án điện tử",
+       "Xử lý tình huống cấp cứu"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Leverages your 7 years of clinical experience instantly with zero risk, addressing shift pressure through AI efficiency.",
+      "actionStepNow": "Identify routine hospital paperwork tasks that can be streamlined with AI dictation or automated EHR entry."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Healthcare Data Specialist (BA/BI)",
+      "pathTitleVi": "Chuyên viên Phân tích Dữ liệu Y tế (BA/BI)",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Transition into healthcare data analytics for hospitals, pharmaceutical companies, or telemedicine startups in Vietnam using your clinical domain expertise.",
+      "targetRoles": [
+       "Healthcare Data Analyst",
+       "Clinical Business Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL fundamentals",
+       "Power BI / Tableau dashboards",
+       "Data hygiene in healthcare"
+      ],
+      "transferableSkills": [
+       "Hồ sơ bệnh án điện tử",
+       "Giao tiếp với bệnh nhân",
+       "Kiên nhẫn"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       28,
+       35
+      ],
+      "rationale": "Combines your clinical background with high-growth data analytics demand, fitting well within your budget constraints using free learning tracks.",
+      "actionStepNow": "Start a free introductory SQL course on Microsoft Learn or Alison to test your comfort with data structures."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Digital Health Product Specialist",
+      "pathTitleVi": "Chuyên viên Sản phẩm Y tế Số",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Move entirely into healthtech startups or digital wellness platforms as a product owner or user experience researcher.",
+      "targetRoles": [
+       "Healthtech Product Specialist",
+       "Digital Health Consultant"
+      ],
+      "skillsToAcquire": [
+       "Agile product management",
+       "User journey mapping",
+       "Healthtech regulatory compliance"
+      ],
+      "transferableSkills": [
+       "Xử lý tình huống cấp cứu",
+       "Chăm sóc bệnh nhân",
+       "Kiên nhẫn"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       30,
+       40,
+       50
+      ],
+      "rationale": "High upside in Vietnam's booming healthtech sector, though requires building an entirely new product portfolio.",
+      "actionStepNow": "Audit free product management courses on edX and connect with digital health founders on LinkedIn."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng số cơ bản",
+      "title": "Build SQL and Data Fundamentals",
+      "titleVi": "Xây dựng nền tảng SQL và Dữ liệu",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic SQL queries",
+       "Spreadsheet data cleaning",
+       "Healthcare metric definition"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Mục đích chính của việc sử dụng câu lệnh SQL trong phân tích dữ liệu y tế là gì?",
+       "options": [
+        "Viết nội dung tiếp thị sản phẩm",
+        "Truy vấn và quản lý dữ liệu từ cơ sở dữ liệu bệnh án điện tử",
+        "Thiết kế giao diện trang web",
+        "Quản lý nhân sự ca trực"
+       ],
+       "correctIndex": 1,
+       "explanation": "SQL là ngôn ngữ chuẩn để truy vấn, trích xuất và quản lý dữ liệu từ các hệ thống cơ sở dữ liệu lớn như hồ sơ bệnh án điện tử."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Visualization & Application",
+      "phaseNameVi": "Trực quan hóa Dữ liệu & Ứng dụng Thực tế",
+      "title": "Healthcare Dashboard Creation & AI Augmentation",
+      "titleVi": "Tạo Dashboard Y tế & Ứng dụng AI",
+      "estimatedHours": 35,
+      "weeksDuration": 7,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Power BI basics",
+       "Dashboard storytelling",
+       "AI prompt engineering for healthcare data"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       },
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào thường được sử dụng để tạo dashboard trực quan hóa dữ liệu vận hành bệnh viện?",
+       "options": [
+        "Microsoft Word",
+        "Power BI hoặc Tableau",
+        "Notepad",
+        "Paint"
+       ],
+       "correctIndex": 1,
+       "explanation": "Power BI và Tableau là các công cụ hàng đầu giúp tổng hợp dữ liệu thành các biểu đồ trực quan phục vụ việc ra quyết định vận hành."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$692 - $1,346 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870339074_7t8p0p",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:45:39.074Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:45:39.074Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều dưỡng viên\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:39.074Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:45:40.812Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 473,
+     "latencyMs": 922
+    },
+    {
+     "ts": "2026-10-13T05:45:40.812Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Registered Nurse",
+       "Health Informatics Specialist",
+       "Public Health Coordinator"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "time-constrained schedule"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:40.812Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 705,
+     "latencyMs": 1312,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Registered Nurse"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Health Informatics Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Public Health Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.584Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on nursing and health informatics career transition Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.585Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.585Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free online health informatics public health courses Vietnam Vietnamese English"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:42.585Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:44.513Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3040,
+     "latencyMs": 1422,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:45:44.513Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:44.513Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:45:53.292Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6822,
+     "latencyMs": 8394
+    },
+    {
+     "ts": "2026-10-13T05:45:53.293Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:45:53.293Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11040,
+   "latencyMs": 14219,
+   "degraded": false
+  }
+ }
+}

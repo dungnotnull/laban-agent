@@ -1,0 +1,549 @@
+{
+ "score": {
+  "personaId": "persona-student",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10644,
+  "latencyMs": 34235,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0031931999999999998
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Content Strategist",
+    "roleTitleVi": "Chuyên viên Chiến lược Nội dung AI",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "The role of a traditional content writer is undergoing a massive transformation. According to OpenAI/UPenn (2023), while drafting tasks are highly automatable, the strategic architecture of brand narratives remains a human-centric core. By pivoting from 'generic content creation' to 'AI-augmented strategy,' you leverage your existing creative foundation while mitigating the 78% automation risk identified in the occupation analysis.",
+    "whyItFitsYou": "Your strength in 'catching trends' and 'English proficiency' allows you to act as a bridge between global AI tools and local Vietnamese market nuances. Your current lack of experience is offset by your high adaptability, which is essential for mastering the rapidly evolving AI toolkit.",
+    "transferableSkillsMatch": [
+     "Social media management",
+     "Creative content conceptualization",
+     "English-Vietnamese cross-cultural communication",
+     "Trend analysis"
+    ],
+    "skillsGap": [
+     "Data-driven marketing analytics",
+     "Prompt engineering for brand voice consistency",
+     "SEO technical architecture",
+     "AI-assisted workflow automation"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "source": "OpenAI, OpenResearch, University of Pennsylvania",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Writers and authors have 100% alpha task exposure to language model assistance and drafting."
+     },
+     {
+      "paperTitle": "TopCV (2024): 62% contraction in standard freelance writer postings; 85% growth in \"AI Content Strategist & Multi-channel Producer\" roles.",
+      "source": "TopCV",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "85% growth in AI Content Strategist & Multi-channel Producer roles."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Content Writer & SEO Specialist",
+     "occupationTitleVi": "Chuyên viên Viết Nội dung & Tối ưu hóa SEO",
+     "molisaCode": "2641",
+     "onetCode": "27-3042.00",
+     "overallResilienceScore": 48,
+     "automationRiskScore": 78,
+     "augmentationPotentialScore": 88,
+     "humanAdvantageCore": [
+      "Original investigative reporting & primary source interviews",
+      "Subtle cultural humor, local slang, and emotional resonance",
+      "Thought leadership & contrarian opinions",
+      "High-stakes brand storytelling & PR crisis handling"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Drafting generic SEO affiliate articles and product descriptions",
+       "taskNameVi": "Viết bài SEO mẫu, mô tả sản phẩm thương mại điện tử",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 94,
+       "onetCode": "27-3042.00-T1",
+       "notes": "Nearly 100% replaceable by fine-tuned LLMs at 1/1000th the cost."
+      },
+      {
+       "taskName": "Proofreading, grammar correction, and keyword density checks",
+       "taskNameVi": "Hiệu đính ngữ pháp và kiểm tra mật độ từ khóa SEO",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 96,
+       "onetCode": "27-3042.00-T2",
+       "notes": "Native LLMs perform flawless proofreading and multilingual localization."
+      },
+      {
+       "taskName": "Strategic content architecture and brand narrative development",
+       "taskNameVi": "Kiến trúc nội dung chiến lược và phát triển câu chuyện thương hiệu",
+       "exposureType": "human_core",
+       "exposurePercentage": 22,
+       "onetCode": "27-3042.00-T3",
+       "notes": "AI lacks genuine lived human perspective, reputation, and relational trust."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "openai-upenn-2023",
+       "citationText": "OpenAI/UPenn (2023): Writers and authors have 100% alpha task exposure to language model assistance and drafting.",
+       "url": "https://arxiv.org/abs/2303.10130"
+      }
+     ],
+     "methodologySummary": "Based on task-level exposure analysis to LLMs and market demand shifts in Vietnam.",
+     "uncertaintyRange": "Moderate",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced Content Specialist",
+      "pathTitleVi": "Chuyên viên Nội dung Tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Mastering AI tools to perform traditional tasks 10x faster.",
+      "targetRoles": [
+       "Content Executive",
+       "Social Media Specialist"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "AI Image Generation (Midjourney/Canva AI)"
+      ],
+      "transferableSkills": [
+       "Writing",
+       "Trend spotting"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       28
+      ],
+      "rationale": "Leverages existing strengths while adopting new efficiency tools.",
+      "actionStepNow": "Start building a portfolio using AI-assisted content creation."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Digital Marketing Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Marketing Kỹ thuật số",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Moving from content creation to data-driven marketing.",
+      "targetRoles": [
+       "Marketing Analyst",
+       "Performance Marketing Executive"
+      ],
+      "skillsToAcquire": [
+       "Google Analytics 4",
+       "Data Visualization",
+       "SQL basics"
+      ],
+      "transferableSkills": [
+       "Marketing fundamentals",
+       "English"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       18,
+       25,
+       32,
+       40
+      ],
+      "rationale": "High demand for data-literate marketers in Vietnam.",
+      "actionStepNow": "Enroll in Google Data Analytics certificate via Coursera."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Prompt Engineer for Marketing",
+      "pathTitleVi": "Kỹ sư Prompt Marketing",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Specializing in building AI workflows for marketing teams.",
+      "targetRoles": [
+       "AI Operations Specialist",
+       "Marketing Automation Consultant"
+      ],
+      "skillsToAcquire": [
+       "Python",
+       "API Integration",
+       "Advanced LLM fine-tuning"
+      ],
+      "transferableSkills": [
+       "Logical thinking",
+       "English"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       25,
+       35,
+       50,
+       70
+      ],
+      "rationale": "High risk but high reward in the emerging AI services sector.",
+      "actionStepNow": "Learn basic Python and explore LangChain."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "phase_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Mastering Digital Literacy & AI Tools",
+      "titleVi": "Làm chủ công cụ số và AI",
+      "estimatedHours": 80,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Digital literacy",
+       "AI prompting basics"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is a core human advantage in content creation?",
+       "options": [
+        "Grammar correction",
+        "Keyword density checks",
+        "Lived human perspective and emotional resonance",
+        "Data entry"
+       ],
+       "correctIndex": 2,
+       "explanation": "AI excels at repetitive tasks like grammar and keyword checks, but lacks the lived experience and emotional depth required for high-impact brand storytelling."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "phase_2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization",
+      "phaseNameVi": "Chuyên môn hóa",
+      "title": "Data-Driven Marketing Certification",
+      "titleVi": "Chứng chỉ Marketing dựa trên dữ liệu",
+      "estimatedHours": 120,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1000000,
+      "skillsCovered": [
+       "Data analytics",
+       "Marketing performance metrics"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is data literacy critical for a modern marketer?",
+       "options": [
+        "To replace the need for creativity",
+        "To measure campaign effectiveness and optimize ROI",
+        "To avoid using AI tools",
+        "To write longer articles"
+       ],
+       "correctIndex": 1,
+       "explanation": "Data literacy allows marketers to move beyond intuition, enabling them to measure performance and optimize strategies based on real-world evidence."
+      },
+      "estimatedCostUSD": 38
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $846 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 70,
+    "rationale": "The guidance effectively bridges the user's specific skills (trend-catching, English) with the proposed role. It references the user's background well, though some claims about automation risks lack specific citations."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870744137_mr95yn",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:52:24.137Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:52:24.137Z",
+     "type": "run_start",
+     "message": "pipeline for \"Sinh viên năm cuối ngành Marketing\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:24.137Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:52:28.902Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 487,
+     "latencyMs": 4093
+    },
+    {
+     "ts": "2026-10-13T05:52:28.902Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Digital Marketing Intern",
+       "Content Creator",
+       "Social Media Assistant"
+      ],
+      "riskFlags": [
+       "no professional experience",
+       "limited budget for retraining"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:28.902Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 706,
+     "latencyMs": 5413,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Digital Marketing Intern"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Content Creator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Social Media Assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on entry-level digital marketing jobs Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free digital marketing analytics courses Vietnam English"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:34.987Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:40.552Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3109,
+     "latencyMs": 5000,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:52:40.552Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:40.552Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:52:51.258Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5652,
+     "latencyMs": 10039
+    },
+    {
+     "ts": "2026-10-13T05:52:51.258Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:58.372Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 453,
+     "latencyMs": 6561
+    },
+    {
+     "ts": "2026-10-13T05:52:58.372Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 70,
+       "rationale": "The guidance effectively bridges the user's specific skills (trend-catching, English) with the proposed role. It references the user's background well, though some claims about automation risks lack specific citations."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:52:58.372Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 48
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 10407,
+   "latencyMs": 34235,
+   "degraded": false
+  }
+ }
+}

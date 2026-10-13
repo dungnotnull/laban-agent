@@ -1,0 +1,479 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10693,
+  "latencyMs": 45163,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0032079
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Agricultural Data Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu Nông nghiệp",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "Your 15 years of field experience provide the 'deep domain contextualization' that AI lacks. By transitioning from manual farming to data-driven decision-making, you leverage your existing knowledge of crop cycles while using AI to handle the data analysis you currently find challenging.",
+    "whyItFitsYou": "You already possess the 'human advantage' of understanding local market nuances and seasonal risks. Your willingness to learn new technology is your greatest asset. This role allows you to stay in the agricultural sector while upgrading your technical toolkit to become a high-value consultant for local cooperatives.",
+    "transferableSkillsMatch": [
+     "Deep domain contextualization in agriculture",
+     "Local market insights",
+     "Operational discipline and seasonal planning",
+     "Basic digital tool proficiency (Drone/Social Media)"
+    ],
+    "skillsGap": [
+     "Data visualization and dashboarding",
+     "Basic SQL and data cleaning",
+     "English for technical documentation",
+     "Advanced agricultural metrics analysis"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Analyzing crop yield data using AI-assisted spreadsheets",
+       "taskNameVi": "Phân tích năng suất cây trồng bằng bảng tính hỗ trợ AI",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI helps clean your manual cost records and suggests yield improvements."
+      },
+      {
+       "taskName": "Creating seasonal performance dashboards for local farms",
+       "taskNameVi": "Tạo dashboard hiệu quả mùa vụ cho các trang trại địa phương",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Use AI tools to visualize your 15 years of experience into actionable charts."
+      },
+      {
+       "taskName": "Consulting farmers on market-driven planting strategies",
+       "taskNameVi": "Tư vấn chiến lược canh tác dựa trên nhu cầu thị trường",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Your local market intuition is the core value that AI cannot replicate."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Based on NBER/MIT research showing AI significantly boosts productivity for domain experts.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Enabled Farmer",
+      "pathTitleVi": "Nông dân ứng dụng công nghệ cao",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Enhance your current farm operations with data analytics to increase profitability.",
+      "targetRoles": [
+       "Farm Manager",
+       "Agricultural Consultant"
+      ],
+      "skillsToAcquire": [
+       "Data visualization",
+       "Basic Excel/Google Sheets"
+      ],
+      "transferableSkills": [
+       "Field operations",
+       "Drone operation"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Leverages your existing assets while reducing manual labor through AI.",
+      "actionStepNow": "Start digitizing your cost records using Google Sheets."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agritech Support Specialist",
+      "pathTitleVi": "Chuyên viên hỗ trợ kỹ thuật nông nghiệp",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Work for agritech companies helping other farmers adopt new technology.",
+      "targetRoles": [
+       "Technical Support",
+       "Customer Success"
+      ],
+      "skillsToAcquire": [
+       "English communication",
+       "Data reporting"
+      ],
+      "transferableSkills": [
+       "Farmer-to-farmer communication",
+       "Local market knowledge"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       17,
+       20,
+       25
+      ],
+      "rationale": "High demand for people who understand both technology and the field.",
+      "actionStepNow": "Enroll in a basic English course on Duolingo."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Data Analyst for Agribusiness",
+      "pathTitleVi": "Chuyên viên phân tích dữ liệu nông nghiệp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Transition fully into a corporate data role within the agricultural sector.",
+      "targetRoles": [
+       "Data Analyst",
+       "Business Intelligence Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL",
+       "Advanced Data Analytics",
+       "Business English"
+      ],
+      "transferableSkills": [
+       "Domain expertise",
+       "Problem solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       15,
+       20,
+       28,
+       35
+      ],
+      "rationale": "Highest long-term potential but requires significant upskilling.",
+      "actionStepNow": "Start the Google Data Analytics Certificate on Coursera."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Nền tảng kỹ năng số",
+      "title": "Mastering Digital Tools",
+      "titleVi": "Làm chủ công cụ số",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Digital literacy",
+       "Basic data entry"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is best for tracking farm expenses and visualizing trends?",
+       "options": [
+        "Facebook",
+        "Google Sheets",
+        "Zalo",
+        "Drone controller"
+       ],
+       "correctIndex": 1,
+       "explanation": "Google Sheets allows for data entry, calculation, and chart creation to visualize trends."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Data Analysis Basics",
+      "phaseNameVi": "Cơ bản về phân tích dữ liệu",
+      "title": "Introduction to Data Analytics",
+      "titleVi": "Nhập môn phân tích dữ liệu",
+      "estimatedHours": 96,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1000000,
+      "skillsCovered": [
+       "Data analysis",
+       "Basic SQL"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary purpose of data cleaning in agriculture?",
+       "options": [
+        "To delete all old records",
+        "To make data consistent and accurate for analysis",
+        "To increase the file size",
+        "To change the language of the data"
+       ],
+       "correctIndex": 1,
+       "explanation": "Data cleaning ensures that your records are accurate and reliable for making future planting decisions."
+      },
+      "estimatedCostUSD": 38
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870483204_90ylva",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:48:03.204Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:48:03.204Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân ứng dụng công nghệ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:03.204Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:48:37.602Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 518,
+     "latencyMs": 33755
+    },
+    {
+     "ts": "2026-10-13T05:48:37.602Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Agricultural Technician",
+       "Agri-business Specialist"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "language barrier"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:37.602Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:48:39.381Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 698,
+     "latencyMs": 1221,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:48:39.381Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Agricultural Technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Agri-business Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation impact on agriculture Vietnam skills gap"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.382Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free data analysis courses Vietnamese agriculture digital skills English for agriculture"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:39.383Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:41.103Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3005,
+     "latencyMs": 1204,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:48:41.103Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:41.103Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:48:48.366Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6222,
+     "latencyMs": 6648
+    },
+    {
+     "ts": "2026-10-13T05:48:48.366Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:48:48.366Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 10443,
+   "latencyMs": 45163,
+   "degraded": false
+  }
+ }
+}

@@ -1,0 +1,614 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 29004,
+  "latencyMs": 36294,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0087012
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI Solutions Specialist & Workflow Architect",
+    "roleTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+    "aiResilienceScore": 94,
+    "matchScore": 82,
+    "reasoning": "As a designer with 2.5 years of experience, you possess the 'human-in-the-loop' intuition necessary to govern AI systems. The evidence indicates that while manual 2D design tasks are highly exposed to automation, the role of an AI Workflow Architect—who bridges the gap between creative intent and automated execution—is in high demand in Vietnam, with salary growth potential significantly higher than traditional design roles.",
+    "whyItFitsYou": "Your background in Adobe Creative Suite and branding gives you a unique advantage in 'prompt engineering' and 'visual system governance.' You already understand how to listen to client briefs; this role simply shifts your focus from manual execution to designing the automated pipelines that produce those assets, leveraging your aesthetic intuition to ensure AI output meets high brand standards.",
+    "transferableSkillsMatch": [
+     "Brand storytelling and conceptual direction",
+     "Client brief interpretation",
+     "Visual design systems architecture",
+     "Adobe Creative Suite workflow management"
+    ],
+    "skillsGap": [
+     "API integration logic",
+     "Advanced prompt engineering frameworks",
+     "Data-driven model performance evaluation",
+     "Basic workflow automation tools (e.g., Zapier, Make)"
+    ],
+    "averageSalaryRangeVND": "35,000,000 - 60,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.",
+      "source": "WEF",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "AI and Machine Learning Specialists ranked #1 fastest growing global role."
+     },
+     {
+      "paperTitle": "TopCV Vietnam (2024): 180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month.",
+      "source": "TopCV Vietnam",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "180% surge in enterprise demand for AI Workflow Integrators."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "AI Solutions Specialist & Workflow Architect",
+     "occupationTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+     "molisaCode": "2519",
+     "onetCode": "15-1299.08",
+     "overallResilienceScore": 94,
+     "automationRiskScore": 18,
+     "augmentationPotentialScore": 98,
+     "humanAdvantageCore": [
+      "End-to-end enterprise workflow automation & systems design",
+      "Model evaluation, safety guardrails, and compliance benchmarking",
+      "Cross-departmental change management & employee upskilling",
+      "Strategic ROI optimization of AI tool stacks"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Architecting AI-driven design asset generation pipelines",
+       "taskNameVi": "Thiết kế quy trình tự động hóa tạo tài nguyên thiết kế bằng AI",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "15-1299.08-T1",
+       "notes": "Leverages your design eye to build custom GPTs or Midjourney workflows for your agency."
+      },
+      {
+       "taskName": "Benchmarking AI model output against brand identity guidelines",
+       "taskNameVi": "Đánh giá chất lượng đầu ra của AI so với bộ nhận diện thương hiệu",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1299.08-T2",
+       "notes": "Your core strength in 'thấu cảm thương hiệu' is the final quality gate."
+      },
+      {
+       "taskName": "Training creative teams on prompt engineering for design",
+       "taskNameVi": "Đào tạo đội ngũ sáng tạo về kỹ thuật viết prompt cho thiết kế",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "15-1299.08-T3",
+       "notes": "Directly utilizes your experience to mentor others in the transition."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Based on WEF Future of Jobs and TopCV market analysis, focusing on high-resilience roles that require human strategic oversight of AI systems.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Powered Creative Lead",
+      "pathTitleVi": "Trưởng nhóm Sáng tạo ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Mastering AI tools to become a 10x designer within your current agency.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "AI Art Director"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "Generative Fill Workflows"
+      ],
+      "transferableSkills": [
+       "Visual Design",
+       "Branding"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       28,
+       35,
+       42
+      ],
+      "rationale": "Leverages existing job stability while increasing output efficiency.",
+      "actionStepNow": "Integrate Adobe Firefly and Midjourney into your daily design workflow."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "UI/UX AI Specialist",
+      "pathTitleVi": "Chuyên gia UI/UX ứng dụng AI",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transitioning to product design with a focus on AI-assisted prototyping.",
+      "targetRoles": [
+       "UI/UX Designer",
+       "Product Designer"
+      ],
+      "skillsToAcquire": [
+       "Figma",
+       "AI-assisted Prototyping"
+      ],
+      "transferableSkills": [
+       "UI/UX interest",
+       "Design Systems"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       32,
+       40,
+       50
+      ],
+      "rationale": "High demand for designers who can build interfaces for AI products.",
+      "actionStepNow": "Enroll in a Google Career Certificate for UX Design."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Workflow Architect",
+      "pathTitleVi": "Kiến trúc sư Luồng công việc AI",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Moving into technical operations and systems design.",
+      "targetRoles": [
+       "AI Operations Coordinator",
+       "Workflow Architect"
+      ],
+      "skillsToAcquire": [
+       "No-code automation",
+       "Data analysis"
+      ],
+      "transferableSkills": [
+       "Logical thinking",
+       "Process management"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       25,
+       35,
+       45,
+       55,
+       70
+      ],
+      "rationale": "Highest long-term growth and resilience against automation.",
+      "actionStepNow": "Start learning basic data logic and automation tools."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "AI Literacy & Prompt Mastery",
+      "titleVi": "Làm chủ AI và Kỹ thuật Prompt",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "AI Tooling"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is a core principle of effective prompt engineering for design?",
+       "options": [
+        "Providing vague, short instructions",
+        "Iterative refinement based on visual output",
+        "Ignoring brand guidelines",
+        "Using only one AI tool for all tasks"
+       ],
+       "correctIndex": 1,
+       "explanation": "Iterative refinement is essential because AI models require feedback loops to align with specific brand aesthetics."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization",
+      "phaseNameVi": "Chuyên môn hóa",
+      "title": "Design Systems & Automation",
+      "titleVi": "Hệ thống thiết kế và Tự động hóa",
+      "estimatedHours": 96,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "Design Systems",
+       "Workflow Automation"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is 'Design Systems Governance' a human-core task?",
+       "options": [
+        "Because AI can do it faster",
+        "Because it requires business empathy and cross-channel consistency",
+        "Because it involves only coding",
+        "Because it is not important for branding"
+       ],
+       "correctIndex": 1,
+       "explanation": "Design systems require deep alignment with business goals and human judgment to ensure consistency across all brand touchpoints."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$1,346 - $2,308 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 90,
+    "rationale": "The guidance directly references the user's graphic design role, Adobe Creative Suite skills, and branding expertise, tailoring the AI workflow transition specifically to these background elements."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868369385_ecjhux",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:12:49.385Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:12:49.385Z",
+     "type": "run_start",
+     "message": "pipeline for \"Graphic Designer\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:49.385Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:12:51.037Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 715,
+     "latencyMs": 1652
+    },
+    {
+     "ts": "2026-10-13T05:12:51.037Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "graphic designer",
+       "UI/UX designer",
+       "AI art director"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "aversion to quantitative metrics",
+       "lacks coding skills for advanced UI handoff"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.037Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:12:51.986Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 715,
+     "latencyMs": 949,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:12:51.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "graphic designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.986Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.986Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "UI/UX designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.987Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.987Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "AI art director"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.987Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.987Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI graphic design UI UX Vietnam labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:51.987Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:53.024Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5191,
+     "latencyMs": 1037,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:12:53.024Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "UI UX design graphic design AI art direction free courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:53.024Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:54.033Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5599,
+     "latencyMs": 1009,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:12:54.033Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 3,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:54.033Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:13:02.018Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 7893,
+     "latencyMs": 7984
+    },
+    {
+     "ts": "2026-10-13T05:13:02.018Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:13:06.122Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 478,
+     "latencyMs": 1182
+    },
+    {
+     "ts": "2026-10-13T05:13:06.122Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "coherence: top suggestion resilience 58 below floor 94"
+      ],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly leverages the user's specific Adobe skills and branding strengths. It references market trends and tailors tasks to their profile, though it includes a minor error by naming a specific person not mentioned in the prompt."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:13:06.122Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "coherence: top suggestion resilience 58 below floor 94"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:13:06.122Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:13:24.708Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 7735,
+     "latencyMs": 10874
+    },
+    {
+     "ts": "2026-10-13T05:13:24.708Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:13:25.679Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 463,
+     "latencyMs": 971
+    },
+    {
+     "ts": "2026-10-13T05:13:25.679Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly references the user's graphic design role, Adobe Creative Suite skills, and branding expertise, tailoring the AI workflow transition specifically to these background elements."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:13:25.679Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 94
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 28789,
+   "latencyMs": 36294,
+   "degraded": false
+  }
+ }
+}

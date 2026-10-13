@@ -1,0 +1,676 @@
+{
+ "score": {
+  "personaId": "persona-golden-2",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 31239,
+  "latencyMs": 37534,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.009371699999999998
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI Solutions Specialist & Workflow Architect",
+    "roleTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+    "aiResilienceScore": 94,
+    "matchScore": 88,
+    "reasoning": "Given the 84% automation risk for manual QA, transitioning to AI-augmented roles is essential. Your background in Agile/Scrum and edge-case testing provides a strong foundation for evaluating LLM outputs and designing robust automation pipelines, which are currently in high demand in the Vietnamese tech market.",
+    "whyItFitsYou": "Your 'cẩn trọng' (cautious) nature and 'tư duy tìm edge-case' (edge-case thinking) are perfect for AI model evaluation, where identifying hallucinations and safety guardrails is critical. Your experience with Python and QA processes allows you to pivot into building automated workflows rather than just executing manual test cases.",
+    "transferableSkillsMatch": [
+     "Agile/Scrum process management",
+     "Edge-case identification and bug reporting",
+     "Cross-functional communication with developers",
+     "Systematic testing methodology"
+    ],
+    "skillsGap": [
+     "LLM benchmarking and prompt engineering",
+     "API integration and workflow orchestration",
+     "Technical English for professional communication",
+     "Advanced Python for automation scripting"
+    ],
+    "averageSalaryRangeVND": "35,000,000 - 60,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027."
+     },
+     {
+      "paperTitle": "Báo cáo thị trường tuyển dụng",
+      "source": "TopCV Vietnam",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "AI Solutions Specialist & Workflow Architect",
+     "occupationTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+     "molisaCode": "2519",
+     "onetCode": "15-1299.08",
+     "overallResilienceScore": 94,
+     "automationRiskScore": 18,
+     "augmentationPotentialScore": 98,
+     "humanAdvantageCore": [
+      "End-to-end enterprise workflow automation & systems design",
+      "Model evaluation, safety guardrails, and compliance benchmarking",
+      "Cross-departmental change management & employee upskilling",
+      "Strategic ROI optimization of AI tool stacks"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Configuring API integrations between LLMs, databases, and business tools",
+       "taskNameVi": "Tích hợp API giữa LLM, cơ sở dữ liệu và hệ thống doanh nghiệp",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "15-1299.08-T1",
+       "notes": "Leverage your QA knowledge to ensure data integrity across automated API pipelines."
+      },
+      {
+       "taskName": "Benchmarking model performance and designing domain-specific prompt systems",
+       "taskNameVi": "Đo lường hiệu năng mô hình và thiết kế hệ thống prompt chuyên ngành",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 45,
+       "onetCode": "15-1299.08-T2",
+       "notes": "Use your edge-case mindset to test LLM responses for accuracy and safety."
+      },
+      {
+       "taskName": "Translating executive business goals into automated operational pipelines",
+       "taskNameVi": "Chuyển hóa mục tiêu kinh doanh thành luồng tự động hóa thực tế",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "15-1299.08-T3",
+       "notes": "Apply your Agile experience to manage the lifecycle of AI-driven projects."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Based on WEF and TopCV labor market analysis, focusing on high-growth AI roles that complement existing QA skill sets.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced QA",
+      "pathTitleVi": "QA tích hợp AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Integrate AI tools into your current QA workflow to increase efficiency.",
+      "targetRoles": [
+       "Senior QA Engineer",
+       "Automation QA"
+      ],
+      "skillsToAcquire": [
+       "Playwright AI",
+       "Copilot for Code"
+      ],
+      "transferableSkills": [
+       "Manual testing",
+       "Bug reporting"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       26,
+       30,
+       35
+      ],
+      "rationale": "Immediate stability while building technical confidence.",
+      "actionStepNow": "Start using AI tools to generate test cases for your current projects."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Solutions Specialist",
+      "pathTitleVi": "Chuyên viên Giải pháp AI",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Transition to designing and testing AI-driven business workflows.",
+      "targetRoles": [
+       "AI Solutions Specialist",
+       "Workflow Architect"
+      ],
+      "skillsToAcquire": [
+       "Python",
+       "API Integration",
+       "LLM Evaluation"
+      ],
+      "transferableSkills": [
+       "QA methodology",
+       "Agile"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       28,
+       38,
+       50,
+       65
+      ],
+      "rationale": "High growth potential and aligns with your interest in automation.",
+      "actionStepNow": "Enroll in a Python automation course and start building a small API project."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Cybersecurity Analyst",
+      "pathTitleVi": "Chuyên viên An ninh mạng",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Leverage your 'cẩn trọng' trait to move into security testing.",
+      "targetRoles": [
+       "Security QA",
+       "Penetration Tester"
+      ],
+      "skillsToAcquire": [
+       "Network Security",
+       "Ethical Hacking"
+      ],
+      "transferableSkills": [
+       "Edge-case testing",
+       "Logic"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       30,
+       45,
+       60
+      ],
+      "rationale": "High barrier to entry but very stable.",
+      "actionStepNow": "Research CompTIA Security+ certification requirements."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "phase_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Python & Technical English Mastery",
+      "titleVi": "Làm chủ Python và Tiếng Anh kỹ thuật",
+      "estimatedHours": 180,
+      "weeksDuration": 12,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Python",
+       "Technical English"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which Python library is most commonly used for web automation?",
+       "options": [
+        "Pandas",
+        "Playwright",
+        "NumPy",
+        "Matplotlib"
+       ],
+       "correctIndex": 1,
+       "explanation": "Playwright is a modern, fast, and reliable framework for browser automation."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "phase_2",
+      "milestoneNumber": 2,
+      "phaseName": "Specialization",
+      "phaseNameVi": "Chuyên môn hóa",
+      "title": "AI Evaluation & Workflow Automation",
+      "titleVi": "Đánh giá AI và Tự động hóa luồng công việc",
+      "estimatedHours": 120,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "LLM Eval",
+       "API Integration"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary goal of LLM evaluation?",
+       "options": [
+        "To write code faster",
+        "To measure accuracy, safety, and latency",
+        "To increase database size",
+        "To change UI design"
+       ],
+       "correctIndex": 1,
+       "explanation": "LLM evaluation focuses on ensuring the model is accurate, safe, and performs within acceptable latency limits."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$1,346 - $2,308 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "repair",
+   "failures": [
+    "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng\""
+   ],
+   "judge": {
+    "personalization": 75,
+    "groundedness": 70,
+    "rationale": "The guidance effectively leverages the user's specific strengths in edge-case thinking and Agile processes. However, it incorrectly assumes Python skills which were not listed in the user's profile, slightly reducing groundedness."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 1,
+    "hallucinated": [
+     {
+      "suggestionIndex": 0,
+      "paperTitle": "Báo cáo thị trường tuyển dụng"
+     }
+    ]
+   },
+   "resourceReport": {
+    "total": 3,
+    "grounded": 3,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870556473_psy579",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:49:16.473Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:49:16.473Z",
+     "type": "run_start",
+     "message": "pipeline for \"Manual Software QA\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:16.473Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:49:18.303Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 712,
+     "latencyMs": 1187
+    },
+    {
+     "ts": "2026-10-13T05:49:18.303Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "QA Automation Engineer",
+       "Software Tester",
+       "AI Data Annotator"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited weekly availability",
+       "language barrier in technical interviews"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:18.303Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 715,
+     "latencyMs": 4109,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "QA Automation Engineer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Software Tester"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "AI Data Annotator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.085Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on software QA automation jobs Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.086Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.086Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free automation testing courses Vietnamese English for IT"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:23.086Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:25.392Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5592,
+     "latencyMs": 1428,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:49:25.392Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 3,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:25.392Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:49:33.529Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 7527,
+     "latencyMs": 7421
+    },
+    {
+     "ts": "2026-10-13T05:49:33.529Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:35.639Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 451,
+     "latencyMs": 1220
+    },
+    {
+     "ts": "2026-10-13T05:49:35.640Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng 2024\""
+      ],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance directly leverages the user's specific QA strengths—edge-case thinking and Agile/Scrum experience—to pivot into AI workflow architecture, creating a logical, evidence-based career transition path."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:35.640Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng 2024\""
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:35.640Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:49:43.328Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 7503,
+     "latencyMs": 6585
+    },
+    {
+     "ts": "2026-10-13T05:49:43.328Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:45.195Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 455,
+     "latencyMs": 1302
+    },
+    {
+     "ts": "2026-10-13T05:49:45.195Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng\""
+      ],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance effectively maps the user's specific QA strengths, such as edge-case identification and process understanding, to the requirements of AI model evaluation and workflow architecture, making it highly relevant to their background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:45.195Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng\""
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:45.195Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 2"
+    },
+    {
+     "ts": "2026-10-13T05:49:52.652Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 7592,
+     "latencyMs": 6773
+    },
+    {
+     "ts": "2026-10-13T05:49:52.652Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:54.007Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 467,
+     "latencyMs": 855
+    },
+    {
+     "ts": "2026-10-13T05:49:54.007Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: citation not found in evidence base: \"Báo cáo thị trường tuyển dụng\""
+      ],
+      "judge": {
+       "personalization": 75,
+       "groundedness": 70,
+       "rationale": "The guidance effectively leverages the user's specific strengths in edge-case thinking and Agile processes. However, it incorrectly assumes Python skills which were not listed in the user's profile, slightly reducing groundedness."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:49:54.007Z",
+     "type": "run_end",
+     "message": "final verdict: repair"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 94
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 31014,
+   "latencyMs": 37534,
+   "degraded": false
+  }
+ }
+}

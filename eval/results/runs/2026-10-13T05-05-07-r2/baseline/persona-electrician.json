@@ -1,0 +1,288 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8010,
+  "latencyMs": 9596,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.002403
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation Technician",
+    "roleTitleVi": "Kỹ thuật viên Tự động hóa Công nghiệp",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Theo nghiên cứu từ Oxford Martin School (2017) và World Economic Forum (2023), các công việc đòi hỏi thao tác vật lý không cấu trúc, xử lý sự cố hiện trường và tương tác với thiết bị phần cứng có rủi ro tự động hóa rất thấp (dưới 15%). Sự kết hợp giữa kinh nghiệm điện công nghiệp thực tế và định hướng tự động hóa giúp người lao động dễ dàng chuyển dịch sang mô hình bảo trì tích hợp công nghệ AI (AI-augmented maintenance).",
+    "whyItFitsYou": "Với 10 năm kinh nghiệm làm Thợ điện công nghiệp và nền tảng Trung cấp, bạn đã sở hữu sự am hiểu sâu sắc về an toàn điện, đọc bản vẽ và xử lý sự cố hiện trường. Sở thích về robot và tự động hóa kết hợp với tư duy logic giúp bạn có lợi thế lớn khi nâng cấp kỹ năng lập trình PLC và tích hợp hệ thống điều khiển thông minh.",
+    "transferableSkillsMatch": [
+     "Bảo trì tủ điện và biến tần",
+     "Đọc bản vẽ điện kỹ thuật",
+     "Xử lý sự cố đấu dây hiện trường",
+     "Tuân thủ nghiêm ngặt quy định an toàn điện"
+    ],
+    "skillsGap": [
+     "Lập trình và vận hành PLC cơ bản đến nâng cao",
+     "Tích hợp và bảo trì robot công nghiệp",
+     "Sử dụng công cụ AI chẩn đoán lỗi dự đoán (Predictive Maintenance)",
+     "Tiếng Anh kỹ thuật để đọc tài liệu máy móc"
+    ],
+    "averageSalaryRangeVND": "14,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity and on-site troubleshooting remain highly resilient to computerisation."
+     },
+     {
+      "paperTitle": "The Future of Jobs Report 2023 & 2025 Outlook",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.wef.org/publications/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "By 2027, analytical thinking, technology literacy, and systems leadership are top priorities in manufacturing and industrial transformation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Machinery Mechanics and Servicers",
+     "occupationTitleVi": "Thợ lắp đặt và sửa chữa máy móc công nghiệp",
+     "molisaCode": "7233",
+     "onetCode": "49-9041.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 75,
+     "humanAdvantageCore": [
+      "Xử lý tình huống khẩn cấp tại hiện trường sản xuất",
+      "Lắp đặt và đấu nối thiết bị phần cứng phức tạp",
+      "Thao tác thủ công khéo léo trong không gian chật hẹp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "On-site electrical troubleshooting and wiring repair",
+       "taskNameVi": "Xử lý sự cố điện và sửa chữa đấu dây tại hiện trường nhà máy",
+       "exposureType": "complement",
+       "exposurePercentage": 20,
+       "onetCode": "49-9041.00",
+       "notes": "AI hỗ trợ phân tích dữ liệu cảm biến để dự báo hỏng hóc, nhưng con người trực tiếp thực hiện sửa chữa."
+      },
+      {
+       "taskName": "PLC programming and logic debugging for automated lines",
+       "taskNameVi": "Lập trình PLC và gỡ lỗi logic cho dây chuyền tự động",
+       "exposureType": "augment",
+       "exposurePercentage": 45,
+       "onetCode": "49-9041.00",
+       "notes": "Công cụ AI hỗ trợ viết và kiểm tra cú pháp mã lệnh PLC, giúp giảm thời gian thiết kế logic."
+      },
+      {
+       "taskName": "Industrial robot maintenance and calibration",
+       "taskNameVi": "Bảo trì và hiệu chuẩn robot công nghiệp",
+       "exposureType": "complement",
+       "exposurePercentage": 30,
+       "onetCode": "49-9041.00",
+       "notes": "Đòi hỏi kỹ năng thực tế hiện trường mà tự động hóa hoàn toàn chưa thể thay thế."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "World Economic Forum (2023)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa của Oxford kết hợp với xu hướng chuyển đổi công nghiệp tại khu vực Hải Phòng.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Industrial Electrician",
+      "pathTitleVi": "Thợ điện công nghiệp cao cấp ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tận dụng 10 năm kinh nghiệm hiện trường, kết hợp sử dụng các ứng dụng AI chẩn đoán lỗi biến tần và tủ điện.",
+      "targetRoles": [
+       "Trưởng nhóm bảo trì điện",
+       "Kỹ thuật viên bảo trì hệ thống thông minh"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng AI di động tra cứu sơ đồ mạch",
+       "Bảo trì dự đoán dựa trên IoT"
+      ],
+      "transferableSkills": [
+       "Bảo trì tủ điện",
+       "Biến tần",
+       "An toàn điện"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       13,
+       15,
+       17,
+       20,
+       23
+      ],
+      "rationale": "Phát huy tối đa năng lực cốt lõi hiện có với mức rủi ro thấp nhất trong môi trường công nghiệp Hải Phòng.",
+      "actionStepNow": "Học cách sử dụng ChatGPT/Claude để tra cứu tài liệu kỹ thuật biến tần và hướng dẫn xử lý lỗi."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Industrial Automation & PLC Technician",
+      "pathTitleVi": "Kỹ thuật viên Tự động hóa & PLC",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển dịch sang mảng lập trình PLC, vận hành cánh tay robot công nghiệp tại các khu công nghiệp tại Hải Phòng.",
+      "targetRoles": [
+       "Kỹ thuật viên Tự động hóa",
+       "Kỹ thuật viên vận hành Robot"
+      ],
+      "skillsToAcquire": [
+       "Lập trình PLC Siemens/Mitsubishi",
+       "Cài đặt và vận hành Robot công nghiệp cơ bản",
+       "Tiếng Anh kỹ thuật chuyên ngành"
+      ],
+      "transferableSkills": [
+       "Đọc bản vẽ điện",
+       "Tư duy logic",
+       "Xử lý sự cố mạch điện"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       17,
+       21,
+       26,
+       32
+      ],
+      "rationale": "Đáp ứng nhu cầu tuyển dụng rất cao của các tập đoàn sản xuất lớn tại khu vực Đình Vũ, Tràng Duệ (Hải Phòng).",
+      "actionStepNow": "Đăng ký một khóa học thực hành lập trình PLC cơ bản vào cuối tuần."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Smart Factory Maintenance Supervisor",
+      "pathTitleVi": "Giám sát bảo trì Nhà máy Thông minh",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Nâng cấp toàn diện thành quản lý kỹ thuật nhà máy ứng dụng công nghệ số và bảo trì dự báo AI.",
+      "targetRoles": [
+       "Giám sát bảo trì nhà máy",
+       "Chuyên viên tích hợp hệ thống sản xuất"
+      ],
+      "skillsToAcquire": [
+       "Quản lý hệ thống bảo trì CMMS/EAM",
+       "Phân tích dữ liệu vận hành nhà máy",
+       "Lãnh đạo đội ngũ kỹ thuật"
+      ],
+      "transferableSkills": [
+       "Kinh nghiệm thực chiến 10 năm",
+       "Xử lý khủng hoảng sự cố"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       24,
+       30,
+       38
+      ],
+      "rationale": "Mở rộng cơ hội thăng tiến lên cấp quản lý kỹ thuật trong bối cảnh các nhà máy FDI đẩy mạnh tự động hóa.",
+      "actionStepNow": "Tìm hiểu về các phần mềm quản lý bảo trì thiết bị (CMMS) đang dùng phổ biến tại các nhà máy."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Augmentation",
+      "phaseNameVi": "Nền tảng & Ứng dụng AI",
+      "title": "Mastering AI Tools for Electrical Diagnostics",
+      "titleVi": "Làm chủ công cụ AI hỗ trợ chẩn đoán điện công nghiệp",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "skillsCore": [
+       "Sử dụng AI tra cứu tài liệu kỹ thuật",
+       "Đọc hiểu sơ đồ mạch nâng cao",
+       "An toàn điện chuẩn quốc tế"
+      ],
+      "freeResources": [
+       {
+        "name": "Coursera AI for Everyone",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.coursera.org/learn/ai-for-everyone",
+        "type": "online_course"
+       },
+       {
+        "name": "Tài liệu kỹ thuật điện tự động hóa",
+        "provider": "Automation.vn",
+        "url": "https://automation.vn",
+        "type": "technical_docs"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng trợ lý AI để tra cứu mã lỗi biến tần, bước kiểm tra quan trọng nhất của người thợ là gì?",
+       "options": [
+        "Tin tưởng hoàn toàn kết quả của AI",
+        "Đối chiếu mã lỗi với tài liệu gốc của nhà sản xuất và kiểm tra thực tế an toàn",
+        "Bỏ qua bước đo đạc thực tế tại tủ điện",
+        "Tắt nguồn toàn bộ nhà máy ngay lập tức"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI là công cụ hỗ trợ (augmentation), người thợ luôn phải kiểm chứng thực tế và tuân thủ tài liệu chính hãng để đảm bảo an toàn tuyệt đối."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Core Skill Upgrade: PLC & Robotics",
+      "phaseNameVi": "Nâng cấp kỹ năng cốt lõi: PLC & Robot",
+      "title": "PLC Programming & Industrial Robot Basics",
+      "titleVi": "Lập trình PLC và Nguyên lý vận hành Robot công nghiệp",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "skillsCore": [
+       "Lập trình PLC cơ bản (Siemens S7-1200 / Mitsubishi)",
+       "Đấu nối và vận hành cảm biến thông minh",
+       "Bảo trì cơ bản cánh tay robot"
+      ],
+      "freeResources": [
+       {
+        "name": "PLC Programming Tutorials",
+        "provider": "RealPars",
+        "url": "https://realpars.com",
+        "type": "video_tutorial"
+       },
+       {
+        "name": "Siemens automation education",
+        "provider": "Siemens",
+        "url": "https://new.siemens.com/global/en/company/sustainability/education/sitrain.html",
+        "type": "technical_training"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Thành phần nào đóng vai trò là 'bộ não' điều khiển logic trong hệ thống tự động hóa dây chuyền?",
+       "options": [
+        "Cầu dao tổng MCCB",
+        "Biến tần AC",
+        "Bộ điều khiển lập trình PLC",
+        "Đèn báo pha"
+       ],
+       "correctIndex": 2,
+       "explanation": "PLC (Programmable Logic Controller) là thiết bị điều khiển logic lập trình chịu trách nhiệm xử lý tín hiệu và điều khiển toàn bộ dây chuyền tự động."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7754,
+  "latencyMs": 9596
+ }
+}

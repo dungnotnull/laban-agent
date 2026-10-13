@@ -1,0 +1,273 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8133,
+  "latencyMs": 10848,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024399
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Precision Agriculture Specialist",
+    "roleTitleVi": "Chuyên gia Nông nghiệp Chính xác",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Mặc dù AI và tự động hóa đang thâm nhập sâu vào các ngành kinh tế [Source: Artificial Intelligence Index Report 2024, Stanford HAI], các công việc đòi hỏi xử lý tình huống thực tế ngoài đồng ruộng, quan sát sinh thái địa phương và điều kiện thời tiết tại Cần Thơ có khả năng chống chịu cao với tự động hóa [Source: The Future of Employment, Oxford, 2017]. AI đóng vai trò công cụ tăng cường (augmentation) giúp tối ưu hóa lượng phân bón và nước tưới thay vì thay thế hoàn toàn con người [Source: Generative AI and Jobs, ILO, 2023].",
+    "whyItFitsYou": "Với 15 năm kinh nghiệm làm nông nghiệp tại Cần Thơ và khả năng thao tác drone phun thuốc cơ bản, bạn có sẵn nền tảng thực chiến vững chắc. Điểm yếu về 'phân tích dữ liệu canh tác' và 'tiếng Anh' có thể được khắc phục bằng các ứng dụng AI hỗ trợ chuyển ngữ và phân tích dữ liệu tự động tiếng Việt.",
+    "transferableSkillsMatch": [
+     "Canh tác lúa và cây ăn quả",
+     "Thao tác drone phun thuốc cơ bản",
+     "Hiểu thị trường địa phương tại Cần Thơ",
+     "Kiên trì theo mùa vụ"
+    ],
+    "skillsGap": [
+     "Đọc hiểu và phân tích biểu đồ cảm biến đất/nước",
+     "Sử dụng AI để dự báo sâu bệnh từ hình ảnh chụp drone",
+     "Quản lý tài chính và tối ưu hóa chi phí qua phần mềm"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking and AI literacy are top growth skills in agricultural and industrial transition zones in Southeast Asia."
+     },
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024 (Economy & Labor Chapter)",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI boosts worker productivity and improves work quality across non-tech industries including manufacturing and agriculture."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Horticultural Plant Growers",
+     "occupationTitleVi": "Người trồng trọt nông nghiệp và làm vườn",
+     "molisaCode": "6111",
+     "onetCode": "11-9013.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Đánh giá trực quan sức khỏe cây trồng ngoài thực địa",
+      "Ra quyết định xử lý thời vụ khẩn cấp theo điều kiện khí hậu miền Tây",
+      "Thấu hiểu thổ nhưỡng và tập quán canh tác địa phương"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Operate agricultural drones for crop monitoring and spraying",
+       "taskNameVi": "Vận hành drone nông nghiệp để giám sát và phun thuốc",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "11-9013.02",
+       "notes": "Tận dụng kỹ năng sẵn có, kết hợp AI trên phầm mềm điều khiển drone để tối ưu hóa lộ trình bay."
+      },
+      {
+       "taskName": "Analyze soil and crop sensor data for yield optimization",
+       "taskNameVi": "Phân tích dữ liệu cảm biến đất và cây trồng để tối ưu năng suất",
+       "exposureType": "augmentation",
+       "exposurePercentage": 60,
+       "onetCode": "19-4011.01",
+       "notes": "Sử dụng các công cụ AI trợ lý tiếng Việt để đọc biểu đồ độ ẩm và dinh dưỡng đất thay vì tính toán thủ công."
+      },
+      {
+       "taskName": "Manage seasonal planting and harvesting schedules",
+       "taskNameVi": "Quản lý lịch trình gieo trồng và thu hoạch theo mùa vụ",
+       "exposureType": "human_centric",
+       "exposurePercentage": 20,
+       "onetCode": "11-9013.00",
+       "notes": "Dựa trên kinh nghiệm 15 năm thực tế kết hợp dự báo thời tiết thông minh."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs Report 2023",
+      "Stanford HAI AI Index 2024"
+     ],
+     "methodologySummary": "Đánh giá dựa trên phân tích nhiệm vụ O*NET kết hợp đặc thù nông nghiệp vùng Đồng bằng sông Cửu Long.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Precision Farming Operator with AI Tools",
+      "pathTitleVi": "Nông dân ứng dụng AI và Thiết bị thông minh",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Nâng cấp kỹ năng vận hành drone và sử dụng AI trên điện thoại để quản lý vườn cây ăn quả/lúa thông minh tại Cần Thơ.",
+      "targetRoles": [
+       "Chủ trang trại ứng dụng công nghệ",
+       "Kỹ thuật viên dịch vụ drone nông nghiệp"
+      ],
+      "skillsToAcquire": [
+       "Đọc hiểu dữ liệu cảm biến qua app di động",
+       "Sử dụng AI tạo sinh (ChatGPT/Claude) để tra cứu phác đồ trị bệnh cây trồng"
+      ],
+      "transferableSkills": [
+       "Canh tác lúa và cây ăn quả",
+       "Thao tác drone cơ bản",
+       "Hiểu thời tiết địa phương"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Tận dụng tối đa 15 năm kinh nghiệm thực chiến, kết hợp công cụ AI đơn giản trên smartphone để tăng năng suất và giảm chi phí phân thuốc.",
+      "actionStepNow": "Tham gia một khóa học ngắn hạn (online/offline tại Cần Thơ) về ứng dụng IoT và AI cơ bản trong nông nghiệp."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural E-commerce & Smart Supply Chain Lead",
+      "pathTitleVi": "Chuyên viên Thương mại điện tử và Chuỗi cung ứng nông sản thông minh",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Kết hợp kinh nghiệm bán hàng qua Zalo/Facebook hiện tại với các công cụ AI viết nội dung quảng cáo và phân tích thị trường để kinh doanh nông sản đặc sản Cần Thơ.",
+      "targetRoles": [
+       "Quản lý kênh bán hàng nông sản số",
+       "Chuyên viên phát triển thị trường nông sản sạch"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng AI tạo nội dung (copywriting) bán hàng",
+       "Quản lý đơn hàng và quảng cáo số cơ bản trên TikTok Shop / Shopee"
+      ],
+      "transferableSkills": [
+       "Bán nông sản qua Zalo và Facebook",
+       "Hiểu thị trường địa phương",
+       "Kiên trì theo mùa vụ"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       26
+      ],
+      "rationale": "Mở rộng kênh phân phối từ mạng xã hội đơn thuần sang các sàn thương mại điện tử lớn với sự trợ giúp của AI trong việc tạo nội dung marketing.",
+      "actionStepNow": "Thử nghiệm dùng ChatGPT để viết 10 bài viết quảng cáo trái cây/lúa gạo đăng lên trang Facebook cá nhân và các hội nhóm Cần Thơ."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agri-Tech Consultant & Extension Agent",
+      "pathTitleVi": "Cố vấn Công nghệ Nông nghiệp và Khuyến nông số",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Trở thành chuyên viên tư vấn chuyển đổi số cho các hợp tác xã nông nghiệp tại miền Tây.",
+      "targetRoles": [
+       "Cán bộ khuyến nông ứng dụng công nghệ",
+       "Cố vấn giải pháp nhà nông thông minh"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng thuyết trình và đào tạo nông dân",
+       "Sử dụng thành thạo các hệ thống quản lý trang trại thông minh"
+      ],
+      "transferableSkills": [
+       "15 năm kinh nghiệm nông nghiệp thực tế",
+       "Thấu hiểu tâm lý người nông dân"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       22,
+       27,
+       32
+      ],
+      "rationale": "Đáp ứng nhu cầu chuyển đổi số mạnh mẽ của ngành nông nghiệp Việt Nam, giúp các hợp tác xã ứng dụng công nghệ cao.",
+      "actionStepNow": "Kết nối với các trung tâm khuyến nông tại Cần Thơ và tham gia các hội thảo về nông nghiệp thông minh."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Tools",
+      "phaseNameVi": "Nền tảng và Công cụ Số",
+      "title": "Mastering AI & Mobile Apps for Farm Management",
+      "titleVi": "Làm chủ AI và Ứng dụng di động quản lý trang trại",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Sử dụng ChatGPT/Claude tiếng Việt để tra cứu kỹ thuật nông nghiệp",
+       "Ứng dụng app di động ghi chép chi phí và phân tích tài chính trang trại",
+       "Kỹ thuật tối ưu hóa vận hành drone phun thuốc kết hợp dữ liệu bản đồ số"
+      ],
+      "freeResources": [
+       {
+        "name": "Kỹ năng số cơ bản cho người lao động",
+        "provider": "Coursera / Google Digital Garage (Có Vietsub)",
+        "url": "https://learndigital.withgoogle.com/digitalgarage",
+        "type": "online_course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi gặp một loại sâu bệnh lạ trên cây ăn quả, cách tận dụng AI hiệu quả nhất là gì?",
+       "options": [
+        "Tự phỏng đoán và mua thuốc đắt tiền",
+        "Chụp ảnh mô tả triệu chứng, nhờ AI gợi ý nguyên nhân và hỏi ý kiến kỹ sư địa phương để xác nhận",
+        "Chờ cây tự khỏi mà không cần can thiệp",
+        "Chặt bỏ ngay lập tức toàn bộ vườn cây"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI là công cụ trợ lực (augmentation) tuyệt vời để gợi ý chẩn đoán nhanh, nhưng cần kết hợp xác thực thực tế từ kinh nghiệm hoặc chuyên gia để đảm bảo an toàn tuyệt đối."
+      }
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Digital E-commerce & Expansion",
+      "phaseNameVi": "Thương mại điện tử và Mở rộng thị trường",
+      "title": "AI-Powered E-commerce for Agricultural Products",
+      "titleVi": "Ứng dụng AI đẩy mạnh bán hàng nông sản trực tuyến",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Dùng AI tạo nội dung bài viết và hình ảnh quảng cáo nông sản",
+       "Vận hành quy trình chốt đơn và quản lý khách hàng qua Zalo OA và Facebook Business",
+       "Tối ưu chi phí vận chuyển và đóng gói nông sản"
+      ],
+      "freeResources": [
+       {
+        "name": "Tài liệu Hướng dẫn Bán hàng Số cho Nông dân",
+        "provider": "Bộ Nông nghiệp & Phát triển Nông thôn / Cục Thương mại điện tử",
+        "url": "https://www.vecis.gov.vn",
+        "type": "government_guide"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc sử dụng AI tạo nội dung (GenAI) trong việc bán nông sản trên mạng xã hội là gì?",
+       "options": [
+        "Giúp tự động thu hoạch lúa ngoài đồng",
+        "Giúp viết nhanh nhiều bài viết quảng cáo hấp dẫn, tiết kiệm thời gian sáng tạo nội dung",
+        "Thay thế hoàn toàn việc giao hàng cho khách",
+        "Làm cho nông sản tự động chín"
+       ],
+       "correctIndex": 1,
+       "explanation": "GenAI giúp nông dân tiết kiệm thời gian tạo nội dung quảng cáo phong phú, thu hút khách hàng trên Zalo và Facebook mà không cần giỏi văn phạm."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7876,
+  "latencyMs": 10848
+ }
+}

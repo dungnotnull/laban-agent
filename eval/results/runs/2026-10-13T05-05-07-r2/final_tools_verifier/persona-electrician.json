@@ -1,0 +1,585 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10549,
+  "latencyMs": 15094,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0031647
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation & Robotics Technician",
+    "roleTitleVi": "Kỹ thuật viên Tự động hóa & Robot Công nghiệp",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "As noted by RMIT University Vietnam, while Vietnam ranks high in STEM graduates, there is a significant gap in applied technical skills required for advanced manufacturing. Automation systems and robotics rely heavily on physical installation, mechanical adjustments, and electrical safety—areas where physical presence and hands-on diagnosis cannot be replaced by generative AI. As highlighted by the International Labour Organization (ILO), most jobs are complemented rather than substituted, making technical maintenance roles highly resilient when enhanced with programming skills.",
+    "whyItFitsYou": "With 10 years of solid electrical maintenance experience, a strong logic-based troubleshooting mindset, and comfort with shift work in Hai Phong's industrial zones, you are ideally positioned to step up into automation. Your existing ability to read electrical drawings and maintain circuits gives you a massive operational head start.",
+    "transferableSkillsMatch": [
+     "Electrical blueprint reading",
+     "Circuit troubleshooting and wiring repair",
+     "Industrial safety and maintenance protocols",
+     "Shift work adaptability"
+    ],
+    "skillsGap": [
+     "PLC programming (Siemens/Mitsubishi)",
+     "Technical English documentation reading",
+     "Basic robot manipulator calibration"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 20,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam's AI Readiness: Education and Labor Market Perspectives",
+      "source": "RMIT University Vietnam",
+      "year": 2023,
+      "url": "https://www.rmit.edu.vn/",
+      "quoteOrDataPoint": "Significant gap in applied technical skills and human-machine collaboration readiness in Vietnam's manufacturing sector."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality",
+      "source": "International Labour Organization (ILO)",
+      "year": 2023,
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality",
+      "quoteOrDataPoint": "Most industrial and manual jobs are partially exposed and more likely to be complemented by automation technologies rather than substituted."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Automation Technician",
+     "occupationTitleVi": "Kỹ thuật viên Tự động hóa công nghiệp",
+     "molisaCode": "8212",
+     "onetCode": "17-3024.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Physical manipulation and on-site wiring correction",
+      "Complex emergency troubleshooting under pressure",
+      "Interpreting anomalous physical equipment behavior"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Physical troubleshooting and maintenance of electrical control panels and motor drives",
+       "taskNameVi": "Xử lý sự cố vật lý và bảo trì tủ điện, biến tần",
+       "exposureType": "Complementary",
+       "exposurePercentage": 20,
+       "onetCode": "17-3024.00",
+       "notes": "Guided by automated diagnostic error codes but solved via hands-on electrical testing."
+      },
+      {
+       "taskName": "PLC program loading, logic validation, and basic parameter adjustment",
+       "taskNameVi": "Tải chương trình PLC, kiểm tra logic và hiệu chỉnh thông số cơ bản",
+       "exposureType": "Complementary",
+       "exposurePercentage": 40,
+       "onetCode": "17-3024.00",
+       "notes": "Software tools assist with logic checks, but physical commissioning requires human oversight."
+      },
+      {
+       "taskName": "Robot arm sensor calibration and mechanical alignment on production lines",
+       "taskNameVi": "Hiệu chuẩn cảm biến tay robot và căn chỉnh cơ khí trên dây chuyền sản xuất",
+       "exposureType": "Complementary",
+       "exposurePercentage": 30,
+       "onetCode": "17-3024.00",
+       "notes": "Requires fine motor skills and physical presence on the factory floor."
+      }
+     ],
+     "sources": [
+      "International Labour Organization (ILO)",
+      "RMIT University Vietnam"
+     ],
+     "methodologySummary": "Evaluated using ILO automation exposure frameworks and RMIT Vietnam labor readiness indicators for industrial manufacturing transformations.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Senior Electrical Maintenance Specialist",
+      "pathTitleVi": "Chuyên viên Bảo trì Điện cao cấp",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Deepen your current maintenance role by integrating digital diagnostic tools and advanced inverter setups.",
+      "targetRoles": [
+       "Senior Maintenance Electrician",
+       "Lead Technician"
+      ],
+      "skillsToAcquire": [
+       "Advanced Inverter Parameterization",
+       "Digital Maintenance Logging Tools"
+      ],
+      "transferableSkills": [
+       "Electrical troubleshooting",
+       "Safety compliance",
+       "Blueprint reading"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       "11,000,000",
+       "12,500,000",
+       "14,000,000",
+       "15,500,000",
+       "17,000,000"
+      ],
+      "rationale": "Leverages 100% of existing experience with minimal friction and zero financial investment.",
+      "actionStepNow": "Master advanced parameter configuration on your current factory's variable frequency drives."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Industrial Automation & PLC Technician",
+      "pathTitleVi": "Kỹ thuật viên Tự động hóa & PLC",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Bridge your electrical expertise with PLC programming and basic robotics to move into high-demand smart factories.",
+      "targetRoles": [
+       "Automation Technician",
+       "PLC Commissioning Technician"
+      ],
+      "skillsToAcquire": [
+       "PLC Programming (Ladder Logic)",
+       "Basic Technical English for Automation",
+       "Industrial Sensor Integration"
+      ],
+      "transferableSkills": [
+       "Wiring installation",
+       "Schematic reading",
+       "Troubleshooting mindset"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       "12,000,000",
+       "14,500,000",
+       "17,000,000",
+       "20,000,000",
+       "24,000,000"
+      ],
+      "rationale": "Directly addresses your career interest in robotics and automation while utilizing your electrical background.",
+      "actionStepNow": "Dedicate 8 hours weekly to learning fundamental PLC programming concepts using online resources."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Robotics Integration Specialist",
+      "pathTitleVi": "Chuyên viên Tích hợp Robot Công nghiệp",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Transition fully into industrial robotics deployment, programming, and automated cell integration.",
+      "targetRoles": [
+       "Robotics Field Engineer",
+       "Automation Systems Integrator"
+      ],
+      "skillsToAcquire": [
+       "Industrial Robot Programming (ABB/KUKA/Fanuc)",
+       "Advanced PLC & HMI Design",
+       "Technical English Communication"
+      ],
+      "transferableSkills": [
+       "Field safety",
+       "Logical fault isolation"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       "13,000,000",
+       "16,000,000",
+       "21,000,000",
+       "27,000,000",
+       "35,000,000"
+      ],
+      "rationale": "Offers high long-term ceiling but requires sustained effort in technical English and software programming.",
+      "actionStepNow": "Build a solid foundation in basic automation before attempting advanced multi-axis robot programming."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundational Upskilling",
+      "phaseNameVi": "Nâng cao Nền tảng Kỹ thuật",
+      "title": "Basic Computer Science & English Communication for Technicians",
+      "titleVi": "Khoa học Máy tính Cơ bản & Tiếng Anh Kỹ thuật cho Thợ điện",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer literacy",
+       "Technical English vocabulary for electrical components",
+       "Logical problem structuring"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When troubleshooting an automated control panel with limited technical English documentation, what is the safest first step?",
+       "options": [
+        "Guess the error message meaning based on color",
+        "Translate standard alarm codes using a trusted digital tool and cross-reference with schematic diagrams",
+        "Disconnect the main power supply permanently",
+        "Ignore the documentation and replace all components"
+       ],
+       "correctIndex": 1,
+       "explanation": "Translating alarm codes and referencing schematics ensures safe, methodical troubleshooting aligned with your electrical drawing skills."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied Automation & PLC",
+      "phaseNameVi": "Tự động hóa Ứng dụng & PLC",
+      "title": "Introduction to PLC Logic and Automation Principles",
+      "titleVi": "Nhập môn Lập trình PLC và Nguyên lý Tự động hóa",
+      "estimatedHours": 64,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 1500000,
+      "skillsCovered": [
+       "PLC Ladder Logic fundamentals",
+       "Basic sensor and actuator interfacing",
+       "Automation safety standards"
+      ],
+      "freeResources": [
+       {
+        "name": "CS50x Introduction to Computer Science",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which programming language is most commonly used for industrial PLC logic programming in factory automation?",
+       "options": [
+        "Python",
+        "Ladder Logic (LD)",
+        "HTML",
+        "CSS"
+       ],
+       "correctIndex": 1,
+       "explanation": "Ladder Logic mimics traditional relay logic diagrams, making it the industry standard for electricians transitioning into automation."
+      },
+      "estimatedCostUSD": 58
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $769 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific skills in electrical maintenance, schematic reading, and shift tolerance, mapping them effectively to an advanced automation role."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 3,
+    "grounded": 3,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869623950_ec0x68",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:33:43.950Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:33:43.950Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ điện công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:43.950Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:33:44.980Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 505,
+     "latencyMs": 1030
+    },
+    {
+     "ts": "2026-10-13T05:33:44.980Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "industrial electrician",
+       "automation technician",
+       "electrical maintenance technician"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited technical English proficiency",
+       "lacks PLC programming skills"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:44.980Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 711,
+     "latencyMs": 1074,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "industrial electrician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "automation technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "electrical maintenance technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam automation industrial robotics workforce skills PLC"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "PLC programming course Vietnam electric automation free low cost"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.054Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:46.959Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1682,
+     "latencyMs": 905,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:33:46.959Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "industrial electrician automation technician Hai Phong"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:49.443Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:50.287Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1824,
+     "latencyMs": 843,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:33:50.287Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:50.287Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:33:58.082Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5129,
+     "latencyMs": 7795
+    },
+    {
+     "ts": "2026-10-13T05:33:58.082Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:59.044Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 468,
+     "latencyMs": 962
+    },
+    {
+     "ts": "2026-10-13T05:33:59.044Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific skills in electrical maintenance, schematic reading, and shift tolerance, mapping them effectively to an advanced automation role."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:59.044Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 10319,
+   "latencyMs": 15094,
+   "degraded": false
+  }
+ }
+}

@@ -1,0 +1,287 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8198,
+  "latencyMs": 10053,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024594
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Precision Agriculture Specialist",
+    "roleTitleVi": "Chuyên gia Nông nghiệp Chính xác",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Theo Oxford Martin School (2017) và World Economic Forum (2023), các công việc đòi hỏi sự tương tác trực tiếp với môi trường vật lý, cảm nhận thực tế và sự kiên trì theo mùa vụ có tỷ lệ tự động hóa thấp. Tuy nhiên, AI và công nghệ dữ liệu đang bổ trợ mạnh mẽ cho nông nghiệp, biến kỹ năng vận hành drone và canh tác truyền thống thành năng lực số hóa giá trị cao.",
+    "whyItFitsYou": "Với 15 năm kinh nghiệm canh tác lúa và cây ăn quả tại Cần Thơ, bạn có nền tảng thực tế vững chắc và sự am hiểu sâu sắc về thổ nhưỡng địa phương. Việc bạn đã biết thao tác drone phun thuốc cơ bản là bàn đạp tuyệt vời để nâng cấp lên các giải pháp nông nghiệp thông minh hơn, kết hợp hoàn hảo giữa kinh nghiệm dân gian và công nghệ.",
+    "transferableSkillsMatch": [
+     "Canh tác lúa và cây ăn quả",
+     "Thao tác drone phun thuốc cơ bản",
+     "Hiểu thị trường địa phương và mùa vụ",
+     "Kiên trì và thích ứng thời tiết"
+    ],
+    "skillsGap": [
+     "Phân tích dữ liệu canh tác từ cảm biến/drone",
+     "Tối ưu hóa chi phí bằng phần mềm số",
+     "Tiếng Anh cơ bản cho tài liệu kỹ thuật"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Sustainability Specialists and Agri-tech application roles show high growth demand as climate and technology converge."
+     },
+     {
+      "paperTitle": "The Future of Employment",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity and environmental perception remain highly resilient against computerisation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Horticultural Plant Growers",
+     "occupationTitleVi": "Người trồng trọt cây lương thực và cây ăn quả",
+     "molisaCode": "6111",
+     "onetCode": "45-1011.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Đánh giá trực quan sức khỏe cây trồng tại hiện trường",
+      "Ra quyết định xử lý tình huống thời tiết cực đoan",
+      "Am hiểu tập quán canh tác đồng bằng sông Cửu Long"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Field-level crop monitoring and drone piloting",
+       "taskNameVi": "Khảo sát đồng ruộng và điều khiển drone phun thuốc/bón phân",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "45-1011.00",
+       "notes": "Kết hợp kinh nghiệm 15 năm với dữ liệu bản đồ số từ drone."
+      },
+      {
+       "taskName": "Local seasonal harvest planning",
+       "taskNameVi": "Lập kế hoạch mùa vụ và chăm sóc cây trồng địa phương",
+       "exposureType": "complementary",
+       "exposurePercentage": 20,
+       "onetCode": "45-1011.00",
+       "notes": "Sử dụng dự báo thời tiết AI để tối ưu hóa thời điểm gieo trồng."
+      },
+      {
+       "taskName": "Agricultural cost and yield recording",
+       "taskNameVi": "Ghi chép chi phí và đánh giá năng suất canh tác",
+       "exposureType": "augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "43-9061.00",
+       "notes": "Chuyển từ sổ tay sang ứng dụng di động quản lý nông nghiệp."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs 2023",
+      "Oxford Martin School 2017"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận O*NET và phân tích khả năng bổ trợ công nghệ AI/IoT trong nông nghiệp tại khu vực Đồng bằng sông Cửu Long.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Upgrade Drone & Farm Tech Operations",
+      "pathTitleVi": "Nâng cấp kỹ năng vận hành Drone và Công nghệ Nông nghiệp",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng kinh nghiệm sẵn có, học thêm cách đọc bản đồ drone cơ bản và ứng dụng phần mềm ghi chép chi phí nông nghiệp trên điện thoại.",
+      "targetRoles": [
+       "Kỹ thuật viên dịch vụ drone nông nghiệp",
+       "Chủ trang trại ứng dụng công nghệ cao"
+      ],
+      "skillsToAcquire": [
+       "Đọc bản đồ chỉ số thực vật NDVI cơ bản",
+       "Sử dụng app quản lý tài chính nông trại",
+       "Bảo trì drone nâng cao"
+      ],
+      "transferableSkills": [
+       "Canh tác lúa và cây ăn quả",
+       "Thao tác drone cơ bản"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       9000000,
+       12000000,
+       15000000,
+       18000000,
+       22000000
+      ],
+      "rationale": "Rủi ro thấp nhất vì dựa hoàn toàn trên năng lực cốt lõi và kinh nghiệm thực tế 15 năm của bạn.",
+      "actionStepNow": "Tìm kiếm các khóa học ngắn hạn về cách sử dụng phần mềm lập lịch bay cho drone trên YouTube hoặc thông qua các hợp tác xã nông nghiệp tại Cần Thơ."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agri-E-commerce & Local Produce Branding",
+      "pathTitleVi": "Thương mại điện tử nông sản và Xây dựng thương hiệu địa phương",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Mở rộng việc bán hàng qua Zalo/Facebook hiện tại thành chuỗi cung ứng trực tuyến chuyên nghiệp, kết hợp livestream giới thiệu nông sản sạch.",
+      "targetRoles": [
+       "Chủ shop nông sản trực tuyến",
+       "Đầu mối cung ứng nông sản sạch vùng ĐBSCL"
+      ],
+      "skillsToAcquire": [
+       "Livestream bán hàng hiệu quả",
+       "Chỉnh sửa ảnh/video ngắn bằng AI trên điện thoại",
+       "Quản lý đơn hàng và chăm sóc khách hàng"
+      ],
+      "transferableSkills": [
+       "Bán nông sản qua Zalo và Facebook",
+       "Hiểu thị trường địa phương",
+       "Kiên trì theo mùa vụ"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8000000,
+       12000000,
+       16000000,
+       22000000,
+       28000000
+      ],
+      "rationale": "Phát huy điểm mạnh sẵn có về bán hàng mạng xã hội và am hiểu sản phẩm nông nghiệp miền Tây.",
+      "actionStepNow": "Thử nghiệm quay video ngắn (TikTok/Reels) về quy trình chăm sóc cây ăn quả thực tế tại vườn của bạn để thu hút khách hàng."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Smart Farm Consultant & Tech Coordinator",
+      "pathTitleVi": "Tư vấn và Điều phối Nông trại thông minh",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Trở thành chuyên viên tư vấn chuyển đổi số cho các hợp tác xã và hộ nông dân lớn tại khu vực Cần Thơ và các tỉnh lân cận.",
+      "targetRoles": [
+       "Điều phối viên chuyển đổi số nông nghiệp",
+       "Tư vấn viên giải pháp nông nghiệp thông minh"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng thuyết trình và đào tạo nông dân",
+       "Phân tích dữ liệu canh tác cơ bản",
+       "Quản lý dự án nông nghiệp công nghệ cao"
+      ],
+      "transferableSkills": [
+       "15 năm kinh nghiệm nông nghiệp",
+       "Thấu hiểu khó khăn thực tế của nông dân"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       10000000,
+       14000000,
+       19000000,
+       25000000,
+       32000000
+      ],
+      "rationale": "Mang lại giá trị xã hội cao và thu nhập bền vững trong bối cảnh ĐBSCL đang đẩy mạnh nông nghiệp thông minh.",
+      "actionStepNow": "Kết nối với Trung tâm Khuyến nông Cần Thơ hoặc các hội nhóm nông nghiệp công nghệ cao để tìm cơ hội học hỏi."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Upgrade",
+      "phaseNameVi": "Nền tảng và Số hóa cơ bản",
+      "title": "Mastering Agricultural Apps and Drone Mapping Basics",
+      "titleVi": "Làm chủ ứng dụng nông nghiệp và lập bản đồ drone cơ bản",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Sử dụng phần mềm ghi chép chi phí nâng cao",
+       "Lập kế hoạch bay tự động cho drone phun thuốc",
+       "Đọc hiểu dữ liệu thời tiết nông nghiệp"
+      ],
+      "freeResources": [
+       {
+        "name": "Học viện Nông nghiệp Việt Nam - Tài liệu trực tuyến",
+        "provider": "VNUA",
+        "url": "https://www.vnua.edu.vn",
+        "type": "Tài liệu kỹ thuật"
+       },
+       {
+        "name": "Kỹ thuật vận hành Drone nông nghiệp (YouTube)",
+        "provider": "Kênh Khuyến Nông",
+        "url": "https://www.youtube.com",
+        "type": "Video hướng dẫn"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng drone phun thuốc trong điều kiện gió lớn, yếu tố nào cần được ưu tiên điều chỉnh đầu tiên để đảm bảo hiệu quả và an toàn?",
+       "options": [
+        "Tăng tốc độ bay tối đa",
+        "Giảm chiều cao bay và điều chỉnh tốc độ theo hướng gió",
+        "Dừng kiểm tra dung lượng pin",
+        "Tắt hoàn toàn hệ thống định vị GPS"
+       ],
+       "correctIndex": 1,
+       "explanation": "Trong điều kiện gió lớn, việc giảm độ cao bay giúp hạn chế độ trôi của thuốc và điều chỉnh tốc độ bay phù hợp với hướng gió giúp phun đều hơn."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Market Expansion & Practical Application",
+      "phaseNameVi": "Mở rộng thị trường và Ứng dụng thực tế",
+      "title": "Enhancing Agri-E-commerce and Yield Optimization",
+      "titleVi": "Nâng cấp Thương mại điện tử nông sản và Tối ưu năng suất",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Tạo nội dung video ngắn bán nông sản sạch",
+       "Ứng dụng AI cơ bản (ChatGPT) để viết mô tả sản phẩm hấp dẫn trên Zalo/Facebook",
+       "Quản lý chi phí và lợi nhuận bằng bảng tính số"
+      ],
+      "freeResources": [
+       {
+        "name": "Cục Xúc tiến Thương mại - Đào tạo TMĐT nông sản",
+        "provider": "Vietrade",
+        "url": "https://www.vietrade.gov.vn",
+        "type": "Khóa học trực tuyến"
+       },
+       {
+        "name": "Hướng dẫn sử dụng AI cơ bản cho người làm kinh doanh",
+        "provider": "OpenAI / Cộng đồng AI Việt Nam",
+        "url": "https://chat.openai.com",
+        "type": "Công cụ hỗ trợ"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi viết bài đăng bán trái cây sạch trên Facebook/Zalo, yếu tố nào giúp tăng độ tin cậy và thu hút khách hàng tốt nhất?",
+       "options": [
+        "Chỉ đăng hình ảnh mẫu lấy trên mạng đẹp mắt",
+        "Đăng video thực tế quy trình chăm sóc tại vườn và cam kết chất lượng",
+        "Chỉ ghi giá tiền thấp nhất mà không cần mô tả sản phẩm",
+        "Đăng nội dung sao chép từ cửa hàng khác"
+       ],
+       "correctIndex": 1,
+       "explanation": "Video thực tế quy trình chăm sóc tại vườn tạo sự minh bạch, củng cố niềm tin về nông sản sạch đối với người tiêu dùng."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7943,
+  "latencyMs": 10053
+ }
+}

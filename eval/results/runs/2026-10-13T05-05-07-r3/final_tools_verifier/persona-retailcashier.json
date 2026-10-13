@@ -1,0 +1,600 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 15307,
+  "latencyMs": 40501,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.004592099999999999
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "E-commerce Operations Assistant",
+    "roleTitleVi": "Trợ lý Vận hành Thương mại điện tử",
+    "aiResilienceScore": 75,
+    "matchScore": 85,
+    "reasoning": "Given your experience with POS systems and inventory reconciliation, pivoting to e-commerce operations leverages your existing operational discipline while moving into a high-growth sector. Evidence from NBER (2023) suggests that AI tools significantly boost productivity for workers in administrative and support roles, allowing you to bridge the digital skills gap effectively.",
+    "whyItFitsYou": "Your strength in 'careful handling of money and invoices' is directly transferable to online order processing and inventory management. Your experience with 'customer service' and 'handling returns' is the backbone of e-commerce support, where AI can assist you in drafting responses, while you provide the human judgment for complex disputes.",
+    "transferableSkillsMatch": [
+     "Inventory reconciliation",
+     "Customer dispute resolution",
+     "POS system operation",
+     "Attention to detail in financial transactions"
+    ],
+    "skillsGap": [
+     "Basic digital literacy (Office/Cloud tools)",
+     "E-commerce platform management (Shopee/Lazada/TikTok Shop)",
+     "Basic English for digital tools"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 12,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "NBER",
+      "year": 2023,
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "Access to a generative AI-based conversational assistant increases productivity of customer support agents by 14% on average, with the largest impact on novice and low-skilled workers."
+     },
+     {
+      "paperTitle": "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market",
+      "source": "OECD",
+      "year": 2023,
+      "url": "https://www.oecd.org/employment-outlook/2023/",
+      "quoteOrDataPoint": "Workers report that AI has improved job quality but also increased work intensity and stress, highlighting the need for digital upskilling."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "E-commerce Operations Assistant",
+     "occupationTitleVi": "Trợ lý Vận hành Thương mại điện tử",
+     "molisaCode": "4321",
+     "onetCode": "43-4051.00",
+     "overallResilienceScore": 75,
+     "automationRiskScore": 45,
+     "augmentationPotentialScore": 80,
+     "humanAdvantageCore": [
+      "Complex dispute resolution",
+      "Strategic inventory oversight",
+      "Brand-aligned customer communication"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Processing online orders and returns",
+       "taskNameVi": "Xử lý đơn hàng và hoàn trả trực tuyến",
+       "exposureType": "augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "43-4051.00-T1",
+       "notes": "AI handles data entry; you handle the exception management."
+      },
+      {
+       "taskName": "Customer inquiry management",
+       "taskNameVi": "Quản lý phản hồi khách hàng",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "43-4051.00-T2",
+       "notes": "AI drafts responses; you verify tone and accuracy."
+      },
+      {
+       "taskName": "Inventory reconciliation",
+       "taskNameVi": "Đối soát tồn kho",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "43-4051.00-T3",
+       "notes": "Requires physical verification and human accountability."
+      }
+     ],
+     "sources": [
+      {
+       "citationText": "Generative AI at Work",
+       "url": "https://www.nber.org/papers/w31161"
+      }
+     ],
+     "methodologySummary": "Based on task-level automation exposure analysis and human-in-the-loop augmentation potential.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital-Enhanced Cashier",
+      "pathTitleVi": "Thu ngân ứng dụng công nghệ",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Mastering digital POS and inventory software to become a lead cashier.",
+      "targetRoles": [
+       "Lead Cashier",
+       "Store Supervisor"
+      ],
+      "skillsToAcquire": [
+       "Advanced POS software",
+       "Digital inventory reporting"
+      ],
+      "transferableSkills": [
+       "Customer service",
+       "Cash handling"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9,
+       10,
+       11
+      ],
+      "rationale": "Leverages current role while increasing digital proficiency.",
+      "actionStepNow": "Request training on the store's advanced inventory management software."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "E-commerce Support Specialist",
+      "pathTitleVi": "Chuyên viên hỗ trợ TMĐT",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Moving from physical retail to online shop management.",
+      "targetRoles": [
+       "E-commerce Support",
+       "Order Processor"
+      ],
+      "skillsToAcquire": [
+       "Shopee/Lazada dashboard",
+       "Basic Excel"
+      ],
+      "transferableSkills": [
+       "Customer service",
+       "Dispute resolution"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       9,
+       11,
+       13,
+       15
+      ],
+      "rationale": "High demand for e-commerce support in Da Nang.",
+      "actionStepNow": "Start learning basic digital literacy on GCFLearnFree."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Junior Accountant",
+      "pathTitleVi": "Kế toán viên sơ cấp",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Formal training in accounting principles.",
+      "targetRoles": [
+       "Accounting Clerk"
+      ],
+      "skillsToAcquire": [
+       "Accounting software",
+       "Tax regulations"
+      ],
+      "transferableSkills": [
+       "Financial accuracy",
+       "Record keeping"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       7,
+       9,
+       12,
+       15,
+       18
+      ],
+      "rationale": "Requires significant formal education investment.",
+      "actionStepNow": "Audit free accounting courses on Alison."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Xây dựng nền tảng số",
+      "title": "Digital Literacy Basics",
+      "titleVi": "Kỹ năng số cơ bản",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer basics",
+       "Internet safety",
+       "Basic Office"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is a safe practice when using online shop dashboards?",
+       "options": [
+        "Sharing passwords with colleagues",
+        "Using unique, strong passwords for each account",
+        "Clicking on all email links",
+        "Leaving the computer unlocked"
+       ],
+       "correctIndex": 1,
+       "explanation": "Using unique, strong passwords is a fundamental security practice for protecting business accounts."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "E-commerce Skills",
+      "title": "E-commerce Platform Fundamentals",
+      "titleVi": "Nền tảng thương mại điện tử",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Order management",
+       "Customer communication"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary goal of an e-commerce support agent when a customer complains about a late delivery?",
+       "options": [
+        "Ignore the message",
+        "Blame the courier immediately",
+        "Empathize, investigate, and provide a clear resolution",
+        "Ask the customer to wait indefinitely"
+       ],
+       "correctIndex": 2,
+       "explanation": "Empathetic resolution is key to maintaining customer loyalty in e-commerce."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $462 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 70,
+    "rationale": "The guidance effectively maps specific cashier skills like POS operation and returns to e-commerce tasks. It is highly personalized, though the NBER citation is a generic academic reference rather than specific career data."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791871057307_k3h40v",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:57:37.307Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:57:37.307Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thu ngân siêu thị\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:37.307Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:57:40.478Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 499,
+     "latencyMs": 2575
+    },
+    {
+     "ts": "2026-10-13T05:57:40.478Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "accounting clerk",
+       "e-commerce assistant",
+       "customer service representative"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "time-constrained availability",
+       "low digital literacy"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:40.478Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 718,
+     "latencyMs": 2690,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "accounting clerk"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "e-commerce assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "customer service representative"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.693Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation impact on low-skilled workers Vietnam retail accounting e-commerce"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.694Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.694Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free online accounting courses Vietnamese beginner digital literacy e-commerce training"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:43.694Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:47.923Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2331,
+     "latencyMs": 3656,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:57:47.923Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:47.923Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:57:57.718Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5318,
+     "latencyMs": 9211
+    },
+    {
+     "ts": "2026-10-13T05:57:57.718Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:03.503Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 453,
+     "latencyMs": 5223
+    },
+    {
+     "ts": "2026-10-13T05:58:03.503Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence"
+      ],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly maps the user's POS and cash handling skills to digital ticketing roles. It references specific user strengths like empathy and conflict resolution, grounding the career pivot in the user's actual professional background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:03.503Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:03.503Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:58:12.924Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5323,
+     "latencyMs": 8734
+    },
+    {
+     "ts": "2026-10-13T05:58:12.924Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:17.808Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 449,
+     "latencyMs": 4380
+    },
+    {
+     "ts": "2026-10-13T05:58:17.808Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 70,
+       "rationale": "The guidance effectively maps specific cashier skills like POS operation and returns to e-commerce tasks. It is highly personalized, though the NBER citation is a generic academic reference rather than specific career data."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:17.808Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 36
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 15091,
+   "latencyMs": 40501,
+   "degraded": false
+  }
+ }
+}

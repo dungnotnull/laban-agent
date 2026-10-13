@@ -1,0 +1,505 @@
+{
+ "score": {
+  "personaId": "persona-golden-2",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11612,
+  "latencyMs": 14058,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0034836
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI Quality & Automation Test Specialist",
+    "roleTitleVi": "Chuyên viên Kiểm thử Tự động và Đánh giá Chất lượng AI",
+    "aiResilienceScore": 78,
+    "matchScore": 88,
+    "reasoning": "According to VietnamWorks (2024), manual QA postings declined 48% YoY while Automation & AI QA / LLM Evaluation Specialist postings surged 115%. Your background in manual testing gives you domain expertise, but transitioning to automation and AI evaluation ensures high resilience as highlighted in the TopCV Vietnam Labor Market Report & AI Transformation Index 2024–2026.",
+    "whyItFitsYou": "Your strengths in finding edge cases, understanding Agile/Scrum processes, and logical thinking align perfectly with the need to validate AI hallucination, safety guardrails, and automated scripts. Even though you are hesitant about writing code from scratch and technical English, Python and logical foundations will make this pivot achievable within your 15 hours/week availability.",
+    "transferableSkillsMatch": [
+     "Deep edge-case identification and analytical thinking",
+     "Software development lifecycle (Agile/Scrum) familiarity",
+     "Cross-functional communication with developers and product teams",
+     "Detailed bug reporting and structured documentation"
+    ],
+    "skillsGap": [
+     "Python-based test automation frameworks (Pytest, Playwright)",
+     "LLM output evaluation and prompt testing methodologies",
+     "Technical English interviewing and professional documentation",
+     "CI/CD pipeline integration for automated testing"
+    ],
+    "averageSalaryRangeVND": "22,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "Manual QA postings declined 48% YoY; Automation & AI QA / LLM Evaluation Specialist postings surged 115%."
+     },
+     {
+      "paperTitle": "OpenAI/UPenn (2023): Software QA tasks rank among the top 15% in task substitutability by code-specialized foundation models.",
+      "source": "OpenAI/UPenn",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Software QA tasks rank among the top 15% in task substitutability by code-specialized foundation models."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Manual Software QA & Tester",
+     "occupationTitleVi": "Chuyên viên Kiểm thử Phần mềm Thủ công (Manual QA)",
+     "molisaCode": "2512",
+     "onetCode": "15-1253.00",
+     "overallResilienceScore": 42,
+     "automationRiskScore": 84,
+     "augmentationPotentialScore": 78,
+     "humanAdvantageCore": [
+      "Complex exploratory edge-case testing & human UX intuition (Kiểm thử thăm dò tình huống hiếm)",
+      "Security boundary testing & ethical adversarial mindset (Tư duy phòng thủ an ninh và đạo đức)",
+      "Cross-functional engineering & product translation (Cầu nối giữa kỹ sư, khách hàng và BA)",
+      "Quality strategy & compliance governance (Chiến lược chất lượng tổng thể)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing repetitive standard manual test cases for CRUD features",
+       "taskNameVi": "Viết test cases thủ công lặp lại cho tính năng CRUD cơ bản",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 90,
+       "onetCode": "15-1253.00-T1",
+       "notes": "AI test generators automatically synthesize boilerplate tests."
+      },
+      {
+       "taskName": "Manual regression verification across browsers and devices",
+       "taskNameVi": "Chạy kiểm thử hồi quy thủ công trên nhiều trình duyệt/thiết bị",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 85,
+       "onetCode": "15-1253.00-T2",
+       "notes": "Automated vision-based testing scripts execute cross-platform tests faster."
+      },
+      {
+       "taskName": "Defining overall product reliability framework and LLM output evaluation",
+       "taskNameVi": "Xây dựng khung đảm bảo độ tin cậy và đánh giá chất lượng mô hình AI (LLM Eval)",
+       "exposureType": "human_core",
+       "exposurePercentage": 25,
+       "onetCode": "15-1253.00-T4",
+       "notes": "Emerging high-demand field evaluating AI hallucinations and safety guardrails."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "openai-upenn-2023",
+       "citationText": "OpenAI/UPenn (2023): Software QA tasks rank among the top 15% in task substitutability by code-specialized foundation models.",
+       "url": "https://arxiv.org/abs/2303.10130"
+      },
+      {
+       "sourceId": "topcv-vietnamworks-labor-2024-2026",
+       "citationText": "VietnamWorks (2024): Manual QA postings declined 48% YoY; \"Automation & AI QA / LLM Evaluation Specialist\" postings surged 115%.",
+       "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET task content analysis combined with Vietnam labor market shifts from TopCV and Goldman Sachs automation exposure indices.",
+     "uncertaintyRange": "+/- 6 points based on individual adoption speed of AI tools.",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Manual QA",
+      "pathTitleVi": "Kiểm thử thủ công tích hợp AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage AI testing assistants to speed up your daily manual test generation while maintaining current role stability.",
+      "targetRoles": [
+       "Senior Manual QA",
+       "QA Operations Coordinator"
+      ],
+      "skillsToAcquire": [
+       "AI Test Generation Prompts",
+       "Bug tracking automation tools"
+      ],
+      "transferableSkills": [
+       "Manual testing",
+       "Edge-case identification",
+       "Agile workflows"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       "15,000,000",
+       "17,000,000",
+       "19,000,000",
+       "21,000,000",
+       "23,000,000"
+      ],
+      "rationale": "Provides immediate job stability with minimal learning curve, but carries long-term automation displacement risks.",
+      "actionStepNow": "Integrate ChatGPT or Claude into your daily test case writing workflow this week."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Automation & AI Test Specialist",
+      "pathTitleVi": "Chuyên viên Kiểm thử tự động và Đánh giá AI",
+      "feasibilityScore": 82,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition into writing Python-based automated tests and evaluating LLM outputs for international remote companies.",
+      "targetRoles": [
+       "Automation QA Engineer",
+       "AI Model Evaluation Specialist"
+      ],
+      "skillsToAcquire": [
+       "Python automation (Pytest/Playwright)",
+       "LLM evaluation basics",
+       "Technical English for QA"
+      ],
+      "transferableSkills": [
+       "QA mindset",
+       "Defect lifecycle management",
+       "Agile collaboration"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       "18,000,000",
+       "24,000,000",
+       "32,000,000",
+       "40,000,000",
+       "50,000,000"
+      ],
+      "rationale": "Directly matches high-growth demand in Vietnam and remote markets while building on your 3 years of QA experience.",
+      "actionStepNow": "Dedicate 5 hours this week to Python micro-courses on Kaggle Learn."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Cybersecurity Compliance & QA Analyst",
+      "pathTitleVi": "Chuyên viên An ninh mạng và Tuân thủ Chất lượng",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Pivot completely into security testing and compliance auditing, capitalizing on your cautious personality and logic.",
+      "targetRoles": [
+       "Junior Security Analyst",
+       "Compliance QA Auditor"
+      ],
+      "skillsToAcquire": [
+       "Network security fundamentals",
+       "Penetration testing basics",
+       "Security frameworks"
+      ],
+      "transferableSkills": [
+       "Risk analysis",
+       "Systematic probing",
+       "Documentation"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       "20,000,000",
+       "26,000,000",
+       "35,000,000",
+       "45,000,000",
+       "60,000,000"
+      ],
+      "rationale": "High earning potential and long-term security, but requires significant upskilling away from core QA tasks.",
+      "actionStepNow": "Explore free AWS Skill Builder security modules to test your interest."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Python Automation Foundations",
+      "phaseNameVi": "Nền tảng Tự động hóa với Python",
+      "title": "Build Python & Basic Scripting Skills",
+      "titleVi": "Xây dựng kỹ năng Python và Viết kịch bản cơ bản",
+      "estimatedHours": 60,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Python syntax",
+       "Basic test automation scripts",
+       "Pytest framework basics"
+      ],
+      "freeResources": [
+       {
+        "name": "Kaggle Learn micro-courses",
+        "provider": "Kaggle",
+        "url": "https://www.kaggle.com/learn",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which Python library is commonly used for writing simple unit and functional test assertions?",
+       "options": [
+        "Pytest",
+        "Pandas",
+        "Matplotlib",
+        "TensorFlow"
+       ],
+       "correctIndex": 0,
+       "explanation": "Pytest is a widely adopted framework in Python that makes building simple and scalable test cases easy for QA engineers."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "AI Evaluation & Technical English",
+      "phaseNameVi": "Đánh giá AI và Tiếng Anh Kỹ thuật",
+      "title": "LLM Evaluation and Remote Interview Preparation",
+      "titleVi": "Đánh giá mô hình ngôn ngữ và Chuẩn bị phỏng vấn từ xa",
+      "estimatedHours": 45,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "LLM hallucination detection",
+       "Prompt testing",
+       "Technical English communication"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "AWS Skill Builder (free tier)",
+        "provider": "AWS",
+        "url": "https://skillbuilder.aws",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a primary focus when evaluating LLM outputs in an AI QA role?",
+       "options": [
+        "Checking for hallucinations and safety guardrail violations",
+        "Designing graphic user interfaces",
+        "Managing server hardware cooling",
+        "Writing marketing copy"
+       ],
+       "correctIndex": 0,
+       "explanation": "AI QA specialists primarily focus on validating model accuracy, detecting hallucinations, and ensuring safety guardrails are respected."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$846 - $1,731 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869045649_d6spi6",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:24:05.649Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:24:05.649Z",
+     "type": "run_start",
+     "message": "pipeline for \"Manual Software QA\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:05.649Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:24:06.827Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 714,
+     "latencyMs": 1178
+    },
+    {
+     "ts": "2026-10-13T05:24:06.827Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "QA Engineer",
+       "Automation QA",
+       "Software Tester"
+      ],
+      "riskFlags": [
+       "Limited coding skills for automation",
+       "Limited budget for retraining",
+       "Hesitant with technical English interviews"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:06.827Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 704,
+     "latencyMs": 1146,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Software Tester"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Automation QA"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "software QA automation generative AI Vietnam IT labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "software testing automation python english free courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:07.973Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:08.949Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3360,
+     "latencyMs": 975,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:24:08.949Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:08.949Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:24:19.707Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6624,
+     "latencyMs": 10757
+    },
+    {
+     "ts": "2026-10-13T05:24:19.707Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:19.707Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 42
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11402,
+   "latencyMs": 14058,
+   "degraded": false
+  }
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 2,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 6384,
+  "latencyMs": 4905,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0019151999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation & Robotics Technician",
+    "roleTitleVi": "Kỹ thuật viên Tự động hóa & Robot công nghiệp",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "Dựa trên báo cáo của Oxford Martin School (2017) và WEF (2023), các công việc đòi hỏi sự khéo léo vật lý, xử lý sự cố tại hiện trường và tư duy logic trong môi trường phi cấu trúc có khả năng chống chịu cao với tự động hóa. Kinh nghiệm 10 năm của bạn là tài sản quý giá mà AI chưa thể thay thế.",
+    "whyItFitsYou": "Bạn đã có nền tảng vững chắc về điện công nghiệp và tư duy xử lý sự cố. Việc chuyển dịch sang Robot công nghiệp tận dụng tối đa kinh nghiệm hiện trường của bạn, đồng thời nâng cấp giá trị bản thân bằng cách tích hợp kỹ năng lập trình PLC và AI-Augmented maintenance.",
+    "transferableSkillsMatch": [
+     "Bảo trì hệ thống điện",
+     "Đọc hiểu bản vẽ kỹ thuật",
+     "Tư duy logic xử lý sự cố",
+     "Kỹ năng an toàn điện"
+    ],
+    "skillsGap": [
+     "Lập trình PLC (Siemens/Mitsubishi)",
+     "Tiếng Anh kỹ thuật",
+     "Cấu hình Robot công nghiệp",
+     "Sử dụng công cụ AI hỗ trợ chẩn đoán lỗi"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk",
+      "quoteOrDataPoint": "Các công việc đòi hỏi sự khéo léo vật lý và xử lý sự cố trong môi trường không gian thực tế có khả năng chống chịu cao với tự động hóa."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Machinery Mechanic",
+     "occupationTitleVi": "Thợ cơ điện công nghiệp",
+     "molisaCode": "7412",
+     "onetCode": "49-9041.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 70,
+     "humanAdvantageCore": [
+      "Khả năng xử lý sự cố thực tế",
+      "Sự khéo léo trong thao tác vật lý",
+      "Khả năng ra quyết định trong tình huống khẩn cấp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Predictive Maintenance using AI",
+       "taskNameVi": "Bảo trì dự báo bằng AI",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "49-9041.00",
+       "notes": "Sử dụng AI để phân tích dữ liệu biến tần và dự báo hỏng hóc trước khi xảy ra."
+      },
+      {
+       "taskName": "PLC Troubleshooting",
+       "taskNameVi": "Xử lý sự cố PLC",
+       "exposureType": "Core",
+       "exposurePercentage": 10,
+       "onetCode": "49-9041.00",
+       "notes": "Kỹ năng cốt lõi cần nâng cấp để làm chủ hệ thống tự động hóa."
+      },
+      {
+       "taskName": "Robot Calibration",
+       "taskNameVi": "Hiệu chuẩn Robot công nghiệp",
+       "exposureType": "Core",
+       "exposurePercentage": 5,
+       "onetCode": "49-9041.00",
+       "notes": "Công việc chuyên môn cao, đòi hỏi sự can thiệp trực tiếp của con người."
+      }
+     ],
+     "sources": "O*NET 28.3 Database, VSCO 2020",
+     "methodologySummary": "Đánh giá dựa trên sự kết hợp giữa khả năng thao tác vật lý và nhu cầu kỹ năng kỹ thuật cao trong ngành sản xuất tại Việt Nam.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay & Augment",
+      "pathTitleVi": "Nâng cấp tại chỗ",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tích hợp AI vào quy trình bảo trì hiện tại để tăng hiệu suất.",
+      "targetRoles": "Kỹ thuật viên bảo trì cao cấp",
+      "skillsToAcquire": [
+       "Sử dụng AI chatbot để tra cứu tài liệu kỹ thuật",
+       "Phân tích dữ liệu cảm biến"
+      ],
+      "transferableSkills": [
+       "Kinh nghiệm hiện trường",
+       "Tư duy logic"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Tận dụng kinh nghiệm sẵn có, giảm thiểu rủi ro thất nghiệp.",
+      "actionStepNow": "Học cách sử dụng ChatGPT để dịch tài liệu kỹ thuật tiếng Anh sang tiếng Việt."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Nền tảng",
+      "title": "Làm chủ PLC cơ bản",
+      "titleVi": "Làm chủ PLC cơ bản",
+      "estimatedHours": 40,
+      "weeksDuration": 5,
+      "skillsCovered": [
+       "Lập trình PLC cơ bản",
+       "Đọc sơ đồ khối"
+      ],
+      "freeResources": [
+       {
+        "name": "Siemens TIA Portal Tutorial",
+        "provider": "Siemens",
+        "url": "https://new.siemens.com",
+        "type": "Video"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "PLC là viết tắt của từ gì?",
+       "options": [
+        "Programmable Logic Controller",
+        "Power Line Circuit",
+        "Personal Logic Computer"
+       ],
+       "correctIndex": 0,
+       "explanation": "PLC là bộ điều khiển logic lập trình được, trái tim của tự động hóa công nghiệp."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 6132,
+  "latencyMs": 4905
+ }
+}

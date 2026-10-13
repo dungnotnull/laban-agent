@@ -1,0 +1,599 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 17627,
+  "latencyMs": 42848,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0052881
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Precision Agriculture Technician",
+    "roleTitleVi": "Kỹ thuật viên Nông nghiệp Chính xác",
+    "aiResilienceScore": 88,
+    "matchScore": 95,
+    "reasoning": "This role bridges your 15 years of farming experience with your interest in precision agriculture. By leveraging your existing drone operation skills and local market knowledge, you can transition into a role that uses AI-driven data to optimize crop yields, which is a high-growth area in Vietnam's agricultural sector.",
+    "whyItFitsYou": "You already possess the 'human-in-the-loop' advantage: deep domain knowledge of rice and fruit cultivation in Can Tho. Your strength in learning new technology makes you an ideal candidate to move from manual farming to managing AI-assisted precision tools that analyze soil and crop health.",
+    "transferableSkillsMatch": [
+     "Drone operation and maintenance",
+     "Local market and seasonal crop cycle expertise",
+     "Direct-to-consumer sales via social media",
+     "Basic operational cost tracking"
+    ],
+    "skillsGap": [
+     "Data interpretation from agricultural sensors",
+     "Basic English for technical software interfaces",
+     "Advanced digital record-keeping"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 20,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI agents increase productivity and accuracy in data-driven decision making."
+     },
+     {
+      "paperTitle": "Vietnam's AI Readiness: Education and Labor Market Perspectives",
+      "source": "RMIT University Vietnam",
+      "year": 2023,
+      "url": "https://www.rmit.edu.vn/",
+      "quoteOrDataPoint": "Significant gap in applied AI skills and soft skills required for human-AI collaboration."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Precision Agriculture Technician",
+     "occupationTitleVi": "Kỹ thuật viên Nông nghiệp Chính xác",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 25,
+     "augmentationPotentialScore": 95,
+     "humanAdvantageCore": [
+      "Field-level intuition and seasonal adaptability",
+      "Local market relationship management",
+      "Physical equipment troubleshooting in rural environments"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Interpreting drone-captured crop health imagery",
+       "taskNameVi": "Phân tích hình ảnh sức khỏe cây trồng từ drone",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 60,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI identifies stress patterns; you validate based on local soil conditions."
+      },
+      {
+       "taskName": "Optimizing fertilizer/pesticide application via data",
+       "taskNameVi": "Tối ưu hóa lượng phân bón/thuốc dựa trên dữ liệu",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "15-1211.00-T2",
+       "notes": "AI suggests dosage; you apply based on seasonal experience."
+      },
+      {
+       "taskName": "Managing digital sales and supply chain logistics",
+       "taskNameVi": "Quản lý bán hàng số và logistics nông sản",
+       "exposureType": "human_core",
+       "exposurePercentage": 20,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Human trust and negotiation remain essential for local trade."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Based on NBER/MIT findings on AI-augmented productivity for domain experts.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Enabled Farmer",
+      "pathTitleVi": "Nông dân ứng dụng công nghệ cao",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Enhance current farming with AI-driven precision tools.",
+      "targetRoles": [
+       "Smart Farm Manager"
+      ],
+      "skillsToAcquire": [
+       "Data-driven irrigation",
+       "Basic English for software"
+      ],
+      "transferableSkills": [
+       "Farming experience",
+       "Drone operation"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Leverages existing assets with minimal disruption.",
+      "actionStepNow": "Start using free AI tools to analyze weather data for your crops."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural Data Consultant",
+      "pathTitleVi": "Tư vấn viên dữ liệu nông nghiệp",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Consult for local cooperatives on using tech.",
+      "targetRoles": [
+       "Agri-Tech Consultant"
+      ],
+      "skillsToAcquire": [
+       "Data analysis",
+       "Business communication"
+      ],
+      "transferableSkills": [
+       "Market knowledge",
+       "Sales experience"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       10,
+       14,
+       18,
+       25,
+       30
+      ],
+      "rationale": "High demand for experts who understand both tech and soil.",
+      "actionStepNow": "Enroll in a basic data analysis course."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "E-commerce Agri-Manager",
+      "pathTitleVi": "Quản lý thương mại điện tử nông sản",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Focus entirely on digital supply chain management.",
+      "targetRoles": [
+       "E-commerce Manager"
+      ],
+      "skillsToAcquire": [
+       "Digital marketing",
+       "Logistics software"
+      ],
+      "transferableSkills": [
+       "Zalo/Facebook sales",
+       "Cost tracking"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       15,
+       20,
+       25,
+       35
+      ],
+      "rationale": "Capitalizes on the shift to digital marketplaces.",
+      "actionStepNow": "Take a digital marketing course."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Digital Literacy & English Basics",
+      "titleVi": "Kỹ năng số và tiếng Anh cơ bản",
+      "estimatedHours": 144,
+      "weeksDuration": 12,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic English",
+       "Digital tool navigation"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is best for daily English practice?",
+       "options": [
+        "Duolingo",
+        "Advanced coding software",
+        "Physical farming manual"
+       ],
+       "correctIndex": 0,
+       "explanation": "Duolingo provides structured, bite-sized daily practice suitable for your schedule."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied Tech",
+      "phaseNameVi": "Ứng dụng công nghệ",
+      "title": "Precision Agriculture Basics",
+      "titleVi": "Nông nghiệp chính xác cơ bản",
+      "estimatedHours": 144,
+      "weeksDuration": 12,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Data interpretation",
+       "Precision farming tools"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why use data in farming?",
+       "options": [
+        "To replace farmers entirely",
+        "To optimize resources and increase yield",
+        "To make farming more expensive"
+       ],
+       "correctIndex": 1,
+       "explanation": "Precision agriculture uses data to optimize inputs like water and fertilizer, increasing efficiency."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $769 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 90,
+    "rationale": "The guidance effectively integrates the user's specific skills in drone operation and local market sales. It bridges their current farming background with a logical, tech-forward career progression, though it assumes a 15-year experience not explicitly stated."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791871102034_85a41g",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:58:22.034Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:58:22.034Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân ứng dụng công nghệ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:22.034Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:58:25.347Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 524,
+     "latencyMs": 2521
+    },
+    {
+     "ts": "2026-10-13T05:58:25.348Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Agricultural Technician",
+       "Agri-tech Specialist",
+       "Farm Manager"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "language barrier",
+       "limited time availability"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:25.348Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 714,
+     "latencyMs": 4474,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Agricultural Technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Agri-tech Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.216Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Farm Manager"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.217Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.217Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation impact on agriculture Vietnam skills gap"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.217Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.217Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "precision agriculture e-commerce training Vietnamese free low-cost"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:30.217Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:34.905Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3019,
+     "latencyMs": 3649,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:58:34.905Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:34.905Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:58:43.962Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 5847,
+     "latencyMs": 8450
+    },
+    {
+     "ts": "2026-10-13T05:58:43.962Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:51.749Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 454,
+     "latencyMs": 7294
+    },
+    {
+     "ts": "2026-10-13T05:58:51.749Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "judge: personalization score 40 below 50 (The guidance ignores the user's current scale and skills, proposing a high-level data specialist role that contradicts their practical, small-scale farming profile. It relies on generic tech-industry buzzwords rather than the user's specific background.)",
+       "judge: groundedness score 30 below 50 (The guidance ignores the user's current scale and skills, proposing a high-level data specialist role that contradicts their practical, small-scale farming profile. It relies on generic tech-industry buzzwords rather than the user's specific background.)"
+      ],
+      "judge": {
+       "personalization": 40,
+       "groundedness": 30,
+       "rationale": "The guidance ignores the user's current scale and skills, proposing a high-level data specialist role that contradicts their practical, small-scale farming profile. It relies on generic tech-industry buzzwords rather than the user's specific background."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:51.749Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "judge: personalization score 40 below 50 (The guidance ignores the user's current scale and skills, proposing a high-level data specialist role that contradicts their practical, small-scale farming profile. It relies on generic tech-industry buzzwords rather than the user's specific background.)",
+       "judge: groundedness score 30 below 50 (The guidance ignores the user's current scale and skills, proposing a high-level data specialist role that contradicts their practical, small-scale farming profile. It relies on generic tech-industry buzzwords rather than the user's specific background.)"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:58:51.749Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:59:01.212Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6332,
+     "latencyMs": 8750
+    },
+    {
+     "ts": "2026-10-13T05:59:01.212Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:59:04.882Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 479,
+     "latencyMs": 3117
+    },
+    {
+     "ts": "2026-10-13T05:59:04.882Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 90,
+       "rationale": "The guidance effectively integrates the user's specific skills in drone operation and local market sales. It bridges their current farming background with a logical, tech-forward career progression, though it assumes a 15-year experience not explicitly stated."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:59:04.882Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 17369,
+   "latencyMs": 42848,
+   "degraded": false
+  }
+ }
+}

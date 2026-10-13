@@ -1,0 +1,527 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 9698,
+  "latencyMs": 64211,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0029094
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Clean Rice Cultivation Specialist & Agricultural Cooperative Partner",
+    "roleTitleVi": "Chuyên viên canh tác lúa sạch & Xã viên hợp tác xã",
+    "aiResilienceScore": 86,
+    "matchScore": 91,
+    "reasoning": "Field-based agricultural production and tactile crop husbandry require nuanced environmental responses, physical labor, and localized ecological discernment that AI algorithms and physical robotics cannot easily displace in the near-to-medium term. According to the 'OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market', while 27% of jobs across high-routine sectors face automation risk, manual and climate-dependent field occupations maintain high resilience against software-based automation. Transitioning from generic chemical-reliant rice farming to certified clean or organic rice via local agricultural cooperatives (Hợp tác xã) safeguards livelihoods against unpredictable intermediary middlemen while capitalizing on growing regional consumer demand.",
+    "whyItFitsYou": "Your 20 years of hands-on rice farming experience in An Giang provide an irreplaceable practical foundation in local soil characteristics, hydrology, and seasonal weather patterns. Moving toward sustainable or VietGAP-compliant rice cultivation does not demand fluent English or advanced computer literacy; rather, it prioritizes meticulous manual observation, disciplined field management, and structured partnership with local cooperatives. This incremental evolution allows you to bypass predatory middlemen, maintain financial safety within your low risk tolerance, and align directly with your interest in clean agriculture.",
+    "transferableSkillsMatch": [
+     "Two decades of deep soil, seasonal climate, and field observation experience in the Mekong Delta",
+     "Field water regulation and manual irrigation management under extreme weather conditions",
+     "High physical resilience and direct practical knowledge of rice crop lifecycle stages"
+    ],
+    "skillsGap": [
+     "Standardized recording practices for clean farming or VietGAP input tracking",
+     "Understanding cooperative-based contract farming agreements to eliminate middleman reliance",
+     "Basic voice-assisted smartphone navigation for localized agricultural extension advisories"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market",
+      "source": "OECD",
+      "year": 2023,
+      "url": "https://www.oecd.org/employment-outlook/2023/",
+      "quoteOrDataPoint": "While AI adoption is still relatively low, 27% of jobs are in occupations at high risk of automation. Workers report that AI has improved job quality but also increased work intensity and stress."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Crop Cultivator",
+     "occupationTitleVi": "Lao động trồng trọt nông nghiệp",
+     "molisaCode": "6111",
+     "onetCode": "45-2092.00",
+     "overallResilienceScore": 86,
+     "automationRiskScore": 14,
+     "augmentationPotentialScore": 38,
+     "humanAdvantageCore": [
+      "Tactile judgment of micro-climate variations and soil moisture in open fields",
+      "Direct physical handling of delicate organic biological crops during sudden weather shifts",
+      "Trust-based interpersonal coordination within village cooperatives"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Regulating field water levels based on daily weather and crop stages",
+       "taskNameVi": "Quản lý mực nước và điều tiết thủy lợi nội đồng theo thời tiết",
+       "exposureType": "low_exposure",
+       "exposurePercentage": 10,
+       "onetCode": "45-2092.00",
+       "notes": "Highly physical, non-routine manual adjustment based on localized Mekong flood and tide dynamics."
+      },
+      {
+       "taskName": "Scouting and physical inspection of paddy fields for pests and organic health",
+       "taskNameVi": "Thăm đồng, kiểm tra sâu bệnh hại và sức khỏe sinh trưởng của lúa",
+       "exposureType": "augmentation_potential",
+       "exposurePercentage": 35,
+       "onetCode": "45-2092.00",
+       "notes": "Image-recognition tools can aid pest diagnosis, but tactile sampling and field decisions remain human-centric."
+      },
+      {
+       "taskName": "Coordinating harvest handover and sales with cooperative representatives",
+       "taskNameVi": "Bán lúa cho thu mua và thỏa thuận giá với hợp tác xã hoặc thương lái",
+       "exposureType": "low_exposure",
+       "exposurePercentage": 15,
+       "onetCode": "45-2092.00",
+       "notes": "Direct relational negotiation and contract fulfillment resistant to pure digital automation."
+      }
+     ],
+     "sources": [
+      "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market"
+     ],
+     "methodologySummary": "Evaluated based on tasks involving non-routine physical actions, open-field environmental uncertainty, and direct community collaboration compared against algorithmic exposure models.",
+     "uncertaintyRange": "±5%",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Optimized Rice Cultivator using Community Advisory Extension",
+      "pathTitleVi": "Nông dân trồng lúa tối ưu hóa cùng khuyến nông cộng đồng",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Continue rice farming on existing plots while adopting basic organic fertilizer reduction and local extension services to cut input costs.",
+      "targetRoles": [
+       "Nông dân trồng lúa áp dụng kỹ thuật mới",
+       "Xã viên nông nghiệp tiên tiến"
+      ],
+      "skillsToAcquire": [
+       "1 Phải 5 Giảm (One Must Do, Five Reductions) cultivation standards",
+       "Basic voice-guided smartphone use for weather and pest warnings"
+      ],
+      "transferableSkills": [
+       "20 years of seasonal farming instinct",
+       "Field water management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7.5,
+       8.5,
+       9.5,
+       10.5,
+       11.5
+      ],
+      "rationale": "Requires minimal financial investment and maintains current daily routines while directly trimming fertilizer costs.",
+      "actionStepNow": "Visit the local An Giang Commune Agricultural Extension officer (Cán bộ Khuyến nông xã) to register for upcoming free field demonstrations."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "VietGAP / Clean Rice Contract Farmer linked to Cooperatives",
+      "pathTitleVi": "Nông dân liên kết canh tác lúa sạch theo tiêu chuẩn VietGAP",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Gradually transition a portion of paddy land to VietGAP protocols under purchase guarantee contracts with a local agricultural cooperative.",
+      "targetRoles": [
+       "Nông dân liên kết chuỗi giá trị",
+       "Tổ trưởng tổ hợp tác sản xuất lúa sạch"
+      ],
+      "skillsToAcquire": [
+       "Field logbook recording (manual or simple app)",
+       "Biological pest management techniques",
+       "Contract-based harvesting schedules"
+      ],
+      "transferableSkills": [
+       "Deep local agronomic experience",
+       "Resilience through harsh seasons",
+       "Paddy field water gate management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9.5,
+       11.5,
+       13,
+       15
+      ],
+      "rationale": "Directly tackles middleman exploitation by locking in floor purchase prices through cooperative contract farming.",
+      "actionStepNow": "Attend the next monthly village agricultural cooperative meeting to inquire about requirements for entering contract farming."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agricultural Cooperative Field Inspector & Collector",
+      "pathTitleVi": "Cán bộ kiểm tra chất lượng đồng ruộng & Thu mua nông sản hợp tác xã",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Shift from sole manual cultivation toward coordinating harvest quality and field compliance across multiple neighbor plots for local aggregators.",
+      "targetRoles": [
+       "Cán bộ giám sát đồng ruộng hợp tác xã",
+       "Đại diện thu mua nông sản địa phương"
+      ],
+      "skillsToAcquire": [
+       "Grain moisture meter and quality assessment testing",
+       "Group negotiation and harvest logistics coordination",
+       "Basic administrative ledger tracking"
+      ],
+      "transferableSkills": [
+       "Deep peer credibility among An Giang farmers",
+       "Thorough knowledge of local harvest timelines and yield estimation"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       9,
+       11,
+       13.5,
+       16
+      ],
+      "rationale": "Offers a step out of strenuous heavy manual labor as age advances, while using lifelong trust and field discernment.",
+      "actionStepNow": "Volunteer to support the cooperative head during harvest season weighing and grain sampling to learn inspection routines."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms_01",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation and Cost Reduction",
+      "phaseNameVi": "Xây dựng nền tảng & Giảm chi phí đầu vào",
+      "title": "Adopting IPM and 1 Must 5 Reductions Techniques",
+      "titleVi": "Tiếp cận kỹ thuật IPM và '1 Phải 5 Giảm'",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Understanding beneficial insects vs harmful pests",
+       "Systematic water-saving irrigation cycles (ngập khô xen kẽ)",
+       "Eliminating unnecessary pesticide sprays"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "In the alternate wetting and drying (ngập khô xen kẽ) technique, what is the main agronomic benefit besides saving pumping costs?",
+       "options": [
+        "It eliminates the need for any weeding or field visits",
+        "It allows the rice root system to breathe deeply and anchor firmly, reducing crop lodging",
+        "It enables immediate double harvesting in the same calendar month",
+        "It replaces the need for quality certified seed grain entirely"
+       ],
+       "correctIndex": 1,
+       "explanation": "Intermittent drying helps aerate soil, encouraging deeper root penetration, which strengthens the rice plants against storm lodging and lowers stagnant water disease risk."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "ms_02",
+      "milestoneNumber": 2,
+      "phaseName": "Cooperative Partnership and Market Access",
+      "phaseNameVi": "Liên kết hợp tác xã & Tiếp cận thị trường",
+      "title": "Participating in Cooperative Contract Farming and Record-Keeping",
+      "titleVi": "Tham gia ghi chép nhật ký đồng ruộng và liên kết hợp đồng HTX",
+      "estimatedHours": 20,
+      "weeksDuration": 5,
+      "costTier": "low_cost",
+      "estimatedCostVND": 250000,
+      "skillsCovered": [
+       "Simple physical logbook recording of fertilizer and water dates",
+       "Understanding standard contract terms for cooperative rice purchase",
+       "Basic voice input on mobile phone for local cooperative alerts"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Why is keeping a clear, date-stamped field logbook necessary when supplying clean rice to a cooperative?",
+       "options": [
+        "To prove compliance with withdrawal periods and chemical safety for guaranteed purchase prices",
+        "To allow commercial intermediaries to set arbitrary discounts at harvest time",
+        "To submit tax documents directly in a foreign currency",
+        "To eliminate the need for agricultural extension supervision"
+       ],
+       "correctIndex": 0,
+       "explanation": "Traceability logbooks verify that pre-harvest chemical withholding times were respected, qualifying the crop for premium clean rice contract pricing."
+      },
+      "estimatedCostUSD": 10
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific farming role, regional context, water management skills, and localized experience into the tasks and rationale."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 0,
+    "grounded": 0,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868675362_w41ny9",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:17:55.362Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:17:55.362Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:55.362Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:17:56.385Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 497,
+     "latencyMs": 1023
+    },
+    {
+     "ts": "2026-10-13T05:17:56.385Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "rice farmer",
+       "agricultural worker",
+       "produce merchant"
+      ],
+      "riskFlags": [
+       "technologically illiterate",
+       "limited budget for retraining",
+       "low risk tolerance"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:56.385Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 720,
+     "latencyMs": 4051,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "rice farmer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.039Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "produce merchant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.040Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.040Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation impact on small-scale agriculture Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.040Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.040Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "nông nghiệp sạch kỹ thuật cơ bản tiếng Việt miễn phí"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:14.040Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "0 item(s) - No learning resource matched the query."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:15.083Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1209,
+     "latencyMs": 1043,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:18:15.083Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:15.083Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:18:57.658Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 6552,
+     "latencyMs": 42263
+    },
+    {
+     "ts": "2026-10-13T05:18:57.658Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:59.573Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 479,
+     "latencyMs": 1914
+    },
+    {
+     "ts": "2026-10-13T05:18:59.573Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific farming role, regional context, water management skills, and localized experience into the tasks and rationale."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:18:59.573Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite",
+    "gemini-3.7-flash"
+   ],
+   "usageTokens": 9457,
+   "latencyMs": 64211,
+   "degraded": false
+  }
+ }
+}

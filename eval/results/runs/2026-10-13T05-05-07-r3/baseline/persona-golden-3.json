@@ -1,0 +1,286 @@
+{
+ "score": {
+  "personaId": "persona-golden-3",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 40,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7898,
+  "latencyMs": 10093,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023694000000000002
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Operations & Workflow Automation Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành AI & Tự động hóa Quy trình",
+    "aiResilienceScore": 88,
+    "matchScore": 95,
+    "reasoning": "Dựa trên báo cáo của World Economic Forum (2023) và Stanford HAI (2024), các vai trò kết hợp tư duy kinh doanh với kỹ năng tự động hóa bằng AI (như Prompt Engineering, Workflow Automation) đang có mức tăng trưởng lương từ 28-35%. Năng lực tổng quan kinh doanh từ NEU kết hợp với tiếng Anh IELTS 7.0 giúp bạn tận dụng tối đa các công cụ AI toàn cầu, giảm thiểu rủi ro bị thay thế bởi tính linh hoạt và khả năng giải quyết bài toán thực chiến.",
+    "whyItFitsYou": "Với nền tảng Cử nhân Quản trị Kinh doanh từ NEU, tư duy logic, kỹ năng giao tiếp tốt và tinh thần năng động, bạn hoàn toàn phù hợp để làm cầu nối giữa chiến lược kinh doanh và công nghệ tự động hóa. IELTS 7.0 giúp bạn dễ dàng tiếp cận các tài liệu và công cụ AI tiên tiến nhất trên thế giới.",
+    "transferableSkillsMatch": [
+     "Tư duy tổng quan doanh nghiệp",
+     "Kỹ năng giao tiếp và thuyết trình mạch lạc",
+     "Khả năng tự học nhanh",
+     "Tư duy logic kinh doanh"
+    ],
+    "skillsGap": [
+     "Kỹ năng thiết kế quy trình tự động hóa (Zapier, Make.com)",
+     "Prompt Engineering nâng cao cho doanh nghiệp",
+     "Xây dựng portfolio dự án thực tế"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 30,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking, AI literacy, and systems leadership are the highest-demanded upskilling priorities."
+     },
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Workers who adopt generative tools outperform non-users by 35-50% in cycle time."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Operations and Workflow Specialist",
+     "occupationTitleVi": "Chuyên viên Vận hành và Quy trình Doanh nghiệp",
+     "molisaCode": "2421",
+     "onetCode": "13-1199.04",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 22,
+     "augmentationPotentialScore": 78,
+     "humanAdvantageCore": [
+      "Đàm phán và thuyết phục stakeholders",
+      "Tư duy chiến lược và giải quyết vấn đề phức tạp",
+      "Thấu hiểu văn hóa doanh nghiệp và tâm lý con người"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Designing business workflow automations using AI tools",
+       "taskNameVi": "Thiết kế quy trình tự động hóa kinh doanh bằng công cụ AI",
+       "exposureType": "Augmented",
+       "exposurePercentage": 65,
+       "onetCode": "13-1199.04",
+       "notes": "Tận dụng tư duy kinh doanh NEU để tối ưu hóa quy trình thủ công thành tự động."
+      },
+      {
+       "taskName": "Stakeholder communication and requirement gathering",
+       "taskNameVi": "Giao tiếp với các bên liên quan và thu thập yêu cầu",
+       "exposureType": "Human-centric",
+       "exposurePercentage": 15,
+       "onetCode": "13-1199.04",
+       "notes": "Sử dụng kỹ năng giao tiếp tốt và IELTS 7.0 để làm việc với đối tác quốc tế hoặc ban lãnh đạo."
+      },
+      {
+       "taskName": "Data-driven business performance analysis",
+       "taskNameVi": "Phân tích hiệu suất kinh doanh dựa trên dữ liệu",
+       "exposureType": "Augmented",
+       "exposurePercentage": 50,
+       "onetCode": "13-1199.04",
+       "notes": "Kết hợp Business Analytics với trợ lý AI để rút rainsights nhanh chóng."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs 2023",
+      "Stanford HAI 2024"
+     ],
+     "methodologySummary": "Đánh giá dựa trên O*NET 27.2 và phân tích mức độ phơi nhiễm tác vụ (task exposure) đối với Generative AI.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay & Augment in Business Operations",
+      "pathTitleVi": "Giữ vững vai trò và Tăng cường AI trong Vận hành Kinh doanh",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tích hợp công cụ AI vào công việc vận hành hàng ngày để tăng năng suất 40% mà không đổi nghề.",
+      "targetRoles": [
+       "Business Operations Executive",
+       "AI Operations Assistant"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompting",
+       "Workflow Automation (Make/Zapier)",
+       "Data Visualization with AI"
+      ],
+      "transferableSkills": [
+       "Tư duy tổng quan doanh nghiệp",
+       "Tiếng Anh IELTS 7.0"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       28,
+       36
+      ],
+      "rationale": "Phù hợp với ưu tiên ổn định (4/4) và thu nhập (4/4), giúp bạn nhanh chóng tạo ra giá trị khác biệt tại nơi làm việc.",
+      "actionStepNow": "Khóa học ngắn hạn về Zapier và ChatGPT cho Quản trị Kinh doanh."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to AI Workflow & Project Management",
+      "pathTitleVi": "Chuyển dịch sang Quản lý Dự án & Tự động hóa AI",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển hướng thành chuyên gia triển khai các giải pháp AI cho các doanh nghiệp vừa và nhỏ.",
+      "targetRoles": [
+       "AI Project Coordinator",
+       "Digital Transformation Specialist"
+      ],
+      "skillsToAcquire": [
+       "Agile/Scrum with AI integration",
+       "No-code/Low-code development",
+       "Change Management"
+      ],
+      "transferableSkills": [
+       "Kỹ năng thuyết trình",
+       "Tư duy logic"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       20,
+       28,
+       38,
+       50
+      ],
+      "rationale": "Đáp ứng nhu cầu tuyển dụng tăng cao của 62% doanh nghiệp Việt Nam đang tích hợp AI (FPT, 2024).",
+      "actionStepNow": "Xây dựng 1 dự án cá nhân tự động hóa quy trình marketing bằng AI làm portfolio."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Transition to AI Product Strategy",
+      "pathTitleVi": "Chuyển hướng toàn diện sang Chiến lược Sản phẩm AI",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Trở thành Product Manager chuyên trách các sản phẩm ứng dụng Trí tuệ Nhân tạo.",
+      "targetRoles": [
+       "AI Product Manager",
+       "Product Owner"
+      ],
+      "skillsToAcquire": [
+       "Product Lifecycle Management",
+       "Basic Machine Learning concepts",
+       "User Research & Data Analytics"
+      ],
+      "transferableSkills": [
+       "Tư duy chiến lược",
+       "Giao tiếp lãnh đạo"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       25,
+       38,
+       55,
+       75
+      ],
+      "rationale": "Phù hợp với giá trị 'thăng tiến nhanh' và 'làm việc trực tiếp với ban lãnh đạo', mang lại mức thu nhập cao đột phá.",
+      "actionStepNow": "Tham gia các cộng đồng Product Management tại Hà Nội và tìm mentor ngành."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Literacy",
+      "phaseNameVi": "Nền tảng & Phổ cập AI",
+      "title": "Mastering Generative AI for Business",
+      "titleVi": "Làm chủ GenAI cho Quản trị Kinh doanh",
+      "estimatedHours": 36,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "ChatGPT/Claude Workflow",
+       "AI-assisted Market Research"
+      ],
+      "freeResources": [
+       {
+        "name": "Prompt Engineering for Developers",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/",
+        "type": "Online Course"
+       },
+       {
+        "name": "Introduction to Generative AI",
+        "provider": "Google Cloud Skills Boost",
+        "url": "https://www.cloudskillsboost.google/",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng GenAI để phân tích dữ liệu thị trường cho ban lãnh đạo, phương pháp nào tối ưu nhất?",
+       "options": [
+        "Đưa toàn bộ dữ liệu thô và yêu cầu AI viết báo cáo ngẫu nhiên.",
+        "Cung cấp ngữ cảnh rõ ràng, cấu trúc đầu ra mong muốn (Structured Prompt) và kiểm chứng số liệu.",
+        "Chỉ dùng AI để dịch tài liệu tiếng Anh sang tiếng Việt.",
+        "Không cần kiểm tra lại vì AI luôn chính xác tuyệt đối."
+       ],
+       "correctIndex": 1,
+       "explanation": "Structured Prompting và human-in-the-loop validation giúp đảm bảo tính chính xác và phù hợp với chiến lược doanh nghiệp."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Workflow Automation & Portfolio",
+      "phaseNameVi": "Tự động hóa Quy trình & Xây dựng Portfolio",
+      "title": "Building No-Code AI Automations",
+      "titleVi": "Xây dựng Hệ thống Tự động hóa Không cần Lập trình",
+      "estimatedHours": 54,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Make.com / Zapier",
+       "API Integration basics",
+       "Portfolio Building"
+      ],
+      "freeResources": [
+       {
+        "name": "Zapier Automation Academy",
+        "provider": "Zapier",
+        "url": "https://zapier.com/learn",
+        "type": "Tutorial & Certification"
+       },
+       {
+        "name": "Make Academy",
+        "provider": "Make",
+        "url": "https://www.make.com/en/academy",
+        "type": "Video Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc tích hợp Make.com với AI trong vận hành doanh nghiệp là gì?",
+       "options": [
+        "Loại bỏ hoàn toàn nhân sự con người.",
+        "Tự động hóa các tác vụ lặp đi lặp lại, tiết kiệm thời gian và giảm thiểu sai sót.",
+        "Làm cho máy tính chạy nhanh hơn.",
+        "Giảm chi phí mua phần cứng máy chủ."
+       ],
+       "correctIndex": 1,
+       "explanation": "Tự động hóa các tác vụ lặp đi lặp lại giúp nhân sự tập trung vào các quyết định chiến lược và sáng tạo cao hơn."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7668,
+  "latencyMs": 10093
+ }
+}

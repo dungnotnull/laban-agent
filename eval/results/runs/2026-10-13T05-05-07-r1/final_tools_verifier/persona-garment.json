@@ -1,0 +1,566 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10683,
+  "latencyMs": 25197,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0032049
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Garment Technical Quality Specialist",
+    "roleTitleVi": "Chuyên viên Kiểm soát Chất lượng và Kỹ thuật May",
+    "aiResilienceScore": 82,
+    "matchScore": 89,
+    "reasoning": "As generative AI and automation reshape light manufacturing, manual tasks face high exposure, but physical inspection, technical drawing interpretation, and quality assurance require tactile verification and human oversight. Grounded in the TopCV & GSO 2024 data, while routine repetitive tasks contract, specialized technical coordination remains resilient.",
+    "whyItFitsYou": "Your 8 years of factory experience, ability to read technical drawings, and strong manual dexterity directly bridge physical craftsmanship with quality control. This pathway leverages your existing factory floor knowledge while upgrading your role to be resilient against automation.",
+    "transferableSkillsMatch": [
+     "Technical drawing interpretation",
+     "Quality inspection",
+     "Manual dexterity and precision",
+     "Shift teamwork"
+    ],
+    "skillsGap": [
+     "Basic computer literacy",
+     "Digital quality reporting tools",
+     "Basic English terminology"
+    ],
+    "averageSalaryRangeVND": "9,000,000 - 14,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "65% of traditional manual roles saw hiring volumes contract, while specialized coordinators saw increased demand and salary growth."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Garment Technical Quality Specialist",
+     "occupationTitleVi": "Chuyên viên Kiểm soát Chất lượng và Kỹ thuật May",
+     "molisaCode": "7533",
+     "onetCode": "51-6052.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 25,
+     "augmentationPotentialScore": 75,
+     "humanAdvantageCore": [
+      "Tactile fabric inspection",
+      "Physical error resolution on production lines",
+      "Interpersonal communication with factory teams"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Physical Defect Inspection",
+       "taskNameVi": "Kiểm tra Lỗi Sản phẩm Thủ công",
+       "exposureType": "augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "51-6052.00",
+       "notes": "Using your 8 years of factory experience to spot defects that automated cameras might miss."
+      },
+      {
+       "taskName": "Technical Drawing Verification",
+       "taskNameVi": "ĐỐi chiếu Bản vẽ Kỹ thuật",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "51-6052.00",
+       "notes": "Matching garment prototypes against technical specifications."
+      },
+      {
+       "taskName": "Digital Quality Logging",
+       "taskNameVi": "Nhập liệu Báo cáo Chất lượng Số",
+       "exposureType": "automation",
+       "exposurePercentage": 60,
+       "onetCode": "51-6052.00",
+       "notes": "Transitioning from paper logs to basic computer-based entry."
+      }
+     ],
+     "sources": [
+      "Vietnam Labor Market Report & AI Transformation Index 2024–2026"
+     ],
+     "methodologySummary": "Evaluated against GSO labor shifts and O*NET task content models for manufacturing quality assurance.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital-Augmented Quality Control",
+      "pathTitleVi": "Kiểm soát Chất lượng Tăng cường Kỹ thuật số",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Integrate basic digital tools into your daily quality inspection routines in Binh Duong factories.",
+      "targetRoles": [
+       "Senior Quality Inspector",
+       "Line Quality Leader"
+      ],
+      "skillsToAcquire": [
+       "Basic computer operations",
+       "Digital spreadsheet entry"
+      ],
+      "transferableSkills": [
+       "Technical drawing reading",
+       "Inspection expertise"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9,
+       10,
+       11,
+       12.5
+      ],
+      "rationale": "Keeps you in your core manufacturing sector while protecting your income through tech adoption.",
+      "actionStepNow": "Start learning basic computer skills for 6 hours per week."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Garment Operations Coordinator",
+      "pathTitleVi": "Điều phối viên Vận hành May mặc",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Move from machine operation to coordinating line workflow and digital record keeping.",
+      "targetRoles": [
+       "Production Assistant",
+       "Operations Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Basic English terminology",
+       "Workflow management software"
+      ],
+      "transferableSkills": [
+       "Shift teamwork",
+       "Pressure handling"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       12,
+       14,
+       16
+      ],
+      "rationale": "Leverages factoryfloor experience into administrative coordination.",
+      "actionStepNow": "Familiarize yourself with basic inventory spreadsheets."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Small Scale Handcraft Business Owner",
+      "pathTitleVi": "Chủ Cơ sở Kinh doanh Thủ công Nhỏ",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Leverage your manual dexterity and interest in small business to start an independent craft/garment alteration service.",
+      "targetRoles": [
+       "Independent Business Owner"
+      ],
+      "skillsToAcquire": [
+       "Basic online marketing",
+       "Customer service"
+      ],
+      "transferableSkills": [
+       "Garment craftsmanship",
+       "Attention to detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       9,
+       12,
+       15,
+       18
+      ],
+      "rationale": "Fulfills personal interest in small business while utilizing superior handcraft skills.",
+      "actionStepNow": "Explore local small business budgeting basics."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Nền tảng Kỹ năng Số Cơ bản",
+      "title": "Mastering Basic Computer Skills",
+      "titleVi": "Làm chủ Kỹ năng Máy tính Cơ bản",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Mouse & keyboard navigation",
+       "Basic file management",
+       "Simple web browsing"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the safest way to turn off a standard desktop computer?",
+       "options": [
+        "Unplug the power cord directly",
+        "Use the shut-down command in the operating system menu",
+        "Press the monitor power button",
+        "Hold down the router switch"
+       ],
+       "correctIndex": 1,
+       "explanation": "Using the operating system's shut-down command ensures all system files are safely saved and closed."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Quality & Digital Reporting",
+      "phaseNameVi": "Kiểm tra Chất lượng và Báo cáo Số",
+      "title": "Digital Quality Logging & Basic Office Tools",
+      "titleVi": "Ghi chép Chất lượng Số và Công cụ Văn phòng Cơ bản",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic spreadsheet data entry",
+       "Quality checklist creation"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which software is most commonly used for recording simple tabular inspection data?",
+       "options": [
+        "Microsoft Word",
+        "Microsoft Excel / Spreadsheets",
+        "Adobe Photoshop",
+        "Windows Media Player"
+       ],
+       "correctIndex": 1,
+       "explanation": "Spreadsheet applications like Excel are designed specifically for tabular data entry and basic calculations."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$346 - $538 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 82,
+    "groundedness": 70,
+    "rationale": "Directly targets the user's specific garment skills, drawing interpretation, and manual dexterity. However, groundedness suffers due to hallucinating '8 years of factory experience' not found in the profile."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868494967_tfrnvh",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:14:54.967Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:14:54.967Z",
+     "type": "run_start",
+     "message": "pipeline for \"Công nhân may công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:54.967Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:14:56.161Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 497,
+     "latencyMs": 1194
+    },
+    {
+     "ts": "2026-10-13T05:14:56.161Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "garment worker",
+       "quality control inspector",
+       "sewing machine operator"
+      ],
+      "riskFlags": [
+       "limited digital literacy",
+       "limited budget for retraining",
+       "low English proficiency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:56.161Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:14:57.209Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 715,
+     "latencyMs": 1047,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:14:57.209Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "garment worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "quality control inspector"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "sewing machine operator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "automation garment industry Vietnam AI resilience"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "basic computer skills vietnamese free online courses"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:57.210Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:14:58.704Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1742,
+     "latencyMs": 1494,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:14:58.704Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "garment worker quality control inspector Binh Duong"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:15:01.677Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:15:02.750Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1880,
+     "latencyMs": 1072,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:15:02.750Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:15:02.750Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:15:10.474Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4631,
+     "latencyMs": 7724
+    },
+    {
+     "ts": "2026-10-13T05:15:10.474Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:15:20.164Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 1008,
+     "latencyMs": 9404
+    },
+    {
+     "ts": "2026-10-13T05:15:20.164Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 82,
+       "groundedness": 70,
+       "rationale": "Directly targets the user's specific garment skills, drawing interpretation, and manual dexterity. However, groundedness suffers due to hallucinating '8 years of factory experience' not found in the profile."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:15:20.164Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.7-flash"
+   ],
+   "usageTokens": 10473,
+   "latencyMs": 25197,
+   "degraded": false
+  }
+ }
+}

@@ -1,0 +1,528 @@
+{
+ "score": {
+  "personaId": "persona-student",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": false,
+  "actionable": true,
+  "usageTokens": 13031,
+  "latencyMs": 11166,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0039093
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Content & SEO Strategist",
+    "roleTitleVi": "Chuyên viên Chiến lược Nội dung & SEO ứng dụng AI",
+    "aiResilienceScore": 48,
+    "matchScore": 89,
+    "reasoning": "According to TopCV (2024), while standard copywriters face a 62% contraction in standard freelance postings, there is an 85% growth in 'AI Content Strategist & Multi-channel Producer' roles. As demonstrated by OpenAI/UPenn (2023), language models assist heavily in drafting, but strategic human insight and high-stakes storytelling remain indispensable.",
+    "whyItFitsYou": "Your background as a graduating marketing senior at UEH, combined with strong English communication and quick trend-awareness, positions you to leapfrog manual writing tasks and step directly into AI-augmented content orchestration.",
+    "transferableSkillsMatch": [
+     "Basic content creation",
+     "Canva visual design",
+     "Social media management",
+     "English communication"
+    ],
+    "skillsGap": [
+     "Analytical tools proficiency",
+     "Advanced prompt engineering",
+     "Data-driven SEO architecture"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "62% contraction in standard freelance writer postings; 85% growth in 'AI Content Strategist & Multi-channel Producer' roles."
+     },
+     {
+      "paperTitle": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "source": "OpenAI, OpenResearch, University of Pennsylvania",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Writers and authors have 100% alpha task exposure to language model assistance and drafting."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Content Writer & SEO Specialist",
+     "occupationTitleVi": "Chuyên viên Viết Nội dung & Tối ưu hóa SEO",
+     "molisaCode": "2641",
+     "onetCode": "27-3042.00",
+     "overallResilienceScore": 48,
+     "automationRiskScore": 78,
+     "augmentationPotentialScore": 88,
+     "humanAdvantageCore": [
+      "Subtle cultural humor, local slang, and emotional resonance (Sự hài hước, ngôn ngữ đời sống và cảm xúc thật)",
+      "High-stakes brand storytelling & PR crisis handling (Xử lý khủng hoảng truyền thông)",
+      "Thought leadership & contrarian opinions (Góc nhìn chuyên gia độc bản, không sao chép)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Drafting generic SEO affiliate articles and product descriptions for your social media channels",
+       "taskNameVi": "Viết bài SEO mẫu và mô tả sản phẩm thương mại điện tử cho kênh mạng xã hội",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 94,
+       "onetCode": "27-3042.00-T1",
+       "notes": "Nearly 100% replaceable by fine-tuned LLMs at a fraction of manual time."
+      },
+      {
+       "taskName": "Proofreading and grammar checks on Canva marketing collateral",
+       "taskNameVi": "Hiệu đính ngữ pháp trên các ấn phẩm truyền thông Canva",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 96,
+       "onetCode": "27-3042.00-T2",
+       "notes": "Native LLMs perform flawless proofreading and multilingual localization instantly."
+      },
+      {
+       "taskName": "Strategic content architecture leveraging your trend-awareness and local cultural insights",
+       "taskNameVi": "Kiến trúc nội dung chiến lược tận dụng khả năng bắt trend và thấu hiểu văn hóa nội địa",
+       "exposureType": "human_core",
+       "exposurePercentage": 22,
+       "onetCode": "27-3042.00-T3",
+       "notes": "AI lacks genuine lived human perspective, reputation, and relational trust."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "openai-upenn-2023",
+       "citationText": "OpenAI/UPenn (2023): Writers and authors have 100% alpha task exposure to language model assistance and drafting.",
+       "url": "https://arxiv.org/abs/2303.10130"
+      },
+      {
+       "sourceId": "topcv-vietnamworks-labor-2024-2026",
+       "citationText": "TopCV (2024): 62% contraction in standard freelance writer postings; 85% growth in 'AI Content Strategist & Multi-channel Producer' roles.",
+       "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung"
+      }
+     ],
+     "methodologySummary": "Task-level exposure analysis combining OpenAI occupational breakdown with TopCV Vietnam employer demand signals.",
+     "uncertaintyRange": "+/- 5% based on macroeconomic shifts in digital advertising budgets.",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Powered Content Creator",
+      "pathTitleVi": "Người sáng tạo nội dung tích hợp AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage your basic content skills and Canva expertise by scaling output using generative AI tools.",
+      "targetRoles": [
+       "AI Content Creator",
+       "Social Media Executive"
+      ],
+      "skillsToAcquire": [
+       "Prompt engineering",
+       "AI image/video generation workflows"
+      ],
+      "transferableSkills": [
+       "Content writing",
+       "Canva",
+       "Social media basics"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       13,
+       16,
+       20,
+       25
+      ],
+      "rationale": "Fastest entry route requiring minimal capital and directly utilizing your current strengths.",
+      "actionStepNow": "Enroll in a foundational AI essentials course and build a personal portfolio showcasing AI-assisted campaigns."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Digital Marketing & Data Specialist",
+      "pathTitleVi": "Chuyên viên Digital Marketing & Dữ liệu",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Bridge your marketing foundation with analytical tool proficiency to overcome your identified skill gap.",
+      "targetRoles": [
+       "Performance Marketing Executive",
+       "Digital Growth Analyst"
+      ],
+      "skillsToAcquire": [
+       "Google Analytics",
+       "Basic SQL",
+       "Data visualization"
+      ],
+      "transferableSkills": [
+       "English communication",
+       "Trend analysis"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       28,
+       35
+      ],
+      "rationale": "Combines marketing creativity with high-demand data skills, significantly boosting long-term career resilience.",
+      "actionStepNow": "Audit free data certificate tracks and practice building a mock marketing dashboard."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Business Intelligence & Data Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Pivot fully into data analytics leveraging high-growth demand in Vietnam's enterprise sector.",
+      "targetRoles": [
+       "Junior Business Analyst",
+       "Data Specialist"
+      ],
+      "skillsToAcquire": [
+       "Advanced SQL",
+       "Python pandas",
+       "Business hypothesis framing"
+      ],
+      "transferableSkills": [
+       "UEH economic background",
+       "English proficiency"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       28,
+       38,
+       50
+      ],
+      "rationale": "Positions you in an occupation with an 82 resilience score and excellent 5-year upside.",
+      "actionStepNow": "Start learning foundational data query languages using free online educational resources."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tool Mastery",
+      "phaseNameVi": "Nền tảng & Thành thạo Công cụ AI",
+      "title": "Master Generative AI Essentials for Marketing",
+      "titleVi": "Làm chủ các nguyên lý cơ bản về AI tạo sinh cho Marketing",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "AI Content Workflow",
+       "Canva AI Integration"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       },
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which task represents the highest human advantage over direct AI automation in content creation?",
+       "options": [
+        "Drafting standard product descriptions",
+        "Checking grammar and spelling",
+        "High-stakes brand storytelling and localized emotional resonance",
+        "Running bulk SEO keyword density scripts"
+       ],
+       "correctIndex": 2,
+       "explanation": "AI excels at repetitive drafting and syntax checks, but authentic emotional resonance and brand trust require human context."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Portfolio & Analytics Upskilling",
+      "phaseNameVi": "Xây dựng Portfolio & Nâng cấp Kỹ năng Phân tích",
+      "title": "Bridge the Analytics Gap & Build AI-Powered Portfolio",
+      "titleVi": "Khắc phục khoảng trống phân tích & Xây dựng Portfolio tích hợp AI",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Data Analysis Basics",
+       "Campaign Performance Tracking",
+       "Portfolio Presentation"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       },
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "According to TopCV (2024) data, what trend is observed in Vietnam's job market?",
+       "options": [
+        "A 62% contraction in standard freelance writer postings alongside growth in AI content roles",
+        "Complete elimination of marketing jobs",
+        "No change in skill requirements",
+        "A decline in demand for English-proficient graduates"
+       ],
+       "correctIndex": 0,
+       "explanation": "Standard copywriting roles contracted by 62% while AI-augmented content strategist roles experienced an 85% growth."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$385 - $692 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869160065_2raza5",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:26:00.065Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:26:00.065Z",
+     "type": "run_start",
+     "message": "pipeline for \"Sinh viên năm cuối ngành Marketing\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:00.065Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:26:01.195Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 511,
+     "latencyMs": 1130
+    },
+    {
+     "ts": "2026-10-13T05:26:01.195Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "junior digital marketer",
+       "content creator",
+       "social media specialist"
+      ],
+      "riskFlags": [
+       "zero practical work experience",
+       "limited budget for retraining",
+       "lacks analytical tool proficiency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:01.195Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 727,
+     "latencyMs": 923,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "junior digital marketer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "content creator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "social media specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.118Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI digital marketing Vietnam labor market entry level"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.119Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.119Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "digital marketing AI content creation free courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:02.119Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:03.226Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4634,
+     "latencyMs": 1107,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:26:03.226Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:03.226Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:26:11.231Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6915,
+     "latencyMs": 8005
+    },
+    {
+     "ts": "2026-10-13T05:26:11.231Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:11.231Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 12787,
+   "latencyMs": 11166,
+   "degraded": false
+  }
+ }
+}

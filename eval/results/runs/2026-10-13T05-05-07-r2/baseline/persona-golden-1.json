@@ -1,0 +1,281 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 1,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8070,
+  "latencyMs": 9675,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.002421
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Art Director & Brand Experience Specialist",
+    "roleTitleVi": "Giám đốc Nghệ thuật AI & Chuyên gia Trải nghiệm Thương hiệu",
+    "aiResilienceScore": 82,
+    "matchScore": 92,
+    "reasoning": "Dựa trên nghiên cứu từ Oxford (2017) và WEF (2023), các công việc đòi hỏi trí tuệ sáng tạo độc bản, năng lực thẩm mỹ và thấu cảm xã hội có mức độ tự động hóa thấp. Tuy nhiên, theo McKinsey (2023) và PwC (2024), việc tích hợp GenAI giúp tăng năng suất lên đến 40-50%. Tại thị trường TP.HCM, TopCV (2024) ghi nhận nhu cầu tuyển dụng các vị trí kết hợp tư duy thiết kế truyền thống và công cụ AI (Midjourney, Stable Diffusion, Claude) đang tăng mạnh với mức lương thưởng cao hơn 25-30%.",
+    "whyItFitsYou": "Bạn tốt nghiệp Đại học Kiến Trúc TP.HCM với nền tảng vững chắc về màu sắc, bố cục, sở hữu thế mạnh 'thấu cảm thương hiệu' và 'lắng nghe brief'. Những điểm yếu về lập trình giao diện hay prompt nâng cao hoàn toàn có thể khắc phục thông qua ngân sách và thời gian rảnh hiện tại (12 giờ/tuần), giúp bạn chuyển dịch từ người vẽ hình ảnh thuần túy sang người định hướng chiến lược thẩm mỹ bằng AI.",
+    "transferableSkillsMatch": [
+     "Cảm quan màu sắc và bố cục",
+     "Lắng nghe và phân tích brief khách hàng",
+     "Thấu cảm thương hiệu",
+     "Sử dụng Adobe Creative Suite (Photoshop, Illustrator)"
+    ],
+    "skillsGap": [
+     "Quy trình kiểm soát prompt AI nâng cao (ControlNet, LoRA fine-tuning)",
+     "Tư duy số liệu định lượng trong đánh giá hiệu quả thiết kế",
+     "Xây dựng hệ thống thiết kế thương hiệu tương tác"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking, AI literacy, and systems leadership are the highest-demanded upskilling priorities."
+     },
+     {
+      "paperTitle": "PwC 2024 Global AI Jobs Barometer",
+      "source": "PwC",
+      "year": "2024",
+      "url": "https://www.pwc.com/gx/en/issues/artificial-intelligence/global-ai-jobs-barometer.html",
+      "quoteOrDataPoint": "Jobs requiring AI skills carry up to a 25% wage premium."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": "2024",
+      "url": "https://www.topcv.vn",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency (Midjourney, ChatGPT)."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Graphic Designers",
+     "occupationTitleVi": "Nhà thiết kế đồ họa",
+     "molisaCode": "2166",
+     "onetCode": "27-1024.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 28,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "Sáng tạo độc bản và trực giác thẩm mỹ",
+      "Đồng cảm và giải mã cảm xúc thương hiệu từ khách hàng",
+      "Định hướng nghệ thuật và đưa ra quyết định cuối cùng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Developing creative concepts and brand storytelling frameworks",
+       "taskNameVi": "Phát triển ý tưởng sáng tạo và khung câu chuyện thương hiệu",
+       "exposureType": "augmentation",
+       "exposurePercentage": 45,
+       "onetCode": "27-1024.00.A01",
+       "notes": "Sử dụng AI để tạo moodboard nhanh chóng, sau đó dùng trực giác thẩm mỹ để chọn lọc và tinh chỉnh."
+      },
+      {
+       "taskName": "Producing final visual assets using Adobe Suite and AI generation tools",
+       "taskNameVi": "Sản xuất tài sản thị giác cuối cùng bằng Adobe Suite kết hợp công cụ sinh ảnh AI",
+       "exposureType": "augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "27-1024.00.A02",
+       "notes": "Kết hợp kỹ năng Photoshop/Illustrator sẵn có với prompt nâng cao để tăng tốc độ render lên tới 50%."
+      },
+      {
+       "taskName": "Consulting clients and interpreting subjective emotional briefs",
+       "taskNameVi": "Tư vấn khách hàng và diễn giải các yêu cầu brief mang tính cảm xúc chủ quan",
+       "exposureType": "human_centric",
+       "exposurePercentage": 10,
+       "onetCode": "27-1024.00.A03",
+       "notes": "Năng lực thấu cảm và lắng nghe tuyệt đối thuộc về con người, AI không thể thay thế."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "TopCV Vietnam (2024)",
+      "World Economic Forum (2023)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận O*NET kết hợp chỉ số phơi nhiễm tác vụ AI theo khung phân tích của WEF và dữ liệu thị trường lao động Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Graphic Designer",
+      "pathTitleVi": "Nhà thiết kế đồ họa tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng kỹ năng thiết kế cốt lõi kết hợp công cụ tạo sinh để tối ưu hóa thời gian và chất lượng sản phẩm.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "AI Visual Content Creator"
+      ],
+      "skillsToAcquire": [
+       "Midjourney v6 Advanced Prompting",
+       "Stable Diffusion ControlNet",
+       "AI-assisted workflow integration"
+      ],
+      "transferableSkills": [
+       "Adobe Photoshop/Illustrator",
+       "Bố cục & Màu sắc",
+       "Lắng nghe brief"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       22,
+       26,
+       31,
+       37,
+       45
+      ],
+      "rationale": "Phát huy tối đa thế mạnh hiện tại, giảm thiểu rủi ro thất nghiệp và gia tăng năng suất ngay lập tức.",
+      "actionStepNow": "Bắt đầu khóa học thực hành ControlNet và Midjourney chuyên sâu trong tuần này."
+     },
+     {
+      "path_id": "pivot_adjacent",
+      "pathTitle": "AI Art Director & Brand Strategist",
+      "pathTitleVi": "Giám đốc Nghệ thuật AI & Chiến lược gia Thương hiệu",
+      "feasibilityScore": 88,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch lên vai trò định hướng nghệ thuật, kiểm soát chất lượng hình ảnh thương hiệu do AI tạo ra.",
+      "targetRoles": [
+       "AI Art Director",
+       "Brand Experience Manager"
+      ],
+      "skillsToAcquire": [
+       "Chiến lược thương hiệu số",
+       "Quản lý quy trình sản xuất AI",
+       "Đo lường hiệu quả thị giác (Visual Analytics)"
+      ],
+      "transferableSkills": [
+       "Thấu cảm thương hiệu",
+       "Tư duy thẩm mỹ",
+       "Giao tiếp khách hàng"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       25,
+       32,
+       40,
+       50,
+       65
+      ],
+      "rationale": "Đáp ứng đúng xu hướng doanh nghiệp Việt Nam tìm kiếm nhân sự có tầm nhìn nghệ thuật kết hợp công nghệ.",
+      "actionStepNow": "Xây dựng portfolio cá nhân gồm 3 case study ứng dụng AI vào quy trình tái định vị thương hiệu."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Creative Technologist / UI-AI Product Designer",
+      "pathTitleVi": "Chuyên gia Công nghệ Sáng tạo / Nhà thiết kế Sản phẩm UI-AI",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Học thêm kỹ năng lập trình giao diện cơ bản để thiết kế các sản phẩm số tích hợp trí tuệ nhân tạo.",
+      "targetRoles": [
+       "UI/UX AI Product Designer",
+       "Creative Technologist"
+      ],
+      "skillsToAcquire": [
+       "UI/UX Design Systems (Figma advanced)",
+       "HTML/CSS/JS cơ bản",
+       "AI Product Prompt Design"
+      ],
+      "transferableSkills": [
+       "Tư duy thiết kế",
+       "Cảm quan bố cục",
+       "Sự tỉ mỉ"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       20,
+       28,
+       38,
+       52,
+       70
+      ],
+      "rationale": "Mở rộng biên độ nghề nghiệp sang lĩnh vực công nghệ sản phẩm, mặc dù đòi hỏi vượt qua rào cản 'chưa biết lập trình'.",
+      "actionStepNow": "Đăng ký một khóa học UI/UX cơ bản kết hợp Figma to Code trên nền tảng trực tuyến."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tool Mastery",
+      "phaseNameVi": "Nền tảng & Làm chủ Công cụ AI",
+      "title": "Mastering Generative Visual Tools & Advanced Prompting",
+      "titleVi": "Làm chủ Công cụ Hình ảnh Tạo sinh & Kỹ thuật Prompt Nâng cao",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Midjourney Advanced Parameter",
+       "Stable Diffusion ControlNet",
+       "Workflow Integration with Photoshop"
+      ],
+      "freeResources": {
+       "name": "DeepLearning.AI Short Courses (Prompt Engineering)",
+       "provider": "DeepLearning.AI",
+       "url": "https://www.deeplearning.ai/short-courses/",
+       "type": "Online Course"
+      },
+      "checkpointQuiz": {
+       "question": "Khi sử dụng Midjourney để giữ tính nhất quán của nhân vật (Character Consistency) qua nhiều khung hình, tham số nào là hiệu quả nhất?",
+       "options": [
+        "--ar 16:9",
+        "--iw 1.5",
+        "--c",
+        "--cref [URL]"
+       ],
+       "correctIndex": 3,
+       "explanation": "Tham số --cref (Character Reference) kết hợp với link ảnh gốc là phương pháp chuẩn xác nhất hiện nay để giữ tính nhất quán nhân vật trong Midjourney."
+      }
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Brand Strategy & Portfolio Upgrade",
+      "phaseNameVi": "Chiến lược Thương hiệu & Nâng cấp Hồ sơ năng lực",
+      "title": "AI-Driven Brand Direction & Portfolio Restructuring",
+      "titleVi": "Định hướng Thương hiệu bằng AI & Tái cấu trúc Portfolio",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "AI Art Direction",
+       "Case Study Storytelling",
+       "Brand System Automation"
+      ],
+      "freeResources": {
+       "name": "Branding Strategy & Design Systems on Coursera (Audit Mode)",
+       "provider": "Coursera / London Business School",
+       "url": "https://www.coursera.org",
+       "type": "MOOC"
+      },
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất khi một Giám đốc Nghệ thuật kiểm duyệt sản phẩm do AI tạo ra cho thương hiệu?",
+       "options": [
+        "Tốc độ xuất file nhanh",
+        "Tính độc bản và sự nhất quán với nhận diện cốt lõi (Brand Guidelines)",
+        "Số lượng câu lệnh prompt đã dùng",
+        "Độ phân giải hình ảnh tối đa"
+       ],
+       "correctIndex": 1,
+       "explanation": "Tính độc bản và sự nhất quán với nhận diện thương hiệu là lằn ranh tối quan trọng để phân biệt thiết kế chuyên nghiệp với sản phẩm AI đại trà."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7823,
+  "latencyMs": 9675
+ }
+}

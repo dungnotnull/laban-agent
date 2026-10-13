@@ -1,0 +1,487 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 65,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 8011,
+  "latencyMs": 14152,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0024032999999999997
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Sustainable Agriculture Specialist",
+    "roleTitleVi": "Chuyên gia Nông nghiệp Bền vững",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "While AI is transforming global labor markets, physical agricultural tasks and deep local expertise remain high-value human domains. By shifting from traditional rice farming to sustainable, high-value crops, you leverage your 20 years of experience while reducing reliance on volatile commodity markets, aligning with the need for agricultural modernization in Vietnam.",
+    "whyItFitsYou": "Your deep knowledge of An Giang's soil and water management is a unique asset that AI cannot replicate. By focusing on sustainable practices, you can command higher prices for your produce, directly addressing your interest in agricultural business while keeping your risk low by building on your existing land and expertise.",
+    "transferableSkillsMatch": [
+     "Deep local soil and climate knowledge",
+     "Resource management (water and irrigation)",
+     "Resilience in harsh environmental conditions"
+    ],
+    "skillsGap": [
+     "Digital marketing for direct-to-consumer sales",
+     "Sustainable farming certification standards",
+     "Basic digital record-keeping"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Sustainable Agriculture Specialist",
+     "occupationTitleVi": "Chuyên gia Nông nghiệp Bền vững",
+     "molisaCode": "6111",
+     "onetCode": "11-9013.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 40,
+     "humanAdvantageCore": [
+      "Local environmental intuition",
+      "Physical crop management",
+      "Community-based trade relationships"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Soil health monitoring",
+       "taskNameVi": "Giám sát sức khỏe đất",
+       "exposureType": "Low",
+       "exposurePercentage": 10,
+       "onetCode": "11-9013.00",
+       "notes": "Requires physical presence and local expertise."
+      },
+      {
+       "taskName": "Direct-to-consumer sales",
+       "taskNameVi": "Bán hàng trực tiếp cho người tiêu dùng",
+       "exposureType": "Medium",
+       "exposurePercentage": 30,
+       "onetCode": "41-4012.00",
+       "notes": "Can be augmented by basic digital tools."
+      },
+      {
+       "taskName": "Water management optimization",
+       "taskNameVi": "Tối ưu hóa quản lý nước",
+       "exposureType": "Low",
+       "exposurePercentage": 5,
+       "onetCode": "11-9013.00",
+       "notes": "Deeply tied to local geography."
+      }
+     ],
+     "sources": "World Bank, 2024",
+     "methodologySummary": "Assessment based on physical task dominance and local knowledge requirements.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Modernize Rice Farming",
+      "pathTitleVi": "Hiện đại hóa canh tác lúa",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Keep your current role but adopt sustainable, high-value practices.",
+      "targetRoles": [
+       "Sustainable Rice Farmer"
+      ],
+      "skillsToAcquire": [
+       "Organic farming techniques",
+       "Basic digital sales"
+      ],
+      "transferableSkills": [
+       "Farming experience",
+       "Water management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9,
+       10,
+       12
+      ],
+      "rationale": "Leverages existing assets with minimal disruption.",
+      "actionStepNow": "Identify one small plot for organic testing."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural Produce Trader",
+      "pathTitleVi": "Kinh doanh nông sản",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition from producer to direct seller of local produce.",
+      "targetRoles": [
+       "Local Produce Distributor"
+      ],
+      "skillsToAcquire": [
+       "Digital communication",
+       "Basic accounting"
+      ],
+      "transferableSkills": [
+       "Market knowledge",
+       "Negotiation"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       6,
+       8,
+       10,
+       12,
+       15
+      ],
+      "rationale": "Reduces dependence on middlemen.",
+      "actionStepNow": "Start a contact list of local buyers."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agricultural Extension Worker",
+      "pathTitleVi": "Cán bộ khuyến nông",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Use experience to advise other farmers.",
+      "targetRoles": [
+       "Agricultural Advisor"
+      ],
+      "skillsToAcquire": [
+       "Formal training",
+       "Public speaking"
+      ],
+      "transferableSkills": [
+       "Deep farming expertise"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       5,
+       6,
+       8,
+       9,
+       10
+      ],
+      "rationale": "Requires significant formal education.",
+      "actionStepNow": "Enroll in local vocational training."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy",
+      "phaseNameVi": "Xóa mù công nghệ",
+      "title": "Mastering Basic Digital Tools",
+      "titleVi": "Làm chủ công cụ số cơ bản",
+      "estimatedHours": 20,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer use",
+       "Internet navigation"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the first step to using the internet for business?",
+       "options": [
+        "Buying a new computer",
+        "Learning to connect and navigate safely",
+        "Hiring a consultant"
+       ],
+       "correctIndex": 1,
+       "explanation": "Learning to navigate safely is the foundation for all digital activities."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Sustainable Farming",
+      "phaseNameVi": "Canh tác bền vững",
+      "title": "Implementing Sustainable Practices",
+      "titleVi": "Áp dụng canh tác bền vững",
+      "estimatedHours": 40,
+      "weeksDuration": 10,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Organic pest management",
+       "Soil health"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Why is soil health important for sustainable farming?",
+       "options": [
+        "It looks better",
+        "It reduces the need for expensive chemical fertilizers",
+        "It is required by law"
+       ],
+       "correctIndex": 1,
+       "explanation": "Healthy soil reduces costs and increases long-term yield."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870369283_hflt9t",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:46:09.283Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:46:09.283Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:09.283Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:46:11.074Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 483,
+     "latencyMs": 1256
+    },
+    {
+     "ts": "2026-10-13T05:46:11.074Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "agricultural worker",
+       "produce vendor"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "low digital literacy",
+       "time-constrained availability"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:11.074Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 684,
+     "latencyMs": 831,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "produce vendor"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.417Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "sustainable agriculture transition Vietnam smallholder farmers challenges"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.418Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.418Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "sustainable agriculture training Vietnam farmers low digital literacy"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:12.418Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:13.830Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1303,
+     "latencyMs": 873,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:46:13.830Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "agricultural worker in An Giang sustainable farming"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:16.096Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:17.926Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1448,
+     "latencyMs": 1261,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:46:17.926Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:17.926Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:46:23.435Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3874,
+     "latencyMs": 4964
+    },
+    {
+     "ts": "2026-10-13T05:46:23.435Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:46:23.435Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 7792,
+   "latencyMs": 14152,
+   "degraded": false
+  }
+ }
+}

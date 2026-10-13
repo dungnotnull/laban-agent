@@ -1,0 +1,288 @@
+{
+ "score": {
+  "personaId": "persona-receptionist",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8090,
+  "latencyMs": 9386,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.002427
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Internal Communications & HR Operations Specialist",
+    "roleTitleVi": "Chuyên viên Truyền thông Nội bộ & Vận hành Nhân sự",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "Vai trò hành chính văn thư truyền thống đối mặt với tỷ lệ tiếp xúc tự động hóa cao từ GenAI [Source: ILO, 2023], tuy nhiên các công việc đòi hỏi trí tuệ cảm xúc, điều phối nhân sự, và xây dựng văn hóa nội bộ mang lại khả năng chống chịu cao. Sự kết hợp giữa kỹ năng tổ chức và giao tiếp thân thiện giúp tối ưu hóa giá trị con người trong mô hình 'human-in-the-loop' [Source: Stanford HAI, 2024].",
+    "whyItFitsYou": "Bạn có sẵn thế mạnh về giao tiếp thân thiện, tổ chức công việc tốt và khả năng chịu áp lực cao từ công việc lễ tân (4 năm kinh nghiệm). Điều này hoàn toàn khớp với nhu cầu kết nối, xử lý tình huống linh hoạt và quản trị trải nghiệm nhân viên trong mảng Nhân sự và Truyền thông nội bộ mà bạn quan tâm.",
+    "transferableSkillsMatch": [
+     "Giao tiếp thân thiện và ứng xử khéo léo",
+     "Tổ chức và quản lý lịch trình công việc",
+     "Soạn thảo văn bản và điều phối thông tin",
+     "Chịu áp lực thời gian và giờ cao điểm tốt"
+    ],
+    "skillsGap": [
+     "Kỹ năng sử dụng công cụ AI hỗ trợ soạn thảo (ChatGPT, Copilot)",
+     "Quản lý nội dung và kênh truyền thông nội bộ (Notion, Canva cơ bản)",
+     "Kỹ năng họp trực tuyến và điều phối sự kiện hybrid"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking, leadership, and emotional intelligence remain high-demand priorities as routine administrative tasks undergo structural transformation."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024-2026",
+      "source": "TopCV & GSO",
+      "year": "2024",
+      "url": "https://www.gso.gov.vn",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency, shifting administrative roles toward coordination and internal communications."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Human Resources and Administration Coordinator",
+     "occupationTitleVi": "Điều phối viên Nhân sự và Hành chính",
+     "molisaCode": "4412",
+     "onetCode": "43-6011.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 65,
+     "humanAdvantageCore": [
+      "Sự thấu cảm và trí tuệ cảm xúc trong giao tiếp nội bộ",
+      "Khả năng xử lý khủng hoảng tình huống bất ngờ tại văn phòng",
+      "Xây dựng lòng tin và kết nối các phòng ban"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Greeting visitors and routing calls, adapted with digital receptionist systems",
+       "taskNameVi": "Đón tiếp khách và điều phối thông tin với sự hỗ trợ của hệ thống số hóa",
+       "exposureType": "Augmented",
+       "exposurePercentage": 40,
+       "onetCode": "43-6011.00",
+       "notes": "Chuyển từ ghi nhận thủ công sang vận hành hệ thống check-in tự động kết hợp chăm sóc trực tiếp."
+      },
+      {
+       "taskName": "Organizing meetings and internal event logistics",
+       "taskNameVi": "Tổ chức họp và hậu cần sự kiện nội bộ doanh nghiệp",
+       "exposureType": "Human-Centric",
+       "exposurePercentage": 20,
+       "onetCode": "43-6011.00",
+       "notes": "Đòi hỏi sự tương tác trực tiếp, điều phối linh hoạt mà AI không thể thay thế."
+      },
+      {
+       "taskName": "Drafting internal announcements and memos using AI assistance",
+       "taskNameVi": "Soạn thảo thông báo và văn bản nội bộ sử dụng trợ lý AI",
+       "exposureType": "Augmented",
+       "exposurePercentage": 75,
+       "onetCode": "43-6011.00",
+       "notes": "AI hỗ trợ tạo khung văn bản nhanh, nhân sự tập trung vào việc tinh chỉnh giọng điệu văn hóa công ty."
+      }
+     ],
+     "sources": [
+      "WEF Future of Jobs 2023",
+      "TopCV Vietnam Labor Market 2024"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa O*NET kết hợp khảo sát thị trường lao động đô thị Việt Nam (HCMC/HN).",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Office & Admin Professional",
+      "pathTitleVi": "Chuyên viên Hành chính Văn phòng Tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Nâng cấp kỹ năng tin học và sử dụng công cụ AI (ChatGPT, Copilot) để tối ưu hóa việc soạn thảo văn bản, quản lý lịch biểu và tổ chức sự kiện văn phòng.",
+      "targetRoles": [
+       "Senior Office Administrator",
+       "Executive Assistant with AI Tools"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering cơ bản cho văn phòng",
+       "Sử dụng Google Workspace / Microsoft 365 nâng cao",
+       "Công cụ họp trực tuyến (Zoom, MS Teams)"
+      ],
+      "transferableSkills": [
+       "Giao tiếp",
+       "Tổ chức công việc",
+       "Sắp xếp lịch trình"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       9,
+       11,
+       13,
+       15,
+       18
+      ],
+      "rationale": "Tận dụng tối đa 4 năm kinh nghiệm sẵn có, bù đắp điểm yếu tin học bằng công cụ AI để gia tăng năng suất 30-40%.",
+      "actionStepNow": "Thực hành sử dụng ChatGPT để soạn thảo email và biên bản cuộc họp mỗi ngày."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Internal Communications & HR Operations Pivot",
+      "pathTitleVi": "Chuyển hướng sang Truyền thông Nội bộ & Vận hành Nhân sự",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển hẳn sang mảng Nhân sự và Truyền thông nội bộ bằng cách học thêm chứng chỉ ngắn hạn về Hành chính nhân sự và thiết kế nội dung cơ bản.",
+      "targetRoles": [
+       "Chuyên viên Truyền thông Nội bộ",
+       "Cán bộ Nhân sự tổng hợp"
+      ],
+      "skillsToAcquire": [
+       "Nghiệp vụ Quản trị Nhân sự cơ bản",
+       "Thiết kế ấn phẩm nội bộ cơ bản (Canva)",
+       "Viết content truyền thông nội bộ"
+      ],
+      "transferableSkills": [
+       "Giao tiếp thân thiện",
+       "Tổ chức sự kiện",
+       "Xử lý văn bản"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Đáp ứng đúng sở thích lâu năm về Nhân sự và Truyền thông, ngành có mức lương cao hơn và ít bị tự động hóa hơn.",
+      "actionStepNow": "Đăng ký một khóa học nghiệp vụ nhân sự ngắn hạn cuối tuần và học cách dùng Canva."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Customer Experience & Digital Operations Lead",
+      "pathTitleVi": "Trưởng nhóm Vận hành & Trải nghiệm Khách hàng số",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển sang lĩnh vực quản lý dịch vụ khách hàng đa kênh và vận hành quy trình số tại các công ty dịch vụ/công nghệ.",
+      "targetRoles": [
+       "Customer Experience Specialist",
+       "Operations Team Lead"
+      ],
+      "skillsToAcquire": [
+       "Quản lý hệ thống CRM cơ bản",
+       "Phân tích phản hồi khách hàng bằng AI",
+       "Kỹ năng đàm phán và giải quyết khiếu nại"
+      ],
+      "transferableSkills": [
+       "Chịu áp lực giờ cao điểm",
+       "Giao tiếp khách hàng"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       19,
+       24,
+       30
+      ],
+      "rationale": "Mở ra bước đột phá thu nhập nhưng đòi hỏi vượt qua rào cản tiếng Anh và công nghệ mới.",
+      "actionStepNow": "Bắt đầu học ngoại ngữ giao tiếp trực tuyến 15 phút mỗi ngày qua các ứng dụng miễn phí."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Upgrade",
+      "phaseNameVi": "Nền tảng & Nâng cấp Kỹ thuật số",
+      "title": "Master Office AI & Virtual Collaboration Tools",
+      "titleVi": "Làm chủ AI Văn phòng & Công cụ Họp Trực tuyến",
+      "estimatedHours": 24,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "ChatGPT / Microsoft Copilot cơ bản",
+       "Sử dụng thành thạo MS Teams & Zoom",
+       "Excel cơ bản nâng cao (HLOOKUP, VLOOKUP, Pivot Table)"
+      ],
+      "freeResources": [
+       {
+        "name": "Generative AI for Everyone",
+        "provider": "DeepLearning.AI / Coursera",
+        "url": "https://www.coursera.org",
+        "type": "Online Course"
+       },
+       {
+        "name": "Microsoft 365 Training Center",
+        "provider": "Microsoft",
+        "url": "https://support.microsoft.com",
+        "type": "Documentation & Tutorials"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng AI để soạn thảo thông báo tuyển dụng nội bộ, bước nào là quan trọng nhất trước khi gửi?",
+       "options": [
+        "Gửi thẳng không cần kiểm tra",
+        "Kiểm tra lại tính chính xác, văn phong phù hợp với văn hóa công ty",
+        "Đổi tên tệp tin thành PDF",
+        "Xóa lịch sử trò chuyện với AI"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI giúp tạo khung nhanh nhưng con người (human-in-the-loop) phải kiểm tra độ chính xác và điều chỉnh giọng điệu cho phù hợp với doanh nghiệp."
+      }
+     },
+     {
+      "id": "ms2",
+      "milestoneNumber": 2,
+      "phaseName": "HR & Internal Comms Pivot",
+      "phaseNameVi": "Chuyển dịch sang Nhân sự & Truyền thông Nội bộ",
+      "title": "Build Practical Skills in Internal Comms & HR Operations",
+      "titleVi": "Xây dựng Kỹ năng Thực chiến về Truyền thông & Vận hành NS",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Nghiệp vụ hành chính nhân sự căn bản",
+       "Thiết kế ấn phẩm thông báo nội bộ bằng Canva",
+       "Kỹ năng viết bản tin nội bộ (Newsletter)"
+      ],
+      "freeResources": [
+       {
+        "name": "Canva Design School",
+        "provider": "Canva",
+        "url": "https://www.canva.com/designschool",
+        "type": "Video Tutorials"
+       },
+       {
+        "name": "HR Basics OpenCourse",
+        "provider": "Open University",
+        "url": "https://www.open.edu",
+        "type": "Self-paced Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất khi xây dựng một bản tin truyền thông nội bộ?",
+       "options": [
+        "Sử dụng thật nhiều hình ảnh phức tạp",
+        "Thông tin chính xác, ngắn gọn và gần gũi với đời sống nhân viên",
+        "Độ dài ít nhất 5000 từ",
+        "Chỉ sử dụng tiếng Anh"
+       ],
+       "correctIndex": 1,
+       "explanation": "Truyền thông nội bộ hiệu quả cần sự minh bạch, rõ ràng, dễ đọc và chạm đến cảm xúc của nhân sự trong tổ chức."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7827,
+  "latencyMs": 9386
+ }
+}

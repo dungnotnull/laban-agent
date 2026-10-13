@@ -1,0 +1,23 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "baseline",
+  "ok": false,
+  "groundingRate": null,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": null,
+  "coherent": null,
+  "actionable": null,
+  "usageTokens": 0,
+  "latencyMs": 0,
+  "model": "unknown",
+  "costPerTaskUsd": 0,
+  "error": "baseline_failed"
+ },
+ "payload": {
+  "error": "baseline_failed",
+  "message": "Expected double-quoted property name in JSON at position 9529 (line 216 column 9)"
+ }
+}

@@ -1,0 +1,701 @@
+{
+ "score": {
+  "personaId": "persona-golden-3",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 45,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 19411,
+  "latencyMs": 21984,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0058233
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Business Analyst / Data Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+    "aiResilienceScore": 82,
+    "matchScore": 92,
+    "reasoning": "As noted in the World Economic Forum Future of Jobs report, Business Intelligence and Data Analysts are ranked as top growing occupations globally, while Stanford HAI (2024) indicates that business analysts utilizing AI agents complete market modeling 43% faster. For a fresh business graduate with strong English skills and logical business mindset, this role offers high augmentation potential (92%) where AI handles technical coding while human judgment drives strategic insight.",
+    "whyItFitsYou": "Your background as a NEU Business Administration graduate combined with IELTS 7.0 and strong communication skills perfectly positions you for executive stakeholder alignment and problem framing. While you currently lack deep technical coding experience, your quick self-learning ability and logical mindset will allow you to leverage AI-assisted tools to bridge the skills gap rapidly.",
+    "transferableSkillsMatch": [
+     "Tư duy tổng quan về doanh nghiệp (Business domain understanding)",
+     "Tiếng Anh IELTS 7.0 cho việc nghiên cứu tài liệu quốc tế",
+     "Thuyết trình mạch lạc và giao tiếp với các bên liên quan",
+     "Khả năng tự học nhanh và tư duy logic kinh doanh"
+    ],
+    "skillsGap": [
+     "Thiếu kinh nghiệm thực chiến công nghệ sâu (SQL, Python cơ bản)",
+     "Chưa có portfolio dự án dữ liệu cụ thể",
+     "Kỹ năng xử lý và làm sạch dữ liệu lớn"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu bảng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and charts",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ báo cáo định kỳ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools (Tableau Pulse, Power BI Copilot) generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing strategic business hypotheses and executive consulting",
+       "taskNameVi": "Định hình giả thuyết chiến lược và tư vấn lãnh đạo",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, political savvy, and nuanced risk appetite."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET task inventories, Stanford HAI augmentation metrics, and WEF labor growth signals adjusted for Vietnam's digital transition speed.",
+     "uncertaintyRange": "+/- 5% variance based on enterprise adoption rates of Generative BI tools in Hanoi tech hubs.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Junior BA",
+      "pathTitleVi": "Chuyên viên BA tích hợp AI tăng tốc",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage generative AI tools to handle baseline data extraction and dashboarding while sharpening business domain storytelling.",
+      "targetRoles": [
+       "Junior Business Analyst",
+       "Data Specialist"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering for Data",
+       "SQL Basics",
+       "Power BI / Tableau Copilot"
+      ],
+      "transferableSkills": [
+       "Business logic",
+       "English communication",
+       "Presentation"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       32,
+       45,
+       60
+      ],
+      "rationale": "Directly builds upon your NEU business degree while utilizing AI to overcome technical entry barriers.",
+      "actionStepNow": "Enroll in a free Google Career Certificate data course and start building your first simulated dataset portfolio."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Growth & E-commerce Data Marketer",
+      "pathTitleVi": "Chuyên viên Phân tích Tăng trưởng & E-commerce",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Combine digital marketing interests with business analytics to optimize e-commerce conversion funnels using automated workflows.",
+      "targetRoles": [
+       "Growth Analyst",
+       "E-commerce Operations Specialist"
+      ],
+      "skillsToAcquire": [
+       "Funnel Analytics",
+       "GA4 & Meta Ads Data Extraction",
+       "Workflow Automation (Zapier/Make)"
+      ],
+      "transferableSkills": [
+       "Digital marketing interest",
+       "Logical mindset",
+       "Communication"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       20,
+       28,
+       40,
+       55
+      ],
+      "rationale": "Aligns with your stated interests in E-commerce and Digital Marketing while maintaining high analytical rigor.",
+      "actionStepNow": "Explore free e-commerce analytics modules and map out a customer journey optimization case study."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Workflow Automation Consultant",
+      "pathTitleVi": "Tư vấn Tự động hóa Quy trình Doanh nghiệp",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into helping traditional Vietnamese SMEs implement AI workflow automation and low-code operational tools.",
+      "targetRoles": [
+       "Automation Consultant",
+       "Digital Transformation Specialist"
+      ],
+      "skillsToAcquire": [
+       "Low-code platforms",
+       "Process Mapping",
+       "Change Management"
+      ],
+      "transferableSkills": [
+       "Project Management",
+       "Dynamic problem solving",
+       "English research skills"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       28,
+       40,
+       58,
+       80
+      ],
+      "rationale": "High reward potential targeting Vietnam's massive SME digital transition wave highlighted in Deloitte's enterprise AI report.",
+      "actionStepNow": "Research enterprise automation use cases and practice mapping out business workflows using free online charting tools."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Fundamentals",
+      "phaseNameVi": "Xây dựng Nền tảng & Kỹ năng Cốt lõi",
+      "title": "Mastering Data Fundamentals & AI BI Tools",
+      "titleVi": "Làm chủ Nền tảng Dữ liệu & Công cụ BI tích hợp AI",
+      "estimatedHours": 72,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "SQL basics",
+       "Data visualization",
+       "AI-assisted data cleaning"
+      ],
+      "freeResources": [
+       {
+        "name": "Coursera Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       },
+       {
+        "name": "freeCodeCamp full curriculum",
+        "provider": "freeCodeCamp",
+        "url": "https://www.freecodecamp.org/learn",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When using AI tools to assist with SQL query generation for business reporting, what is the most critical human responsibility?",
+       "options": [
+        "Writing every single character of the code manually",
+        "Validating the business logic and checking output accuracy against domain context",
+        "Ignoring the AI output and trusting intuition completely",
+        "Formatting the code font size"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI accelerates syntax generation, but human analysts must validate the business logic and ensure data accuracy against contextual realities."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Portfolio & Application",
+      "phaseNameVi": "Xây dựng Portfolio & Thực chiến",
+      "title": "Building Practical Business Case Studies",
+      "titleVi": "Xây dựng Hồ sơ Năng lực (Portfolio) thực tế",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Dashboard creation",
+       "Business storytelling",
+       "Executive presentation"
+      ],
+      "freeResources": [
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       },
+       {
+        "name": "AWS Skill Builder (free tier)",
+        "provider": "AWS",
+        "url": "https://skillbuilder.aws",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the best way to address a lack of prior technical experience during job interviews?",
+       "options": [
+        "Hide your lack of experience",
+        "Build and present a portfolio of simulated business data projects showing problem-solving capability",
+        "Rely solely on your university GPA",
+        "Claim 5 years of senior experience"
+       ],
+       "correctIndex": 1,
+       "explanation": "A portfolio of hands-on projects proves practical capability, turning potential weaknesses into concrete evidence of self-learning and execution."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $846 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 85,
+    "rationale": "The guidance directly incorporates the user's specific degree, IELTS 7.0, and self-learning strengths into the fit analysis, though some broader market data is used for reasoning."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 4,
+    "grounded": 4,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869361466_2s1w5o",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:29:21.466Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:29:21.466Z",
+     "type": "run_start",
+     "message": "pipeline for \"Fresh Business Graduate\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:21.466Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:29:22.645Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 684,
+     "latencyMs": 1179
+    },
+    {
+     "ts": "2026-10-13T05:29:22.645Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Business Analyst",
+       "Digital Marketing Specialist",
+       "Project Coordinator"
+      ],
+      "riskFlags": [
+       "Limited hands-on technical experience",
+       "Missing specific portfolio projects"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:22.645Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:29:23.847Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 636,
+     "latencyMs": 1201,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:23.847Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Business Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:23.847Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:26.911Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2105,
+     "latencyMs": 3064,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:26.911Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "result": {
+        "ok": true,
+        "data": [
+         {
+          "detail": {
+           "overallResilienceScore": 78,
+           "onetCode": "13-1161.00 (Market Research Analysts and Marketing Specialists)",
+           "sources": [
+            {
+             "sourceId": "mckinsey-gen-ai-marketing-2023",
+             "citationText": "McKinsey & Company (2023): Generative AI automates up to 60-70% of routine copywriting and targeted ad layout tasks while elevating campaign ROI.",
+             "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights-and-insights/the-economic-potential-of-generative-ai"
+            },
+            {
+             "citationText": "TopCV Vietnam (2024): Digital Marketing remains among the top 3 hiring demand fields in Hanoi and HCMC.",
+             "sourceId": "topcv-vietnam-labor-market-2024",
+             "url": "https://static.topcv.vn/whitepapers/bao-cao-thi-truong-tuyen-dung-2024.pdf"
+            }
+           ],
+           "vietnamDemandSignal": "high_growth",
+           "occupationTitleVi": "Chuyên viên Digital Marketing & Growth",
+           "augmentationPotentialScore": 88,
+           "tasksBreakdown": [
+            {
+             "onetCode": "13-1161.00-T1",
+             "exposureType": "ai_augmentation",
+             "notes": "AI generates social media post variations, ad copy iterations, and email subject lines instantly.",
+             "taskNameVi": "Soạn thảo bài viết mạng xã hội và nội dung quảng cáo định kỳ",
+             "taskName": "Drafting routine social media captions and ad copy variations",
+             "exposurePercentage": 85
+            },
+            {
+             "onetCode": "13-1161.00-T2",
+             "taskNameVi": "Vận hành quảng cáo trả phí và phân khúc đối tượng cơ bản",
+             "exposureType": "ai_augmentation",
+             "exposurePercentage": 75,
+             "notes": "Platforms like Meta Advantage+ and Google Performance Max automate audience targeting and bidding.",
+             "taskName": "Executing routine PPC bidding and standard audience segmentation"
+            },
+            {
+             "taskNameVi": "Kể chuyện thương hiệu và định hướng thông điệp chiến lược",
+             "taskName": "Creative brand storytelling and stakeholder alignment",
+             "exposureType": "human_core",
+             "exposurePercentage": 20,
+             "onetCode": "13-1161.00-T3",
+             "notes": "Demands cultural empathy, emotional intelligence, and brand stewardship."
+            }
+           ],
+           "automationRiskScore": 48,
+           "occupationTitle": "Digital Marketing Specialist / Growth Marketer",
+           "molisaCode": "2431 (Chuyên viên quảng cáo và tiếp thị)",
+           "methodologySummary": "Cross-analyzed with McKinsey Marketing & Sales Practice, TopCV Vietnam Digital Marketing Salary & Skills Report, and MOLISA job vacancy indices.",
+           "uncertaintyRange": "±5.2%",
+           "humanAdvantageCore": [
+            "Brand voice and creative direction for Vietnamese Gen Z consumer base (Định hướng sáng tạo và giọng điệu thương hiệu Gen Z)",
+            "Cross-channel integrated campaign orchestration (Điều phối chiến dịch đa kênh tích hợp)",
+            "Complex client relationship management & crisis PR (Quản lý quan hệ khách hàng và xử lý khủng hoảng truyền thông)",
+            "Ethical data privacy compliance in digital advertising (Tuân thủ bảo mật dữ liệu trong quảng cáo số)"
+           ]
+          },
+          "key": "digital-marketing-specialist",
+          "matchedQuery": "Digital Marketing Specialist"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:26.911Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:27.830Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1384,
+     "latencyMs": 919,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:27.830Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Project Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:27.831Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:28.701Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1417,
+     "latencyMs": 870,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:28.701Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "Digital Marketing Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:31.188Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:32.178Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1585,
+     "latencyMs": 990,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:32.178Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI marketing business analyst Vietnam entry level skills"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:32.178Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:33.198Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2157,
+     "latencyMs": 1019,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:29:33.198Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "business analysis data analytics sql english free certification vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:33.198Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:34.194Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2553,
+     "latencyMs": 996,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:29:34.194Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:34.194Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:29:42.549Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6242,
+     "latencyMs": 8355
+    },
+    {
+     "ts": "2026-10-13T05:29:42.549Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:43.450Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 455,
+     "latencyMs": 901
+    },
+    {
+     "ts": "2026-10-13T05:29:43.450Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly incorporates the user's specific degree, IELTS 7.0, and self-learning strengths into the fit analysis, though some broader market data is used for reasoning."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:29:43.450Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 19218,
+   "latencyMs": 21984,
+   "degraded": false
+  }
+ }
+}

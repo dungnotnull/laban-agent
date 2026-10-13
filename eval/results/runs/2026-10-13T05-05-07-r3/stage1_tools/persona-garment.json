@@ -1,0 +1,509 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7762,
+  "latencyMs": 24003,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0023286
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Customized Handicraft & Small Business Owner",
+    "roleTitleVi": "Chủ cơ sở kinh doanh thủ công mỹ nghệ",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "The transition to high-value, personalized craft production leverages the user's manual dexterity while minimizing exposure to automation. Evidence from the OECD Employment Outlook 2023 suggests that while AI impacts routine tasks, human-centric, bespoke craftsmanship remains a high-value niche with low automation risk.",
+    "whyItFitsYou": "Your 8 years of experience in quality control and technical drawing provide a solid foundation for precision work. By pivoting to small-scale craft production, you utilize your existing 'khéo tay' strength while building a business that AI cannot replicate.",
+    "transferableSkillsMatch": [
+     "Quality control and inspection",
+     "Technical drawing interpretation",
+     "Production line efficiency",
+     "Manual dexterity"
+    ],
+    "skillsGap": [
+     "Basic digital marketing for small business",
+     "Cost accounting for micro-enterprises",
+     "Customer relationship management"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market",
+      "source": "OECD",
+      "year": 2023,
+      "url": "https://www.oecd.org/employment-outlook/2023/",
+      "quoteOrDataPoint": "Workers report that AI has improved job quality but also increased work intensity and stress."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Handicraft Production Specialist",
+     "occupationTitleVi": "Chuyên gia sản xuất thủ công",
+     "molisaCode": "7311",
+     "onetCode": "51-6052.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 40,
+     "humanAdvantageCore": [
+      "Creative design",
+      "Bespoke quality control",
+      "Personalized customer service"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Design custom patterns",
+       "taskNameVi": "Thiết kế mẫu mã tùy chỉnh",
+       "exposureType": "augmentation",
+       "exposurePercentage": 20,
+       "onetCode": "51-6052.00",
+       "notes": "Using digital tools to assist in pattern creation."
+      },
+      {
+       "taskName": "Quality assurance of handmade goods",
+       "taskNameVi": "Kiểm soát chất lượng sản phẩm thủ công",
+       "exposureType": "low",
+       "exposurePercentage": 5,
+       "onetCode": "51-6052.00",
+       "notes": "Relies on human tactile judgment."
+      },
+      {
+       "taskName": "Small business inventory management",
+       "taskNameVi": "Quản lý kho hàng kinh doanh nhỏ",
+       "exposureType": "augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "43-5061.00",
+       "notes": "Can be supported by simple mobile apps."
+      }
+     ],
+     "sources": [
+      "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market"
+     ],
+     "methodologySummary": "Assessment based on task-based automation risk and human-centric value add.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Enhance current role with digital tools",
+      "pathTitleVi": "Tối ưu hóa công việc hiện tại bằng công cụ số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Use digital tools to improve efficiency in current garment role.",
+      "targetRoles": [
+       "Senior Quality Inspector"
+      ],
+      "skillsToAcquire": [
+       "Basic Excel",
+       "Digital reporting"
+      ],
+      "transferableSkills": [
+       "Quality control",
+       "Technical drawing"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9,
+       10,
+       11,
+       12
+      ],
+      "rationale": "Leverages existing stability while adding digital skills.",
+      "actionStepNow": "Learn basic digital reporting for quality logs."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Transition to specialized craft production",
+      "pathTitleVi": "Chuyển dịch sang sản xuất thủ công chuyên biệt",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Start a small craft business using existing sewing skills.",
+      "targetRoles": [
+       "Craft Business Owner"
+      ],
+      "skillsToAcquire": [
+       "Small business management",
+       "Social media marketing"
+      ],
+      "transferableSkills": [
+       "Sewing",
+       "Quality control"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       10,
+       13,
+       18
+      ],
+      "rationale": "Aligns with personal interests and manual strengths.",
+      "actionStepNow": "Research local market demand for custom craft items."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Shift to BPO/Customer Service",
+      "pathTitleVi": "Chuyển sang dịch vụ khách hàng/BPO",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Leverage AI-assisted tools to enter the BPO sector.",
+      "targetRoles": [
+       "Customer Support Agent"
+      ],
+      "skillsToAcquire": [
+       "Basic English",
+       "AI-assisted communication"
+      ],
+      "transferableSkills": [
+       "Teamwork",
+       "Problem solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       7,
+       9,
+       11,
+       12,
+       14
+      ],
+      "rationale": "High growth sector but requires significant upskilling.",
+      "actionStepNow": "Enroll in a basic digital literacy course."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Xây dựng nền tảng kỹ năng số",
+      "title": "Mastering basic digital tools",
+      "titleVi": "Làm chủ công cụ số cơ bản",
+      "estimatedHours": 30,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer operation",
+       "Smartphone productivity apps"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "Which tool is most useful for tracking small business expenses?",
+       "options": [
+        "Excel/Google Sheets",
+        "Sewing machine",
+        "Technical drawing pen",
+        "None"
+       ],
+       "correctIndex": 0,
+       "explanation": "Spreadsheet software is essential for tracking income and expenses in any small business."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Business Planning",
+      "phaseNameVi": "Lập kế hoạch kinh doanh",
+      "title": "Market research and business model",
+      "titleVi": "Nghiên cứu thị trường và mô hình kinh doanh",
+      "estimatedHours": 20,
+      "weeksDuration": 4,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Market analysis",
+       "Pricing strategy"
+      ],
+      "freeResources": [],
+      "checkpointQuiz": {
+       "question": "What is the first step in starting a small craft business?",
+       "options": [
+        "Buying expensive equipment",
+        "Market research",
+        "Hiring staff",
+        "Quitting current job"
+       ],
+       "correctIndex": 1,
+       "explanation": "Understanding your customers and market demand is the safest first step."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870238728_k6a8u2",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:43:58.728Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:43:58.728Z",
+     "type": "run_start",
+     "message": "pipeline for \"Công nhân may công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:58.728Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:44:02.002Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 494,
+     "latencyMs": 2817
+    },
+    {
+     "ts": "2026-10-13T05:44:02.002Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "sewing technician",
+       "production operator",
+       "craft entrepreneur"
+      ],
+      "riskFlags": [
+       "limited digital literacy",
+       "low budget for retraining",
+       "limited English proficiency"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:02.002Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 719,
+     "latencyMs": 6131,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "sewing technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "production operator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "craft entrepreneur"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.661Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "automation impact garment industry Vietnam low digital literacy workers"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.662Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.662Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "học nghề thủ công miễn phí tiếng việt kỹ năng kinh doanh nhỏ"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:08.662Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "0 item(s) - No learning resource matched the query."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:10.283Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1267,
+     "latencyMs": 1036,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:44:10.283Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "garment worker binh duong automation small business"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:12.256Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:14.777Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1405,
+     "latencyMs": 1942,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:44:14.777Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:14.777Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:44:22.731Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3649,
+     "latencyMs": 7424
+    },
+    {
+     "ts": "2026-10-13T05:44:22.731Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:44:22.731Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 7534,
+   "latencyMs": 24003,
+   "degraded": false
+  }
+ }
+}

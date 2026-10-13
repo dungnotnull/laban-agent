@@ -1,0 +1,526 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 15,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11409,
+  "latencyMs": 10872,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0034227
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation & Data Specialist",
+    "roleTitleVi": "Chuyên viên Tự động hóa & Dữ liệu Công nghiệp",
+    "aiResilienceScore": 85,
+    "matchScore": 88,
+    "reasoning": "Drawing on the Stanford HAI (2024) and TopCV (2024) indices, while routine clerical roles face disruption, technical roles integrating physical systems with digital tools and analytics show high demand and high augmentation resilience. Your 10 years of electrical field experience in Hai Phong positions you to bridge manual electrical maintenance with modern automated and data-driven systems.",
+    "whyItFitsYou": "Your profound troubleshooting logic, hands-on experience with control panels and inverters, and shift-work stamina match the exact needs of modern industrial facilities transitioning to smart manufacturing. Even with limited technical English and PLC experience, your practical mastery of wiring and diagrams gives you a major advantage in diagnosing physical automation faults.",
+    "transferableSkillsMatch": [
+     "Bảo trì tủ điện, biến tần (Electrical panel and inverter maintenance)",
+     "Đọc bản vẽ điện (Electrical schematic reading)",
+     "Xử lý sự cố đấu dây (Wiring troubleshooting)",
+     "An toàn điện (Electrical safety compliance)"
+    ],
+    "skillsGap": [
+     "Lập trình PLC cơ bản (Basic PLC programming)",
+     "Tiếng Anh kỹ thuật cơ bản (Basic technical English)",
+     "Đọc hiểu dữ liệu vận hành thiết bị (Operational equipment data interpretation)"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "65% of manual testing and traditional roles contract, while technical operations, data, and automation roles see significant salary and demand growth."
+     },
+     {
+      "paperTitle": "Gen-AI: Artificial Intelligence and the Future of Work",
+      "source": "International Monetary Fund (IMF)",
+      "year": 2024,
+      "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+      "quoteOrDataPoint": "Emerging markets face approximately 40% AI exposure, offering a crucial window for workers to upskill into augmented technical careers."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu bảng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and charts",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ báo cáo định kỳ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools (Tableau Pulse, Power BI Copilot) generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing strategic business hypotheses and executive consulting",
+       "taskNameVi": "Định hình giả thuyết chiến lược và tư vấn lãnh đạo",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, political savvy, and nuanced risk appetite."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Evaluated using the La Bàn framework combining O*NET task analysis, IMF emerging market exposure data, and TopCV local demand signals.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Smart Maintenance Technician",
+      "pathTitleVi": "Kỹ thuật viên Bảo trì Thông minh",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage your existing electrical expertise while integrating AI-assisted diagnostic tools and digital maintenance logs in Hai Phong factories.",
+      "targetRoles": [
+       "Senior Industrial Electrician",
+       "Smart Maintenance Specialist"
+      ],
+      "skillsToAcquire": [
+       "Digital CMMS software usage",
+       "AI-guided diagnostic tools",
+       "Basic technical English vocabulary"
+      ],
+      "transferableSkills": [
+       "Electrical safety",
+       "Schematic reading",
+       "Troubleshooting logic"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       19,
+       22
+      ],
+      "rationale": "Directly builds upon your 10-year physical track record with minimal transition friction.",
+      "actionStepNow": "Download Duolingo to practice 10 minutes of technical English daily and explore digital maintenance logs."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Industrial Automation Assistant",
+      "pathTitleVi": "Trợ lý Tự động hóa Công nghiệp",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into automated production lines by learning basic PLC programming and robot sensor maintenance.",
+      "targetRoles": [
+       "Automation Technician",
+       "PLC Operator"
+      ],
+      "skillsToAcquire": [
+       "PLC programming fundamentals",
+       "Robotic arm sensor calibration",
+       "Basic automation logic"
+      ],
+      "transferableSkills": [
+       "Inverter setup",
+       "Wiring troubleshooting",
+       "Shift adaptability"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       26
+      ],
+      "rationale": "Meets your strong interest in automation while staying close to your core electrical background.",
+      "actionStepNow": "Enroll in free foundational computer science or logic courses online to prepare for PLC logic."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Industrial Data & IoT Specialist",
+      "pathTitleVi": "Chuyên viên Dữ liệu & IoT Công nghiệp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Shift completely toward monitoring Internet of Things (IoT) sensors and factory data analytics.",
+      "targetRoles": [
+       "IoT Plant Specialist",
+       "Industrial Data Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL basics",
+       "IoT sensor data collection",
+       "Advanced data visualization"
+      ],
+      "transferableSkills": [
+       "Physical factory floor knowledge",
+       "Problem-solving framework"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       18,
+       24,
+       32
+      ],
+      "rationale": "Offers high long-term upside in Vietnam's smart manufacturing sector but requires substantial retraining.",
+      "actionStepNow": "Familiarize yourself with basic spreadsheets and operational data metrics in your current workplace."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Technical English",
+      "phaseNameVi": "Nền tảng & Tiếng Anh Kỹ thuật",
+      "title": "Build English Literacy and Digital Basics",
+      "titleVi": "Xây dựng Nền tảng Tiếng Anh & Số hóa cơ bản",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic technical English vocabulary",
+       "Digital tool navigation",
+       "AI-assisted translation usage"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Công cụ nào hỗ trợ tốt nhất cho việc luyện tập từ vựng tiếng Anh cơ bản mỗi ngày trên điện thoại?",
+       "options": [
+        "Duolingo",
+        "Photoshop",
+        "AutoCAD",
+        "Excel"
+       ],
+       "correctIndex": 0,
+       "explanation": "Duolingo cung cấp các bài học ngoại ngữ ngắn gọn, miễn phí, phù hợp để luyện tập hàng ngày."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Automation & PLC Basics",
+      "phaseNameVi": "Tự động hóa & Lập trình PLC cơ bản",
+      "title": "Introduction to PLC and Control Logic",
+      "titleVi": "Làm quen với PLC và Logic Điều khiển",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "PLC fundamentals",
+       "Ladder logic reading",
+       "Automation troubleshooting principles"
+      ],
+      "freeResources": [
+       {
+        "name": "CS50x Introduction to Computer Science",
+        "provider": "Harvard",
+        "url": "https://cs50.harvard.edu/x/",
+        "type": "course"
+       },
+       {
+        "name": "Khan Academy",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Ngôn ngữ lập trình phổ biến nào thường dùng cho PLC trong bảo trì điện công nghiệp?",
+       "options": [
+        "Ladder Logic (LD)",
+        "HTML",
+        "CSS",
+        "Photoshop"
+       ],
+       "correctIndex": 0,
+       "explanation": "Ladder Logic (sơ đồ hình thang) là ngôn ngữ chuẩn và trực quan nhất cho thợ điện khi tiếp cận PLC."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869255565_6lx1dz",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:27:35.565Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:27:35.565Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ điện công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:35.565Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:27:36.562Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 507,
+     "latencyMs": 997
+    },
+    {
+     "ts": "2026-10-13T05:27:36.562Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "industrial electrician",
+       "automation technician",
+       "electrical maintenance specialist"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited technical English",
+       "lacks PLC programming skills"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:36.562Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 713,
+     "latencyMs": 1109,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "industrial electrician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "automation technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "electrical maintenance specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.672Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "industrial automation robotics Vietnam labor market upskilling"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.673Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.673Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "PLC programming industrial electricity Vietnamese free course"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:37.673Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:38.582Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3140,
+     "latencyMs": 909,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:27:38.582Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:38.582Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:27:46.437Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6814,
+     "latencyMs": 7855
+    },
+    {
+     "ts": "2026-10-13T05:27:46.437Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:46.437Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11174,
+   "latencyMs": 10872,
+   "degraded": false
+  }
+ }
+}

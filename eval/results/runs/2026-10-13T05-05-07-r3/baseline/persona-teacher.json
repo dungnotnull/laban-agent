@@ -1,0 +1,270 @@
+{
+ "score": {
+  "personaId": "persona-teacher",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7332,
+  "latencyMs": 9283,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0021996
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Educational Content Strategist & AI Literacy Trainer",
+    "roleTitleVi": "Chuyên gia Chiến lược Nội dung Giáo dục & Đào tạo AI",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "Dựa trên báo cáo của WEF 2023 và McKinsey 2023, các công việc đòi hỏi tư duy phản biện, sư phạm và kết nối con người có khả năng chống chịu cao với tự động hóa. Với 12 năm kinh nghiệm giảng dạy, bạn có lợi thế về 'Human-in-the-loop' (con người trong vòng lặp) để kiểm chứng và tối ưu hóa nội dung do AI tạo ra.",
+    "whyItFitsYou": "Bạn kết hợp được thế mạnh về Ngữ văn (viết lách, tư duy nhân văn) với sự quan tâm đến công nghệ. Vai trò này cho phép bạn chuyển đổi từ người truyền đạt kiến thức truyền thống sang người thiết kế trải nghiệm học tập có sự hỗ trợ của AI, tận dụng kỹ năng giao tiếp và quản lý lớp học sẵn có.",
+    "transferableSkillsMatch": [
+     "Thiết kế bài giảng",
+     "Tư duy phản biện",
+     "Giao tiếp sư phạm",
+     "Đánh giá học sinh",
+     "Quản lý dự án giáo dục"
+    ],
+    "skillsGap": [
+     "Prompt Engineering (Kỹ thuật đặt câu lệnh)",
+     "Sử dụng công cụ AI tạo nội dung (ChatGPT, Claude, Canva AI)",
+     "Phân tích dữ liệu học tập cơ bản",
+     "Thiết kế trải nghiệm học tập số (Digital Learning Design)"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 50,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The economic potential of generative AI: The next productivity frontier",
+      "source": "McKinsey & Company",
+      "year": 2023,
+      "url": "https://www.mckinsey.com",
+      "quoteOrDataPoint": "Generative AI could automate tasks that absorb 60-70% of employees' time, shifting roles toward human-centric augmentation."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam",
+      "year": 2024,
+      "url": "https://www.topcv.vn",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Instructional Designer",
+     "occupationTitleVi": "Chuyên gia Thiết kế Giáo dục",
+     "molisaCode": "2359",
+     "onetCode": "25-9031.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "Sự thấu cảm tâm lý học sinh",
+      "Khả năng truyền cảm hứng",
+      "Đánh giá chất lượng nội dung nhân văn"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Curriculum AI-Augmentation",
+       "taskNameVi": "Tối ưu hóa giáo trình bằng AI",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "25-9031.00",
+       "notes": "Sử dụng AI để soạn thảo khung bài giảng, bạn tập trung vào kiểm duyệt nội dung."
+      },
+      {
+       "taskName": "Personalized Learning Path Design",
+       "taskNameVi": "Thiết kế lộ trình học tập cá nhân hóa",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 30,
+       "onetCode": "25-9031.00",
+       "notes": "Dùng AI phân tích dữ liệu học sinh để đưa ra gợi ý lộ trình."
+      },
+      {
+       "taskName": "Human-Centric Mentoring",
+       "taskNameVi": "Cố vấn tâm lý và kỹ năng mềm",
+       "exposureType": "Resilient",
+       "exposurePercentage": 5,
+       "onetCode": "25-9031.00",
+       "notes": "AI không thể thay thế sự kết nối cảm xúc giữa giáo viên và học sinh."
+      }
+     ],
+     "sources": [
+      "O*NET 28.3",
+      "MOLISA"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khả năng thay thế của AI đối với các tác vụ nhận thức lặp lại so với các tác vụ đòi hỏi trí tuệ cảm xúc.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced Educator",
+      "pathTitleVi": "Giáo viên ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Giữ nguyên công việc hiện tại nhưng áp dụng AI để giảm 50% thời gian soạn bài.",
+      "targetRoles": [
+       "Giáo viên Ngữ văn cấp 3 (AI-Augmented)"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering",
+       "AI-powered Lesson Planning"
+      ],
+      "transferableSkills": [
+       "Quản lý lớp học",
+       "Kiến thức chuyên môn"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       17,
+       19,
+       22,
+       25
+      ],
+      "rationale": "Tận dụng sự ổn định hiện có trong khi nâng cao năng suất.",
+      "actionStepNow": "Học cách sử dụng ChatGPT để soạn giáo án và tạo đề kiểm tra."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "EdTech Content Specialist",
+      "pathTitleVi": "Chuyên gia nội dung EdTech",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Chuyển sang làm nội dung cho các công ty EdTech tại Đà Nẵng hoặc remote.",
+      "targetRoles": [
+       "Content Strategist",
+       "Learning Designer"
+      ],
+      "skillsToAcquire": [
+       "Digital Marketing",
+       "UX Writing",
+       "AI Content Tools"
+      ],
+      "transferableSkills": [
+       "Viết lách",
+       "Tư duy sư phạm"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       30,
+       38,
+       45
+      ],
+      "rationale": "Thị trường EdTech đang phát triển mạnh tại Việt Nam.",
+      "actionStepNow": "Xây dựng portfolio các bài viết về giáo dục ứng dụng công nghệ."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Corporate Trainer & AI Coach",
+      "pathTitleVi": "Chuyên gia đào tạo doanh nghiệp",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Trở thành người đào tạo kỹ năng AI cho nhân viên văn phòng.",
+      "targetRoles": [
+       "Corporate Trainer",
+       "AI Adoption Consultant"
+      ],
+      "skillsToAcquire": [
+       "Public Speaking",
+       "AI Workflow Automation",
+       "Change Management"
+      ],
+      "transferableSkills": [
+       "Giao tiếp",
+       "Truyền cảm hứng"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       25,
+       35,
+       45,
+       55,
+       70
+      ],
+      "rationale": "Nhu cầu đào tạo AI trong doanh nghiệp Việt Nam đang rất lớn.",
+      "actionStepNow": "Tham gia các khóa học chứng chỉ về AI ứng dụng trong doanh nghiệp."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "AI Literacy Foundation",
+      "phaseNameVi": "Nền tảng AI",
+      "title": "Làm chủ công cụ AI cơ bản",
+      "titleVi": "Làm chủ công cụ AI cơ bản",
+      "estimatedHours": 40,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "ChatGPT/Claude usage",
+       "AI Ethics"
+      ],
+      "freeResources": {
+       "name": "Google AI Essentials",
+       "provider": "Coursera/Google",
+       "url": "https://www.coursera.org",
+       "type": "Course"
+      },
+      "checkpointQuiz": {
+       "question": "Tại sao việc kiểm chứng (fact-check) kết quả từ AI lại quan trọng đối với giáo viên?",
+       "options": [
+        "Vì AI luôn đúng",
+        "Vì AI có thể tạo ra thông tin sai lệch (hallucination)",
+        "Vì AI không biết tiếng Việt",
+        "Vì AI quá chậm"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI có thể tạo ra thông tin nghe rất thuyết phục nhưng không chính xác, giáo viên cần dùng tư duy phản biện để kiểm chứng."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied AI in Education",
+      "phaseNameVi": "Ứng dụng AI trong giáo dục",
+      "title": "Xây dựng dự án EdTech cá nhân",
+      "titleVi": "Xây dựng dự án EdTech cá nhân",
+      "estimatedHours": 60,
+      "weeksDuration": 12,
+      "skillsCovered": [
+       "Content Strategy",
+       "AI-assisted Lesson Design",
+       "Portfolio Building"
+      ],
+      "freeResources": {
+       "name": "Khan Academy AI for Educators",
+       "provider": "Khan Academy",
+       "url": "https://www.khanacademy.org",
+       "type": "Resource"
+      },
+      "checkpointQuiz": {
+       "question": "Cách tốt nhất để sử dụng AI trong thiết kế bài giảng là gì?",
+       "options": [
+        "Để AI làm hết mọi thứ",
+        "Dùng AI làm trợ lý soạn thảo và bạn là người biên tập cuối cùng",
+        "Không bao giờ dùng AI",
+        "Chỉ dùng AI để copy bài của người khác"
+       ],
+       "correctIndex": 1,
+       "explanation": "Mô hình 'Human-in-the-loop' giúp bạn tận dụng tốc độ của AI và sự tinh tế của con người."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 7057,
+  "latencyMs": 9283
+ }
+}

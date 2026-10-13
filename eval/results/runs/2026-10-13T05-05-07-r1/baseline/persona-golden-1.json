@@ -1,0 +1,299 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8332,
+  "latencyMs": 10240,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024996
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Art Director & Brand Experience Specialist",
+    "roleTitleVi": "Giám đốc Nghệ thuật AI & Chuyên gia Trải nghiệm Thương hiệu",
+    "aiResilienceScore": 82,
+    "matchScore": 95,
+    "reasoning": "Mặc dù các công cụ tạo ảnh tự động tạo ra áp lực lớn đối với công việc vẽ minh họa cơ bản, vai trò Giám đốc Nghệ thuật có khả năng chống chịu cao nhờ đòi hỏi năng lực định hướng thẩm mỹ độc bản, thấu cảm sâu sắc với brief thương hiệu và khả năng ra quyết định chiến lược — những yếu tố thuộc vùng biên giới công nghệ mà AI chưa thể thay thế hoàn toàn [Oxford Martin School, 2017; Harvard Business School & BCG, 2023]. Theo Báo cáo Lao động TopCV 2024, các vị trí kết hợp kỹ năng sáng tạo cốt lõi với khả năng vận hành công cụ tạo sinh (Midjourney, Stable Diffusion) đang ghi nhận mức tăng trưởng thu nhập 28-35%.",
+    "whyItFitsYou": "Với nền tảng Cử nhân Thiết kế Đồ họa từ Đại học Kiến Trúc TP.HCM, cảm quan màu sắc - bố cục tốt cùng năng lực thấu cảm thương hiệu, bạn sở hữu bệ phóng vững chắc để chuyển dịch từ người thực thi thủ công sang người định hướng sáng tạo. Các điểm yếu về lập trình hay số liệu định lượng không phải là rào cản lớn do vai trò này ưu tiên trực giác thẩm mỹ và khả năng quản trị quy trình prompt nâng cao.",
+    "transferableSkillsMatch": [
+     "Cảm quan màu sắc và bố cục thị giác",
+     "Thấu hiểu brief và nhu cầu khách hàng",
+     "Tư duy thương hiệu và bản sắc độc bản",
+     "Sử dụng thành thạo Adobe Creative Suite"
+    ],
+    "skillsGap": [
+     "Quy trình kiểm soát và xây dựng Prompt AI nâng cao",
+     "Tư duy định lượng và đo lường hiệu quả thiết kế",
+     "Quản trị dự án tích hợp công nghệ AI"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking, AI literacy, and systems leadership are the highest-demanded upskilling priorities across Southeast Asia."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024-2026",
+      "source": "TopCV Vietnam & GSO",
+      "year": "2024",
+      "url": "https://topcv.vn",
+      "quoteOrDataPoint": "AI Operations Coordinator and Prompt & Product Specialist salaries increased by 28-35% as traditional manual design tasks contract."
+     },
+     {
+      "paperTitle": "How People Can Create—and Destroy—Value with Generative AI",
+      "source": "Harvard Business School & Boston Consulting Group (BCG)",
+      "year": "2023",
+      "url": "https://www.hbs.edu",
+      "quoteOrDataPoint": "Consultants using AI completed 12.2% more tasks, 25.1% faster, with 40% higher quality on complex creative and problem-solving assignments."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Graphic Designers and Illustrators",
+     "occupationTitleVi": "Nhà thiết kế đồ họa và họa sĩ minh họa",
+     "molisaCode": "2166",
+     "onetCode": "27-1024.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 38,
+     "augmentationPotentialScore": 62,
+     "humanAdvantageCore": [
+      "Định hướng phong cách độc bản",
+      "Thấu cảm tâm lý khách hàng và ý nghĩa thương hiệu",
+      "Đánh giá và kiểm duyệt chất lượng thẩm mỹ cuối cùng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Conceptualizing original brand visual directions and moodboards",
+       "taskNameVi": "Xây dựng định hướng hình ảnh thương hiệu độc bản và moodboard",
+       "exposureType": "augmentation",
+       "exposurePercentage": 35,
+       "onetCode": "27-1024.00",
+       "notes": "Sử dụng AI tạo sinh để thử nghiệm hàng loạt concept nhanh chóng nhưng cốt lõi thẩm mỹ và quyết định thuộc về con người."
+      },
+      {
+       "taskName": "Translating complex client briefs into emotional brand narratives",
+       "taskNameVi": "Chuyển hóa brief phức tạp thành câu chuyện thương hiệu mang tính cảm xúc",
+       "exposureType": "augmentation",
+       "exposurePercentage": 20,
+       "onetCode": "27-1024.00",
+       "notes": "Đòi hỏi kỹ năng lắng nghe thấu cảm và trực giác thẩm mỹ cao — vùng an toàn trước tự động hóa."
+      },
+      {
+       "taskName": "Routine vector rendering and basic stock asset preparation",
+       "taskNameVi": "Vẽ vector định hình thông thường và chuẩn bị tài nguyên stock cơ bản",
+       "exposureType": "automation",
+       "exposurePercentage": 75,
+       "onetCode": "27-1024.00",
+       "notes": "Phần lớn các tác vụ vẽ kỹ thuật lặp đi lặp lại được tối ưu hóa hoặc tự động hóa hoàn toàn bởi công cụ."
+      }
+     ],
+     "sources": [
+      "OpenAI / OpenResearch (2023)",
+      "World Economic Forum (2023)",
+      "TopCV & GSO Vietnam (2024)"
+     ],
+     "methodologySummary": "Đánh giá mức độ phơi nhiễm tác vụ dựa trên khung phân tích O*NET kết hợp dữ liệu tuyển dụng thực tế tại thị trường Việt Nam.",
+     "uncertaintyRange": "+/- 6%",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Graphic Designer",
+      "pathTitleVi": "Nhà thiết kế đồ họa cao cấp tích hợp AI",
+      "feasibilityScore": 92,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tận dụng công cụ GenAI để nhân đôi năng suất thiết kế, tối ưu quy trình sản xuất ấn phẩm và chuyển dịch lên các dự án branding tầm cỡ.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "Visual Content Lead"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering nâng cao cho Midjourney/Stable Diffusion",
+       "Tối ưu hóa workflow Adobe Firefly",
+       "Quản trị dự án thiết kế tốc độ cao"
+      ],
+      "transferableSkills": [
+       "Bố cục",
+       "Màu sắc",
+       "Typography",
+       "Thấu hiểu khách hàng"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       28,
+       35,
+       42
+      ],
+      "rationale": "Giữ vững chuyên môn cốt lõi nhưng nâng cấp năng suất thông qua công nghệ giúp duy trì tính ổn định và thu nhập tốt trong ngắn hạn.",
+      "actionStepNow": "Thử nghiệm tích hợp Adobe Firefly và Midjourney vào 3 dự án thiết kế cá nhân gần nhất để rút ngắn 30% thời gian lên concept."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Art Director & Brand Experience Specialist",
+      "pathTitleVi": "Giám đốc Nghệ thuật AI & Chuyên gia Trải nghiệm Thương hiệu",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển dịch sang định hướng chiến lược hình ảnh, kiểm soát toàn bộ hệ thống nhận diện thương hiệu được hỗ trợ bởi công nghệ AI.",
+      "targetRoles": [
+       "AI Art Director",
+       "Brand Experience Manager"
+      ],
+      "skillsToAcquire": [
+       "Chiến lược thương hiệu số",
+       "Quản trị quy trình AI Art Direction",
+       "Đo lường hiệu quả thiết kế qua số liệu cơ bản"
+      ],
+      "transferableSkills": [
+       "Tư duy thẩm mỹ",
+       "Lắng nghe brief",
+       "Cảm quan thương hiệu"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       34,
+       45,
+       58
+      ],
+      "rationale": "Đáp ứng đúng xu hướng thị trường khi các doanh nghiệp tại TP.HCM đang tìm kiếm nhân sự có khả năng kết hợp tư duy nghệ thuật truyền thống với công nghệ mới.",
+      "actionStepNow": "Xây dựng portfolio gồm 3 case study thể hiện rõ quy trình từ brief khách hàng đến việc ứng dụng AI kiểm soát concept độc bản."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "UI/UX & Product Design Specialist",
+      "pathTitleVi": "Chuyên gia Thiết kế Giao diện & Trải nghiệm Người dùng (UI/UX)",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Chuyển hẳn sang lĩnh vực thiết kế sản phẩm số, tập trung vào nghiên cứu hành vi người dùng và giải quyết bài toán trải nghiệm.",
+      "targetRoles": [
+       "UI/UX Designer",
+       "Product Designer"
+      ],
+      "skillsToAcquire": [
+       "Nghiên cứu người dùng (User Research)",
+       "Thiết kế Wireframe & Prototyping trên Figma",
+       "Cơ bản về tư duy thiết kế hệ thống số (Design System)"
+      ],
+      "transferableSkills": [
+       "Tư duy thị giác",
+       "Bố cục",
+       "Màu sắc",
+       "Sự tỉ mỉ"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       30,
+       42,
+       55
+      ],
+      "rationale": "UI/UX là lĩnh vực có khả năng chống chịu cao trước tự động hóa vì đòi hỏi sự thấu cảm sâu sắc với hành vi con người và tư duy giải quyết vấn đề.",
+      "actionStepNow": "Khảo sát khóa học Figma cơ bản và thực hiện một đồ án thiết kế ứng dụng di động nhỏ trong vòng 4 tuần tới."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Workflow Upgrade",
+      "phaseNameVi": "Nền tảng & Nâng cấp Quy trình",
+      "title": "Mastering GenAI Tools for Graphic Design",
+      "titleVi": "Làm chủ Công cụ Tạo sinh cho Thiết kế Đồ họa",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Midjourney Prompt Crafting",
+       "Adobe Firefly Integration",
+       "Workflow Optimization"
+      ],
+      "freeResources": [
+       {
+        "name": "Midjourney Documentation & Community Guides",
+        "provider": "Midjourney",
+        "url": "https://docs.midjourney.com",
+        "type": "Documentation"
+       },
+       {
+        "name": "Adobe Firefly Tutorials",
+        "provider": "Adobe",
+        "url": "https://www.adobe.com/products/firefly.html",
+        "type": "Video Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng Midjourney để tạo concept thương hiệu, phương pháp nào giúp duy trì sự nhất quán về phong cách (style consistency) hiệu quả nhất?",
+       "options": [
+        "Chỉ viết câu lệnh dài mô tả chi tiết bằng tiếng Việt.",
+        "Sử dụng tham số --sref (Style Reference) kết hợp hình ảnh mẫu gốc của thương hiệu.",
+        "Tạo ngẫu nhiên các ảnh và chọn tấm đẹp nhất không cần theo quy chuẩn.",
+        "Chỉ sử dụng tính năng upscale mặc định."
+       ],
+       "correctIndex": 1,
+       "explanation": "Tham số --sref (Style Reference) trong các mô hình AI hiện đại cho phép truyền tải phong cách trực quan từ ảnh mẫu, đảm bảo tính nhất quán cho bộ nhận diện thương hiệu."
+      }
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Strategic Direction & Portfolio",
+      "phaseNameVi": "Định hướng Chiến lược & Hồ sơ Năng lực",
+      "title": "Building AI Art Direction Portfolio",
+      "titleVi": "Xây dựng Hồ sơ Giám đốc Nghệ thuật AI",
+      "estimatedHours": 48,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Brand Narrative Design",
+       "AI Art Direction Workflow",
+       "Case Study Storytelling"
+      ],
+      "freeResources": [
+       {
+        "name": "Behance Brand Identity Curations",
+        "provider": "Behance",
+        "url": "https://www.behance.net",
+        "type": "Case Study Inspiration"
+       },
+       {
+        "name": "The Future Briefs & Design Strategy",
+        "provider": "The Futur",
+        "url": "https://thefutur.com",
+        "type": "Educational Resource"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Điểm khác biệt cốt lõi giữa một 'Graphic Designer truyền thống' và một 'AI Art Director' trong dự án branding là gì?",
+       "options": [
+        "AI Art Director không cần biết sử dụng phần mềm đồ họa.",
+        "AI Art Director tập trung vào định hướng chiến lược hình ảnh, quản trị quy trình tạo sinh và kiểm soát bản sắc độc bản.",
+        "AI Art Director chỉ làm việc với khách hàng lớn.",
+        "AI Art Director tự động hóa 100% công việc mà không cần con người can thiệp."
+       ],
+       "correctIndex": 1,
+       "explanation": "AI Art Director không chỉ thực hiện vẽ mà đóng vai trò nhà chiến lược định hướng phong cách, kiểm soát chất lượng và thổi hồn cảm xúc độc bản vào sản phẩm."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 8113,
+  "latencyMs": 10240
+ }
+}

@@ -1,0 +1,470 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 1,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10601,
+  "latencyMs": 24589,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0031802999999999996
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Precision Agriculture Data Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu Nông nghiệp Chính xác",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "Your 15 years of field experience combined with drone operation skills provide a unique 'ground-truth' advantage that AI cannot replicate. By transitioning into data-driven agriculture, you leverage your domain expertise to interpret AI-generated insights, moving from manual labor to high-value decision support.",
+    "whyItFitsYou": "You already understand the seasonal cycles and local market dynamics of Can Tho. Your willingness to learn technology is your greatest asset. By focusing on data analysis, you can turn your drone data into actionable crop health reports, which is a high-growth niche in Vietnam's agricultural sector.",
+    "transferableSkillsMatch": [
+     "Field-level crop management",
+     "Drone operation and maintenance",
+     "Local market supply chain knowledge",
+     "Basic financial record keeping"
+    ],
+    "skillsGap": [
+     "Data visualization and dashboarding",
+     "Agricultural data interpretation",
+     "English for technical documentation",
+     "Advanced digital marketing analytics"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV / Navigos Group",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "Salaries for data-centric roles in transforming sectors increased by 28-35%."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights",
+      "Executive stakeholder alignment & persuasion",
+      "Problem framing & translating ambiguous business pains into metrics",
+      "Ethical governance of data pipelines"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Analyzing drone imagery for crop health metrics",
+       "taskNameVi": "Phân tích hình ảnh drone để đánh giá sức khỏe cây trồng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 60,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI processes raw imagery; you validate the findings against real-world field conditions."
+      },
+      {
+       "taskName": "Creating yield prediction dashboards for local farmers",
+       "taskNameVi": "Tạo bảng điều khiển dự báo năng suất cho nông dân địa phương",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Use BI tools to visualize seasonal trends based on your historical data."
+      },
+      {
+       "taskName": "Consulting on precision farming strategies",
+       "taskNameVi": "Tư vấn chiến lược canh tác chính xác",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires your 15 years of experience to interpret data in the context of Can Tho's climate."
+      }
+     ],
+     "methodologySummary": "Based on Stanford HAI and TopCV labor market indices, focusing on high-augmentation roles.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Enabled Farmer",
+      "pathTitleVi": "Nông dân ứng dụng công nghệ cao",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Enhance current farming with data tools.",
+      "targetRoles": [
+       "Precision Farm Manager"
+      ],
+      "skillsToAcquire": [
+       "Data visualization",
+       "Basic SQL"
+      ],
+      "transferableSkills": [
+       "Crop management",
+       "Drone operation"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       22
+      ],
+      "rationale": "Leverages existing assets while adding high-value data skills.",
+      "actionStepNow": "Start using a digital farm management app to log daily activities."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agri-Tech Consultant",
+      "pathTitleVi": "Tư vấn viên Nông nghiệp Công nghệ",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Consult for local cooperatives on tech adoption.",
+      "targetRoles": [
+       "Agri-Tech Advisor"
+      ],
+      "skillsToAcquire": [
+       "Data analysis",
+       "Public speaking"
+      ],
+      "transferableSkills": [
+       "Local market knowledge",
+       "Practical farming experience"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       10,
+       15,
+       20,
+       25,
+       30
+      ],
+      "rationale": "High demand for experts who can bridge the gap between tech and traditional farmers.",
+      "actionStepNow": "Join local agricultural forums and offer to share your drone experience."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Data Analyst for Agri-Business",
+      "pathTitleVi": "Chuyên viên phân tích dữ liệu nông nghiệp",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Full transition to corporate data roles.",
+      "targetRoles": [
+       "Data Analyst"
+      ],
+      "skillsToAcquire": [
+       "Advanced SQL",
+       "Python",
+       "English"
+      ],
+      "transferableSkills": [
+       "Domain knowledge",
+       "Problem solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       12,
+       18,
+       25,
+       35
+      ],
+      "rationale": "Requires significant upskilling but offers highest long-term ceiling.",
+      "actionStepNow": "Begin English and basic data courses on Coursera."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Nền tảng",
+      "title": "Digital Literacy & English Basics",
+      "titleVi": "Kỹ năng số và Tiếng Anh cơ bản",
+      "estimatedHours": 144,
+      "weeksDuration": 12,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "English",
+       "Data basics"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Kaggle Learn micro-courses",
+        "provider": "Kaggle",
+        "url": "https://www.kaggle.com/learn",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is best for visualizing agricultural data trends?",
+       "options": [
+        "Microsoft Excel/Power BI",
+        "A physical notebook",
+        "A drone remote controller",
+        "A social media post"
+       ],
+       "correctIndex": 0,
+       "explanation": "Excel and Power BI are industry standards for analyzing and visualizing data trends."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869279579_fs8j7m",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:27:59.579Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:27:59.579Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân ứng dụng công nghệ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:27:59.579Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:28:01.419Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 531,
+     "latencyMs": 1840
+    },
+    {
+     "ts": "2026-10-13T05:28:01.419Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "agricultural specialist",
+       "farm manager",
+       "agri-tech operator"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited weekly hours available",
+       "language barrier in English"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:01.419Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 717,
+     "latencyMs": 1352,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "farm manager"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agri-tech operator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.771Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "precision agriculture Vietnam digital transformation Mekong Delta automation"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.772Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.772Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "precision agriculture data analysis Vietnam free courses"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:02.772Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:09.662Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 3105,
+     "latencyMs": 6359,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:28:09.662Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:09.662Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:28:24.168Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6014,
+     "latencyMs": 8757
+    },
+    {
+     "ts": "2026-10-13T05:28:24.168Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:28:24.168Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 10367,
+   "latencyMs": 24589,
+   "degraded": false
+  }
+ }
+}

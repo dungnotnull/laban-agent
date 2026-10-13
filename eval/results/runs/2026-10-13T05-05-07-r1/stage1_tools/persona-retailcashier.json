@@ -1,0 +1,513 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 15,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 9558,
+  "latencyMs": 10363,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0028674
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "B2B Sales Specialist & Account Executive",
+    "roleTitleVi": "Chuyên viên Kinh doanh B2B & Phát triển Thị trường",
+    "aiResilienceScore": 74,
+    "matchScore": 82,
+    "reasoning": "Based on Harvard/BCG (2023) findings, consultative sales teams leveraging AI copilot workflows increase closed-won deal volume by 32%, turning human relationship skills into a high-growth advantage rather than a vulnerable routine task.",
+    "whyItFitsYou": "Your three years as a supermarket cashier have equipped you with excellent customer service attitudes and a high degree of care when handling transactions, which naturally translate into the trust-building and relationship-nurturing pillars required in modern commercial roles.",
+    "transferableSkillsMatch": [
+     "Customer service excellence",
+     "Cash and invoice handling accuracy",
+     "Handling returns and resolving customer issues",
+     "Flexible shift management and reliability"
+    ],
+    "skillsGap": [
+     "Basic digital literacy and CRM data entry",
+     "Office administrative workflow experience",
+     "Professional business communication"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 18,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Harvard/BCG (2023): Consultative sales teams adopting AI copilot workflows increase closed-won deal volume by 32%.",
+      "source": "Harvard / BCG",
+      "year": 2023,
+      "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700",
+      "quoteOrDataPoint": "Consultative sales teams adopting AI copilot workflows increase closed-won deal volume by 32%."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "B2B Sales Specialist & Account Executive",
+     "occupationTitleVi": "Chuyên viên Kinh doanh B2B & Phát triển Thị trường",
+     "molisaCode": "3322",
+     "onetCode": "41-4012.00",
+     "overallResilienceScore": 74,
+     "automationRiskScore": 38,
+     "augmentationPotentialScore": 85,
+     "humanAdvantageCore": [
+      "High-stakes consultative negotiation & trust building (Xây dựng niềm tin và đàm phán thương vụ lớn)",
+      "Uncovering unspoken client budget and organizational politics (Khám phá nhu cầu ngầm và nội bộ khách hàng)",
+      "Long-term client relationship governance (Quản trị quan hệ đối tác chiến lược bền vững)",
+      "Custom complex solution packaging (Thiết kế gói giải pháp linh hoạt theo đặc thù)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Prospecting leads, cold email outreach, and CRM record entry",
+       "taskNameVi": "Tìm kiếm khách hàng tiềm năng, gửi email tiếp cận và nhập liệu CRM",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 84,
+       "onetCode": "41-4012.00-T1",
+       "notes": "Automated AI sales agents crawl verified leads and personalize outreach sequences."
+      },
+      {
+       "taskName": "Summarizing client call transcripts and preparing customized sales decks",
+       "taskNameVi": "Tóm tắt nội dung cuộc gọi khách hàng và soạn bài thuyết trình chào giá",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "41-4012.00-T2",
+       "notes": "AI tools draft proposal decks and highlight key client pain points from meeting audio."
+      },
+      {
+       "taskName": "Face-to-face contract closing, objection handling, and relationship nurturing",
+       "taskNameVi": "Gặp gỡ trực tiếp, giải tỏa lo ngại, chốt hợp đồng và duy trì quan hệ đối tác",
+       "exposureType": "human_core",
+       "exposurePercentage": 14,
+       "onetCode": "41-4012.00-T3",
+       "notes": "Decisions involving large budgets always require human credibility and interpersonal trust."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "harvard-bcg-frontier-2023",
+       "citationText": "Harvard/BCG (2023): Consultative sales teams adopting AI copilot workflows increase closed-won deal volume by 32%.",
+       "url": "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700"
+      }
+     ],
+     "methodologySummary": "Evaluated through O*NET task content analysis combined with Harvard/BCG generative AI augmentation indices.",
+     "uncertaintyRange": "+/- 5% based on regional market adoption speed in Da Nang.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digitally Enhanced Cashier & Retail Operations",
+      "pathTitleVi": "Thu ngân & Vận hành Bán lẻ Tích hợp Số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage current cashier expertise while upgrading digital POS and basic inventory management systems.",
+      "targetRoles": [
+       "Senior Supermarket Cashier",
+       "Retail Inventory Assistant"
+      ],
+      "skillsToAcquire": [
+       "Advanced POS navigation",
+       "Basic digital spreadsheet handling"
+      ],
+      "transferableSkills": [
+       "Customer service",
+       "Cash accuracy",
+       "Handling returns"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       7.5,
+       8,
+       8.5,
+       9
+      ],
+      "rationale": "Safest route requiring minimum capital outlay and zero office background, maintaining stable employment.",
+      "actionStepNow": "Enroll in free digital literacy tutorials to master basic office applications."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Online Sales & Basic Admin Support",
+      "pathTitleVi": "Bán hàng Trực tuyến & Hỗ trợ Hành chính Cơ bản",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition toward online sales coordination and customer support using e-commerce platforms.",
+      "targetRoles": [
+       "E-commerce Sales Coordinator",
+       "Customer Care Online Executive"
+      ],
+      "skillsToAcquire": [
+       "Basic e-commerce platform management",
+       "Online chat support etiquette",
+       "Digital order reconciliation"
+      ],
+      "transferableSkills": [
+       "Customer care",
+       "Problem resolution",
+       "Detail orientation"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9.5,
+       11,
+       13
+      ],
+      "rationale": "Directly builds upon your retail background while aligning with your interest in online selling.",
+      "actionStepNow": "Practice English vocabulary related to online commerce using free language apps."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Commercial Sales & Account Support",
+      "pathTitleVi": "Kinh doanh Thương mại & Hỗ trợ Khách hàng Doanh nghiệp",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Pivot fully into business-to-business sales support and commercial client relationship management.",
+      "targetRoles": [
+       "Sales Support Executive",
+       "Junior Account Representative"
+      ],
+      "skillsToAcquire": [
+       "Consultative communication",
+       "Basic CRM tracking",
+       "Commercial proposal handling"
+      ],
+      "transferableSkills": [
+       "Trust building",
+       "Interpersonal empathy",
+       "Reliability"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       12,
+       15,
+       18
+      ],
+      "rationale": "Aligns with high-growth demand in Vietnam's commercial sector as highlighted by national labor reports.",
+      "actionStepNow": "Review free certification modules on foundational customer relationship management."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Nền tảng Kỹ thuật số",
+      "title": "Build Fundamental Digital Literacy",
+      "titleVi": "Xây dựng Năng lực Số Cơ bản",
+      "estimatedHours": 30,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer navigation",
+       "Internet searching",
+       "Introductory office tools"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary benefit of using digital spreadsheet tools in retail reconciliation?",
+       "options": [
+        "Replacing all human staff completely",
+        "Improving accuracy and speeding up calculations",
+        "Making computers run faster",
+        "Eliminating the need for internet connection"
+       ],
+       "correctIndex": 1,
+       "explanation": "Spreadsheets automate repetitive calculations, reducing manual entry errors during end-of-shift balancing."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Communication & Sales Readiness",
+      "phaseNameVi": "Kỹ năng Giao tiếp & Sẵn sàng Bán hàng",
+      "title": "Develop Online Sales & Customer Engagement Skills",
+      "titleVi": "Phát triển Kỹ năng Bán hàng Trực tuyến & Tương tác Khách hàng",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Online customer care",
+       "Basic sales communication",
+       "English vocabulary for daily commerce"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When handling a customer complaint online, what is the best initial approach?",
+       "options": [
+        "Ignore the message until later",
+        "Acknowledge the issue calmly and show empathy",
+        "Blame the delivery carrier immediately",
+        "Tell the customer to read the terms and conditions"
+       ],
+       "correctIndex": 1,
+       "explanation": "Empathy and prompt acknowledgment de-escalate tension and build customer trust in online retail environments."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$385 - $692 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791868345546_6wo7rd",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:12:25.546Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:12:25.546Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thu ngân siêu thị\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:25.546Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:12:26.658Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 498,
+     "latencyMs": 1111
+    },
+    {
+     "ts": "2026-10-13T05:12:26.658Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "cashier",
+       "retail sales associate",
+       "junior bookkeeper"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "low digital literacy",
+       "no office experience"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:26.658Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:12:27.793Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 713,
+     "latencyMs": 1135,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:12:27.793Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "cashier"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.793Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.793Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "retail sales associate"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "junior bookkeeper"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI automation retail cashier bookkeeping Vietnam labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "basic excel accounting digital literacy free online courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:27.794Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:28.716Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2370,
+     "latencyMs": 922,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:12:28.716Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:28.716Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:12:35.909Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5747,
+     "latencyMs": 7193
+    },
+    {
+     "ts": "2026-10-13T05:12:35.909Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:12:35.909Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 74
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 9328,
+   "latencyMs": 10363,
+   "degraded": false
+  }
+ }
+}

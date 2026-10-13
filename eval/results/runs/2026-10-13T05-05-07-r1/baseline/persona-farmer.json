@@ -1,0 +1,267 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7769,
+  "latencyMs": 8409,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023307
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Clean Agriculture Production Specialist",
+    "roleTitleVi": "Chuyên gia Sản xuất Nông nghiệp Sạch",
+    "aiResilienceScore": 92,
+    "matchScore": 88,
+    "reasoning": "Theo nghiên cứu của Oxford Martin School (2017) và ILO (2023), các công việc đòi hỏi thao tác vật lý phi cấu trúc và tương tác trực tiếp với môi trường tự nhiên có khả năng chống chịu cao trước sự tự động hóa của AI. Với 20 năm kinh nghiệm trồng lúa tại An Giang và mong muốn làm nông nghiệp sạch, người lao động sở hữu lợi thế cốt lõi về sự kiên cường và hiểu biết thực tế địa phương mà AI chưa thể thay thế.",
+    "whyItFitsYou": "Công việc này tận dụng tối đa kinh nghiệm lâu năm về quản lý nước và canh tác lúa của bạn, đồng thời định hướng sang mô hình nông nghiệp sạch để thoát khỏi sự phụ thuộc vào thương lái và gia tăng giá trị sản phẩm.",
+    "transferableSkillsMatch": [
+     "Quản lý nước ruộng",
+     "Kinh nghiệm canh tác lúa theo mùa",
+     "Khả năng chịu đựng điều kiện khắc nghiệt"
+    ],
+    "skillsGap": [
+     "Kỹ thuật canh tác lúa hữu cơ / giảm phát thải",
+     "Kỹ năng thương mại hóa và tiếp thị nông sản sạch",
+     "Sử dụng công cụ số cơ bản (Zalo, Facebook) để bán hàng"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/downloads/academic/future-of-employment.pdf",
+      "quoteOrDataPoint": "Occupations requiring unstructured physical dexterity and environmental adaptation remain highly resilient to automation."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality",
+      "source": "International Labour Organization (ILO)",
+      "year": "2023",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects",
+      "quoteOrDataPoint": "Localized agricultural services and physical farming operations remain largely insulated from generative AI substitution."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural and Horticultural Plant Growers",
+     "occupationTitleVi": "Người trồng trọt cây lương thực và cây công nghiệp",
+     "molisaCode": "6111",
+     "onetCode": "61-9011.00",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 8,
+     "augmentationPotentialScore": 65,
+     "humanAdvantageCore": [
+      "Kinh nghiệm thực tế ngoài đồng ruộng",
+      "Khả năng xử lý các tình huống thời tiết bất thường",
+      "Sự am hiểu đất đai địa phương An Giang"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Water management and irrigation control in paddy fields",
+       "taskNameVi": "Quản lý nước và điều tiết thủy lợi trên đồng ruộng",
+       "exposureType": "complemented",
+       "exposurePercentage": 20,
+       "onetCode": "61-9011.00",
+       "notes": "Ứng dụng các cảm biến mực nước đơn giản kết hợp với kinh nghiệm truyền thống để tiết kiệm nước."
+      },
+      {
+       "taskName": "Organic pest and fertilizer management",
+       "taskNameVi": "Quản lý sâu bệnh và phân bón hữu cơ",
+       "exposureType": "complemented",
+       "exposurePercentage": 25,
+       "onetCode": "61-9011.00",
+       "notes": "Kết hợp hướng dẫn kỹ thuật nông nghiệp sạch để giảm chi phí vật tư đầu vào."
+      },
+      {
+       "taskName": "Post-harvest processing and direct market linkage",
+       "taskNameVi": "Xử lý sau thu hoạch và liên kết tiêu thụ nông sản",
+       "exposureType": "human_centric",
+       "exposurePercentage": 10,
+       "onetCode": "61-9011.00",
+       "notes": "Xây dựng thương hiệu gạo sạch cá nhân để giảm bớt sự phụ thuộc vào thương lái truyền thống."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "ILO (2023)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khung phân rã nhiệm vụ O*NET kết hợp dữ liệu thị trường lao động nông nghiệp Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Upgrade traditional farming with sustainable methods",
+      "pathTitleVi": "Nâng cấp canh tác truyền thống sang lúa sạch giảm phát thải",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Áp dụng quy trình canh tác lúa giảm phát thải (1 phải 5 giảm) kết hợp thương mại hóa trực tiếp.",
+      "targetRoles": [
+       "Nông dân tiên phong sản xuất lúa sạch"
+      ],
+      "skillsToAcquire": [
+       "Kỹ thuật bón phân cân đối",
+       "Quản lý rơm rạ không đốt",
+       "Sử dụng Zalo để bán gạo"
+      ],
+      "transferableSkills": [
+       "Kinh nghiệm trồng lúa 20 năm",
+       "Quản lý đồng ruộng"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8.5,
+       10,
+       12,
+       15
+      ],
+      "rationale": "Tận dụng tối đa gốc rễ nông nghiệp hiện có, giảm chi phí đầu vào và tăng giá bán sản phẩm.",
+      "actionStepNow": "Tìm hiểu mô hình canh tác lúa giảm phát thải qua các chương trình khuyến nông địa phương tại An Giang."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural Produce Aggregator & Local Trader",
+      "pathTitleVi": "Nhà thu gom và phân phối nông sản sạch địa phương",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển từ người chỉ bán lúa thô sang người liên kết các hộ nông dân khác để cung cấp gạo sạch cho thị trường đô thị.",
+      "targetRoles": [
+       "Chủ cơ sở cung ứng nông sản sạch"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng đàm phán giá trị",
+       "Quản lý chất lượng gạo",
+       "Marketing nông sản qua mạng xã hội"
+      ],
+      "transferableSkills": [
+       "Am hiểu thị trường lúa gạo địa phương",
+       "Quan hệ rộng với nông dân An Giang"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8,
+       10,
+       13,
+       16,
+       20
+      ],
+      "rationale": "Giúp thoát khỏi sự chèn ép của thương lái truyền thống bằng cách tự xây dựng kênh tiêu thụ.",
+      "actionStepNow": "Kết nối với 3-5 hộ nông dân xung quanh cùng chí hướng sản xuất lúa sạch."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Local Agricultural Cooperative Manager",
+      "pathTitleVi": "Quản lý Hợp tác xã Nông nghiệp kiểu mới",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Tham gia ban quản trị hợp tác xã nông nghiệp địa phương để hỗ trợ bà con ứng dụng kỹ thuật và bao tiêu đầu ra.",
+      "targetRoles": [
+       "Cán bộ hợp tác xã",
+       "Điều phối viên vùng nguyên liệu"
+      ],
+      "skillsToAcquire": [
+       "Quản trị hợp tác xã",
+       "Lập kế hoạch sản xuất",
+       "Làm việc với doanh nghiệp lương thực lớn"
+      ],
+      "transferableSkills": [
+       "Uy tín cá nhân",
+       "Thấu hiểu đời sống nông dân"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       9,
+       11,
+       14,
+       18,
+       22
+      ],
+      "rationale": "Tạo ra giá trị quy mô lớn cho cộng đồng nông dân An Giang.",
+      "actionStepNow": "Tham gia các lớp tập huấn quản lý kinh tế tập thể do Hội Nông dân tỉnh An Giang tổ chức."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Sustainable Farming",
+      "phaseNameVi": "Nền tảng canh tác bền vững",
+      "title": "Mastering Low-Emission Rice Farming Techniques",
+      "titleVi": "Nắm vững kỹ thuật canh tác lúa sạch, giảm chi phí",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Kỹ thuật sạ hàng/sạ cụm",
+       "Quản lý nước ngập khô xen kẽ",
+       "Sử dụng phân hữu cơ"
+      ],
+      "freeResources": {
+       "name": "Khuyến nông An Giang & Cổng thông tin Khuyến nông Quốc gia",
+       "provider": "Bộ Nông nghiệp và PTNT",
+       "url": "https://www.khuyennongvn.gov.vn",
+       "type": "Government Extension Portal"
+      },
+      "checkpointQuiz": {
+       "question": "Phương pháp quản lý nước nào giúp tiết kiệm nước và giảm phát thải khí nhà kính trên ruộng lúa?",
+       "options": [
+        "Ngập nước liên tục từ lúc gieo sạ đến thu hoạch",
+        "Ngập khô xen kẽ (Alternate Wetting and Drying - AWD)",
+        "Bơm cạn nước hoàn toàn suốt vụ mùa",
+        "Để nước tự nhiên không cần điều tiết"
+       ],
+       "correctIndex": 1,
+       "explanation": "Phương pháp ngập khô xen kẽ (AWD) giúp tiết kiệm nước tưới đáng kể và giảm phát thải khí metan mà không làm giảm năng suất lúa."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Digital Connection & Direct Sales",
+      "phaseNameVi": "Kết nối số và Bán hàng trực tiếp",
+      "title": "Using Zalo & Basic Social Media to Sell Clean Rice",
+      "titleVi": "Sử dụng Zalo để tiếp cận khách hàng và thoát phụ thuộc thương lái",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Tạo tài khoản và nhóm Zalo bán hàng",
+       "Chụp ảnh/quay video gạo sạch đơn giản",
+       "Kỹ năng giao tiếp và tạo uy tín với người mua"
+      ],
+      "freeResources": {
+       "name": "Kỹ năng số cho người nông dân (Tài liệu phổ cập)",
+       "provider": "Bộ Thông tin và Truyền thông",
+       "url": "https://mic.gov.vn",
+       "type": "Public Digital Literacy Guide"
+      },
+      "checkpointQuiz": {
+       "question": "Công cụ nào phổ biến nhất tại Việt Nam giúp nông dân dễ dàng kết nối và bán hàng trực tiếp cho người quen, khách hàng gần xa mà không cần qua thương lái?",
+       "options": [
+        "Ứng dụng Zalo",
+        "Phần mềm lập trình Python",
+        "Công cụ phân tích dữ liệu Tableau",
+        "Hệ thống quản lý kho SAP"
+       ],
+       "correctIndex": 0,
+       "explanation": "Zalo là ứng dụng nhắn tin và mạng xã hội phổ biến nhất tại vùng nông thôn Việt Nam, rất phù hợp để tạo nhóm khách hàng mua nông sản sạch."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7517,
+  "latencyMs": 8409
+ }
+}

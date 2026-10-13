@@ -1,0 +1,553 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11387,
+  "latencyMs": 11550,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0034161
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Healthcare Data Specialist & Business Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Dữ liệu và Nghiệp vụ Y tế",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "As noted in Stanford HAI (2024), business analysts utilizing AI agents complete data workflows significantly faster with higher forecast accuracy. Grounded in the user's clinical background and experience with electronic medical records, this path leverages domain contextualization while automating routine tasks.",
+    "whyItFitsYou": "Your seven years of clinical nursing and electronic health record experience provide deep domain contextualization, which AI cannot replicate. Your problem-solving skills under pressure translate directly into framing business and operational problems within healthcare settings.",
+    "transferableSkillsMatch": [
+     "Electronic medical records navigation",
+     "Emergency response decision making",
+     "Patient communication and stakeholder alignment"
+    ],
+    "skillsGap": [
+     "SQL query formulation and data cleaning",
+     "Operational dashboard creation",
+     "Data governance and healthcare metrics"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 30,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "sourceId": "wef-future-of-jobs-2023-2025",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511 (Chuyên viên phân tích hệ thống và kinh doanh)",
+     "onetCode": "15-1211.00 (Computer Systems Analysts / Business Intelligence)",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Reviewing patient workflow logs and cleaning electronic record datasets",
+       "taskNameVi": "Xem xét nhật ký quy trình bệnh nhân và làm sạch dữ liệu hồ sơ điện tử",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Creating routine hospital operational dashboards and patient flow charts",
+       "taskNameVi": "Tạo dashboard vận hành bệnh viện và biểu đồ luồng bệnh nhân định kỳ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing clinical workflow hypotheses and consulting hospital leadership",
+       "taskNameVi": "Định hình giả thuyết quy trình lâm sàng và tư vấn ban giám đốc bệnh viện",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires clinical intuition, empathy, and nuanced risk management."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Evaluated using ONET task inventories, Stanford HAI productivity benchmarks, and MOLISA occupational frameworks.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital Nursing Operations Lead",
+      "pathTitleVi": "Trưởng nhóm Vận hành Điều dưỡng Số",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage your nursing background to manage digital health tools and electronic medical records within your current hospital setting.",
+      "targetRoles": [
+       "Điều dưỡng trưởng chuyên trách công nghệ",
+       "Quản lý hồ sơ bệnh án điện tử"
+      ],
+      "skillsToAcquire": [
+       "Advanced EHR system administration",
+       "AI-assisted clinical documentation"
+      ],
+      "transferableSkills": [
+       "Patient care",
+       "Emergency response",
+       "Clinical communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       13,
+       15,
+       17,
+       20
+      ],
+      "rationale": "Minimizes risk by utilizing existing clinical experience while incorporating digital tools.",
+      "actionStepNow": "Identify software tools currently used in your hospital and request extra training on electronic health record reporting."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Healthcare Data & Business Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Dữ liệu Y tế",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 8,
+      "shortDescription": "Transition into health-tech companies, hospitals' IT departments, or public health agencies as a data specialist.",
+      "targetRoles": [
+       "Clinical Data Analyst",
+       "Healthcare Business Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL basics",
+       "Power BI / Tableau",
+       "Data cleaning"
+      ],
+      "transferableSkills": [
+       "Domain knowledge",
+       "Problem framing",
+       "Attention to detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       19,
+       24,
+       30
+      ],
+      "rationale": "Blends deep clinical expertise with high-demand data analytics skills.",
+      "actionStepNow": "Enroll in free data fundamentals courses matching your 5 hours per week availability."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Health-Tech Specialist",
+      "pathTitleVi": "Chuyên gia Công nghệ Y tế Toàn diện",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Fully pivot away from clinical bedside work into technical health informatics and software product management.",
+      "targetRoles": [
+       "Health Informatics Specialist",
+       "Product Owner - Health Tech"
+      ],
+      "skillsToAcquire": [
+       "Python programming",
+       "Database management",
+       "Agile product development"
+      ],
+      "transferableSkills": [
+       "Medical domain expertise",
+       "Emergency problem solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       14,
+       20,
+       28,
+       38
+      ],
+      "rationale": "High upside but requires significant retraining outside your current budget and time constraints.",
+      "actionStepNow": "Explore introductory programming tutorials without leaving your current position."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & Foundation",
+      "phaseNameVi": "Nền tảng Kỹ năng Số cơ bản",
+      "title": "Build spreadsheet and digital literacy basics",
+      "titleVi": "Xây dựng nền tảng tin học văn phòng và kỹ năng số",
+      "estimatedHours": 20,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Spreadsheet navigation",
+       "Basic data organization",
+       "Digital workspace tools"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is standard for organizing tabular data and performing initial data cleaning?",
+       "options": [
+        "Spreadsheet software (Excel / Google Sheets)",
+        "Word processor",
+        "Presentation software",
+        "Email client"
+       ],
+       "correctIndex": 0,
+       "explanation": "Spreadsheet software is designed specifically for tabular data organization and preliminary cleaning."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied Analytics & Certification",
+      "phaseNameVi": "Phân tích Ứng dụng & Chứng chỉ",
+      "title": "Complete Google Career Certificates audit track for Data Analytics",
+      "titleVi": "Hoàn thành chương trình chứng chỉ dữ liệu Google (chế độ học thử miễn phí)",
+      "estimatedHours": 40,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "SQL basics",
+       "Data visualization",
+       "Business problem framing"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary purpose of data visualization in business analysis?",
+       "options": [
+        "To make reports colorful",
+        "To communicate complex insights clearly to stakeholders",
+        "To replace raw data storage",
+        "To slow down decision making"
+       ],
+       "correctIndex": 1,
+       "explanation": "Data visualization translates complex numbers into clear insights for decision makers."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $1,154 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly integrates the user's nursing role, electronic medical record skills, and emergency response strengths into a healthcare data analytics transition."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868648822_pab1dp",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:17:28.822Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:17:28.822Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều dưỡng viên\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:28.822Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:17:30.033Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 486,
+     "latencyMs": 1211
+    },
+    {
+     "ts": "2026-10-13T05:17:30.033Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Registered Nurse",
+       "Digital Health Specialist",
+       "Public Health Advisor"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "low time availability",
+       "shift work burnout"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:30.033Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 714,
+     "latencyMs": 1114,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Registered Nurse"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Digital Health Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Public Health Advisor"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.147Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "healthcare digital health AI Vietnam nursing career transition public health"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.148Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.148Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "public health digital health free online courses certificate Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:31.148Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:32.157Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3056,
+     "latencyMs": 1009,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:17:32.157Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:32.157Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:17:39.541Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6502,
+     "latencyMs": 7384
+    },
+    {
+     "ts": "2026-10-13T05:17:39.541Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:40.372Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 412,
+     "latencyMs": 831
+    },
+    {
+     "ts": "2026-10-13T05:17:40.372Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly integrates the user's nursing role, electronic medical record skills, and emergency response strengths into a healthcare data analytics transition."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:40.372Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11170,
+   "latencyMs": 11550,
+   "degraded": false
+  }
+ }
+}

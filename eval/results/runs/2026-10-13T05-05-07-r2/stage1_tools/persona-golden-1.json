@@ -1,0 +1,523 @@
+{
+ "score": {
+  "personaId": "persona-golden-1",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": false,
+  "actionable": true,
+  "usageTokens": 15130,
+  "latencyMs": 11745,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.004539
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI Visual Director & Brand Strategist",
+    "roleTitleVi": "Giám đốc Sáng tạo Hình ảnh & Chiến lược Thương hiệu AI",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "As generative diffusion models automate basic banner production and asset resizing, top-tier agencies in Ho Chi Minh City are aggressively hiring professionals who can orchestrate AI tools for high-concept art direction and strategic brand storytelling, as highlighted by TopCV Vietnam (2024).",
+    "whyItFitsYou": "Your strong foundation in visual branding from Ho Chi Minh City University of Architecture, combined with your keen aesthetic intuition and empathy for brand briefs, positions you perfectly to pivot from manual execution to high-level AI prompt direction and art direction.",
+    "transferableSkillsMatch": [
+     "Adobe Creative Suite (Photoshop, Illustrator)",
+     "Color theory and layout composition",
+     "Client brief analysis and brand empathy"
+    ],
+    "skillsGap": [
+     "Advanced prompt engineering workflows",
+     "AI art pipeline management",
+     "Design systems governance"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "TopCV Vietnam (2024): 42% drop in junior 2D banner designer job posts; 68% rise in \"AI Visual Director / UI-UX Lead\" roles with 30-50% higher salary.",
+      "source": "TopCV Vietnam",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "68% rise in AI Visual Director and related roles with 30-50% higher salary."
+     },
+     {
+      "paperTitle": "OpenAI/UPenn (2023): Visual arts & digital imaging task exposure estimated at 71.4% with generative diffusion models.",
+      "source": "OpenAI/UPenn",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Visual arts task exposure estimated at 71.4% with generative diffusion models."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Graphic & Visual Designer",
+     "occupationTitleVi": "Chuyên viên Thiết kế Đồ họa & Hình ảnh",
+     "molisaCode": "2166 (Nhà thiết kế đồ họa và truyền thông đa phương tiện)",
+     "onetCode": "27-1024.00 (Graphic Designers)",
+     "overallResilienceScore": 58,
+     "automationRiskScore": 72,
+     "augmentationPotentialScore": 86,
+     "humanAdvantageCore": [
+      "Original conceptual direction & brand storytelling (Định hướng ý tưởng & kể chuyện thương hiệu)",
+      "Client empathy, negotiation & stakeholder psychology (Thấu cảm khách hàng và đàm phán ý tưởng)",
+      "Cross-cultural Vietnamese aesthetic sensitivity (Cảm quan thẩm mỹ văn hóa bản địa)",
+      "Design systems architecture & multi-channel consistency (Kiến trúc hệ thống thiết kế nhất quán)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Creating stock social media banners and basic vector icons using Thảo's design principles",
+       "taskNameVi": "Tạo banner mạng xã hội dạng mẫu và icon vector cơ bản dựa trên nguyên lý thiết kế của Thảo",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 88,
+       "onetCode": "27-1024.00-T1",
+       "notes": "Heavily automated by Midjourney v6, Canva Magic Studio, Ideogram, and Adobe Firefly."
+      },
+      {
+       "taskName": "Generating initial moodboards and creative concept variations for Thảo's branding projects",
+       "taskNameVi": "Lập moodboard và tạo biến thể ý tưởng sáng tạo sơ bộ cho các dự án branding của Thảo",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 75,
+       "onetCode": "27-1024.00-T3",
+       "notes": "AI acts as a 10x brainstorming accelerator when directed by skilled art directors."
+      },
+      {
+       "taskName": "Strategic brand identity design and design systems governance incorporating Thảo's aesthetic intuition",
+       "taskNameVi": "Thiết kế nhận diện thương hiệu chiến lược và quản trị design system kết hợp trực giác thẩm mỹ của Thảo",
+       "exposureType": "human_core",
+       "exposurePercentage": 20,
+       "onetCode": "27-1024.00-T4",
+       "notes": "Requires deep corporate alignment, trademark distinctiveness, and business empathy."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "openai-upenn-2023",
+       "citationText": "OpenAI/UPenn (2023): Visual arts & digital imaging task exposure estimated at 71.4% with generative diffusion models.",
+       "url": "https://arxiv.org/abs/2303.10130"
+      },
+      {
+       "sourceId": "topcv-vietnamworks-labor-2024-2026",
+       "citationText": "TopCV Vietnam (2024): 42% drop in junior 2D banner designer job posts; 68% rise in \"AI Visual Director / UI-UX Lead\" roles with 30-50% higher salary.",
+       "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung"
+      }
+     ],
+     "methodologySummary": "Synthesized from O*NET task-level automation metrics and TopCV Vietnam labor market shifts, weighing augmentation potential against direct automation risk.",
+     "uncertaintyRange": "+/- 5% based on macroeconomic tech adoption speed in HCMC agencies.",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Graphic Designer",
+      "pathTitleVi": "Nhà thiết kế đồ họa ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Integrate advanced generative AI tools (Midjourney, Firefly) into your current workflow to triple your output speed on visual assets.",
+      "targetRoles": [
+       "Senior Graphic Designer",
+       "AI Creative Specialist"
+      ],
+      "skillsToAcquire": [
+       "Advanced Prompt Engineering",
+       "Generative Fill Workflows"
+      ],
+      "transferableSkills": [
+       "Adobe Suite",
+       "Color Theory",
+       "Composition"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       14,
+       18,
+       22,
+       26,
+       30
+      ],
+      "rationale": "Safest immediate step matching your moderate risk tolerance and utilizing your existing Adobe skills.",
+      "actionStepNow": "Enroll in a free prompt engineering module and test Firefly in your next client project."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Visual Director & Brand Strategist",
+      "pathTitleVi": "Giám đốc Sáng tạo Hình ảnh & Chiến lược AI",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Shift from manual execution to overseeing AI-generated brand campaigns and building cohesive multi-channel design systems.",
+      "targetRoles": [
+       "AI Art Director",
+       "Visual Brand Lead"
+      ],
+      "skillsToAcquire": [
+       "Design Systems Architecture",
+       "AI Asset Governance",
+       "Brand Storytelling Strategy"
+      ],
+      "transferableSkills": [
+       "Client Brief Empathy",
+       "Visual Aesthetics",
+       "Branding"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       28,
+       36,
+       45
+      ],
+      "rationale": "Directly captures the 68% rise in high-value AI creative roles in Ho Chi Minh City.",
+      "actionStepNow": "Build a portfolio case study demonstrating an end-to-end AI-assisted brand identity project."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Instructional Designer & EdTech Creator",
+      "pathTitleVi": "Chuyên gia Thiết kế Đào tạo & EdTech",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Leverage your visual design background to transition into creating AI-enhanced educational content and learning experiences.",
+      "targetRoles": [
+       "Instructional Designer",
+       "EdTech Content Lead"
+      ],
+      "skillsToAcquire": [
+       "Pedagogical Frameworks",
+       "Curriculum Design",
+       "Interactive Learning UI"
+      ],
+      "transferableSkills": [
+       "Visual Communication",
+       "Empathy",
+       "Structuring Information"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       28,
+       35
+      ],
+      "rationale": "Taps into the highly resilient education and training sector (+10% net growth) while utilizing your creative structuring skills.",
+      "actionStepNow": "Explore free instructional design frameworks and design a sample educational module layout."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Tool Mastery",
+      "phaseNameVi": "Nền tảng & Làm chủ Công cụ AI",
+      "title": "Mastering Generative AI for Visual Design",
+      "titleVi": "Làm chủ AI Tạo sinh cho Thiết kế Hình ảnh",
+      "estimatedHours": 36,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Midjourney v6",
+       "Adobe Firefly",
+       "Prompt Crafting for Brands"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       },
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary advantage of incorporating generative AI into a graphic designer's workflow?",
+       "options": [
+        "Replacing human creative direction entirely",
+        "Accelerating moodboarding and concept exploration by 10x",
+        "Eliminating the need for client communication",
+        "Automating tax reporting"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI acts as a powerful accelerator for brainstorming and generating initial concept variations, allowing designers to focus on high-level strategy and brand empathy."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Portfolio & Strategic Positioning",
+      "phaseNameVi": "Xây dựng Portfolio & Định vị Chiến lược",
+      "title": "AI-Assisted Brand Identity Case Studies",
+      "titleVi": "Xây dựng Case Study Nhận diện Thương hiệu ứng dụng AI",
+      "estimatedHours": 48,
+      "weeksDuration": 4,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Brand Systems Architecture",
+       "AI Art Direction",
+       "Client Presentation"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When presenting AI-generated brand assets to a client in Ho Chi Minh City, what should be emphasized?",
+       "options": [
+        "That a computer did all the work",
+        "The strategic brand storytelling and human curation behind the design",
+        "The exact prompt text used",
+        "That human designers are no longer needed"
+       ],
+       "correctIndex": 1,
+       "explanation": "Clients value the strategic brand storytelling, cultural sensitivity, and human curation that transforms raw AI output into a cohesive brand identity."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$962 - $1,731 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869032038_v7yyri",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:23:52.038Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:23:52.038Z",
+     "type": "run_start",
+     "message": "pipeline for \"Graphic Designer\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:52.038Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:23:53.164Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 696,
+     "latencyMs": 1126
+    },
+    {
+     "ts": "2026-10-13T05:23:53.164Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Graphic Designer",
+       "UI/UX Designer",
+       "Brand Designer"
+      ],
+      "riskFlags": [
+       "Limited budget for retraining",
+       "Avoids quantitative metrics"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:53.164Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 731,
+     "latencyMs": 1128,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Graphic Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "UI/UX Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Brand Designer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.292Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI impact graphic design UI UX Vietnam labor market McKinsey WEF"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.293Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.293Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "UI UX design brand design free courses Vietnam Ho Chi Minh City"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:54.293Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:55.783Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6382,
+     "latencyMs": 1490,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:23:55.783Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:23:55.783Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:24:03.782Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 7099,
+     "latencyMs": 7999
+    },
+    {
+     "ts": "2026-10-13T05:24:03.783Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:03.783Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 78
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 14908,
+   "latencyMs": 11745,
+   "degraded": false
+  }
+ }
+}

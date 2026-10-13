@@ -1,0 +1,546 @@
+{
+ "score": {
+  "personaId": "persona-electrician",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 9460,
+  "latencyMs": 36902,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.002838
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Industrial Automation Technician",
+    "roleTitleVi": "Kỹ thuật viên Tự động hóa công nghiệp",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "The transition from traditional electrical maintenance to automation is a natural progression. Evidence from RMIT University suggests that while Vietnam has a strong STEM base, there is a critical gap in applied skills. By leveraging your 10 years of field experience, you can bridge the gap between physical maintenance and digital control systems, which are increasingly AI-integrated.",
+    "whyItFitsYou": "Your deep experience with electrical panels and troubleshooting provides a solid foundation for understanding PLC logic. Your ability to work in shift-based environments is a major asset in high-tech manufacturing plants in Hai Phong that operate 24/7.",
+    "transferableSkillsMatch": [
+     "Electrical troubleshooting",
+     "Safety protocol adherence",
+     "Reading technical schematics",
+     "Field-based problem solving"
+    ],
+    "skillsGap": [
+     "PLC Programming (Siemens/Mitsubishi)",
+     "Technical English",
+     "Basic Industrial Robotics",
+     "Human-Machine Interface (HMI) configuration"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam's AI Readiness: Education and Labor Market Perspectives",
+      "source": "RMIT University Vietnam",
+      "year": 2023,
+      "url": "https://www.rmit.edu.vn/",
+      "quoteOrDataPoint": "Significant gap in applied AI skills and soft skills required for human-AI collaboration."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Industrial Automation Technician",
+     "occupationTitleVi": "Kỹ thuật viên Tự động hóa công nghiệp",
+     "molisaCode": "3114",
+     "onetCode": "17-3024.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 30,
+     "augmentationPotentialScore": 70,
+     "humanAdvantageCore": [
+      "Complex physical troubleshooting",
+      "Contextual decision making in hazardous environments",
+      "Interpersonal coordination with production teams"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "PLC Logic Debugging",
+       "taskNameVi": "Gỡ lỗi logic PLC",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "17-3024.00",
+       "notes": "Using AI-assisted diagnostic tools to identify code errors in existing electrical systems."
+      },
+      {
+       "taskName": "Preventive Maintenance of Robotics",
+       "taskNameVi": "Bảo trì dự phòng Robot",
+       "exposureType": "Human-Centric",
+       "exposurePercentage": 40,
+       "onetCode": "17-3024.00",
+       "notes": "Applying your 10 years of electrical experience to physical robot hardware."
+      },
+      {
+       "taskName": "Technical Documentation Translation",
+       "taskNameVi": "Dịch thuật tài liệu kỹ thuật",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 20,
+       "onetCode": "17-3024.00",
+       "notes": "Using AI tools to overcome technical English barriers in manuals."
+      }
+     ],
+     "sources": [
+      "RMIT University Vietnam"
+     ],
+     "methodologySummary": "Based on task-based analysis of automation potential in manufacturing.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Augment Current Role",
+      "pathTitleVi": "Tăng cường năng lực tại chỗ",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Use AI tools to master technical English and documentation.",
+      "targetRoles": [
+       "Senior Electrical Technician"
+      ],
+      "skillsToAcquire": [
+       "Technical English",
+       "AI-assisted troubleshooting"
+      ],
+      "transferableSkills": [
+       "Electrical maintenance"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       13,
+       14,
+       15,
+       16
+      ],
+      "rationale": "Immediate productivity gain with minimal cost.",
+      "actionStepNow": "Start using Duolingo for technical English."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Automation Specialist",
+      "pathTitleVi": "Chuyên viên Tự động hóa",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Learn PLC and robotics integration.",
+      "targetRoles": [
+       "Automation Technician"
+      ],
+      "skillsToAcquire": [
+       "PLC Programming",
+       "Robotics basics"
+      ],
+      "transferableSkills": [
+       "Troubleshooting",
+       "Safety"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       25
+      ],
+      "rationale": "High demand in Hai Phong industrial zones.",
+      "actionStepNow": "Enroll in a basic PLC course."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Industrial AI Consultant",
+      "pathTitleVi": "Tư vấn AI Công nghiệp",
+      "feasibilityScore": 30,
+      "estimatedTimelineMonths": 36,
+      "shortDescription": "Transition to system design and AI implementation.",
+      "targetRoles": [
+       "Automation Engineer"
+      ],
+      "skillsToAcquire": [
+       "Computer Science",
+       "Data Analysis"
+      ],
+      "transferableSkills": [
+       "Logic",
+       "Experience"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       18,
+       25,
+       35
+      ],
+      "rationale": "Long-term career evolution.",
+      "actionStepNow": "Start CS50x."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "phase-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Technical English & AI Basics",
+      "titleVi": "Tiếng Anh kỹ thuật và AI cơ bản",
+      "estimatedHours": 60,
+      "weeksDuration": 8,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Technical English",
+       "AI Literacy"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is most effective for translating technical manuals?",
+       "options": [
+        "Google Translate",
+        "AI-powered technical assistants",
+        "Paper dictionaries",
+        "Asking colleagues"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI-powered assistants provide context-aware translations for technical terminology."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "phase-2",
+      "milestoneNumber": 2,
+      "phaseName": "Skill Acquisition",
+      "phaseNameVi": "Nâng cao kỹ năng",
+      "title": "PLC Programming Fundamentals",
+      "titleVi": "Cơ bản về lập trình PLC",
+      "estimatedHours": 100,
+      "weeksDuration": 12,
+      "costTier": "low_cost",
+      "estimatedCostVND": 2000000,
+      "skillsCovered": [
+       "PLC Logic",
+       "Automation"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary function of a PLC in an industrial setting?",
+       "options": [
+        "Data storage",
+        "Controlling manufacturing processes",
+        "Power distribution",
+        "Human resources"
+       ],
+       "correctIndex": 1,
+       "explanation": "PLCs are specialized computers used to control industrial electromechanical processes."
+      },
+      "estimatedCostUSD": 77
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 85,
+    "rationale": "The guidance directly maps the user's specific skills (troubleshooting, panel maintenance) to the proposed role. It effectively leverages the user's shift-work experience and field background to justify the career transition."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 3,
+    "grounded": 3,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791871016690_01v96p",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:56:56.690Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:56:56.690Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ điện công nghiệp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:56:56.690Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:57:04.825Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 501,
+     "latencyMs": 7435
+    },
+    {
+     "ts": "2026-10-13T05:57:04.825Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Industrial Electrician",
+       "Automation Technician"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "language barrier",
+       "skill gap in PLC programming"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:04.825Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:57:08.023Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 694,
+     "latencyMs": 2633,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:57:08.023Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Industrial Electrician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Automation Technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "automation impact on industrial electricians Vietnam skills gap"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "PLC programming course Vietnamese language free beginner"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:08.024Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:13.455Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1593,
+     "latencyMs": 4955,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:57:13.455Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "Industrial Electrician Automation Technician Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:16.062Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:20.792Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1735,
+     "latencyMs": 4189,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:57:20.792Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:20.792Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:57:29.457Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 4270,
+     "latencyMs": 8044
+    },
+    {
+     "ts": "2026-10-13T05:57:29.457Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:33.591Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 445,
+     "latencyMs": 3618
+    },
+    {
+     "ts": "2026-10-13T05:57:33.592Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly maps the user's specific skills (troubleshooting, panel maintenance) to the proposed role. It effectively leverages the user's shift-work experience and field background to justify the career transition."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:57:33.592Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 9238,
+   "latencyMs": 36902,
+   "degraded": false
+  }
+ }
+}

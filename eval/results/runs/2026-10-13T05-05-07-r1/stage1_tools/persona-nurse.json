@@ -1,0 +1,524 @@
+{
+ "score": {
+  "personaId": "persona-nurse",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11332,
+  "latencyMs": 15158,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0033996
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Data Specialist in Digital Health",
+    "roleTitleVi": "Chuyên viên Dữ liệu Y tế số",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "As highlighted by the World Bank (2024) and TopCV (2024), digital health and data-driven healthcare systems in Vietnam are experiencing high growth. Drawing upon your 7 years of clinical nursing experience and familiarity with electronic health records, you are well-positioned to transition into a role that leverages AI-augmented data analytics. While AI automates routine data cleaning and report generation (Stanford HAI, 2024), your clinical expertise provides the essential human advantage in framing health data problems, contextualizing patient metrics, and upholding ethical data governance.",
+    "whyItFitsYou": "Your clinical background gives you deep domain knowledge in patient care and electronic health records, matching the 'Deep domain contextualization' human advantage. Your strength in communication and emergency handling translates directly into stakeholder alignment, while your interest in digital health and public health aligns with the fast-growing health-tech sector in Vietnam.",
+    "transferableSkillsMatch": [
+     "Patient Care & Clinical Workflow Knowledge",
+     "Electronic Health Records (Hồ sơ bệnh án điện tử)",
+     "Emergency Situational Handling",
+     "Patient Communication & Empathy"
+    ],
+    "skillsGap": [
+     "Basic SQL & Data Cleaning",
+     "Operational Dashboard Creation",
+     "Digital Health Data Governance"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 30,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency. Data-related roles saw significant salary increases."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese healthcare context (Thấu hiểu sâu bối cảnh y tế nội địa)",
+      "Executive stakeholder alignment & clinical staff persuasion (Thuyết phục và gắn kết nhân sự y tế)",
+      "Problem framing & translating clinical operational bottlenecks into metrics (Định hình bài toán vận hành y tế)",
+      "Ethical governance of patient data pipelines (Quản trị đạo đức và pháp lý dữ liệu y tế)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Reviewing and structuring electronic health record datasets using AI assistant tools",
+       "taskNameVi": "Đánh giá và cấu trúc hóa tập dữ liệu bệnh án điện tử dùng công cụ AI",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI processes data transforms swiftly while you validate clinical accuracy."
+      },
+      {
+       "taskName": "Generating routine operational dashboards for clinic patient flow",
+       "taskNameVi": "Tạo dashboard vận hành định kỳ cho luồng bệnh nhân tại phòng khám",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools create standard visual summaries automatically."
+      },
+      {
+       "taskName": "Translating hospital management pain points into data metrics and actionable clinical insights",
+       "taskNameVi": "Chuyển hóa vướng mắc quản lý bệnh viện thành chỉ số dữ liệu và giải pháp y tế",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires clinical intuition, empathy, and deep operational experience."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Evaluated through O*NET task analysis, McKinsey automation exposure models, and TopCV Vietnam demand indicators for digital health roles.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Nurse & Digital Liaison",
+      "pathTitleVi": "Điều dưỡng Trưởng tăng cường AI & Đầu mối Chuyển đổi số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage AI administrative tools within your current nursing role in Can Tho to reduce burnout from shift work and paperwork.",
+      "targetRoles": [
+       "Senior Nurse / Head Nurse",
+       "Digital Health Coordinator in Clinic"
+      ],
+      "skillsToAcquire": [
+       "AI Prompting for Healthcare Administration",
+       "Digital EHR Optimization",
+       "Workflow Automation Basics"
+      ],
+      "transferableSkills": [
+       "Patient Care",
+       "Emergency Situational Handling",
+       "Communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Keeps your stable income while utilizing 5 hours per week to master AI tools, dramatically cutting down documentation fatigue.",
+      "actionStepNow": "Enroll in Google AI Essentials to learn prompt engineering for daily administrative tasks."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Digital Health Data Specialist",
+      "pathTitleVi": "Chuyên viên Dữ liệu Y tế số",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into health-tech startups or hospital IT departments in Can Tho focusing on digital health records and data analytics.",
+      "targetRoles": [
+       "Health Data Analyst",
+       "Digital Health Project Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Basic SQL & Data Cleaning",
+       "Dashboard Tools (Power BI / Tableau)",
+       "Healthcare Data Standards"
+      ],
+      "transferableSkills": [
+       "Clinical Domain Knowledge",
+       "EHR Experience",
+       "Patient Communication"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       19,
+       24,
+       30
+      ],
+      "rationale": "Combines your 7 years of nursing background with high-demand data skills, matching your interest in digital health.",
+      "actionStepNow": "Start Microsoft Learn introductory data modules and dedicate 5 hours per week."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Health Informatics Consultant",
+      "pathTitleVi": "Chuyên gia Tư vấn Tin học Y tế",
+      "feasibilityScore": 55,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Move entirely into healthcare technology consulting and implementation for regional hospitals and health systems.",
+      "targetRoles": [
+       "Health Informatics Specialist",
+       "Healthcare IT Implementation Consultant"
+      ],
+      "skillsToAcquire": [
+       "Advanced Data Analytics",
+       "Health Systems Architecture",
+       "Project Management"
+      ],
+      "transferableSkills": [
+       "Clinical Workflow Understanding",
+       "Problem Solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       30,
+       40
+      ],
+      "rationale": "A longer-term transformation offering high financial upside but requiring sustained study beyond current time constraints.",
+      "actionStepNow": "Focus first on the pivot adjacent path before scaling up to full consulting."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy & AI Basics",
+      "phaseNameVi": "Nền tảng Kỹ thuật số & AI Cơ bản",
+      "title": "Master AI Productivity Tools for Healthcare",
+      "titleVi": "Làm chủ Công cụ AI Năng suất cho Y tế",
+      "estimatedHours": 25,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "AI Prompting",
+       "Digital Literacy",
+       "Workflow Efficiency"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "How can AI tools best assist a nurse with electronic health records?",
+       "options": [
+        "By replacing all patient interaction",
+        "By summarizing clinical notes and streamlining administrative documentation",
+        "By diagnosing patients autonomously without clinician review",
+        "By prescribing medications automatically"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI assists by summarizing notes and reducing administrative paperwork, leaving clinical decision-making to humans."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "milestoneNumber": 2,
+      "phaseName": "Data Fundamentals in Healthcare",
+      "phaseNameVi": "Nền tảng Dữ liệu Y tế",
+      "title": "Learn Basic Data Handling & Health Analytics",
+      "titleVi": "Học Xử lý Dữ liệu Cơ bản & Phân tích Y tế",
+      "estimatedHours": 30,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Data Cleaning",
+       "Basic Spreadsheets",
+       "Health Data Metrics"
+      ],
+      "freeResources": [
+       {
+        "name": "Khan Academy",
+        "provider": "Khan Academy",
+        "url": "https://www.khanacademy.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary role of data cleaning in electronic health records?",
+       "options": [
+        "Deleting patient records permanently",
+        "Ensuring accuracy, consistency, and removing duplicate or erroneous entries",
+        "Changing patient diagnoses",
+        "Encrypting hospital financial statements"
+       ],
+       "correctIndex": 1,
+       "explanation": "Data cleaning ensures record accuracy and consistency for reliable analysis and patient safety."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $1,154 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791868245274_gkcjmf",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:10:45.274Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:10:45.274Z",
+     "type": "run_start",
+     "message": "pipeline for \"Điều dưỡng viên\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:45.274Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:10:46.321Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 484,
+     "latencyMs": 1047
+    },
+    {
+     "ts": "2026-10-13T05:10:46.322Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Registered Nurse",
+       "Healthcare Informaticist",
+       "Public Health Specialist"
+      ],
+      "riskFlags": [
+       "Limited budget for retraining",
+       "Low weekly study availability",
+       "High shift-work burnout risk"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:46.322Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 722,
+     "latencyMs": 955,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Registered Nurse"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Healthcare Informaticist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Public Health Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.277Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam healthcare digital transformation AI automation nursing workforce McKinsey ILO"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.278Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.278Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "public health healthcare informatics digital health course Vietnam free low cost"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:47.278Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:52.499Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3113,
+     "latencyMs": 5221,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:10:52.499Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:10:52.499Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:11:00.431Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6783,
+     "latencyMs": 7932
+    },
+    {
+     "ts": "2026-10-13T05:11:00.431Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:11:00.431Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11102,
+   "latencyMs": 15158,
+   "degraded": false
+  }
+ }
+}

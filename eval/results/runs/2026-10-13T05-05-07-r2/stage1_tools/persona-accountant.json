@@ -1,0 +1,497 @@
+{
+ "score": {
+  "personaId": "persona-accountant",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11332,
+  "latencyMs": 11138,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0033996
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Financial & Business Intelligence Analyst",
+    "roleTitleVi": "Chuyên viên Phân tích Tài chính & Kinh doanh",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "As noted by WEF (2023), Business Intelligence and Data Analysts are among the fastest growing roles globally. While routine bookkeeping and data entry face high automation risk (OpenAI / UPenn, 2023), transitioning to business analysis leverages the candidate's deep domain knowledge in accounting and combines it with augmented data tools, leading to 43% faster market modeling and higher forecast accuracy (Stanford HAI, 2024).",
+    "whyItFitsYou": "Your 6 years of general accounting experience from National Economics University and strong compliance skills give you an exceptional foundation in financial statements. Although you currently lack data analytics skills and data presentation abilities, your interests in financial analysis and digital tools make this an ideal adjacent pivot that builds directly upon your meticulous nature.",
+    "transferableSkillsMatch": [
+     "Advanced Excel",
+     "MISA software proficiency",
+     "Tax procedures and compliance",
+     "Document control and reconciliation"
+    ],
+    "skillsGap": [
+     "Data analysis tools (SQL / Python pandas)",
+     "Data visualization and dashboarding",
+     "Executive data storytelling and metric presentation"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 32,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "WEF (2023): Traditional bookkeepers rank among top 5 declining roles, while Financial Analysts and Strategic Controllers grow 15%.",
+      "source": "World Economic Forum Future of Jobs Report 2023",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Financial Analysts and Strategic Controllers grow 15% globally."
+     },
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford Human-Centered AI Index 2024",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Leveraging Excel and automated SQL queries to clean and organize general ledger data",
+       "taskNameVi": "Sử dụng Excel và truy vấn SQL tự động để làm sạch và tổ chức dữ liệu sổ cái",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Building financial dashboards and charts from monthly accounting trial balances",
+       "taskNameVi": "Xây dựng dashboard tài chính và biểu đồ từ bảng cân đối kế toán hàng tháng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing strategic financial hypotheses and advising leadership on cash flow",
+       "taskNameVi": "Định hình giả thuyết chiến lược tài chính và tư vấn ban lãnh đạo về dòng tiền",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, compliance acumen, and nuanced risk appetite."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Synthesized using ONET task breakdown, Stanford HAI metrics, and WEF labor market signals.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Accountant",
+      "pathTitleVi": "Kế toán Tổng hợp ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Integrate advanced AI bookkeeping tools and OCR solutions into your current accounting workflow to eliminate manual data entry.",
+      "targetRoles": [
+       "Senior Accountant",
+       "Chief Accountant"
+      ],
+      "skillsToAcquire": [
+       "AI bookkeeping automation tools",
+       "Advanced MISA reporting features"
+      ],
+      "transferableSkills": [
+       "MISA",
+       "Excel",
+       "Tax compliance"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       18,
+       21,
+       24,
+       28
+      ],
+      "rationale": "Keeps you in your core domain while removing repetitive tasks through automation.",
+      "actionStepNow": "Explore AI features within your current accounting software and test free spreadsheet AI add-ons."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Financial Data Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Dữ liệu Tài chính",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage your 6 years of accounting background to transition into financial data analysis using low-cost learning resources.",
+      "targetRoles": [
+       "Financial Analyst",
+       "Business Intelligence Specialist"
+      ],
+      "skillsToAcquire": [
+       "SQL",
+       "Data Visualization (Power BI/Tableau)",
+       "Data cleaning micro-courses"
+      ],
+      "transferableSkills": [
+       "Financial statements",
+       "Excel analysis",
+       "Attention to detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       25,
+       31,
+       38
+      ],
+      "rationale": "Combines high-demand analytical skills with your existing domain expertise in finance.",
+      "actionStepNow": "Enroll in free micro-courses on data analysis and begin practicing with Kaggle Learn."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Business Intelligence Consultant",
+      "pathTitleVi": "Tư vấn Giải pháp Dữ liệu Doanh nghiệp",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Move into full consulting roles helping SMEs digitize and analyze their financial and operational data.",
+      "targetRoles": [
+       "BI Consultant",
+       "Data Solutions Advisor"
+      ],
+      "skillsToAcquire": [
+       "Advanced Python/SQL",
+       "Enterprise dashboard architecture",
+       "Client consulting"
+      ],
+      "transferableSkills": [
+       "Process understanding",
+       "Compliance mindset"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       28,
+       36,
+       45
+      ],
+      "rationale": "Offers high long-term upside but requires significant upskilling beyond your current budget and time constraints.",
+      "actionStepNow": "Focus first on the adjacent pivot before considering full consultancy advisory."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Data Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng dữ liệu cơ bản",
+      "title": "Master Basic SQL and Data Cleaning",
+      "titleVi": "Làm chủ SQL cơ bản và làm sạch dữ liệu",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "SQL queries",
+       "Data cleaning",
+       "Pandas introduction"
+      ],
+      "freeResources": [
+       {
+        "name": "Kaggle Learn micro-courses",
+        "provider": "Kaggle",
+        "url": "https://www.kaggle.com/learn",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which SQL clause is primarily used to filter rows based on specific conditions?",
+       "options": [
+        "GROUP BY",
+        "WHERE",
+        "ORDER BY",
+        "SELECT"
+       ],
+       "correctIndex": 1,
+       "explanation": "The WHERE clause is used to filter records that fulfill a specified condition."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Visualization & Storytelling",
+      "phaseNameVi": "Trực quan hóa & Trình bày số liệu",
+      "title": "Build Financial Dashboards and Executive Presentations",
+      "titleVi": "Xây dựng Dashboard tài chính và Báo cáo điều hành",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Dashboard creation",
+       "Data storytelling",
+       "Visual metrics presentation"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary objective of executive data storytelling in financial analysis?",
+       "options": [
+        "To display as many raw numbers as possible",
+        "To translate complex data insights into clear, actionable business decisions",
+        "To replace human accountants entirely",
+        "To increase spreadsheet file size"
+       ],
+       "correctIndex": 1,
+       "explanation": "Executive data storytelling bridges raw metrics with strategic decision-making for leadership."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$692 - $1,231 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869074525_gusdku",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:24:34.525Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:24:34.525Z",
+     "type": "run_start",
+     "message": "pipeline for \"Kế toán tổng hợp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:34.525Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:24:35.527Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 520,
+     "latencyMs": 1002
+    },
+    {
+     "ts": "2026-10-13T05:24:35.527Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "General Accountant",
+       "Financial Analyst",
+       "Accounting Specialist"
+      ],
+      "riskFlags": [
+       "Limited budget for retraining",
+       "Lacks data analytics skills",
+       "Needs improvement in data presentation"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:35.527Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:24:36.958Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 700,
+     "latencyMs": 1431,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:24:36.958Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "General Accountant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.959Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.959Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Financial Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.959Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.959Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI automation accounting financial analysis Vietnam workforce"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.960Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.960Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free data analytics excel financial modeling courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:36.960Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:38.176Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3108,
+     "latencyMs": 1216,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:24:38.176Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:38.176Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:24:45.663Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6759,
+     "latencyMs": 7487
+    },
+    {
+     "ts": "2026-10-13T05:24:45.663Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:24:45.663Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11087,
+   "latencyMs": 11138,
+   "degraded": false
+  }
+ }
+}

@@ -1,0 +1,505 @@
+{
+ "score": {
+  "personaId": "persona-golden-3",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 20,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 11778,
+  "latencyMs": 28009,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0035334
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Business Analyst / Data Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+    "aiResilienceScore": 82,
+    "matchScore": 95,
+    "reasoning": "As a fresh graduate from NEU with strong analytical foundations, you are perfectly positioned to leverage AI-augmented tools to perform high-value business analysis. According to Stanford HAI (2024), business analysts using AI agents complete market modeling 43% faster, which directly addresses your need for high-growth, high-impact roles.",
+    "whyItFitsYou": "Your IELTS 7.0 and logical business thinking allow you to bridge the gap between technical data outputs and executive decision-making. You can use your 18 hours/week to master AI-driven BI tools, turning your lack of experience into a 'digital native' advantage.",
+    "transferableSkillsMatch": [
+     "Business logic and strategic thinking",
+     "English proficiency for global tool documentation",
+     "Presentation and stakeholder communication",
+     "Fast learning capability"
+    ],
+    "skillsGap": [
+     "SQL and Python for data manipulation",
+     "Advanced BI dashboarding (Power BI/Tableau)",
+     "AI-assisted workflow automation",
+     "Practical project portfolio"
+    ],
+    "averageSalaryRangeVND": "15,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights",
+      "Executive stakeholder alignment & persuasion",
+      "Problem framing & translating ambiguous business pains into metrics",
+      "Ethical governance of data pipelines"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu bảng",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "Use AI to generate SQL scripts for your business reports."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and charts",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ báo cáo định kỳ",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Utilize Power BI Copilot to visualize your NEU project data."
+      },
+      {
+       "taskName": "Framing strategic business hypotheses and executive consulting",
+       "taskNameVi": "Định hình giả thuyết chiến lược và tư vấn lãnh đạo",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Your core value is interpreting AI insights for leadership."
+      }
+     ],
+     "sources": [],
+     "methodologySummary": "Based on O*NET task analysis and AI exposure indices.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Powered Business Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Kinh doanh AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Master AI tools to automate data processing while focusing on strategic business insights.",
+      "targetRoles": [
+       "Junior Business Analyst",
+       "Data Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL",
+       "Power BI",
+       "Prompt Engineering for Data"
+      ],
+      "transferableSkills": [
+       "Business Logic",
+       "Communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       30,
+       45,
+       60
+      ],
+      "rationale": "Leverages your existing degree and high learning agility.",
+      "actionStepNow": "Enroll in Google Data Analytics certificate."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Operations Coordinator",
+      "pathTitleVi": "Điều phối viên Vận hành AI",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 8,
+      "shortDescription": "Focus on optimizing business workflows using AI automation tools.",
+      "targetRoles": [
+       "Operations Associate",
+       "AI Workflow Specialist"
+      ],
+      "skillsToAcquire": [
+       "Zapier",
+       "Make.com",
+       "Process Mapping"
+      ],
+      "transferableSkills": [
+       "Project Management",
+       "Problem Solving"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       16,
+       24,
+       35,
+       50,
+       65
+      ],
+      "rationale": "High demand for professionals who can bridge business needs and AI implementation.",
+      "actionStepNow": "Build a personal automation project using free tools."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Digital Product Manager",
+      "pathTitleVi": "Quản lý Sản phẩm Kỹ thuật số",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Transition into managing AI-driven product development.",
+      "targetRoles": [
+       "Associate Product Manager"
+      ],
+      "skillsToAcquire": [
+       "Product Lifecycle",
+       "UX Design",
+       "Agile"
+      ],
+      "transferableSkills": [
+       "Leadership",
+       "Stakeholder Management"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       28,
+       45,
+       65,
+       90
+      ],
+      "rationale": "High reward but requires significant domain shift.",
+      "actionStepNow": "Join a product management community in Hanoi."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation",
+      "phaseNameVi": "Xây dựng nền tảng",
+      "title": "Data Literacy & AI Basics",
+      "titleVi": "Kiến thức dữ liệu và AI cơ bản",
+      "estimatedHours": 72,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Data Analysis",
+       "AI Prompting"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which task is best suited for AI in a business analyst role?",
+       "options": [
+        "Strategic decision making",
+        "Cleaning large datasets",
+        "Building personal relationships with clients",
+        "Defining company vision"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI excels at repetitive, structured tasks like data cleaning, allowing humans to focus on strategy."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Portfolio",
+      "phaseNameVi": "Xây dựng hồ sơ năng lực",
+      "title": "Applied Project Portfolio",
+      "titleVi": "Dự án thực chiến",
+      "estimatedHours": 144,
+      "weeksDuration": 8,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "SQL",
+       "Visualization",
+       "Reporting"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the most important element of a portfolio for a BA?",
+       "options": [
+        "Number of pages",
+        "Business impact and problem-solving process",
+        "Using the most expensive software",
+        "Copying templates"
+       ],
+       "correctIndex": 1,
+       "explanation": "Employers look for how you identified a problem, used data to analyze it, and provided a solution."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$577 - $962 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870156457_cfsmxk",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:42:36.457Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:42:36.457Z",
+     "type": "run_start",
+     "message": "pipeline for \"Fresh Business Graduate\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:36.457Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:42:39.919Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 682,
+     "latencyMs": 2865
+    },
+    {
+     "ts": "2026-10-13T05:42:39.919Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Business Analyst",
+       "Digital Marketing Specialist",
+       "Operations Coordinator"
+      ],
+      "riskFlags": [
+       "limited practical experience",
+       "no project portfolio"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:39.919Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 712,
+     "latencyMs": 5693,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Business Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Digital Marketing Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Operations Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.612Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Generative AI automation business analyst digital marketing Vietnam labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.613Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.613Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "business analytics digital marketing advanced AI workflows Hanoi free courses"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:45.613Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:54.642Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3825,
+     "latencyMs": 9029,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:42:54.642Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:42:54.642Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:43:04.466Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 6350,
+     "latencyMs": 9218
+    },
+    {
+     "ts": "2026-10-13T05:43:04.466Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:04.466Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 11569,
+   "latencyMs": 28009,
+   "degraded": false
+  }
+ }
+}

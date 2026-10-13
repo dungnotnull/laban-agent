@@ -1,0 +1,549 @@
+{
+ "score": {
+  "personaId": "persona-watchrepair",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 8607,
+  "latencyMs": 24875,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0025821
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "High-End Mechanical & Micro-Device Restoration Consultant",
+    "roleTitleVi": "Chuyên gia Tư vấn Phục chế Thiết bị Cơ khí & Vi mạch Cao cấp",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "As artificial intelligence and automation reshape manufacturing and routine tasks, manual craftsmanship requiring extreme precision, tactile judgment, and high-touch customer trust remains highly defensible. Drawing from the OECD Employment Outlook, while routine administrative and manual jobs face high risk, specialized physical artistry and consultation in niche luxury markets demonstrate strong insulation against AI replacement.",
+    "whyItFitsYou": "Your 15 years of mastering mechanical watch repair, absolute patience, and trusted reputation among regulars provide a formidable foundation. Instead of competing with mass automation, you can elevate your practice into high-end advisory, authentication, and bespoke micro-restoration where human touch and personal reputation are irreplaceable.",
+    "transferableSkillsMatch": [
+     "Precision mechanical dexterity",
+     "Identification of genuine vs counterfeit parts",
+     "High-touch customer trust and relationship management"
+    ],
+    "skillsGap": [
+     "Basic digital literacy for online customer acquisition",
+     "Basic English proficiency for sourcing international luxury components",
+     "Modern digital documentation of repair processes"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 25,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market",
+      "source": "OECD",
+      "year": 2023,
+      "url": "https://www.oecd.org/employment-outlook/2023/",
+      "quoteOrDataPoint": "27% of jobs are in occupations at high risk of automation, whereas specialized artisanal and high-touch advisory roles maintain strong human advantage cores."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "Digital tool literacy and niche specialized skills command resilient salary premiums across urban hubs like Hanoi."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Fine Mechanical Craftsperson and Restoration Specialist",
+     "occupationTitleVi": "Thợ thủ công Cơ khí Tinh xảo và Chuyên gia Phục chế",
+     "molisaCode": "7315",
+     "onetCode": "51-9071.06",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 45,
+     "humanAdvantageCore": [
+      "Tactile feedback and micro-adjustment under magnification",
+      "Personalized client trust and heritage preservation consulting",
+      "Complex diagnostic reasoning for damaged vintage micro-components"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Bespoke vintage watch and micro-mechanical restoration",
+       "taskNameVi": "Phục chế đồng hồ cổ và cơ khí vi mô theo yêu cầu",
+       "exposureType": "human_led",
+       "exposurePercentage": 90,
+       "onetCode": "51-9071.06",
+       "notes": "Relies entirely on your 15 years of physical craftsmanship and patience."
+      },
+      {
+       "taskName": "Digital showcasing of restoration craftsmanship via social media",
+       "taskNameVi": "Trưng bày số hóa tay nghề phục chế qua mạng xã hội",
+       "exposureType": "augmented",
+       "exposurePercentage": 35,
+       "onetCode": "13-1161.00",
+       "notes": "Using basic digital tools to document your meticulous process and attract high-end clients."
+      },
+      {
+       "taskName": "Authenticating Swiss and Japanese movement components",
+       "taskNameVi": "Kiểm định linh kiện máy Thụy Sĩ và Nhật Bản",
+       "exposureType": "human_led",
+       "exposurePercentage": 85,
+       "onetCode": "51-9071.06",
+       "notes": "Leverages your deep domain knowledge in distinguishing genuine components."
+      }
+     ],
+     "sources": [
+      "OECD Employment Outlook 2023",
+      "Vietnam Labor Market Report 2024-2026"
+     ],
+     "methodologySummary": "Evaluated using La Bàn's synthesis of GSO occupational data, OECD automation exposure matrices, and Vietnamese urban labor demand indexes.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital-Enhanced Master Watchmaker",
+      "pathTitleVi": "Thợ đồng hồ cao cấp ứng dụng kỹ thuật số",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Keep your core physical craft while adding basic digital presence to reach luxury clients directly in Hanoi.",
+      "targetRoles": [
+       "Independent Luxury Watch Consultant",
+       "Master Mechanical Restorer"
+      ],
+      "skillsToAcquire": [
+       "Basic smartphone photography for watches",
+       "Zalo/Facebook business page setup",
+       "Basic digital invoicing"
+      ],
+      "transferableSkills": [
+       "Watch repair",
+       "Polishing",
+       "Client reliability"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       14,
+       16,
+       18,
+       20
+      ],
+      "rationale": "Minimizes financial risk while immediately expanding your customer acquisition radius beyond foot traffic.",
+      "actionStepNow": "Take clear photos of your recent watch restoration work using your smartphone."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Boutique Luxury Service & Authentication Specialist",
+      "pathTitleVi": "Chuyên viên Dịch vụ & Thẩm định Đồ hiệu Cao cấp",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition part of your expertise toward authenticating luxury mechanical goods and precision instruments for retailers.",
+      "targetRoles": [
+       "Luxury Goods Authenticator",
+       "Precision Instrument Inspector"
+      ],
+      "skillsToAcquire": [
+       "Basic English terminology for luxury goods",
+       "Digital certification recording"
+      ],
+      "transferableSkills": [
+       "Discerning genuine parts",
+       "Micro-inspection skills"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       18,
+       22,
+       25
+      ],
+      "rationale": "Taps into the growing secondary luxury market in Hanoi where trusted human experts are urgently needed.",
+      "actionStepNow": "Explore online resources on luxury authentication standards."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Micro-Electro-Mechanical Systems (MEMS) Assembly Technician",
+      "pathTitleVi": "Kỹ thuật viên Lắp ráp Hệ thống Cơ điện tử Vi mô",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Pivot into high-tech cleanroom manufacturing environments utilizing micro-dexterity skills.",
+      "targetRoles": [
+       "Cleanroom Assembly Tech",
+       "Precision Equipment Calibration Specialist"
+      ],
+      "skillsToAcquire": [
+       "Cleanroom protocols",
+       "Electronic testing basics",
+       "Technical English"
+      ],
+      "transferableSkills": [
+       "Extreme manual precision",
+       "Patience",
+       "Tool handling"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       13,
+       16,
+       19,
+       22
+      ],
+      "rationale": "High barrier to entry due to digital literacy and technical vocabulary gaps, but offers industrial scale.",
+      "actionStepNow": "Review basic computer literacy courses to prepare for digital machinery interfaces."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation & Documentation",
+      "phaseNameVi": "Nền tảng Kỹ thuật số & Tài liệu hóa",
+      "title": "Build Basic Digital Literacy & Showcase Skills",
+      "titleVi": "Xây dựng Năng lực Số cơ bản & Trưng bày Tay nghề",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic computer navigation",
+       "Smartphone photography for craft",
+       "Social media profile setup"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of the following is the most effective way to showcase mechanical restoration skills online?",
+       "options": [
+        "Posting clear, high-resolution before-and-after photos of watch movements",
+        "Writing 5,000-word theoretical essays on physics",
+        "Ignoring digital platforms entirely",
+        "Posting random landscape photos"
+       ],
+       "correctIndex": 0,
+       "explanation": "Before-and-after visual evidence directly highlights your precision craftsmanship and builds trust with potential clients."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Client Expansion & Language Building",
+      "phaseNameVi": "Mở rộng Khách hàng & Xây dựng Ngoại ngữ",
+      "title": "Basic English & Luxury Client Communication",
+      "titleVi": "Tiếng Anh Cơ bản & Giao tiếp Khách hàng Cao cấp",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic English vocabulary for watch parts",
+       "Customer messaging etiquette via Zalo/Facebook",
+       "Trust-building communication"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is basic English useful for a high-end mechanical watch restorer in Vietnam?",
+       "options": [
+        "To source rare Swiss and Japanese watch parts online and communicate with international collectors",
+        "To replace mechanical watch parts with AI software",
+        "It is completely unnecessary",
+        "To write computer programming code"
+       ],
+       "correctIndex": 0,
+       "explanation": "International sourcing of authentic Swiss and Japanese components often requires reading technical catalogs and communicating in English."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $962 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific mechanical watch repair skills, Swiss and Japanese component expertise, absolute patience, and established customer trust."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869583235_7pxsja",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:33:03.235Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:33:03.235Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ sửa chữa đồng hồ cơ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:03.235Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:33:08.600Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 505,
+     "latencyMs": 4724
+    },
+    {
+     "ts": "2026-10-13T05:33:08.600Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "precision technician",
+       "luxury goods repair",
+       "micro-mechanic"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "market contraction",
+       "low digital literacy"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:08.600Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 725,
+     "latencyMs": 5849,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "precision technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "luxury goods repair"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "micro-mechanic"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.037Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "impact of automation on high-precision manual craft and luxury repair in Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.038Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.038Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "digital literacy and basic business skills for artisans in Vietnam free Vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:15.038Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:18.958Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1698,
+     "latencyMs": 3326,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:33:18.958Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:18.958Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:33:27.210Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5009,
+     "latencyMs": 8252
+    },
+    {
+     "ts": "2026-10-13T05:33:27.210Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:28.110Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 448,
+     "latencyMs": 899
+    },
+    {
+     "ts": "2026-10-13T05:33:28.110Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific mechanical watch repair skills, Swiss and Japanese component expertise, absolute patience, and established customer trust."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:33:28.110Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 8385,
+   "latencyMs": 24875,
+   "degraded": false
+  }
+ }
+}

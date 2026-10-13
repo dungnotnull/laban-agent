@@ -1,0 +1,23 @@
+{
+ "score": {
+  "personaId": "persona-watchrepair",
+  "config": "baseline",
+  "ok": false,
+  "groundingRate": null,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": null,
+  "coherent": null,
+  "actionable": null,
+  "usageTokens": 0,
+  "latencyMs": 0,
+  "model": "unknown",
+  "costPerTaskUsd": 0,
+  "error": "baseline_failed"
+ },
+ "payload": {
+  "error": "baseline_failed",
+  "message": "Bad control character in string literal in JSON at position 6684 (line 123 column 182)"
+ }
+}

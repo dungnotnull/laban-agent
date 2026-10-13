@@ -1,0 +1,271 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8174,
+  "latencyMs": 9993,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024522
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Handmade Craft & Custom Product Business Owner",
+    "roleTitleVi": "Chủ Cơ Sở Kinh Doanh Đồ Thủ Công và Sản Phẩm May Đo Tùy Chỉnh",
+    "aiResilienceScore": 92,
+    "matchScore": 95,
+    "reasoning": "Theo nghiên cứu của Đại học Oxford (2017) và ILO (2023), các công việc đòi hỏi sự khéo léo thủ công cao, thao tác vật lý linh hoạt trong môi trường phi cấu trúc và tính cá nhân hóa địa phương có khả năng tự động hóa cực kỳ thấp (gần như bằng không). Với 8 năm kinh nghiệm may công nghiệp và sự khéo tay, bạn sở hữu nền tảng vững chắc để chuyển đổi thành chủ cơ sở sản xuất độc lập, tận dụng xu hướng tiêu dùng sản phẩm thủ công bền vững.",
+    "whyItFitsYou": "Công việc này khớp hoàn hảo với sở thích 'Kinh doanh nhỏ' và 'Nghề thủ công' của bạn, đồng thời phát huy thế mạnh 'Khéo tay' và 'Đọc bản vẽ kỹ thuật'. Dù tiếng Anh hạn chế và ít dùng máy tính, mô hình kinh doanh trực tiếp tại Bình Dương hoặc qua mạng xã hội bằng hình ảnh/video ngắn không đòi hỏi kỹ năng công nghệ cao mà tập trung vào chất lượng sản phẩm thực tế.",
+    "transferableSkillsMatch": [
+     "Vận hành và kiểm soát chất lượng sản phẩm may",
+     "Đọc hiểu bản vẽ kỹ thuật và rập mẫu",
+     "Chịu được áp lực tiến độ đơn hàng"
+    ],
+    "skillsGap": [
+     "Kỹ năng quản lý tài chính cơ bản cho hộ kinh doanh",
+     "Kỹ năng chụp ảnh/quay video sản phẩm đơn giản trên điện thoại",
+     "Kỹ năng tìm kiếm khách hàng địa phương"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 20,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": 2017,
+      "url": "https://www.oxfordmartin.ox.ac.uk/publications/the-future-of-employment/",
+      "quoteOrDataPoint": "Occupations requiring high unstructured physical dexterity and fine arts creation remain resilient against computerisation."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis",
+      "source": "International Labour Organization (ILO)",
+      "year": 2023,
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis",
+      "quoteOrDataPoint": "Artisanal, localized services and physical craftsmanship remain largely insulated from generative AI substitution."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Tailors, Dressmakers, Furriers and Hatters",
+     "occupationTitleVi": "Thợ may, thợ thiết kế thời trang và thợ làm mũ",
+     "molisaCode": "7533",
+     "onetCode": "51-6052.00",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 8,
+     "augmentationPotentialScore": 35,
+     "humanAdvantageCore": [
+      "Sự khéo léo và linh hoạt của đôi bàn tay",
+      "Khả năng cảm nhận chất liệu vải và điều chỉnh thực tế",
+      "Giao tiếp trực tiếp và thấu hiểu nhu cầu cá nhân hóa của khách hàng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Custom tailoring and alteration based on individual body measurements",
+       "taskNameVi": "May đo và sửa chữa trang phục theo số đo thực tế của khách hàng",
+       "exposureType": "Complementary",
+       "exposurePercentage": 10,
+       "onetCode": "51-6052.00",
+       "notes": "Đòi hỏi thao tác thủ công trực tiếp, máy móc tự động chưa thể thay thế sự tinh tế trên từng cơ thể người."
+      },
+      {
+       "taskName": "Quality inspection of finished textile and garment products",
+       "taskNameVi": "Kiểm tra chất lượng đường may và hoàn thiện sản phẩm thủ công",
+       "exposureType": "Low Exposure",
+       "exposurePercentage": 5,
+       "onetCode": "51-9061.00",
+       "notes": "Sử dụng kinh nghiệm 8 năm để đánh giá lỗi vải và đường kim mũi chỉ bằng trực giác và xúc giác."
+      },
+      {
+       "taskName": "Small business order planning and material sourcing",
+       "taskNameVi": "Lên kế hoạch đơn hàng nhỏ và tìm nguồn nguyên phụ liệu tại địa phương",
+       "exposureType": "Low Exposure",
+       "exposurePercentage": 15,
+       "onetCode": "11-1021.00",
+       "notes": "Quyết định kinh doanh dựa trên quan hệ thực tế và sự thấu hiểu thị trường Bình Dương."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "ILO (2023)",
+      "VSCO 2020"
+     ],
+     "methodologySummary": "Phân tích dựa trên các nút thắt kỹ thuật về thao tác thủ công (Perception and Manipulation) từ Oxford và mức độ phơi nhiễm tác vụ theo khung ILO.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Quality Control & Line Leader in Garment Factory",
+      "pathTitleVi": "Nâng cấp thành Kiểm định viên chất lượng cao (QC) hoặc Chuyền trưởng",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tận dụng 8 năm kinh nghiệm để bước lên vị trí kiểm định kỹ thuật (QC) hoặc quản lý chuyền nhỏ trong nhà máy tại Bình Dương.",
+      "targetRoles": [
+       "KCS / QC May mặc",
+       "Chuyền trưởng sản xuất"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng lập báo cáo lỗi trên máy tính bảng cơ bản",
+       "Kỹ năng giao tiếp và đôn đốc nhóm chuyền"
+      ],
+      "transferableSkills": [
+       "Đọc bản vẽ kỹ thuật",
+       "Vận hành máy may",
+       "Làm việc nhóm"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       "8,000,000",
+       "9,000,000",
+       "10,500,000",
+       "12,000,000",
+       "14,000,000"
+      ],
+      "rationale": "Giữ vững sự ổn định, không tốn chi phí học nghề mới, tận dụng tối đa thâm niên công nghiệp.",
+      "actionStepNow": "Đăng ký học một khóa ngắn hạn về quy trình kiểm tra chất lượng sản phẩm (QC) quốc tế áp dụng trong ngành may."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Independent Tailoring & Local Craft Business",
+      "pathTitleVi": "Mở tiệm may đo cá nhân kết hợp kinh doanh đồ thủ công",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Xây dựng thương hiệu cá nhân chuyên sửa đồ, may đo thiết kế theo yêu cầu tại khu vực Bình Dương với số vốn tối thiểu.",
+      "targetRoles": [
+       "Chủ tiệm may đo thời trang thiết kế",
+       "Nhà sáng lập thương hiệu handmade địa phương"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng marketing bằng hình ảnh trên Facebook/TikTok",
+       "Quản lý thu chi hộ kinh doanh"
+      ],
+      "transferableSkills": [
+       "Tay nghề may công nghiệp và thủ công",
+       "Đọc rập và bản vẽ thời trang"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       "6,000,000",
+       "9,000,000",
+       "13,000,000",
+       "17,000,000",
+       "22,000,000"
+      ],
+      "rationale": "Phù hợp hoàn hảo với sở thích kinh doanh nhỏ, không bị áp lực thời gian công xưởng, rủi ro tài chính cực thấp trong tầm ngân sách 2 triệu đồng.",
+      "actionStepNow": "Chuẩn bị sẵn một góc làm việc tại nhà, tận dụng máy may gia đình/công nghiệp cũ và bắt đầu nhận sửa đồ cho hàng xóm để tích lũy vốn."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Handmade E-commerce Entrepreneur",
+      "pathTitleVi": "Kinh doanh sản phẩm thủ công độc quyền trên nền tảng số",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Tập trung hoàn toàn vào sáng tạo sản phẩm thủ công ngách (túi vải canvas, phụ kiện thời trang tái chế) bán qua Shopee/TikTok Shop.",
+      "targetRoles": [
+       "Nhà bán hàng thương mại điện tử ngành hàng thủ công"
+      ],
+      "skillsToAcquire": [
+       "Vận hành gian hàng Shopee/TikTok Shop",
+       "Đóng gói và quản lý logistics cơ bản"
+      ],
+      "transferableSkills": [
+       "Khéo tay",
+       "Sự tỉ mỉ trong kiểm tra chất lượng sản phẩm"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       "5,000,000",
+       "8,000,000",
+       "15,000,000",
+       "25,000,000",
+       "35,000,000"
+      ],
+      "rationale": "Mở rộng biên lợi nhuận ra toàn quốc thông qua thương mại điện tử, tuy nhiên đòi hỏi thời gian làm quen với công nghệ bán hàng.",
+      "actionStepNow": "Xem các video hướng dẫn miễn phí trên YouTube về cách tạo tài khoản bán hàng trên Shopee cho người mới bắt đầu."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Skill Validation",
+      "phaseNameVi": "Giai đoạn 1: Chuẩn bị nền tảng và kiểm chứng thị trường",
+      "title": "Build local portfolio and master smartphone business basics",
+      "titleVi": "Xây dựng mẫu sản phẩm đầu tay và học cách chụp ảnh sản phẩm bằng điện thoại",
+      "estimatedHours": 24,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "May đo mẫu thủ công độc đáo",
+       "Chụp ảnh và quay video sản phẩm ngắn",
+       "Định giá sản phẩm cơ bản"
+      ],
+      "freeResources": [
+       {
+        "name": "Kênh YouTube Hướng Dẫn Kinh Doanh Nhỏ",
+        "provider": "Các chuyên gia khởi nghiệp Việt Nam",
+        "url": "https://www.youtube.com",
+        "type": "video_tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố quan trọng nhất để thu hút khách hàng mua sản phẩm thủ công qua mạng xã hội với ngân sách 0 đồng là gì?",
+       "options": [
+        "Chạy quảng cáo hàng chục triệu đồng",
+        "Hình ảnh/video sản phẩm thực tế chân thật, sắc nét và có điểm nhấn độc đáo",
+        "Thuê người mẫu nổi tiếng",
+        "Giảm giá 90%"
+       ],
+       "correctIndex": 1,
+       "explanation": "Đối với sản phẩm thủ công, khách hàng mua sự tỉ mỉ và độc bản, hình ảnh/video chân thực thể hiện rõ đường kim mũi chỉ là chìa khóa thu hút mà không tốn phí quảng cáo."
+      }
+     },
+     {
+      "id": "milestone_2",
+      "milestoneNumber": 2,
+      "phaseName": "Launch & Operations",
+      "phaseNameVi": "Giai đoạn 2: Khởi động kinh doanh vi mô tại Bình Dương",
+      "title": "Open micro-workshop at home and initiate local orders",
+      "titleVi": "Thiết lập góc làm việc tại nhà và nhận các đơn hàng đầu tiên từ mối quan hệ xung quanh",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Quản lý thời gian và tiến độ giao hàng",
+       "Chăm sóc khách hàng trực tiếp",
+       "Quản lý sổ sách thu chi đơn giản"
+      ],
+      "freeResources": [
+       {
+        "name": "Sổ Thu Chi Misa (Bản miễn phí trên điện thoại)",
+        "provider": "MISA",
+        "url": "https://www.misa.vn",
+        "type": "software_tool"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi mới bắt đầu kinh doanh nhỏ với số vốn dưới 2 triệu đồng, chiến lược tài chính an toàn nhất là gì?",
+       "options": [
+        "Đi vay ngân hàng mở cửa hàng lớn ngay lập tức",
+        "Sử dụng thiết bị sẵn có, nhận tiền đặt cọc trước từ khách hàng để mua nguyên liệu",
+        "Nhập hàng tồn kho số lượng lớn từ Trung Quốc",
+        "Nghỉ việc ngay và thuê mặt bằng đắt tiền"
+       ],
+       "correctIndex": 1,
+       "explanation": "Việc nhận cọc trước giúp giảm thiểu rủi ro tài chính bằng 0, hoàn toàn phù hợp với khẩu vị rủi ro thấp và nguồn ngân sách hạn hẹp của bạn."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7912,
+  "latencyMs": 9993
+ }
+}

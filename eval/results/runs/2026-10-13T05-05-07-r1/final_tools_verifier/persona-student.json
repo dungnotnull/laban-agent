@@ -1,0 +1,621 @@
+{
+ "score": {
+  "personaId": "persona-student",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 20879,
+  "latencyMs": 22666,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0062637
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Content & Data-Driven Marketing Specialist",
+    "roleTitleVi": "Chuyên viên Nội dung Tích hợp AI & Marketing Định hướng Dữ liệu",
+    "aiResilienceScore": 84,
+    "matchScore": 92,
+    "reasoning": "As noted by OpenAI and UPenn (2023), basic content writing has near 100% task exposure to automation, making traditional entry-level content roles highly vulnerable. However, by augmenting your foundational content and social media skills with Business Intelligence and data analytics foundations, you shift from a replaceable content producer to an AI-augmented strategist. Stanford HAI (2024) shows that professionals leveraging AI agents achieve significantly higher productivity and forecast precision, aligning with TopCV findings regarding the 85% growth in demand for multi-channel, AI-literate content producers in Vietnam.",
+    "whyItFitsYou": "Your background as a final-year Marketing student at UEH in Ho Chi Minh City gives you a strong theoretical foundation. Your strengths in quick trend-spotting, strong English communication, and familiarity with Canva and basic social media match the core requirements of modern digital marketing. While you currently lack practical experience and data analytics skills, your high risk tolerance and 20 hours per week availability provide an ideal runway to bridge these gaps without breaking your 2,000,000 VND monthly budget.",
+    "transferableSkillsMatch": [
+     "Basic content creation and social media management",
+     "Visual layout sense via Canva",
+     "English communication for international trend analysis",
+     "Rapid trend spotting and audience engagement"
+    ],
+    "skillsGap": [
+     "AI-driven content architecture and prompt engineering",
+     "Basic data analytics and operational dashboard interpretation",
+     "SEO and multi-channel campaign measurement"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The economic potential of generative AI: The next productivity frontier",
+      "source": "McKinsey & Company",
+      "year": 2023,
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      "quoteOrDataPoint": "Generative AI technologies have the potential to automate tasks that absorb 60-70% of employees' time today, requiring workforce transition toward augmentation."
+     },
+     {
+      "paperTitle": "TopCV (2024): 62% contraction in standard freelance writer postings; 85% growth in \"AI Content Strategist & Multi-channel Producer\" roles.",
+      "source": "TopCV / VietnamWorks Labor Report",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "62% contraction in standard freelance writer postings; 85% growth in AI Content Strategist & Multi-channel Producer roles."
+     },
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford University HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 84,
+     "automationRiskScore": 32,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Leveraging AI for rapid social media content ideation and trend synthesis based on your Canva and social media background",
+       "taskNameVi": "Tận dụng AI để lên ý tưởng nội dung mạng xã hội và tổng hợp xu hướng dựa trên nền tảng Canva và social media",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 75,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI accelerates initial drafting while your human trend-spotting ensures local cultural resonance."
+      },
+      {
+       "taskName": "Analyzing campaign metrics and creating operational marketing dashboards",
+       "taskNameVi": "Phân tích chỉ số chiến dịch và tạo bảng điều khiển marketing vận hành",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate charts automatically, allowing you to focus on strategic interpretation."
+      },
+      {
+       "taskName": "Framing brand messaging strategies and high-stakes storytelling tailored to Vietnamese consumer psychology",
+       "taskNameVi": "Định hình chiến lược thông điệp thương hiệu và kể chuyện phù hợp với tâm lý người tiêu dùng Việt Nam",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires deep empathy, cultural context, and brand leadership that AI cannot replicate."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Synthesized from Stanford HAI, McKinsey, and TopCV labor metrics, weighting task augmentation potential against direct automation vulnerability for marketing and analytics convergence.",
+     "uncertaintyRange": "+/- 5% based on macroeconomic adoption speeds in Ho Chi Minh City's tech and agency ecosystem.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Marketing Creator",
+      "pathTitleVi": "Chuyên viên Marketing Tích hợp AI",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Enhance your existing Canva, social media, and content skills with generative AI workflows to create multi-channel campaigns faster and with higher engagement.",
+      "targetRoles": [
+       "AI Content Creator",
+       "Digital Marketing Executive",
+       "Social Media Strategist"
+      ],
+      "skillsToAcquire": [
+       "Prompt engineering for marketing",
+       "Basic campaign analytics",
+       "AI-assisted graphic and video workflows"
+      ],
+      "transferableSkills": [
+       "Social media familiarity",
+       "Canva basics",
+       "English communication"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       14,
+       19,
+       25,
+       32
+      ],
+      "rationale": "Fastest path to employment leveraging immediate strengths while neutralizing routine content automation risks.",
+      "actionStepNow": "Enroll in a free digital literacy or AI fundamentals course to build certified credibility."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Marketing Data & BI Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Dữ liệu Marketing",
+      "feasibilityScore": 82,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Bridge your UEH marketing background with data analytics to position yourself as a data-driven marketer who bridges creative campaigns and performance metrics.",
+      "targetRoles": [
+       "Marketing Analyst",
+       "Growth Marketing Specialist",
+       "Data-Driven Content Strategist"
+      ],
+      "skillsToAcquire": [
+       "SQL basics",
+       "Data visualization (Tableau/PowerBI)",
+       "Marketing attribution modeling"
+      ],
+      "transferableSkills": [
+       "Economic and business UEH foundation",
+       "English proficiency",
+       "Trend analysis"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       16,
+       22,
+       30,
+       40
+      ],
+      "rationale": "Directly targets high-growth analytical roles with superior resilience scores against automation.",
+      "actionStepNow": "Begin auditing data analytics certificate tracks on Coursera or edX."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Growth Hacker & AI Automation Consultant",
+      "pathTitleVi": "Chuyên gia Tăng trưởng & Tự động hóa Marketing",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Build a comprehensive skill stack combining advanced marketing automation tools, data analytics, and generative AI agent workflows for high-growth tech startups.",
+      "targetRoles": [
+       "Growth Hacker",
+       "Marketing Automation Specialist",
+       "AI Marketing Lead"
+      ],
+      "skillsToAcquire": [
+       "No-code automation workflows (Zapier/Make)",
+       "Advanced analytics",
+       "Full-funnel optimization"
+      ],
+      "transferableSkills": [
+       "High enthusiasm",
+       "Trend-spotting speed",
+       "English communication"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       32,
+       45,
+       60
+      ],
+      "rationale": "Captures maximum upside in Vietnam's dynamic digital economy for high-risk-tolerant professionals.",
+      "actionStepNow": "Master prompt engineering and build a public portfolio showcasing automated marketing campaigns."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Kỹ năng số cơ bản",
+      "title": "AI & Digital Literacy Basics",
+      "titleVi": "Nhập môn Trí tuệ Nhân tạo & Kỹ năng số",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Digital literacy basics",
+       "AI tool fundamentals",
+       "English professional context"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which task represents the highest human advantage over direct AI content automation?",
+       "options": [
+        "Drafting standard product descriptions",
+        "Proofreading grammar and spelling",
+        "Developing high-stakes brand storytelling and localized cultural messaging",
+        "Checking keyword density"
+       ],
+       "correctIndex": 2,
+       "explanation": "AI excels at routine drafting and proofreading, whereas high-stakes brand storytelling requires genuine lived human perspective and cultural resonance."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Skill Upscaling & Analytics Integration",
+      "phaseNameVi": "Nâng cấp Kỹ năng & Tích hợp Phân tích",
+      "title": "Google AI Essentials & Data Fundamentals",
+      "titleVi": "Chứng chỉ AI Google & Nền tảng Dữ liệu",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "Prompt engineering",
+       "Basic data interpretation",
+       "AI productivity workflows"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "According to Stanford HAI (2024), what is a key benefit of utilizing AI agents in business and data tasks?",
+       "options": [
+        "Completely eliminating human oversight",
+        "Completing market modeling faster with higher forecast precision",
+        "Reducing internet bandwidth needs",
+        "Automating 100% of executive decision making"
+       ],
+       "correctIndex": 1,
+       "explanation": "Stanford HAI data indicates analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $846 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 90,
+    "groundedness": 85,
+    "rationale": "The guidance directly references the user's final-year marketing status, Canva skills, social media background, trend-spotting, and English communication, mapping them effectively to modern digital marketing roles."
+   },
+   "citationReport": {
+    "total": 3,
+    "verified": 3,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868624796_4edwbt",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:17:04.796Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:17:04.796Z",
+     "type": "run_start",
+     "message": "pipeline for \"Sinh viên năm cuối ngành Marketing\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:04.796Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:17:06.051Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 504,
+     "latencyMs": 1255
+    },
+    {
+     "ts": "2026-10-13T05:17:06.051Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "digital marketer",
+       "content creator",
+       "social media specialist"
+      ],
+      "riskFlags": [
+       "no practical experience",
+       "limited budget for retraining",
+       "unfamiliar with analytical tools"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:06.051Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 718,
+     "latencyMs": 994,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "digital marketer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "content creator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.045Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "social media specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.046Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.046Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI marketing digital content Vietnam automation risk"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.046Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.046Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "digital marketing AI content creation free courses Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:07.046Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:08.128Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4586,
+     "latencyMs": 1082,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:17:08.128Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:08.128Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:17:16.347Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6758,
+     "latencyMs": 8219
+    },
+    {
+     "ts": "2026-10-13T05:17:16.347Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:17.413Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 443,
+     "latencyMs": 1066
+    },
+    {
+     "ts": "2026-10-13T05:17:17.414Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "coherence: top suggestion resilience 48 below floor 82"
+      ],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly integrates the user's specific background as a final-year Marketing student, English skills, Canva, and trend-spotting ability while grounding labor market claims in cited reports."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:17.414Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "coherence: top suggestion resilience 48 below floor 82"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:17.414Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:17:26.476Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 7128,
+     "latencyMs": 9062
+    },
+    {
+     "ts": "2026-10-13T05:17:26.476Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:27.462Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 497,
+     "latencyMs": 985
+    },
+    {
+     "ts": "2026-10-13T05:17:27.462Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly references the user's final-year marketing status, Canva skills, social media background, trend-spotting, and English communication, mapping them effectively to modern digital marketing roles."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:17:27.462Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 20634,
+   "latencyMs": 22666,
+   "degraded": false
+  }
+ }
+}

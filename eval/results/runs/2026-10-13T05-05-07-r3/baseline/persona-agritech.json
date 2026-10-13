@@ -1,0 +1,276 @@
+{
+ "score": {
+  "personaId": "persona-agritech",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 0.5,
+  "hallucinatedCount": 1,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7818,
+  "latencyMs": 17159,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023454
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Precision Agriculture Specialist",
+    "roleTitleVi": "Chuyên gia Nông nghiệp Chính xác",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Nông nghiệp chính xác kết hợp thiết bị tự động (như drone) và hiểu biết địa phương có khả năng chống chịu tự động hóa rất cao nhờ vào sự kết hợp giữa kỹ năng thực tế hiện trường và phân tích dữ liệu ứng dụng [Oxford Martin School, 2017; World Economic Forum, 2023].",
+    "whyItFitsYou": "Phù hợp hoàn hảo với 15 năm kinh nghiệm làm nông dân, kỹ năng vận hành drone cơ bản và mong muốn phát triển trong lĩnh vực nông nghiệp chính xác tại Cần Thơ.",
+    "transferableSkillsMatch": [
+     "Canh tác lúa và cây ăn quả",
+     "Thao tác drone phun thuốc cơ bản",
+     "Hiểu thị trường và thời vụ địa phương",
+     "Kiên trì theo mùa vụ"
+    ],
+    "skillsGap": [
+     "Phân tích dữ liệu cảm biến canh tác",
+     "Sử dụng công cụ AI dự báo thời tiết và dịch bệnh",
+     "Quản lý tài chính nông trại nâng cao"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum (WEF)",
+      "year": "2023",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Sustainability Specialists and Agri-tech application roles show high structural growth across emerging markets."
+     },
+     {
+      "paperTitle": "Artificial Intelligence Index Report 2024",
+      "source": "Stanford Institute for Human-Centered Artificial Intelligence (HAI)",
+      "year": "2024",
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "AI and automation augment physical labor tasks in non-tech industries like agriculture, improving efficiency by 35-50%."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Precision Agriculture Technician",
+     "occupationTitleVi": "Kỹ thuật viên Nông nghiệp Chính xác",
+     "molisaCode": "6112",
+     "onetCode": "19-4011.01",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 88,
+     "humanAdvantageCore": [
+      "Đánh giá trực quan sức khỏe cây trồng ngoài thực địa",
+      "Xử lý tình huống thời tiết bất ngờ theo mùa vụ tại ĐBSCL",
+      "Đưa ra quyết định canh tác dựa trên kinh nghiệm địa phương kết hợp dữ liệu AI"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Drone Flight Planning & Crop Spraying",
+       "taskNameVi": "Lập kế hoạch bay drone và phun thuốc chính xác",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "19-4011.01",
+       "notes": "Sử dụng AI để tối ưu hóa lượng thuốc bảo vệ thực vật dựa trên bản đồ drone."
+      },
+      {
+       "taskName": "Field Sensor Data Interpretation",
+       "taskNameVi": "Đọc và phân tích dữ liệu cảm biến độ ẩm đất",
+       "exposureType": "augmentation",
+       "exposurePercentage": 55,
+       "onetCode": "19-4011.01",
+       "notes": "Kết hợp ứng dụng di động AI để phân tích dữ liệu đất đai và tưới tiêu."
+      },
+      {
+       "taskName": "Seasonal Crop Yield Estimation",
+       "taskNameVi": "Đánh giá và dự báo năng suất mùa vụ",
+       "exposureType": "augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "19-4011.01",
+       "notes": "Sử dụng công cụ AI phân tích hình ảnh quả và lúa để dự báo sản lượng."
+      }
+     ],
+     "sources": [
+      "World Economic Forum (WEF), 2023",
+      "Stanford HAI, 2024"
+     ],
+     "methodologySummary": "Đánh giá mức độ phơi nhiễm dựa trên ma trận O*NET kết hợp đặc thù lao động nông nghiệp vùng đồng bằng sông Cửu Long.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Tech-Augmented Farmer",
+      "pathTitleVi": "Nông dân ứng dụng công nghệ cao",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tận dụng kinh nghiệm 15 năm kết hợp các ứng dụng AI và drone để nâng cao năng suất canh tác.",
+      "targetRoles": [
+       "Chủ trang trại thông minh",
+       "Kỹ thuật viên dịch vụ drone nông nghiệp"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng ứng dụng dự báo thời tiết AI",
+       "Vận hành drone nâng cao",
+       "Quản lý chi phí số hóa"
+      ],
+      "transferableSkills": [
+       "Canh tác lúa và cây ăn quả",
+       "Hiểu thị trường địa phương",
+       "Kiên trì theo mùa vụ"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Giữ vững nền tảng kinh nghiệm cốt lõi, bổ sung công cụ số để tối ưu hóa chi phí và tăng thu nhập.",
+      "actionStepNow": "Tham gia một khóa học ngắn hạn về vận hành drone nâng cao và cài đặt các ứng dụng nông nghiệp thông minh trên điện thoại."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Agricultural E-commerce & Supply Chain Specialist",
+      "pathTitleVi": "Chuyên gia Thương mại Điện tử và Chuỗi cung ứng Nông sản",
+      "feasibilityScore": 80,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển hướng sang kinh doanh nông sản trực tuyến, sử dụng AI để viết nội dung quảng cáo và phân tích thị trường.",
+      "targetRoles": [
+       "Chuyên viên phát triển thị trường nông sản số",
+       "Chủ shop nông sản OCOP online"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng ChatGPT/Copilot viết nội dung bán hàng",
+       "Quảng cáo Facebook/TikTok cơ bản",
+       "Livestream bán nông sản"
+      ],
+      "transferableSkills": [
+       "Bán nông sản qua Zalo và Facebook",
+       "Hiểu thị trường địa phương",
+       "Ghi chép chi phí đơn giản"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       11,
+       14,
+       17,
+       21,
+       25
+      ],
+      "rationale": "Đáp ứng nhu cầu tiêu thụ nông sản sạch qua thương mại điện tử đang bùng nổ tại Việt Nam.",
+      "actionStepNow": "Thử nghiệm sử dụng ChatGPT để viết 5 bài viết quảng cáo trái cây hoặc lúa giống trên Facebook cá nhân và Zalo."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agri-Tech Extension Consultant",
+      "pathTitleVi": "Cán bộ Tư vấn Khuyến nông Công nghệ số",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Trở thành tư vấn viên cho các hợp tác xã hoặc doanh nghiệp cung cấp giải pháp nông nghiệp thông minh.",
+      "targetRoles": [
+       "Cán bộ khuyến nông công nghệ cao",
+       "Giám sát kỹ thuật vùng nguyên liệu"
+      ],
+      "skillsToAcquire": [
+       "Kỹ năng thuyết trình và đào tạo nông dân",
+       "Phân tích dữ liệu canh tác số",
+       "Quản lý dự án nông nghiệp nhỏ"
+      ],
+      "transferableSkills": [
+       "15 năm kinh nghiệm thực tế",
+       "Hiểu tâm lý người nông dân địa phương"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       12,
+       15,
+       19,
+       24,
+       30
+      ],
+      "rationale": "Nâng tầm kinh nghiệm thực tế thành giá trị tư vấn quy mô lớn cho các hợp tác xã tại ĐBSCL.",
+      "actionStepNow": "Kết nối với các hợp tác xã nông nghiệp công nghệ cao tại Cần Thơ để tìm hiểu nhu cầu ứng dụng công nghệ của họ."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Tools",
+      "phaseNameVi": "Nền tảng & Công cụ Số",
+      "title": "Mastering AI Assistants and Basic Agri-Apps",
+      "titleVi": "Làm chủ Trợ lý AI và Ứng dụng Nông nghiệp Cơ bản",
+      "estimatedHours": 24,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Sử dụng ChatGPT/Copilot cho nông nghiệp",
+       "Đọc biểu đồ thời tiết số",
+       "Quản lý chi phí qua ứng dụng di động"
+      ],
+      "freeResources": [
+       {
+        "name": "Kỹ năng AI cơ bản cho người lao động",
+        "provider": "OpenAI / Coursera (Việt hóa)",
+        "url": "https://www.coursera.org",
+        "type": "online_course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Ứng dụng AI có thể hỗ trợ gì tốt nhất cho người trồng cây ăn quả ở giai đoạn hiện tại?",
+       "options": [
+        "Tự động hái trái thay con người",
+        "Dự báo thời tiết, sâu bệnh và gợi ý lịch bón phân",
+        "Thay thế hoàn toàn quyền sở hữu đất đai",
+        "Tự động xuất khẩu nông sản không cần kiểm định"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI hỗ trợ phân tích dữ liệu, dự báo thời tiết và sâu bệnh giúp nông dân đưa ra quyết định chính xác hơn."
+      }
+     },
+     {
+      "id": "ms2",
+      "milestoneNumber": 2,
+      "phaseName": "Practical Application & E-commerce",
+      "phaseNameVi": "Ứng dụng Thực tế & Thương mại Điện tử",
+      "title": "Digital Marketing & Drone Operation Enhancement",
+      "titleVi": "Marketing Số & Nâng cao Kỹ năng Vận hành Drone",
+      "estimatedHours": 36,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Viết content bán nông sản bằng AI",
+       "Vận hành drone an toàn và hiệu quả cao",
+       "Chốt đơn hàng trực tuyến qua Zalo/Facebook"
+      ],
+      "freeResources": [
+       {
+        "name": "Hướng dẫn kinh doanh nông sản số",
+        "provider": "Bộ Nông nghiệp và PTNT / Cục Thương mại điện tử",
+        "url": "https://www.idebsite.gov.vn",
+        "type": "government_guide"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Lợi ích lớn nhất của việc sử dụng AI trong việc bán nông sản trên mạng xã hội là gì?",
+       "options": [
+        "Tự động giao hàng tận nơi miễn phí",
+        "Nhanh chóng tạo ra các bài viết quảng cáo thu hút khách hàng",
+        "Làm giảm chất lượng nông sản",
+        "Tăng giá bán lên 500%"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI giúp người bán nhanh chóng tạo ra các nội dung, tiêu đề và hình thức quảng cáo hấp dẫn để thu hút người mua."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7560,
+  "latencyMs": 17159
+ }
+}

@@ -1,0 +1,293 @@
+{
+ "score": {
+  "personaId": "persona-teacher",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 8315,
+  "latencyMs": 13151,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0024945
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Educational Content Strategist & AI Instructional Designer",
+    "roleTitleVi": "Chuyên gia Chiến lược Nội dung Giáo dục & Thiết kế Sư phạm tích hợp AI",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Với 12 năm kinh nghiệm giảng dạy Ngữ văn và tư duy phản biện xuất sắc, bạn sở hữu nền tảng nhân văn vững chắc (tác vụ chăm sóc cảm xúc và sáng tạo mang tính xã hội có tỷ lệ phơi nhiễm thấp theo Oxford Martin School, 2017). Tuy nhiên, các kỹ năng soạn bài truyền thống đang chịu áp lực tự động hóa theo McKinsey & Company (2023). Giải pháp tối ưu là chuyển dịch sang thiết kế hệ thống học tập tích hợp AI, tận dụng năng lực phân tích sâu và kỹ năng truyền cảm hứng.",
+    "whyItFitsYou": "Vị trí này kết hợp hoàn hảo giữa năng lực giao tiếp xuất sắc, kiến thức nhân văn sâu và mong muốn phát triển trong lĩnh vực Giáo dục công nghệ (EdTech). Thay vì soạn giáo án thủ công, bạn sẽ đóng vai trò 'Human-in-the-loop' để định hướng phong cách sư phạm, kiểm định chất lượng nội dung do AI tạo ra và xây dựng kịch bản học tập tâm lý học hành vi cho người học tại Đà Nẵng và toàn quốc.",
+    "transferableSkillsMatch": [
+     "Thiết kế bài giảng & Chương trình học",
+     "Quản lý lớp học & Tâm lý học hành vi",
+     "Đánh giá năng lực học sinh",
+     "Truyền cảm hứng & Giao tiếp xuất sắc",
+     "Tư duy phản biện & Phân tích văn bản"
+    ],
+    "skillsGap": [
+     "Sử dụng công cụ AI tạo sinh trong giáo dục (ChatGPT, Claude, EduTech prompts)",
+     "Thiết kế trải nghiệm học tập số (Digital Learning Experience Design)",
+     "Quản lý dự án nội dung số (Digital Content Operations)"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 32,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models",
+      "source": "OpenAI, OpenResearch, University of Pennsylvania",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.10130",
+      "quoteOrDataPoint": "Tasks requiring high social perceptiveness and emotional nuance exhibit near-zero direct exposure, whereas standard text formatting and routine drafting face high exposure."
+     },
+     {
+      "paperTitle": "The Future of Jobs Report 2023",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.wef.org/publications/the-future-of-jobs-report-2023",
+      "quoteOrDataPoint": "Analytical thinking, AI literacy, and systems leadership are the highest-demanded upskilling priorities across education and services."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024-2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": 2024,
+      "url": "https://www.gso.gov.vn",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with AI tool proficiency, while standard copywriters and manual instructors face structural transformation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Instructional Designers and Curriculum Developers",
+     "occupationTitleVi": "Nhà thiết kế Sư phạm và Phát triển Chương trình",
+     "molisaCode": "2356",
+     "onetCode": "25-9031.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 22,
+     "augmentationPotentialScore": 78,
+     "humanAdvantageCore": [
+      "Sự thấu cảm và nắm bắt tâm lý người học",
+      "Tư duy phản biện và thẩm định giá trị nhân văn",
+      "Khả năng truyền cảm hứng trực tiếp và dẫn dắt thảo luận"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Curriculum Framework Design",
+       "taskNameVi": "Xây dựng Khung chương trình & Mục tiêu giáo dục",
+       "exposureType": "augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "25-9031.00",
+       "notes": "Sử dụng AI để phác thảo cấu trúc đề cương, trong khi chuyên gia nhân văn định hình giá trị cốt lõi và đạo đức học tập."
+      },
+      {
+       "taskName": "Lesson Plan & Material Generation",
+       "taskNameVi": "Biên soạn Giáo án & Học liệu tích hợp AI",
+       "exposureType": "augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "25-9031.00",
+       "notes": "AI hỗ trợ tạo các bài tập thực hành mẫu và câu hỏi trắc nghiệm; giáo viên tinh chỉnh ngữ cảnh văn hóa và mức độ tư duy."
+      },
+      {
+       "taskName": "Student Psychological Assessment & Mentoring",
+       "taskNameVi": "Đánh giá Tâm lý học & Cố vấn phát triển học sinh",
+       "exposureType": "human-centric",
+       "exposurePercentage": 10,
+       "onetCode": "25-9031.00",
+       "notes": "Công việc thuần túy dựa trên trực giác con người, giao tiếp thấu cảm và trí tuệ cảm xúc (EQ)."
+      }
+     ],
+     "sources": [
+      "OpenAI et al., 2023",
+      "World Economic Forum, 2023",
+      "GSO Vietnam, 2020"
+     ],
+     "methodologySummary": "Phân tích điểm nghẽn tác vụ dựa trên O*NET 27.2 và Khung phân loại nghề nghiệp Việt Nam (VSCO), đánh giá khả năng bổ trợ giữa LLM và năng lực nhân văn cốt lõi.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Senior Literature Teacher & EdTech Contributor",
+      "pathTitleVi": "Giáo viên Ngữ văn Cấp cao ứng dụng AI & Cộng tác viên EdTech",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tiếp tục giảng dạy tại trường với phương pháp soạn bài siêu tốc bằng AI, đồng thời viết nội dung giáo dục số bán thời gian.",
+      "targetRoles": [
+       "Giáo viên Ngữ văn cốt cán",
+       "Cố vấn chuyên môn EdTech"
+      ],
+      "skillsToAcquire": [
+       "Prompt Engineering cho giáo dục",
+       "Sử dụng công cụ thiết kế bài giảng thông minh (Canva AI, Gamma, ChatGPT)"
+      ],
+      "transferableSkills": [
+       "Quản lý lớp học",
+       "Truyền cảm hứng",
+       "Thiết kế bài giảng truyền thống"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       14,
+       16,
+       18,
+       20,
+       22
+      ],
+      "rationale": "Giữ vững sự ổn định nghề nghiệp hiện tại (priority=4) nhưng giải phóng 50% thời gian nhờ tự động hóa công việc hành chính và soạn thảo.",
+      "actionStepNow": "Dành 2 giờ mỗi tuần học cách viết prompt cơ bản cho việc tóm tắt văn bản và tạo bài tập kiểm tra."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Educational Content Strategist at EdTech Enterprise",
+      "pathTitleVi": "Chuyên gia Chiến lược Nội dung Giáo dục tại Công ty EdTech",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển dịch sang các nền tảng giáo dục trực tuyến hoặc trung tâm EdTech tại Đà Nẵng/Remote để phát triển chương trình học số hóa.",
+      "targetRoles": [
+       "Instructional Designer",
+       "Content Manager (EdTech)",
+       "E-Learning Curriculum Developer"
+      ],
+      "skillsToAcquire": [
+       "Quản trị dự án học tập số",
+       "Phân tích dữ liệu học tập cơ bản",
+       "SEO & Content Distribution"
+      ],
+      "transferableSkills": [
+       "Kiến thức ngữ văn sâu",
+       "Tư duy phản biện",
+       "Kỹ năng truyền đạt rõ ràng"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       25,
+       30,
+       38
+      ],
+      "rationale": "Phù hợp với mong muốn cân bằng giữa thu nhập và làm việc từ xa (remote=3), tận dụng triệt để nền tảng Thạc sĩ Sư phạm.",
+      "actionStepNow": "Hoàn thành một khóa học ngắn hạn về Thiết kế Sư phạm Kỹ thuật số (Digital Instructional Design)."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Prompt Engineer & Human-in-the-Loop Content QA Lead",
+      "pathTitleVi": "Kỹ sư Prompt AI & Trưởng nhóm Kiểm định Chất lượng Nội dung Số",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Tham gia vào các doanh nghiệp công nghệ hoặc các cơ quan BPO quốc tế cung cấp dịch vụ huấn luyện mô hình ngôn ngữ lớn (LLM training & alignment).",
+      "targetRoles": [
+       "AI Data Annotator Lead",
+       "LLM Prompt Specialist",
+       "Content Quality Assurance Specialist"
+      ],
+      "skillsToAcquire": [
+       "Đánh giá độ chính xác của LLM (Hallucination Detection)",
+       "Ngữ pháp và ngữ nghĩa học máy tính cơ bản",
+       "Quy trình vận hành AI"
+      ],
+      "transferableSkills": [
+       "Tư duy logic",
+       "Đánh giá học sinh/sản phẩm chi tiết",
+       "Kiểm tra lỗi văn bản sắc bén"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       18,
+       24,
+       32,
+       40,
+       50
+      ],
+      "rationale": "Mức lương và tiềm năng tăng trưởng cao (salary=4), tận dụng tối đa năng lực phân tích văn bản và tư duy phản biện để làm nghề kiểm định AI.",
+      "actionStepNow": "Tìm hiểu các nền tảng gán nhãn dữ liệu văn bản và nghiên cứu tài liệu về cách thức AI xử lý ngôn ngữ tự nhiên (NLP)."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms_1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng & Phổ cập Kỹ năng Số",
+      "title": "Mastering Generative AI for Teachers & Educators",
+      "titleVi": "Làm chủ AI tạo sinh dành cho Nhà giáo & Người làm giáo dục",
+      "estimatedHours": 32,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "ChatGPT / Claude cơ bản đến nâng cao",
+       "Prompt Engineering trong sư phạm",
+       "Ứng dụng Canva AI và Gamma trong thiết kế trực quan"
+      ],
+      "freeResources": [
+       {
+        "name": "AI for Education Free Course",
+        "provider": "AI for Education",
+        "url": "https://www.aiforeducation.io",
+        "type": "Online Course"
+       },
+       {
+        "name": "Prompt Engineering for ChatGPT",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai",
+        "type": "Interactive Tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Khi sử dụng AI để soạn giáo án Ngữ văn, bước nào sau đây là bắt buộc phải do con người (giáo viên) thực hiện?",
+       "options": [
+        "Tạo ra danh sách từ vựng gợi ý",
+        "Định hình giá trị nhân văn, cảm xúc và thẩm định tính chính xác, phù hợp tâm lý học sinh",
+        "Tự động định dạng văn bản theo chuẩn Markdown",
+        "Viết các câu hỏi trắc nghiệm khách quan"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI có thể tổng hợp và gợi ý cấu trúc, nhưng việc thấu hiểu cảm xúc học sinh và thẩm định giá trị nhân văn đòi hỏi tư duy phản biện và trực giác của con người."
+      }
+     },
+     {
+      "id": "ms_2",
+      "milestoneNumber": 2,
+      "phaseName": "Transition & EdTech Integration",
+      "phaseNameVi": "Chuyển dịch & Tích hợp EdTech",
+      "title": "Digital Instructional Design & Content Strategy",
+      "titleVi": "Thiết kế Sư phạm Kỹ thuật số & Chiến lược Nội dung",
+      "estimatedHours": 48,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Thiết kế trải nghiệm học tập (Instructional Design)",
+       "Quản lý dự án nội dung số (Digital Content Workflow)",
+       "Tâm lý học hành vi người học trực tuyến"
+      ],
+      "freeResources": [
+       {
+        "name": "Instructional Design foundations",
+        "provider": "Coursera (Audit Mode)",
+        "url": "https://www.coursera.org",
+        "type": "Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Đâu là yếu tố cốt lõi khi chuyển đổi một giáo án truyền thống sang định dạng học tập số hóa (E-learning)?",
+       "options": [
+        "Tăng số lượng chữ viết trong slide",
+        "Tương tác hai chiều, ngắt nhỏ nội dung (microlearning) và tích hợp bài tập phản hồi tức thì",
+        "Loại bỏ hoàn toàn phần thảo luận nhóm",
+        "Chỉ sử dụng hình ảnh do AI tạo ra"
+       ],
+       "correctIndex": 1,
+       "explanation": "Học tập số hóa đòi hỏi tính tương tác cao, chia nhỏ kiến thức để duy trì sự chú ý và cung cấp phản hồi kịp thời cho người học."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 8066,
+  "latencyMs": 13151
+ }
+}

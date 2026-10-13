@@ -1,0 +1,541 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 9675,
+  "latencyMs": 43913,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0029025
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Sustainable Agriculture Entrepreneur",
+    "roleTitleVi": "Chủ hộ kinh doanh nông nghiệp bền vững",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "While AI and automation are transforming global labor markets, physical agricultural production and local market expertise remain high-touch, human-centric domains. By leveraging your deep local knowledge and shifting toward sustainable practices, you reduce dependency on traditional intermediaries, which is a key strategy for economic resilience in the face of shifting market dynamics.",
+    "whyItFitsYou": "You possess 20 years of invaluable local experience and resilience. Your interest in sustainable agriculture aligns with growing consumer demand for clean food. By focusing on direct sales, you utilize your existing skills in crop management while building a business model that is less susceptible to the automation of routine administrative tasks.",
+    "transferableSkillsMatch": [
+     "Deep local agricultural knowledge",
+     "Resource management (water and soil)",
+     "Resilience in harsh environments",
+     "Operational planning"
+    ],
+    "skillsGap": [
+     "Digital literacy for direct marketing",
+     "Basic financial record-keeping",
+     "Sustainable farming certification standards",
+     "Direct-to-consumer sales techniques"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng (tùy thuộc vào quy mô sản xuất)",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Sustainable Agriculture Entrepreneur",
+     "occupationTitleVi": "Chủ hộ kinh doanh nông nghiệp bền vững",
+     "molisaCode": "6111",
+     "onetCode": "11-9013.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 40,
+     "humanAdvantageCore": [
+      "Local environmental intuition",
+      "Physical crop management",
+      "Direct community relationship building"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Implementing sustainable irrigation",
+       "taskNameVi": "Áp dụng tưới tiêu bền vững",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "11-9013.00",
+       "notes": "Leverages your existing water management skills with modern efficiency."
+      },
+      {
+       "taskName": "Direct-to-consumer produce sales",
+       "taskNameVi": "Bán nông sản trực tiếp cho người tiêu dùng",
+       "exposureType": "low",
+       "exposurePercentage": 5,
+       "onetCode": "41-4012.00",
+       "notes": "Reduces reliance on middlemen using local networks."
+      },
+      {
+       "taskName": "Crop quality monitoring",
+       "taskNameVi": "Giám sát chất lượng nông sản",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "11-9013.00",
+       "notes": "Uses your 20 years of experience to ensure premium quality."
+      }
+     ],
+     "sources": [
+      "World Bank 2024"
+     ],
+     "methodologySummary": "Assessment based on the low automation potential of physical, high-context agricultural tasks.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Modernizing Current Farm",
+      "pathTitleVi": "Hiện đại hóa canh tác hiện tại",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Integrate sustainable practices into your existing rice farming to increase value.",
+      "targetRoles": [
+       "Sustainable Rice Farmer"
+      ],
+      "skillsToAcquire": [
+       "Organic farming basics",
+       "Basic digital record keeping"
+      ],
+      "transferableSkills": [
+       "Rice cultivation",
+       "Water management"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9,
+       10,
+       12
+      ],
+      "rationale": "Leverages your existing land and experience with minimal capital risk.",
+      "actionStepNow": "Research local organic rice farming standards in An Giang."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Direct Market Sales",
+      "pathTitleVi": "Kinh doanh nông sản trực tiếp",
+      "feasibilityScore": 70,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition from selling to middlemen to selling directly to local markets or online.",
+      "targetRoles": [
+       "Agricultural Produce Retailer"
+      ],
+      "skillsToAcquire": [
+       "Basic digital literacy",
+       "Customer service"
+      ],
+      "transferableSkills": [
+       "Product knowledge",
+       "Local market network"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       6,
+       7,
+       9,
+       11,
+       14
+      ],
+      "rationale": "Increases profit margins by removing intermediaries.",
+      "actionStepNow": "Learn to use a smartphone for basic communication and photo sharing."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agri-Tourism Guide",
+      "pathTitleVi": "Hướng dẫn viên du lịch nông nghiệp",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Use your farm as a destination for educational tourism.",
+      "targetRoles": [
+       "Farm Tour Guide"
+      ],
+      "skillsToAcquire": [
+       "Basic English",
+       "Communication skills"
+      ],
+      "transferableSkills": [
+       "Agricultural expertise",
+       "Local history"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       5,
+       6,
+       8,
+       10,
+       15
+      ],
+      "rationale": "High potential but requires significant social and language skills.",
+      "actionStepNow": "Start learning basic English phrases on Duolingo."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "digital_literacy",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Nền tảng kỹ thuật số",
+      "title": "Basic Digital Literacy",
+      "titleVi": "Xóa mù chữ công nghệ",
+      "estimatedHours": 20,
+      "weeksDuration": 5,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer basics",
+       "Internet navigation"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary purpose of a web browser?",
+       "options": [
+        "To store rice",
+        "To access information on the internet",
+        "To manage water levels",
+        "To sell rice"
+       ],
+       "correctIndex": 1,
+       "explanation": "A web browser is a tool used to view websites and find information online."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "language_basics",
+      "milestoneNumber": 2,
+      "phaseName": "Communication",
+      "phaseNameVi": "Giao tiếp cơ bản",
+      "title": "English for Daily Life",
+      "titleVi": "Tiếng Anh giao tiếp",
+      "estimatedHours": 40,
+      "weeksDuration": 10,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic vocabulary",
+       "Sentence structure"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which of these is a common greeting in English?",
+       "options": [
+        "Rice",
+        "Hello",
+        "Water",
+        "Field"
+       ],
+       "correctIndex": 1,
+       "explanation": "Hello is the standard way to greet someone in English."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 80,
+    "rationale": "The guidance effectively bridges the user's specific farming skills with modern business pivots. It references their local expertise and resilience, though it assumes 20 years of experience not explicitly stated in the input."
+   },
+   "citationReport": {
+    "total": 1,
+    "verified": 1,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791870867038_c8mt9t",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:54:27.038Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:54:27.038Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:27.038Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:54:31.201Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 481,
+     "latencyMs": 3428
+    },
+    {
+     "ts": "2026-10-13T05:54:31.201Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "agricultural worker",
+       "produce vendor"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "low digital literacy",
+       "time constrained"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:31.201Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:54:34.772Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 683,
+     "latencyMs": 2925,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:54:34.772Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "produce vendor"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "sustainable agriculture transition Vietnam smallholder farmers challenges"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "sustainable farming techniques Vietnam free training low digital literacy"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:34.773Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:39.980Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1645,
+     "latencyMs": 4282,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:54:39.980Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "sustainable agriculture and produce sales in Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:42.697Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:47.019Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1786,
+     "latencyMs": 3680,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:54:47.019Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:54:47.019Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:55:03.031Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 4427,
+     "latencyMs": 15150
+    },
+    {
+     "ts": "2026-10-13T05:55:03.031Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:55:10.951Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 441,
+     "latencyMs": 7400
+    },
+    {
+     "ts": "2026-10-13T05:55:10.951Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 80,
+       "rationale": "The guidance effectively bridges the user's specific farming skills with modern business pivots. It references their local expertise and resilience, though it assumes 20 years of experience not explicitly stated in the input."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:55:10.951Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 9463,
+   "latencyMs": 43913,
+   "degraded": false
+  }
+ }
+}

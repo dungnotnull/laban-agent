@@ -1,0 +1,278 @@
+{
+ "score": {
+  "personaId": "persona-golden-2",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7782,
+  "latencyMs": 8525,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023346
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI Model Evaluation & Quality Assurance Engineer",
+    "roleTitleVi": "Kỹ sư Đánh giá & Đảm bảo Chất lượng Mô hình AI",
+    "aiResilienceScore": 88,
+    "matchScore": 92,
+    "reasoning": "Dựa trên Báo cáo Chuyển đổi số FPT (2024) và TopCV (2024), nhu cầu kiểm thử và đánh giá mô hình AI tại Việt Nam đang tăng trưởng mạnh do 62% doanh nghiệp tích hợp AI. Kỹ năng tìm edge-case sâu của QA truyền thống là năng lực phòng thủ cốt lõi chống lại sự tự động hóa.",
+    "whyItFitsYou": "Tận dụng tối đa 3 năm kinh nghiệm QA, tư duy logic, tính cẩn trọng và khả năng tìm edge-case sâu. Khắc phục điểm yếu chưa biết viết code automation từ đầu bằng cách học Python áp dụng vào test script và prompt testing.",
+    "transferableSkillsMatch": [
+     "Tư duy tìm lỗi và edge-case",
+     "Hiểu quy trình phát triển phần mềm (Agile/Scrum)",
+     "Viết tài liệu và báo cáo lỗi chi tiết",
+     "Giao tiếp kỹ thuật với lập trình viên"
+    ],
+    "skillsGap": [
+     "Kỹ năng lập trình Python cơ bản cho kiểm thử tự động",
+     "Kiến thức nền tảng về LLM và Prompt Engineering",
+     "Kỹ năng benchmark và đánh giá kết quả đầu ra của AI"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 45,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & GSO",
+      "year": "2024",
+      "url": "https://www.topcv.vn",
+      "quoteOrDataPoint": "65% manual QA saw hiring volumes contract while AI Operations and Testing roles increased salaries by 28-35%."
+     },
+     {
+      "paperTitle": "Báo cáo Chuyển đổi số và Ứng dụng AI tại Doanh nghiệp Việt Nam",
+      "source": "FPT Corporation",
+      "year": "2024",
+      "url": "https://www.fpt.com",
+      "quoteOrDataPoint": "62% of Vietnamese enterprises have started integrating AI into operations, creating high demand for evaluation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Software Quality Assurance and Testing Professional",
+     "occupationTitleVi": "Chuyên gia Kiểm thử và Đảm bảo Chất lượng Phần mềm",
+     "molisaCode": "2512",
+     "onetCode": "15-1253.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 25,
+     "augmentationPotentialScore": 90,
+     "humanAdvantageCore": [
+      "Đánh giá độ tin cậy và an toàn ngữ nghĩa của AI",
+      "Thiết kế kịch bản kiểm thử tình huống phức tạp (Edge-cases)",
+      "Tương tác liên phòng ban để giải quyết lỗi hệ thống"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "LLM Behavior & Prompt Vulnerability Testing",
+       "taskNameVi": "Kiểm thử hành vi LLM và lỗ hổng Prompt",
+       "exposureType": "augmentation",
+       "exposurePercentage": 60,
+       "onetCode": "15-1253.00",
+       "notes": "Sử dụng tư duy tìm edge-case để phát hiện các trường hợp mô hình AI hallucination hoặc trả kết quả sai lệch."
+      },
+      {
+       "taskName": "Automated Test Script Creation with Python",
+       "taskNameVi": "Tạo kịch bản kiểm thử tự động bằng Python",
+       "exposureType": "augmentation",
+       "exposurePercentage": 50,
+       "onetCode": "15-1253.00",
+       "notes": "Tận dụng Python và AI Copilot để viết test script nhanh hơn, bù đắp điểm yếu viết code từ đầu."
+      },
+      {
+       "taskName": "AI Output Quality Benchmark Documentation",
+       "taskNameVi": "Lập tài liệu chuẩn hóa benchmark chất lượng đầu ra AI",
+       "exposureType": "complementary",
+       "exposurePercentage": 30,
+       "onetCode": "15-1253.00",
+       "notes": "Phát huy thế mạnh viết tài liệu lỗi rõ ràng và giao tiếp tốt với đội ngũ phát triển."
+      }
+     ],
+     "sources": [
+      "TopCV Vietnam 2024",
+      "O*NET 28.3"
+     ],
+     "methodologySummary": "Đánh giá dựa trên ma trận rủi ro tự động hóa tác vụ O*NET kết hợp khảo sát cung cầu thị trường lao động công nghệ tại Đà Nẵng và Việt Nam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay & Augment to AI QA",
+      "pathTitleVi": "Nâng cấp kỹ năng Kiểm thử AI (Stay & Augment)",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 4,
+      "shortDescription": "Tích hợp công cụ GenAI và Python vào công việc QA hiện tại để chuyển dịch sang kiểm thử ứng dụng tích hợp AI.",
+      "targetRoles": [
+       "AI QA Engineer",
+       "Automation Tester (AI-Augmented)"
+      ],
+      "skillsToAcquire": [
+       "Python cơ bản cho Automation",
+       "Prompt Testing & Evaluation",
+       "API Testing cơ bản"
+      ],
+      "transferableSkills": [
+       "Tư duy tìm edge-case",
+       "Quy trình Agile/Scrum",
+       "Kỹ năng viết bug report"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       24,
+       32,
+       40,
+       48
+      ],
+      "rationale": "Dựa trên nguyên tắc tăng năng suất nhờ công cụ AI (NBER, 2023), việc nâng cấp giúp bảo vệ vị trí hiện tại và tăng thu nhập đáng kể.",
+      "actionStepNow": "Dành 5 giờ tuần này học cú pháp Python cơ bản và cách viết test case cho LLM API."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to LLM Prompt & Data Specialist",
+      "pathTitleVi": "Chuyển dịch sang Chuyên gia Dữ liệu & Đánh giá LLM",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển sang lĩnh vực đánh giá dữ liệu huấn luyện và kiểm định chất lượng mô hình ngôn ngữ lớn cho các công ty công nghệ quốc tế remote.",
+      "targetRoles": [
+       "AI Data Annotator Lead",
+       "LLM Evaluator / Prompt Specialist"
+      ],
+      "skillsToAcquire": [
+       "Data labeling standards",
+       "LLM fine-tuning concepts",
+       "Tiếng Anh chuyên ngành kỹ thuật"
+      ],
+      "transferableSkills": [
+       "Tính cẩn trọng",
+       "Khả năng phân tích chi tiết",
+       "Quản lý tài liệu kỹ thuật"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       28,
+       38,
+       48,
+       60
+      ],
+      "rationale": "Phù hợp với mong muốn làm việc remote (priority = 5) và tận dụng kỹ năng tìm lỗi chi tiết để kiểm định dữ liệu AI.",
+      "actionStepNow": "Tìm hiểu các nền tảng đánh giá dữ liệu AI quốc tế (Remotasks/Outlier) để làm quen với dạng bài tập đánh giá mô hình."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full Switch to Cybersecurity Analyst",
+      "pathTitleVi": "Chuyển hướng hoàn toàn sang An toàn thông tin",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Rẽ hướng sang bảo mật ứng dụng và kiểm thử bảo mật (Penetration Testing) dựa trên nền tảng CNTT và tư duy tìm lỗi.",
+      "targetRoles": [
+       "Junior Security Analyst",
+       "Application Security Tester"
+      ],
+      "skillsToAcquire": [
+       "Mạng máy tính nâng cao",
+       "Bảo mật ứng dụng Web/API",
+       "Chứng chỉ bảo mật cơ bản (CompTIA Security+)"
+      ],
+      "transferableSkills": [
+       "Tư duy tấn công tìm điểm yếu (Edge-case)",
+       "Tính kiên nhẫn và cẩn trọng"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       15,
+       22,
+       35,
+       50,
+       70
+      ],
+      "rationale": "Đáp ứng sở thích cá nhân về Cybersecurity, tuy nhiên đòi hỏi thời gian đầu tư lớn hơn và vượt ngưỡng 15 giờ/tuần hiện tại.",
+      "actionStepNow": "Tham gia một khóa học ngắn về bảo mật web cơ bản (OWASP Top 10) trong giới hạn ngân sách."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "ms-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Python for Testing",
+      "phaseNameVi": "Nền tảng & Python ứng dụng kiểm thử",
+      "title": "Master Python Basics & API Testing",
+      "titleVi": "Làm chủ Python cơ bản và Kiểm thử API",
+      "estimatedHours": 90,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Python syntax",
+       "Requests library",
+       "Postman API testing",
+       "Basic automation scripts"
+      ],
+      "freeResources": [
+       {
+        "name": "Python for Everybody - FreeCodeCamp",
+        "provider": "FreeCodeCamp",
+        "url": "https://www.freecodecamp.org",
+        "type": "Online Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Trong Python, thư viện nào thường được sử dụng phổ biến nhất để thực hiện HTTP Requests khi kiểm thử API?",
+       "options": [
+        "requests",
+        "pandas",
+        "numpy",
+        "matplotlib"
+       ],
+       "correctIndex": 0,
+       "explanation": "'requests' là thư viện tiêu chuẩn và đơn giản nhất trong Python để gửi các HTTP request kiểm tra API endpoints."
+      }
+     },
+     {
+      "id": "ms-2",
+      "milestoneNumber": 2,
+      "phaseName": "AI Evaluation & Prompt Engineering",
+      "phaseNameVi": "Đánh giá AI & Kỹ thuật Prompt",
+      "title": "AI Model Evaluation & Prompt Testing",
+      "titleVi": "Đánh giá mô hình AI & Kiểm thử Prompt",
+      "estimatedHours": 100,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "Prompt Engineering",
+       "LLM Hallucination detection",
+       "Test case generation using AI",
+       "Basic benchmark metrics"
+      ],
+      "freeResources": [
+       {
+        "name": "Prompt Engineering for Developers",
+        "provider": "DeepLearning.AI",
+        "url": "https://www.deeplearning.ai",
+        "type": "Short Course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Hiện tượng mô hình LLM tự bịa ra thông tin sai lệch nhưng trình bày rất tự tin được gọi là gì?",
+       "options": [
+        "Overfitting",
+        "Hallucination",
+        "Underfitting",
+        "Latency"
+       ],
+       "correctIndex": 1,
+       "explanation": "Hallucination (ảo giác) là hiện tượng phổ biến ở LLM mà QA cần thiết kế test case để phát hiện và ngăn chặn."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7557,
+  "latencyMs": 8525
+ }
+}

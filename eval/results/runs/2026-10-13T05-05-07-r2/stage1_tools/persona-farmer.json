@@ -1,0 +1,490 @@
+{
+ "score": {
+  "personaId": "persona-farmer",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 7791,
+  "latencyMs": 10753,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0023372999999999996
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Clean Farming & Local Agricultural Produce Trader",
+    "roleTitleVi": "Thương lái nông sản sạch và Nông nghiệp sinh thái",
+    "aiResilienceScore": 85,
+    "matchScore": 90,
+    "reasoning": "According to the World Economic Forum (WEF) 2023 report, sustainability and regional value chains represent strong growth areas as digital transformations demand better traceability and supply chain efficiency, making localized, human-centric agricultural trading robust against automation.",
+    "whyItFitsYou": "Leverages your 20 years of rice farming experience and deep local relationships in An Giang, directly addressing your interest in clean farming and produce trading without requiring advanced technology or English literacy upfront.",
+    "transferableSkillsMatch": [
+     "Water and crop management expertise",
+     "Deep local agricultural knowledge",
+     "Resilience in harsh weather and harvesting conditions"
+    ],
+    "skillsGap": [
+     "Basic quality standards for clean agriculture",
+     "Direct negotiation without middlemen reliance",
+     "Basic record-keeping and financial management"
+    ],
+    "averageSalaryRangeVND": "8,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Jobs Report 2023 & 2025 Outlook",
+      "source": "World Economic Forum (WEF)",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "Top growth roles include Sustainability Specialists and business-oriented leadership roles prioritizing local market adaptation."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Agricultural Produce Trader",
+     "occupationTitleVi": "Thương lái nông sản",
+     "molisaCode": "6111",
+     "onetCode": "45-1011.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 15,
+     "augmentationPotentialScore": 40,
+     "humanAdvantageCore": [
+      "Face-to-face trust building with local farmers",
+      "Physical quality inspection of produce",
+      "Navigating regional market dynamics in An Giang"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Evaluating clean rice quality by physical inspection",
+       "taskNameVi": "Đánh giá chất lượng lúa sạch bằng quan sát trực tiếp",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "45-1011.00",
+       "notes": "Relies entirely on your 20 years of farming experience."
+      },
+      {
+       "taskName": "Negotiating direct purchase prices with local farming households",
+       "taskNameVi": "Đàm phán giá thu mua trực tiếp với các hộ nông dân",
+       "exposureType": "low",
+       "exposurePercentage": 5,
+       "onetCode": "45-1011.00",
+       "notes": "Human-centric negotiation that cannot be automated."
+      },
+      {
+       "taskName": "Coordinating seasonal harvest logistics",
+       "taskNameVi": "Điều phối hậu cần thu hoạch theo mùa vụ",
+       "exposureType": "medium",
+       "exposurePercentage": 30,
+       "onetCode": "45-1011.00",
+       "notes": "Can be augmented by basic mobile messaging and spreadsheets."
+      }
+     ],
+     "sources": [
+      "World Economic Forum (WEF)"
+     ],
+     "methodologySummary": "Evaluated based on task repetitiveness, physical interaction requirements, and local economic context in rural Vietnam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Augmented Traditional Farming",
+      "pathTitleVi": "Canh tác truyền thống kết hợp công nghệ cơ bản",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Continue rice farming while utilizing basic mobile tools to track market prices and reduce middleman dependence.",
+      "targetRoles": [
+       "Advanced Rice Farmer"
+      ],
+      "skillsToAcquire": [
+       "Basic mobile market price checking"
+      ],
+      "transferableSkills": [
+       "Crop management",
+       "Water regulation"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       6000000,
+       6500000,
+       7000000,
+       7500000,
+       8000000
+      ],
+      "rationale": "Keeps core income stable while slowly introducing efficiency tools.",
+      "actionStepNow": "Use your current smartphone or ask a family member to check daily rice prices online before selling."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Clean Agriculture & Direct Trader",
+      "pathTitleVi": "Nông nghiệp sạch và Giao dịch trực tiếp",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition part of your land or partner with neighbors to produce residue-safe rice and sell directly to small distributors.",
+      "targetRoles": [
+       "Clean Produce Supplier"
+      ],
+      "skillsToAcquire": [
+       "Safe fertilizer use",
+       "Direct contract negotiation"
+      ],
+      "transferableSkills": [
+       "Local community trust",
+       "Farming experience"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7000000,
+       8500000,
+       10000000,
+       12000000,
+       14000000
+      ],
+      "rationale": "Meets growing consumer demand for clean food in Vietnam.",
+      "actionStepNow": "Identify one local farming technique to reduce chemical usage on a small test plot."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Agricultural Cooperative Leader",
+      "pathTitleVi": "Chủ chốt hợp tác xã nông nghiệp",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Take a leadership role in a local farming cooperative to aggregate produce and bargain collectively.",
+      "targetRoles": [
+       "Cooperative Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Group management",
+       "Basic cooperative accounting"
+      ],
+      "transferableSkills": [
+       "Deep local respect",
+       "Agricultural expertise"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       8000000,
+       10000000,
+       13000000,
+       16000000,
+       20000000
+      ],
+      "rationale": "Scales individual experience into collective bargaining power.",
+      "actionStepNow": "Speak with local agricultural extension officers about existing cooperative models in An Giang."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Price Awareness",
+      "phaseNameVi": "Nền tảng và Nhận biết giá cả",
+      "title": "Leveraging Local Markets and Digital Price Tracking",
+      "titleVi": "Tận dụng thị trường địa phương và theo dõi giá số",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Basic market price monitoring via mobile",
+       "Direct farmer networking"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is checking market prices before selling beneficial?",
+       "options": [
+        "It eliminates all farming risks",
+        "It helps reduce dependence on a single middleman",
+        "It requires advanced computer programming",
+        "It guarantees free fertilizer"
+       ],
+       "correctIndex": 1,
+       "explanation": "Checking market prices empowers you to negotiate better terms rather than blindly accepting a single trader's offer."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "milestoneId": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Clean Farming Practice",
+      "phaseNameVi": "Thực hành nông nghiệp sạch",
+      "title": "Adopting Low-Input and Safe Farming Methods",
+      "titleVi": "Áp dụng phương pháp canh tác an toàn và ít hóa chất",
+      "estimatedHours": 16,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Reduced chemical usage",
+       "Quality preservation for harvested rice"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a primary advantage of shifting toward clean farming methods?",
+       "options": [
+        "Higher market value and health safety",
+        "Needing no water at all",
+        "Requiring expensive robotic machinery",
+        "Stopping all plant growth"
+       ],
+       "correctIndex": 0,
+       "explanation": "Clean farming produces safer food that commands higher prices in modern Vietnamese markets."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$308 - $577 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869197629_zp8af1",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:26:37.629Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:26:37.629Z",
+     "type": "run_start",
+     "message": "pipeline for \"Nông dân trồng lúa\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:37.629Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:26:38.744Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 494,
+     "latencyMs": 1115
+    },
+    {
+     "ts": "2026-10-13T05:26:38.744Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "rice farmer",
+       "agricultural worker",
+       "produce merchant"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "digital illiteracy",
+       "low risk tolerance"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:38.744Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 713,
+     "latencyMs": 1256,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "rice farmer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "agricultural worker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "produce merchant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Vietnam agriculture automation AI Mekong Delta rice farmer transition"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "vietnamese agriculture training free vocational online"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:40.000Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:41.563Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1689,
+     "latencyMs": 1563,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:26:41.563Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:41.563Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:26:48.382Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4671,
+     "latencyMs": 6819
+    },
+    {
+     "ts": "2026-10-13T05:26:48.382Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:26:48.382Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 7567,
+   "latencyMs": 10753,
+   "degraded": false
+  }
+ }
+}

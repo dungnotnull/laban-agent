@@ -1,0 +1,262 @@
+{
+ "score": {
+  "personaId": "persona-juniordev",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7004,
+  "latencyMs": 5469,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0021011999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Front-end Engineer",
+    "roleTitleVi": "Kỹ sư Front-end ứng dụng AI",
+    "aiResilienceScore": 85,
+    "matchScore": 95,
+    "reasoning": "Dựa trên báo cáo của GitHub/Microsoft (2022), các lập trình viên sử dụng AI hoàn thành tác vụ nhanh hơn 55.8%. Với nền tảng React/TypeScript, bạn không bị thay thế mà được nâng cấp thành 'AI-Augmented Developer', tập trung vào kiến trúc hệ thống thay vì viết code thủ công.",
+    "whyItFitsYou": "Bạn có thế mạnh tự học và tư duy nhanh. Việc chuyển đổi từ 'viết code' sang 'điều phối AI viết code' tận dụng tối đa kỹ năng React hiện có của bạn, đồng thời giảm bớt gánh nặng của các tác vụ lặp lại.",
+    "transferableSkillsMatch": [
+     "Tư duy logic lập trình",
+     "Quản lý phiên bản (Git)",
+     "Kiến trúc component",
+     "Giải quyết vấn đề kỹ thuật"
+    ],
+    "skillsGap": [
+     "Prompt Engineering cho code",
+     "AI Agent Frameworks (LangChain/CrewAI)",
+     "Kiến trúc hệ thống lớn (System Design)",
+     "Tiếng Anh kỹ thuật chuyên sâu"
+    ],
+    "averageSalaryRangeVND": "25,000,000 - 50,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+      "source": "GitHub / Microsoft Research",
+      "year": "2022",
+      "url": "https://github.blog/2022-09-07-research-quantifying-github-copilots-impact-on-developer-productivity/",
+      "quoteOrDataPoint": "Developers using GitHub Copilot completed tasks 55.8% faster."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Software Developer",
+     "occupationTitleVi": "Lập trình viên phần mềm",
+     "molisaCode": "2512",
+     "onetCode": "15-1132.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 40,
+     "augmentationPotentialScore": 90,
+     "humanAdvantageCore": [
+      "Kiến trúc hệ thống",
+      "Tư duy sản phẩm",
+      "Giao tiếp với khách hàng"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Boilerplate Code Generation",
+       "taskNameVi": "Viết code khung",
+       "exposureType": "High",
+       "exposurePercentage": 80,
+       "onetCode": "15-1132.00",
+       "notes": "AI xử lý tốt, cần chuyển sang vai trò review."
+      },
+      {
+       "taskName": "System Architecture Design",
+       "taskNameVi": "Thiết kế kiến trúc hệ thống",
+       "exposureType": "Low",
+       "exposurePercentage": 10,
+       "onetCode": "15-1132.00",
+       "notes": "Cần tư duy con người để đảm bảo tính ổn định."
+      },
+      {
+       "taskName": "Debugging & Refactoring",
+       "taskNameVi": "Gỡ lỗi và tối ưu code",
+       "exposureType": "Medium",
+       "exposurePercentage": 50,
+       "onetCode": "15-1132.00",
+       "notes": "AI hỗ trợ mạnh, cần kỹ năng kiểm chứng."
+      }
+     ],
+     "sources": [
+      "GitHub Research 2022",
+      "McKinsey 2023"
+     ],
+     "methodologySummary": "Đánh giá dựa trên khả năng bổ trợ (complementarity) của AI đối với các tác vụ lập trình.",
+     "uncertaintyRange": "±5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Developer",
+      "pathTitleVi": "Lập trình viên tăng cường AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Tối ưu hóa quy trình làm việc hiện tại bằng các công cụ AI.",
+      "targetRoles": [
+       "Senior Front-end Engineer",
+       "AI-Integrated Developer"
+      ],
+      "skillsToAcquire": [
+       "GitHub Copilot/Cursor",
+       "Prompt Engineering"
+      ],
+      "transferableSkills": [
+       "React",
+       "TypeScript"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       25,
+       30,
+       38,
+       45,
+       55
+      ],
+      "rationale": "Tận dụng kỹ năng sẵn có, rủi ro thấp nhất.",
+      "actionStepNow": "Cài đặt và làm chủ Cursor IDE trong 2 tuần."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Product Engineer",
+      "pathTitleVi": "Kỹ sư sản phẩm AI",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Chuyển dịch sang xây dựng các ứng dụng tích hợp AI.",
+      "targetRoles": [
+       "AI Product Engineer",
+       "Frontend Lead"
+      ],
+      "skillsToAcquire": [
+       "LangChain",
+       "Vector Databases",
+       "API Integration"
+      ],
+      "transferableSkills": [
+       "React",
+       "Logic"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       25,
+       35,
+       45,
+       55,
+       70
+      ],
+      "rationale": "Nhu cầu thị trường cao cho các ứng dụng AI.",
+      "actionStepNow": "Học khóa học cơ bản về LLM API integration."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI/ML Engineer",
+      "pathTitleVi": "Kỹ sư AI/ML",
+      "feasibilityScore": 40,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Chuyển hẳn sang phát triển mô hình và hạ tầng AI.",
+      "targetRoles": [
+       "Junior ML Engineer",
+       "Data Engineer"
+      ],
+      "skillsToAcquire": [
+       "Python",
+       "PyTorch",
+       "Statistics"
+      ],
+      "transferableSkills": [
+       "Coding"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       20,
+       25,
+       40,
+       60,
+       80
+      ],
+      "rationale": "Cạnh tranh cao, cần nền tảng toán học vững.",
+      "actionStepNow": "Bắt đầu học Python và Toán cho AI."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "AI Tooling Mastery",
+      "phaseNameVi": "Làm chủ công cụ AI",
+      "title": "Tăng tốc năng suất",
+      "titleVi": "Tăng tốc năng suất lập trình",
+      "estimatedHours": 60,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "Cursor IDE",
+       "Prompt Engineering for Code",
+       "Unit Testing with AI"
+      ],
+      "freeResources": {
+       "name": "GitHub Copilot Documentation",
+       "provider": "GitHub",
+       "url": "https://docs.github.com/en/copilot",
+       "type": "Documentation"
+      },
+      "checkpointQuiz": {
+       "question": "Cách tốt nhất để yêu cầu AI viết một component React phức tạp là gì?",
+       "options": [
+        "Viết một câu lệnh ngắn",
+        "Cung cấp context, yêu cầu cụ thể và định dạng đầu ra",
+        "Để AI tự đoán",
+        "Copy code cũ vào"
+       ],
+       "correctIndex": 1,
+       "explanation": "Cung cấp ngữ cảnh (context) giúp AI hiểu rõ yêu cầu và giảm thiểu lỗi logic."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "AI Integration",
+      "phaseNameVi": "Tích hợp AI vào sản phẩm",
+      "title": "Xây dựng ứng dụng AI",
+      "titleVi": "Xây dựng ứng dụng tích hợp AI",
+      "estimatedHours": 120,
+      "weeksDuration": 8,
+      "skillsCovered": [
+       "OpenAI API",
+       "LangChain.js",
+       "Vector Search"
+      ],
+      "freeResources": {
+       "name": "DeepLearning.AI Short Courses",
+       "provider": "DeepLearning.AI",
+       "url": "https://www.deeplearning.ai/short-courses/",
+       "type": "Video Course"
+      },
+      "checkpointQuiz": {
+       "question": "Tại sao cần Vector Database khi xây dựng ứng dụng AI?",
+       "options": [
+        "Để lưu trữ ảnh",
+        "Để lưu trữ dữ liệu ngữ nghĩa cho RAG",
+        "Để tăng tốc độ load trang",
+        "Để thay thế SQL"
+       ],
+       "correctIndex": 1,
+       "explanation": "Vector Database cho phép tìm kiếm ngữ nghĩa, là thành phần cốt lõi của RAG (Retrieval-Augmented Generation)."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 6762,
+  "latencyMs": 5469
+ }
+}

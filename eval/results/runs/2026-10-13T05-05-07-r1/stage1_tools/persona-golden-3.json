@@ -1,0 +1,518 @@
+{
+ "score": {
+  "personaId": "persona-golden-3",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 12404,
+  "latencyMs": 11851,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0037212
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Business Analyst / Data Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+    "aiResilienceScore": 82,
+    "matchScore": 92,
+    "reasoning": "Stanford HAI (2024) indicates business analysts utilizing AI agents complete market modeling 43% faster with higher forecast accuracy, and WEF Future of Jobs (2023) ranks BI and Data Analysts as a top growing occupation globally. Trần Mai Chi's background from NEU with strong English and business acumen allows her to leverage AI workflow automation effectively while focusing on human-centric strategic problem framing.",
+    "whyItFitsYou": "Your solid foundation in Business Administration from NEU, combined with IELTS 7.0 and high aptitude for digital marketing and business analytics, positions you perfectly to bridge raw data and high-level executive decision-making. Your weakness in deep technical hands-on experience is easily mitigated by modern AI tools that handle baseline data scripting and report creation, allowing you to focus on strategic thinking.",
+    "transferableSkillsMatch": [
+     "Tư duy tổng quan về doanh nghiệp (Business contextualization)",
+     "Tiếng Anh IELTS 7.0 (Multilingual and international resource navigation)",
+     "Thuyết trình mạch lạc và giao tiếp tốt (Executive stakeholder alignment)",
+     "Khả năng tự học nhanh (Rapid self-learning capability)"
+    ],
+    "skillsGap": [
+     "SQL querying and basic data cleaning scripts",
+     "Routine operational dashboard creation (Power BI / Tableau)",
+     "Specific data portfolio projects"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     },
+     {
+      "paperTitle": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "sourceId": "wef-future-of-jobs-2023-2025",
+      "quoteOrDataPoint": "Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts for e-commerce metrics",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu thương mại điện tử",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds; analysts review and validate."
+      },
+      {
+       "taskName": "Creating routine operational dashboards for digital marketing campaigns",
+       "taskNameVi": "Tạo dashboard vận hành cho các chiến dịch digital marketing",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate standard visual summaries automatically."
+      },
+      {
+       "taskName": "Framing strategic business hypotheses and executive consulting for growth",
+       "taskNameVi": "Định hình giả thuyết chiến lược và tư vấn ban lãnh đạo về tăng trưởng",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, political savvy, and nuanced risk appetite."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET task models combined with Stanford HAI and WEF automation exposure benchmarks.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Business Analyst",
+      "pathTitleVi": "Chuyên viên BA ứng dụng AI nâng cao",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Integrate AI automation tools into daily business analysis and project management tasks to accelerate output.",
+      "targetRoles": [
+       "Junior Business Analyst",
+       "Data Specialist",
+       "Operations Analyst"
+      ],
+      "skillsToAcquire": [
+       "SQL fundamentals",
+       "Power BI / Tableau Copilot usage",
+       "AI workflow automation"
+      ],
+      "transferableSkills": [
+       "Business acumen",
+       "IELTS 7.0",
+       "Logical reasoning"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       20,
+       28,
+       38,
+       50
+      ],
+      "rationale": "Leverages existing NEU business foundation while rapidly bridging technical skill gaps through AI assistance.",
+      "actionStepNow": "Enroll in a Google Career Certificate course on Data Analytics and practice SQL basics."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Growth & E-commerce Operations Specialist",
+      "pathTitleVi": "Chuyên viên Vận hành Tăng trưởng & Thương mại Điện tử",
+      "feasibilityScore": 88,
+      "estimatedTimelineMonths": 9,
+      "shortDescription": "Combine digital marketing interests with business analytics to manage e-commerce growth strategies.",
+      "targetRoles": [
+       "Growth Specialist",
+       "E-commerce Operations Executive",
+       "Digital Project Coordinator"
+      ],
+      "skillsToAcquire": [
+       "Conversion rate optimization (CRO)",
+       "E-commerce platform analytics",
+       "Prompt engineering for marketing"
+      ],
+      "transferableSkills": [
+       "Communication",
+       "Dynamic mindset",
+       "Strategic overview"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       14,
+       19,
+       26,
+       35,
+       45
+      ],
+      "rationale": "Directly taps into user's passion for digital marketing and e-commerce while maintaining analytical rigor.",
+      "actionStepNow": "Build a simulated e-commerce portfolio project analyzing sales funnel conversion."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "AI Product Operations Associate",
+      "pathTitleVi": "Chuyên viên Vận hành Sản phẩm AI",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition into tech startups managing AI workflow automation implementation for internal business teams.",
+      "targetRoles": [
+       "AI Ops Associate",
+       "Product Operations Analyst",
+       "Tech Startup Project Coordinator"
+      ],
+      "skillsToAcquire": [
+       "No-code automation tools (Zapier, Make)",
+       "AI prompt frameworks",
+       "Agile project management"
+      ],
+      "transferableSkills": [
+       "Quick self-learning",
+       "Enthusiasm for new tech",
+       "Presentation skills"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       16,
+       22,
+       32,
+       45,
+       60
+      ],
+      "rationale": "High risk due to lack of deep technical background, but aligns with high salary and fast promotion values.",
+      "actionStepNow": "Learn basic no-code workflow automation and build a personal productivity dashboard."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Literacy",
+      "phaseNameVi": "Nền tảng và Kỹ năng số cơ bản",
+      "title": "Master Data Analytics & SQL Basics with AI Assistance",
+      "titleVi": "Làm chủ Phân tích Dữ liệu & SQL cơ bản với sự hỗ trợ của AI",
+      "estimatedHours": 72,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "SQL queries",
+       "Data cleaning",
+       "Spreadsheet modeling with AI tools"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary role of an AI-augmented Business Analyst when writing SQL queries?",
+       "options": [
+        "Replacing human judgment entirely with automated scripts",
+        "Using AI to draft queries quickly while reviewing, validating, and framing business context",
+        "Manual coding without any technological assistance",
+        "Avoiding data analysis altogether"
+       ],
+       "correctIndex": 1,
+       "explanation": "AI assists in drafting code rapidly, but human judgment is vital for contextualization and validation."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Portfolio & Practical Application",
+      "phaseNameVi": "Xây dựng Portfolio và Ứng dụng Thực chiến",
+      "title": "Build an E-commerce Business Analysis Portfolio Project",
+      "titleVi": "Xây dựng Dự án Portfolio Phân tích Kinh doanh Thương mại Điện tử",
+      "estimatedHours": 72,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Dashboard creation",
+       "Business hypothesis testing",
+       "Data storytelling"
+      ],
+      "freeResources": [
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is having a specific portfolio project crucial for Trần Mai Chi given her profile?",
+       "options": [
+        "It replaces the need for a university degree",
+        "It directly addresses her lack of a specific project portfolio and demonstrates practical competence",
+        "It guarantees an executive position immediately",
+        "It is only useful for software engineers"
+       ],
+       "correctIndex": 1,
+       "explanation": "A portfolio bridges the experience gap by showcasing concrete examples of analytical problem solving."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $846 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791868114272_67f6ru",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:08:34.272Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:08:34.272Z",
+     "type": "run_start",
+     "message": "pipeline for \"Fresh Business Graduate\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:34.272Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:08:35.651Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 703,
+     "latencyMs": 1379
+    },
+    {
+     "ts": "2026-10-13T05:08:35.651Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "Business Analyst",
+       "Digital Marketing Specialist",
+       "Project Coordinator"
+      ],
+      "riskFlags": [
+       "Lacks deep technical hands-on experience",
+       "Missing specific project portfolio"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:35.651Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 732,
+     "latencyMs": 1484,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Business Analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Digital Marketing Specialist"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "2 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "Project Coordinator"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.135Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "Generative AI business analyst digital marketing automation Vietnam workforce"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.136Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.136Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "business analytics digital marketing python sql free courses Hanoi Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:37.136Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:38.500Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 3865,
+     "latencyMs": 1364,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:08:38.500Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:38.500Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:08:46.123Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6887,
+     "latencyMs": 7623
+    },
+    {
+     "ts": "2026-10-13T05:08:46.123Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:08:46.123Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 12187,
+   "latencyMs": 11851,
+   "degraded": false
+  }
+ }
+}

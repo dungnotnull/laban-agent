@@ -1,0 +1,531 @@
+{
+ "score": {
+  "personaId": "persona-accountant",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 85,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 16063,
+  "latencyMs": 45386,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.004818899999999999
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI-Augmented Financial Analyst / Business Intelligence Specialist",
+    "roleTitleVi": "Chuyên viên Phân tích Tài chính & Dữ liệu Kinh doanh ứng dụng AI",
+    "aiResilienceScore": 82,
+    "matchScore": 88,
+    "reasoning": "According to the World Bank (2024), up to 30% of routine cognitive jobs in Southeast Asia face automation pressure, requiring strategic upskilling into analytical roles. Stanford HAI (2024) notes that Business Analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy. Transitioning from general accounting to financial analytics leverages your core meticulousness while positioning you in a high-growth domain where AI augments rather than replaces human judgment.",
+    "whyItFitsYou": "Your six years of accounting experience at National Economics University provide an exceptional foundation in financial statements and regulatory compliance. Since you enjoy financial analysis and digital tools but currently lack data visualization and analytics skills, this path allows you to capitalize on your meticulous attention to detail while overcoming your weaknesses through accessible low-cost training.",
+    "transferableSkillsMatch": [
+     "Process adherence and financial compliance",
+     "Meticulous document control and transaction validation",
+     "Foundational understanding of ledger balancing and trial balances",
+     "Strong numerical aptitude and regulatory reasoning"
+    ],
+    "skillsGap": [
+     "SQL query writing and database management",
+     "Data visualization and dashboard creation (Power BI / Tableau)",
+     "Advanced predictive financial modeling with AI assistants"
+    ],
+    "averageSalaryRangeVND": "18,000,000 - 35,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling. Up to 30% of routine cognitive jobs in the region face automation pressure."
+     },
+     {
+      "paperTitle": "Stanford HAI AI Index 2024",
+      "source": "Stanford HAI",
+      "year": 2024,
+      "url": "https://aiindex.stanford.edu/report/",
+      "quoteOrDataPoint": "Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Business Analyst / Data Specialist",
+     "occupationTitleVi": "Chuyên viên Phân tích Kinh doanh & Dữ liệu (BA/BI)",
+     "molisaCode": "2511",
+     "onetCode": "15-1211.00",
+     "overallResilienceScore": 82,
+     "automationRiskScore": 35,
+     "augmentationPotentialScore": 92,
+     "humanAdvantageCore": [
+      "Deep domain contextualization & Vietnamese business culture insights (Thấu hiểu sâu bối cảnh thị trường nội địa)",
+      "Executive stakeholder alignment & persuasion (Thuyết phục và gắn kết lãnh đạo)",
+      "Problem framing & translating ambiguous business pains into metrics (Định hình bài toán từ nhu cầu mơ hồ)",
+      "Ethical governance of data pipelines (Quản trị đạo đức và pháp lý dữ liệu)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Writing standard SQL queries and data cleaning scripts for financial data",
+       "taskNameVi": "Viết câu lệnh SQL cơ bản và làm sạch dữ liệu tài chính",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 80,
+       "onetCode": "15-1211.00-T1",
+       "notes": "AI writes SQL and Python pandas transforms in seconds, allowing you to focus on validating financial integrity."
+      },
+      {
+       "taskName": "Creating routine operational dashboards and cash flow charts using MISA and Excel data",
+       "taskNameVi": "Tạo dashboard vận hành và biểu đồ dòng tiền từ dữ liệu MISA và Excel",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 70,
+       "onetCode": "15-1211.00-T2",
+       "notes": "Natural language BI tools generate standard visual summaries automatically from your existing accounting outputs."
+      },
+      {
+       "taskName": "Framing strategic budget hypotheses and executive financial consulting",
+       "taskNameVi": "Định hình giả thuyết ngân sách chiến lược và tư vấn tài chính lãnh đạo",
+       "exposureType": "human_core",
+       "exposurePercentage": 15,
+       "onetCode": "15-1211.00-T3",
+       "notes": "Requires strategic intuition, compliance acumen, and executive communication tailored to Vietnamese business practices."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "stanford-hai-ai-index-2024",
+       "citationText": "Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.",
+       "url": "https://aiindex.stanford.edu/report/"
+      },
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF Future of Jobs (2023): Business Intelligence and Data Analysts ranked as #3 fastest growing occupation globally.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET occupational profiles, Stanford HAI metrics on AI augmentation, and World Bank regional labor dynamics for Vietnam.",
+     "uncertaintyRange": "+/- 5% variation based on macroeconomic conditions in Hanoi and adoption rates of enterprise AI tools.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced General Accountant",
+      "pathTitleVi": "Kế toán tổng hợp ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Incorporate AI-powered OCR invoicing and automated ledger tools into your current accounting workflows to save time and reduce manual error.",
+      "targetRoles": [
+       "Kế toán tổng hợp cao cấp",
+       "Chuyên viên Kiểm soát Chứng từ số hóa"
+      ],
+      "skillsToAcquire": [
+       "AI OCR tools",
+       "Advanced MISA automation features",
+       "Automated spreadsheet reconciliation"
+      ],
+      "transferableSkills": [
+       "Excel nâng cao",
+       "Phần mềm MISA",
+       "Thủ thuật thuế",
+       "Kiểm soát chứng từ"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       15,
+       17,
+       19,
+       21,
+       23
+      ],
+      "rationale": "Keeps you in your comfort zone with minimal risk while immediately protecting your routine tasks from automation.",
+      "actionStepNow": "Explore Microsoft Learn modules on productivity tools and test built-in AI assistant features in your current accounting software."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Financial Data Analyst",
+      "pathTitleVi": "Chuyên viên Phân tích Dữ liệu Tài chính",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage your 6 years of accounting background to transition into internal financial analysis, combining MISA data with visualization dashboards.",
+      "targetRoles": [
+       "Financial Analyst",
+       "BI Specialist for SME",
+       "Financial Controller Assistant"
+      ],
+      "skillsToAcquire": [
+       "Power BI / Tableau",
+       "SQL fundamentals",
+       "Executive data storytelling"
+      ],
+      "transferableSkills": [
+       "Cẩn thận, chi tiết",
+       "Nắm vững quy trình kế toán",
+       "Tư duy tuân thủ quy định"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       16,
+       20,
+       25,
+       30,
+       36
+      ],
+      "rationale": "Directly addresses your interests in financial analysis and digital tools while fitting your 10-hour weekly limit and low budget.",
+      "actionStepNow": "Audit a free data analytics course on Coursera or Microsoft Learn dedicating 10 hours per week."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Data Science & Strategic BI Consultant",
+      "pathTitleVi": "Chuyên gia Tư vấn BI & Khoa học Dữ liệu Chiến lược",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Move entirely out of accounting into advanced enterprise data science and predictive analytics consulting.",
+      "targetRoles": [
+       "Senior Data Analyst",
+       "Business Intelligence Manager"
+      ],
+      "skillsToAcquire": [
+       "Python for Data Analysis",
+       "Advanced Machine Learning",
+       "Data Pipeline Architecture"
+      ],
+      "transferableSkills": [
+       "Tư duy tuân thủ quy định",
+       "Nắm vững quy trình kế toán"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       18,
+       25,
+       35,
+       45,
+       55
+      ],
+      "rationale": "High reward but exceeds your low risk tolerance and available weekly study hours given your current professional commitments.",
+      "actionStepNow": "Not recommended as an immediate first step; focus on the adjacent pivot first."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Digital Tools",
+      "phaseNameVi": "Nền tảng & Công cụ số",
+      "title": "Mastering Data Visualization & Spreadsheet Automation",
+      "titleVi": "Làm chủ trực quan hóa dữ liệu và tự động hóa bảng tính",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Excel Advanced Dashboards",
+       "Data Cleaning Basics",
+       "Introduction to Business Intelligence"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Which tool is primarily designed for creating interactive business intelligence dashboards and data visualization?",
+       "options": [
+        "Microsoft Word",
+        "Power BI / Tableau",
+        "Standard Windows Calculator",
+        "Notepad"
+       ],
+       "correctIndex": 1,
+       "explanation": "Power BI and Tableau are industry-standard tools used to transform raw accounting data into interactive visual dashboards."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied Financial Analytics",
+      "phaseNameVi": "Phân tích tài chính ứng dụng",
+      "title": "SQL Basics & Financial Storytelling",
+      "titleVi": "Cơ bản về SQL và kỹ năng trình bày số liệu tài chính",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "costTier": "low_cost",
+      "estimatedCostVND": 500000,
+      "skillsCovered": [
+       "SQL Queries",
+       "Financial Ratio Analysis",
+       "Executive Data Storytelling"
+      ],
+      "freeResources": [
+       {
+        "name": "Google Career Certificates",
+        "provider": "Google / Coursera",
+        "url": "https://www.coursera.org/google-career-certificates",
+        "type": "certification"
+       },
+       {
+        "name": "AWS Skill Builder (free tier)",
+        "provider": "AWS",
+        "url": "https://skillbuilder.aws",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the primary benefit of translating accounting reports into visual dashboards for executives?",
+       "options": [
+        "It eliminates the need for tax compliance",
+        "It enables faster decision-making through clear visual patterns and anomalies",
+        "It replaces the need for a bank account",
+        "It slows down data processing"
+       ],
+       "correctIndex": 1,
+       "explanation": "Visual dashboards allow leadership to grasp financial performance trends and anomalies instantly rather than reviewing dense tables."
+      },
+      "estimatedCostUSD": 19
+     }
+    ],
+    "averageSalaryRangeUSD": "$692 - $1,346 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791870190091_tmdwgx",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:43:10.091Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:43:10.091Z",
+     "type": "run_start",
+     "message": "pipeline for \"Kế toán tổng hợp\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:10.091Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:43:18.004Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 503,
+     "latencyMs": 7494
+    },
+    {
+     "ts": "2026-10-13T05:43:18.004Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "general accountant",
+       "financial analyst"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "limited weekly time availability",
+       "low risk tolerance"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:18.004Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:43:22.689Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 871,
+     "latencyMs": 4297,
+     "message": "2 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:43:22.689Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "general accountant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:22.689Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:22.689Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "financial analyst"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:22.689Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:27.102Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2096,
+     "latencyMs": 3662,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:43:27.102Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "AI impact on accounting to financial analysis transition Vietnam career path"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:27.102Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:31.794Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2589,
+     "latencyMs": 3980,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:43:31.794Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free data visualization analytics courses Power BI SQL for accountants Vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:31.794Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:39.303Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 2987,
+     "latencyMs": 6952,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:43:39.303Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 2,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:39.303Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:43:55.476Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6757,
+     "latencyMs": 16173
+    },
+    {
+     "ts": "2026-10-13T05:43:55.476Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:43:55.476Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 82
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite",
+    "gemini-3.7-flash",
+    "gemini-3.1-flash-lite"
+   ],
+   "usageTokens": 15803,
+   "latencyMs": 45386,
+   "degraded": false
+  }
+ }
+}

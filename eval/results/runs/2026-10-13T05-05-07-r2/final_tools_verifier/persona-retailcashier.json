@@ -1,0 +1,632 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 20139,
+  "latencyMs": 70013,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0060417
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "Customer Support & Digital Operations Specialist",
+    "roleTitleVi": "Chuyên viên Vận hành số & Hỗ trợ Khách hàng",
+    "aiResilienceScore": 64,
+    "matchScore": 85,
+    "reasoning": "As routine clerical and checkout tasks face high automation pressure, empirical findings from the National Bureau of Economic Research (NBER) show that generative AI tools boost low-skilled and novice support worker productivity by 34%. Transitioning into digital customer operations allows you to combine your 3 years of frontline service experience with basic digital tools.",
+    "whyItFitsYou": "Your background in supermarket cashier operations has built strong skills in handling POS systems, end-of-shift reconciliation, and customer service. Your strength in being careful with money and receipts directly supports accuracy in digital record keeping, while your flexible shift experience aligns with modern hybrid and omnichannel support roles in Da Nang.",
+    "transferableSkillsMatch": [
+     "Customer service & inquiry handling",
+     "Handling returns and exchanges",
+     "Cash and POS machine operation",
+     "Shift flexibility and attention to detail"
+    ],
+    "skillsGap": [
+     "Basic computer and office software literacy",
+     "Online ticket management systems",
+     "English communication for digital chat support"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 12,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "National Bureau of Economic Research (NBER) / MIT",
+      "year": 2023,
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "Access to a generative AI-based conversational assistant increases productivity of customer support agents by 14% on average, with the largest impact on novice and low-skilled workers (34% increase)."
+     },
+     {
+      "paperTitle": "OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market",
+      "source": "OECD",
+      "year": 2023,
+      "url": "https://www.oecd.org/employment-outlook/2023/",
+      "quoteOrDataPoint": "27% of jobs are in occupations at high risk of automation, making digital upskilling vital for worker resilience."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Customer Support / Helpdesk Specialist",
+     "occupationTitleVi": "Chuyên viên Hỗ trợ Khách hàng & Helpdesk",
+     "molisaCode": "4222",
+     "onetCode": "43-4051.00",
+     "overallResilienceScore": 36,
+     "automationRiskScore": 88,
+     "augmentationPotentialScore": 72,
+     "humanAdvantageCore": [
+      "High-empathy de-escalation of furious or vulnerable customers (Xoa dịu khách hàng khủng hoảng)",
+      "Complex dispute negotiation & VIP relationship management (Đàm phán tranh chấp và chăm sóc khách hàng VIP)",
+      "Omnichannel support strategy and customer journey insights (Thiết kế hành trình trải nghiệm)",
+      "Supervising, evaluating, and fine-tuning AI support bots (Huấn luyện và giám sát trợ lý ảo)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Answering repetitive FAQs, order tracking, and account resets using your POS and reconciliation background",
+       "taskNameVi": "Giải đáp câu hỏi thường gặp, tra cứu vận đơn, cấp lại mật khẩu dựa trên kinh nghiệm POS",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 96,
+       "onetCode": "43-4051.00-T1",
+       "notes": "Automated by conversational voicebots and LLM retrieval agents in real time."
+      },
+      {
+       "taskName": "Categorizing, tagging, and routing incoming digital return and exchange tickets",
+       "taskNameVi": "Phân loại, gắn nhãn và chuyển tiếp ticket đổi trả hàng trực tuyến",
+       "exposureType": "direct_automation",
+       "exposurePercentage": 92,
+       "onetCode": "43-4051.00-T2",
+       "notes": "AI triages and drafts resolutions before human agents even open the queue."
+      },
+      {
+       "taskName": "Handling complex customer disputes regarding billing or product discrepancies with high empathy",
+       "taskNameVi": "Xử lý khiếu nại phức tạp của khách hàng về hóa đơn hoặc sản phẩm với sự thấu cảm cao",
+       "exposureType": "human_core",
+       "exposurePercentage": 20,
+       "onetCode": "43-4051.00-T3",
+       "notes": "Requires genuine emotional intelligence, authority to make discretionary decisions, and moral agency."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "ilo-genai-jobs-2023",
+       "citationText": "ILO (2023): Customer contact and clerical support represents the highest clerical automation exposure globally (~24% of all clerical tasks).",
+       "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality"
+      }
+     ],
+     "methodologySummary": "Evaluated using O*NET task content models combined with NBER productivity findings on AI augmentation for lower-skilled roles.",
+     "uncertaintyRange": "+/- 10%",
+     "vietnamDemandSignal": "transforming"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digitize Supermarket Operations",
+      "pathTitleVi": "Số hóa Vận hành Siêu thị",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Adopt digital POS systems and inventory tools within your current retail environment.",
+      "targetRoles": [
+       "Senior Cashier",
+       "Inventory Assistant"
+      ],
+      "skillsToAcquire": [
+       "Advanced POS reporting",
+       "Basic spreadsheet entry"
+      ],
+      "transferableSkills": [
+       "Customer care",
+       "Cash handling"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       7.5,
+       8,
+       8.5,
+       9
+      ],
+      "rationale": "Keeps you in your comfort zone while gradually introducing digital tools.",
+      "actionStepNow": "Ask your manager for training on electronic inventory tools."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Online Sales & Digital Support Pivot",
+      "pathTitleVi": "Chuyển dịch sang Bán hàng Online & Hỗ trợ Số",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Leverage your customer care skills to move into e-commerce chat support and basic order processing.",
+      "targetRoles": [
+       "E-commerce Customer Support",
+       "Online Sales Assistant"
+      ],
+      "skillsToAcquire": [
+       "Digital literacy basics",
+       "Chat support platforms"
+      ],
+      "transferableSkills": [
+       "Handling returns",
+       "Customer service"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       9,
+       10.5,
+       12
+      ],
+      "rationale": "Aligns with your interest in online sales and opens remote or office work options in Da Nang.",
+      "actionStepNow": "Start learning basic computer operations via free online tutorials."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Entry-Level Accounting Assistant",
+      "pathTitleVi": "Trợ lý Kế toán Sơ cấp",
+      "feasibilityScore": 55,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition fully into basic bookkeeping and financial reconciliation for small businesses.",
+      "targetRoles": [
+       "Junior Bookkeeper",
+       "Billing Clerk"
+      ],
+      "skillsToAcquire": [
+       "Basic accounting principles",
+       "Excel financial functions"
+      ],
+      "transferableSkills": [
+       "Attention to detail",
+       "End-of-shift reconciliation"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       6.5,
+       7.5,
+       9,
+       11,
+       13.5
+      ],
+      "rationale": "Fulfills your interest in basic accounting by building on your financial accuracy strengths.",
+      "actionStepNow": "Explore free introductory accounting courses online."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy Foundation",
+      "phaseNameVi": "Nền tảng Kỹ năng số Cơ bản",
+      "title": "Master Computer Basics & Office Navigation",
+      "titleVi": "Làm chủ Cơ bản Máy tính & Điều hướng Văn phòng",
+      "estimatedHours": 20,
+      "weeksDuration": 2,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer navigation",
+       "Internet basics",
+       "File management"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the safest way to organize digital files on your computer?",
+       "options": [
+        "Keep everything on the desktop",
+        "Create clearly named folders for different topics",
+        "Delete files after opening them once",
+        "Store all files in the recycling bin"
+       ],
+       "correctIndex": 1,
+       "explanation": "Creating clearly named folders helps you easily locate and manage your documents."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Customer Support & Digital Communication",
+      "phaseNameVi": "Hỗ trợ Khách hàng & Giao tiếp Số",
+      "title": "Learn Online Support Tools and Basic English Communication",
+      "titleVi": "Học Công cụ Hỗ trợ Trực tuyến & Giao tiếp Tiếng Anh Cơ bản",
+      "estimatedHours": 30,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Chat support etiquette",
+       "Basic English phrases for retail and online sales"
+      ],
+      "freeResources": [
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       },
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When responding to an upset online customer regarding a product return, what is the best first step?",
+       "options": [
+        "Ignore the message",
+        "Acknowledge their frustration politely and offer help",
+        "Tell them it is not your responsibility",
+        "Blame the delivery company immediately"
+       ],
+       "correctIndex": 1,
+       "explanation": "Acknowledging frustration politely de-escalates tension and builds trust."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$269 - $462 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 85,
+    "rationale": "The guidance directly maps the user's specific POS, reconciliation, and shift-work experience to digital support tasks. It uses relevant industry context, though the NBER citation is a generalized claim applied to this specific career transition."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 3,
+    "grounded": 3,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791869640335_epq2cr",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:34:00.335Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:34:00.335Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thu ngân siêu thị\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:00.335Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:34:04.047Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 497,
+     "latencyMs": 3029
+    },
+    {
+     "ts": "2026-10-13T05:34:04.047Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "accounting clerk",
+       "e-commerce assistant",
+       "customer service representative"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "time constrained",
+       "low digital literacy"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:04.047Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:34:09.697Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-flash-latest",
+     "usageTokens": 881,
+     "latencyMs": 4121,
+     "message": "3 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:34:09.697Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "accounting clerk"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:09.697Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:09.697Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "e-commerce assistant"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:09.698Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:09.698Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "customer service representative"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:09.698Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:14.710Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1455,
+     "latencyMs": 4490,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:34:14.710Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "impact of AI on accounting and e-commerce jobs for low-skilled workers in Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:14.710Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:18.817Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 1918,
+     "latencyMs": 3581,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:34:18.817Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free basic digital literacy accounting e-commerce training vietnam vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:18.817Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:27.535Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2331,
+     "latencyMs": 8718,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:34:27.535Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:27.535Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:34:43.104Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5923,
+     "latencyMs": 15569
+    },
+    {
+     "ts": "2026-10-13T05:34:43.104Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:51.262Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 485,
+     "latencyMs": 8158
+    },
+    {
+     "ts": "2026-10-13T05:34:51.262Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "repair",
+      "failures": [
+       "suggestion[0]: citation not found in evidence base: \"Stanford AI Index Report 2024\"",
+       "coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence"
+      ],
+      "judge": {
+       "personalization": 90,
+       "groundedness": 85,
+       "rationale": "The guidance directly incorporates the user's specific skills in customer service and handling returns, aligning them with helpdesk roles while referencing ILO automation data."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:51.262Z",
+     "type": "repair_retry",
+     "agent": "analyst",
+     "data": {
+      "feedback": [
+       "suggestion[0]: citation not found in evidence base: \"Stanford AI Index Report 2024\"",
+       "coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:34:51.262Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "repair attempt 1"
+    },
+    {
+     "ts": "2026-10-13T05:35:06.499Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5918,
+     "latencyMs": 15237
+    },
+    {
+     "ts": "2026-10-13T05:35:06.499Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:35:10.348Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.1-flash-lite",
+     "usageTokens": 486,
+     "latencyMs": 3055
+    },
+    {
+     "ts": "2026-10-13T05:35:10.348Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 85,
+       "rationale": "The guidance directly maps the user's specific POS, reconciliation, and shift-work experience to digital support tasks. It uses relevant industry context, though the NBER citation is a generalized claim applied to this specific career transition."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:35:10.348Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 36
+  },
+  "meta": {
+   "models": [
+    "gemini-3.1-flash-lite",
+    "gemini-flash-latest",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 19894,
+   "latencyMs": 70013,
+   "degraded": false
+  }
+ }
+}

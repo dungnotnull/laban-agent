@@ -1,0 +1,581 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 65,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10156,
+  "latencyMs": 30996,
+  "model": "gemini-3.7-flash",
+  "costPerTaskUsd": 0.0030467999999999997
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "E-Commerce Operations & Digital Sales Assistant",
+    "roleTitleVi": "Trợ lý Vận hành Thương mại điện tử và Bán hàng số",
+    "aiResilienceScore": 75,
+    "matchScore": 88,
+    "reasoning": "As highlighted by the World Bank (2024) report, digital transformation is rapidly reshaping retail and commerce across Southeast Asia, requiring workers to pivot toward online operations. Furthermore, TopCV & GSO (2024) data indicates that digital tool proficiency and operational roles in e-commerce are seeing steady growth as businesses adapt to automated front-ends while needing human coordinators for order fulfillment and customer interaction.",
+    "whyItFitsYou": "This path leverages your 3 years of retail customer service experience, POS machine handling, and exchange processing, directly mapping them to online order management and customer support. It addresses your interest in online selling while keeping learning accessible through free digital literacy resources.",
+    "transferableSkillsMatch": [
+     "Customer care and service mindset",
+     "Handling returns and exchanges",
+     "Basic POS and transaction processing",
+     "Shift flexibility and operational reliability"
+    ],
+    "skillsGap": [
+     "Basic digital literacy and computer navigation",
+     "E-commerce platform backend management (Shopee/Lazada Seller Centre)",
+     "Basic online product listing and copywriting"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 11,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Reshaping the Future of Work in Southeast Asia",
+      "source": "World Bank",
+      "year": 2024,
+      "url": "https://www.worldbank.org/en/region/eap",
+      "quoteOrDataPoint": "Digital transformation and AI will create new job opportunities in Southeast Asia but require significant reskilling."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with digital and AI tool proficiency."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "E-Commerce Operations Assistant",
+     "occupationTitleVi": "Trợ lý Vận hành Thương mại điện tử",
+     "molisaCode": "4222",
+     "onetCode": "43-4051.00",
+     "overallResilienceScore": 75,
+     "automationRiskScore": 30,
+     "augmentationPotentialScore": 70,
+     "humanAdvantageCore": [
+      "Empathy in resolving customer complaints",
+      "Nuanced judgment in handling product returns and exchanges",
+      "Coordination between warehouse and online platforms"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Processing online orders and inventory updates",
+       "taskNameVi": "Xử lý đơn hàng trực tuyến và cập nhật tồn kho",
+       "exposureType": "augmented",
+       "exposurePercentage": 40,
+       "onetCode": "43-4051.00",
+       "notes": "Utilizes your POS and cash handling accuracy for digital ledger reconciliation."
+      },
+      {
+       "taskName": "Managing customer inquiries and return requests",
+       "taskNameVi": "Quản lý thắc mắc của khách hàng và yêu cầu đổi trả",
+       "exposureType": "human_centric",
+       "exposurePercentage": 20,
+       "onetCode": "43-4051.00",
+       "notes": "Builds directly on your retail customer service background."
+      },
+      {
+       "taskName": "Coordinating basic product listings with AI tools",
+       "taskNameVi": "Phối hợp đăng sản phẩm cơ bản với công cụ AI",
+       "exposureType": "augmented",
+       "exposurePercentage": 40,
+       "onetCode": "43-4051.00",
+       "notes": "Learning to use AI assistants for product descriptions safely within low budget."
+      }
+     ],
+     "sources": [
+      "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "Reshaping the Future of Work in Southeast Asia"
+     ],
+     "methodologySummary": "Evaluated using La Bàn's task-exposure framework combining World Bank Southeast Asia automation indexes and TopCV Vietnam regional demand signals.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Augmented Retail Cashier & Digital POS Operator",
+      "pathTitleVi": "Thu ngân siêu thị tích hợp số hóa",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Enhance your current cashier role by mastering digital payment gateways and basic automated inventory tools.",
+      "targetRoles": [
+       "Senior Cashier",
+       "Store Digital Assistant"
+      ],
+      "skillsToAcquire": [
+       "Advanced POS software",
+       "Digital receipt management",
+       "Basic customer data logging"
+      ],
+      "transferableSkills": [
+       "Cash handling",
+       "POS operation",
+       "Customer service"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       7,
+       7.5,
+       8.2,
+       9,
+       10
+      ],
+      "rationale": "Safest path using existing strengths while upgrading digital fluency incrementally.",
+      "actionStepNow": "Take a free digital literacy tutorial to speed up daily POS workflows."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "E-Commerce Operations Assistant",
+      "pathTitleVi": "Trợ lý Vận hành Thương mại điện tử",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Transition your retail customer care and transaction skills into online store management and order processing.",
+      "targetRoles": [
+       "E-Commerce Customer Support",
+       "Online Sales Assistant"
+      ],
+      "skillsToAcquire": [
+       "Shopee/Lazada Seller backend",
+       "Basic online chat etiquette",
+       "Order reconciliation"
+      ],
+      "transferableSkills": [
+       "Customer care",
+       "Return handling",
+       "Attention to detail"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7.5,
+       8.5,
+       9.8,
+       11.5,
+       13.5
+      ],
+      "rationale": "Directly addresses your interest in online selling with minimal retraining cost.",
+      "actionStepNow": "Complete free online tutorials on basic computer skills and e-commerce platform overviews."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Entry-Level Bookkeeper / Accounts Assistant",
+      "pathTitleVi": "Trợ lý Kế toán / Nhân viên Kế toán sơ cấp",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Leverage your accuracy with money and invoices to pivot fully into small business bookkeeping.",
+      "targetRoles": [
+       "Junior Bookkeeper",
+       "Accounts Receivable Clerk"
+      ],
+      "skillsToAcquire": [
+       "Excel for accounting",
+       "Basic bookkeeping principles",
+       "Invoicing software"
+      ],
+      "transferableSkills": [
+       "Careful with money and invoices",
+       "End-of-shift reconciliation"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       8,
+       9.5,
+       11,
+       13,
+       15.5
+      ],
+      "rationale": "Fulfills your interest in basic accounting, but requires building office and spreadsheet skills from scratch.",
+      "actionStepNow": "Audit a free spreadsheet course online to test your comfort with office software."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Nền tảng số cơ bản",
+      "title": "Build Basic Computer and Office Literacy",
+      "titleVi": "Xây dựng kỹ năng máy tính và văn phòng cơ bản",
+      "estimatedHours": 30,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer navigation",
+       "Internet safety",
+       "Basic file management"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the safest way to manage multiple customer digital orders without losing track?",
+       "options": [
+        "Keep all receipts scattered on the desk",
+        "Use a structured digital spreadsheet or platform ledger",
+        "Rely entirely on memory",
+        "Ignore order records until the end of the month"
+       ],
+       "correctIndex": 1,
+       "explanation": "Using a structured digital spreadsheet or platform ledger ensures accuracy and prevents lost orders, matching your strength in attention to detail."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "E-Commerce Operations",
+      "phaseNameVi": "Vận hành Thương mại điện tử",
+      "title": "Learn Online Store Backend & Customer Chat",
+      "titleVi": "Học quản lý gian hàng trực tuyến và chăm sóc khách hàng chat",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Shopee/Lazada backend basics",
+       "Online customer communication",
+       "Return order processing"
+      ],
+      "freeResources": [
+       {
+        "name": "Alison free courses & diplomas",
+        "provider": "Alison",
+        "url": "https://alison.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When an online customer requests a product return due to a sizing issue, what is the best first step?",
+       "options": [
+        "Refuse the request immediately",
+        "Review store return policies and verify order details politely",
+        "Block the customer's account",
+        "Send them to a physical store in another city"
+       ],
+       "correctIndex": 1,
+       "explanation": "Reviewing policies and verifying details matches your retail experience in handling exchanges with a strong service attitude."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$269 - $423 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 85,
+    "groundedness": 80,
+    "rationale": "The guidance successfully maps the user's specific skills (POS handling, exchange processing, customer service) to new digital roles, referencing labor market data well."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868794474_5da29f",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:19:54.474Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:19:54.474Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thu ngân siêu thị\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:54.474Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:20:03.898Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 945,
+     "latencyMs": 9064
+    },
+    {
+     "ts": "2026-10-13T05:20:03.898Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "cashier",
+       "accounting clerk",
+       "e-commerce associate"
+      ],
+      "riskFlags": [
+       "very limited retraining budget",
+       "basic digital literacy",
+       "low weekly study availability"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:03.898Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 916,
+     "latencyMs": 4223,
+     "message": "3 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "cashier"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "accounting clerk"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "e-commerce associate"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:08.514Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:12.949Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.7-flash",
+     "usageTokens": 971,
+     "latencyMs": 4141,
+     "message": "3 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:20:12.949Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "retail cashier accounting automation AI Vietnam labor market"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:12.950Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:12.950Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "accounting clerk retail Da Nang Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:15.706Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:15.706Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "free basic accounting excel digital skills vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:15.706Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:16.706Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1830,
+     "latencyMs": 1000,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:20:16.706Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:16.706Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:20:24.157Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 4806,
+     "latencyMs": 7450
+    },
+    {
+     "ts": "2026-10-13T05:20:24.158Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:25.470Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 453,
+     "latencyMs": 1312
+    },
+    {
+     "ts": "2026-10-13T05:20:25.470Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 85,
+       "groundedness": 80,
+       "rationale": "The guidance successfully maps the user's specific skills (POS handling, exchange processing, customer service) to new digital roles, referencing labor market data well."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:20:25.470Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.7-flash",
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 9921,
+   "latencyMs": 30996,
+   "degraded": false
+  }
+ }
+}

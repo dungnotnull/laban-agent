@@ -1,0 +1,533 @@
+{
+ "score": {
+  "personaId": "persona-juniordev",
+  "config": "stage1_tools",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 75,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10253,
+  "latencyMs": 11552,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0030759
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": false
+  },
+  "suggestions": [
+   {
+    "roleTitle": "AI Solutions Specialist & Workflow Architect",
+    "roleTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+    "aiResilienceScore": 94,
+    "matchScore": 91,
+    "reasoning": "With 1.5 years of React and TypeScript experience, you already possess the core syntax foundation needed to build and connect modern digital interfaces. As highlighted by WEF (2023) and TopCV (2024), AI and Machine Learning Specialists represent the fastest-growing global and local roles, with enterprise demand surging as companies look to integrate LLMs into operational workflows. Your background in Front-end development allows you to rapidly prototype user-facing AI tools and connect APIs.",
+    "whyItFitsYou": "Your strengths in rapid technology adoption and proactive self-learning match the fast-evolving nature of AI tooling. While your technical English and large-scale system experience are currently moderate constraints, your high risk tolerance and interest in AI/ML and Agent development provide an ideal psychological and skill-based runway to bridge these gaps without requiring high initial capital.",
+    "transferableSkillsMatch": [
+     "React and TypeScript application logic",
+     "Git-based version control and collaboration",
+     "API consumption and asynchronous data handling",
+     "Proactive self-driven technical research"
+    ],
+    "skillsGap": [
+     "Enterprise workflow automation and API orchestration with LLMs",
+     "Prompt engineering and model evaluation guardrails",
+     "Technical English for international engineering communication",
+     "Large-scale system design and latency/cost optimization"
+    ],
+    "averageSalaryRangeVND": "35,000,000 - 60,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.",
+      "source": "World Economic Forum",
+      "year": 2023,
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/",
+      "quoteOrDataPoint": "AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027."
+     },
+     {
+      "paperTitle": "TopCV Vietnam (2024): 180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month.",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "AI Solutions Specialist & Workflow Architect",
+     "occupationTitleVi": "Chuyên viên Giải pháp AI & Kiến trúc Luồng Tự động hóa",
+     "molisaCode": "2519",
+     "onetCode": "15-1299.08",
+     "overallResilienceScore": 94,
+     "automationRiskScore": 18,
+     "augmentationPotentialScore": 98,
+     "humanAdvantageCore": [
+      "End-to-end enterprise workflow automation & systems design (Thiết kế luồng tự động hóa doanh nghiệp)",
+      "Model evaluation, safety guardrails, and compliance benchmarking (Đánh giá chất lượng và an toàn mô hình)",
+      "Cross-departmental change management & employee upskilling (Đào tạo và dẫn dắt chuyển đổi số nội bộ)",
+      "Strategic ROI optimization of AI tool stacks (Tối ưu hóa chi phí và hiệu quả đầu tư công nghệ)"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Configuring API integrations between LLMs, databases, and business tools using your React/TypeScript background",
+       "taskNameVi": "Tích hợp API giữa LLM, cơ sở dữ liệu và hệ thống doanh nghiệp dựa trên nền tảng React/TypeScript",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 65,
+       "onetCode": "15-1299.08-T1",
+       "notes": "AI assists in writing glue code and connectors, while you define data boundaries and UI interactions."
+      },
+      {
+       "taskName": "Benchmarking model performance and designing domain-specific prompt systems for digital products",
+       "taskNameVi": "Đo lường hiệu năng mô hình và thiết kế hệ thống prompt chuyên ngành cho sản phẩm số",
+       "exposureType": "ai_augmentation",
+       "exposurePercentage": 45,
+       "onetCode": "15-1299.08-T2",
+       "notes": "Requires rigorous testing frameworks, latency optimization, and cost-per-token economics tailored to user needs."
+      },
+      {
+       "taskName": "Translating executive business goals into automated operational pipelines and agent interfaces",
+       "taskNameVi": "Chuyển hóa mục tiêu kinh doanh thành luồng tự động hóa thực tế và giao diện agent",
+       "exposureType": "human_core",
+       "exposurePercentage": 10,
+       "onetCode": "15-1299.08-T3",
+       "notes": "High-leverage human strategic responsibility with exponential market upside."
+      }
+     ],
+     "sources": [
+      {
+       "sourceId": "wef-future-of-jobs-2023-2025",
+       "citationText": "WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.",
+       "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2023/"
+      },
+      {
+       "sourceId": "topcv-vietnamworks-labor-2024-2026",
+       "citationText": "TopCV Vietnam (2024): 180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month.",
+       "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung"
+      }
+     ],
+     "methodologySummary": "Evaluated via WEF Future of Jobs employment projections, TopCV Vietnam labor indexes, and O*NET emerging technology frameworks.",
+     "uncertaintyRange": "+/- 5% based on macroeconomic adoption speeds in Ho Chi Minh City tech hubs.",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Augmented Front-End Developer",
+      "pathTitleVi": "Lập trình viên Front-end tích hợp AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Leverage your existing React and TypeScript stack while integrating AI coding assistants and LLM API connectors to accelerate delivery speed by 40%.",
+      "targetRoles": [
+       "Senior Front-end Engineer",
+       "AI-Powered UI Developer"
+      ],
+      "skillsToAcquire": [
+       "GitHub Copilot workflows",
+       "LLM API integration",
+       "Prompt engineering for UI testing"
+      ],
+      "transferableSkills": [
+       "React",
+       "TypeScript",
+       "HTML/CSS",
+       "Git"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       18,
+       22,
+       28,
+       35,
+       42
+      ],
+      "rationale": "Safest and fastest path using current competencies while upgrading daily output with AI tools.",
+      "actionStepNow": "Integrate AI coding tools into your daily React projects and practice building small LLM wrapper features."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "AI Workflow & Agent Developer",
+      "pathTitleVi": "Lập trình viên Luồng tự động hóa & AI Agent",
+      "feasibilityScore": 85,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Expand your front-end skill set into full-stack API integration, agentic frameworks, and workflow automation tools.",
+      "targetRoles": [
+       "AI Solutions Specialist",
+       "Workflow Automation Engineer"
+      ],
+      "skillsToAcquire": [
+       "API orchestration",
+       "Vector databases basics",
+       "Agent development frameworks"
+      ],
+      "transferableSkills": [
+       "JavaScript/TypeScript",
+       "Git",
+       "Self-learning ability"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       20,
+       26,
+       35,
+       45,
+       58
+      ],
+      "rationale": "Directly captures the 180% surge in Vietnamese enterprise demand for workflow integrators.",
+      "actionStepNow": "Enroll in free foundational AI courses and build a portfolio project connecting React to an LLM backend."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Full AI Solutions Architect",
+      "pathTitleVi": "Kiến trúc sư Giải pháp AI toàn diện",
+      "feasibilityScore": 65,
+      "estimatedTimelineMonths": 18,
+      "shortDescription": "Transition completely into enterprise AI systems design, model evaluation, and multi-agent deployment.",
+      "targetRoles": [
+       "AI Solutions Architect",
+       "Head of AI Integration"
+      ],
+      "skillsToAcquire": [
+       "System architecture",
+       "Model benchmarking",
+       "Compliance and security guardrails"
+      ],
+      "transferableSkills": [
+       "Logical thinking",
+       "Problem solving"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       25,
+       35,
+       50,
+       65,
+       85
+      ],
+      "rationale": "High reward for high risk tolerance, moving into strategic enterprise advisory roles.",
+      "actionStepNow": "Master system design principles and study enterprise AI deployment case studies."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & AI Tooling",
+      "phaseNameVi": "Nền tảng & Công cụ AI",
+      "title": "Mastering AI Essentials & Technical English Improvement",
+      "titleVi": "Làm chủ Kiến thức AI cơ bản & Cải thiện Tiếng Anh kỹ thuật",
+      "estimatedHours": 45,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Google AI Essentials",
+       "Technical English terminology",
+       "Prompt fundamentals"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       },
+       {
+        "name": "Duolingo (English for Vietnamese speakers)",
+        "provider": "Duolingo",
+        "url": "https://www.duolingo.com",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is a primary benefit of integrating LLM APIs into front-end applications?",
+       "options": [
+        "Replacing the need for HTML entirely",
+        "Enabling dynamic, context-aware user interactions and automation",
+        "Removing the need for version control",
+        "Eliminating all server-side latency"
+       ],
+       "correctIndex": 1,
+       "explanation": "LLM APIs allow front-end developers to add intelligent, dynamic capabilities and conversational interfaces directly into web applications."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Applied Integration & Project Building",
+      "phaseNameVi": "Tích hợp Thực tế & Xây dựng Dự án",
+      "title": "Building an AI-Powered Web Application",
+      "titleVi": "Xây dựng Ứng dụng Web tích hợp AI",
+      "estimatedHours": 60,
+      "weeksDuration": 4,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "React + LLM API integration",
+       "State management for AI chats",
+       "Basic workflow automation"
+      ],
+      "freeResources": [
+       {
+        "name": "Microsoft Learn (Vietnamese)",
+        "provider": "Microsoft",
+        "url": "https://learn.microsoft.com/vi-vn/training/",
+        "type": "course"
+       },
+       {
+        "name": "edX course audit tracks",
+        "provider": "edX",
+        "url": "https://www.edx.org",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "When connecting a React front-end to an LLM service, why is robust error handling crucial?",
+       "options": [
+        "To prevent CSS styling bugs",
+        "To gracefully manage API rate limits, token timeouts, and unexpected model outputs",
+        "To compile TypeScript faster",
+        "To automatically update Git repositories"
+       ],
+       "correctIndex": 1,
+       "explanation": "External LLM APIs can experience rate limits, latency spikes, or malformed responses, requiring resilient front-end error management."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$1,346 - $2,308 / month"
+   }
+  ],
+  "verification": null,
+  "trajectory": {
+   "runId": "run_1791869146959_pv2lt5",
+   "config": "stage1_tools",
+   "startedAt": "2026-10-13T05:25:46.959Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:25:46.959Z",
+     "type": "run_start",
+     "message": "pipeline for \"Lập trình viên Front-end (junior)\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": false
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:46.959Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:25:48.015Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 505,
+     "latencyMs": 1056
+    },
+    {
+     "ts": "2026-10-13T05:25:48.015Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "frontend developer",
+       "react developer",
+       "ai integration engineer"
+      ],
+      "riskFlags": [
+       "limited budget for retraining",
+       "intermediate technical English",
+       "lack of large-scale system experience"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:48.015Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 724,
+     "latencyMs": 1026,
+     "message": "5 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "frontend developer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "react developer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "ai integration engineer"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "1 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.041Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI software development Vietnam developer demand"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.042Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.042Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "React AI integration web development course Vietnamese"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.042Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.880Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 2470,
+     "latencyMs": 838,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:25:49.880Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 1,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:49.880Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:25:58.511Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 6299,
+     "latencyMs": 8631
+    },
+    {
+     "ts": "2026-10-13T05:25:58.511Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:25:58.511Z",
+     "type": "run_end",
+     "message": "no verifier (config)"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": 94
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 9998,
+   "latencyMs": 11552,
+   "degraded": false
+  }
+ }
+}

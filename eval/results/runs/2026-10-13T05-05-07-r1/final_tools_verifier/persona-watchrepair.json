@@ -1,0 +1,554 @@
+{
+ "score": {
+  "personaId": "persona-watchrepair",
+  "config": "final_tools_verifier",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": true,
+  "usageTokens": 10532,
+  "latencyMs": 15377,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.0031596
+ },
+ "payload": {
+  "source": "agentic_pipeline",
+  "config": {
+   "useTools": true,
+   "useVerifier": true
+  },
+  "suggestions": [
+   {
+    "roleTitle": "High-Precision Horology Specialist & Digital Showcase Curator",
+    "roleTitleVi": "Chuyên gia đồng hồ độ chính xác cao & Người quản lý trưng bày số",
+    "aiResilienceScore": 88,
+    "matchScore": 85,
+    "reasoning": "As artificial intelligence and automation reshape labor markets, manual craftsmanship requiring fine motor skills, physical material manipulation, and specialized physical repairs remains highly resilient against automation. According to McKinsey & Company (2023), while cognitive and routine tasks face high exposure to generative AI, physical dexterity tasks in niche luxury sectors are largely shielded. Furthermore, leveraging digital tools for online showcases addresses the shrinking local market by expanding reach beyond physical storefronts, aligning with TopCV & GSO (2024) insights on digital channel integration.",
+    "whyItFitsYou": "Your 15 years of mechanical watchmaking experience, absolute patience, and exceptional precision directly match the requirements of high-end mechanical horology. By addressing your weakness in online sales through basic digital literacy, you can transition your local reputation into a broader digital storefront while maintaining your core technical strengths.",
+    "transferableSkillsMatch": [
+     "Precision mechanical repair",
+     "Handling of Swiss and Japanese watch components",
+     "Manual dexterity and patience"
+    ],
+    "skillsGap": [
+     "Digital storefront management",
+     "Basic online marketing and customer outreach",
+     "Basic computer literacy"
+    ],
+    "averageSalaryRangeVND": "12,000,000 - 22,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The economic potential of generative AI: The next productivity frontier",
+      "source": "McKinsey & Company",
+      "year": 2023,
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+      "quoteOrDataPoint": "Current AI technologies have the potential to automate tasks that absorb 60-70% of employees' time today, leaving physical dexterity and niche manual crafts resilient."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index 2024–2026",
+      "source": "TopCV Vietnam / Navigos Group & Vietnam General Statistics Office (GSO)",
+      "year": 2024,
+      "url": "https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung",
+      "quoteOrDataPoint": "72% of employers in Vietnam prioritize candidates with digital tool proficiency as traditional sectors contract."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Fine Watch and Clock Repairer",
+     "occupationTitleVi": "Thợ sửa chữa đồng hồ cao cấp",
+     "molisaCode": "7312",
+     "onetCode": "49-9064.00",
+     "overallResilienceScore": 88,
+     "automationRiskScore": 12,
+     "augmentationPotentialScore": 45,
+     "humanAdvantageCore": [
+      "Tactile feedback and fine motor precision",
+      "Trust and high reputation with local clientele",
+      "Problem-solving for vintage and luxury mechanical assemblies"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Disassembling and servicing complex mechanical movements",
+       "taskNameVi": "Tháo lắp và bảo dưỡng bộ máy cơ phức tạp",
+       "exposureType": "low",
+       "exposurePercentage": 10,
+       "onetCode": "49-9064.00",
+       "notes": "Requires high-touch manual dexterity that cannot be replicated by software or robotics."
+      },
+      {
+       "taskName": "Polishing watchcases and restoring aesthetic finishes",
+       "taskNameVi": "Đánh bóng vỏ đồng hồ và phục hồi thẩm mỹ",
+       "exposureType": "low",
+       "exposurePercentage": 15,
+       "onetCode": "49-9064.00",
+       "notes": "Relies heavily on physical touch and calibrated pressure."
+      },
+      {
+       "taskName": "Showcasing repair work and communicating with clients via digital channels",
+       "taskNameVi": "Trưng bày sản phẩm sửa chữa và giao tiếp khách hàng qua kênh số",
+       "exposureType": "medium",
+       "exposurePercentage": 40,
+       "onetCode": "49-9064.00",
+       "notes": "Augmented by digital literacy to expand customer reach beyond walk-ins."
+      }
+     ],
+     "sources": [
+      "McKinsey & Company (2023)",
+      "TopCV Vietnam / GSO (2024)"
+     ],
+     "methodologySummary": "Evaluated based on task content, physical dexterity requirements, and regional digital transformation trends in Vietnam.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Digital-Augmented Master Watchmaker",
+      "pathTitleVi": "Thợ sửa đồng hồ cao cấp ứng dụng số",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Keep your core watch repair expertise while using basic digital literacy to showcase your work online and attract broader clientele in Hanoi.",
+      "targetRoles": [
+       "Independent Master Horologist",
+       "Specialized Luxury Watch Restorer"
+      ],
+      "skillsToAcquire": [
+       "Basic computer and internet navigation",
+       "Smartphone photography for repair showcases",
+       "Basic social media posting"
+      ],
+      "transferableSkills": [
+       "Watch movement repair",
+       "Component authentication (Swiss/Japanese)"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       12,
+       13,
+       15,
+       16,
+       18
+      ],
+      "rationale": "Minimizes risk by building directly upon your 15 years of technical expertise while overcoming the shrinking local foot-traffic market through online visibility.",
+      "actionStepNow": "Start learning basic computer and internet skills using free online tutorials."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Boutique Workshop Owner & Consultant",
+      "pathTitleVi": "Chủ tiệm tiểu thủ công & Tư vấn viên",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Establish a small independent consultancy and repair boutique focusing on collector-grade mechanical watches.",
+      "targetRoles": [
+       "Boutique Workshop Owner",
+       "Vintage Watch Authenticator"
+      ],
+      "skillsToAcquire": [
+       "Basic small business management",
+       "Customer relationship management via messaging apps",
+       "Basic budgeting"
+      ],
+      "transferableSkills": [
+       "Reputation with regular customers",
+       "Absolute patience and precision"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       10,
+       12,
+       15,
+       18,
+       22
+      ],
+      "rationale": "Satisfies your interest in small-scale entrepreneurship and leverages your high trust factor among watch enthusiasts.",
+      "actionStepNow": "Outline a basic service menu for high-end collectors in Hanoi."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Precision Micro-Mechanics Technician",
+      "pathTitleVi": "Kỹ thuật viên vi cơ khí chính xác",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Transition skills into broader precision micro-mechanics maintenance for specialized laboratory or optical equipment.",
+      "targetRoles": [
+       "Precision Instrument Technician"
+      ],
+      "skillsToAcquire": [
+       "Optical equipment calibration",
+       "Technical documentation reading"
+      ],
+      "transferableSkills": [
+       "High manual dexterity",
+       "Precision tool handling"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       10,
+       11,
+       12,
+       14,
+       15
+      ],
+      "rationale": "Offers a completely different industry sector but involves steep retraining hurdles given low initial digital literacy.",
+      "actionStepNow": "Research equipment maintenance requirements in local technical sectors."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "milestone-1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Foundation",
+      "phaseNameVi": "Nền tảng số cơ bản",
+      "title": "Build Basic Computer and Internet Literacy",
+      "titleVi": "Xây dựng kỹ năng sử dụng máy tính và internet cơ bản",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Computer navigation",
+       "Internet basics",
+       "Email management"
+      ],
+      "freeResources": [
+       {
+        "name": "GCFLearnFree digital literacy basics",
+        "provider": "GCFGlobal",
+        "url": "https://edu.gcfglobal.org/en/",
+        "type": "tutorial"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "What is the safest way to practice internet navigation as a beginner?",
+       "options": [
+        "Clicking on unknown popup advertisements",
+        "Using trusted educational platforms and practicing basic search queries",
+        "Downloading all available free software immediately",
+        "Sharing personal passwords online"
+       ],
+       "correctIndex": 1,
+       "explanation": "Using trusted educational platforms ensures a secure environment to learn foundational digital skills."
+      },
+      "estimatedCostUSD": 0
+     },
+     {
+      "id": "milestone-2",
+      "milestoneNumber": 2,
+      "phaseName": "Online Showcase & Outreach",
+      "phaseNameVi": "Trưng bày trực tuyến & Tiếp cận khách hàng",
+      "title": "Learn Smartphone Photography and Social Media Basics",
+      "titleVi": "Học chụp ảnh điện thoại và cơ bản mạng xã hội",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "costTier": "free",
+      "estimatedCostVND": 0,
+      "skillsCovered": [
+       "Taking clear photos of watch mechanisms",
+       "Posting on local social media groups",
+       "Communicating with customers via chat"
+      ],
+      "freeResources": [
+       {
+        "name": "Google AI Essentials",
+        "provider": "Google",
+        "url": "https://grow.google/ai-essentials/",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Why is clear visual documentation important for a watch repair specialist online?",
+       "options": [
+        "It replaces the need for actual repair skills",
+        "It proves precision craftsmanship and builds trust with potential clients",
+        "It is required by government tax offices",
+        "It stops watches from needing future service"
+       ],
+       "correctIndex": 1,
+       "explanation": "Visual proof of intricate repair work demonstrates high skill and builds trust with online clients."
+      },
+      "estimatedCostUSD": 0
+     }
+    ],
+    "averageSalaryRangeUSD": "$462 - $846 / month"
+   }
+  ],
+  "verification": {
+   "verdict": "pass",
+   "failures": [],
+   "judge": {
+    "personalization": 95,
+    "groundedness": 90,
+    "rationale": "The guidance directly incorporates the user's specific skills in mechanical watch repair, case polishing, and patience, tailoring the strategy to their exact craft."
+   },
+   "citationReport": {
+    "total": 2,
+    "verified": 2,
+    "hallucinated": []
+   },
+   "resourceReport": {
+    "total": 2,
+    "grounded": 2,
+    "ungrounded": []
+   }
+  },
+  "trajectory": {
+   "runId": "run_1791868740966_tmyqd2",
+   "config": "final_tools_verifier",
+   "startedAt": "2026-10-13T05:19:00.967Z",
+   "events": [
+    {
+     "ts": "2026-10-13T05:19:00.967Z",
+     "type": "run_start",
+     "message": "pipeline for \"Thợ sửa chữa đồng hồ cơ\"",
+     "data": {
+      "config": {
+       "useTools": true,
+       "useVerifier": true
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:00.967Z",
+     "type": "agent_start",
+     "agent": "profiler"
+    },
+    {
+     "ts": "2026-10-13T05:19:02.069Z",
+     "type": "llm_call",
+     "agent": "profiler",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 497,
+     "latencyMs": 1102
+    },
+    {
+     "ts": "2026-10-13T05:19:02.069Z",
+     "type": "agent_end",
+     "agent": "profiler",
+     "message": "ok",
+     "data": {
+      "keywords": [
+       "watchmaker",
+       "precision technician",
+       "horologist"
+      ],
+      "riskFlags": [
+       "shrinking traditional market",
+       "limited budget for retraining",
+       "low digital literacy"
+      ]
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:02.069Z",
+     "type": "agent_start",
+     "agent": "evidence_gatherer"
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 693,
+     "latencyMs": 1000,
+     "message": "4 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "watchmaker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "args": {
+       "query": "precision technician"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "lookupOccupation",
+      "ok": true,
+      "summary": "0 item(s) - No direct match in the Vietnam occupation database."
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.069Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "args": {
+       "query": "generative AI automation manual dexterity precision crafting artisans Vietnam"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.070Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchResearch",
+      "ok": true,
+      "summary": "3 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.070Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "args": {
+       "query": "basic digital skills Vietnamese free online course"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.070Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "searchLearningResources",
+      "ok": true,
+      "summary": "6 item(s)"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:03.903Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1741,
+     "latencyMs": 833,
+     "message": "1 tool call(s)"
+    },
+    {
+     "ts": "2026-10-13T05:19:03.903Z",
+     "type": "tool_call",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "args": {
+       "role": "watchmaker"
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:06.739Z",
+     "type": "tool_response",
+     "agent": "evidence_gatherer",
+     "data": {
+      "name": "getOccupationNews",
+      "ok": false,
+      "summary": "0 item(s) - News search failed: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]}]}}"
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:07.585Z",
+     "type": "llm_call",
+     "agent": "evidence_gatherer",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 1887,
+     "latencyMs": 846,
+     "message": "final turn"
+    },
+    {
+     "ts": "2026-10-13T05:19:07.585Z",
+     "type": "agent_end",
+     "agent": "evidence_gatherer",
+     "data": {
+      "occupations": 0,
+      "research": 3,
+      "news": 0
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:07.585Z",
+     "type": "agent_start",
+     "agent": "analyst",
+     "message": "initial synthesis"
+    },
+    {
+     "ts": "2026-10-13T05:19:15.437Z",
+     "type": "llm_call",
+     "agent": "analyst",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 5033,
+     "latencyMs": 7852
+    },
+    {
+     "ts": "2026-10-13T05:19:15.437Z",
+     "type": "agent_end",
+     "agent": "analyst",
+     "data": {
+      "suggestions": 1
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:16.344Z",
+     "type": "llm_call",
+     "agent": "verifier",
+     "model": "gemini-3.5-flash-lite",
+     "usageTokens": 455,
+     "latencyMs": 907
+    },
+    {
+     "ts": "2026-10-13T05:19:16.344Z",
+     "type": "verification_result",
+     "agent": "verifier",
+     "data": {
+      "verdict": "pass",
+      "failures": [],
+      "judge": {
+       "personalization": 95,
+       "groundedness": 90,
+       "rationale": "The guidance directly incorporates the user's specific skills in mechanical watch repair, case polishing, and patience, tailoring the strategy to their exact craft."
+      }
+     }
+    },
+    {
+     "ts": "2026-10-13T05:19:16.344Z",
+     "type": "run_end",
+     "message": "final verdict: pass"
+    }
+   ]
+  },
+  "evidence": {
+   "currentOccupationResilience": null
+  },
+  "meta": {
+   "models": [
+    "gemini-3.5-flash-lite"
+   ],
+   "usageTokens": 10306,
+   "latencyMs": 15377,
+   "degraded": false
+  }
+ }
+}

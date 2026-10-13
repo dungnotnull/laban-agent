@@ -1,0 +1,267 @@
+{
+ "score": {
+  "personaId": "persona-garment",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 95,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7730,
+  "latencyMs": 15568,
+  "model": "gemini-3.5-flash-lite",
+  "costPerTaskUsd": 0.002319
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Handmade Craft & Sustainable Product Entrepreneur",
+    "roleTitleVi": "Chủ cơ sở kinh doanh đồ thủ công & sản phẩm bền vững",
+    "aiResilienceScore": 92,
+    "matchScore": 88,
+    "reasoning": "Theo nghiên cứu của Oxford Martin School (2017) và ILO (2023), các công việc đòi hỏi sự khéo léo thủ công không cấu trúc (unstructured physical dexterity) và tính cá nhân hóa cao có mức độ phơi nhiễm tự động hóa gần như bằng không. Ngành sản xuất thủ công tại Bình Dương đang có tiềm năng tăng trưởng tốt nhờ xu hướng tiêu dùng xanh.",
+    "whyItFitsYou": "Bạn có 8 năm kinh nghiệm làm công nhân may, tay nghề khéo léo, đọc bản vẽ kỹ thuật tốt và có sẵn định hướng kinh doanh nhỏ. Những kỹ năng này là nền tảng vững chắc để tự sản xuất các mặt hàng thời trang, túi vải tái chế hoặc đồ thủ công độc bản mà AI không thể thay thế.",
+    "transferableSkillsMatch": [
+     "Vận hành và kiểm soát chất lượng sản phẩm",
+     "Đọc hiểu bản vẽ kỹ thuật / rập mẫu",
+     "Chịu được áp lực tiến độ và đơn hàng"
+    ],
+    "skillsGap": [
+     "Kỹ năng quản lý tài chính cơ bản",
+     "Marketing số và bán hàng trên nền tảng mạng xã hội",
+     "Thiết kế mẫu mã sản phẩm theo xu hướng thị trường"
+    ],
+    "averageSalaryRangeVND": "7,000,000 - 20,000,000 VND / tháng (Lợi nhuận kinh doanh riêng)",
+    "evidenceCitations": [
+     {
+      "paperTitle": "The Future of Employment: How Susceptible Are Jobs to Computerisation?",
+      "source": "Oxford Martin School, University of Oxford",
+      "year": "2017",
+      "url": "https://www.oxfordmartin.ox.ac.uk/downloads/academic/future-of-employment.pdf",
+      "quoteOrDataPoint": "Occupations requiring high unstructured physical dexterity and fine arts creation remain resilient against computerisation."
+     },
+     {
+      "paperTitle": "Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality",
+      "source": "International Labour Organization (ILO)",
+      "year": "2023",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis",
+      "quoteOrDataPoint": "Artisanal, localized services, and physical craft production remain highly insulated from generative AI substitution."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Garment and Related Trades Workers",
+     "occupationTitleVi": "Thợ may và thợ thủ công dệt may",
+     "molisaCode": "7533",
+     "onetCode": "51-6031.00",
+     "overallResilienceScore": 92,
+     "automationRiskScore": 8,
+     "augmentationPotentialScore": 45,
+     "humanAdvantageCore": [
+      "Sự khéo léo và tỉ mỉ bằng tay",
+      "Khả năng sáng tạo và chỉnh sửa mẫu trực tiếp",
+      "Sự thấu hiểu nhu cầu thẩm mỹ của khách hàng địa phương"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Custom tailoring and artisanal product creation",
+       "taskNameVi": "May đo và chế tác sản phẩm thủ công theo yêu cầu",
+       "exposureType": "complement",
+       "exposurePercentage": 15,
+       "onetCode": "51-6031.00",
+       "notes": "Sử dụng AI trên điện thoại để tìm kiếm xu hướng mẫu mã, sau đó thực hiện thủ công."
+      },
+      {
+       "taskName": "Quality inspection of finished handmade goods",
+       "taskNameVi": "Kiểm tra chất lượng thành phẩm thủ công",
+       "exposureType": "human",
+       "exposurePercentage": 5,
+       "onetCode": "51-9061.00",
+       "notes": "Quyết định thẩm định độ bền và độ tinh xảo dựa trên kinh nghiệm thực tế."
+      },
+      {
+       "taskName": "Direct customer consultation and sales",
+       "taskNameVi": "Tư vấn và bán hàng trực tiếp",
+       "exposureType": "human",
+       "exposurePercentage": 10,
+       "onetCode": "41-2031.00",
+       "notes": "Giao tiếp, thấu hiểu cảm xúc và nhu cầu của khách hàng."
+      }
+     ],
+     "sources": [
+      "Oxford Martin School (2017)",
+      "ILO (2023)"
+     ],
+     "methodologySummary": "Đánh giá dựa trên tiêu chí khéo léo thủ công, không gian vật lý và tương tác con người theo mô hình O*NET.",
+     "uncertaintyRange": "+/- 5%",
+     "vietnamDemandSignal": "stable"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "Stay and Augment in Garment Factory",
+      "pathTitleVi": "Tiếp tục công việc hiện tại và tích hợp công cụ số",
+      "feasibilityScore": 90,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Giữ vững công việc tại xưởng may, đồng thời học cách dùng smartphone để cập nhật mẫu mã mới, nâng cao năng suất.",
+      "targetRoles": [
+       "Thợ may chính / Tổ trưởng chuyền may"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng AI tìm mẫu thời trang trên điện thoại",
+       "Kỹ năng quản lý thời gian chuyền may"
+      ],
+      "transferableSkills": [
+       "Vận hành máy may",
+       "Đọc bản vẽ",
+       "Kiểm tra chất lượng"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "rationale": "Phù hợp với mức độ chịu rủi ro thấp và đảm bảo ổn định thu nhập trước mắt.",
+      "actionStepNow": "Tận dụng thời gian rảnh để quan sát các xu hướng thời trang tái chế trên mạng xã hội."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "Pivot to Local Craft Business",
+      "pathTitleVi": "Chuyển hướng sang kinh doanh đồ thủ công cá nhân",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Tận dụng tay nghề may vá để mở xưởng may nhỏ tại nhà, kết hợp bán hàng online qua Zalo, Facebook với vốn dưới 2 triệu VND.",
+      "targetRoles": [
+       "Chủ hộ kinh doanh đồ thủ công"
+      ],
+      "skillsToAcquire": [
+       "Bán hàng trên mạng xã hội",
+       "Chụp ảnh sản phẩm cơ bản bằng điện thoại",
+       "Quản lý chi phí tài chính gia đình"
+      ],
+      "transferableSkills": [
+       "Kỹ năng may vá chuyên nghiệp",
+       "Đọc hiểu yêu cầu kỹ thuật sản phẩm"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       7,
+       10,
+       14,
+       18,
+       25
+      ],
+      "rationale": "Đáp ứng sở thích kinh doanh nhỏ và nghề thủ công, tạo nguồn thu nhập độc lập lâu dài.",
+      "actionStepNow": "Liệt kê các sản phẩm thủ công dễ làm (túi vải, tạp dề, sửa quần áo) có thể bắt đầu ngay với chi phí nguyên phụ liệu dưới 2 triệu đồng."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Transition to Full-scale Local E-commerce",
+      "pathTitleVi": "Phát triển thương hiệu thời trang ngách trên sàn thương mại điện tử",
+      "feasibilityScore": 60,
+      "estimatedTimelineMonths": 24,
+      "shortDescription": "Xây dựng thương hiệu riêng chuyên sản xuất và phân phối các sản phẩm thời trang tái chế thân thiện môi trường.",
+      "targetRoles": [
+       "Nhà sáng lập thương hiệu cá nhân"
+      ],
+      "skillsToAcquire": [
+       "Vận hành gian hàng Shopee/TikTok Shop",
+       "Xây dựng nội dung video ngắn quảng bá sản phẩm"
+      ],
+      "transferableSkills": [
+       "Kiểm soát chất lượng",
+       "Tổ chức sản xuất chuyền nhỏ"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       5,
+       8,
+       15,
+       22,
+       35
+      ],
+      "rationale": "Đòi hỏi đầu tư thời gian và học hỏi nhiều kỹ năng mới, phù hợp khi đã có nguồn vốn tích lũy từ mô hình nhỏ.",
+      "actionStepNow": "Tham gia các hội nhóm kinh doanh thủ công trực tuyến tại Bình Dương để học hỏi kinh nghiệm."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Foundation & Skill Mapping",
+      "phaseNameVi": "Nền tảng & Xác định sản phẩm ngách",
+      "title": "Xác định dòng sản phẩm thủ công chủ lực",
+      "titleVi": "Xác định dòng sản phẩm thủ công chủ lực",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Nghiên cứu thị trường thủ công qua smartphone",
+       "Tính toán chi phí nguyên vật liệu dưới 2 triệu VND"
+      ],
+      "freeResources": [
+       {
+        "name": "Kênh Youtube Hướng dẫn Kinh doanh Nhỏ",
+        "provider": "Youtube Creators",
+        "url": "https://youtube.com",
+        "type": "video"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Yếu tố nào quan trọng nhất khi bắt đầu kinh doanh đồ thủ công với số vốn hạn chế (dưới 2 triệu VND)?",
+       "options": [
+        "Thuê mặt bằng lớn ngay lập tức",
+        "Chọn sản phẩm ngách có sẵn nguyên liệu và nhu cầu cao",
+        "Mua máy móc tự động đắt tiền",
+        "Chạy quảng cáo tốn kém"
+       ],
+       "correctIndex": 1,
+       "explanation": "Với vốn thấp, việc chọn sản phẩm ngách sát với tay nghề và có nhu cầu thực tế giúp giảm thiểu rủi ro tài chính."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Digital Literacy & Marketing",
+      "phaseNameVi": "Tiếp thị số cơ bản bằng điện thoại",
+      "title": "Sử dụng mạng xã hội để quảng bá sản phẩm",
+      "titleVi": "Sử dụng mạng xã hội để quảng bá sản phẩm",
+      "estimatedHours": 18,
+      "weeksDuration": 3,
+      "skillsCovered": [
+       "Chụp ảnh và quay video sản phẩm bằng điện thoại",
+       "Đăng bài bán hàng trên Facebook và Zalo"
+      ],
+      "freeResources": [
+       {
+        "name": "Kiến thức Kinh doanh Online cơ bản",
+        "provider": "Meta Blueprint (Tiếng Việt)",
+        "url": "https://www.facebook.com/business/learn",
+        "type": "course"
+       }
+      ],
+      "checkpointQuiz": {
+       "question": "Cách tiếp cận khách hàng miễn phí hiệu quả nhất cho thợ thủ công mới bắt đầu là gì?",
+       "options": [
+        "Đăng ảnh/video sản phẩm thực tế lên hội nhóm địa phương và mạng xã hội",
+        "Phát tờ rơi trên toàn quốc",
+        "Thuê người nổi tiếng quảng cáo",
+        "Chờ khách hàng tự tìm đến xưởng"
+       ],
+       "correctIndex": 0,
+       "explanation": "Sử dụng hình ảnh chân thực đăng lên các nền tảng mạng xã hội và hội nhóm địa phương giúp tiếp cận đúng khách hàng với chi phí bằng không."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "usageTokens": 7480,
+  "latencyMs": 15568
+ }
+}

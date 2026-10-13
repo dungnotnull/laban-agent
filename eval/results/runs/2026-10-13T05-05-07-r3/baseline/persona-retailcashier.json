@@ -1,0 +1,265 @@
+{
+ "score": {
+  "personaId": "persona-retailcashier",
+  "config": "baseline",
+  "ok": true,
+  "groundingRate": 1,
+  "hallucinatedCount": 0,
+  "schemaFailures": 0,
+  "guardrailViolations": 0,
+  "personalization": 90,
+  "coherent": true,
+  "actionable": false,
+  "usageTokens": 7189,
+  "latencyMs": 8321,
+  "model": "gemini-3.1-flash-lite",
+  "costPerTaskUsd": 0.0021566999999999997
+ },
+ "payload": {
+  "source": "eval_baseline",
+  "suggestions": [
+   {
+    "roleTitle": "Customer Success & Operations Coordinator",
+    "roleTitleVi": "Điều phối viên Vận hành & Chăm sóc khách hàng",
+    "aiResilienceScore": 85,
+    "matchScore": 92,
+    "reasoning": "Dựa trên báo cáo của NBER (2023), các tác vụ hỗ trợ khách hàng được AI hỗ trợ giúp tăng năng suất đáng kể. Với kinh nghiệm 3 năm tại POS và xử lý hoàn đổi, bạn có nền tảng vững chắc về 'human-in-the-loop' (con người trong vòng lặp) mà AI chưa thể thay thế hoàn toàn do yêu cầu về sự đồng cảm và xử lý tình huống thực tế.",
+    "whyItFitsYou": "Bạn có thế mạnh về sự cẩn thận với hóa đơn và thái độ phục vụ tốt. Việc chuyển dịch sang vai trò điều phối vận hành cho phép bạn tận dụng kỹ năng đối soát cuối ca để quản lý dữ liệu bán hàng, đồng thời dùng kỹ năng chăm sóc khách hàng để giải quyết các khiếu nại phức tạp mà AI thường gặp khó khăn.",
+    "transferableSkillsMatch": [
+     "Vận hành máy POS",
+     "Đối soát tài chính cuối ca",
+     "Xử lý khiếu nại khách hàng",
+     "Quản lý ca làm việc"
+    ],
+    "skillsGap": [
+     "Sử dụng công cụ AI hỗ trợ (ChatGPT/Claude để soạn thảo phản hồi)",
+     "Kỹ năng Excel/Google Sheets nâng cao",
+     "Quản trị đơn hàng trên sàn TMĐT"
+    ],
+    "averageSalaryRangeVND": "10,000,000 - 15,000,000 VND / tháng",
+    "evidenceCitations": [
+     {
+      "paperTitle": "Generative AI at Work",
+      "source": "NBER / MIT",
+      "year": 2023,
+      "url": "https://www.nber.org/papers/w31161",
+      "quoteOrDataPoint": "AI-based conversational assistants increase productivity of customer support agents by 14% on average."
+     },
+     {
+      "paperTitle": "Vietnam Labor Market Report & AI Transformation Index",
+      "source": "TopCV / Navigos Group",
+      "year": 2024,
+      "url": "https://topcv.vn",
+      "quoteOrDataPoint": "62% of Vietnamese enterprises integrate AI in customer service and data analytics."
+     }
+    ],
+    "resilienceDetail": {
+     "occupationTitle": "Customer Service Representative",
+     "occupationTitleVi": "Nhân viên chăm sóc khách hàng",
+     "molisaCode": "4222",
+     "onetCode": "43-4051.00",
+     "overallResilienceScore": 85,
+     "automationRiskScore": 30,
+     "augmentationPotentialScore": 70,
+     "humanAdvantageCore": [
+      "Sự đồng cảm",
+      "Giải quyết xung đột",
+      "Đạo đức nghề nghiệp"
+     ],
+     "tasksBreakdown": [
+      {
+       "taskName": "Customer Complaint Resolution",
+       "taskNameVi": "Giải quyết khiếu nại khách hàng",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 20,
+       "onetCode": "43-4051.00",
+       "notes": "AI gợi ý kịch bản, bạn quyết định phương án xử lý cuối cùng."
+      },
+      {
+       "taskName": "Sales Data Reconciliation",
+       "taskNameVi": "Đối soát dữ liệu bán hàng",
+       "exposureType": "Automation",
+       "exposurePercentage": 60,
+       "onetCode": "43-3031.00",
+       "notes": "Sử dụng công cụ tự động hóa để giảm sai sót thủ công."
+      },
+      {
+       "taskName": "Customer Relationship Management",
+       "taskNameVi": "Quản trị quan hệ khách hàng",
+       "exposureType": "Augmentation",
+       "exposurePercentage": 40,
+       "onetCode": "43-4051.00",
+       "notes": "Dùng AI để phân tích xu hướng mua sắm của khách hàng."
+      }
+     ],
+     "sources": [
+      "ILO 2023",
+      "NBER 2023"
+     ],
+     "methodologySummary": "Đánh giá dựa trên chỉ số phơi nhiễm nhiệm vụ (Task Exposure Index) và khả năng bổ trợ của AI.",
+     "uncertaintyRange": "Low",
+     "vietnamDemandSignal": "high_growth"
+    },
+    "trajectories": [
+     {
+      "pathId": "stay_augment",
+      "pathTitle": "AI-Enhanced Retail Lead",
+      "pathTitleVi": "Trưởng nhóm bán lẻ ứng dụng AI",
+      "feasibilityScore": 95,
+      "estimatedTimelineMonths": 3,
+      "shortDescription": "Tối ưu hóa công việc thu ngân hiện tại bằng các công cụ AI để quản lý tồn kho và báo cáo.",
+      "targetRoles": [
+       "Cửa hàng trưởng",
+       "Giám sát vận hành"
+      ],
+      "skillsToAcquire": [
+       "AI Prompting cơ bản",
+       "Quản lý tồn kho số"
+      ],
+      "transferableSkills": [
+       "POS",
+       "Đối soát"
+      ],
+      "riskLevel": "low",
+      "fiveYearSalaryProjection": [
+       8,
+       9,
+       10,
+       12,
+       15
+      ],
+      "rationale": "Tận dụng kinh nghiệm sẵn có, giảm thiểu rủi ro thất nghiệp.",
+      "actionStepNow": "Học cách sử dụng ChatGPT để viết báo cáo ca làm việc nhanh hơn."
+     },
+     {
+      "pathId": "pivot_adjacent",
+      "pathTitle": "E-commerce Operations Assistant",
+      "pathTitleVi": "Trợ lý vận hành TMĐT",
+      "feasibilityScore": 75,
+      "estimatedTimelineMonths": 6,
+      "shortDescription": "Chuyển sang làm việc tại các kho hàng TMĐT hoặc văn phòng hỗ trợ bán hàng trực tuyến.",
+      "targetRoles": [
+       "Nhân viên vận hành sàn TMĐT",
+       "CSKH trực tuyến"
+      ],
+      "skillsToAcquire": [
+       "Sử dụng phần mềm quản lý bán hàng (Sapo/KiotViet)",
+       "Kỹ năng chat chuyên nghiệp"
+      ],
+      "transferableSkills": [
+       "Chăm sóc khách hàng",
+       "Xử lý hoàn đổi"
+      ],
+      "riskLevel": "moderate",
+      "fiveYearSalaryProjection": [
+       9,
+       10,
+       12,
+       14,
+       18
+      ],
+      "rationale": "Nhu cầu nhân lực TMĐT tại Đà Nẵng đang tăng cao.",
+      "actionStepNow": "Tìm hiểu quy trình vận hành đơn hàng trên Shopee/Lazada."
+     },
+     {
+      "pathId": "full_switch",
+      "pathTitle": "Junior Accountant Assistant",
+      "pathTitleVi": "Trợ lý kế toán sơ cấp",
+      "feasibilityScore": 50,
+      "estimatedTimelineMonths": 12,
+      "shortDescription": "Học chứng chỉ kế toán cơ bản để làm việc tại các doanh nghiệp vừa và nhỏ.",
+      "targetRoles": [
+       "Kế toán viên",
+       "Nhân viên nhập liệu"
+      ],
+      "skillsToAcquire": [
+       "Kế toán máy",
+       "Excel nâng cao",
+       "Luật thuế cơ bản"
+      ],
+      "transferableSkills": [
+       "Cẩn thận với tiền",
+       "Đối soát hóa đơn"
+      ],
+      "riskLevel": "high",
+      "fiveYearSalaryProjection": [
+       7,
+       8,
+       10,
+       13,
+       17
+      ],
+      "rationale": "Phù hợp với sở thích kế toán nhưng đòi hỏi học tập nghiêm túc.",
+      "actionStepNow": "Đăng ký khóa học kế toán tổng hợp cơ bản tại địa phương."
+     }
+    ],
+    "roadmap": [
+     {
+      "id": "m1",
+      "milestoneNumber": 1,
+      "phaseName": "Digital Literacy",
+      "phaseNameVi": "Nâng cao kỹ năng số",
+      "title": "Làm chủ công cụ AI và văn phòng",
+      "titleVi": "Làm chủ công cụ AI và văn phòng",
+      "estimatedHours": 40,
+      "weeksDuration": 4,
+      "skillsCovered": [
+       "ChatGPT",
+       "Google Sheets",
+       "Email chuyên nghiệp"
+      ],
+      "freeResources": {
+       "name": "Google Digital Garage",
+       "provider": "Google",
+       "url": "https://learndigital.withgoogle.com/digitalgarage",
+       "type": "Online Course"
+      },
+      "checkpointQuiz": {
+       "question": "Công cụ nào giúp bạn soạn thảo email phản hồi khách hàng nhanh hơn?",
+       "options": [
+        "ChatGPT",
+        "Máy tính bỏ túi",
+        "Máy POS"
+       ],
+       "correctIndex": 0,
+       "explanation": "ChatGPT là mô hình ngôn ngữ hỗ trợ soạn thảo văn bản nhanh chóng và chuyên nghiệp."
+      }
+     },
+     {
+      "id": "m2",
+      "milestoneNumber": 2,
+      "phaseName": "Operational Excellence",
+      "phaseNameVi": "Vận hành chuyên nghiệp",
+      "title": "Ứng dụng AI vào quy trình bán hàng",
+      "titleVi": "Ứng dụng AI vào quy trình bán hàng",
+      "estimatedHours": 60,
+      "weeksDuration": 6,
+      "skillsCovered": [
+       "Quản lý đơn hàng",
+       "Phân tích dữ liệu bán hàng"
+      ],
+      "freeResources": {
+       "name": "Kênh Youtube KiotViet/Sapo",
+       "provider": "Sapo",
+       "url": "https://www.youtube.com/@SapoVietnam",
+       "type": "Video Tutorial"
+      },
+      "checkpointQuiz": {
+       "question": "Tại sao cần đối soát dữ liệu cuối ngày?",
+       "options": [
+        "Để làm đẹp báo cáo",
+        "Để đảm bảo khớp tiền mặt và hàng hóa",
+        "Để AI tự làm"
+       ],
+       "correctIndex": 1,
+       "explanation": "Đối soát là bước quan trọng để đảm bảo tính chính xác tài chính."
+      }
+     }
+    ]
+   }
+  ],
+  "model": "gemini-3.1-flash-lite",
+  "usageTokens": 6935,
+  "latencyMs": 8321
+ }
+}
