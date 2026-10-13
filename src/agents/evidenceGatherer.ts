@@ -34,6 +34,7 @@ export async function runEvidenceGatherer(
     occupations: [],
     research: [],
     news: [],
+    learningResources: [],
     toolTrace: []
   };
   const contents: any[] = [{ role: 'user', parts: [{ text: buildInitialTurn(profile) }] }];

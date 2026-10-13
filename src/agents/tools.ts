@@ -1,6 +1,7 @@
 import { Type } from '@google/genai';
 import { VIETNAM_OCCUPATIONS_DATABASE } from '../data/vietnamOccupations';
 import { RESEARCH_LIBRARY } from '../data/researchLibrary';
+import { LEARNING_RESOURCES, type LearningResource } from '../data/learningResources';
 import type { ResilienceScoreDetail, ResearchSource } from '../types';
 import { callGeminiRich, parseGeminiJson } from './geminiClient';
 
@@ -20,10 +21,11 @@ export interface EvidencePack {
   occupations: OccupationMatch[];
   research: ResearchSource[];
   news: { title: string; source: string; url: string; summaryVi: string }[];
+  learningResources: LearningResource[];
   toolTrace: { name: string; args: unknown; summary: string }[];
 }
 
-export const EMPTY_PACK: EvidencePack = { occupations: [], research: [], news: [], toolTrace: [] };
+export const EMPTY_PACK: EvidencePack = { occupations: [], research: [], news: [], learningResources: [], toolTrace: [] };
 
 export const AGENT_FUNCTION_DECLARATIONS = [
   {
@@ -60,6 +62,18 @@ export const AGENT_FUNCTION_DECLARATIONS = [
         role: { type: Type.STRING, description: 'Role to search news for' }
       },
       required: ['role']
+    }
+  },
+  {
+    name: 'searchLearningResources',
+    description:
+      'Search the curated learning-resource registry (real, verified URLs: free/low-cost courses, guides, certifications suitable for Vietnamese workers). Call this once after occupation and research lookups, to ground the roadmap learning resources.',
+    parameters: {
+      type: Type.OBJECT,
+      properties: {
+        query: { type: Type.STRING, description: 'Learning need keywords, e.g. "basic computer skills english free"' }
+      },
+      required: ['query']
     }
   }
 ] as any[];
@@ -134,6 +148,26 @@ export function searchResearch(query: string): ToolResult {
   return { ok: true, data: items };
 }
 
+export function searchLearningResources(query: string): ToolResult {
+  const queryTokens = new Set(normalize(query).split(' ').filter(t => t.length > 1));
+  const scored = LEARNING_RESOURCES.map(r => ({
+    entry: r,
+    score: Math.max(
+      overlapScore(queryTokens, r.name),
+      overlapScore(queryTokens, r.notes || ''),
+      overlapScore(queryTokens, `${r.type} ${r.language} ${r.provider}`)
+    )
+  }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
+  const items = scored.filter(s => s.score > 0).map(s => s.entry);
+  if (items.length === 0) {
+    return { ok: true, data: [], note: 'No learning resource matched the query.' };
+  }
+  return { ok: true, data: items };
+}
+
 export async function getOccupationNews(role: string): Promise<ToolResult> {
   const currentYear = new Date().getFullYear();
   const prompt = `Perform a live Google Search for the latest ${currentYear} Vietnam labor-market news about the role "${role}" (AI impact, hiring trends, automation). Return strictly a JSON array of up to 3 objects with keys: title, source, url, summaryVi (2 sentences in Vietnamese).`;
@@ -165,6 +199,8 @@ export async function executeToolCall(name: string, args: Record<string, unknown
       return searchResearch(String(args.query || ''));
     case 'getOccupationNews':
       return getOccupationNews(String(args.role || ''));
+    case 'searchLearningResources':
+      return searchLearningResources(String(args.query || ''));
     default:
       return { ok: false, data: [], note: `Unknown tool: ${name}` };
   }
