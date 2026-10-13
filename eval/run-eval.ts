@@ -102,6 +102,24 @@ ${perPersona}
 `;
 }
 
+function renderStabilityMd(runs: Record<string, RunScore[]>[], segmentsById: Record<string, string>): string {
+  const meanSd = (xs: number[]) => {
+    const m = xs.reduce((a, b) => a + b, 0) / xs.length;
+    const sd = Math.sqrt(xs.reduce((a, b) => a + (b - m) ** 2, 0) / xs.length);
+    return { m, sd };
+  };
+  const pctf = (v: number) => `${(v * 100).toFixed(1)}%`;
+  const rows = ['baseline', 'stage1_tools', 'final_tools_verifier'].map(cfg => {
+    const aggs = runs.map(r => aggregate(r[cfg] || [], segmentsById)).filter(Boolean);
+    const g = meanSd(aggs.map(a => a.groundingRate ?? 0));
+    const coh = meanSd(aggs.map(a => a.coherenceRate));
+    const act = meanSd(aggs.map(a => a.actionableRate));
+    const per = meanSd(aggs.map(a => a.personalizationAvg ?? 0));
+    return `| ${cfg} | ${pctf(g.m)} ±${pctf(g.sd)} | ${pctf(coh.m)} ±${pctf(coh.sd)} | ${pctf(act.m)} ±${pctf(act.sd)} | ${per.m.toFixed(0)} ±${per.sd.toFixed(0)} |`;
+  }).join('\n');
+  return `# Stability across ${runs.length} runs (mean ± sd)\n\n| Config | Grounding | Coherence | Actionable | Personalization |\n|---|---|---|---|---|\n${rows}\n`;
+}
+
 function renderTrajectoriesMd(trajDir: string): string {
   const files = fs.readdirSync(trajDir).filter(f => f.endsWith('.json'));
   const picks = ['persona-watchrepair', 'persona-accountant'];
@@ -131,51 +149,80 @@ async function main() {
     process.exit(1);
   }
 
-  const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
-  const runDir = path.join('eval', 'results', 'runs', stamp);
+  const repsIdx = process.argv.indexOf('--reps');
+  const REPS = repsIdx > 0 ? Math.max(1, Number(process.argv[repsIdx + 1]) || 1) : 3;
+
+  const baseStamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
   const trajDir = path.join('eval', 'trajectories');
-  fs.mkdirSync(path.join(runDir, 'baseline'), { recursive: true });
-  fs.mkdirSync(path.join(runDir, 'stage1_tools'), { recursive: true });
-  fs.mkdirSync(path.join(runDir, 'final_tools_verifier'), { recursive: true });
   fs.mkdirSync(trajDir, { recursive: true });
+  const segmentsById = Object.fromEntries(EVAL_PERSONAS.map(p => [p.id, p.segment]));
+  const allRuns: Record<string, RunScore[]>[] = [];
 
-  const byConfig: Record<string, RunScore[]> = {};
+  for (let rep = 1; rep <= REPS; rep++) {
+    const stamp = `${baseStamp}-r${rep}`;
+    const runDir = path.join('eval', 'results', 'runs', stamp);
+    fs.mkdirSync(path.join(runDir, 'baseline'), { recursive: true });
+    fs.mkdirSync(path.join(runDir, 'stage1_tools'), { recursive: true });
+    fs.mkdirSync(path.join(runDir, 'final_tools_verifier'), { recursive: true });
 
-  for (const cfg of CONFIGS) {
-    byConfig[cfg.id] = [];
-    for (const persona of EVAL_PERSONAS) {
-      process.stdout.write(`[${cfg.id}] ${persona.id} ... `);
-      let payload: any;
-      try {
-        payload = await postJson(`${BASE_URL}${cfg.endpoint}`, cfg.body(persona.intake, persona.id));
-      } catch (err: any) {
-        payload = { error: `transport failed: ${err?.message || err}` };
-      }
-      // Persist trajectory for agent runs
-      if (payload?.trajectory) {
+    const byConfig: Record<string, RunScore[]> = {};
+
+    for (const cfg of CONFIGS) {
+      byConfig[cfg.id] = [];
+      for (const persona of EVAL_PERSONAS) {
+        process.stdout.write(`[r${rep}][${cfg.id}] ${persona.id} ... `);
+        let payload: any;
+        try {
+          payload = await postJson(`${BASE_URL}${cfg.endpoint}`, cfg.body(persona.intake, persona.id));
+        } catch (err: any) {
+          payload = { error: `transport failed: ${err?.message || err}` };
+        }
+        // Persist trajectory for agent runs (rep 1 only to avoid overwrite churn)
+        if (rep === 1 && payload?.trajectory) {
+          fs.writeFileSync(
+            path.join(trajDir, `${cfg.id}--${persona.id}.json`),
+            JSON.stringify(payload.trajectory, null, 1)
+          );
+        }
+        const score = await scoreOutput(persona.id, cfg.id, payload, persona.intake);
+        byConfig[cfg.id].push(score);
         fs.writeFileSync(
-          path.join(trajDir, `${cfg.id}--${persona.id}.json`),
-          JSON.stringify(payload.trajectory, null, 1)
+          path.join(runDir, cfg.id, `${persona.id}.json`),
+          JSON.stringify({ score, payload }, null, 1)
         );
+        console.log(score.ok ? `grounding=${score.groundingRate ?? 'n/a'} hall=${score.hallucinatedCount} schema=${score.schemaFailures}` : `FAILED (${score.error})`);
+        await new Promise(r => setTimeout(r, 300));
       }
-      const score = await scoreOutput(persona.id, cfg.id, payload, persona.intake);
-      byConfig[cfg.id].push(score);
-      fs.writeFileSync(
-        path.join(runDir, cfg.id, `${persona.id}.json`),
-        JSON.stringify({ score, payload }, null, 1)
-      );
-      console.log(score.ok ? `grounding=${score.groundingRate ?? 'n/a'} hall=${score.hallucinatedCount} schema=${score.schemaFailures}` : `FAILED (${score.error})`);
-      await new Promise(r => setTimeout(r, 300));
     }
+
+    fs.writeFileSync(path.join(runDir, 'summary.json'), JSON.stringify(byConfig, null, 1));
+    fs.writeFileSync(path.join(runDir, 'EVALUATION.md'), renderEvaluationMd(byConfig, stamp, segmentsById));
+    if (rep === 1) {
+      fs.writeFileSync(path.join(trajDir, 'TRAJECTORIES.md'), renderTrajectoriesMd(trajDir));
+    }
+    allRuns.push({ ...byConfig });
   }
 
-  fs.writeFileSync(path.join(runDir, 'summary.json'), JSON.stringify(byConfig, null, 1));
-  const segmentsById = Object.fromEntries(EVAL_PERSONAS.map(p => [p.id, p.segment]));
-  fs.writeFileSync(path.join(runDir, 'EVALUATION.md'), renderEvaluationMd(byConfig, stamp, segmentsById));
-  fs.writeFileSync(path.join(trajDir, 'TRAJECTORIES.md'), renderTrajectoriesMd(trajDir));
-  fs.writeFileSync(path.join('eval', 'results', 'latest.json'), JSON.stringify({ stamp }, null, 1));
+  // Stability report across repetitions
+  const stabilityDir = path.join('eval', 'results', 'runs', `${baseStamp}-stability`);
+  fs.mkdirSync(stabilityDir, { recursive: true });
+  fs.writeFileSync(path.join(stabilityDir, 'STABILITY.md'), renderStabilityMd(allRuns, segmentsById));
 
-  console.log(`\nDone. Results: ${path.join(runDir, 'EVALUATION.md')}`);
+  // latest.json points to rep-1 stamp so downstream tooling finds a per-run dir
+  fs.writeFileSync(
+    path.join('eval', 'results', 'latest.json'),
+    JSON.stringify({ stamp: `${baseStamp}-r1`, baseStamp, reps: REPS }, null, 1)
+  );
+
+  // Append stability pointer to rep-1 report
+  const rep1EvalPath = path.join('eval', 'results', 'runs', `${baseStamp}-r1`, 'EVALUATION.md');
+  fs.writeFileSync(
+    rep1EvalPath,
+    fs.readFileSync(rep1EvalPath, 'utf-8') + `\nStability across repetitions: see ../${baseStamp}-stability/STABILITY.md\n`
+  );
+
+  console.log(`\nDone (${REPS} rep(s)). Results: ${rep1EvalPath}`);
+  console.log(`Stability: ${path.join(stabilityDir, 'STABILITY.md')}`);
 }
 
 main().catch(err => {
