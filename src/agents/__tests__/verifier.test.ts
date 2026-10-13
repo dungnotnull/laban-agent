@@ -22,12 +22,12 @@ function validSuggestion(): any {
       { paperTitle: RESEARCH_LIBRARY[0].title, source: RESEARCH_LIBRARY[0].institution, year: RESEARCH_LIBRARY[0].year, url: RESEARCH_LIBRARY[0].url, quoteOrDataPoint: 'finding' }
     ],
     trajectories: [
-      { pathId: 'stay_augment', feasibilityScore: 80, actionStepNow: 'Học Power BI trong 4 tuần.' },
-      { pathId: 'pivot_adjacent', feasibilityScore: 70 },
-      { pathId: 'full_switch', feasibilityScore: 50 }
+      { pathId: 'stay_augment', feasibilityScore: 80, riskLevel: 'low', actionStepNow: 'Học Power BI trong 4 tuần.' },
+      { pathId: 'pivot_adjacent', feasibilityScore: 70, riskLevel: 'moderate', actionStepNow: 'Mở rộng kỹ năng phân tích.' },
+      { pathId: 'full_switch', feasibilityScore: 50, riskLevel: 'high', actionStepNow: 'Đánh giá lại sau 6 tháng.' }
     ],
     roadmap: [{ milestoneNumber: 1 }, { milestoneNumber: 2 }],
-    resilienceDetail: { overallResilienceScore: 74 }
+    resilienceDetail: { overallResilienceScore: 74, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' }
   };
 }
 
@@ -66,5 +66,49 @@ describe('runVerifier', () => {
   it('fails on empty suggestions', async () => {
     const result = await runVerifier({ currentRole: 'Accountant' } as any, [], judgeDeps(GOOD_JUDGE));
     expect(result.verdict).toBe('fail');
+  });
+});
+
+import { EMPTY_PACK } from '../tools';
+
+const vdeps = { callRich: async () => ({ text: '{"personalization":80,"groundedness":80,"rationale":"ok"}', usageTokens: 1 }) } as any;
+
+const goodSug = (score = 70): any => ({
+  roleTitle: 'Data Analyst',
+  matchScore: 80,
+  evidenceCitations: [{ paperTitle: RESEARCH_LIBRARY[0].title, url: 'https://x.org' }],
+  resilienceDetail: { overallResilienceScore: score, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' },
+  trajectories: [
+    { pathId: 'a', feasibilityScore: 70, riskLevel: 'low', actionStepNow: 'x' },
+    { pathId: 'b', feasibilityScore: 70, riskLevel: 'moderate', actionStepNow: 'x' },
+    { pathId: 'c', feasibilityScore: 70, riskLevel: 'high', actionStepNow: 'x' }
+  ],
+  roadmap: [
+    { freeResources: [{ url: 'https://www.freecodecamp.org/learn' }] },
+    { freeResources: [] }
+  ]
+});
+
+describe('runVerifier coherence + resource grounding', () => {
+  it('returns repair verdict with coherence and resource failures', async () => {
+    const sugs: any[] = [goodSug(42)];
+    sugs[0].roadmap[0].freeResources[0].url = 'https://example.com/fake';
+    const pack: any = { occupations: [{ detail: { overallResilienceScore: 60 } }] };
+    const v = await runVerifier({ currentRole: 'r' } as any, sugs, vdeps, pack);
+    expect(v.verdict).toBe('repair');
+    expect(v.failures.some(f => f.includes('coherence: top suggestion resilience'))).toBe(true);
+    expect(v.failures.some(f => f.includes('resource url not in registry'))).toBe(true);
+  });
+
+  it('passes coherent grounded output with empty pack floor', async () => {
+    const v = await runVerifier({ currentRole: 'r' } as any, [goodSug(70)], vdeps, EMPTY_PACK);
+    expect(v.failures).toEqual([]);
+    expect(v.verdict).toBe('pass');
+  });
+
+  it('exposes resourceReport on the result', async () => {
+    const v = await runVerifier({ currentRole: 'r' } as any, [goodSug(70)], vdeps, EMPTY_PACK);
+    expect(v.resourceReport.total).toBe(1);
+    expect(v.resourceReport.grounded).toBe(1);
   });
 });

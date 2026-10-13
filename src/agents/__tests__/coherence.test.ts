@@ -59,4 +59,15 @@ describe('checkCoherence', () => {
     const f = checkCoherence([s], 60);
     expect(f.some(x => x.includes('riskLevel'))).toBe(true);
   });
+
+  it('C1 fails on NaN resilience score', () => {
+    const f = checkCoherence([sug({ resilienceDetail: { overallResilienceScore: NaN, uncertaintyRange: '±8', vietnamDemandSignal: 'stable' } })], 60);
+    expect(f.some(x => x.includes('coherence: top suggestion resilience'))).toBe(true);
+  });
+
+  it('C3 skips null trajectory entries without throwing', () => {
+    const s = sug();
+    (s.trajectories as any[])[1] = null;
+    expect(() => checkCoherence([s], 60)).not.toThrow();
+  });
 });

@@ -29,12 +29,12 @@ function suggestion(repair: boolean): any {
       ? [{ paperTitle: RESEARCH_LIBRARY[0].title, source: 'x', year: 2024, url: 'https://x.org', quoteOrDataPoint: 'q' }]
       : [{ paperTitle: 'Made Up Source', source: 'x', year: 2024, url: 'https://x.org', quoteOrDataPoint: 'q' }],
     trajectories: [
-      { pathId: 'stay_augment', feasibilityScore: 80 },
-      { pathId: 'pivot_adjacent', feasibilityScore: 70 },
-      { pathId: 'full_switch', feasibilityScore: 60 }
+      { pathId: 'stay_augment', feasibilityScore: 80, riskLevel: 'low', actionStepNow: 'do' },
+      { pathId: 'pivot_adjacent', feasibilityScore: 70, riskLevel: 'moderate', actionStepNow: 'do' },
+      { pathId: 'full_switch', feasibilityScore: 60, riskLevel: 'high', actionStepNow: 'do' }
     ],
     roadmap: [{ milestoneNumber: 1 }, { milestoneNumber: 2 }],
-    resilienceDetail: { overallResilienceScore: 70 }
+    resilienceDetail: { overallResilienceScore: 70, uncertaintyRange: '±5', vietnamDemandSignal: 'stable' }
   };
 }
 

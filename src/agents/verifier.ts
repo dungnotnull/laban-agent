@@ -1,7 +1,9 @@
 import type { CareerSuggestion, UserIntakeProfile } from '../types';
 import { parseGeminiJson } from './geminiClient';
 import { validateSuggestionSchema, scanGuardrails } from './checks';
-import { verifySuggestions, type CitationReport } from './citations';
+import { verifySuggestions, verifyResourceUrls, type CitationReport } from './citations';
+import { checkCoherence, currentOccupationResilience } from './coherence';
+import { EMPTY_PACK, type EvidencePack } from './tools';
 import type { AgentDeps } from './deps';
 
 export interface VerifierJudge {
@@ -15,6 +17,7 @@ export interface VerifierResult {
   failures: string[];
   judge: VerifierJudge;
   citationReport: CitationReport;
+  resourceReport: { total: number; grounded: number; ungrounded: string[] };
 }
 
 const VERIFIER_SYSTEM = 'You are a strict quality judge for career-guidance outputs. Return pure JSON only.';
@@ -58,7 +61,8 @@ No markdown fences.`;
 export async function runVerifier(
   intake: UserIntakeProfile,
   suggestions: CareerSuggestion[],
-  deps: AgentDeps
+  deps: AgentDeps,
+  pack: EvidencePack = EMPTY_PACK
 ): Promise<VerifierResult> {
   const failures: string[] = [];
 
@@ -67,7 +71,8 @@ export async function runVerifier(
       verdict: 'fail',
       failures: ['output: suggestions array is empty'],
       judge: { personalization: 0, groundedness: 0, rationale: 'n/a - no output' },
-      citationReport: { total: 0, verified: 0, hallucinated: [] }
+      citationReport: { total: 0, verified: 0, hallucinated: [] },
+      resourceReport: { total: 0, grounded: 0, ungrounded: [] }
     };
   }
 
@@ -77,6 +82,13 @@ export async function runVerifier(
   const citationReport = verifySuggestions(suggestions);
   for (const hall of citationReport.hallucinated) {
     failures.push(`suggestion[${hall.suggestionIndex}]: citation not found in evidence base: "${hall.paperTitle}"`);
+  }
+
+  failures.push(...checkCoherence(suggestions, currentOccupationResilience(pack)));
+
+  const resourceReport = verifyResourceUrls(suggestions);
+  for (const url of resourceReport.ungrounded) {
+    failures.push(`suggestion[*]: resource url not in registry: "${url}"`);
   }
 
   const judge = await judgeQuality(intake, suggestions, deps);
@@ -91,6 +103,7 @@ export async function runVerifier(
     verdict: failures.length === 0 ? 'pass' : 'repair',
     failures,
     judge,
-    citationReport
+    citationReport,
+    resourceReport
   };
 }

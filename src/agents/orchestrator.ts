@@ -141,7 +141,7 @@ export async function runCareerPipeline(
     if (!config.useVerifier) break;
 
     try {
-      verification = await runVerifier(intake, suggestions, verifierDeps);
+      verification = await runVerifier(intake, suggestions, verifierDeps, pack);
       rec.log({
         type: 'verification_result',
         agent: 'verifier',

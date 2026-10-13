@@ -20,11 +20,11 @@ export function checkCoherence(suggestions: any[], currentResilience: number | n
   const top = suggestions[0] || {};
   const floor = currentResilience ?? UNKNOWN_OCCUPATION_FLOOR;
   const topScore = top.resilienceDetail?.overallResilienceScore;
-  if (typeof topScore !== 'number' || topScore < floor) {
+  if (typeof topScore !== 'number' || Number.isNaN(topScore) || topScore < floor) {
     failures.push(`coherence: top suggestion resilience ${topScore ?? 'missing'} below floor ${floor}`);
   }
   if (top.resilienceDetail?.vietnamDemandSignal === 'declining') {
-    failures.push(`coherence: top suggestion demand signal is 'declining'`);
+    failures.push(`coherence: top suggestion demand signal is 'declining' — replace with a non-declining direction or justify with resilience evidence`);
   }
 
   suggestions.forEach((sug, i) => {
@@ -33,6 +33,7 @@ export function checkCoherence(suggestions: any[], currentResilience: number | n
       failures.push(`${tag}: coherence: missing uncertaintyRange`);
     }
     for (const t of sug?.trajectories || []) {
+      if (!t) continue;
       if (!RISK_LEVELS.includes(t.riskLevel)) {
         failures.push(`${tag}: coherence: trajectory '${t.pathId}' riskLevel missing or invalid`);
       }
