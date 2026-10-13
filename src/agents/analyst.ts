@@ -30,7 +30,7 @@ export function serializeEvidencePack(pack: EvidencePack): string {
     keyFindings: r.keyFindings,
     vietnamRelevance: r.vietnamRelevance
   }));
-  return JSON.stringify({ occupations, research, news: pack.news }, null, 1);
+  return JSON.stringify({ occupations, research, news: pack.news, learningResources: pack.learningResources }, null, 1);
 }
 
 export async function runAnalyst(
@@ -66,10 +66,10 @@ OUTPUT REQUIREMENTS (same product schema):
 Return a strictly valid JSON Array containing 1 to 2 CareerSuggestion objects with full schema:
 - roleTitle (English) & roleTitleVi (Vietnamese)
 - aiResilienceScore (0-100), matchScore (0-100)
-- reasoning (Vietnamese explanation grounded in the evidence pack)
-- whyItFitsYou (Vietnamese personalized assessment connecting strengths to opportunities)
-- transferableSkillsMatch (array of strings in Vietnamese)
-- skillsGap (array of strings in Vietnamese)
+- reasoning (explanation grounded in the evidence pack, per OUTPUT LANGUAGE)
+- whyItFitsYou (personalized assessment connecting strengths to opportunities, per OUTPUT LANGUAGE)
+- transferableSkillsMatch (array of strings, per OUTPUT LANGUAGE)
+- skillsGap (array of strings, per OUTPUT LANGUAGE)
 - averageSalaryRangeVND (string e.g. "20,000,000 - 45,000,000 VND / tháng")
 - evidenceCitations: array of objects { paperTitle, source, year, url, quoteOrDataPoint }
 - resilienceDetail: object with occupationTitle, occupationTitleVi, molisaCode, onetCode, overallResilienceScore, automationRiskScore, augmentationPotentialScore, humanAdvantageCore (array), tasksBreakdown (array of 3 highly personalized tasks tailored EXACTLY to the user's currentRole, strengths, and currentSkills { taskName, taskNameVi, exposureType, exposurePercentage, onetCode, notes }), sources, methodologySummary, uncertaintyRange, vietnamDemandSignal ('high_growth'|'stable'|'declining'|'transforming')

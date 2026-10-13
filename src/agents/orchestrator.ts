@@ -7,6 +7,7 @@ import { runAnalyst } from './analyst';
 import { runVerifier, type VerifierResult } from './verifier';
 import { EMPTY_PACK, type EvidencePack } from './tools';
 import { formatUsdRange, vndToUsd } from './usd';
+import { currentOccupationResilience } from './coherence';
 
 export interface PipelineConfig {
   useTools: boolean;
@@ -165,7 +166,7 @@ export async function runCareerPipeline(
 
   // Deterministic USD display fields — computed in code, never by the LLM.
   for (const sug of suggestions) {
-    if (sug.averageSalaryRangeVND && !sug.averageSalaryRangeUSD) {
+    if (sug.averageSalaryRangeVND) {
       sug.averageSalaryRangeUSD = formatUsdRange(sug.averageSalaryRangeVND) ?? undefined;
     }
     for (const m of sug.roadmap || []) {
@@ -175,9 +176,7 @@ export async function runCareerPipeline(
     }
   }
 
-  const currentResilience = pack.occupations.length
-    ? Math.max(...pack.occupations.map(m => m.detail.overallResilienceScore ?? 0))
-    : null;
+  const currentResilience = currentOccupationResilience(pack);
 
   return {
     source: 'agentic_pipeline',

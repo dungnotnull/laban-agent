@@ -70,6 +70,20 @@ describe('runAnalyst', () => {
     expect(captured).toContain('12 h/week');
   });
 
+  it('prompt serializes learningResources and uses language-neutral field annotations', async () => {
+    let captured = '';
+    const captureDeps: AgentDeps = {
+      ...fakeDeps,
+      callRich: async (prompt: string) => {
+        captured = prompt;
+        return { text: JSON.stringify([]), model: 'fake', usageTokens: 1, latencyMs: 1 };
+      }
+    };
+    await runAnalyst(GOLDEN_PROFILES[0].intakeProfile, { normalizedSummary: 's', occupationKeywords: ['d'], riskFlags: [], degraded: false }, EMPTY_PACK, captureDeps);
+    expect(captured).toMatch(/learningResources/);
+    expect(captured).not.toContain('(Vietnamese explanation');
+  });
+
   it('prompt uses Vietnamese output language when language is vi', async () => {
     let captured = '';
     const captureDeps: AgentDeps = {
