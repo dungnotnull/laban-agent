@@ -32,11 +32,15 @@ export interface RunScore {
 export function isActionable(suggestions: any[]): boolean {
   const top = suggestions?.[0];
   if (!top) return false;
-  const hasGroundedResource = (top.roadmap || []).some((m: any) =>
-    (m.freeResources || []).some((r: any) => LEARNING_RESOURCE_URLS.has(r?.url))
+  // Baseline output is untrusted: roadmap/trajectories/freeResources may be
+  // missing or non-array (observed in evaluation), so guard with Array.isArray.
+  const roadmap = Array.isArray(top.roadmap) ? top.roadmap : [];
+  const trajectories = Array.isArray(top.trajectories) ? top.trajectories : [];
+  const hasGroundedResource = roadmap.some((m: any) =>
+    Array.isArray(m?.freeResources) && m.freeResources.some((r: any) => LEARNING_RESOURCE_URLS.has(r?.url))
   );
-  const hasFirstStep = (top.trajectories || []).some((t: any) => t?.actionStepNow);
-  const hasAffordableMilestone = (top.roadmap || []).some((m: any) => m?.costTier === 'free' || m?.costTier === 'low_cost');
+  const hasFirstStep = trajectories.some((t: any) => t?.actionStepNow);
+  const hasAffordableMilestone = roadmap.some((m: any) => m?.costTier === 'free' || m?.costTier === 'low_cost');
   return hasGroundedResource && hasFirstStep && hasAffordableMilestone;
 }
 

@@ -113,9 +113,12 @@ export interface ResourceUrlReport {
 export function verifyResourceUrls(suggestions: any[]): ResourceUrlReport {
   const report: ResourceUrlReport = { total: 0, grounded: 0, ungrounded: [] };
   (suggestions || []).forEach((sug: any, suggestionIndex: number) => {
-    (sug?.roadmap || []).forEach((m: any, mi: number) => {
+    // Untrusted LLM output: roadmap/freeResources may be missing or non-array.
+    const roadmap = Array.isArray(sug?.roadmap) ? sug.roadmap : [];
+    roadmap.forEach((m: any, mi: number) => {
       const milestoneNumber = typeof m?.milestoneNumber === 'number' ? m.milestoneNumber : mi + 1;
-      for (const res of m?.freeResources || []) {
+      const freeResources = Array.isArray(m?.freeResources) ? m.freeResources : [];
+      for (const res of freeResources) {
         if (!res?.url) continue;
         report.total++;
         if (LEARNING_RESOURCE_URLS.has(res.url)) {

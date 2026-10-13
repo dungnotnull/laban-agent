@@ -33,7 +33,9 @@ export function checkCoherence(suggestions: any[], currentResilience: number | n
     if (!sug?.resilienceDetail?.uncertaintyRange) {
       failures.push(`${tag}: coherence: missing uncertaintyRange`);
     }
-    for (const t of sug?.trajectories || []) {
+    // Untrusted LLM output: trajectories may be missing or non-array.
+    const trajs = Array.isArray(sug?.trajectories) ? sug.trajectories : [];
+    for (const t of trajs) {
       if (!t) continue;
       if (!RISK_LEVELS.includes(t.riskLevel)) {
         failures.push(`${tag}: coherence: trajectory '${t.pathId}' riskLevel missing or invalid`);

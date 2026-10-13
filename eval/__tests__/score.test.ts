@@ -126,3 +126,13 @@ describe('persona set', () => {
     expect(EVAL_PERSONAS.filter(p => p.challenging).length).toBe(1);
   });
 });
+
+describe('isActionable hardening against malformed baseline output', () => {
+  it('does not throw when roadmap/freeResources/trajectories are non-array', () => {
+    const malformed = [{ roadmap: { m1: { freeResources: 'https://www.freecodecamp.org/learn' } }, trajectories: 'none' }];
+    expect(() => isActionable(malformed)).not.toThrow();
+    expect(isActionable(malformed)).toBe(false);
+    const nullish = [{ roadmap: null, trajectories: undefined }];
+    expect(() => isActionable(nullish)).not.toThrow();
+  });
+});
