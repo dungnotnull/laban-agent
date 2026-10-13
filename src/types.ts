@@ -124,12 +124,15 @@ export interface RoadmapMilestone {
   titleVi: string;
   estimatedHours: number;
   weeksDuration: number;
+  costTier?: 'free' | 'low_cost' | 'paid';
+  estimatedCostVND?: number;
+  estimatedCostUSD?: number; // computed post-hoc, never by the LLM
   skillsCovered: string[];
   freeResources: {
     name: string;
     provider: string;
     url: string;
-    type: 'course' | 'doc' | 'repo' | 'video' | 'book';
+    type: 'course' | 'doc' | 'repo' | 'video' | 'book' | 'certification' | 'tutorial' | 'guide';
   }[];
   checkpointQuiz: {
     question: string;
@@ -167,6 +170,7 @@ export interface CareerSuggestion {
   transferableSkillsMatch?: string[];
   skillsGap?: string[];
   averageSalaryRangeVND?: string;
+  averageSalaryRangeUSD?: string; // computed post-hoc from averageSalaryRangeVND
   evidenceCitations?: {
     paperTitle: string;
     source: string;
