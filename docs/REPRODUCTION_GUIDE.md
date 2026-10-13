@@ -30,21 +30,39 @@ npm run eval
 ```
 
 This runs the frozen baseline (`POST /api/eval/baseline`) and both agent
-configs (`POST /api/agent/career-analyze`) over the same 12 personas
-(`eval/personas.ts`), scores them identically (`eval/score.ts`), and writes:
+configs (`POST /api/agent/career-analyze`) over the same 16 personas
+(`eval/personas.ts`, covering 5 worker segments), scores them identically
+(`eval/score.ts`), and writes:
 
 - `eval/results/runs/<stamp>/EVALUATION.md` — comparison + ablation tables
+  + per-segment results
 - `eval/results/runs/<stamp>/summary.json` — raw per-run scores
 - `eval/trajectories/*.json` — one full trajectory per agent run
   (every LLM call, tool call and verification, with model + token counts)
 - `eval/results/latest.json` — pointer to the newest run
 
-Expected runtime: ~15-25 minutes for 36 sequential runs plus judge calls.
-Expected cost: ~$0.11 total for the full run at $0.30/1M tokens
-(36 tasks, avg $0.0024-$0.0040 each).
-Expected result (published run 2026-08-30T10-53-20): baseline 91.7% grounding
-with 2 hallucinated citations; final agent 100% grounding with 0 — LLM
-stochasticity means your exact numbers will vary slightly.
+By default `npm run eval` performs 3 repetitions of the full matrix
+(3 reps x 16 personas x 3 configs = 144 runs) and additionally writes
+`eval/results/runs/<stamp>-stability/STABILITY.md` with mean ± sd across
+reps. Use `--reps N` to change the number of repetitions, and
+`--render-only <baseStamp>` to re-render the report tables from previously
+published run directories without new API calls.
+
+Expected runtime: ~60-75 minutes total for the default 3-rep protocol.
+Expected cost: ~$0.55 total at $0.30/1M tokens.
+Expected result (published run 2026-10-13T05-05-07, mean ± sd across 3 reps):
+baseline grounding 89.5% ±1.5% / coherence 100.0% / actionable-path 0.0%;
+final agent grounding 99.0% ±1.5% / coherence 95.8% ±5.9% / actionable-path
+93.8% ±0.0% / personalization 80 ±3 — LLM stochasticity means your exact
+numbers will vary.
+
+Metrics now scored: evidence grounding (citations + resource-URL registry
+match), schema validity, guardrail compliance, risk coherence
+(current-occupation resilience floor), actionable-path (registry resource +
+action step + free/low-cost milestone), personalization judge, per-segment
+breakdowns. Output is English-primary; costs are displayed in VND with USD
+dual-display at a fixed rate of 1 USD = 26,000 VND computed in code (pass
+`"language": "vi"` in the body for Vietnamese output).
 
 ## 4. Single-run spot checks
 
@@ -63,7 +81,7 @@ judge scores, citation report), `trajectory` (all events) and `meta`
 ## 5. Tests
 
 ```bash
-npm test          # 58 vitest unit tests (agents, checks, citations, scoring)
+npm test          # 93 vitest unit tests (agents, checks, citations, coherence, scoring)
 npm run lint      # tsc --noEmit, 0 errors expected
 npm run build     # production build
 ```

@@ -15,9 +15,9 @@ and what should I learn?" gets opinions, not evidence.
 ## The bottleneck
 
 Trust. A single LLM prompt produces fluent career advice that cites research
-papers which may not exist. In our measured baseline over 12 personas, 2 of
-26 citations were unverifiable fabrications — and in an exploratory run the
-baseline failed completely on 2/12 personas with malformed JSON. For
+papers which may not exist. In our measured baseline over 16 personas, 3
+hallucinated citations appeared in the representative run alone — and in an
+exploratory run the baseline failed on personas with malformed JSON. For
 life-altering career decisions, unverifiable evidence is disqualifying.
 
 ## What existed before vs. what this competition added
@@ -31,8 +31,20 @@ modules, and the frozen baseline prompt.
 - `src/agents/` — the 4-agent pipeline: Profiler → Evidence Gatherer
   (Gemini function-calling over 3 deterministic tools) → Analyst → Verifier
   with a repair loop (max 2 retries, plus parse-error recovery)
-- `eval/` — 12 personas (incl. 1 challenging case), automatic scoring,
-  HTTP-driven runner, published results
+- Decision-coherence checks — the verifier rejects top recommendations below
+  the user's current-occupation resilience floor and any 'declining' demand
+  signal, so advice never points down a ladder its own evidence says is
+  collapsing
+- Registry-grounded, budget-aware learning resources — suggestion milestones
+  must include a free resource from a curated, HTTP-verified registry and fit
+  the user's monthly budget (costTier + estimatedCostVND on every milestone)
+- Worker segmentation and equity breakdown of every eval metric
+- Counselor-review checkpoint (human in the loop) demonstrated in-sandbox;
+  EN-primary output localization with dual VND/USD cost display at a fixed
+  documented rate computed in code, never by the model
+- `eval/` — 16 personas (incl. 1 challenging case) across 5 worker segments,
+  3-rep stability protocol, automatic scoring, HTTP-driven runner, published
+  results
 - Agent transparency panel in the UI
 - Removed Firebase (Google auth + Firestore pointed at the author's earlier
   project with public-write rules) and replaced persistence with localStorage
@@ -56,17 +68,42 @@ User intake
 Every design choice targets a measured failure mode — see
 [docs/IMPROVEMENT_CHANGELOG.md](docs/IMPROVEMENT_CHANGELOG.md).
 
-## Measured improvement (12 personas, same cases for every config)
+## Social-impact safeguards
+
+- **Decision coherence:** the verifier rejects top recommendations whose
+  resilience falls below the user's current-occupation floor (55 when the
+  occupation is unmatched) and any Vietnam demand signal that reads
+  'declining' — verified advice must not point users into shrinking work.
+- **Grounded, budget-aware resources:** every suggestion's free-resource URL
+  exact-matches a curated, HTTP-verified registry; milestones carry
+  `costTier` + `estimatedCostVND`; at least one milestone per suggestion must
+  fit the user's monthly budget.
+- **Equity:** eval results are broken down by worker segment (knowledge,
+  wage, rural/agricultural, student, craft/trade) so improvements are checked
+  for the most exposed groups, not just on average.
+- **Human in the loop:** a counselor-review checkpoint is demonstrated
+  in-sandbox; all output is advisory. Production deployments must deliver
+  through a qualified counselor.
+- **Currency:** USD figures use a fixed documented rate of 1 USD = 26,000 VND
+  (approximate interbank rate, set 2026-10-13), computed in code — never by
+  the model.
+
+## Measured improvement (3 reps x 16 personas, mean ± sd)
 
 | Metric | Baseline | Final agent |
 |---|---|---|
-| Evidence grounding rate (primary) | 91.7% | **100%** |
-| Hallucinated citations | 2 | **0** |
-| Schema-valid runs | 12/12 | 12/12 |
-| Personalization (judge 0-100) | 83 | 76 |
-| Cost per task (USD) | $0.0024 | $0.0040 |
+| Evidence grounding rate (primary) | 89.5% ±1.5% | **99.0% ±1.5%** |
+| Risk coherence rate | 100.0% ±0.0% | **95.8% ±5.9%** |
+| Actionable-path rate | 0.0% ±0.0% | **93.8% ±0.0%** |
+| Schema-valid runs | 100% | 100% |
+| Personalization (judge 0-100) | 86 ±2 | 80 ±3 |
 
-Full report: [docs/EVALUATION.md](docs/EVALUATION.md). Representative agent
+Ablation note: with tools but no verifier (`stage1_tools`) coherence dropped
+to 87.5% ±5.1 — tools alone introduced incoherent directions; the verifier
+repaired most. The baseline's coherence 100% reflects a weaker floor
+(no occupation lookup → default 55); the operative comparison is the
+ablation. Full tables, segment breakdown and honest failure notes:
+[docs/EVALUATION.md](docs/EVALUATION.md). Representative agent
 runs: [docs/TRAJECTORIES.md](docs/TRAJECTORIES.md).
 
 ## Quick start
@@ -79,7 +116,7 @@ npm run dev            # http://localhost:3000
 
 Reproduce the evaluation (server must be running, in a second terminal):
 ```bash
-npm run eval
+npm run eval        # 3 reps x 16 personas x 3 configs (~60-75 min, ~$0.55)
 ```
 
 Tests: `npm test` — TypeScript check: `npm run lint`.
@@ -90,7 +127,10 @@ Retrieval alone did not stop citation fabrication: with tools but no
 verifier, grounding stayed at 91.7% with 2 hallucinated citations. The
 verification loop that could send work back to the analyst eliminated them
 (100%, zero). When reliability matters, build the agent that can reject and
-retry its own output — not just the one that reads more context.
+retry its own output — not just the one that reads more context. And
+verified authenticity is not the same as sound direction: the verifier now
+rejects recommendations whose own evidence signals decline, and grounding
+has extended from citations to every learning-resource URL.
 
 ## License & attribution
 
