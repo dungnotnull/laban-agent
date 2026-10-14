@@ -91,8 +91,8 @@ export const GoogleIntegrationsSection: React.FC<GoogleIntegrationsProps> = ({
     const title = encodeURIComponent(language === 'vi' ? `[La Bàn AI] Lịch học & Nâng cấp kỹ năng Kháng AI: ${roleTitle}` : `[La Bàn AI] AI Upskilling Study Schedule: ${roleTitle}`);
     const details = encodeURIComponent(
       (language === 'vi'
-        ? `Mục tiêu: Hoàn thành lộ trình chuyển đổi và làm chủ công cụ AI theo khuyến nghị từ nền tảng La Bàn (#BuildwithGoogleAI 2026).\n`
-        : `Goal: Complete career transition roadmap and master AI workflows from La Bàn (#BuildwithGoogleAI 2026).\n`) +
+        ? `Mục tiêu: Hoàn thành lộ trình chuyển đổi và làm chủ công cụ AI theo khuyến nghị từ nền tảng La Bàn AI Career Compass.\n`
+        : `Goal: Complete career transition roadmap and master AI workflows from La Bàn AI Career Compass.\n`) +
       (language === 'vi'
         ? `Lộ trình: ${selectedSuggestion?.recommendedPathVi || 'Nâng cấp kỹ năng AI & Tối ưu năng suất'}\n`
         : `Roadmap: ${selectedSuggestion?.recommendedPath || 'Upskill AI tools & productivity'}\n`) +
@@ -156,7 +156,7 @@ export const GoogleIntegrationsSection: React.FC<GoogleIntegrationsProps> = ({
             <span className="px-2.5 py-0.5 rounded-full bg-amber-400/20 text-amber-300 text-[11px] font-bold border border-amber-400/30">
               ⚡ {t(language, 'Hệ sinh thái Google Workspace & Cloud API', 'Google Workspace & Cloud API Ecosystem')}
             </span>
-            <span className="text-xs text-slate-400">#BuildwithGoogleAI 2026</span>
+            <span className="text-xs text-slate-400">Google AI & Cloud Ecosystem</span>
           </div>
           <h2 className="text-xl sm:text-2xl font-bold mt-1 text-white font-sans">
             {t(language, 'Tích Hợp Dịch Vụ Google: Sheets, Calendar & Google Maps', 'Google Integrations: Sheets, Calendar & Maps')}

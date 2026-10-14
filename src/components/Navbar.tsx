@@ -79,9 +79,9 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="text-xl font-extrabold tracking-tight bg-gradient-to-r from-amber-600 to-indigo-600 bg-clip-text text-transparent font-sans">
                 LA BÀN
               </span>
-              {/* <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">
-                AI RISER 2026
-              </span> */}
+              <span className="text-[10px] uppercase font-bold tracking-wider px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-700 border border-indigo-200">
+                AI TRANSITION
+              </span>
             </div>
             <p className="text-[11px] text-slate-500 font-medium">
               {language === 'vi' ? 'La bàn nghề nghiệp, giữa biển đổi AI' : 'Career compass, amid the AI sea-change'}

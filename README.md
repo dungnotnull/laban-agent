@@ -22,14 +22,14 @@ hallucinated citations appeared in the representative run alone - and in an
 exploratory run the baseline failed on personas with malformed JSON. For
 life-altering career decisions, unverifiable evidence is disqualifying.
 
-## What existed before vs. what this competition added
+## Pre-existing Baseline vs. Agentic Workflow Advancements
 
-**Pre-existing (commit 4c5ac25, built earlier for #BuildwithGoogleAI):** the
+**Pre-existing platform baseline (commit 4c5ac25):** the
 React platform, curated data (research library, Vietnam occupation database,
-golden personas), the single-shot Gemini endpoints, community/employer/news
+golden personas), the legacy single-shot Gemini endpoints, community/employer/news
 modules, and the frozen baseline prompt.
 
-**Added during this hackathon (all commits after 4c5ac25):**
+**Added for this Agentic Hackathon submission (all commits after 4c5ac25):**
 - `src/agents/` - the 4-agent pipeline: Profiler → Evidence Gatherer
   (Gemini function-calling over 3 deterministic tools) → Analyst → Verifier
   with a repair loop (max 2 retries, plus parse-error recovery)

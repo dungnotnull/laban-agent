@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-30
 **Project:** La Bàn (AI Career Compass Vietnam)
-**Target competition:** micro1 Agentic Workflows Hackathon
+**Target competition:** Google AI / Agentic Workflows Hackathon
 
 ## 1. Context and Motivation
 
@@ -11,7 +11,7 @@ workers in the AI transition era (~8,300 LOC). It currently uses single-shot
 Gemini calls (`callGeminiDirect` in `server.ts`) with curated RAG context and a
 deterministic heuristic fallback.
 
-The micro1 Agentic Workflows Hackathon requires: a purposeful **agent** solution
+The Agentic Workflows Hackathon requires: a purposeful **agent** solution
 (30 pts), **measured improvement** over a fair baseline (15 pts),
 **reproducibility** (15 pts), end-to-end quality (20 pts), a strong problem (15
 pts), and a hot take (5 pts). Mandatory deliverables: code + improvement
@@ -25,7 +25,7 @@ Gap analysis of the current project:
 | Measured improvement (15 pts) | None | No baseline comparison, no metrics, no changelog |
 | Reproducibility (15 pts) | Runnable app, generic README | No reproduction guide, no eval commands |
 | Deliverables (4 items) | None of the four | All must be created |
-| Ground rule 02 | Pre-existing project (built for #BuildwithGoogleAI) | Must disclose pre-existing vs added work |
+| Ground rule 02 | Pre-existing project (prior baseline prototype) | Must disclose pre-existing vs added work |
 
 Design goal: add a purposeful agent pipeline and a complete evidence layer
 (baseline, evaluation, changelog, trajectories, docs) on top of the existing

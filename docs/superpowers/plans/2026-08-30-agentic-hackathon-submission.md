@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Transform the La Bàn platform into a competitive micro1 Agentic Workflows Hackathon submission: a 4-agent career-analysis pipeline with tool use and verification, a frozen baseline, an automatic evaluation harness (12 personas x 3 configs), real measured results, and all four competition deliverables in English.
+**Goal:** Transform the La Bàn platform into a competitive Agentic Workflows Hackathon submission: a 4-agent career-analysis pipeline with tool use and verification, a frozen baseline, an automatic evaluation harness (12 personas x 3 configs), real measured results, and all four competition deliverables in English.
 
 **Architecture:** Sequential agent pipeline (Profiler -> Evidence Gatherer with function-calling tool loop -> Analyst -> Verifier with repair loop) orchestrated in TypeScript, exposed via new HTTP endpoints alongside a frozen single-shot baseline endpoint. An eval CLI drives both over HTTP, scores them identically, and writes the evidence used by the deliverable docs. Existing endpoints and UI flows remain functional; the UI suggestion flow switches to the agent endpoint and gains a transparency panel.
 
@@ -3348,9 +3348,9 @@ of [[baseline.totalCitations]] citations were unverifiable ([[baseline.grounding
 grounding). For life-altering career decisions, fabricated evidence is
 disqualifying.
 
-## What existed before vs. what this competition added
+## Pre-existing Baseline vs. Agentic Workflow Advancements
 
-**Pre-existing (commit 4c5ac25, built earlier for #BuildwithGoogleAI):** the
+**Pre-existing platform baseline (commit 4c5ac25):** the
 React platform, curated data (research library, Vietnam occupation database,
 golden personas), the single-shot Gemini endpoints, community/employer/news
 modules, and the frozen baseline prompt.

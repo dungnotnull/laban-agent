@@ -51,8 +51,8 @@ export const ProofDashboard: React.FC<ProofDashboardProps> = ({ metrics, languag
             </div>
             <p className="text-xs text-slate-500 mt-1">
               {language === 'vi'
-                ? 'Dữ liệu minh chứng hiệu quả thực tế và các chỉ số đo lường tác động xã hội dành cho Ban Giám Khảo #BuildwithGoogleAI 2026.'
-                : 'Real-time telemetry and social impact metrics for AI Riser Vietnam 2026 judges.'}
+                ? 'Dữ liệu minh chứng hiệu quả thực tế và các chỉ số đo lường tác động xã hội của nền tảng La Bàn.'
+                : 'Real-time telemetry and social impact metrics for the La Bàn platform.'}
             </p>
           </div>
 

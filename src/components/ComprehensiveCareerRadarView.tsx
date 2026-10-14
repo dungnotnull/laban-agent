@@ -644,7 +644,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
-              <h2 className="text-lg font-bold text-slate-900 font-sans flex items-center gap-2">
+              <h2 className="text-lg font-bold text-slate-900 font-sans flex flex-col sm:flex-row items-center gap-2">
                 <span>{t(language, 'Top 10 Ngành Nghề Xu Hướng & Gia Tăng Nhu Cầu Tuyển Dụng', 'Top 10 Trending Careers & Increasing Demand')}</span>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200 font-bold">
                   {t(language, 'Kháng AI Cao', 'High AI Resil.')} ({filteredTrending.length})
@@ -677,7 +677,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-3 h-3 rounded-full bg-rose-500"></div>
-              <h2 className="text-lg font-bold text-slate-900 font-sans flex items-center gap-2">
+              <h2 className="text-lg font-bold text-slate-900 font-sans flex flex-col sm:flex-row items-center gap-2">
                 <span>{t(language, 'Top 10 Ngành Nghề Có Tỷ Lệ Thay Thế Bởi AI & Rủi Ro Phơi Nhiễm Cao', 'Top 10 Careers with Highest AI Replacement Rate & Exposure Risk')}</span>
                 <span className="text-xs px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 border border-rose-200 font-bold">
                   {t(language, 'Cần Chuyển Đổi', 'Needs Transition')} ({filteredVulnerable.length})

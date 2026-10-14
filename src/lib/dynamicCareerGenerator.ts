@@ -604,12 +604,18 @@ export function generateDynamicCareerAnalysis(intake: UserIntakeProfile): Compre
     ...DEFAULT_CAREER_ANALYSIS,
     candidateProfileSummary: {
       strengths,
+      strengthsEn: strengths.map(s => s === 'Tư duy logic' ? 'Logical Thinking' : s === 'Giao tiếp tốt' ? 'Strong Communication' : s),
       weaknesses,
+      weaknessesEn: weaknesses.map(w => w === 'Chưa thạo lập trình' ? 'Not yet proficient in programming' : w),
       interests,
+      interestsEn: interests.map(i => i === 'Công nghệ số' ? 'Digital Technology' : i === 'Đổi mới sáng tạo' ? 'Innovation' : i),
       currentSkills: skills,
-      currentRole: role
+      currentSkillsEn: skills.map(sk => sk === 'Kỹ năng nghiệp vụ' ? 'Business Operations Skills' : sk === 'Kỹ năng số cơ bản' ? 'Basic Digital Skills' : sk),
+      currentRole: role,
+      currentRoleEn: roleOverview.currentRoleEn || role
     },
     currentRoleOverview: roleOverview,
-    strategicTakeawaysVi: `Dựa trên hồ sơ của bạn với vai trò "${role}" (${intake.experienceYears || 2} năm kinh nghiệm), thị trường lao động Việt Nam đang phân hóa rõ rệt: các tác vụ văn phòng và thực thi lặp lại đang đối mặt mức độ phơi nhiễm tự động hóa từ 70% - 94%, trong khi nhu cầu nhân sự có năng lực "làm chủ công cụ AI và kết nối nghiệp vụ thực tế" đang tăng trưởng vượt bậc (+45% đến +85%). Với các thế mạnh [${strengths.slice(0, 2).join(', ')}], bạn sở hữu lợi thế nền tảng vững chắc để chuyển dịch sang nhóm nghề có Điểm Kháng AI cao.`
+    strategicTakeawaysVi: `Dựa trên hồ sơ của bạn với vai trò "${role}" (${intake.experienceYears || 2} năm kinh nghiệm), thị trường lao động Việt Nam đang phân hóa rõ rệt: các tác vụ văn phòng và thực thi lặp lại đang đối mặt mức độ phơi nhiễm tự động hóa từ 70% - 94%, trong khi nhu cầu nhân sự có năng lực "làm chủ công cụ AI và kết nối nghiệp vụ thực tế" đang tăng trưởng vượt bậc (+45% đến +85%). Với các thế mạnh [${strengths.slice(0, 2).join(', ')}], bạn sở hữu lợi thế nền tảng vững chắc để chuyển dịch sang nhóm nghề có Điểm Kháng AI cao.`,
+    strategicTakeawaysEn: `Based on your profile as "${roleOverview.currentRoleEn || role}" (${intake.experienceYears || 2} years of experience), the labor market exhibits clear polarization: routine administrative and execution tasks face 70% - 94% automation exposure, while demand for talent who can orchestrate AI tools with business domain expertise surges (+45% to +85%). Leveraging your core strengths, you have a solid foundation to transition into high AI-resilience career paths.`
   };
 }

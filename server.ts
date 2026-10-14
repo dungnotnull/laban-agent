@@ -27,6 +27,7 @@ import { DEFAULT_CAREER_ANALYSIS } from './src/data/defaultCareerAnalysis';
 import { CareerSuggestion, CommunityPost, EmployerJobListing, JobPostingItem, JobSecurityNewsItem, ProofMetricsData, UserIntakeProfile } from './src/types';
 import { CurrentRoleOverviewAssessment } from './src/types/careerAnalysis';
 import { generateDynamicCareerSuggestions, generateDynamicCareerAnalysis, generateCurrentRoleOverview } from './src/lib/dynamicCareerGenerator';
+import { getVideosForRole } from './src/data/roleVideos';
 
 const app = express();
 const PORT = 3000;
@@ -201,7 +202,8 @@ app.post('/api/gemini/career-suggest', async (req: Request, res: Response) => {
     return res.status(400).json({ error: 'Missing intake profile data' });
   }
 
-  const cacheKey = `suggest_${JSON.stringify(intake)}`;
+  const language = req.body.language || 'en';
+  const cacheKey = `suggest_${language}_${JSON.stringify(intake)}`;
   if (aiResponseCache.has(cacheKey)) {
     runtimeMetrics.suggestionsGenerated += 1;
     return res.json({
@@ -216,7 +218,7 @@ app.post('/api/gemini/career-suggest', async (req: Request, res: Response) => {
 
   const prompt = `
 You are the core intelligence engine of "La Bàn" (AI Career Compass Vietnam).
-Provide evidence-based, empathetic, and realistic career guidance for a Vietnamese worker in the AI transition era.
+Provide evidence-based, empathetic, and realistic career guidance for a worker in the AI transition era.
 
 USER INTAKE DATA:
 - Current Role: ${intake.currentRole} (${intake.experienceYears} years experience)
@@ -232,6 +234,8 @@ USER INTAKE DATA:
 - Values: ${(intake.values || []).join(', ')}
 - Forecast Mode: ${(intake.forecastMode || 'realistic').toUpperCase()}
 
+OUTPUT LANGUAGE: ${language === 'en' ? 'ENGLISH for all narrative fields (reasoning, whyItFitsYou, transferableSkillsMatch, skillsGap, trajectory descriptions, rationale, actionStepNow). Keep roleTitleVi, phaseNameVi, and titleVi in Vietnamese.' : 'Vietnamese for all narrative fields.'}
+
 CURATED RAG EVIDENCE BASE (MANDATORY CITATIONS ONLY):
 ${researchContext}
 
@@ -239,10 +243,10 @@ OUTPUT REQUIREMENTS:
 Return a strictly valid JSON Array containing 1 to 2 CareerSuggestion objects with full schema:
 - roleTitle (English) & roleTitleVi (Vietnamese)
 - aiResilienceScore (0-100), matchScore (0-100)
-- reasoning (Vietnamese explanation grounded in research)
-- whyItFitsYou (Vietnamese personalized assessment connecting strengths to opportunities)
-- transferableSkillsMatch (array of strings in Vietnamese)
-- skillsGap (array of strings in Vietnamese)
+- reasoning (explanation grounded in research, per OUTPUT LANGUAGE)
+- whyItFitsYou (personalized assessment connecting strengths to opportunities, per OUTPUT LANGUAGE)
+- transferableSkillsMatch (array of strings, per OUTPUT LANGUAGE)
+- skillsGap (array of strings, per OUTPUT LANGUAGE)
 - averageSalaryRangeVND (string e.g. "20,000,000 - 45,000,000 VND / tháng")
 - evidenceCitations: array of objects { paperTitle, source, year, url, quoteOrDataPoint }
 - resilienceDetail: object with occupationTitle, occupationTitleVi, molisaCode, onetCode, overallResilienceScore, automationRiskScore, augmentationPotentialScore, humanAdvantageCore (array), tasksBreakdown (array of 3 highly personalized tasks tailored EXACTLY to the user's currentRole, strengths, and currentSkills { taskName, taskNameVi, exposureType, exposurePercentage, onetCode, notes }), sources, methodologySummary, uncertaintyRange, vietnamDemandSignal ('high_growth'|'stable'|'declining'|'transforming')
@@ -292,13 +296,14 @@ app.post('/api/gemini/comprehensive-analysis', async (req: Request, res: Respons
     return res.status(400).json({ error: 'Missing intake profile data' });
   }
 
+  const language = req.body.language || 'en';
   const strengthsList = (intake.strengths || []).join(', ') || 'Tư duy phân tích, Giao tiếp';
   const weaknessesList = (intake.weaknesses || []).join(', ') || 'Chưa thạo lập trình sâu';
   const interestsList = (intake.interests || []).join(', ') || 'Công nghệ số, Sáng tạo';
   const skillsList = (intake.currentSkills || []).join(', ') || 'Văn phòng, Nghiệp vụ cơ bản';
   const role = intake.currentRole || 'Chuyên viên nghiệp vụ';
 
-  const cacheKey = `comprehensive_${role}_${strengthsList}_${skillsList}`;
+  const cacheKey = `comprehensive_${language}_${role}_${strengthsList}_${skillsList}`;
   if (aiResponseCache.has(cacheKey)) {
     return res.json({
       source: 'lru_cache',
@@ -323,9 +328,14 @@ CURATED RESEARCH EVIDENCE BASE (NO HALLUCINATIONS - ONLY CITABLE FINDINGS):
 ${researchContext}
 
 TASK:
-Produce an evidence-based comprehensive career matrix and in-depth current role assessment:
+Produce an evidence-based comprehensive career matrix and in-depth current role assessment.
+NOTE FOR INTERNATIONAL HACKATHON EVALUATION:
+All English mirror fields (*En) are MANDATORY and MUST be populated with professional, fluent international English.
+
+Return a pure JSON object matching this structure:
 1. "currentRoleOverview": {
   "currentRole": "${role}",
+  "currentRoleEn": string (English translation of the role title),
   "experienceYears": ${intake.experienceYears || 2},
   "evaluatedAt": "2026",
   "currentResilienceScore": number (0-100),
@@ -336,19 +346,33 @@ Produce an evidence-based comprehensive career matrix and in-depth current role 
   "future5YRiskScore": number (0-100),
   "automationExposureRate": number (0-100),
   "augmentationPotentialRate": number (0-100),
-  "fiveYearDemandGrowthPct": string (e.g. "+42% (AI-Augmented) / -30% (Traditional)"),
+  "fiveYearDemandGrowthPct": string (e.g. "+42% (Nhân sự tích hợp AI) / -30% (Nhân sự thủ công)"),
+  "fiveYearDemandGrowthPctEn": string (e.g. "+42% (AI-Augmented) / -30% (Traditional manual)"),
   "overviewCurrentStateVi": string (Detailed Vietnamese overview of current state in 2026 based on research),
-  "fiveYearForecastVi": string (Detailed 5-year forecast 2026-2031 based on agentic AI & automation trends),
-  "tasksAtRisk": array of 3-4 objects { "taskNameVi": string, "taskType": 'Routine Cognitive'|'Routine Manual'|'Non-routine Analytical'|'Interpersonal / Strategic', "impactTimeline": string, "replacementProbability": number (0-100), "aiTechnology": string },
-  "humanMoatCapabilities": array of 3-4 strings (Human abilities that AI cannot replicate),
-  "strategicUpskillingDirectionVi": string (Strategic transition and upskilling advice),
-  "citedEvidenceSources": array of 3-5 objects { "paperTitle": string, "institution": string, "year": number, "keyMetricOrFormula": string, "url": string }
+  "overviewCurrentStateEn": string (Detailed English overview of current state in 2026 based on research),
+  "fiveYearForecastVi": string (Detailed 5-year forecast 2026-2031 based on agentic AI & automation trends in Vietnamese),
+  "fiveYearForecastEn": string (Detailed 5-year forecast 2026-2031 based on agentic AI & automation trends in English),
+  "tasksAtRisk": array of 3-4 objects {
+    "taskNameVi": string,
+    "taskNameEn": string,
+    "taskType": 'Routine Cognitive'|'Routine Manual'|'Non-routine Analytical'|'Interpersonal / Strategic',
+    "impactTimeline": string,
+    "impactTimelineEn": string,
+    "replacementProbability": number (0-100),
+    "aiTechnology": string,
+    "aiTechnologyEn": string
+  },
+  "humanMoatCapabilities": array of 3-4 strings (Human abilities that AI cannot replicate in Vietnamese),
+  "humanMoatCapabilitiesEn": array of 3-4 strings (Human abilities that AI cannot replicate in English),
+  "strategicUpskillingDirectionVi": string (Strategic transition and upskilling advice in Vietnamese),
+  "strategicUpskillingDirectionEn": string (Strategic transition and upskilling advice in English),
+  "citedEvidenceSources": array of 3-5 objects { "paperTitle": string, "institution": string, "year": number, "keyMetricOrFormula": string, "keyMetricOrFormulaEn": string, "url": string }
 }
-2. "trendingCareers": Array of EXACTLY 10 trending occupations in Vietnam with HIGH AI RESILIENCE (Score 80-98).
+2. "trendingCareers": Array of EXACTLY 10 trending occupations with HIGH AI RESILIENCE (Score 80-98).
 3. "vulnerableCareers": Array of EXACTLY 10 occupations with HIGH AI DISPLACEMENT RISK (Score 15-45).
 
-For each career item, provide:
-- id: string
+For each career item in trendingCareers and vulnerableCareers, provide:
+- id: string (e.g. "trend-1", "vuln-1")
 - rank: number (1-10)
 - title: string (English)
 - titleVi: string (Vietnamese)
@@ -358,16 +382,34 @@ For each career item, provide:
 - automationExposure: number (0-100)
 - demandGrowthRate: string (e.g. "+35% (2025-2028)")
 - averageSalaryVND: string (e.g. "25,000,000 - 45,000,000 VND / tháng")
+- averageSalaryVNDEn: string (e.g. "25,000,000 - 45,000,000 VND (~$1,000 - $1,800 USD) / month")
 - whyTrendingOrVulnerable: string in Vietnamese
-- keySkillsRequiredOrAtRisk: array of 4 skill strings
+- whyTrendingOrVulnerableEn: string in English
+- keySkillsRequiredOrAtRisk: array of 4 skill strings in Vietnamese
+- keySkillsRequiredOrAtRiskEn: array of 4 skill strings in English
 - humanMoatFactor: string in Vietnamese
-- citedResearchPaper: object { title, institution, year, quoteOrKeyFinding }
+- humanMoatFactorEn: string in English
+- citedResearchPaper: object { title, institution, year, quoteOrKeyFinding: string in Vietnamese, quoteOrKeyFindingEn: string in English }
 - transitionAdvice: string in Vietnamese
+- transitionAdviceEn: string in English
 
 Also include:
-- "candidateProfileSummary": { "strengths": ["${strengthsList}"], "weaknesses": ["${weaknessesList}"], "interests": ["${interestsList}"], "currentSkills": ["${skillsList}"], "currentRole": "${role}" }
+- "candidateProfileSummary": {
+    "strengths": ["${strengthsList}"],
+    "strengthsEn": array of English strings,
+    "weaknesses": ["${weaknessesList}"],
+    "weaknessesEn": array of English strings,
+    "interests": ["${interestsList}"],
+    "interestsEn": array of English strings,
+    "currentSkills": ["${skillsList}"],
+    "currentSkillsEn": array of English strings,
+    "currentRole": "${role}",
+    "currentRoleEn": string in English
+  }
 - "strategicTakeawaysVi": 2-3 sentence strategic advice in Vietnamese for this candidate
+- "strategicTakeawaysEn": 2-3 sentence strategic advice in English for this candidate
 - "academicMethodologyBasis": explanation in Vietnamese of the task-based displacement and augmentation methodology
+- "academicMethodologyBasisEn": explanation in English of the task-based displacement and augmentation methodology
 
 CRITICAL: Return pure, strictly valid JSON matching ComprehensiveCareerAnalysisResult. ALL keys MUST be enclosed in double quotes. Do NOT include markdown code blocks or trailing commas.
 `;
@@ -375,7 +417,7 @@ CRITICAL: Return pure, strictly valid JSON matching ComprehensiveCareerAnalysisR
   try {
     const rawAiText = await callGeminiDirect(
       prompt,
-      'You are an authoritative labor economist. Generate current role overview, 10 trending, and 10 vulnerable careers grounded in research papers. Return pure JSON.'
+      'You are an authoritative international labor economist. Generate dual-language (Vietnamese and English mirrors) career assessment grounded in science. Return pure JSON.'
     );
 
     const parsed = parseGeminiJson<any>(rawAiText);
@@ -411,8 +453,9 @@ app.post('/api/gemini/current-role-overview', async (req: Request, res: Response
     return res.status(400).json({ error: 'Missing intake currentRole' });
   }
 
+  const language = req.body.language || 'en';
   const role = intake.currentRole;
-  const cacheKey = `role_overview_${role}_${intake.experienceYears || 2}`;
+  const cacheKey = `role_overview_${language}_${role}_${intake.experienceYears || 2}`;
   if (aiResponseCache.has(cacheKey)) {
     return res.json({
       source: 'lru_cache',
@@ -437,6 +480,7 @@ ${researchContext}
 OUTPUT SCHEMA (pure JSON object):
 {
   "currentRole": "${role}",
+  "currentRoleEn": string (English role title),
   "experienceYears": ${intake.experienceYears || 2},
   "evaluatedAt": "2026",
   "currentResilienceScore": number (0-100),
@@ -448,32 +492,40 @@ OUTPUT SCHEMA (pure JSON object):
   "automationExposureRate": number (0-100),
   "augmentationPotentialRate": number (0-100),
   "fiveYearDemandGrowthPct": string (e.g. "+45% (AI-Augmented) / -32% (Traditional)"),
+  "fiveYearDemandGrowthPctEn": string (e.g. "+45% (AI-Augmented) / -32% (Traditional)"),
   "overviewCurrentStateVi": string (Detailed current state analysis in Vietnamese),
-  "overviewCurrentStateEn": string,
+  "overviewCurrentStateEn": string (Detailed current state analysis in English),
   "fiveYearForecastVi": string (Detailed 5-year outlook in Vietnamese),
-  "fiveYearForecastEn": string,
+  "fiveYearForecastEn": string (Detailed 5-year outlook in English),
   "tasksAtRisk": [
     {
       "taskNameVi": string,
+      "taskNameEn": string,
       "taskType": "Routine Cognitive" | "Routine Manual" | "Non-routine Analytical" | "Interpersonal / Strategic",
       "impactTimeline": string,
+      "impactTimelineEn": string,
       "replacementProbability": number,
-      "aiTechnology": string
+      "aiTechnology": string,
+      "aiTechnologyEn": string
     }
   ],
   "humanMoatCapabilities": string[],
+  "humanMoatCapabilitiesEn": string[],
   "strategicUpskillingDirectionVi": string,
+  "strategicUpskillingDirectionEn": string,
   "citedEvidenceSources": [
     {
       "paperTitle": string,
       "institution": string,
       "year": number,
       "keyMetricOrFormula": string,
+      "keyMetricOrFormulaEn": string,
       "url": string
     }
   ]
 }
 
+NOTE: All English fields (*En) are MANDATORY for international hackathon evaluation.
 CRITICAL: Return pure, strictly valid JSON. ALL keys MUST be enclosed in double quotes. Do NOT include markdown code blocks or trailing commas.
 `;
 
@@ -500,6 +552,15 @@ CRITICAL: Return pure, strictly valid JSON. ALL keys MUST be enclosed in double 
       overview: fallbackOverview
     });
   }
+});
+
+// -------------------------------------------------------------
+// 4B-3. DYNAMIC ROLE VIDEOS API
+// -------------------------------------------------------------
+app.get('/api/gemini/role-videos', (req: Request, res: Response) => {
+  const role = (req.query.role as string) || '';
+  const result = getVideosForRole(role);
+  res.json(result);
 });
 
 // -------------------------------------------------------------

@@ -3,7 +3,7 @@
 ## 2026-08-30 — Agentic Hackathon Submission (branch: agentic-hackathon)
 
 Scope: transform the pre-existing La Bàn platform (snapshot commit `4c5ac25`)
-into a micro1 Agentic Workflows Hackathon submission. Plan:
+into an Agentic Workflows Hackathon submission. Plan:
 `docs/superpowers/plans/2026-08-30-agentic-hackathon-submission.md` (18 tasks,
 all completed). Spec:
 `docs/superpowers/specs/2026-08-30-agentic-hackathon-submission-design.md`.

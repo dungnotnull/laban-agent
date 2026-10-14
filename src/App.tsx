@@ -144,7 +144,7 @@ export default function App() {
       const response = await fetch('/api/gemini/comprehensive-analysis', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ intakeProfile: profileToAnalyze })
+        body: JSON.stringify({ intakeProfile: profileToAnalyze, language })
       });
       const data = await response.json();
 
@@ -159,7 +159,7 @@ export default function App() {
       const suggestRes = await fetch('/api/agent/career-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ intakeProfile: profileToAnalyze })
+        body: JSON.stringify({ intakeProfile: profileToAnalyze, language })
       });
       const suggestData = await suggestRes.json();
       let updatedSuggestions = suggestions;
@@ -202,7 +202,7 @@ export default function App() {
       const suggestRes = await fetch('/api/agent/career-analyze', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ intakeProfile: updatedIntake })
+        body: JSON.stringify({ intakeProfile: updatedIntake, language })
       });
       const suggestData = await suggestRes.json();
       if (suggestData.suggestions && suggestData.suggestions.length > 0) {
@@ -340,8 +340,11 @@ export default function App() {
 
             {/* 10 Trending vs 10 Vulnerable Careers Comprehensive Radar + Current Role Overview */}
             <div ref={radarRef} className="scroll-mt-6 space-y-8">
-              {/* AI-era job-security media context (VTV24 reports), above the current-role overview */}
-              <AiJobSecurityVideos language={language} />
+              {/* AI-era job-security media context (dynamic by user role / persona), above the current-role overview */}
+              <AiJobSecurityVideos
+                language={language}
+                currentRole={careerAnalysis.currentRoleOverview?.currentRole || intake.currentRole}
+              />
 
               {/* Scientific Review of User's Current Role & 5-Year Forecast */}
               <CurrentRoleOverviewSection
@@ -477,7 +480,7 @@ export default function App() {
             <div>
               <p className="font-bold text-slate-900 font-sans">LA BÀN - AI Career Compass Vietnam</p>
               <p className="text-[11px] text-slate-500">
-                {language === 'vi' ? 'Dự thi sáng tạo AI Riser Vietnam 2026 (#BuildwithGoogleAI) • Dữ liệu nội bộ (Local Storage)' : 'AI Riser Vietnam 2026 Submission (#BuildwithGoogleAI) • Local Data Persistence'}
+                {language === 'vi' ? 'Nền tảng Định hướng & Chuyển đổi Nghề nghiệp Kỷ nguyên AI • Dữ liệu nội bộ (Local Storage)' : 'AI Career Compass & Workforce Transition Platform • Local Data Persistence'}
               </p>
             </div>
           </div>

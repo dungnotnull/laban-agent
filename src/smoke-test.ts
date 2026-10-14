@@ -10,7 +10,7 @@ import { VIETNAM_OCCUPATIONS_DATABASE } from './data/vietnamOccupations';
 import { INITIAL_PROOF_METRICS } from './data/mockData';
 
 console.log('====================================================');
-console.log('🧭 LA BÀN (#BuildwithGoogleAI 2026) PRE-FLIGHT TEST');
+console.log('🧭 LA BÀN - AI CAREER COMPASS VIETNAM PRE-FLIGHT TEST');
 console.log('====================================================\n');
 
 let passCount = 0;
@@ -96,7 +96,7 @@ assert(
 
 console.log('\n----------------------------------------------------');
 if (failCount === 0) {
-  console.log(`🎉 ALL ${passCount} SMOKE TESTS PASSED [GREEN]. SYSTEM FULLY READY FOR JUDGES.`);
+  console.log(`🎉 ALL ${passCount} SMOKE TESTS PASSED [GREEN]. SYSTEM FULLY READY FOR EVALUATION.`);
 } else {
   console.log(`⚠️ ${failCount} TESTS FAILED. Please review issues above.`);
 }
