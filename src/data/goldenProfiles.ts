@@ -69,14 +69,14 @@ export const GOLDEN_PROFILES: GoldenPersona[] = [
             source: 'OpenAI / University of Pennsylvania',
             year: 2023,
             url: 'https://arxiv.org/abs/2303.10130',
-            quoteOrDataPoint: 'Task exposure in 2D illustration is 71.4%, but higher-order conceptual direction and brand alignment remain strongly human-dependent.'
+            quoteOrDataPoint: 'About 80% of the U.S. workforce could see at least 10% of work tasks affected by LLMs; about 19% could see at least 50% of tasks affected, with higher exposure in higher-wage jobs.'
           },
           {
-            paperTitle: 'Vietnam Labor Market Report 2024-2026',
-            source: 'TopCV Vietnam Analytics',
+            paperTitle: 'Báo cáo Thị trường Tuyển dụng 2024 - 2025 (TopCV)',
+            source: 'TopCV Việt Nam',
             year: 2024,
-            url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung',
-            quoteOrDataPoint: 'Agency tuyển dụng vị trí "AI Art Director" trả mức lương cao hơn 35-50% so với Designer truyền thống cùng số năm kinh nghiệm.'
+            url: 'https://insights.topcv.vn/recruitment-report-2024-2025',
+            quoteOrDataPoint: 'Báo cáo thường niên lần thứ 5 của TopCV, phân tích gần 300.000 tin đăng tuyển dụng, tập trung tác động của AI và chuyển đổi số lên kỹ năng và chân dung nhân tài số.'
           }
         ],
         resilienceDetail: VIETNAM_OCCUPATIONS_DATABASE['graphic-designer'],
@@ -310,8 +310,8 @@ export const GOLDEN_PROFILES: GoldenPersona[] = [
         matchScore: 95,
         reasoning: 'Chuyển hóa trực giác bắt lỗi sâu sắc và hiểu biết về vòng đời phần mềm thành kỹ năng tự động hóa kiểm thử với Playwright/Python và đánh giá an toàn mô hình AI (Ragas, DeepEval).',
         reasoningEn: 'Transform your sharp defect-catching intuition and SDLC understanding into test automation skills with Playwright/Python and AI model safety evaluation (Ragas, DeepEval).',
-        whyItFitsYou: 'Nhu cầu kiểm thử an toàn, chống ảo giác (hallucination) và bảo mật cho các ứng dụng tích hợp GenAI tại các công ty Outsource/Product ở Đà Nẵng và Remote đang tăng vọt 115%.',
-        whyItFitsYouEn: 'Demand for safety testing, anti-hallucination, and security review of GenAI-integrated applications at outsourcing/product companies in Da Nang and remote roles is surging 115%.',
+        whyItFitsYou: 'Nhu cầu kiểm thử an toàn, chống ảo giác (hallucination) và bảo mật cho các ứng dụng tích hợp GenAI tại các công ty Outsource/Product ở Đà Nẵng và Remote đang tăng nhanh.',
+        whyItFitsYouEn: 'Demand for safety testing, anti-hallucination, and security review of GenAI-integrated applications at outsourcing/product companies in Da Nang and remote roles is growing rapidly.',
         transferableSkillsMatch: ['Tư duy Boundary & Edge cases', 'Quy trình Bug Tracking & JIRA', 'Hiểu biết API REST/JSON', 'Kỹ năng giao tiếp kỹ thuật'],
         transferableSkillsMatchEn: ['Boundary & edge-case thinking', 'Bug tracking & JIRA workflows', 'REST/JSON API understanding', 'Technical communication skills'],
         skillsGap: ['Playwright / Cypress với TypeScript/Python', 'Khung đánh giá LLM (Ragas, TruLens, DeepEval)', 'Tích hợp CI/CD GitHub Actions cho Test Automation'],
@@ -319,18 +319,18 @@ export const GOLDEN_PROFILES: GoldenPersona[] = [
         averageSalaryRangeVND: '25,000,000 - 52,000,000 VND / tháng (hoặc 1,200$ - 2,500$ Remote)',
         evidenceCitations: [
           {
-            paperTitle: 'Vietnam Labor Market Report 2024-2026',
-            source: 'VietnamWorks & TopCV Tech Labor Group',
+            paperTitle: 'Báo cáo Thị trường Tuyển dụng 2024 - 2025 (TopCV)',
+            source: 'TopCV Việt Nam',
             year: 2024,
-            url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung',
-            quoteOrDataPoint: 'Manual QA postings declined 48% YoY, while "Automation QA / AI Eval Specialist" salaries jumped to 30-55M VND in Hanoi, HCMC, Da Nang.'
+            url: 'https://insights.topcv.vn/recruitment-report-2024-2025',
+            quoteOrDataPoint: 'Báo cáo thường niên lần thứ 5 của TopCV, phân tích gần 300.000 tin đăng tuyển dụng, ghi nhận tác động của AI và chuyển đổi số lên kỹ năng các ngành nghề tại Việt Nam.'
           },
           {
-            paperTitle: 'The Future of Jobs Report 2023 & 2025',
+            paperTitle: 'The Future of Jobs Report 2023',
             source: 'World Economic Forum (WEF)',
             year: 2023,
             url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/',
-            quoteOrDataPoint: 'Quality assurance roles that transition to software test engineering and AI safety evaluation rank in top quartile of technological longevity.'
+            quoteOrDataPoint: 'AI and Machine Learning Specialists rank #1 among fastest-growing roles (~40% demand growth by 2027); 44% of workers\u2019 skills will be disrupted over 2023-2027.'
           }
         ],
         resilienceDetail: VIETNAM_OCCUPATIONS_DATABASE['manual-qa-tester'],
@@ -539,14 +539,14 @@ export const GOLDEN_PROFILES: GoldenPersona[] = [
             source: 'Stanford Institute for Human-Centered AI',
             year: 2024,
             url: 'https://aiindex.stanford.edu/report/',
-            quoteOrDataPoint: 'Business and operational analysts leveraging automated AI pipelines exhibit 43% higher efficiency and rapid promotion velocity.'
+            quoteOrDataPoint: 'AI use raises worker productivity and work quality (BCG/Harvard field study: 12.2% more tasks, 25.1% faster, 40% higher quality); AI skill demand keeps spreading across sectors.'
           },
           {
-            paperTitle: 'The Future of Jobs Report 2023 & 2025',
+            paperTitle: 'The Future of Jobs Report 2023',
             source: 'World Economic Forum (WEF)',
             year: 2023,
             url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/',
-            quoteOrDataPoint: 'Business Development & Operations Specialists with AI tool fluency represent the fastest net employment additions in Asian services.'
+            quoteOrDataPoint: 'Globally, 69 million jobs are expected to be created vs 83 million displaced by 2027 (net -14 million); Business Intelligence Analysts rank #3 among the fastest-growing roles.'
           }
         ],
         resilienceDetail: VIETNAM_OCCUPATIONS_DATABASE['business-analyst-data'],

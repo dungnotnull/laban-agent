@@ -90,41 +90,41 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         paperTitle: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
         institution: 'OpenAI, OpenResearch & University of Pennsylvania (Eloundou et al.)',
         year: 2023,
-        keyMetricOrFormula: 'Mô hình đánh giá độ phơi nhiễm tác vụ: β-exposure = 64% đối với nhóm lao động tri thức và dịch vụ văn phòng.',
-        keyMetricOrFormulaEn: 'Task exposure measurement model: β-exposure = 64% for knowledge workers and office services.',
+        keyMetricOrFormula: 'Kết quả chính: khoảng 80% lực lượng lao động Mỹ có ít nhất 10% tác vụ chịu ảnh hưởng của LLM; khoảng 19% có ít nhất 50% tác vụ bị ảnh hưởng, mức phơi nhiễm cao hơn ở nhóm việc làm thu nhập cao.',
+        keyMetricOrFormulaEn: 'Headline finding: about 80% of the U.S. workforce could have at least 10% of work tasks affected by LLMs; about 19% could see at least 50% of tasks affected, with higher exposure in higher-wage jobs.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
-        paperTitle: 'The Future of Jobs Report 2023 - 2025 Outlook',
+        paperTitle: 'The Future of Jobs Report 2023',
         institution: 'World Economic Forum (WEF)',
         year: 2023,
-        keyMetricOrFormula: '44% kỹ năng cốt lõi của người lao động sẽ bị tái cấu trúc trước năm 2027; nhóm công việc hành chính & văn phòng giảm 14 triệu vị trí toàn cầu.',
-        keyMetricOrFormulaEn: '44% of workers\u2019 core skills will be restructured before 2027; administrative & office job families lose 14 million roles globally.',
+        keyMetricOrFormula: 'Giai đoạn 2023-2027: 44% kỹ năng của người lao động sẽ bị gián đoạn; toàn cầu tạo thêm 69 triệu việc làm nhưng cắt giảm 83 triệu, giảm ròng 14 triệu (2% việc làm hiện tại); riêng nhóm ghi chép & hành chính giảm 26 triệu việc làm.',
+        keyMetricOrFormulaEn: 'Over 2023-2027, 44% of workers\u2019 skills will be disrupted; globally 69 million jobs created vs 83 million displaced (net -14 million, 2% of current employment); record-keeping and administrative roles alone shed 26 million jobs.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       },
       {
         paperTitle: 'Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality',
         institution: 'International Labour Organization (ILO Working Paper 96)',
         year: 2023,
-        keyMetricOrFormula: 'Tác động chủ đạo của GenAI là "Khuếch đại năng suất" (Augmentation) với 75% lao động, thay vì thay thế hoàn toàn nếu được đào tạo chuyển đổi.',
-        keyMetricOrFormulaEn: 'GenAI\u2019s dominant impact is "Augmentation" for 75% of workers, rather than full replacement, when transition training is provided.',
-        url: 'https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality'
+        keyMetricOrFormula: 'Tác động chủ đạo của GenAI là khuếch đại (augmentation) thay vì tự động hóa thay thế; công việc văn phòng (clerical) có mức phơi nhiễm cao nhất: ~24% tác vụ phơi nhiễm cao và 58% phơi nhiễm trung bình.',
+        keyMetricOrFormulaEn: 'GenAI\u2019s dominant impact is augmentation rather than automation; clerical work is the most exposed category: ~24% of tasks at high exposure and 58% at medium exposure.',
+        url: 'https://doi.org/10.54394/FHEM8239'
       },
       {
-        paperTitle: 'Artificial Intelligence Index Report 2024 & 2025 Economy Chapter',
-        institution: 'Stanford Institute for Human-Centered Artificial Intelligence (HAI)',
-        year: 2024,
-        keyMetricOrFormula: 'Nghiên cứu thực địa (BCG / Harvard): Nhân sự kết hợp công cụ AI tăng 40% chất lượng đầu ra và giảm 25% thời gian hoàn thành.',
-        keyMetricOrFormulaEn: 'Field study (BCG / Harvard): staff using AI tools raise output quality by 40% and cut completion time by 25%.',
-        url: 'https://aiindex.stanford.edu/report/'
+        paperTitle: 'Navigating the Jagged Technological Frontier: Field Experimental Evidence on AI Productivity',
+        institution: 'Harvard Business School & BCG (Dell\u2019Acqua et al., cited in Stanford AI Index 2024)',
+        year: 2023,
+        keyMetricOrFormula: 'Thực nghiệm có kiểm soát với 758 tư vấn viên BCG: nhóm dùng GPT-4 hoàn thành nhiều hơn 12,2%, nhanh hơn 25,1% và chất lượng cao hơn 40% với tác vụ trong "ranh giới năng lực" của AI; ngoài ranh giới này, khả năng đưa ra lời giải đúng giảm 19 điểm phần trăm.',
+        keyMetricOrFormulaEn: 'Randomized controlled trial with 758 BCG consultants: those using GPT-4 completed 12.2% more tasks, 25.1% faster, with 40% higher quality on tasks inside the AI capability frontier; outside it they were 19 percentage points less likely to be correct.',
+        url: 'https://www.hbs.edu/ris/Publication%20Files/24-013_d9b45b68-9e74-42d6-a1c6-c72449755196.pdf'
       },
       {
-        paperTitle: 'Báo cáo Thị trường Lao động & Chuyển đổi số Việc làm Việt Nam 2024 - 2026',
-        institution: 'Tổng cục Thống kê (GSO), Bộ LĐ-TB&XH (MOLISA) & TopCV Analytics',
+        paperTitle: 'Báo cáo Thị trường Tuyển dụng Việt Nam 2024 - 2025 (TopCV)',
+        institution: 'TopCV Việt Nam',
         year: 2024,
-        keyMetricOrFormula: '72% doanh nghiệp tại TP.HCM & Hà Nội ưu tiên tuyển dụng ứng viên thành thạo công cụ AI; nhu cầu kỹ năng lai (Hybrid Skills) tăng 35%.',
-        keyMetricOrFormulaEn: '72% of employers in Ho Chi Minh City & Hanoi prioritize candidates proficient in AI tools; demand for hybrid skills grows 35%.',
-        url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+        keyMetricOrFormula: 'Báo cáo thường niên lần thứ 5 của TopCV (ra mắt 11/12/2024), phân tích gần 300.000 tin đăng tuyển dụng, tập trung tác động của AI và chuyển đổi số lên ngành nghề và các kỹ năng đang thay đổi.',
+        keyMetricOrFormulaEn: 'TopCV\u2019s 5th annual report (published 11 Dec 2024) analyzes ~300,000 job postings, focusing on how AI and digital transformation reshape occupations and skill demands.',
+        url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
       }
     ]
   },
@@ -155,8 +155,8 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
         institution: 'OpenAI, OpenResearch & University of Pennsylvania',
         year: 2023,
-        quoteOrKeyFinding: 'Khoảng 19% người lao động có ít nhất 50% nhiệm vụ chịu ảnh hưởng của LLM; các vai trò thiết kế tích hợp hệ thống có độ mở rộng giá trị thăng tiến cao nhất.',
-        quoteOrKeyFindingEn: 'About 19% of workers have at least 50% of their tasks exposed to LLMs; roles that design and integrate systems show the highest value-upside expansion.'
+        quoteOrKeyFinding: 'Khoảng 80% lực lượng lao động Mỹ có ít nhất 10% tác vụ chịu ảnh hưởng của LLM; khoảng 19% có ít nhất 50% tác vụ bị ảnh hưởng, mức phơi nhiễm cao hơn ở nhóm việc làm thu nhập cao.',
+        quoteOrKeyFindingEn: 'About 80% of the U.S. workforce could see at least 10% of their tasks affected by LLMs; about 19% could see at least 50% affected, with higher exposure in higher-wage jobs.'
       },
       transitionAdvice: 'Tập trung học cách kết nối API mô hình lớn, xây dựng luồng tự động hóa n8n/Make và học thêm kỹ năng tư vấn giải pháp.',
       transitionAdviceEn: 'Focus on learning how to connect large-model APIs, build n8n/Make automation flows, and add solution consulting skills.'
@@ -183,8 +183,8 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         title: 'Navigating the Jagged Technological Frontier: Field Experimental Evidence on AI Productivity',
         institution: 'Harvard Business School & Boston Consulting Group',
         year: 2023,
-        quoteOrKeyFinding: 'Chuyên gia sử dụng AI có kỹ năng chỉ dẫn ngữ cảnh tốt hoàn thành công việc nhanh hơn 25.1% và đạt chất lượng cao hơn 40% so với nhóm không sử dụng đúng cách.',
-        quoteOrKeyFindingEn: 'Experts using AI with good context-instruction skills completed tasks 25.1% faster and produced 40% higher quality than those who did not use it properly.'
+        quoteOrKeyFinding: 'Tư vấn viên dùng GPT-4 hoàn thành nhanh hơn 25,1% và chất lượng cao hơn 40% với tác vụ trong ranh giới năng lực AI; ngoài ranh giới này, nhóm dùng AI kém chính xác hơn 19 điểm phần trăm.',
+        quoteOrKeyFindingEn: 'Consultants using GPT-4 completed tasks 25.1% faster with 40% higher quality inside the AI frontier; outside it, AI users were 19 percentage points less likely to be correct.'
       },
       transitionAdvice: 'Thực hành tương tác sâu với Gemini Pro/Flash API, nắm vững System Instructions và các phương pháp kiểm thử Hallucination.',
       transitionAdviceEn: 'Practice deep interaction with the Gemini Pro/Flash API, master system instructions, and learn hallucination testing methods.'
@@ -208,11 +208,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Sự thấu cảm sâu sắc nhu cầu người dùng, đàm phán lợi ích các bên và tầm nhìn kinh doanh.',
       humanMoatFactorEn: 'Deep empathy for user needs, stakeholder negotiation, and business vision.',
       citedResearchPaper: {
-        title: 'The Future of Jobs Report 2023-2027',
+        title: 'The Future of Jobs Report 2023',
         institution: 'World Economic Forum (WEF)',
         year: 2023,
-        quoteOrKeyFinding: 'Kỹ năng quản trị sản phẩm công nghệ và định hướng chiến lược nằm trong top 5 năng lực tăng trưởng nhu cầu tuyển dụng toàn cầu.',
-        quoteOrKeyFindingEn: 'Technology product management and strategic direction skills rank in the top 5 fastest-growing capabilities in global recruitment demand.'
+        quoteOrKeyFinding: 'Kỹ năng "AI và dữ liệu lớn" nằm trong nhóm kỹ năng có nhu cầu tăng trưởng nhanh nhất; 44% kỹ năng của người lao động sẽ bị gián đoạn trong giai đoạn 2023-2027.',
+        quoteOrKeyFindingEn: '"AI and big data" ranks among the fastest-growing skills; 44% of workers\u2019 skills will be disrupted over 2023-2027.'
       },
       transitionAdvice: 'Kết hợp kinh nghiệm quản lý dự án hiện tại với các chứng chỉ Product Management và hiểu biết kiến trúc GenAI.',
       transitionAdviceEn: 'Combine current project management experience with product management certifications and GenAI architecture literacy.'
@@ -239,8 +239,8 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         title: 'Holistic Evaluation of Language Models (HELM)',
         institution: 'Stanford Center for Research on Foundation Models (CRFM)',
         year: 2023,
-        quoteOrKeyFinding: 'Việc đánh giá độc lập về độ an toàn, tính thiên kiến và bản quyền đòi hỏi sự can thiệp và giám sát trực tiếp của chuyên gia nhân văn.',
-        quoteOrKeyFindingEn: 'Independent evaluation of safety, bias, and copyright requires direct intervention and oversight by domain experts.'
+        quoteOrKeyFinding: 'HELM đề xuất đánh giá mô hình ngôn ngữ theo đa chỉ số (độ chính xác, thiên kiến, độc hại, độ bền vững) — đặt nền móng cho các vai trò thẩm định và giám sát chất lượng LLM chuyên nghiệp.',
+        quoteOrKeyFindingEn: 'HELM proposes multi-metric LLM evaluation (accuracy, bias, toxicity, robustness), laying the groundwork for professional LLM audit and oversight roles.'
       },
       transitionAdvice: 'Nghiên cứu khung pháp lý Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân và các tiêu chuẩn quốc tế ISO 42001.',
       transitionAdviceEn: 'Study Decree 13/2023/ND-CP on personal data protection and international standards such as ISO 42001.'
@@ -267,8 +267,8 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         title: 'Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks',
         institution: 'Meta AI & University College London',
         year: 2021,
-        quoteOrKeyFinding: 'Hệ thống RAG giảm ảo giác tới 80% nhưng phụ thuộc hoàn toàn vào kiến trúc dữ liệu đầu vào được thiết kế có chủ đích.',
-        quoteOrKeyFindingEn: 'RAG systems reduce hallucination by up to 80% but depend entirely on deliberately designed input data architecture.'
+        quoteOrKeyFinding: 'RAG cải thiện độ chính xác trên các tác vụ giàu tri thức bằng cách truy xuất thông tin từ nguồn bên ngoài, giúp giảm ảo giác so với mô hình sinh thuần túy.',
+        quoteOrKeyFindingEn: 'RAG improves factuality on knowledge-intensive tasks by retrieving external sources, reducing hallucination versus pure generative models.'
       },
       transitionAdvice: 'Nâng cao kỹ năng quản trị cơ sở dữ liệu, học thêm về embedding models và kỹ thuật chunking văn bản.',
       transitionAdviceEn: 'Strengthen database management skills and learn about embedding models and text chunking techniques.'
@@ -292,11 +292,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Trí tuệ cảm xúc thực sự, sự hiện diện của con người và tính bảo mật đạo đức y khoa.',
       humanMoatFactorEn: 'Genuine emotional intelligence, human presence, and medical-ethical confidentiality.',
       citedResearchPaper: {
-        title: 'Artificial Intelligence in Mental Healthcare: Opportunities, Risks, and Future Directions',
-        institution: 'The Lancet Psychiatry',
-        year: 2023,
-        quoteOrKeyFinding: 'Bệnh nhân đòi hỏi sự thấu cảm con người thực tế trong các quyết định trị liệu phức tạp; AI chỉ hỗ trợ phân loại sơ bộ.',
-        quoteOrKeyFindingEn: 'Patients demand genuine human empathy in complex treatment decisions; AI only supports preliminary triage.'
+        title: 'High-performance medicine: the convergence of human and artificial intelligence',
+        institution: 'Nature Medicine (Eric Topol)',
+        year: 2019,
+        quoteOrKeyFinding: 'AI trong y tế mang lại "món quà thời gian", trả lại thời gian cho bác sĩ để lắng nghe và thấu cảm bệnh nhân; sự đồng cảm con người vẫn là trung tâm của chăm sóc.',
+        quoteOrKeyFindingEn: 'AI in medicine brings a "gift of time", returning hours to clinicians for listening and empathy; human compassion remains central to care.'
       },
       transitionAdvice: 'Theo học các chứng chỉ tâm lý học trị liệu được công nhận, ứng dụng AI vào việc soạn kế hoạch chăm sóc và báo cáo.',
       transitionAdviceEn: 'Pursue recognized psychotherapy certifications and apply AI to drafting care plans and reports.'
@@ -320,11 +320,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Khả năng điều hướng cảm xúc tổ chức, giải quyết xung đột nội bộ và tạo động lực cho nhân viên.',
       humanMoatFactorEn: 'Navigating organizational emotions, resolving internal conflicts, and motivating employees.',
       citedResearchPaper: {
-        title: 'Leading Change in the Age of AI',
-        institution: 'MIT Sloan Management Review & McKinsey & Company',
-        year: 2024,
-        quoteOrKeyFinding: 'Hơn 70% dự án chuyển đổi số thất bại do yếu tố con người và văn hóa, làm tăng nhu cầu cấp thiết về chuyên gia quản trị thay đổi.',
-        quoteOrKeyFindingEn: 'Over 70% of digital transformation projects fail due to human and cultural factors, driving urgent demand for change management experts.'
+        title: 'Unlocking success in digital transformations',
+        institution: 'McKinsey & Company',
+        year: 2018,
+        quoteOrKeyFinding: 'Khoảng 70% chương trình chuyển đổi số không đạt mục tiêu, thường vì yếu tố con người và văn hóa — làm tăng nhu cầu chuyên gia quản trị thay đổi.',
+        quoteOrKeyFindingEn: 'Roughly 70% of digital transformation programs fall short of their goals, most often on human and cultural factors, driving demand for change management experts.'
       },
       transitionAdvice: 'Học các mô hình chuyển đổi như ADKAR/Kotter, kết hợp với hiểu biết thực tế về ứng dụng công nghệ trong doanh nghiệp.',
       transitionAdviceEn: 'Learn transformation models such as ADKAR/Kotter, combined with hands-on understanding of technology adoption in enterprises.'
@@ -348,11 +348,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Khả năng kết nối cảm xúc độc đáo với tâm lý con người và tạo ra những ý niệm đột phá phi logic.',
       humanMoatFactorEn: 'Connecting emotions uniquely with human psychology and producing breakthrough, non-linear ideas.',
       citedResearchPaper: {
-        title: 'Generative AI and the Future of Creative Work',
-        institution: 'Stanford Institute for Human-Centered AI (HAI)',
-        year: 2024,
-        quoteOrKeyFinding: 'AI tạo ra sự bão hòa nội dung tầm trung, nâng cao giá trị thặng dư của các giám đốc nghệ thuật có khả năng tuyển chọn và định hình gu thẩm mỹ cao cấp.',
-        quoteOrKeyFindingEn: 'AI creates saturation of mid-tier content, raising the premium value of art directors able to curate and shape high-end aesthetics.'
+        title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
+        institution: 'OpenAI, OpenResearch & University of Pennsylvania',
+        year: 2023,
+        quoteOrKeyFinding: 'Nghề thiết kế đồ họa thuộc nhóm có độ phơi nhiễm LLM cao trong phân tích tác vụ của nghiên cứu; khoảng 19% lao động Mỹ có ít nhất 50% tác vụ bị ảnh hưởng.',
+        quoteOrKeyFindingEn: 'Graphic design ranks among the more LLM-exposed occupations in the study\u2019s task analysis; about 19% of U.S. workers could see at least 50% of tasks affected.'
       },
       transitionAdvice: 'Chuyển từ người vẽ thao tác thủ công sang vai trò giám đốc nghệ thuật, làm chủ các công cụ ComfyUI/Midjourney để chỉ đạo dự án.',
       transitionAdviceEn: 'Move from hands-on manual illustration to an art director role, mastering ComfyUI/Midjourney tools to direct projects.'
@@ -376,11 +376,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Kỹ năng tương tác và xử lý sự cố trong môi trường vật lý thế giới thực mà mô hình phần mềm không thể chạm tới.',
       humanMoatFactorEn: 'Interaction and troubleshooting skills in real-world physical environments that software models cannot reach.',
       citedResearchPaper: {
-        title: 'Robotics and the Future of Manufacturing in ASEAN',
+        title: 'ASEAN in Transformation: How Technology is Changing Jobs and Enterprises',
         institution: 'International Labour Organization (ILO)',
-        year: 2023,
-        quoteOrKeyFinding: 'Làn sóng đầu tư FDI công nghệ cao tại Việt Nam thúc đẩy nhu cầu kỹ sư vận hành hệ thống tự động hóa thông minh tăng hơn 45%.',
-        quoteOrKeyFindingEn: 'High-tech FDI investment in Vietnam is driving demand for intelligent automation systems engineers up more than 45%.'
+        year: 2016,
+        quoteOrKeyFinding: 'ILO ước tính 86% công nhân ngành dệt may - may mặc - da giày tại Việt Nam có nguy cơ tự động hóa cao trong một đến hai thập kỷ tới.',
+        quoteOrKeyFindingEn: 'The ILO estimates that 86% of Vietnam\u2019s textile, clothing and footwear workers face a high risk of automation over the next decade or two.'
       },
       transitionAdvice: 'Học bổ sung về ROS (Robot Operating System), thị giác máy tính và các giao thức công nghiệp 4.0.',
       transitionAdviceEn: 'Learn ROS (Robot Operating System), computer vision, and Industry 4.0 protocols.'
@@ -404,11 +404,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Khả năng thương thảo chính sách, đánh giá tác động môi trường thực địa và thẩm định xã hội.',
       humanMoatFactorEn: 'Policy negotiation, field environmental impact assessment, and social auditing.',
       citedResearchPaper: {
-        title: 'Green Skills for the Future of Work in Asia-Pacific',
-        institution: 'Asian Development Bank (ADB)',
-        year: 2024,
-        quoteOrKeyFinding: 'Chuyển đổi xanh kết hợp công nghệ số mở ra hơn 1.2 triệu vị trí việc làm mới tại Đông Nam Á trong thập kỷ tới.',
-        quoteOrKeyFindingEn: 'Green transformation combined with digital technology will open more than 1.2 million new jobs in Southeast Asia over the coming decade.'
+        title: 'World Employment and Social Outlook 2018: Greening with Jobs',
+        institution: 'International Labour Organization (ILO)',
+        year: 2018,
+        quoteOrKeyFinding: 'Kinh tế xanh được ước tính tạo ra 24 triệu việc làm mới toàn cầu vào năm 2030, bù đắp các việc làm bị mất trong quá trình chuyển đổi.',
+        quoteOrKeyFindingEn: 'The green economy is estimated to create 24 million new jobs globally by 2030, offsetting losses incurred during the transition.'
       },
       transitionAdvice: 'Tham gia các khóa đào tạo chứng chỉ ESG/Kiểm kê khí nhà kính, ứng dụng AI để tự động hóa xử lý bảng tính dữ liệu năng lượng.',
       transitionAdviceEn: 'Join ESG and greenhouse gas inventory certification courses, and use AI to automate energy spreadsheet processing.'
@@ -434,11 +434,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Gần như bằng 0 đối với các văn bản tiêu chuẩn.',
       humanMoatFactorEn: 'Nearly zero for standardized documents.',
       citedResearchPaper: {
-        title: 'Occupational Exposure to Generative AI',
-        institution: 'OpenAI, OpenResearch & UPenn',
+        title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
+        institution: 'OpenAI, OpenResearch & University of Pennsylvania',
         year: 2023,
-        quoteOrKeyFinding: 'Các tác vụ sao chép, trích xuất và số hóa dữ liệu chuẩn hóa có mức độ tự động hóa trực tiếp lên tới 96%.',
-        quoteOrKeyFindingEn: 'Standardized copying, extraction, and data digitization tasks face up to 96% direct automation.'
+        quoteOrKeyFinding: 'Tác vụ xử lý dữ liệu và văn bản chuẩn hóa thuộc nhóm phơi nhiễm LLM cao nhất; khoảng 19% lao động Mỹ có ít nhất 50% tác vụ bị ảnh hưởng.',
+        quoteOrKeyFindingEn: 'Standardized data- and text-processing tasks are among the most LLM-exposed; about 19% of U.S. workers could see at least 50% of tasks affected.'
       },
       transitionAdvice: 'Chuyển dịch ngay sang Kỹ sư xử lý dữ liệu (Data Annotation Specialist) hoặc Quản lý dữ liệu số doanh nghiệp.',
       transitionAdviceEn: 'Pivot immediately to data processing roles (data annotation specialist) or enterprise digital data management.'
@@ -465,8 +465,8 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
         title: 'Generative AI at Work',
         institution: 'National Bureau of Economic Research (NBER)',
         year: 2023,
-        quoteOrKeyFinding: 'Trợ lý AI giọng nói đàm thoại tăng năng suất hỗ trợ khách hàng lên 14% và thay thế tới 60% các cuộc gọi sàng lọc ban đầu.',
-        quoteOrKeyFindingEn: 'Conversational voice AI assistants raised customer support productivity by 14% and replaced up to 60% of initial screening calls.'
+        quoteOrKeyFinding: 'Trợ lý hội thoại GenAI tăng 14% năng suất xử lý yêu cầu của nhân viên hỗ trợ khách hàng; nhân viên ít kinh nghiệm tăng tới 34%.',
+        quoteOrKeyFindingEn: 'A GenAI conversational assistant raised support agents\u2019 productivity by 14% overall, with novice workers gaining up to 34%.'
       },
       transitionAdvice: 'Nâng cấp kỹ năng thành Chuyên viên tư vấn giải pháp B2B cao cấp hoặc Quản lý quan hệ khách hàng chiến lược (Key Account Manager).',
       transitionAdviceEn: 'Upgrade to senior B2B solution consulting or strategic key account management.'
@@ -490,11 +490,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Chỉ còn giá trị ở tác phẩm văn học nghệ thuật đỉnh cao, văn bản ngoại giao tối mật hoặc bản địa hóa văn hóa đặc thù.',
       humanMoatFactorEn: 'Value remains only in high literary work, top-secret diplomatic texts, or deep cultural localization.',
       citedResearchPaper: {
-        title: 'AI Translation Quality Evaluation Benchmarks',
-        institution: 'Google Research & DeepL Institute',
-        year: 2024,
-        quoteOrKeyFinding: 'Chất lượng dịch máy thần kinh kết hợp LLM đạt chỉ số BLEU ngang ngửa dịch giả trung cấp ở hơn 85% tài liệu kỹ thuật.',
-        quoteOrKeyFindingEn: 'LLM-powered neural machine translation matches intermediate human translators on BLEU scores for over 85% of technical documents.'
+        title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
+        institution: 'OpenAI, OpenResearch & University of Pennsylvania',
+        year: 2023,
+        quoteOrKeyFinding: 'Dịch giả và phiên dịch thuộc nhóm nghề có độ phơi nhiễm LLM cao nhất trong phân tích tác vụ của nghiên cứu.',
+        quoteOrKeyFindingEn: 'Interpreters and translators rank among the most LLM-exposed occupations in the study\u2019s task-level analysis.'
       },
       transitionAdvice: 'Chuyển đổi thành Chuyên viên hiệu đính AI & Bản địa hóa nội dung số (AI Post-Editing & Cultural Localization Lead).',
       transitionAdviceEn: 'Transition to AI post-editing and digital content localization lead roles.'
@@ -518,11 +518,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Khách hàng có thể tự tạo sản phẩm hình ảnh cơ bản với câu lệnh đơn giản.',
       humanMoatFactorEn: 'Clients can create basic visual products themselves with simple prompts.',
       citedResearchPaper: {
-        title: 'Diffusion Models in Digital Asset Creation',
-        institution: 'Stanford HAI & Adobe Research',
+        title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
+        institution: 'OpenAI, OpenResearch & University of Pennsylvania',
         year: 2023,
-        quoteOrKeyFinding: 'Thời gian sản xuất tài nguyên đồ họa quảng cáo thương mại điện tử giảm hơn 70% nhờ các công cụ tạo sinh tự động.',
-        quoteOrKeyFindingEn: 'Production time for e-commerce advertising creative assets has dropped more than 70% thanks to generative tools.'
+        quoteOrKeyFinding: 'Công việc sản xuất đồ họa theo mẫu nằm trong nhóm phơi nhiễm LLM cao; khoảng 80% lao động Mỹ có ít nhất 10% tác vụ chịu ảnh hưởng.',
+        quoteOrKeyFindingEn: 'Template-based graphic production is highly LLM-exposed; about 80% of the U.S. workforce could see at least 10% of tasks affected.'
       },
       transitionAdvice: 'Nâng tầm lên Thiết kế trải nghiệm người dùng (UI/UX), Giám đốc mỹ thuật hoặc Chuyên gia xây dựng hệ sinh thái nhận diện thương hiệu.',
       transitionAdviceEn: 'Level up to UI/UX design, art director, or brand identity ecosystem specialist.'
@@ -546,11 +546,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Kiểm thử phi chức năng, đánh giá cảm xúc trải nghiệm người dùng và tư duy bảo mật nâng cao.',
       humanMoatFactorEn: 'Non-functional testing, user-experience empathy assessment, and advanced security thinking.',
       citedResearchPaper: {
-        title: 'Automated Test Generation using LLMs in Software Engineering',
-        institution: 'Microsoft Research & ACM SIGSOFT',
-        year: 2024,
-        quoteOrKeyFinding: 'Hơn 65% test case thông thường và báo cáo lỗi có thể được tạo tự động bởi AI Copilot với tỷ lệ phủ mã cao.',
-        quoteOrKeyFindingEn: 'Over 65% of routine test cases and bug reports can be auto-generated by AI copilots with high code coverage.'
+        title: 'The Impact of AI on Developer Productivity: Evidence from GitHub Copilot',
+        institution: 'GitHub / Microsoft Research',
+        year: 2022,
+        quoteOrKeyFinding: 'Lập trình viên dùng GitHub Copilot hoàn thành tác vụ lập trình nhanh hơn 55,8% so với nhóm đối chứng.',
+        quoteOrKeyFindingEn: 'Developers using GitHub Copilot completed a coding task 55.8% faster than the control group.'
       },
       transitionAdvice: 'Học lập trình kiểm thử tự động (Automation QA), kiểm thử hiệu năng và đánh giá chất lượng mô hình AI (RAG Benchmark).',
       transitionAdviceEn: 'Learn test automation (automation QA), performance testing, and AI model quality evaluation (RAG benchmarking).'
@@ -574,11 +574,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Khả năng tư vấn tối ưu thuế chiến lược, phân tích dòng tiền và lập kế hoạch tài chính kinh doanh.',
       humanMoatFactorEn: 'Strategic tax optimization consulting, cash flow analysis, and business financial planning.',
       citedResearchPaper: {
-        title: 'Automation of Financial Reporting and Audit Procedures',
-        institution: 'Journal of Accounting and Economics & PwC',
+        title: 'The Future of Jobs Report 2023',
+        institution: 'World Economic Forum (WEF)',
         year: 2023,
-        quoteOrKeyFinding: 'Tự động hóa thông minh giảm 80% thời gian hạch toán chứng từ sơ cấp, thúc đẩy nhu cầu chuyển đổi sang chuyên viên phân tích tài chính.',
-        quoteOrKeyFindingEn: 'Intelligent automation cuts 80% of the time spent booking primary documents, driving demand to shift toward financial analyst roles.'
+        quoteOrKeyFinding: 'Nhân viên ghi sổ (bookkeeping) và nhập dữ liệu nằm trong nhóm nghề suy giảm nhanh nhất; nhóm ghi chép & hành chính giảm 26 triệu việc làm vào năm 2027.',
+        quoteOrKeyFindingEn: 'Bookkeeping and data-entry roles are among the fastest-declining; record-keeping and administrative roles shed 26 million jobs by 2027.'
       },
       transitionAdvice: 'Nâng cao kỹ năng phân tích dữ liệu tài chính (Financial Analyst), tư vấn kiểm soát chi phí và ứng dụng PowerBI/AI vào dự báo.',
       transitionAdviceEn: 'Build financial data analysis skills (financial analyst), cost-control consulting, and PowerBI/AI-driven forecasting.'
@@ -602,11 +602,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Nghiên cứu điều tra thực tế, phỏng vấn chuyên gia, góc nhìn cá nhân sâu sắc và sự độc bản.',
       humanMoatFactorEn: 'Real investigative research, expert interviews, deep personal perspective, and originality.',
       citedResearchPaper: {
-        title: 'The Degradation and Renewal of Web Content under Generative AI',
-        institution: 'Oxford Internet Institute',
-        year: 2024,
-        quoteOrKeyFinding: 'Thị trường thuê người viết nội dung SEO cơ bản sụt giảm hơn 50% sau khi các mô hình ngôn ngữ lớn phổ cập.',
-        quoteOrKeyFindingEn: 'The market for hiring basic SEO content writers shrank more than 50% after large language models became widespread.'
+        title: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
+        institution: 'OpenAI, OpenResearch & University of Pennsylvania',
+        year: 2023,
+        quoteOrKeyFinding: 'Người viết nội dung và tác giả thuộc nhóm phơi nhiễm LLM cao nhất trong phân tích tác vụ của nghiên cứu.',
+        quoteOrKeyFindingEn: 'Writers and authors rank among the most LLM-exposed occupations in the study\u2019s task-level analysis.'
       },
       transitionAdvice: 'Chuyển sang làm Chiến lược nội dung (Content Strategist), xây dựng thương hiệu cá nhân hoặc làm Báo chí điều tra chuyên sâu.',
       transitionAdviceEn: 'Move into content strategy, personal branding, or in-depth investigative journalism.'
@@ -630,11 +630,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Thiết kế các tour trải nghiệm độc bản cao cấp, xử lý khủng hoảng du lịch thực tế và phục vụ khách VIP (Concierge).',
       humanMoatFactorEn: 'Designing premium original experience tours, handling real travel crises, and serving VIP clients (concierge).',
       citedResearchPaper: {
-        title: 'Disruption of Intermediary Services in Tourism by AI Agents',
-        institution: 'World Travel & Tourism Council (WTTC)',
-        year: 2024,
-        quoteOrKeyFinding: 'Du khách tự sử dụng trợ lý ảo lên kế hoạch chiếm hơn 65%, buộc các đại lý truyền thống phải chuyển hướng sang dịch vụ cá nhân hóa cao cấp.',
-        quoteOrKeyFindingEn: 'More than 65% of travelers now use virtual assistants for planning, forcing traditional agencies to pivot toward premium personalized service.'
+        title: 'Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality',
+        institution: 'International Labour Organization (ILO Working Paper 96)',
+        year: 2023,
+        quoteOrKeyFinding: 'Các vai trò hỗ trợ văn phòng (gồm cả dịch vụ thông tin khách hàng và đặt chỗ) có mức phơi nhiễm GenAI cao nhất: ~24% tác vụ phơi nhiễm cao và 58% trung bình.',
+        quoteOrKeyFindingEn: 'Clerical support roles (including customer information and booking services) are the most GenAI-exposed: ~24% of tasks at high exposure and 58% at medium exposure.'
       },
       transitionAdvice: 'Tập trung vào phân khúc du lịch trải nghiệm độc lạ, du lịch kết hợp chăm sóc sức khỏe (Wellness Tourism) hoặc tổ chức sự kiện MICE.',
       transitionAdviceEn: 'Focus on unique experience travel segments, wellness tourism, or MICE event organization.'
@@ -658,11 +658,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Tranh tụng tại tòa, đàm phán thương vụ phức tạp, xây dựng chiến lược pháp lý và thấu hiểu góc khuất thực tế.',
       humanMoatFactorEn: 'Court litigation, complex deal negotiation, legal strategy building, and understanding of practical gray areas.',
       citedResearchPaper: {
-        title: 'Evaluating LLMs on Legal Reasoning and Contract Analysis',
-        institution: 'Stanford Law School & Legal Tech Lab',
+        title: 'GPT-4 Passes the Bar Exam',
+        institution: 'Stanford CodeX (Katz et al.)',
         year: 2023,
-        quoteOrKeyFinding: 'AI đạt điểm tương đương các kỳ thi luật sư hàng đầu và giảm 60% thời gian rà soát hợp đồng pháp lý sơ bộ.',
-        quoteOrKeyFindingEn: 'AI scores on par with top bar exams and cuts preliminary legal contract review time by 60%.'
+        quoteOrKeyFinding: 'GPT-4 đạt khoảng phân vị 75 trong kỳ thi luật sư thống nhất (Uniform Bar Exam) của Hoa Kỳ.',
+        quoteOrKeyFindingEn: 'GPT-4 scored around the 75th percentile on the Uniform Bar Exam in the United States.'
       },
       transitionAdvice: 'Phát triển chuyên môn về Luật An toàn thông tin, Luật Sở hữu trí tuệ AI và kỹ năng đàm phán giải quyết tranh chấp kinh tế.',
       transitionAdviceEn: 'Develop expertise in information security law, AI intellectual property law, and commercial dispute negotiation skills.'
@@ -686,11 +686,11 @@ export const DEFAULT_CAREER_ANALYSIS: ComprehensiveCareerAnalysisResult = {
       humanMoatFactor: 'Tư vấn đầu tư tài chính cá nhân chuyên sâu, thẩm định cho vay tín dụng phức tạp và chăm sóc khách hàng ưu tiên (Private Banking).',
       humanMoatFactorEn: 'In-depth personal financial investment advisory, complex credit underwriting, and private banking for priority clients.',
       citedResearchPaper: {
-        title: 'The AI Revolution in Banking: Workforce Dynamics and Branch Evolution',
+        title: 'A Future That Works: Automation, Employment, and Productivity',
         institution: 'McKinsey Global Institute',
-        year: 2024,
-        quoteOrKeyFinding: 'Số lượng chi nhánh vật lý và giao dịch viên quầy tiếp tục giảm hơn 30% trên toàn cầu do sự phổ cập của ngân hàng thông minh tích hợp AI.',
-        quoteOrKeyFindingEn: 'Physical branches and teller transactions will keep declining more than 30% globally due to the spread of AI-integrated smart banking.'
+        year: 2017,
+        quoteOrKeyFinding: 'Khoảng một nửa hoạt động công việc trên toàn cầu có khả năng tự động hóa về mặt kỹ thuật; dịch vụ tài chính thuộc nhóm tiềm năng cao nhất.',
+        quoteOrKeyFindingEn: 'About half of global work activities are technically automatable; financial services rank among the most automatable sectors.'
       },
       transitionAdvice: 'Chuyển sang làm Chuyên viên Quản lý Gia sản (Wealth Management Advisor) hoặc Chuyên viên Thẩm định Tín dụng Doanh nghiệp.',
       transitionAdviceEn: 'Transition to wealth management advisor or corporate credit underwriting specialist roles.'

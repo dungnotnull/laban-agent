@@ -287,7 +287,7 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
         {/* Scatter Chart (Dot Map) for 20 Careers */}
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-4 sm:p-6 mb-8 mt-6">
           <h3 className="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
-            <Target className="w-5 h-5 text-indigo-600" /> {t(language, 'Bản Đồ Định Vị Nghề Nghiệp (Nhấp vào điểm để xem chi tiết)', 'Career Positioning Map (Click dot to view details)')}
+            <Target className="w-5 h-5 text-indigo-600" /> {t(language, 'Bản Đồ Định Vị Nghề Nghiệp', 'Career Positioning Map')}
           </h3>
           <div className="flex flex-col sm:flex-row sm:items-center gap-2 mb-6 text-xs text-slate-500">
             <span>{t(language, 'Trục Tung: Điểm Kháng AI | Trục Hoành: Nhu Cầu Lao Động (MOLISA)', 'Y-Axis: AI Resilience | X-Axis: Labor Demand (MOLISA)')}</span>

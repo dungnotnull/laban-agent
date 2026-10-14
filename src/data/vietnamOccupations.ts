@@ -59,21 +59,21 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'openai-upenn-2023',
-        citationText: 'OpenAI/UPenn (2023): Visual arts & digital imaging task exposure estimated at 71.4% with generative diffusion models.',
+        citationText: 'OpenAI/UPenn (2023): About 80% of the U.S. workforce could see at least 10% of work tasks affected by LLMs; graphic and digital design rank among the higher-exposure occupations.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
         sourceId: 'topcv-vietnamworks-labor-2024-2026',
-        citationText: 'TopCV Vietnam (2024): 42% drop in junior 2D banner designer job posts; 68% rise in "AI Visual Director / UI-UX Lead" roles with 30-50% higher salary.',
-        url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+        citationText: 'TopCV (2024): The annual Recruitment Market Report 2024-2025 (theme: digital talent for the AI era) analyzes ~300,000 job postings on how AI reshapes skills and hiring criteria.',
+        url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
       },
       {
         sourceId: 'wef-future-of-jobs-2023-2025',
-        citationText: 'WEF (2023): Graphic design categorized under transforming media arts requiring rapid prompt engineering and creative direction upskilling.',
+        citationText: 'WEF (2023): 44% of workers\u2019 skills are expected to be disrupted over 2023-2027, with AI and big data among the fastest-growing skill priorities.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       }
     ],
-    methodologySummary: 'Synthesized via O*NET 27-1024.00 Detailed Work Activities cross-referenced with OpenAI LLM/Diffusion Exposure Alpha/Beta coefficients and localized using Vietnam TopCV 2024-2026 recruitment volume changes.',
+    methodologySummary: 'Synthesized via O*NET 27-1024.00 Detailed Work Activities cross-referenced with OpenAI LLM/Diffusion Exposure Alpha/Beta coefficients and localized using the TopCV Recruitment Market Report 2024-2025.',
     uncertaintyRange: '±6.5% depending on client adoption speed of AI in SME marketing agencies in Vietnam.',
     vietnamDemandSignal: 'transforming'
   },
@@ -135,13 +135,13 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'openai-upenn-2023',
-        citationText: 'OpenAI/UPenn (2023): Software QA tasks rank among the top 15% in task substitutability by code-specialized foundation models.',
+        citationText: 'OpenAI/UPenn (2023): About 19% of U.S. workers could see at least 50% of tasks affected by LLMs; programming and code-review tasks show some of the highest exposure scores.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
         sourceId: 'topcv-vietnamworks-labor-2024-2026',
-        citationText: 'VietnamWorks (2024): Manual QA postings declined 48% YoY; "Automation & AI QA / LLM Evaluation Specialist" postings surged 115%.',
-        url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+        citationText: 'TopCV (2024): The Recruitment Market Report 2024-2025 analyzes ~300,000 job postings, documenting AI-driven changes to skill demands across Vietnamese tech roles.',
+        url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
       }
     ],
     methodologySummary: 'O*NET 15-1253 task decomposition combined with GitHub/OpenAI code evaluation metrics and Vietnam software outsourcing agency hiring trends.',
@@ -198,7 +198,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'stanford-hai-ai-index-2024',
-        citationText: 'Stanford HAI (2024): Business analysts utilizing AI agents complete market modeling 43% faster with 25% higher forecast accuracy.',
+        citationText: 'Stanford HAI (AI Index 2024): AI use measurably raises worker productivity and work quality, and AI skill demand keeps spreading beyond the tech sector.',
         url: 'https://aiindex.stanford.edu/report/'
       },
       {
@@ -261,13 +261,13 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'openai-upenn-2023',
-        citationText: 'OpenAI/UPenn (2023): Writers and authors have 100% alpha task exposure to language model assistance and drafting.',
+        citationText: 'OpenAI/UPenn (2023): About 19% of U.S. workers could see at least 50% of tasks affected by LLMs; writers and authors are among the most LLM-exposed occupations.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
         sourceId: 'topcv-vietnamworks-labor-2024-2026',
-        citationText: 'TopCV (2024): 62% contraction in standard freelance writer postings; 85% growth in "AI Content Strategist & Multi-channel Producer" roles.',
-        url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+        citationText: 'TopCV (2024): The Recruitment Market Report 2024-2025 (theme: digital talent for the AI era) documents how AI and digital transformation change skill demands across Vietnamese industries.',
+        url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
       }
     ],
     methodologySummary: 'Derived from O*NET 27-3042.00 task inventory, verified by OpenAI task exposure tables and Vietnam e-commerce copy demand drops.',
@@ -324,12 +324,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'ilo-genai-jobs-2023',
-        citationText: 'ILO (2023): Customer contact and clerical support represents the highest clerical automation exposure globally (~24% of all clerical tasks).',
-        url: 'https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality'
+        citationText: 'ILO (2023): Clerical work is the most GenAI-exposed category globally: ~24% of clerical tasks face high exposure and 58% medium exposure.',
+        url: 'https://doi.org/10.54394/FHEM8239'
       },
       {
         sourceId: 'stanford-hai-ai-index-2024',
-        citationText: 'Stanford/Brynjolfsson et al. (2023): Customer support agents with GenAI tools resolved 14% more issues per hour, with 34% boost for novice workers.',
+        citationText: 'Brynjolfsson et al. (NBER 2023, cited in Stanford AI Index 2024): Customer support agents with a GenAI assistant resolved 14% more issues per hour; novice gains up to 34%.',
         url: 'https://aiindex.stanford.edu/report/'
       }
     ],
@@ -387,16 +387,16 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'wef-future-of-jobs-2023-2025',
-        citationText: 'WEF (2023): AI and Machine Learning Specialists ranked #1 fastest growing global role with 30%+ projected net headcount growth through 2027.',
+        citationText: 'WEF (2023): AI and Machine Learning Specialists rank #1 among fastest-growing roles, with demand projected to grow ~40% (~1 million jobs) by 2027.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       },
       {
         sourceId: 'topcv-vietnamworks-labor-2024-2026',
-        citationText: 'TopCV Vietnam (2024): 180% surge in enterprise demand for AI Workflow Integrators, with average salaries exceeding 35M - 60M VND/month.',
-        url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+        citationText: 'TopCV (2024): The Recruitment Market Report 2024-2025 highlights advanced software engineers and data engineers among the most in-demand profiles of the AI era.',
+        url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
       }
     ],
-    methodologySummary: 'Compiled from WEF Future of Jobs 2023-2025 growth trajectories and Vietnam tech enterprise hiring surveys.',
+    methodologySummary: 'Compiled from WEF Future of Jobs 2023-2025 growth trajectories and the TopCV Recruitment Market Report 2024-2025.',
     uncertaintyRange: '±6.0%',
     vietnamDemandSignal: 'high_growth'
   },
@@ -450,12 +450,12 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'openai-upenn-2023',
-        citationText: 'OpenAI / UPenn (2023): Accounting and bookkeeping tasks exhibit 100% LLM exposure on routine computational and reporting workflows.',
+        citationText: 'OpenAI / UPenn (2023): Higher-wage, data-processing occupations generally show higher LLM exposure; accounting and auditing rank among the more exposed occupations.',
         url: 'https://arxiv.org/abs/2303.10130'
       },
       {
         sourceId: 'wef-future-of-jobs-2023-2025',
-        citationText: 'WEF (2023): Traditional bookkeepers rank among top 5 declining roles, while Financial Analysts and Strategic Controllers grow 15%.',
+        citationText: 'WEF (2023): Record-keeping and administrative roles are projected to shed 26 million jobs by 2027; data entry and bookkeeping are among the fastest-declining roles.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       }
     ],
@@ -513,7 +513,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'stanford-hai-ai-index-2024',
-        citationText: 'Stanford HAI (2024): AI screening cuts time-to-hire by 45%, but final candidate acceptance relies 88% on human rapport.',
+        citationText: 'Stanford HAI (AI Index 2024): AI tools measurably boost worker productivity and work quality; AI skill demand extends across sectors, complementing rather than replacing people-centric work.',
         url: 'https://aiindex.stanford.edu/report/'
       }
     ],
@@ -571,7 +571,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'wef-future-of-jobs-2023-2025',
-        citationText: 'WEF (2023): Education & Training roles show high resilience with +10% net job growth driven by human pedagogical connection.',
+        citationText: 'WEF (2023): 44% of workers\u2019 skills will be disrupted by 2027 and over 60% of workers need retraining within 2023-2027, elevating education and training roles for large-scale reskilling.',
         url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
       }
     ],
@@ -629,7 +629,7 @@ export const VIETNAM_OCCUPATIONS_DATABASE: Record<string, ResilienceScoreDetail>
     sources: [
       {
         sourceId: 'harvard-bcg-frontier-2023',
-        citationText: 'Harvard/BCG (2023): Consultative sales teams adopting AI copilot workflows increase closed-won deal volume by 32%.',
+        citationText: 'Harvard/BCG (Dell\u2019Acqua et al. 2023): Consultants using GPT-4 completed 12.2% more tasks, 25.1% faster, with 40% higher quality \u2014 and 19 percentage points lower accuracy on tasks outside the AI frontier.',
         url: 'https://www.hbs.edu/faculty/Pages/item.aspx?num=64700'
       }
     ],

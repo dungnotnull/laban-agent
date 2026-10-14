@@ -69,19 +69,43 @@ const DEFAULT_MACRO_DATA = {
       "Khung pháp lý về bản quyền sáng tạo số và đạo đức AI đang trong quá trình hoàn thiện.",
       "Rủi ro rò rỉ thông tin nội bộ và nguy cơ phụ thuộc công nghệ lõi nước ngoài.",
       "Áp lực tâm lý và nguy cơ kiệt sức nghề nghiệp khi chu kỳ công nghệ thay đổi quá nhanh."
+    ],
+    strengthsEn: [
+      "Digital adoption speed and smartphone penetration rank among the highest in Southeast Asia.",
+      "A young, flexible workforce that quickly learns Generative AI and automation tools.",
+      "AI deployment costs in Vietnam are highly competitive compared to international markets.",
+      "The government is accelerating the National Digital Transformation Strategy and digital data safety frameworks."
+    ],
+    weaknessesEn: [
+      "Deep expertise and systems architecture thinking remain scattered across the majority of the workforce.",
+      "Shortage of high-quality Vietnamese-language corpora to train deep localized models.",
+      "Cloud computing infrastructure and dedicated GPU hardware still depend on foreign partners.",
+      "A considerable digital skills gap remains between major urban areas and other provinces."
+    ],
+    opportunitiesEn: [
+      "Explosion of new roles: Agentic AI Engineer, LLM Quality Evaluator, Process Automation.",
+      "SMEs boost productivity 3-5x at optimized cost thanks to AI SaaS and no-code/low-code tools.",
+      "Vietnam has the opportunity to become ASEAN's high-quality AI-orchestration talent hub.",
+      "Democratized access to quality education and personalized healthcare support."
+    ],
+    threatsEn: [
+      "Fierce displacement pressure on repetitive office work, template design, and manual data entry.",
+      "Legal frameworks for digital copyright and AI ethics are still being completed.",
+      "Risk of internal information leakage and dependence on foreign core technology.",
+      "Psychological pressure and burnout risk as technology cycles change too fast."
     ]
   },
   shiftShare: [
-    { name: 'Phát triển Phần mềm & AI', national: 5, industry: 25, competitive: 30 },
-    { name: 'Phân tích Dữ liệu & BI', national: 5, industry: 20, competitive: 25 },
-    { name: 'Y tế & Chăm sóc Sức khỏe', national: 5, industry: 15, competitive: 10 },
-    { name: 'Giáo dục & Đào tạo', national: 5, industry: 10, competitive: 5 },
-    { name: 'Logistics & Chuỗi cung ứng', national: 5, industry: 8, competitive: -5 },
-    { name: 'Tài chính & Kế toán', national: 5, industry: 5, competitive: -10 },
-    { name: 'Sản xuất & Vận hành', national: 5, industry: 2, competitive: -15 },
-    { name: 'Bán lẻ & CSKH', national: 5, industry: 0, competitive: -25 },
-    { name: 'Hành chính & Nhân sự', national: 5, industry: -5, competitive: -30 },
-    { name: 'Thiết kế & Nội dung số', national: 5, industry: -10, competitive: -35 }
+    { name: 'Phát triển Phần mềm & AI', nameEn: 'Software & AI Development', national: 5, industry: 25, competitive: 30 },
+    { name: 'Phân tích Dữ liệu & BI', nameEn: 'Data Analytics & BI', national: 5, industry: 20, competitive: 25 },
+    { name: 'Y tế & Chăm sóc Sức khỏe', nameEn: 'Healthcare & Medical Care', national: 5, industry: 15, competitive: 10 },
+    { name: 'Giáo dục & Đào tạo', nameEn: 'Education & Training', national: 5, industry: 10, competitive: 5 },
+    { name: 'Logistics & Chuỗi cung ứng', nameEn: 'Logistics & Supply Chain', national: 5, industry: 8, competitive: -5 },
+    { name: 'Tài chính & Kế toán', nameEn: 'Finance & Accounting', national: 5, industry: 5, competitive: -10 },
+    { name: 'Sản xuất & Vận hành', nameEn: 'Manufacturing & Operations', national: 5, industry: 2, competitive: -15 },
+    { name: 'Bán lẻ & CSKH', nameEn: 'Retail & Customer Service', national: 5, industry: 0, competitive: -25 },
+    { name: 'Hành chính & Nhân sự', nameEn: 'Administration & HR', national: 5, industry: -5, competitive: -30 },
+    { name: 'Thiết kế & Nội dung số', nameEn: 'Design & Digital Content', national: 5, industry: -10, competitive: -35 }
   ]
 };
 
@@ -498,9 +522,10 @@ You are the Chief AI Labor Economist for Vietnam.
 Analyze the CURRENT macroeconomic impact of AI on the Vietnamese labor market.
 
 Return a strictly valid JSON object with exactly these 2 keys:
-1. "swot": object with 4 keys: "strengths", "weaknesses", "opportunities", "threats". Each must be an array of 3-4 string points in Vietnamese.
-2. "shiftShare": array of 10 objects representing major industry sectors in Vietnam. Each object must have: 
+1. "swot": object with 8 keys: "strengths", "weaknesses", "opportunities", "threats" (each an array of 3-4 string points in Vietnamese) plus their English mirrors "strengthsEn", "weaknessesEn", "opportunitiesEn", "threatsEn" (the same points translated into English, same array length and order).
+2. "shiftShare": array of 10 objects representing major industry sectors in Vietnam. Each object must have:
    - "name": string (Industry Name in Vietnamese)
+   - "nameEn": string (Industry Name in English)
    - "national": number (National Growth Effect, typically 2 to 8)
    - "industry": number (Industry Mix Effect, from -20 to +30)
    - "competitive": number (Competitive AI Effect, from -40 to +35)
@@ -511,11 +536,13 @@ CRITICAL: Return pure, strictly valid JSON. ALL keys MUST be enclosed in double 
   try {
     const rawAiText = await callGeminiDirect(
       prompt,
-      'You are an authoritative labor economist. Generate macro analysis in Vietnamese. Return pure JSON.'
+      'You are an authoritative labor economist. Generate macro analysis in Vietnamese with English mirror fields. Return pure JSON.'
     );
 
+    // English mirrors are mandatory so the EN UI never falls back to Vietnamese content.
+    const hasEnglishMirrors = (candidate: any): boolean => Boolean(candidate?.swot?.strengthsEn && candidate?.shiftShare?.[0]?.nameEn);
     const parsed = parseGeminiJson<any>(rawAiText);
-    if (parsed && parsed.swot && parsed.shiftShare) {
+    if (parsed && parsed.swot && parsed.shiftShare && hasEnglishMirrors(parsed)) {
       macroResponseCache = { timestamp: now, data: parsed };
       return res.json({
         source: 'gemini_direct',

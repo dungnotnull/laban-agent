@@ -12,29 +12,29 @@ interface JobSecurityNewsViewProps {
 }
 
 const MOCK_TOP_20_TRENDING = [
-  { id: 1, nameVi: 'Kỹ sư AI/Prompt Engineer', nameEn: 'AI Engineer / Prompt Engineer', source: 'WEF 2024', index: '+45%' },
-  { id: 2, nameVi: 'Chuyên gia Bảo mật Dữ liệu', nameEn: 'Data Security Specialist', source: 'WEF 2024', index: '+38%' },
-  { id: 3, nameVi: 'Chuyên viên Năng lượng Xanh', nameEn: 'Green Energy Specialist', source: 'ILO 2023', index: '+35%' },
-  { id: 4, nameVi: 'Kiến trúc sư Cloud', nameEn: 'Cloud Solutions Architect', source: 'Gartner', index: '+30%' },
-  { id: 5, nameVi: 'Kỹ sư Nông nghiệp Công nghệ cao', nameEn: 'Agritech Engineer', source: 'WEF', index: '+28%' },
-  { id: 6, nameVi: 'Điều dưỡng & Chăm sóc Sức khỏe', nameEn: 'Nursing & Healthcare Specialist', source: 'WHO', index: '+25%' },
-  { id: 7, nameVi: 'Nhà phân tích Dữ liệu Big Data', nameEn: 'Big Data Analyst', source: 'WEF', index: '+24%' },
-  { id: 8, nameVi: 'Chuyên viên Tự động hóa Robot', nameEn: 'Robotics Automation Specialist', source: 'McKinsey', index: '+22%' },
-  { id: 9, nameVi: 'Thiết kế Trải nghiệm Người dùng (UX/UI)', nameEn: 'UX/UI Product Designer', source: 'LinkedIn', index: '+20%' },
-  { id: 10, nameVi: 'Chuyên gia An toàn Sinh học', nameEn: 'Biosafety Specialist', source: 'WHO', index: '+18%' }
+  { id: 1, nameVi: 'Kỹ sư AI/Prompt Engineer', nameEn: 'AI Engineer / Prompt Engineer', source: 'La Bàn Index', index: '+45%' },
+  { id: 2, nameVi: 'Chuyên gia Bảo mật Dữ liệu', nameEn: 'Data Security Specialist', source: 'La Bàn Index', index: '+38%' },
+  { id: 3, nameVi: 'Chuyên viên Năng lượng Xanh', nameEn: 'Green Energy Specialist', source: 'La Bàn Index', index: '+35%' },
+  { id: 4, nameVi: 'Kiến trúc sư Cloud', nameEn: 'Cloud Solutions Architect', source: 'La Bàn Index', index: '+30%' },
+  { id: 5, nameVi: 'Kỹ sư Nông nghiệp Công nghệ cao', nameEn: 'Agritech Engineer', source: 'La Bàn Index', index: '+28%' },
+  { id: 6, nameVi: 'Điều dưỡng & Chăm sóc Sức khỏe', nameEn: 'Nursing & Healthcare Specialist', source: 'La Bàn Index', index: '+25%' },
+  { id: 7, nameVi: 'Nhà phân tích Dữ liệu Big Data', nameEn: 'Big Data Analyst', source: 'La Bàn Index', index: '+24%' },
+  { id: 8, nameVi: 'Chuyên viên Tự động hóa Robot', nameEn: 'Robotics Automation Specialist', source: 'La Bàn Index', index: '+22%' },
+  { id: 9, nameVi: 'Thiết kế Trải nghiệm Người dùng (UX/UI)', nameEn: 'UX/UI Product Designer', source: 'La Bàn Index', index: '+20%' },
+  { id: 10, nameVi: 'Chuyên gia An toàn Sinh học', nameEn: 'Biosafety Specialist', source: 'La Bàn Index', index: '+18%' }
 ];
 
 const MOCK_TOP_20_RISKY = [
-  { id: 1, nameVi: 'Thu ngân & Giao dịch viên', nameEn: 'Bank Teller & Cashier', source: 'WEF 2024', index: '-40%' },
-  { id: 2, nameVi: 'Nhân viên Nhập liệu', nameEn: 'Data Entry Clerk', source: 'WEF 2024', index: '-35%' },
-  { id: 3, nameVi: 'Dịch thuật viên phổ thông', nameEn: 'General Translator', source: 'O*NET', index: '-32%' },
-  { id: 4, nameVi: 'Telesales & CSKH cơ bản', nameEn: 'Basic Telesales & Customer Service', source: 'Gartner', index: '-28%' },
-  { id: 5, nameVi: 'Kế toán sơ cấp', nameEn: 'Entry-level Bookkeeper/Accountant', source: 'McKinsey', index: '-25%' },
-  { id: 6, nameVi: 'Thợ lắp ráp dây chuyền', nameEn: 'Assembly Line Worker', source: 'ILO', index: '-22%' },
-  { id: 7, nameVi: 'Thư ký hành chính', nameEn: 'Administrative Secretary', source: 'WEF', index: '-20%' },
-  { id: 8, nameVi: 'Bảo vệ & Giữ xe', nameEn: 'Parking & Security Attendant', source: 'Local Data', index: '-18%' },
-  { id: 9, nameVi: 'Bán vé & Điều phối giao thông', nameEn: 'Ticket Vendor & Traffic Dispatcher', source: 'WEF', index: '-15%' },
-  { id: 10, nameVi: 'Kiểm toán viên sơ cấp', nameEn: 'Junior Auditor', source: 'O*NET', index: '-12%' }
+  { id: 1, nameVi: 'Thu ngân & Giao dịch viên', nameEn: 'Bank Teller & Cashier', source: 'La Bàn Index', index: '-40%' },
+  { id: 2, nameVi: 'Nhân viên Nhập liệu', nameEn: 'Data Entry Clerk', source: 'La Bàn Index', index: '-35%' },
+  { id: 3, nameVi: 'Dịch thuật viên phổ thông', nameEn: 'General Translator', source: 'La Bàn Index', index: '-32%' },
+  { id: 4, nameVi: 'Telesales & CSKH cơ bản', nameEn: 'Basic Telesales & Customer Service', source: 'La Bàn Index', index: '-28%' },
+  { id: 5, nameVi: 'Kế toán sơ cấp', nameEn: 'Entry-level Bookkeeper/Accountant', source: 'La Bàn Index', index: '-25%' },
+  { id: 6, nameVi: 'Thợ lắp ráp dây chuyền', nameEn: 'Assembly Line Worker', source: 'La Bàn Index', index: '-22%' },
+  { id: 7, nameVi: 'Thư ký hành chính', nameEn: 'Administrative Secretary', source: 'La Bàn Index', index: '-20%' },
+  { id: 8, nameVi: 'Bảo vệ & Giữ xe', nameEn: 'Parking & Security Attendant', source: 'La Bàn Index', index: '-18%' },
+  { id: 9, nameVi: 'Bán vé & Điều phối giao thông', nameEn: 'Ticket Vendor & Traffic Dispatcher', source: 'La Bàn Index', index: '-15%' },
+  { id: 10, nameVi: 'Kiểm toán viên sơ cấp', nameEn: 'Junior Auditor', source: 'La Bàn Index', index: '-12%' }
 ];
 
 export const JobSecurityNewsView: React.FC<JobSecurityNewsViewProps> = ({

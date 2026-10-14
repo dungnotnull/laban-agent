@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Navbar } from './components/Navbar';
 import { DynamicCareerOrientation } from './components/DynamicCareerOrientation';
 import { CurrentRoleOverviewSection } from './components/CurrentRoleOverviewSection';
+import { AiJobSecurityVideos } from './components/AiJobSecurityVideos';
 import { ComprehensiveCareerRadarView } from './components/ComprehensiveCareerRadarView';
 import { GoogleIntegrationsSection } from './components/GoogleIntegrationsSection';
 import { IntakeForm } from './components/IntakeForm';
@@ -339,6 +340,9 @@ export default function App() {
 
             {/* 10 Trending vs 10 Vulnerable Careers Comprehensive Radar + Current Role Overview */}
             <div ref={radarRef} className="scroll-mt-6 space-y-8">
+              {/* AI-era job-security media context (VTV24 reports), above the current-role overview */}
+              <AiJobSecurityVideos language={language} />
+
               {/* Scientific Review of User's Current Role & 5-Year Forecast */}
               <CurrentRoleOverviewSection
                 overview={careerAnalysis.currentRoleOverview || generateCurrentRoleOverview(intake)}

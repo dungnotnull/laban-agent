@@ -26,41 +26,41 @@ export function generateCurrentRoleOverview(intake: UserIntakeProfile): CurrentR
       paperTitle: 'GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models',
       institution: 'OpenAI, OpenResearch & University of Pennsylvania (Eloundou et al.)',
       year: 2023,
-      keyMetricOrFormula: 'Đo lường mức độ phơi nhiễm tác vụ: β-exposure dao động từ 45% - 86% đối với các công việc xử lý dữ liệu và văn bản.',
-      keyMetricOrFormulaEn: 'Task exposure measurement: β-exposure ranges from 45% - 86% for data- and text-processing occupations.',
+      keyMetricOrFormula: 'Khoảng 80% lực lượng lao động Mỹ có ít nhất 10% tác vụ chịu ảnh hưởng của LLM; khoảng 19% có ít nhất 50% tác vụ bị ảnh hưởng, mức phơi nhiễm cao hơn ở nhóm việc làm thu nhập cao.',
+      keyMetricOrFormulaEn: 'About 80% of the U.S. workforce could have at least 10% of work tasks affected by LLMs; about 19% could see at least 50% of tasks affected, with higher exposure in higher-wage jobs.',
       url: 'https://arxiv.org/abs/2303.10130'
     },
     {
-      paperTitle: 'The Future of Jobs Report 2023 - 2025 Outlook',
+      paperTitle: 'The Future of Jobs Report 2023',
       institution: 'World Economic Forum (WEF)',
       year: 2023,
-      keyMetricOrFormula: '44% bộ kỹ năng người lao động sẽ bị gián đoạn trước 2027; nhóm công việc lặp lại giảm mạnh 14 triệu vị trí toàn cầu.',
-      keyMetricOrFormulaEn: '44% of workers\u2019 core skill sets will be disrupted before 2027; repetitive job families shrink by 14 million roles globally.',
+      keyMetricOrFormula: 'Giai đoạn 2023-2027: 44% kỹ năng của người lao động sẽ bị gián đoạn; toàn cầu tạo thêm 69 triệu việc làm nhưng cắt giảm 83 triệu, giảm ròng 14 triệu (2% việc làm hiện tại); riêng nhóm ghi chép & hành chính giảm 26 triệu việc làm.',
+      keyMetricOrFormulaEn: 'Over 2023-2027, 44% of workers\u2019 skills will be disrupted; globally 69 million jobs created vs 83 million displaced (net -14 million, 2% of current employment); record-keeping and administrative roles alone shed 26 million jobs.',
       url: 'https://www.weforum.org/reports/the-future-of-jobs-report-2023/'
     },
     {
       paperTitle: 'Generative AI and Jobs: A Global Analysis of Potential Effects on Job Quantity and Quality',
       institution: 'International Labour Organization (ILO Working Paper 96)',
       year: 2023,
-      keyMetricOrFormula: 'Hiệu ứng cộng hưởng nâng cao (Augmentation) chiếm ưu thế ở 75% lao động nếu được trang bị kỹ năng số kết hợp nghiệp vụ.',
-      keyMetricOrFormulaEn: 'Augmentation effects dominate for 75% of workers when digital skills are combined with domain expertise.',
-      url: 'https://www.ilo.org/publications/generative-ai-and-jobs-global-analysis-potential-effects-job-quantity-and-quality'
+      keyMetricOrFormula: 'Tác động chủ đạo của GenAI là khuếch đại (augmentation) thay vì tự động hóa thay thế; công việc văn phòng (clerical) có mức phơi nhiễm cao nhất: ~24% tác vụ phơi nhiễm cao và 58% phơi nhiễm trung bình.',
+      keyMetricOrFormulaEn: 'GenAI\u2019s dominant impact is augmentation rather than automation; clerical work is the most exposed category: ~24% of tasks at high exposure and 58% at medium exposure.',
+      url: 'https://doi.org/10.54394/FHEM8239'
     },
     {
-      paperTitle: 'Artificial Intelligence Index Report 2024 & 2025 Economy Chapter',
-      institution: 'Stanford Institute for Human-Centered Artificial Intelligence (HAI)',
-      year: 2024,
-      keyMetricOrFormula: 'Nghiên cứu Harvard/BCG: Nhân sự sử dụng AI giải quyết bài toán nghiệp vụ nhanh hơn 25.1% và tăng 40% chất lượng kết quả.',
-      keyMetricOrFormulaEn: 'Harvard/BCG field study: staff using AI complete business tasks 25.1% faster with 40% higher output quality.',
-      url: 'https://aiindex.stanford.edu/report/'
+      paperTitle: 'Navigating the Jagged Technological Frontier: Field Experimental Evidence on AI Productivity',
+      institution: 'Harvard Business School & BCG (Dell\u2019Acqua et al., cited in Stanford AI Index 2024)',
+      year: 2023,
+      keyMetricOrFormula: 'Thực nghiệm có kiểm soát với 758 tư vấn viên BCG: nhóm dùng GPT-4 hoàn thành nhiều hơn 12,2%, nhanh hơn 25,1% và chất lượng cao hơn 40% với tác vụ trong "ranh giới năng lực" của AI; ngoài ranh giới này, khả năng đưa ra lời giải đúng giảm 19 điểm phần trăm.',
+      keyMetricOrFormulaEn: 'Randomized controlled trial with 758 BCG consultants: those using GPT-4 completed 12.2% more tasks, 25.1% faster, with 40% higher quality on tasks inside the AI capability frontier; outside it they were 19 percentage points less likely to be correct.',
+      url: 'https://www.hbs.edu/ris/Publication%20Files/24-013_d9b45b68-9e74-42d6-a1c6-c72449755196.pdf'
     },
     {
-      paperTitle: 'Báo cáo Thị trường Lao động & Chuyển đổi số Tuyển dụng Việt Nam 2024 - 2026',
-      institution: 'Tổng cục Thống kê (GSO), Bộ LĐ-TB&XH (MOLISA) & TopCV Analytics',
+      paperTitle: 'Báo cáo Thị trường Tuyển dụng Việt Nam 2024 - 2025 (TopCV)',
+      institution: 'TopCV Việt Nam',
       year: 2024,
-      keyMetricOrFormula: '72% doanh nghiệp tại Việt Nam ưu tiên tuyển dụng ứng viên biết ứng dụng AI; mức lương nhân sự lai (Hybrid Skills) cao hơn 28-35%.',
-      keyMetricOrFormulaEn: '72% of Vietnamese employers prioritize candidates with applied AI skills; hybrid-skill professionals earn 28-35% more.',
-      url: 'https://www.topcv.vn/bao-cao-thi-truong-tuyen-dung'
+      keyMetricOrFormula: 'Báo cáo thường niên lần thứ 5 của TopCV (ra mắt 11/12/2024), phân tích gần 300.000 tin đăng tuyển dụng, tập trung tác động của AI và chuyển đổi số lên ngành nghề và các kỹ năng đang thay đổi.',
+      keyMetricOrFormulaEn: 'TopCV\u2019s 5th annual report (published 11 Dec 2024) analyzes ~300,000 job postings, focusing on how AI and digital transformation reshape occupations and skill demands.',
+      url: 'https://insights.topcv.vn/recruitment-report-2024-2025'
     }
   ];
 
