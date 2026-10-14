@@ -1,0 +1,23 @@
+{
+  "short_name": "La Bàn AI",
+  "name": "La Bàn - Agentic AI Career Compass Vietnam",
+  "description": "Nền tảng Định hướng & Giả lập Lộ trình Chuyển đổi Nghề nghiệp Kỷ nguyên AI với phân rã tác vụ O*NET & MOLISA",
+  "icons": [
+    {
+      "src": "/favicon.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["education", "productivity", "business"]
+}

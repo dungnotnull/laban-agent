@@ -216,9 +216,9 @@ export const ComprehensiveCareerRadarView: React.FC<ComprehensiveCareerRadarView
                 {t(language, 'Khung Đo Lường O*NET 28.1 & ILO 2024-2026', 'O*NET 28.1 & ILO 2024-2026 Measurement Framework')}
               </span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-emerald-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-tight font-sans mt-2">
+            <h2 className="text-2xl sm:text-3xl font-extrabold bg-gradient-to-r from-emerald-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent tracking-tight font-sans mt-2">
               {t(language, 'Bản Đồ 10 Ngành Đón Sóng AI & 10 Ngành Có Tỷ Lệ Thay Thế Cao', 'Map of 10 AI-Trending Careers & 10 Highly Replaceable Careers')}
-            </h1>
+            </h2>
             <p className="text-xs sm:text-sm text-slate-600 max-w-3xl leading-relaxed mt-1">
               {language === 'vi' ? (
                 <>Được tính toán tự động qua <strong className="text-slate-900">Điểm Kháng AI (AI Resilience Index)</strong> dựa trên bộ hồ sơ năng lực cá nhân của bạn và đối soát với hệ thống tài liệu nghiên cứu quốc tế từ Stanford HAI, OpenAI, Harvard Business School, WEF và ILO.</>

@@ -55,9 +55,9 @@ export const DynamicCareerOrientation: React.FC<DynamicCareerOrientationProps> =
             <Sparkles className="w-3.5 h-3.5" />
             <span>AI Career Compass Vietnam 2026</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-2 drop-shadow-md text-white">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-2 drop-shadow-md text-white">
             {t(language, 'Định Hướng Kỷ Nguyên AI & Phân Tích Kháng AI', 'AI Era Orientation & Resilience Analysis')}
-          </h2>
+          </h1>
           <p className="text-xs sm:text-sm text-slate-200 drop-shadow flex items-center gap-2 max-w-2xl">
             <Compass className="w-4 h-4 text-amber-400 flex-shrink-0" />
             <span>{t(language, 'Dựa trên Hồ sơ Persona của bạn và cơ sở dữ liệu khoa học từ O*NET & MOLISA.', 'Based on your Persona Profile and scientific data from O*NET & MOLISA.')}</span>

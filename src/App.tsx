@@ -46,8 +46,9 @@ import {
 import { ComprehensiveCareerAnalysisResult } from './types/careerAnalysis';
 import { saveAssessmentLocally, buildCommunityPost, buildEmployerListing } from './lib/localData';
 import { Compass, Sparkles, Shield, Heart, ArrowUp, Database, ArrowRight } from 'lucide-react';
-import type { Trajectory } from './agents/trajectory';
+import { Trajectory } from './agents/trajectory';
 import { t } from './utils/i18n';
+import { useDynamicSeo } from './utils/useDynamicSeo';
 
 export default function App() {
   // Navigation & Localization
@@ -83,6 +84,13 @@ export default function App() {
     },
     values: [],
     forecastMode: 'realistic'
+  });
+
+  // Dynamic SEO Hook to keep title, description, and html lang synchronized
+  useDynamicSeo({
+    language,
+    activeTab,
+    currentRole: intake.currentRole
   });
 
   // 20-Career Comprehensive Analysis State

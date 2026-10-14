@@ -1,0 +1,7 @@
+# Robots.txt for La Bàn - Agentic AI Career Compass Vietnam
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://laban.ai/sitemap.xml
