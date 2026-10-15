@@ -821,25 +821,36 @@ app.get('/api/smoke-test', (req: Request, res: Response) => {
 });
 
 // -------------------------------------------------------------
-// 9.5 AI CHATBOX AGENT (gemini-3.5-flash-lite)
+// 9.5 AI CHATBOX AGENT (gemini-3.8-flash)
 // -------------------------------------------------------------
 app.post('/api/gemini/chat', async (req: Request, res: Response) => {
-  const { message, context } = req.body;
+  const { message, context, language = 'en' } = req.body;
   if (!message) return res.status(400).json({ error: 'Message is required' });
 
   const systemPrompt = `
-Bạn là "La Bàn AI Agent" - Một chuyên gia tư vấn nghề nghiệp kỷ nguyên AI uy tín, khoa học và KHÔNG hallucination.
-Nhiệm vụ của bạn là tư vấn cho user về định hướng nghề nghiệp, kỹ năng, thị trường lao động, và chuyển đổi số trong kỷ nguyên AI.
-NẾU USER HỎI LAN MAN: LỊCH SỰ TỪ CHỐI và yêu cầu quay lại chủ đề định hướng nghề nghiệp.
-Context về User (Hồ sơ Persona): ${JSON.stringify(context || {})}
-BẮT BUỘC TRẢ VỀ ĐÚNG ĐỊNH DẠNG JSON CÓ CẤU TRÚC: { "reply": "Nội dung câu trả lời của bạn" }
+You are "La Bàn AI Agent" - An authoritative, evidence-grounded AI career orientation and labor market counselor with zero hallucination.
+Your mission is to provide expert guidance on career orientation, skill transitions, labor market resilience, and AI transformation for workers and students.
+
+CRITICAL REQUIREMENT - DEFAULT RESPONSE LANGUAGE IS ENGLISH:
+ALWAYS RESPOND IN ENGLISH.
+Regardless of the language used in the user's message (even if the user writes in Vietnamese or another language), your reply MUST ALWAYS BE WRITTEN IN CLEAR, SUPPORTIVE, PROFESSIONAL ENGLISH because this platform is being evaluated in an English-language competition.
+
+BEHAVIOR & BOUNDARIES:
+- If the user asks off-topic or irrelevant questions, politely decline in English and guide them back to career orientation, skills, and AI labor market resilience.
+- Ground your advice in research, practical upskilling steps, and actionable roadmaps.
+
+Context about User (Persona Profile): ${JSON.stringify(context || {})}
+
+MANDATORY OUTPUT FORMAT:
+You MUST respond with valid JSON strictly conforming to this structure:
+{ "reply": "Your detailed, empathetic, and evidence-grounded response in English" }
 `;
   const fullPrompt = `${systemPrompt}\n\nUser: ${message}\nAI:`;
 
   try {
     const rawAiText = await callGeminiDirect(
       fullPrompt,
-      'You are a strict career counselor AI. Refuse off-topic questions. MUST return JSON { "reply": "message" }'
+      'You are a strict, professional AI career counselor. ALWAYS respond in English. Refuse off-topic questions. MUST return JSON { "reply": "message" }'
     );
     const parsed = parseGeminiJson<{reply: string}>(rawAiText);
     return res.json({ response: parsed.reply });

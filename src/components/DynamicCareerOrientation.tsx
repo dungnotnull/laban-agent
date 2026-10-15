@@ -143,9 +143,15 @@ export const DynamicCareerOrientation: React.FC<DynamicCareerOrientationProps> =
       {/* Action Button */}
       <div className="pt-4 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 mt-4">
         <div className="flex items-center gap-2 text-xs text-slate-500">
-          <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+          <CheckCircle2 className={`w-4 h-4 ${isLoading ? 'text-amber-500 animate-pulse' : 'text-emerald-500'}`} />
           <span>
-            {hasRole
+            {isLoading
+              ? t(
+                  language,
+                  'Hệ thống đang chạy phân tích sâu với mô hình AI, vui lòng không tải lại trang...',
+                  'Multi-agent comprehensive evaluation in progress, please keep this tab open...'
+                )
+              : hasRole
               ? t(language, 'Dữ liệu Persona đã sẵn sàng để phân tích', 'Persona data is ready for analysis')
               : t(language, 'Nhập vị trí công việc hiện tại để bắt đầu phân tích', 'Enter your current role to start the analysis')}
           </span>
@@ -154,12 +160,12 @@ export const DynamicCareerOrientation: React.FC<DynamicCareerOrientationProps> =
         <button
           onClick={handleRunComprehensiveAnalysis}
           disabled={isLoading || !hasRole}
-          className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 disabled:opacity-50 text-slate-900 font-extrabold text-sm flex items-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer transform hover:-translate-y-0.5"
+          className="px-8 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-400 hover:from-amber-400 hover:to-amber-300 disabled:opacity-80 disabled:cursor-wait text-slate-900 font-extrabold text-sm flex items-center gap-2 shadow-md hover:shadow-lg transition-all cursor-pointer transform hover:-translate-y-0.5"
         >
           {isLoading ? (
             <>
-              <Sparkles className="w-5 h-5 animate-spin" />
-              <span>{t(language, 'AI Đang Tính Toán Điểm Kháng & Phân Tích 20 Ngành...', 'AI is calculating Resilience Score & analyzing 20 Careers...')}</span>
+              <Sparkles className="w-5 h-5 animate-spin flex-shrink-0" />
+              <span>{t(language, 'Comprehensive analysis will take a few minutes, please be patient', 'Comprehensive analysis will take a few minutes, please be patient')}</span>
             </>
           ) : (
             <>

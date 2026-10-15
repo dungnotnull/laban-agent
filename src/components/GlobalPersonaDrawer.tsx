@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { UserIntakeProfile, Language } from '../types';
-import { User as UserIcon, X, Save, Database } from 'lucide-react';
+import { User as UserIcon, X } from 'lucide-react';
 import { IntakeForm } from './IntakeForm';
 import { t } from '../utils/i18n';
 
@@ -53,12 +53,6 @@ export function GlobalPersonaDrawer({
               <h2 className="text-xl font-bold font-sans">
                 {t(language, 'Hồ sơ Persona Xuyên Suốt', 'Global Persona Profile')}
               </h2>
-              <div className="flex items-center gap-1.5 text-xs text-amber-100 mt-0.5">
-                <span className="flex items-center gap-1 font-medium">
-                  <Database className="w-3.5 h-3.5 text-emerald-300" />
-                  {t(language, 'Lưu trữ nội bộ (Local Storage)', 'Local Storage')}
-                </span>
-              </div>
             </div>
           </div>
           <button 

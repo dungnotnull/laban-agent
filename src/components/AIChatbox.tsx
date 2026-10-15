@@ -9,13 +9,13 @@ interface AIChatboxProps {
   language?: Language;
 }
 
-export const AIChatbox: React.FC<AIChatboxProps> = ({ intake, language = 'vi' }) => {
+export const AIChatbox: React.FC<AIChatboxProps> = ({ intake, language = 'en' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'ai'; content: string }[]>([
     {
       role: 'ai',
       content: language === 'vi'
-        ? 'Chào bạn! Tôi là La Bàn AI Agent. Bạn cần tư vấn gì về định hướng nghề nghiệp, kỹ năng hay thị trường lao động trong kỷ nguyên AI?'
+        ? 'Hello! I am La Bàn AI Agent. How can I assist you with career orientation, skills, or labor market insights in the AI era?'
         : 'Hello! I am La Bàn AI Agent. How can I assist you with career orientation, skills, or labor market insights in the AI era?'
     }
   ]);
@@ -43,7 +43,7 @@ export const AIChatbox: React.FC<AIChatboxProps> = ({ intake, language = 'vi' })
       const response = await fetch('/api/gemini/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: userMessage, context: intake })
+        body: JSON.stringify({ message: userMessage, context: intake, language })
       });
       const data = await response.json();
       if (data.response) {
