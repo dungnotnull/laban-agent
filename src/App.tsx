@@ -160,6 +160,47 @@ export default function App() {
         if (!data.analysis.currentRoleOverview) {
           data.analysis.currentRoleOverview = generateCurrentRoleOverview(profileToAnalyze);
         }
+
+        // Guarantee 10 trending careers on client side
+        let clientTrending = Array.isArray(data.analysis.trendingCareers) ? [...data.analysis.trendingCareers] : [];
+        if (clientTrending.length < 10) {
+          const existingTitles = new Set(clientTrending.map((c: any) => `${c.title || ''} ${c.titleVi || ''}`.toLowerCase().trim()));
+          for (const item of DEFAULT_CAREER_ANALYSIS.trendingCareers) {
+            if (clientTrending.length >= 10) break;
+            const key = `${item.title} ${item.titleVi}`.toLowerCase().trim();
+            if (!existingTitles.has(key)) {
+              clientTrending.push({ ...item });
+              existingTitles.add(key);
+            }
+          }
+        }
+        data.analysis.trendingCareers = clientTrending.slice(0, 10).map((c: any, idx: number) => ({
+          ...c,
+          rank: idx + 1,
+          id: `trend-${idx + 1}`,
+          category: 'trending'
+        }));
+
+        // Guarantee 10 vulnerable careers on client side
+        let clientVulnerable = Array.isArray(data.analysis.vulnerableCareers) ? [...data.analysis.vulnerableCareers] : [];
+        if (clientVulnerable.length < 10) {
+          const existingTitles = new Set(clientVulnerable.map((c: any) => `${c.title || ''} ${c.titleVi || ''}`.toLowerCase().trim()));
+          for (const item of DEFAULT_CAREER_ANALYSIS.vulnerableCareers) {
+            if (clientVulnerable.length >= 10) break;
+            const key = `${item.title} ${item.titleVi}`.toLowerCase().trim();
+            if (!existingTitles.has(key)) {
+              clientVulnerable.push({ ...item });
+              existingTitles.add(key);
+            }
+          }
+        }
+        data.analysis.vulnerableCareers = clientVulnerable.slice(0, 10).map((c: any, idx: number) => ({
+          ...c,
+          rank: idx + 1,
+          id: `vuln-${idx + 1}`,
+          category: 'vulnerable'
+        }));
+
         setCareerAnalysis(data.analysis);
       }
 

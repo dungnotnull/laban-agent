@@ -290,6 +290,57 @@ CRITICAL: Return pure, strictly valid JSON array. ALL keys MUST be enclosed in d
 // -------------------------------------------------------------
 // 4B. 20 CAREER RADAR ENGINE API (10 TRENDING & 10 VULNERABLE) + CURRENT ROLE OVERVIEW
 // -------------------------------------------------------------
+function ensureFullCareerMatrix(parsed: any): any {
+  const defaultTrending = DEFAULT_CAREER_ANALYSIS.trendingCareers;
+  const defaultVulnerable = DEFAULT_CAREER_ANALYSIS.vulnerableCareers;
+
+  // Normalize and guarantee exactly 10 trending items
+  let finalTrending: any[] = Array.isArray(parsed?.trendingCareers) ? [...parsed.trendingCareers] : [];
+  if (finalTrending.length < 10) {
+    const existingTitles = new Set(
+      finalTrending.map((c: any) => `${c.title || ''} ${c.titleVi || ''}`.toLowerCase().trim())
+    );
+    for (const item of defaultTrending) {
+      if (finalTrending.length >= 10) break;
+      const key = `${item.title} ${item.titleVi}`.toLowerCase().trim();
+      if (!existingTitles.has(key)) {
+        finalTrending.push({ ...item });
+        existingTitles.add(key);
+      }
+    }
+  }
+  parsed.trendingCareers = finalTrending.slice(0, 10).map((c: any, idx: number) => ({
+    ...c,
+    rank: idx + 1,
+    id: `trend-${idx + 1}`,
+    category: 'trending'
+  }));
+
+  // Normalize and guarantee exactly 10 vulnerable items
+  let finalVulnerable: any[] = Array.isArray(parsed?.vulnerableCareers) ? [...parsed.vulnerableCareers] : [];
+  if (finalVulnerable.length < 10) {
+    const existingTitles = new Set(
+      finalVulnerable.map((c: any) => `${c.title || ''} ${c.titleVi || ''}`.toLowerCase().trim())
+    );
+    for (const item of defaultVulnerable) {
+      if (finalVulnerable.length >= 10) break;
+      const key = `${item.title} ${item.titleVi}`.toLowerCase().trim();
+      if (!existingTitles.has(key)) {
+        finalVulnerable.push({ ...item });
+        existingTitles.add(key);
+      }
+    }
+  }
+  parsed.vulnerableCareers = finalVulnerable.slice(0, 10).map((c: any, idx: number) => ({
+    ...c,
+    rank: idx + 1,
+    id: `vuln-${idx + 1}`,
+    category: 'vulnerable'
+  }));
+
+  return parsed;
+}
+
 app.post('/api/gemini/comprehensive-analysis', async (req: Request, res: Response) => {
   const intake: UserIntakeProfile = req.body.intakeProfile;
   if (!intake) {
@@ -305,9 +356,11 @@ app.post('/api/gemini/comprehensive-analysis', async (req: Request, res: Respons
 
   const cacheKey = `comprehensive_${language}_${role}_${strengthsList}_${skillsList}`;
   if (aiResponseCache.has(cacheKey)) {
+    const cached = aiResponseCache.get(cacheKey);
+    ensureFullCareerMatrix(cached);
     return res.json({
       source: 'lru_cache',
-      analysis: aiResponseCache.get(cacheKey)
+      analysis: cached
     });
   }
 
@@ -368,8 +421,8 @@ Return a pure JSON object matching this structure:
   "strategicUpskillingDirectionEn": string (Strategic transition and upskilling advice in English),
   "citedEvidenceSources": array of 3-5 objects { "paperTitle": string, "institution": string, "year": number, "keyMetricOrFormula": string, "keyMetricOrFormulaEn": string, "url": string }
 }
-2. "trendingCareers": Array of EXACTLY 10 trending occupations with HIGH AI RESILIENCE (Score 80-98).
-3. "vulnerableCareers": Array of EXACTLY 10 occupations with HIGH AI DISPLACEMENT RISK (Score 15-45).
+2. "trendingCareers": Array of trending occupations with HIGH AI RESILIENCE (Score 80-98).
+3. "vulnerableCareers": Array of occupations with HIGH AI DISPLACEMENT RISK (Score 15-45).
 
 For each career item in trendingCareers and vulnerableCareers, provide:
 - id: string (e.g. "trend-1", "vuln-1")
@@ -421,10 +474,11 @@ CRITICAL: Return pure, strictly valid JSON matching ComprehensiveCareerAnalysisR
     );
 
     const parsed = parseGeminiJson<any>(rawAiText);
-    if (parsed && (parsed.trendingCareers || parsed.vulnerableCareers)) {
+    if (parsed && (parsed.trendingCareers || parsed.vulnerableCareers || parsed.currentRoleOverview)) {
       if (!parsed.currentRoleOverview) {
         parsed.currentRoleOverview = generateCurrentRoleOverview(intake);
       }
+      ensureFullCareerMatrix(parsed);
       aiResponseCache.set(cacheKey, parsed);
       return res.json({
         source: 'gemini_direct',
@@ -434,7 +488,9 @@ CRITICAL: Return pure, strictly valid JSON matching ComprehensiveCareerAnalysisR
     }
     throw new Error('Gemini returned incomplete analysis object');
   } catch (err: any) {
+    console.warn('[comprehensive-analysis] Gemini API error or incomplete output, using dynamic fallback:', err?.message || err);
     const fallbackAnalysis = generateDynamicCareerAnalysis(intake);
+    ensureFullCareerMatrix(fallbackAnalysis);
     aiResponseCache.set(cacheKey, fallbackAnalysis);
     return res.json({
       source: 'dynamic_radar_resilience',
